@@ -4,70 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Instituto Digital de Bienestar (IDB)</title>
+<title>Instituto Digital de Bienestar</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
+
+*{
     margin:0;
     padding:0;
-    background:#f7f9fc;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f6f8;
     color:#1f2937;
 }
 
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.hero{
-    text-align:center;
-    padding:60px 20px;
-}
-
-h1{
-    font-size:48px;
-    margin-bottom:10px;
-}
-
-h2{
-    color:#0f766e;
-}
-
-p{
-    line-height:1.7;
-}
-
-.button{
-    display:inline-block;
-    margin-top:20px;
-    padding:14px 28px;
-    background:#0f766e;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-.section{
-    background:white;
-    padding:30px;
-    margin-top:20px;
-    border-radius:12px;
-}
-
-.footer{
-    text-align:center;
-    padding:30px;
-    color:#666;
-}
 .navbar{
-    background:white;
-    padding:15px 30px;
+    background:#ffffff;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:18px 50px;
     box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
@@ -75,25 +33,153 @@ p{
     display:flex;
     align-items:center;
     gap:12px;
-    font-weight:bold;
+}
+
+.logo-nav img{
+    height:55px;
+}
+
+.logo-nav span{
+    font-size:18px;
+    font-weight:700;
     color:#0f766e;
 }
 
+nav{
+    display:flex;
+    gap:30px;
+}
+
 nav a{
-    margin-left:20px;
     text-decoration:none;
-    color:#374151;
+    color:#1f2937;
     font-weight:600;
 }
 
 .button-nav{
     background:#0f766e;
     color:white;
-    padding:10px 18px;
-    border-radius:8px;
     text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:bold;
 }
-    
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 25px;
+}
+
+.hero{
+    padding:20px 0 60px;
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:58px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    color:#4b5563;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+    display:block;
+}
+
+.button{
+    display:inline-block;
+    background:#0f766e;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.section{
+    background:white;
+    padding:40px;
+    border-radius:16px;
+    margin-bottom:25px;
+}
+
+.section h2{
+    color:#0f766e;
+    margin-bottom:20px;
+}
+
+.section p{
+    line-height:1.8;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:#f8fafc;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.footer{
+    background:#ffffff;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+    color:#6b7280;
+}
+
+@media(max-width:900px){
+
+.hero-content{
+    flex-direction:column-reverse;
+}
+
+.hero-text{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+nav{
+    display:none;
+}
+
+}
+
 </style>
 
 </head>
@@ -102,122 +188,146 @@ nav a{
 
 <header class="navbar">
 
-    <div class="logo-nav">
-
-    <img src="./logo-idb.png" alt="IDB" style="height:70px;">
-        
-    <span>Instituto Digital de Bienestar</span>
-
+<div class="logo-nav">
+<img src="./logo-idb.png" alt="IDB">
+<span>Instituto Digital de Bienestar</span>
 </div>
 
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#instituto">Instituto</a>
-        <a href="#bienestar">Bienestar</a>
-    </nav>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#instituto">Instituto</a>
+<a href="#bienestar">Bienestar</a>
+<a href="#recursos">Recursos</a>
+<a href="#contacto">Contacto</a>
+</nav>
 
-    <a class="button-nav" href="https://t.me/HolaVita_bot" target="_blank">
-        Hablar con VITA
-    </a>
+<a class="button-nav" href="#">
+Conversar</a>
 
 </header>
 
 <div class="container">
 
-<div class="hero">
+<section class="hero" id="inicio">
 
-<img src="./hero-idb.jpg" alt="Bienestar y calidad de vida" style="width:100%; border-radius:16px; margin-bottom:30px;">
+<div class="hero-content">
 
-<h1>Más bienestar para disfrutar lo que realmente importa</h1>
+<div class="hero-text">
+
+<h1>Bienestar para vivir mejor, cada día</h1>
 
 <p>
-Orientación y acompañamiento para ayudarte a construir hábitos que contribuyan a una mejor calidad de vida.
+Educación, prevención y orientación para ayudarte a construir hábitos que mejoren tu calidad de vida.
 </p>
 
 <a class="button" href="#">
-Hablar con VITA
+Conversar
 </a>
 
 </div>
 
-<div class="section" id="instituto">
+<div class="hero-image">
+
+<img src="./hero-idb.jpg" alt="Bienestar">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="instituto">
 
 <h2>¿Qué es el Instituto Digital de Bienestar?</h2>
 
 <p>
-El Instituto Digital de Bienestar promueve el bienestar, la prevención y una mejor calidad de vida mediante educación, orientación y herramientas digitales accesibles.
+Promovemos educación, prevención y bienestar mediante herramientas digitales que acercan información confiable y accesible para mejorar la calidad de vida de las personas y sus familias.
 </p>
 
-<p>
-Buscamos acercar información confiable que ayude a las personas a tomar decisiones que favorezcan su bienestar en cada etapa de la vida.
-</p>
+</section>
 
-</div>
-
-<div class="section" id="vita">
-
-<h2>Tu asistente de bienestar</h2>
-
-<img src="./vita.png" alt="VITA" style="width:180px; border-radius:50%; display:block; margin:10px auto;">
-
-<p style="text-align:center;">
-
-Estoy aquí para conversar contigo.
-
-Podemos hablar sobre hábitos saludables, bienestar, descanso, actividad física, prevención y calidad de vida.
-
-Cada persona es diferente y cada pequeño paso cuenta.
-
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="#">
-Hablar con VITA
-</a>
-</p>
-    
-</div>
-<div class="section" id="bienestar">
+<section class="section" id="bienestar">
 
 <h2>Áreas de Bienestar</h2>
 
-<p>
-Explora contenidos y recomendaciones diseñados para ayudarte a construir hábitos saludables y mejorar tu calidad de vida.
-</p>
+<div class="grid">
 
-<ul>
-<li>🍎 Nutrición</li>
-<li>🚶 Actividad Física</li>
-<li>😴 Sueño</li>
-<li>🛡️ Prevención</li>
-<li>🌿 Envejecimiento Saludable</li>
-</ul>
-    
+<div class="card">
+<h3>🍎 Nutrición</h3>
+<p>Alimentación saludable para todas las etapas de la vida.</p>
 </div>
 
-<div class="section" id="contacto">
+<div class="card">
+<h3>🚶 Actividad Física</h3>
+<p>Movimiento y hábitos para una vida activa.</p>
+</div>
 
-<h2>Estamos para acompañarte</h2>
+<div class="card">
+<h3>😴 Sueño</h3>
+<p>Descanso adecuado para una mejor calidad de vida.</p>
+</div>
 
-<p>
-Si deseas conversar, resolver una consulta o conocer más sobre el IDB, estaremos encantados de escucharte.
-</p>
+<div class="card">
+<h3>🛡️ Prevención</h3>
+<p>Información práctica para cuidar tu bienestar.</p>
+</div>
 
-<p>
-Sitio web: idb.org.pe
-</p>
-
-<p>
-WhatsApp: Próximamente
-</p>
-
+<div class="card">
+<h3>🌿 Envejecimiento Saludable</h3>
+<p>Bienestar y autonomía en cada etapa de la vida.</p>
 </div>
 
 </div>
 
-<div class="footer">
+</section>
+
+<section class="section" id="recursos">
+
+<h2>Recursos</h2>
+
+<p>
+Accede a contenidos educativos, recomendaciones prácticas y material de apoyo para fortalecer hábitos que contribuyan a una mejor calidad de vida.
+</p>
+
+</section>
+
+<section class="section" id="vita">
+
+<h2>Tu asistente de bienestar</h2>
+
+<div style="text-align:center;">
+
+<img src="./vita.png" alt="VITA" style="width:180px;border-radius:50%;margin-bottom:20px;">
+
+<p>
+VITA brinda orientación práctica y contenido educativo sobre hábitos saludables, prevención y bienestar de forma clara y accesible.
+</p>
+
+<br>
+
+<a class="button" href="#">
+Conversar con VITA
+</a>
+
+</div>
+
+</section>
+
+<section class="section" id="contacto">
+
+<h2>Contacto</h2>
+
+<p><strong>Sitio web:</strong> idb.org.pe</p>
+<p><strong>WhatsApp:</strong> Próximamente</p>
+<p><strong>Telegram:</strong> @IDBPeru</p>
+
+</section>
+
+</div>
+
+<footer class="footer">
 © 2026 Instituto Digital de Bienestar
-</div>
+</footer>
 
 </body>
 </html>
