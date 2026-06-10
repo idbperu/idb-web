@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recursos | Instituto Digital de Bienestar</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#ffffff;
+color:#1f2937;
+line-height:1.7;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 25px;
+}
+
+h1{
+font-size:48px;
+color:#0f766e;
+margin-bottom:20px;
+}
+
+.intro{
+font-size:20px;
+max-width:800px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(15,23,42,.08);
+padding:30px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h2{
+color:#0f766e;
+margin-bottom:12px;
+font-size:24px;
+}
+
+.card p{
+font-size:15px;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+@media(max-width:900px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+h1{
+font-size:36px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Biblioteca de Recursos</h1>
+
+<p class="intro">
+Accede a contenidos educativos y recursos desarrollados para promover hábitos saludables y una mejor calidad de vida.
+</p>
+
+<div class="grid">
+
+<a href="nutricion.html">
+<div class="card">
+<h2>Nutrición</h2>
+<p>Alimentación saludable y hábitos nutricionales.</p>
+</div>
+</a>
+
+<a href="actividad-fisica.html">
+<div class="card">
+<h2>Actividad Física</h2>
+<p>Movimiento y bienestar físico.</p>
+</div>
+</a>
+
+<a href="sueno.html">
+<div class="card">
+<h2>Sueño</h2>
+<p>Descanso y recuperación.</p>
+</div>
+</a>
+
+<a href="bienestar-emocional.html">
+<div class="card">
+<h2>Bienestar Emocional</h2>
+<p>Equilibrio y salud emocional.</p>
+</div>
+</a>
+
+<a href="prevencion.html">
+<div class="card">
+<h2>Prevención</h2>
+<p>Información para decisiones saludables.</p>
+</div>
+</a>
+
+<a href="envejecimiento-saludable.html">
+<div class="card">
+<h2>Envejecimiento Saludable</h2>
+<p>Autonomía y calidad de vida.</p>
+</div>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
