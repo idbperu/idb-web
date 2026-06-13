@@ -1,145 +1,54 @@
 # TAREAS CODEX - FASE 1
 
-## Objetivo
+OBJETIVO GENERAL
 
-Transformar la web actual del Instituto Digital de Bienestar (IDB) desde una estructura funcional básica hacia una experiencia institucional premium.
+Transformar el sitio web del Instituto Digital de Bienestar (IDB) desde una estructura básica informativa hacia una experiencia institucional moderna, profesional, accesible y visualmente sólida.
 
----
+PRIORIDAD 1
 
-## Prioridad 1
+Rediseñar completamente index.html.
 
-Rediseñar completamente:
+OBJETIVOS DEL REDISEÑO
 
-* index.html
+* Incrementar percepción institucional.
+* Mejorar experiencia de usuario.
+* Mejorar jerarquía visual.
+* Mejorar navegación.
+* Integrar VITA como asistente institucional.
+* Mejorar presentación de recursos.
+* Preparar arquitectura escalable.
 
-Manteniendo:
+ESTRUCTURA OBJETIVO
 
-* enlaces existentes
-* estructura de navegación
-* compatibilidad GitHub Pages
+1. Hero principal.
+2. Presentación institucional IDB.
+3. Beneficios de la prevención.
+4. Áreas de bienestar.
+5. Biblioteca de conocimiento.
+6. Recursos destacados.
+7. Sección VITA.
+8. Preguntas frecuentes.
+9. Llamado a la acción institucional.
+10. Footer ampliado.
 
----
+REQUISITOS VISUALES
 
-## Prioridad 2
+* Diseño limpio.
+* Estética institucional premium.
+* Apariencia moderna.
+* Responsive móvil.
+* Optimización para GitHub Pages.
+* Mantener colores institucionales actuales.
+* Mantener tipografía Inter.
 
-Crear sistema visual reutilizable.
+RESTRICCIONES
 
-Implementar:
+* No eliminar páginas existentes.
+* No modificar URLs existentes.
+* No romper navegación actual.
+* No introducir dependencias complejas.
+* Mantener HTML, CSS y JS livianos.
 
-* variables CSS globales
-* sistema de colores
-* sistema tipográfico
-* sistema de espaciado
-* componentes reutilizables
+ENTREGABLE
 
----
-
-## Prioridad 3
-
-Mejorar Home.
-
-Secciones:
-
-### Hero Premium
-
-Incluir:
-
-* imagen principal
-* mensaje institucional
-* CTA principal
-* CTA secundaria
-
----
-
-### Instituto
-
-Explicar:
-
-* misión
-* propósito
-* enfoque preventivo
-
----
-
-### Áreas de bienestar
-
-Mostrar:
-
-* Nutrición
-* Actividad Física
-* Sueño
-* Bienestar Emocional
-* Prevención
-* Envejecimiento Saludable
-
-Cards modernas.
-
----
-
-### Biblioteca de conocimiento
-
-Nueva sección.
-
-Objetivo:
-
-Mostrar recursos y contenidos disponibles.
-
----
-
-### VITA
-
-Mantener VITA como asistente institucional.
-
-No convertirla en protagonista principal.
-
----
-
-### Footer
-
-Rediseñar completamente.
-
-Agregar:
-
-* enlaces rápidos
-* acceso a recursos
-* acceso a VITA
-* información institucional
-
----
-
-## Prioridad 4
-
-Responsive.
-
-Optimizar:
-
-* móviles
-* tablets
-* escritorio
-
----
-
-## Prioridad 5
-
-Performance.
-
-Optimizar:
-
-* imágenes
-* CSS
-* accesibilidad
-* velocidad de carga
-
----
-
-## Entregable esperado
-
-Nuevo index.html profesional con apariencia:
-
-* HealthTech Premium
-* Wellness Premium
-* Institucional Moderna
-* Elegante
-* Escalable
-
-Sin modificar el contenido documental existente.
+Nueva versión completa de index.html lista para producción.
