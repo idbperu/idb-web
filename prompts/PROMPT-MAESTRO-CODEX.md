@@ -1,193 +1,73 @@
 # PROMPT MAESTRO CODEX
 
-## Instituto Digital de Bienestar (IDB)
+Actúa como un equipo multidisciplinario compuesto por:
 
-### Contexto del proyecto
+* Arquitecto UX/UI Senior.
+* Diseñador Web Institucional.
+* Especialista en Accesibilidad.
+* Especialista Frontend.
+* Consultor de Branding.
+* Especialista SEO Técnico.
 
-Estoy desarrollando la plataforma web del Instituto Digital de Bienestar (IDB).
+CONTEXTO
 
-Actualmente existe una estructura funcional en GitHub compuesta por:
+El proyecto corresponde al Instituto Digital de Bienestar (IDB).
 
-* index.html
-* nutricion.html
-* actividad-fisica.html
-* sueno.html
-* bienestar-emocional.html
-* prevencion.html
-* envejecimiento-saludable.html
-* recursos.html
-* vita.html
-* contacto.html
+IDB es una plataforma educativa enfocada en:
 
-Existe además una biblioteca documental organizada dentro de la carpeta:
+* Educación para la salud.
+* Prevención.
+* Bienestar integral.
+* Promoción de hábitos saludables.
+* Difusión de contenido basado en evidencia.
 
-content/
+OBJETIVO
 
-y una biblioteca de evidencia dentro de:
+Reconstruir completamente la página principal (index.html) elevando la calidad visual, experiencia de usuario y percepción institucional.
 
-content/evidence/
+ARCHIVOS DISPONIBLES
 
-El objetivo NO es crear una web médica.
+* PROJECT-BRIEF-CODEX.md
+* CHECKLIST-CODEX.md
+* TAREAS-CODEX-FASE-1.md
+* carpeta content/
+* carpeta evidence/
+* carpeta imagenes/
 
-El objetivo es construir una plataforma de educación, prevención y bienestar para adultos.
+REQUISITOS
 
----
+* Mantener HTML limpio.
+* Mantener CSS integrado.
+* Optimizar para GitHub Pages.
+* Diseño responsive.
+* Mantener tipografía Inter.
+* Mantener identidad visual verde institucional.
+* No romper enlaces existentes.
+* No eliminar páginas existentes.
 
-## Objetivo de diseño
+ESTRUCTURA DESEADA
 
-Reconstruir completamente la experiencia visual manteniendo la estructura del proyecto.
-
-La nueva web debe transmitir:
-
-* Confianza
-* Autoridad
-* Bienestar
-* Innovación
-* Cercanía
-* Profesionalismo
-
-Evitar apariencia de:
-
-* Hospital
-* Clínica
-* Seguro médico
-* Landing page básica
-* Blog genérico
-
-Inspiración:
-
-* HealthTech Premium
-* Mayo Clinic
-* Headspace
-* Calm
-* Modern Wellness Platforms
-
----
-
-## Identidad visual
-
-Paleta principal:
-
-* Verde bienestar
-* Tonos suaves y modernos
-* Blancos limpios
-* Grises elegantes
-
-Tipografía:
-
-* Inter
-* Espacios amplios
-* Diseño minimalista
-
-Estilo:
-
-* Premium
-* Editorial
-* Institucional moderno
-
----
-
-## Home
-
-Rediseñar completamente index.html
-
-Nueva estructura:
-
-1. Hero principal de alto impacto.
-2. Qué es IDB.
-3. Áreas de bienestar.
-4. Beneficios del bienestar preventivo.
+1. Hero institucional premium.
+2. Presentación del Instituto.
+3. Beneficios de la prevención.
+4. Áreas de bienestar.
 5. Biblioteca de conocimiento.
 6. Recursos destacados.
-7. Sección VITA.
-8. Preguntas frecuentes.
+7. Sección VITA como asistente institucional.
+8. Preguntas frecuentes destacadas.
 9. Llamado a la acción.
-10. Footer institucional avanzado.
+10. Footer institucional completo.
 
----
+VITA
 
-## VITA
+VITA NO debe presentarse como producto principal.
 
-VITA NO es el producto principal.
+Debe presentarse como:
 
-VITA es la asistente digital del Instituto.
+"Asistente Digital del Instituto Digital de Bienestar"
 
-Debe aparecer:
+La jerarquía visual principal siempre pertenece al IDB.
 
-* Botón destacado en el header.
-* Bloque institucional en Home.
-* Página propia.
+RESULTADO ESPERADO
 
-No debe dominar visualmente la marca IDB.
-
-Jerarquía:
-
-1. IDB
-2. Bienestar
-3. Recursos
-4. VITA
-
----
-
-## UX
-
-Implementar:
-
-* Responsive completo.
-* Mobile First.
-* Navegación moderna.
-* Scroll suave.
-* Cards premium.
-* Microinteracciones.
-* Hover states.
-* Mejor jerarquía visual.
-
----
-
-## SEO
-
-Mantener optimización SEO.
-
-Utilizar:
-
-* HTML semántico.
-* Encabezados estructurados.
-* Meta descriptions.
-* Open Graph.
-* Schema básico.
-
----
-
-## Contenido
-
-Utilizar la información disponible dentro de:
-
-content/
-
-como fuente principal.
-
-Utilizar:
-
-content/evidence/
-
-como respaldo conceptual.
-
----
-
-## Restricciones
-
-No usar frameworks pesados.
-
-Priorizar:
-
-* HTML
-* CSS moderno
-* JavaScript ligero
-
-Mantener compatibilidad con GitHub Pages.
-
----
-
-## Resultado esperado
-
-Una plataforma web institucional moderna, elegante, profesional y escalable que represente adecuadamente al Instituto Digital de Bienestar y permita futuras integraciones con VITA y módulos basados en evidencia.
+Entregar un index.html completo listo para producción, visualmente superior a la versión actual, manteniendo simplicidad técnica, velocidad y facilidad de mantenimiento.
