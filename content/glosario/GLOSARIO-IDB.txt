@@ -1,1 +1,61 @@
+GLOSARIO IDB
 
+Actividad física
+
+Cualquier movimiento corporal realizado por los músculos que produce gasto de energía y contribuye al mantenimiento de la salud y el bienestar.
+
+Alimentación saludable
+
+Patrón de alimentación equilibrado que aporta los nutrientes necesarios para el adecuado funcionamiento del organismo.
+
+Autocuidado
+
+Conjunto de acciones y decisiones que una persona adopta para proteger y mejorar su salud y bienestar.
+
+Bienestar
+
+Estado de equilibrio que integra aspectos físicos, emocionales, sociales y conductuales que contribuyen a una buena calidad de vida.
+
+Bienestar emocional
+
+Capacidad para reconocer, comprender y gestionar adecuadamente las emociones, favoreciendo relaciones saludables y adaptación a los cambios.
+
+Calidad de vida
+
+Percepción que tiene una persona sobre su bienestar general, considerando aspectos físicos, emocionales, sociales y ambientales.
+
+Envejecimiento saludable
+
+Proceso de optimización de oportunidades para mantener la salud, la autonomía y el bienestar durante el paso de los años.
+
+Estilo de vida saludable
+
+Conjunto de hábitos y comportamientos que favorecen la salud y reducen factores de riesgo para enfermedades.
+
+Hábitos saludables
+
+Conductas realizadas de manera regular que contribuyen al bienestar físico, emocional y social.
+
+Prevención en salud
+
+Acciones orientadas a reducir riesgos y proteger la salud antes de que aparezcan enfermedades o complicaciones.
+
+Promoción de la salud
+
+Proceso que permite a las personas aumentar el control sobre su salud y mejorar su bienestar.
+
+Resiliencia
+
+Capacidad para afrontar situaciones difíciles, adaptarse a los cambios y recuperarse de experiencias adversas.
+
+Salud integral
+
+Concepto que entiende la salud como un estado de bienestar físico, emocional y social, más allá de la ausencia de enfermedad.
+
+Sueño saludable
+
+Descanso suficiente y de calidad que favorece la recuperación física, mental y emocional.
+
+VITA
+
+Asistente digital de bienestar del Instituto Digital de Bienestar, diseñada para facilitar el acceso a información, orientación y recursos educativos relacionados con salud, prevención y bienestar.
