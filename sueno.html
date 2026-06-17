@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sueño | Instituto Digital de Bienestar</title>
+  <meta name="description" content="Página educativa del Instituto Digital de Bienestar sobre sueño saludable, higiene del sueño, rutinas nocturnas, factores que afectan el descanso y señales de alerta.">
+  <style>
+    :root {
+      --green: #1f8f73;
+      --green-dark: #176c59;
+      --green-soft: #e8f5f0;
+      --teal: #1da7b2;
+      --blue: #206f9f;
+      --lime: #8cc63f;
+      --ink: #16312d;
+      --muted: #65756f;
+      --line: #dfe8e4;
+      --paper: #ffffff;
+      --mist: #f6faf8;
+      --shadow: 0 18px 45px rgba(22, 49, 45, 0.13);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: 78px;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid rgba(223, 232, 228, 0.9);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      width: min(var(--max), calc(100% - 40px));
+      height: 78px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(300px, 1fr) auto minmax(120px, 1fr);
+      align-items: center;
+      gap: 28px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      justify-self: start;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+    .brand-logo {
+      display: block;
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+    .brand-text {
+      display: grid;
+      gap: 2px;
+      line-height: 1.08;
+    }
+    .brand-text strong { font-size: 1.12rem; }
+    .brand-text span {
+      font-size: 0.86rem;
+      color: var(--muted);
+      font-weight: 760;
+    }
+    .nav {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: #2c4a45;
+      font-size: 0.95rem;
+      font-weight: 650;
+    }
+    .nav a {
+      position: relative;
+      padding: 28px 0;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 21px;
+      height: 2px;
+      background: var(--green);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+    .nav a:hover::after, .nav a[aria-current="page"]::after { transform: scaleX(1); }
+    .vita-button {
+      justify-self: end;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 16px;
+      border: 1px solid rgba(31, 143, 115, 0.26);
+      border-radius: 999px;
+      color: var(--green-dark);
+      background: var(--green-soft);
+      font-size: 0.92rem;
+      font-weight: 760;
+    }
+
+    .hero {
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(16, 43, 38, 0.94), rgba(31, 143, 115, 0.88)),
+        radial-gradient(circle at 78% 24%, rgba(141, 198, 63, 0.34), transparent 28%),
+        radial-gradient(circle at 12% 86%, rgba(29, 167, 178, 0.28), transparent 30%);
+    }
+    .hero-inner {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 520px;
+      margin: 0 auto;
+      padding: 82px 0 70px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+      align-items: center;
+      gap: 56px;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--lime);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 820px;
+      font-size: clamp(2.45rem, 5vw, 4.8rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .hero p {
+      margin: 22px 0 0;
+      max-width: 690px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: clamp(1.02rem, 1.5vw, 1.22rem);
+    }
+    .hero-media {
+      min-height: 360px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(232, 245, 240, 0.16), rgba(255, 255, 255, 0.08));
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+    }
+    .hero-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .section { padding: 92px 0; }
+    .section-soft { background: var(--mist); }
+    .section-head { margin-bottom: 34px; }
+    .section-head h2 {
+      margin: 0;
+      max-width: 800px;
+      font-size: clamp(1.9rem, 3vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .section-head p {
+      margin: 16px 0 0;
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 42px;
+      align-items: start;
+    }
+    .info-panel {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .info-panel h3 {
+      margin: 0 0 12px;
+      font-size: 1.3rem;
+    }
+    .info-panel p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .principles {
+      display: grid;
+      gap: 14px;
+    }
+    .principle {
+      padding: 18px 20px;
+      border-left: 4px solid var(--green);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+    }
+    .principle strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--green-dark);
+    }
+    .principle span { color: var(--muted); }
+
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .topic-card, .article-card, .recommendation {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+    }
+    .topic-card {
+      min-height: 230px;
+      padding: 24px;
+    }
+    .card-number {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--green-dark);
+      background: var(--green-soft);
+      font-weight: 900;
+    }
+    .topic-card h3, .article-card h3, .recommendation h3 {
+      margin: 0 0 10px;
+      font-size: 1.14rem;
+      line-height: 1.22;
+    }
+    .topic-card p, .article-card p, .recommendation p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .article-card {
+      min-height: 228px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 22px;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+    .article-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(31, 143, 115, 0.38);
+      box-shadow: 0 22px 42px rgba(22, 49, 45, 0.13);
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--green-dark);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .article-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--teal));
+    }
+    .article-link {
+      margin-top: 22px;
+      color: var(--green-dark);
+      font-weight: 850;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.05);
+    }
+    summary {
+      cursor: pointer;
+      padding: 20px 24px;
+      color: var(--ink);
+      font-weight: 800;
+    }
+    details p {
+      margin: 0;
+      padding: 0 24px 22px;
+      color: var(--muted);
+    }
+
+    .recommendations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .recommendation {
+      min-height: 178px;
+      padding: 24px;
+      border-top: 5px solid var(--green);
+    }
+
+    .references {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .references li {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      color: var(--muted);
+    }
+    .references strong { color: var(--ink); }
+
+    .cta {
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(23, 108, 89, 0.96), rgba(31, 143, 115, 0.94)),
+        radial-gradient(circle at 16% 22%, rgba(255, 255, 255, 0.22), transparent 28%);
+    }
+    .cta-inner {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 270px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 34px;
+    }
+    .cta h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    .cta p {
+      margin: 16px 0 0;
+      max-width: 650px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 1.06rem;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: transform 180ms ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-light {
+      color: var(--green-dark);
+      background: #fff;
+      box-shadow: 0 18px 32px rgba(0, 0, 0, 0.16);
+    }
+
+    .site-footer {
+      color: rgba(255, 255, 255, 0.82);
+      background: #102b26;
+    }
+    .footer-main {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 64px 0 46px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 34px;
+    }
+    .footer-col h3 {
+      margin: 0 0 18px;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .footer-col a, .footer-col span {
+      display: block;
+      margin: 9px 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.95rem;
+    }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.12); }
+    .footer-bottom-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.94rem;
+    }
+    .socials {
+      display: flex;
+      gap: 18px;
+      font-weight: 750;
+    }
+
+    @media (max-width: 1080px) {
+      .articles-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 980px) {
+      .site-header, .header-inner { height: auto; }
+      .header-inner {
+        min-height: 78px;
+        grid-template-columns: 1fr auto;
+        padding: 10px 0;
+      }
+      .nav {
+        order: 3;
+        grid-column: 1 / -1;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        overflow-x: auto;
+      }
+      .nav a {
+        padding: 8px 0 12px;
+        white-space: nowrap;
+      }
+      .nav a::after { bottom: 4px; }
+      .hero-inner, .two-col, .cta-inner { grid-template-columns: 1fr; }
+      .hero-media { max-width: 520px; }
+      .topics-grid, .recommendations-grid, .footer-main { grid-template-columns: repeat(2, 1fr); }
+      .articles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cta-inner { padding: 58px 0; }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner, .hero-inner, .wrap, .cta-inner, .footer-main, .footer-bottom-inner {
+        width: min(100% - 28px, var(--max));
+      }
+      .brand-text span { font-size: 0.76rem; }
+      .vita-button {
+        min-height: 36px;
+        padding: 0 12px;
+        font-size: 0.84rem;
+      }
+      .nav { justify-content: flex-start; }
+      .hero-inner {
+        min-height: 390px;
+        padding: 62px 0;
+      }
+      .hero-media, .hero-media img { min-height: 300px; }
+      .section { padding: 68px 0; }
+      .topics-grid, .articles-grid, .recommendations-grid, .footer-main { grid-template-columns: 1fr; }
+      .topic-card, .article-card, .recommendation { min-height: auto; }
+      .footer-bottom-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 22px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" class="brand-logo">
+        <span class="brand-text">
+          <strong>IDB</strong>
+          <span>Instituto Digital de Bienestar</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#instituto">Instituto</a>
+        <a href="index.html#bienestar">Bienestar</a>
+        <a href="biblioteca.html" aria-current="page">Recursos</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <a class="vita-button" href="index.html#vita">VITA</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">Sueño</p>
+          <h1>Descansar bien es parte esencial del bienestar y la prevención</h1>
+          <p>El sueño saludable favorece la recuperación, la atención, el estado de ánimo y la capacidad de afrontar las actividades cotidianas. Comprenderlo ayuda a construir rutinas de descanso más consistentes.</p>
+        </div>
+        <figure class="hero-media" aria-label="Imagen institucional sobre descanso y bienestar">
+          <img src="Vita Digital.png" alt="Orientación institucional sobre sueño saludable">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="intro-title">
+      <div class="wrap two-col">
+        <div class="section-head">
+          <p class="eyebrow">Introducción</p>
+          <h2 id="intro-title">Qué significa tener un sueño saludable</h2>
+          <p>El sueño saludable combina duración suficiente, continuidad, horarios relativamente regulares y una sensación de recuperación al despertar. Las necesidades pueden variar según la edad, el contexto y las características personales.</p>
+        </div>
+        <div class="principles">
+          <div class="principle"><strong>Recuperación</strong><span>Durante el descanso ocurren procesos importantes para la memoria, la regulación emocional y la recuperación física.</span></div>
+          <div class="principle"><strong>Regularidad</strong><span>Mantener horarios relativamente estables ayuda al organismo a anticipar los momentos de actividad y reposo.</span></div>
+          <div class="principle"><strong>Calidad</strong><span>No solo importa el número de horas; también cuentan la continuidad del sueño y cómo se siente la persona al despertar.</span></div>
+          <div class="principle"><strong>Contexto personal</strong><span>La edad, las responsabilidades, el ambiente, los hábitos y el estado general influyen en el descanso.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="factores-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Factores cotidianos</p>
+          <h2 id="factores-title">Factores que pueden afectar el sueño</h2>
+          <p>El descanso puede cambiar por múltiples razones. Observar el contexto completo permite reconocer patrones sin asumir diagnósticos ni conclusiones apresuradas.</p>
+        </div>
+        <div class="topics-grid">
+          <article class="topic-card"><div class="card-number">01</div><h3>Horarios irregulares</h3><p>Variaciones frecuentes en la hora de dormir y despertar pueden dificultar una rutina de descanso estable.</p></article>
+          <article class="topic-card"><div class="card-number">02</div><h3>Luz y pantallas</h3><p>La exposición nocturna a luz intensa y contenido estimulante puede retrasar la preparación para dormir.</p></article>
+          <article class="topic-card"><div class="card-number">03</div><h3>Estrés y preocupaciones</h3><p>La activación mental y emocional puede hacer más difícil desconectarse al final del día.</p></article>
+          <article class="topic-card"><div class="card-number">04</div><h3>Ambiente de descanso</h3><p>Ruido, temperatura, iluminación y comodidad influyen en la continuidad y percepción del sueño.</p></article>
+          <article class="topic-card"><div class="card-number">05</div><h3>Actividad y alimentación</h3><p>Los horarios de ejercicio, comidas y bebidas estimulantes pueden relacionarse con la preparación nocturna.</p></article>
+          <article class="topic-card"><div class="card-number">06</div><h3>Cambios de rutina</h3><p>Viajes, turnos laborales, responsabilidades familiares y etapas de vida pueden modificar el descanso.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="higiene-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Higiene del sueño</p>
+          <h2 id="higiene-title">Condiciones que favorecen un descanso más consistente</h2>
+          <p>La higiene del sueño reúne hábitos y condiciones ambientales que ayudan a preparar el cuerpo y la mente para descansar. Son orientaciones generales y flexibles.</p>
+        </div>
+        <div class="recommendations-grid">
+          <article class="recommendation"><h3>Horario relativamente estable</h3><p>Acostarse y levantarse en horarios similares puede reforzar una señal cotidiana de descanso.</p></article>
+          <article class="recommendation"><h3>Ambiente tranquilo</h3><p>Reducir luz, ruido y temperaturas incómodas ayuda a crear un espacio asociado con dormir.</p></article>
+          <article class="recommendation"><h3>Transición gradual</h3><p>Disminuir actividades exigentes antes de acostarse facilita pasar de la actividad al reposo.</p></article>
+          <article class="recommendation"><h3>Uso consciente de pantallas</h3><p>Reservar un periodo sin pantallas o con menor estimulación puede apoyar la preparación nocturna.</p></article>
+          <article class="recommendation"><h3>Movimiento durante el día</h3><p>La actividad física regular puede contribuir al bienestar y a una rutina diaria más estructurada.</p></article>
+          <article class="recommendation"><h3>Registro de patrones</h3><p>Anotar horarios y sensaciones al despertar ayuda a identificar tendencias sin obsesionarse con cada noche.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="rutinas-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Rutinas nocturnas</p>
+          <h2 id="rutinas-title">Una secuencia sencilla para cerrar el día</h2>
+          <p>Una rutina nocturna no necesita ser perfecta ni extensa. Lo importante es que sea repetible, calmada y compatible con la realidad cotidiana.</p>
+        </div>
+        <div class="topics-grid">
+          <article class="topic-card"><div class="card-number">01</div><h3>Anticipar el cierre</h3><p>Definir una hora aproximada para terminar pendientes evita prolongar indefinidamente la actividad.</p></article>
+          <article class="topic-card"><div class="card-number">02</div><h3>Bajar el ritmo</h3><p>Elegir actividades tranquilas como lectura ligera, música suave o conversación serena.</p></article>
+          <article class="topic-card"><div class="card-number">03</div><h3>Preparar el entorno</h3><p>Ajustar iluminación, temperatura y elementos necesarios reduce interrupciones posteriores.</p></article>
+          <article class="topic-card"><div class="card-number">04</div><h3>Organizar el día siguiente</h3><p>Anotar pendientes puede disminuir la necesidad de repasarlos mentalmente al acostarse.</p></article>
+          <article class="topic-card"><div class="card-number">05</div><h3>Practicar una pausa</h3><p>Una respiración tranquila o una breve revisión del día puede marcar la transición al descanso.</p></article>
+          <article class="topic-card"><div class="card-number">06</div><h3>Repetir sin rigidez</h3><p>La constancia importa más que cumplir una rutina exacta todas las noches.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="alertas-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Observación preventiva</p>
+          <h2 id="alertas-title">Señales de alerta relacionadas con el sueño</h2>
+          <p>Estas señales no representan un diagnóstico. Conviene buscar orientación profesional cuando son persistentes, afectan la vida cotidiana o generan preocupación.</p>
+        </div>
+        <div class="recommendations-grid">
+          <article class="recommendation"><h3>Dificultad persistente para dormir</h3><p>Problemas frecuentes para iniciar o mantener el sueño durante un periodo prolongado.</p></article>
+          <article class="recommendation"><h3>Somnolencia durante el día</h3><p>Sueño intenso que interfiere con trabajo, estudio, conducción u otras actividades habituales.</p></article>
+          <article class="recommendation"><h3>Pausas respiratorias observadas</h3><p>Interrupciones de la respiración, jadeos o ronquidos intensos comentados por otra persona.</p></article>
+          <article class="recommendation"><h3>Despertares con malestar</h3><p>Despertar de forma reiterada con sensación de ahogo, dolor o una preocupación importante.</p></article>
+          <article class="recommendation"><h3>Cambios marcados de conducta</h3><p>Movimientos, confusión o episodios nocturnos que representen riesgo de caídas o lesiones.</p></article>
+          <article class="recommendation"><h3>Impacto sostenido en el bienestar</h3><p>Irritabilidad, concentración baja o fatiga que afectan de manera continua la rutina.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="articulos-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Artículos destacados</p>
+          <h2 id="articulos-title">Lecturas educativas sobre sueño</h2>
+          <p>Doce contenidos para comprender el descanso, revisar hábitos y preparar conversaciones informadas sobre bienestar.</p>
+        </div>
+        <div class="articles-grid">
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Conceptos</div><h3>Qué ocurre mientras dormimos</h3><p>Una introducción a las funciones de recuperación asociadas con el sueño.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Rutina</div><h3>Cómo establecer un horario de descanso</h3><p>Ideas para construir regularidad sin convertirla en una regla rígida.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Ambiente</div><h3>Luz, ruido y temperatura</h3><p>Cómo el entorno puede facilitar o interrumpir una noche de descanso.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Tecnología</div><h3>Pantallas antes de dormir</h3><p>Una mirada práctica a la estimulación digital durante la noche.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Bienestar</div><h3>Sueño, energía y concentración</h3><p>Relaciones cotidianas entre descanso, atención y desempeño.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Emociones</div><h3>Estrés y descanso nocturno</h3><p>Por qué las preocupaciones pueden acompañarnos hasta la cama.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Registro</div><h3>Cómo llevar un diario de sueño</h3><p>Una herramienta sencilla para observar horarios y sensaciones.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Hábitos</div><h3>Actividad física y descanso</h3><p>Cómo el movimiento diario puede integrarse a una rutina equilibrada.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Organización</div><h3>Turnos, viajes y cambios de horario</h3><p>Estrategias educativas para comprender ajustes temporales del sueño.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Familia</div><h3>Rutinas de descanso compartidas</h3><p>Acuerdos domésticos que pueden favorecer ambientes más tranquilos.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Prevención</div><h3>Cuándo consultar por el sueño</h3><p>Señales que justifican una conversación con un profesional.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Autocuidado</div><h3>Descansar sin buscar perfección</h3><p>Cómo evitar que la preocupación por dormir empeore la experiencia.</p></div><a class="article-link" href="sueno.html">Leer artículo</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2 id="faq-title">Dudas comunes sobre el sueño saludable</h2>
+        </div>
+        <div class="faq">
+          <details><summary>¿Todas las personas necesitan dormir la misma cantidad?</summary><p>No. Las necesidades cambian según edad, etapa de vida y características personales. También importa la calidad y cómo se siente la persona durante el día.</p></details>
+          <details><summary>¿Una mala noche significa que existe un problema?</summary><p>No necesariamente. Las variaciones ocasionales son comunes. Conviene observar patrones persistentes y su impacto en la vida cotidiana.</p></details>
+          <details><summary>¿Las siestas siempre afectan el sueño nocturno?</summary><p>Depende de su duración, horario y de las necesidades personales. Observar cómo influyen en el descanso nocturno puede ser útil.</p></details>
+          <details><summary>¿Usar el teléfono antes de dormir es la única causa de dormir mal?</summary><p>No. El sueño depende de múltiples factores, como horarios, estrés, ambiente, hábitos y condiciones individuales.</p></details>
+          <details><summary>¿Cuándo conviene buscar orientación profesional?</summary><p>Cuando las dificultades son persistentes, afectan las actividades diarias, implican riesgos o generan preocupación significativa.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="recomendaciones-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Recomendaciones generales</p>
+          <h2 id="recomendaciones-title">Orientaciones educativas para cuidar el descanso</h2>
+          <p>Estas recomendaciones son generales y no sustituyen una evaluación individual. Los cambios graduales suelen ser más sostenibles que intentar transformar toda la rutina de una vez.</p>
+        </div>
+        <div class="recommendations-grid">
+          <article class="recommendation"><h3>Elige un cambio posible</h3><p>Empieza por una acción concreta, como ajustar la hora de desconexión nocturna.</p></article>
+          <article class="recommendation"><h3>Observa tendencias</h3><p>Valora el descanso a lo largo de varios días en lugar de juzgar una sola noche.</p></article>
+          <article class="recommendation"><h3>Cuida la regularidad</h3><p>Busca horarios relativamente consistentes que funcionen con tus responsabilidades.</p></article>
+          <article class="recommendation"><h3>Reduce la estimulación</h3><p>Reserva los minutos previos al sueño para actividades menos intensas.</p></article>
+          <article class="recommendation"><h3>Evita soluciones extremas</h3><p>Desconfía de promesas rápidas y de prácticas que no consideren tu contexto.</p></article>
+          <article class="recommendation"><h3>Consulta fuentes confiables</h3><p>Busca información institucional y orientación profesional cuando existan dudas específicas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="fuentes-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Fuentes científicas</p>
+          <h2 id="fuentes-title">Referencias para educación sobre el sueño</h2>
+          <p>El contenido tiene fines educativos generales y debe complementarse con orientación profesional cuando existan dificultades persistentes o necesidades individuales.</p>
+        </div>
+        <ul class="references">
+          <li><strong>OMS.</strong> Información sobre salud, bienestar, descanso y factores relacionados con estilos de vida saludables.</li>
+          <li><strong>NIH.</strong> Recursos del National Heart, Lung, and Blood Institute sobre sueño saludable, privación de sueño y hábitos de descanso.</li>
+          <li><strong>National Sleep Foundation.</strong> Material educativo sobre duración del sueño, ambiente, rutinas y bienestar cotidiano.</li>
+          <li><strong>MedlinePlus.</strong> Información para pacientes sobre sueño saludable, dificultades para dormir y preparación para consultas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-inner">
+        <div>
+          <h2>Consulta más recursos en Biblioteca IDB</h2>
+          <p>Explora contenidos educativos sobre prevención, nutrición, actividad física, bienestar emocional y envejecimiento saludable.</p>
+        </div>
+        <a class="button button-light" href="biblioteca.html">Ir a Biblioteca IDB</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-col">
+        <h3>Instituto</h3>
+        <a href="index.html#instituto">Sobre el IDB</a>
+        <a href="index.html#beneficios-title">Bienestar preventivo</a>
+        <a href="index.html#contacto">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h3>Bienestar</h3>
+        <a href="nutricion.html">Nutrición</a>
+        <a href="actividad-fisica.html">Actividad Física</a>
+        <a href="sueno.html">Sueño</a>
+        <a href="bienestar-emocional.html">Bienestar Emocional</a>
+      </div>
+      <div class="footer-col">
+        <h3>Recursos</h3>
+        <a href="biblioteca.html">Biblioteca Digital</a>
+        <a href="prevencion.html">Prevención</a>
+        <a href="envejecimiento-saludable.html">Envejecimiento Saludable</a>
+      </div>
+      <div class="footer-col">
+        <h3>VITA</h3>
+        <a href="index.html#vita">Asistente Digital</a>
+        <span>Orientación permanente</span>
+        <span>Información confiable</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          <strong>Instituto Digital de Bienestar</strong><br>
+          www.idb.org.pe · © 2026
+        </div>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+          <a href="https://x.com/" aria-label="X">X</a>
+          <a href="https://www.youtube.com/" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
