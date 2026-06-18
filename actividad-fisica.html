@@ -119,12 +119,15 @@
       font-weight: 760;
     }
 
-    .hero {
-      color: #fff;
-      background:
-        linear-gradient(135deg, rgba(16, 43, 38, 0.94), rgba(31, 143, 115, 0.88)),
-        radial-gradient(circle at 78% 24%, rgba(141, 198, 63, 0.34), transparent 28%),
-        radial-gradient(circle at 12% 86%, rgba(29, 167, 178, 0.28), transparent 30%);
+    .hero{
+    position:relative;
+    color:#fff;
+    background:
+    linear-gradient(rgba(16,43,38,.65),rgba(16,43,38,.65)),
+    url('./imagenes/actividad-fisica-idb.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
     }
     .hero-inner {
       width: min(var(--max), calc(100% - 40px));
