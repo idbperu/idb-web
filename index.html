@@ -250,11 +250,11 @@
       color: var(--muted);
       font-size: 0.96rem;
     }
-    .split {
-    display: grid;
-    grid-template-columns: 52fr 48fr;
-    gap: 20px;
-    align-items: center;
+    .split{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:48px;
+    align-items:center;
     }
     .split-reverse { grid-template-columns: 45fr 55fr; }
     .library .media{
