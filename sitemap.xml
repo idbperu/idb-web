@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://idb.org.pe/</loc>
+  </url>
+
+  <url>
+    <loc>https://idb.org.pe/biblioteca.html</loc>
+  </url>
+
+  <url>
+    <loc>https://idb.org.pe/nutricion.html</loc>
+  </url>
+
+  <url>
+    <loc>https://idb.org.pe/actividad-fisica.html</loc>
+  </url>
+
+  <url>
+    <loc>https://idb.org.pe/sueno.html</loc>
+  </url>
+
+  <url>
+    <loc>https://idb.org.pe/bienestar-emocional.html</loc>
+  </url>
+
+  <url>
+    <loc>https://idb.org.pe/prevencion.html</loc>
+  </url>
+
+  <url>
+    <loc>https://idb.org.pe/envejecimiento-saludable.html</loc>
+  </url>
+
+</urlset>
