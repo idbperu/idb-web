@@ -671,31 +671,65 @@
 document.querySelector('.search-form').addEventListener('submit', function(e){
 e.preventDefault();
 
-const q = document.querySelector('.search-field').value.toLowerCase().trim();
+const texto = document.querySelector('.search-field')
+.value
+.toLowerCase()
+.normalize("NFD")
+.replace(/[\u0300-\u036f]/g,"")
+.trim();
 
-if(q.includes('nutric')){
+if(
+texto.includes('nutric') ||
+texto.includes('aliment') ||
+texto.includes('comida')
+){
 window.location.href='nutricion.html';
 }
-else if(q.includes('actividad') || q.includes('ejercicio') || q.includes('fisica')){
+else if(
+texto.includes('actividad') ||
+texto.includes('ejercicio') ||
+texto.includes('fisica') ||
+texto.includes('deporte') ||
+texto.includes('caminar')
+){
 window.location.href='actividad-fisica.html';
 }
-else if(q.includes('sueño') || q.includes('sueno') || q.includes('dormir')){
+else if(
+texto.includes('sueno') ||
+texto.includes('dormir') ||
+texto.includes('descanso')
+){
 window.location.href='sueno.html';
 }
-else if(q.includes('emocional') || q.includes('mental') || q.includes('estres')){
+else if(
+texto.includes('emocional') ||
+texto.includes('mental') ||
+texto.includes('estres') ||
+texto.includes('ansiedad') ||
+texto.includes('animo')
+){
 window.location.href='bienestar-emocional.html';
 }
-else if(q.includes('prevencion') || q.includes('prevención')){
+else if(
+texto.includes('prevencion') ||
+texto.includes('prevenir') ||
+texto.includes('cuidado')
+){
 window.location.href='prevencion.html';
 }
-else if(q.includes('envejec')){
+else if(
+texto.includes('envejec') ||
+texto.includes('adulto mayor') ||
+texto.includes('longevidad')
+){
 window.location.href='envejecimiento-saludable.html';
 }
 else{
-alert('No se encontraron resultados.');
+alert('No se encontraron resultados relacionados.');
 }
 });
 </script>
+
   
 </body>
 </html>
