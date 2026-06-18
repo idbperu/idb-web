@@ -667,5 +667,35 @@
       </div>
     </div>
   </footer>
+  <script>
+document.querySelector('.search-form').addEventListener('submit', function(e){
+e.preventDefault();
+
+const q = document.querySelector('.search-field').value.toLowerCase().trim();
+
+if(q.includes('nutric')){
+window.location.href='nutricion.html';
+}
+else if(q.includes('actividad') || q.includes('ejercicio') || q.includes('fisica')){
+window.location.href='actividad-fisica.html';
+}
+else if(q.includes('sueño') || q.includes('sueno') || q.includes('dormir')){
+window.location.href='sueno.html';
+}
+else if(q.includes('emocional') || q.includes('mental') || q.includes('estres')){
+window.location.href='bienestar-emocional.html';
+}
+else if(q.includes('prevencion') || q.includes('prevención')){
+window.location.href='prevencion.html';
+}
+else if(q.includes('envejec')){
+window.location.href='envejecimiento-saludable.html';
+}
+else{
+alert('No se encontraron resultados.');
+}
+});
+</script>
+  
 </body>
 </html>
