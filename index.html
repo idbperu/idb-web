@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto Digital de Bienestar | Educación, prevención y calidad de vida</title>
+  <meta name="description" content="Orientación, educación y recursos prácticos para construir hábitos que contribuyan a una mejor calidad de vida.">
+  <meta property="og:title" content="Instituto Digital de Bienestar">
+  <meta property="og:description" content="Más bienestar para disfrutar lo que realmente importa.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://idb.org.pe/imagenes/hero-idb.jpg">
+  <meta property="og:url" content="https://idb.org.pe/">
+
+  <style>
+    :root {
+      --green: #1f8f73;
+      --green-dark: #176c59;
+      --green-soft: #e8f5f0;
+      --teal: #1da7b2;
+      --blue: #206f9f;
+      --lime: #8cc63f;
+      --ink: #16312d;
+      --muted: #65756f;
+      --line: #dfe8e4;
+      --paper: #ffffff;
+      --mist: #f6faf8;
+      --shadow: 0 18px 45px rgba(22, 49, 45, 0.13);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button, input { font: inherit; }
+    section[id] { scroll-margin-top: 110px; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: 78px;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid rgba(223, 232, 228, 0.9);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      width: min(var(--max), calc(100% - 40px));
+      height: 78px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(300px, 1fr) auto minmax(120px, 1fr);
+      align-items: center;
+      gap: 28px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      justify-self: start;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+    .brand-logo {
+      width: 72px;
+      height: auto;
+      display: block;
+    }
+    .brand-text {
+      display: grid;
+      gap: 2px;
+      line-height: 1.08;
+    }
+    .brand-text strong { font-size: 1.12rem; }
+    .brand-text span {
+      font-size: 0.86rem;
+      color: var(--muted);
+      font-weight: 760;
+    }
+    .nav {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: #2c4a45;
+      font-size: 0.95rem;
+      font-weight: 650;
+    }
+    .nav a {
+      position: relative;
+      padding: 28px 0;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 21px;
+      height: 2px;
+      background: var(--green);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+    .nav a:hover::after,
+    .nav a[aria-current="page"]::after { transform: scaleX(1); }
+    .vita-button {
+      justify-self: end;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 16px;
+      border: 1px solid rgba(31, 143, 115, 0.26);
+      border-radius: 999px;
+      color: var(--green-dark);
+      background: var(--green-soft);
+      font-size: 0.92rem;
+      font-weight: 760;
+      box-shadow: none;
+    }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      min-height: 650px;
+      color: #fff;
+      overflow: hidden;
+      background: #173d35;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background: url("./imagenes/hero-idb.jpg") center center / cover no-repeat;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(90deg, rgba(10, 34, 29, 0.91) 0%, rgba(15, 54, 45, 0.82) 36%, rgba(15, 54, 45, 0.28) 67%, rgba(15, 54, 45, 0.08) 100%),
+        linear-gradient(0deg, rgba(10, 30, 26, 0.28), transparent 45%);
+    }
+    .hero-inner {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 650px;
+      margin: 0 auto;
+      padding: 100px 0 88px;
+      display: flex;
+      align-items: center;
+    }
+    .hero-copy { max-width: 700px; }
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--lime);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 700px;
+      font-size: clamp(2.7rem, 5.4vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+    .hero-copy > p:not(.eyebrow) {
+      margin: 24px 0 0;
+      max-width: 620px;
+      color: rgba(255, 255, 255, 0.87);
+      font-size: clamp(1.04rem, 1.5vw, 1.22rem);
+    }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 800;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-green {
+      color: #fff;
+      background: var(--green);
+      box-shadow: 0 16px 28px rgba(31, 143, 115, 0.24);
+    }
+    .button-light {
+      color: var(--green-dark);
+      background: #fff;
+      box-shadow: 0 18px 32px rgba(0, 0, 0, 0.16);
+    }
+    .button-outline {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+    }
+    .button-outline:hover { background: rgba(255, 255, 255, 0.16); }
+
+    .trust-band {
+      position: relative;
+      z-index: 3;
+      width: min(var(--max), calc(100% - 40px));
+      margin: -38px auto 0;
+      padding: 22px 26px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+    .trust-mark {
+      width: 11px;
+      height: 11px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--teal));
+      box-shadow: 0 0 0 7px var(--green-soft);
+    }
+    .trust-item strong {
+      display: block;
+      font-size: 0.98rem;
+    }
+    .trust-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.87rem;
+    }
+
+    .section {
+      padding: 104px 0;
+      background: var(--paper);
+    }
+    .section-mist { background: var(--mist); }
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 28px;
+      margin-bottom: 42px;
+    }
+    .section-head h2,
+    .editorial-copy h2,
+    .vita-copy h2 {
+      margin: 0;
+      max-width: 740px;
+      font-size: clamp(2rem, 3.5vw, 3.35rem);
+      line-height: 1.06;
+      letter-spacing: -0.015em;
+      text-wrap: balance;
+    }
+    .section-head p {
+      margin: 0;
+      max-width: 430px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+    .section-kicker {
+      margin: 0 0 11px;
+      color: var(--green-dark);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .article-card {
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+    .article-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(31, 143, 115, 0.38);
+      box-shadow: 0 22px 42px rgba(22, 49, 45, 0.13);
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+      color: var(--green-dark);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .article-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--teal));
+    }
+    .article-card h3 {
+      margin: 0 0 11px;
+      font-size: 1.17rem;
+      line-height: 1.22;
+    }
+    .article-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+    .article-link {
+      margin-top: 24px;
+      color: var(--green-dark);
+      font-weight: 850;
+    }
+
+    .editorial {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+      gap: 68px;
+      align-items: center;
+    }
+    .editorial-image {
+      position: relative;
+      min-height: 480px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      background: var(--green-soft);
+    }
+    .editorial-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 480px;
+      object-fit: cover;
+    }
+    .editorial-image::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 38%;
+      background: linear-gradient(transparent, rgba(16, 43, 38, 0.44));
+      pointer-events: none;
+    }
+    .editorial-copy > p:not(.section-kicker) {
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+    .principles {
+      display: grid;
+      gap: 0;
+      margin-top: 34px;
+      border-top: 1px solid var(--line);
+    }
+    .principle {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 14px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .principle span {
+      color: var(--green);
+      font-weight: 850;
+    }
+    .principle strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+    .principle small {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .area-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .area-card {
+      position: relative;
+      min-height: 380px;
+      display: flex;
+      align-items: end;
+      overflow: hidden;
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--green-dark);
+      box-shadow: 0 12px 34px rgba(22, 49, 45, 0.12);
+      isolation: isolate;
+    }
+    .area-card img {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 500ms ease;
+    }
+    .area-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(180deg, transparent 30%, rgba(9, 37, 31, 0.9) 100%);
+    }
+    .area-card:hover img { transform: scale(1.045); }
+    .area-card-content { padding: 26px; }
+    .area-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.42rem;
+      line-height: 1.15;
+    }
+    .area-card p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.94rem;
+    }
+    .area-card span {
+      display: inline-block;
+      margin-top: 17px;
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .library-layout {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 70px;
+      align-items: start;
+    }
+    .library-intro {
+      position: sticky;
+      top: 120px;
+    }
+    .library-intro h2 {
+      margin: 0;
+      font-size: clamp(2rem, 3.5vw, 3.35rem);
+      line-height: 1.06;
+      letter-spacing: -0.015em;
+    }
+    .library-intro > p:not(.section-kicker) {
+      margin: 20px 0 28px;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+    .library-cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .resources-strip {
+      padding: 68px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 90% 0%, rgba(29, 167, 178, 0.12), transparent 35%),
+        #fff;
+      box-shadow: 0 18px 45px rgba(22, 49, 45, 0.08);
+    }
+    .resource-list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+      margin: 38px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .resource-item {
+      min-height: 160px;
+      padding: 26px 24px;
+      border-right: 1px solid var(--line);
+    }
+    .resource-item:last-child { border-right: 0; }
+    .resource-item strong {
+      display: block;
+      margin-bottom: 9px;
+      font-size: 1.06rem;
+    }
+    .resource-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .vita {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background:
+        radial-gradient(circle at 88% 18%, rgba(140, 198, 63, 0.24), transparent 27%),
+        radial-gradient(circle at 10% 90%, rgba(29, 167, 178, 0.25), transparent 34%),
+        linear-gradient(135deg, #102b26, #176c59);
+    }
+    .vita-inner {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 570px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(430px, 1.08fr);
+      align-items: center;
+      gap: 76px;
+      padding: 88px 0;
+    }
+    .vita-copy h2 { color: #fff; }
+    .vita-copy > p:not(.section-kicker) {
+      margin: 22px 0 30px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.08rem;
+    }
+    .vita .section-kicker { color: var(--lime); }
+    .vita-panel {
+      padding: 34px;
+      border: 1px solid rgba(255, 255, 255, 0.17);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 24px 54px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(15px);
+    }
+    .vita-panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .vita-name {
+      font-size: 2.7rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+    }
+    .vita-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .vita-status::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--lime);
+      box-shadow: 0 0 0 6px rgba(140, 198, 63, 0.13);
+    }
+    .vita-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .vita-feature {
+      min-height: 115px;
+      padding: 19px;
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .vita-feature strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .vita-feature span {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+    }
+
+    .site-footer {
+      color: rgba(255, 255, 255, 0.82);
+      background: #102b26;
+    }
+    .footer-main {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 64px 0 46px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 34px;
+    }
+    .footer-col h3 {
+      margin: 0 0 18px;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .footer-col a,
+    .footer-col span {
+      display: block;
+      margin: 9px 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.95rem;
+    }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.12); }
+    .footer-bottom-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.94rem;
+    }
+    .socials {
+      display: flex;
+      gap: 18px;
+      font-weight: 750;
+    }
+
+    @media (max-width: 980px) {
+      .site-header,
+      .header-inner { height: auto; }
+      .header-inner {
+        min-height: 78px;
+        grid-template-columns: 1fr auto;
+        padding: 10px 0;
+      }
+      .nav {
+        order: 3;
+        grid-column: 1 / -1;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        overflow-x: auto;
+      }
+      .nav a {
+        padding: 8px 0 12px;
+        white-space: nowrap;
+      }
+      .nav a::after { bottom: 4px; }
+      .hero,
+      .hero-inner { min-height: 590px; }
+      .hero::after {
+        background: linear-gradient(90deg, rgba(10, 34, 29, 0.91), rgba(15, 54, 45, 0.62) 68%, rgba(15, 54, 45, 0.2));
+      }
+      .trust-band { grid-template-columns: 1fr; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 14px; }
+      .articles-grid,
+      .area-grid,
+      .footer-main { grid-template-columns: repeat(2, 1fr); }
+      .editorial,
+      .library-layout,
+      .vita-inner { grid-template-columns: 1fr; }
+      .editorial { gap: 42px; }
+      .library-intro { position: static; }
+      .vita-inner { gap: 42px; }
+      .resource-list { grid-template-columns: repeat(2, 1fr); }
+      .resource-item:nth-child(2) { border-right: 0; }
+      .resource-item:nth-child(-n + 2) { border-bottom: 1px solid var(--line); }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner,
+      .hero-inner,
+      .trust-band,
+      .wrap,
+      .vita-inner,
+      .footer-main,
+      .footer-bottom-inner {
+        width: min(100% - 28px, var(--max));
+      }
+      .brand-logo { width: 58px; }
+      .brand-text span { font-size: 0.76rem; }
+      .vita-button {
+        min-height: 36px;
+        padding: 0 12px;
+        font-size: 0.84rem;
+      }
+      .nav { justify-content: flex-start; }
+      .hero,
+      .hero-inner { min-height: 620px; }
+      .hero::before { background-position: 63% center; }
+      .hero::after {
+        background:
+          linear-gradient(0deg, rgba(10, 34, 29, 0.94) 0%, rgba(10, 34, 29, 0.73) 58%, rgba(10, 34, 29, 0.3) 100%);
+      }
+      .hero-inner {
+        padding: 230px 0 72px;
+        align-items: end;
+      }
+      h1 {
+        font-size: clamp(2.45rem, 12vw, 3.5rem);
+        line-height: 1;
+      }
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .button { width: 100%; }
+      .trust-band {
+        margin-top: -24px;
+        padding: 22px;
+      }
+      .section { padding: 76px 0; }
+      .articles-grid,
+      .area-grid,
+      .library-cards,
+      .footer-main { grid-template-columns: 1fr; }
+      .article-card { min-height: auto; }
+      .editorial-image,
+      .editorial-image img { min-height: 360px; }
+      .area-card { min-height: 350px; }
+      .resources-strip { padding: 34px 24px; }
+      .resource-list { grid-template-columns: 1fr; }
+      .resource-item {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .resource-item:last-child { border-bottom: 0; }
+      .vita-inner {
+        min-height: auto;
+        padding: 72px 0;
+      }
+      .vita-panel { padding: 25px; }
+      .vita-features { grid-template-columns: 1fr; }
+      .footer-bottom-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 22px 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
+        <img src="./imagenes/logo-idb.png" alt="" class="brand-logo" onerror="this.hidden=true">
+        <span class="brand-text">
+          <strong>IDB</strong>
+          <span>Instituto Digital de Bienestar</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#inicio" aria-current="page">Inicio</a>
+        <a href="#instituto">Instituto</a>
+        <a href="#bienestar">Bienestar</a>
+        <a href="#biblioteca">Recursos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="vita-button" href="#vita">VITA</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Bienestar para la vida cotidiana</p>
+          <h1>Más bienestar para disfrutar lo que realmente importa</h1>
+          <p>Orientación, educación y recursos prácticos para ayudarte a construir hábitos que contribuyan a una mejor calidad de vida.</p>
+          <div class="hero-actions">
+            <a class="button button-green" href="#vita">Hablar con VITA</a>
+            <a class="button button-outline" href="#biblioteca">Explorar Recursos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="trust-band" aria-label="Principios del Instituto Digital de Bienestar">
+      <div class="trust-item">
+        <span class="trust-mark" aria-hidden="true"></span>
+        <div><strong>Información clara</strong><span>Contenidos que facilitan la comprensión.</span></div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-mark" aria-hidden="true"></span>
+        <div><strong>Prevención cotidiana</strong><span>Hábitos posibles para cada etapa de vida.</span></div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-mark" aria-hidden="true"></span>
+        <div><strong>Acceso digital</strong><span>Orientación disponible desde cualquier dispositivo.</span></div>
+      </div>
+    </aside>
+
+    <section class="section" aria-labelledby="beneficios-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Bienestar informado</p>
+            <h2 id="beneficios-title">¿Por qué el bienestar comienza con la información?</h2>
+          </div>
+          <p>Comprender mejor permite elegir con más criterio, incorporar hábitos sostenibles y buscar apoyo de manera oportuna.</p>
+        </div>
+        <div class="articles-grid">
+          <article class="article-card">
+            <div>
+              <div class="article-meta"><span class="article-dot"></span>01 · Anticipar</div>
+              <h3>Prevención Inteligente</h3>
+              <p>Identifica riesgos y adopta hábitos saludables antes de que los problemas afecten tu bienestar.</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <div>
+              <div class="article-meta"><span class="article-dot"></span>02 · Comprender</div>
+              <h3>Educación Accesible</h3>
+              <p>Información clara y práctica para comprender mejor temas de salud, autocuidado y calidad de vida.</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <div>
+              <div class="article-meta"><span class="article-dot"></span>03 · Aplicar</div>
+              <h3>Hábitos Saludables</h3>
+              <p>Pequeñas acciones diarias que contribuyen al bienestar físico, emocional y social.</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <div>
+              <div class="article-meta"><span class="article-dot"></span>04 · Confiar</div>
+              <h3>Fuentes Confiables</h3>
+              <p>Contenidos organizados utilizando criterios educativos y referencias verificables.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-mist" id="instituto" aria-labelledby="instituto-title">
+      <div class="wrap editorial">
+        <div class="editorial-image">
+          <img src="./imagenes/area-prevencion.jpg" alt="Adultos conversando y revisando información de bienestar en casa" loading="lazy">
+        </div>
+        <div class="editorial-copy">
+          <p class="section-kicker">Una iniciativa para las personas</p>
+          <h2 id="instituto-title">Instituto Digital de Bienestar</h2>
+          <p>Promovemos educación, prevención y bienestar mediante recursos digitales accesibles que ayudan a las personas a tomar decisiones más informadas para su calidad de vida.</p>
+          <div class="principles" aria-label="Enfoques institucionales">
+            <div class="principle">
+              <span>01</span>
+              <div><strong>Educación útil</strong><small>Información pensada para comprender y aplicar en la vida diaria.</small></div>
+            </div>
+            <div class="principle">
+              <span>02</span>
+              <div><strong>Prevención cercana</strong><small>Orientación que acompaña sin reemplazar la atención profesional.</small></div>
+            </div>
+            <div class="principle">
+              <span>03</span>
+              <div><strong>Acceso para más personas</strong><small>Una experiencia digital clara para adultos, familias y cuidadores.</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="bienestar" aria-labelledby="bienestar-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Una mirada integral</p>
+            <h2 id="bienestar-title">Áreas de bienestar</h2>
+          </div>
+          <p>Explora contenidos organizados para acompañar decisiones saludables a lo largo de la vida.</p>
+        </div>
+        <div class="area-grid">
+          <a class="area-card" href="nutricion.html">
+            <img src="./imagenes/area-nutricion.jpg" alt="Preparación de una comida equilibrada" loading="lazy">
+            <div class="area-card-content">
+              <h3>Nutrición</h3>
+              <p>Alimentación consciente, equilibrio y decisiones posibles para cada día.</p>
+              <span>Explorar área</span>
+            </div>
+          </a>
+          <a class="area-card" href="actividad-fisica.html">
+            <img src="./imagenes/area-actividad.jpg" alt="Pareja adulta caminando en un parque" loading="lazy">
+            <div class="area-card-content">
+              <h3>Actividad Física</h3>
+              <p>Movimiento seguro, progresivo y adaptable a distintas etapas de vida.</p>
+              <span>Explorar área</span>
+            </div>
+          </a>
+          <a class="area-card" href="sueno.html">
+            <img src="./imagenes/area-sueno.jpg" alt="Rutina tranquila para preparar el descanso" loading="lazy">
+            <div class="area-card-content">
+              <h3>Sueño</h3>
+              <p>Rutinas y condiciones que favorecen el descanso y la recuperación.</p>
+              <span>Explorar área</span>
+            </div>
+          </a>
+          <a class="area-card" href="bienestar-emocional.html">
+            <img src="./imagenes/area-emocional.jpg" alt="Adulto practicando respiración consciente" loading="lazy">
+            <div class="area-card-content">
+              <h3>Bienestar Emocional</h3>
+              <p>Recursos para reconocer emociones, regular la tensión y pedir apoyo.</p>
+              <span>Explorar área</span>
+            </div>
+          </a>
+          <a class="area-card" href="prevencion.html">
+            <img src="./imagenes/area-prevencion.jpg" alt="Pareja adulta revisando información preventiva" loading="lazy">
+            <div class="area-card-content">
+              <h3>Prevención</h3>
+              <p>Información para observar señales, reducir riesgos y actuar a tiempo.</p>
+              <span>Explorar área</span>
+            </div>
+          </a>
+          <a class="area-card" href="envejecimiento-saludable.html">
+            <img src="./imagenes/area-envejecimiento.jpg" alt="Adulto mayor activo durante su rutina diaria" loading="lazy">
+            <div class="area-card-content">
+              <h3>Envejecimiento Saludable</h3>
+              <p>Autonomía, seguridad y calidad de vida con el paso del tiempo.</p>
+              <span>Explorar área</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-mist" id="biblioteca" aria-labelledby="biblioteca-title">
+      <div class="wrap library-layout">
+        <div class="library-intro">
+          <p class="section-kicker">Biblioteca Digital</p>
+          <h2 id="biblioteca-title">Información confiable para aprender y tomar mejores decisiones</h2>
+          <p>Una biblioteca diseñada para resolver dudas, aclarar conceptos y convertir la información en acciones cotidianas.</p>
+          <a class="button button-green" href="biblioteca.html">Visitar la Biblioteca</a>
+        </div>
+        <div class="library-cards">
+          <article class="article-card">
+            <div>
+              <div class="article-meta"><span class="article-dot"></span>Resolver dudas</div>
+              <h3>Preguntas Frecuentes</h3>
+              <p>Respuestas directas a consultas habituales sobre autocuidado y bienestar.</p>
+            </div>
+            <a class="article-link" href="biblioteca.html">Consultar</a>
+          </article>
+          <article class="article-card">
+            <div>
+              <div class="article-meta"><span class="article-dot"></span>Comprender términos</div>
+              <h3>Glosario</h3>
+              <p>Definiciones claras para entender conceptos utilizados en salud y prevención.</p>
+            </div>
+            <a class="article-link" href="biblioteca.html">Explorar</a>
+          </article>
+          <article class="article-card">
+            <div>
+              <div class="article-meta"><span class="article-dot"></span>Verificar</div>
+              <h3>Fuentes Confiables</h3>
+              <p>Referencias organizadas para profundizar con criterios de calidad informativa.</p>
+            </div>
+            <a class="article-link" href="biblioteca.html">Revisar</a>
+          </article>
+          <article class="article-card">
+            <div>
+              <div class="article-meta"><span class="article-dot"></span>Poner en práctica</div>
+              <h3>Guías Prácticas</h3>
+              <p>Materiales paso a paso para incorporar hábitos de manera gradual y realista.</p>
+            </div>
+            <a class="article-link" href="biblioteca.html">Descubrir</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="recursos" aria-labelledby="recursos-title">
+      <div class="wrap resources-strip">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Recursos educativos</p>
+            <h2 id="recursos-title">Material educativo para acompañar decisiones saludables</h2>
+          </div>
+          <p>Formatos claros, útiles y preparados para consultar, compartir y aplicar.</p>
+        </div>
+        <div class="resource-list">
+          <div class="resource-item"><strong>Guías</strong><p>Orientación ordenada para avanzar paso a paso.</p></div>
+          <div class="resource-item"><strong>Infografías</strong><p>Ideas esenciales presentadas de manera visual.</p></div>
+          <div class="resource-item"><strong>Material educativo</strong><p>Contenidos para personas, familias y cuidadores.</p></div>
+          <div class="resource-item"><strong>Herramientas digitales</strong><p>Apoyos simples para observar hábitos y progreso.</p></div>
+        </div>
+        <a class="button button-green" href="biblioteca.html">Explorar Recursos</a>
+      </div>
+    </section>
+
+    <section class="vita" id="vita" aria-labelledby="vita-title">
+      <div class="vita-inner">
+        <div class="vita-copy">
+          <p class="section-kicker">Orientación cuando la necesitas</p>
+          <h2 id="vita-title">VITA<br>Asistente Digital de Bienestar</h2>
+          <p>Asistente virtual diseñada para orientar, responder consultas educativas y facilitar el acceso a contenidos relacionados con bienestar y calidad de vida.</p>
+          <a class="button button-light" href="#contacto">Hablar con VITA</a>
+        </div>
+        <aside class="vita-panel" aria-label="Características de VITA">
+          <div class="vita-panel-header">
+            <span class="vita-name">VITA</span>
+            <span class="vita-status">Disponible 24/7</span>
+          </div>
+          <div class="vita-features">
+            <div class="vita-feature"><strong>Información organizada</strong><span>Encuentra contenidos relevantes sin recorridos complicados.</span></div>
+            <div class="vita-feature"><strong>Orientación personalizada</strong><span>Explora recursos relacionados con tu consulta educativa.</span></div>
+            <div class="vita-feature"><strong>Acceso simple</strong><span>Una experiencia clara desde computadora, tablet o celular.</span></div>
+            <div class="vita-feature"><strong>Enfoque educativo</strong><span>Apoyo informativo que no sustituye la atención profesional.</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Arquitectura preparada para futuras áreas temáticas.
+         Estas páginas no se publican todavía; el template permite incorporarlas
+         posteriormente al mismo sistema de tarjetas sin cambiar el home. -->
+    <template id="future-health-topics">
+      <a class="area-card" data-topic="diabetes"></a>
+      <a class="area-card" data-topic="hipertension"></a>
+      <a class="area-card" data-topic="obesidad"></a>
+      <a class="area-card" data-topic="salud-cardiovascular"></a>
+      <a class="area-card" data-topic="salud-digestiva"></a>
+      <a class="area-card" data-topic="salud-respiratoria"></a>
+      <a class="area-card" data-topic="salud-de-la-mujer"></a>
+      <a class="area-card" data-topic="salud-masculina"></a>
+      <a class="area-card" data-topic="menopausia"></a>
+      <a class="area-card" data-topic="osteoporosis"></a>
+      <a class="area-card" data-topic="alzheimer-y-demencias"></a>
+      <a class="area-card" data-topic="salud-mental"></a>
+    </template>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main">
+      <div class="footer-col">
+        <h3>Instituto</h3>
+        <a href="#instituto">Sobre el IDB</a>
+        <a href="#beneficios-title">Bienestar preventivo</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h3>Bienestar</h3>
+        <a href="nutricion.html">Nutrición</a>
+        <a href="actividad-fisica.html">Actividad Física</a>
+        <a href="sueno.html">Sueño</a>
+        <a href="bienestar-emocional.html">Bienestar Emocional</a>
+      </div>
+      <div class="footer-col">
+        <h3>Recursos</h3>
+        <a href="biblioteca.html">Biblioteca Digital</a>
+        <a href="prevencion.html">Prevención</a>
+        <a href="envejecimiento-saludable.html">Envejecimiento Saludable</a>
+      </div>
+      <div class="footer-col">
+        <h3>VITA</h3>
+        <a href="#vita">Asistente Digital</a>
+        <span>Orientación permanente</span>
+        <span>Información confiable</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          <strong>Instituto Digital de Bienestar</strong><br>
+          www.idb.org.pe · © 2026
+        </div>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+          <a href="https://x.com/" aria-label="X">X</a>
+          <a href="https://www.youtube.com/" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
