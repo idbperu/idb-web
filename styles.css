@@ -636,11 +636,12 @@ box-shadow:
 }
 
 .hero-button{
-
 display:flex;
-
-justify-content:center;
 align-items:center;
+justify-content:center;
+
+gap:10px;
+display:flex;
 
 width:360px;
 height:64px;
