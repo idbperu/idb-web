@@ -546,9 +546,11 @@ grid-template-columns:repeat(2,1fr);
 }
 
 @media(max-width:768px){
-
 .main-nav{
 display:none;
+.menu-toggle{
+
+display:block;
 }
 
 .hero-content h1{
@@ -746,5 +748,20 @@ padding-top:30px;
 .hero-text{
 
 margin-bottom:24px;
+
+}
+.menu-toggle{
+
+display:none;
+
+background:none;
+
+border:none;
+
+font-size:28px;
+
+cursor:pointer;
+
+color:#0f172a;
 
 }
