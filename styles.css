@@ -634,8 +634,8 @@ display:flex;
 justify-content:center;
 align-items:center;
 
-width:280px;
-height:54px;
+width:360px;
+height:64px;
 
 margin:0 auto 24px auto;
 
@@ -645,8 +645,21 @@ font-weight:600;
 border-radius:999px;
 box-shadow:
 0 8px 24px rgba(15,23,42,.08);
-}
+background:linear-gradient(135deg,#15847b,#1c9a90);
 
+box-shadow:
+0 10px 25px rgba(21,132,123,.20);
+
+transition:.25s ease;
+}
+.hero-button:hover{
+
+transform:translateY(-2px);
+
+box-shadow:
+0 18px 35px rgba(21,132,123,.25);
+
+}
 .hero-center{
 
 display:flex;
