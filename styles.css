@@ -530,3 +530,54 @@ padding:60px 0;
 }
 
 }
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+
+display:flex;
+align-items:center;
+
+}
+
+.logo-img{
+
+height:48px;
+width:auto;
+display:block;
+
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.main-nav a{
+
+position:relative;
+
+}
+
+.main-nav a::after{
+
+content:"";
+
+position:absolute;
+left:0;
+bottom:-6px;
+
+width:0;
+height:2px;
+
+background:var(--primary);
+
+transition:.3s;
+
+}
+
+.main-nav a:hover::after{
+
+width:100%;
+
+}
