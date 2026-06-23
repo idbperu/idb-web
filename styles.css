@@ -546,8 +546,10 @@ grid-template-columns:repeat(2,1fr);
 }
 
 @media(max-width:768px){
+   
 .main-nav{
 display:none;
+}
 .menu-toggle{
 
 display:block;
