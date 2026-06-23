@@ -234,15 +234,21 @@ color:var(--text-light);
 
 display:flex;
 
-background:white;
+width:100%;
+max-width:700px;
 
-border:1px solid var(--border);
+margin:0 auto 24px auto;
 
-border-radius:14px;
+background:#ffffff;
+
+border:1px solid #dbe3ea;
+
+border-radius:20px;
 
 overflow:hidden;
 
-margin-bottom:24px;
+box-shadow:
+0 4px 12px rgba(15,23,42,.04);
 
 }
 
