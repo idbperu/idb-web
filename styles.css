@@ -204,9 +204,12 @@ align-items:center;
 
 .hero-content h1{
 
-font-size:3rem;
-line-height:1.1;
-margin-bottom:20px;
+font-size:3.5rem;
+line-height:1.05;
+
+margin-bottom:24px;
+
+font-weight:700;
 
 }
 
