@@ -690,14 +690,14 @@ text-align:center;
 }
 
 .hero-vita{
+width:320px;
+}
 
+@media (min-width:1024px){
+
+.hero-vita{
 width:368px;
-
-max-width:90%;
-
-margin-bottom:24px;
-
-border-radius:24px;
+}
 
 }
 
