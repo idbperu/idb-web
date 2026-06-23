@@ -603,16 +603,15 @@ width:100%;
 
 .hero-image img{
 
-width:100%;
+width:390px;
+height:390px;
 
-max-width:500px;
+object-fit:cover;
 
-margin:auto;
-
-border-radius:24px;
+border-radius:50%;
 
 box-shadow:
-0 20px 40px rgba(0,0,0,.10);
+0 20px 50px rgba(15,23,42,.12);
 
 }
 
