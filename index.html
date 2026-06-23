@@ -847,6 +847,27 @@
         flex-direction: column;
         padding: 22px 0;
       }
+      .header-inner {
+        grid-template-columns: auto auto;
+      }
+      
+      .menu-toggle {
+        display: block;
+      }
+      
+      .nav {
+        display: none;
+        grid-column: 1 / -1;
+        width: 100%;
+        padding: 14px 0 8px;
+      }
+      
+      .nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -866,6 +887,11 @@
       <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
         <img src="./imagenes/logo-idb.png" alt="" class="brand-logo" onerror="this.hidden=true">
       </a>
+      <button class="menu-toggle" aria-label="Abrir menú" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
       <nav class="nav" aria-label="Navegación principal">
         <a href="index.html" aria-current="page">Inicio</a>
         <a href="temas.html">Temas</a>
