@@ -1,0 +1,532 @@
+/* =========================
+   IDB 2.0 GLOBAL STYLES
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+
+--primary:#0F766E;
+--primary-hover:#14B8A6;
+
+--text:#0F172A;
+--text-light:#475569;
+
+--bg:#FFFFFF;
+--bg-soft:#F8FAFC;
+
+--border:#E2E8F0;
+
+--radius:20px;
+
+--container:1200px;
+
+--shadow:
+0 4px 12px rgba(15,23,42,.06);
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+
+}
+
+img{
+
+max-width:100%;
+display:block;
+
+}
+
+a{
+
+text-decoration:none;
+color:inherit;
+
+}
+
+ul{
+list-style:none;
+}
+
+.container{
+
+max-width:var(--container);
+margin:auto;
+padding:0 24px;
+
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header{
+
+position:sticky;
+top:0;
+z-index:1000;
+
+background:#fff;
+
+border-bottom:1px solid var(--border);
+
+}
+
+.header-container{
+
+height:72px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+
+.logo{
+
+font-size:1.3rem;
+font-weight:700;
+color:var(--primary);
+
+}
+
+.main-nav ul{
+
+display:flex;
+gap:28px;
+
+}
+
+.main-nav a{
+
+font-weight:500;
+
+}
+
+.main-nav a:hover{
+
+color:var(--primary);
+
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+padding:14px 24px;
+
+background:var(--primary);
+color:#fff;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+background:var(--primary-hover);
+
+}
+
+.btn-secondary{
+
+display:inline-flex;
+
+padding:14px 24px;
+
+border:2px solid var(--primary);
+
+color:var(--primary);
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+background:var(--primary);
+color:white;
+
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+padding:80px 0;
+
+}
+
+.hero-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+
+}
+
+.hero-content h1{
+
+font-size:3rem;
+line-height:1.1;
+margin-bottom:20px;
+
+}
+
+.hero-text{
+
+font-size:1.1rem;
+color:var(--text-light);
+
+margin-bottom:30px;
+
+}
+
+.search-box{
+
+display:flex;
+
+background:white;
+
+border:1px solid var(--border);
+
+border-radius:14px;
+
+overflow:hidden;
+
+margin-bottom:24px;
+
+}
+
+.search-box input{
+
+flex:1;
+
+border:none;
+
+padding:18px;
+
+outline:none;
+
+}
+
+.search-box button{
+
+border:none;
+
+padding:0 24px;
+
+cursor:pointer;
+
+background:var(--primary);
+
+color:white;
+
+font-size:1.1rem;
+
+}
+
+.topic-chips{
+
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+
+margin-top:24px;
+
+}
+
+.topic-chips a{
+
+padding:10px 16px;
+
+background:var(--bg-soft);
+
+border-radius:999px;
+
+font-size:.9rem;
+
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+
+padding:80px 0;
+
+}
+
+.section-header{
+
+text-align:center;
+margin-bottom:50px;
+
+}
+
+.section-header h2{
+
+font-size:2rem;
+margin-bottom:12px;
+
+}
+
+.section-header p{
+
+max-width:700px;
+margin:auto;
+
+color:var(--text-light);
+
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+
+}
+
+.card{
+
+background:white;
+
+padding:28px;
+
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-4px);
+
+}
+
+.card h3{
+
+margin-bottom:12px;
+
+}
+
+.card p{
+
+color:var(--text-light);
+
+margin-bottom:18px;
+
+}
+
+.card a{
+
+font-weight:600;
+color:var(--primary);
+
+}
+
+/* =========================
+   VITA SECTION
+========================= */
+
+.vita-section{
+
+background:var(--bg-soft);
+
+}
+
+.vita-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+
+}
+
+.vita-content h2{
+
+font-size:2.2rem;
+margin-bottom:20px;
+
+}
+
+.vita-content p{
+
+margin-bottom:24px;
+color:var(--text-light);
+
+}
+
+/* =========================
+   CTA FINAL
+========================= */
+
+.cta-final{
+
+text-align:center;
+
+background:var(--primary);
+
+color:white;
+
+}
+
+.cta-final p{
+
+margin:20px auto 30px;
+max-width:700px;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer{
+
+background:#0F172A;
+
+color:white;
+
+padding-top:60px;
+
+}
+
+.footer-grid{
+
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:30px;
+
+}
+
+.footer-grid h3{
+
+margin-bottom:14px;
+
+}
+
+.footer-grid li{
+
+margin-bottom:10px;
+
+}
+
+.footer-grid a{
+
+opacity:.8;
+
+}
+
+.footer-grid a:hover{
+
+opacity:1;
+
+}
+
+.footer-bottom{
+
+text-align:center;
+
+padding:30px 0;
+
+margin-top:40px;
+
+border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1024px){
+
+.hero-grid,
+.vita-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.cards-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.main-nav{
+display:none;
+}
+
+.hero-content h1{
+
+font-size:2.2rem;
+
+}
+
+.cards-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+section{
+
+padding:60px 0;
+
+}
+
+}
