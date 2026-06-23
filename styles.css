@@ -803,3 +803,134 @@ gap:18px;
 }
 
 }
+
+/* =========================
+   TEMAS.HTML
+========================= */
+
+.hero-temas{
+padding:80px 0;
+background:#F8FAFC;
+}
+
+.hero-temas h1{
+font-size:3rem;
+font-weight:800;
+margin-bottom:16px;
+}
+
+.hero-temas p{
+font-size:1.1rem;
+margin-bottom:24px;
+color:#475569;
+}
+
+.busqueda-temas input{
+width:100%;
+max-width:600px;
+padding:16px 20px;
+border:1px solid #E2E8F0;
+border-radius:12px;
+font-size:1rem;
+}
+
+.chips-temas{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:20px;
+}
+
+.chips-temas span{
+padding:10px 16px;
+background:#E2E8F0;
+border-radius:999px;
+font-size:.9rem;
+}
+
+.temas-destacados{
+padding:80px 0;
+}
+
+.temas-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.tema-card{
+background:#fff;
+padding:24px;
+border-radius:20px;
+box-shadow:0 4px 12px rgba(15,23,42,.06);
+}
+
+.tema-card h3{
+margin-bottom:12px;
+}
+
+.tema-card p{
+margin-bottom:16px;
+color:#475569;
+}
+
+.tema-card a{
+color:#0F766E;
+font-weight:600;
+}
+
+.explorar-areas{
+padding:80px 0;
+background:#F8FAFC;
+}
+
+.areas-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.area-card{
+background:#fff;
+padding:24px;
+border-radius:20px;
+box-shadow:0 4px 12px rgba(15,23,42,.06);
+}
+
+.btn-recurso,
+.btn-vita{
+display:inline-block;
+margin-top:20px;
+padding:14px 24px;
+border-radius:12px;
+font-weight:600;
+}
+
+.btn-recurso{
+background:#0F766E;
+color:white;
+}
+
+.btn-vita{
+background:#0F766E;
+color:white;
+}
+
+.recursos-relacionados,
+.cta-vita{
+padding:80px 0;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.temas-grid,
+.areas-grid{
+grid-template-columns:1fr;
+}
+
+.hero-temas h1{
+font-size:2.2rem;
+}
+
+}
