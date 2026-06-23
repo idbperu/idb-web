@@ -232,6 +232,8 @@ color:var(--text-light);
 
 .search-box{
 
+height:68px;
+
 display:flex;
 
 width:100%;
@@ -243,12 +245,12 @@ background:#ffffff;
 
 border:1px solid #dbe3ea;
 
-border-radius:20px;
+border-radius:999px;
 
 overflow:hidden;
 
 box-shadow:
-0 4px 12px rgba(15,23,42,.04);
+0 8px 24px rgba(15,23,42,.06);
 
 }
 
@@ -260,13 +262,17 @@ border:none;
 
 background:white;
 
-border:1px solid #d7dde5;
-   
-padding:20px 24px;
+padding:0 28px;
 
-font-size:1rem;
+font-size:1.05rem;
 
-color:#0f172a;
+font-weight:400;
+
+font-style:italic;
+
+color:#64748b;
+
+outline:none;
 
 }
 
