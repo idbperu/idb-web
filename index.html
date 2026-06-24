@@ -130,34 +130,37 @@
     border-radius: 30px;
     background: var(--mist);
     box-shadow: 0 28px 70px rgba(22, 49, 45, 0.11);
-    }
+  }
   
   .hero-media img {
     width: 100%;
-    aspect-ratio: 16 / 7.2;
+    aspect-ratio: 16 / 7.8;
     object-fit: cover;
-    object-position: center;
+    object-position: center 45%;
   }
     .hero-photo-content {
       position: absolute;
-      left: clamp(28px, 5vw, 70px);
-      top: 50%;
+      left: clamp(34px, 5vw, 76px);
+      top: 44%;
       transform: translateY(-50%);
       z-index: 2;
-      max-width: 430px;
+      max-width: 390px;
       text-align: left;
     }
     
     .hero-photo-content h1 {
-      font-size: clamp(2rem, 3.2vw, 3rem);
+      font-size: clamp(1.85rem, 2.7vw, 2.65rem);
       line-height: 1.08;
       margin: 0;
+      max-width: 390px;
     }
     
     .hero-photo-content p {
-      margin: 16px 0 24px;
+      margin: 14px 0 22px;
       color: #3f4f63;
-      font-size: 1rem;
+      font-size: 0.96rem;
+      line-height: 1.5;
+      max-width: 370px;
     }
     
     .eyebrow {
