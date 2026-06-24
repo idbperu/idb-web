@@ -130,7 +130,22 @@
     border-radius: 28px;
     background: var(--mist);
     box-shadow: 0 22px 52px rgba(22,49,45,.10);
+    isolation: isolate;
   }
+  .hero-media::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    width:42%;
+    background:linear-gradient(
+    90deg,
+    rgba(255,255,255,.78) 0%,
+    rgba(255,255,255,.52) 55%,
+    rgba(255,255,255,0) 100%
+    );
+    z-index:1;
+    pointer-events:none;
+    }
   
   .hero-media img {
     width: 100%;
@@ -141,8 +156,8 @@
   
   .hero-photo-content {
     position: absolute;
-    left: 48px;
-    top: 43%;
+    left: 24px;
+    top: 41%;
     transform: translateY(-50%);
     z-index: 2;
     max-width: 300px;
@@ -168,10 +183,10 @@
   .hero-photo-content .button-green{
     width:auto;
     min-width:175px;
-    max-width:205px;
+    max-width:210px;
     height:42px;
     padding:0 20px;
-    margin-top:24px;
+    margin-top:20px;
     border-radius:999px;
     font-size:.82rem;
     font-weight:700;
