@@ -806,10 +806,10 @@
   }
     .resource-mosaic{
     display:grid;
-    grid-template-columns:1.45fr .95fr;
-    gap:22px;
+    grid-template-columns:1.25fr 1fr;
+    gap:26px;
     align-items:stretch;
-  }
+}
 
   .resource-mosaic .tile-large{
       grid-row:span 3;
@@ -825,6 +825,14 @@
         grid-row:span 3;
         min-height:540px;
     }
+    .resource-tile:not(.tile-large) h3{
+    font-size:1.25rem;
+    }
+    
+    .resource-tile:not(.tile-large) p{
+        font-size:.92rem;
+        line-height:1.45;
+    }
     
     .resource-tile.tile-large img{
         object-position:center;
@@ -832,10 +840,10 @@
     .resource-tile{
     position:relative;
     overflow:hidden;
-    border-radius:22px;
-    min-height:165px;
-    background:#163a34;
-    box-shadow:0 18px 40px rgba(18,35,42,.14);
+    border-radius:24px;
+    min-height:180px;
+    background:#163b34;
+    box-shadow:0 24px 60px rgba(16,36,40,.16);
 }
     
     .resource-tile img{
@@ -848,42 +856,50 @@
     }
     
     .resource-tile::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:linear-gradient(180deg,rgba(8,31,27,.08),rgba(8,31,27,.82));
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.05) 0%,
+            rgba(0,0,0,.18) 38%,
+            rgba(0,0,0,.78) 100%
+        );
     }
     
-    .resource-tile div{
-      position:absolute;
-      z-index:2;
-      left:24px;
-      right:24px;
-      bottom:22px;
+        .resource-tile div{
+        position:absolute;
+        z-index:2;
+        left:28px;
+        right:28px;
+        bottom:24px;
     }
     
-    .resource-tile span{
-      display:block;
-      margin-bottom:8px;
-      font-size:.72rem;
-      font-weight:850;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:#b7e4d3;
+        .resource-tile span{
+        display:inline-block;
+        margin-bottom:12px;
+        font-size:.76rem;
+        font-weight:800;
+        letter-spacing:.12em;
+        text-transform:uppercase;
+        color:#D8FFF6;
     }
     
-    .resource-tile h3{
-      margin:0 0 8px;
-      font-size:1.25rem;
-      line-height:1.12;
+        .resource-tile h3{
+        margin:0 0 12px;
+        color:#fff;
+        font-size:1.95rem;
+        line-height:1.08;
+        font-weight:800;
     }
     
-    .resource-tile p{
+      .resource-tile p{
       margin:0;
-      max-width:360px;
-      color:rgba(255,255,255,.82);
-      font-size:.9rem;
-    }
+      color:rgba(255,255,255,.94);
+      font-size:1rem;
+      line-height:1.55;
+  }
     
     .resource-tile:hover img{
       transform:scale(1.045);
