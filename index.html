@@ -821,7 +821,14 @@
       grid-template-rows:repeat(3,1fr);
       gap:22px;
   }
-
+    .resource-tile.tile-large{
+        grid-row:span 3;
+        min-height:540px;
+    }
+    
+    .resource-tile.tile-large img{
+        object-position:center;
+    }
     .resource-tile{
     position:relative;
     overflow:hidden;
