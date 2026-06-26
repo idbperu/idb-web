@@ -681,200 +681,245 @@
         linear-gradient(135deg, rgba(31, 143, 115, 0.18), rgba(29, 167, 178, 0.18));
       box-shadow: inset 0 0 0 1px rgba(31, 143, 115, 0.22);
     }
-    .vita {
-      position: relative;
-      overflow: hidden;
-      color: #fff;
-      background:
-        radial-gradient(circle at 88% 18%, rgba(140, 198, 63, 0.24), transparent 27%),
-        radial-gradient(circle at 10% 90%, rgba(29, 167, 178, 0.25), transparent 34%),
-        linear-gradient(135deg, #102b26, #176c59);
-    }
-        .vita-inner{
-        width:min(var(--max),calc(100% - 40px));
-        margin:0 auto;
-        display:grid;
-        grid-template-columns:.92fr 1.08fr;
-        align-items:center;
-        gap:54px;
-        padding:46px 0;
-        min-height:430px;
-    }
-    .vita-copy h2 { color: #fff; }
-    .vita-copy > p:not(.section-kicker) {
-      margin: 22px 0 30px;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 1.08rem;
-    }
-    .vita .section-kicker { color: var(--lime); }
-    .whatsapp-preview{
-      width:320px;
-      margin-top:22px;
-      border-radius:20px;
-      overflow:hidden;
-      background:#E7F8EC;
-      box-shadow:0 18px 42px rgba(0,0,0,.18);
-    }
+    .vita-section {
+  position: relative;
+  overflow: hidden;
+  padding: 84px 0;
+  color: #fff;
+  background:
+    radial-gradient(circle at 90% 15%, rgba(140,198,63,.18), transparent 28%),
+    radial-gradient(circle at 8% 88%, rgba(29,167,178,.22), transparent 34%),
+    linear-gradient(135deg,#102b26,#176c59);
+}
 
-        .wa-header{
-      position:relative;
-      padding:14px 18px 14px 54px;
-      background:#075E54;
-      color:#fff;
-    }
-    
-    .wa-header::before{
-      content:"";
-      position:absolute;
-      left:18px;
-      top:50%;
-      width:26px;
-      height:26px;
-      transform:translateY(-50%);
-      
-    }
-    
-    .wa-header strong{
-      display:block;
-      font-size:.95rem;
-      font-weight:700;
-    }
-    
-    .wa-header small{
-      opacity:.78;
-      font-size:.78rem;
-    }
-    
-        .wa-message.wa-vita{
-      background:#FFFFFF;
-      color:#1F2D2B;
-      border-radius:14px;
-      box-shadow:0 2px 8px rgba(0,0,0,.06);
-      }
-    
-    .wa-vita{
-      background:#ffffff;
-      color:#222;
-      border-top-left-radius:6px;
-    }
-    
-    .wa-user{
-      margin-left:auto;
-      background:#DCF8C6;
-      color:#222;
-      border-top-right-radius:6px;
-    }
-        .wa-cta{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      
-      margin-top:14px;
-      padding:11px 18px;
-      
-      background:#25D366;
-      color:#fff;
-      
-      border-radius:999px;
-      
-      font-size:.87rem;
-      font-weight:700;
-      
-      text-decoration:none;
-      
-      transition:.2s;
-      }
-      
-      .wa-cta:hover{
-      background:#1EBE5A;
-      }
-    
-    .wa-cta:hover{
-        background:#20BD5A;
-        transform:translateY(-1px);
-    }
-        .wa-cta::before{
-      content:"";
-      width:18px;
-      height:18px;
-      margin-right:8px;
-      background:url("./imagenes/whatsapp.svg") center/contain no-repeat;
-    }
-        .wa-cta::before{
-        content:"";
-        width:18px;
-        height:18px;
-        margin-right:8px;
-        background:url("./imagenes/whatsapp.svg") center/contain no-repeat;
-    }
-    .vita-photo {
-      position: relative;
-      min-height: 430px;
-      overflow: hidden;
-      border-radius: var(--radius);
-      box-shadow: 0 24px 54px rgba(0, 0, 0, 0.2);
-      background: rgba(255, 255, 255, 0.1);
-    }
+.vita-grid{
+  width:min(var(--max),calc(100% - 40px));
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:.92fr 1.08fr;
+  align-items:center;
+  gap:56px;
+}
 
-          .vita-photo-cta{
-      position:absolute;
-      left:28px;
-      bottom:28px;
-      z-index:5;
-      
-      display:inline-flex;
-      align-items:center;
-      gap:12px;
-      
-      padding:16px 24px;
-      
-      background:rgba(13,96,69,.92);
-      backdrop-filter:blur(12px);
-      
-      color:#fff;
-      font-size:1rem;
-      font-weight:700;
-      
-      border-radius:999px;
-      text-decoration:none;
-      
-      box-shadow:0 14px 34px rgba(0,0,0,.28);
-      
-      transition:.25s ease;
-      }
-      
-      .vita-photo-cta:hover{
-      transform:translateY(-2px);
-      background:#0C8A5E;
-      box-shadow:0 20px 42px rgba(0,0,0,.35);
-      }
-      
-      .vita-photo-cta .wa-icon{
-        width:22px;
-        height:22px;
-        min-width:22px;
-        min-height:22px;
-        display:block;
-        object-fit:contain;
-        flex-shrink:0;
-    }
-    
-    .vita-photo > .vita-main-img {
-      width: 100%;
-      height: 100%;
-      min-height: 430px;
-      object-fit: cover;
-      object-position: center;
-    }
-    .vita-photo::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0;
-      height: 34%;
-      background: linear-gradient(transparent, rgba(16, 43, 38, 0.44));
-      pointer-events: none;
-    }
+.vita-content{
+  display:grid;
+  gap:24px;
+}
+
+.vita-title{
+  margin:0;
+  max-width:560px;
+  color:#fff;
+  font-size:clamp(2.15rem,3.4vw,3.45rem);
+  line-height:1.04;
+  letter-spacing:-.02em;
+}
+
+.vita-chat-card{
+  width:min(100%,360px);
+  overflow:hidden;
+  border-radius:24px;
+  background:#E9F7EE;
+  box-shadow:0 24px 56px rgba(0,0,0,.22);
+}
+
+.vita-chat-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:16px 18px;
+  background:#075E54;
+  color:#fff;
+}
+
+.vita-chat-header .wa-icon{
+  width:24px;
+  height:24px;
+}
+
+.vita-chat-headline{
+  display:grid;
+  gap:2px;
+}
+
+.vita-chat-headline strong{
+  font-size:.95rem;
+  font-weight:700;
+}
+
+.vita-chat-headline span{
+  font-size:.78rem;
+  opacity:.78;
+}
+
+.vita-menu-dots{
+  margin-left:auto;
+  letter-spacing:2px;
+  opacity:.75;
+}
+
+.vita-chat-body{
+  display:grid;
+  gap:14px;
+  padding:18px;
+}
+
+.vita-message{
+  position:relative;
+  max-width:86%;
+  padding:12px 14px 22px;
+  border-radius:16px;
+  color:#1F2D2B;
+  font-size:.9rem;
+  line-height:1.45;
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+.vita-message span{
+  position:absolute;
+  right:10px;
+  bottom:6px;
+  font-size:.68rem;
+  color:#7B8A86;
+}
+
+.vita-message-in{
+  background:#fff;
+  border-top-left-radius:6px;
+}
+
+.vita-message-out{
+  margin-left:auto;
+  background:#DCF8C6;
+  border-top-right-radius:6px;
+}
+
+.vita-chat-button{
+  margin:0 18px 18px;
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border-radius:999px;
+  background:#25D366;
+  color:#fff;
+  font-size:.9rem;
+  font-weight:700;
+  text-decoration:none;
+  transition:.25s;
+}
+
+.vita-chat-button:hover{
+  background:#1EBE5A;
+}
+
+.vita-chat-button .wa-icon{
+  width:18px;
+  height:18px;
+}
+
+.vita-arrow{
+  font-size:1.3rem;
+}
+
+.vita-photo{
+  position:relative;
+  min-height:430px;
+  overflow:hidden;
+  border-radius:28px;
+  background:rgba(255,255,255,.08);
+  box-shadow:0 24px 58px rgba(0,0,0,.24);
+}
+
+.vita-main-img{
+  width:100%;
+  height:100%;
+  min-height:430px;
+  object-fit:cover;
+  object-position:center;
+}
+
+.vita-photo::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:38%;
+  background:linear-gradient(transparent,rgba(16,43,38,.55));
+  pointer-events:none;
+}
+
+.vita-photo-button{
+  position:absolute;
+  left:28px;
+  bottom:28px;
+  z-index:2;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  min-height:48px;
+  padding:0 22px;
+  border-radius:999px;
+  background:rgba(13,96,69,.94);
+  backdrop-filter:blur(12px);
+  color:#fff;
+  font-size:.94rem;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow:0 16px 34px rgba(0,0,0,.28);
+  transition:.25s;
+}
+
+.vita-photo-button:hover{
+  transform:translateY(-2px);
+  background:#0C8A5E;
+}
+
+.vita-photo-button .wa-icon{
+  width:20px;
+  height:20px;
+}
+
+@media (max-width:980px){
+
+.vita-grid{
+grid-template-columns:1fr;
+gap:42px;
+}
+
+.vita-chat-card{
+width:100%;
+max-width:420px;
+}
+
+}
+
+@media (max-width:640px){
+
+.vita-section{
+padding:64px 0;
+}
+
+.vita-title{
+font-size:2rem;
+}
+
+.vita-photo{
+min-height:320px;
+}
+
+.vita-main-img{
+min-height:320px;
+}
+
+.vita-photo-button{
+left:18px;
+bottom:18px;
+font-size:.88rem;
+padding:0 18px;
+}
+
+}
 
     .site-footer {
       color: rgba(255, 255, 255, 0.82);
