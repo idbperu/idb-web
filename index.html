@@ -850,13 +850,16 @@
       box-shadow:0 20px 42px rgba(0,0,0,.35);
       }
       
-      .vita-photo-cta img{
-      width:24px;
-      height:24px;
+      .vita-photo-cta .wa-icon{
+      width:22px;
+      height:22px;
+      min-height:0;
       display:block;
-}
+      object-fit:contain;
+      flex:0 0 auto;
+    }
     
-    .vita-photo img {
+    .vita-photo > .vita-main-img {
       width: 100%;
       height: 100%;
       min-height: 430px;
@@ -1394,8 +1397,7 @@
         <figure class="vita-photo" aria-label="VITA acompañando una conversación de bienestar">
           <img class="vita-main-img" src="./imagenes/vita-institucional-idb.png" alt="VITA acompañando una consulta de bienestar" loading="lazy">
           <a class="vita-photo-cta" href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">
-        <img class="wa-icon"
-          <img src="./imagenes/icon-whatsapp.svg" alt="" aria-hidden="true">
+       <img class="wa-icon" src="./imagenes/icon-whatsapp.svg" alt="" aria-hidden="true">
         Hablar con VITA
       </a>
         </figure>
