@@ -745,14 +745,12 @@
       font-size:.78rem;
     }
     
-      .wa-message{
-    max-width:86%;
-    padding:10px 13px;
-    margin:10px 12px;
-    border-radius:15px;
-    font-size:.86rem;
-    line-height:1.38;
-  }
+        .wa-message.wa-vita{
+      background:#FFFFFF;
+      color:#1F2D2B;
+      border-radius:14px;
+      box-shadow:0 2px 8px rgba(0,0,0,.06);
+      }
     
     .wa-vita{
       background:#ffffff;
@@ -767,18 +765,30 @@
       border-top-right-radius:6px;
     }
         .wa-cta{
-        display:inline-flex;
-        align-items:center;
-        margin-top:12px;
-        padding:8px 13px;
-        border-radius:999px;
-        background:#25D366;
-        color:#fff;
-        font-size:.8rem;
-        font-weight:700;
-        text-decoration:none;
-        transition:.2s ease;
-    }
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      
+      margin-top:14px;
+      padding:11px 18px;
+      
+      background:#25D366;
+      color:#fff;
+      
+      border-radius:999px;
+      
+      font-size:.87rem;
+      font-weight:700;
+      
+      text-decoration:none;
+      
+      transition:.2s;
+      }
+      
+      .wa-cta:hover{
+      background:#1EBE5A;
+      }
     
     .wa-cta:hover{
         background:#20BD5A;
