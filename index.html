@@ -716,10 +716,22 @@
       box-shadow:0 18px 42px rgba(0,0,0,.18);
     }
 
-    .wa-header{
-      padding:14px 18px;
+        .wa-header{
+      position:relative;
+      padding:14px 18px 14px 54px;
       background:#075E54;
       color:#fff;
+    }
+    
+    .wa-header::before{
+      content:"";
+      position:absolute;
+      left:18px;
+      top:50%;
+      width:26px;
+      height:26px;
+      transform:translateY(-50%);
+      background:url("./imagenes/icon-whatsapp.svg") center/contain no-repeat;
     }
     
     .wa-header strong{
