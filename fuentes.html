@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuentes de Referencia | Instituto Digital de Bienestar</title>
+  <meta name="description" content="Fuentes institucionales, sanitarias y científicas utilizadas como referencia para el contenido educativo del Instituto Digital de Bienestar.">
+  <link rel="canonical" href="https://idb.org.pe/fuentes.html">
+  <meta property="og:title" content="Fuentes de Referencia | Instituto Digital de Bienestar">
+  <meta property="og:description" content="Fuentes institucionales, sanitarias y científicas utilizadas como referencia para el contenido educativo del Instituto Digital de Bienestar.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://idb.org.pe/imagenes/hero-idb.jpg">
+  <meta property="og:url" content="https://idb.org.pe/fuentes.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fuentes de Referencia | Instituto Digital de Bienestar">
+  <meta name="twitter:description" content="Fuentes institucionales, sanitarias y científicas utilizadas como referencia para el contenido educativo del Instituto Digital de Bienestar.">
+  <meta name="twitter:image" content="https://idb.org.pe/imagenes/hero-idb.jpg">
+
+  <style>
+    :root {
+      --green: #1f8f73;
+      --green-dark: #176c59;
+      --green-soft: #e8f5f0;
+      --teal: #1da7b2;
+      --blue: #206f9f;
+      --lime: #8cc63f;
+      --ink: #16312d;
+      --muted: #65756f;
+      --line: #dfe8e4;
+      --paper: #ffffff;
+      --mist: #f6faf8;
+      --shadow: 0 18px 45px rgba(22, 49, 45, 0.13);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: 72px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      width: min(var(--max), calc(100% - 40px));
+      height: 72px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(96px, 1fr) auto;
+      align-items: center;
+      gap: 22px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      justify-self: start;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+    .brand-logo {
+      width: 110px;
+      height: auto;
+      display: block;
+    }
+    .nav {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #263a36;
+      font-size: 0.89rem;
+      font-weight: 560;
+    }
+    .nav a {
+      position: relative;
+      padding: 28px 0;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 21px;
+      height: 1px;
+      background: var(--green);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+    .nav a:hover::after,
+    .nav a[aria-current="page"]::after { transform: scaleX(1); }
+    .menu-toggle {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      margin: 5px auto;
+      background: var(--green-dark);
+      border-radius: 999px;
+    }
+
+    .page-hero {
+      background:
+        linear-gradient(180deg, rgba(232, 245, 240, .72), rgba(255, 255, 255, 0) 78%),
+        var(--paper);
+    }
+    .hero-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 76px 0 46px;
+      display: grid;
+      justify-items: center;
+      text-align: center;
+    }
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--green-dark);
+      font-size: .78rem;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 820px;
+      font-size: clamp(2.35rem, 5vw, 4.7rem);
+      line-height: .96;
+      letter-spacing: 0;
+    }
+    .hero-subtitle {
+      margin: 22px 0 0;
+      max-width: 820px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.18rem);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .section {
+      padding: 56px 0;
+    }
+    .section-head {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .section-head h2 {
+      margin: 0;
+      color: #173c35;
+      font-size: clamp(1.75rem, 3vw, 2.55rem);
+      line-height: 1.08;
+    }
+    .section-head p {
+      margin: 0;
+      max-width: 650px;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .source-card {
+      min-height: 154px;
+      display: grid;
+      align-content: space-between;
+      gap: 24px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 14px 32px rgba(22, 49, 45, .07);
+    }
+    .source-card strong {
+      color: #173c35;
+      font-size: 1.18rem;
+      line-height: 1.15;
+    }
+    .source-card span {
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 750;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .placeholder-card {
+      min-height: 170px;
+      padding: 26px;
+      border: 1px dashed #b8cec5;
+      border-radius: var(--radius);
+      background: var(--mist);
+      display: grid;
+      gap: 10px;
+      align-content: center;
+    }
+    .placeholder-card h3 {
+      margin: 0;
+      color: #173c35;
+      font-size: 1.25rem;
+    }
+    .placeholder-card p {
+      margin: 0;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .notice {
+      margin: 24px 0 72px;
+      padding: 28px;
+      border-radius: var(--radius);
+      background: #f2f8f5;
+      border: 1px solid #dcebe5;
+      color: #315a4c;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .notice strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #173c35;
+      font-size: .82rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .site-footer {
+      color: #2B3A37;
+      background: linear-gradient(180deg, #EEF6F2 0%, #E4F0EA 55%, #D8EAE1 100%);
+      border-top: 1px solid #D9EDE4;
+    }
+    .footer-main {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 50px 0 32px;
+      display: grid;
+      grid-template-columns: minmax(320px, 1.45fr) repeat(2, minmax(150px, 0.55fr));
+      gap: 48px;
+      align-items: start;
+    }
+    .footer-brand {
+      display: grid;
+      gap: 16px;
+      max-width: 460px;
+    }
+    .footer-brand img {
+      width: 72px;
+      height: auto;
+    }
+    .footer-brand p {
+      margin: 0;
+      color: #5E726C;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+    .footer-col h3 {
+      margin: 0 0 18px;
+      color: #163C35;
+      font-size: 0.86rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .footer-col a,
+    .footer-col span {
+      display: block;
+      margin: 7px 0;
+      color: #61756E;
+      font-size: 0.9rem;
+    }
+    .footer-col a:hover { color: #1A8C73; }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.09); }
+    .footer-bottom-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      color: #6F827C;
+      font-size: 0.86rem;
+    }
+    .socials {
+      display: flex;
+      gap: 18px;
+      font-weight: 750;
+    }
+
+    @media (max-width: 980px) {
+      .site-header,
+      .header-inner { height: auto; }
+      .header-inner {
+        min-height: 78px;
+        grid-template-columns: auto auto;
+        padding: 10px 0;
+      }
+      .menu-toggle {
+        display: block;
+        justify-self: end;
+      }
+      .nav {
+        display: none;
+        grid-column: 1 / -1;
+        width: 100%;
+        padding: 14px 0 8px;
+      }
+      .nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .nav a {
+        padding: 8px 0 12px;
+        white-space: nowrap;
+      }
+      .nav a::after { bottom: 4px; }
+      .source-grid,
+      .footer-main { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner,
+      .hero-inner,
+      .wrap,
+      .footer-main,
+      .footer-bottom-inner {
+        width: min(100% - 28px, var(--max));
+      }
+      .brand-logo { width: 105px; }
+      .hero-inner {
+        padding: 50px 0 34px;
+        justify-items: start;
+        text-align: left;
+      }
+      h1 {
+        font-size: clamp(2.25rem, 14vw, 3.65rem);
+        line-height: .98;
+      }
+      .hero-subtitle {
+        font-size: .98rem;
+        line-height: 1.62;
+      }
+      .section {
+        padding: 38px 0;
+      }
+      .section-head {
+        margin-bottom: 18px;
+      }
+      .source-grid,
+      .footer-main {
+        grid-template-columns: 1fr;
+      }
+      .source-card {
+        min-height: 132px;
+        padding: 20px;
+      }
+      .notice {
+        margin: 12px 0 48px;
+        padding: 22px;
+      }
+      .footer-main {
+        padding: 16px 0 22px;
+        gap: 24px;
+      }
+      .footer-col h3 { margin-bottom: 10px; }
+      .footer-col a,
+      .footer-col span { margin: 5px 0; }
+      .footer-bottom-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        min-height: auto;
+        gap: 14px;
+        padding: 16px 0 22px;
+      }
+      .socials {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://idb.org.pe/#organization",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "logo": "https://idb.org.pe/imagenes/logo-idb.png"
+      },
+      {
+        "@type": "MedicalOrganization",
+        "@id": "https://idb.org.pe/#medical-organization",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "logo": "https://idb.org.pe/imagenes/logo-idb.png",
+        "medicalSpecialty": [
+          "PublicHealth",
+          "PreventiveMedicine"
+        ],
+        "parentOrganization": {
+          "@id": "https://idb.org.pe/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://idb.org.pe/#website",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "publisher": {
+          "@id": "https://idb.org.pe/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://idb.org.pe/index.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://idb.org.pe/fuentes.html#webpage",
+        "url": "https://idb.org.pe/fuentes.html",
+        "name": "Fuentes de Referencia | Instituto Digital de Bienestar",
+        "description": "Fuentes institucionales, sanitarias y científicas utilizadas como referencia para el contenido educativo del Instituto Digital de Bienestar.",
+        "image": "https://idb.org.pe/imagenes/hero-idb.jpg",
+        "isPartOf": {
+          "@id": "https://idb.org.pe/#website"
+        },
+        "publisher": {
+          "@id": "https://idb.org.pe/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://idb.org.pe/fuentes.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://idb.org.pe/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Fuentes de Referencia",
+            "item": "https://idb.org.pe/fuentes.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" class="brand-logo" onerror="this.hidden=true" loading="lazy" decoding="async">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <p class="eyebrow">IDB 2.0</p>
+        <h1>Fuentes de Referencia</h1>
+        <p class="hero-subtitle">El contenido del Instituto Digital de Bienestar se desarrolla utilizando información proveniente de organismos oficiales, instituciones sanitarias y sociedades científicas reconocidas.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="internacionales-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="internacionales-title">Organismos Internacionales</h2>
+          <p>Referencias globales preparadas para integrarse al sistema editorial y científico del IDB.</p>
+        </div>
+        <div class="source-grid">
+          <article class="source-card"><strong>OMS</strong><span>Organismo internacional</span></article>
+          <article class="source-card"><strong>OPS</strong><span>Organismo internacional</span></article>
+          <article class="source-card"><strong>CDC</strong><span>Salud pública</span></article>
+          <article class="source-card"><strong>NIH</strong><span>Investigación sanitaria</span></article>
+          <article class="source-card"><strong>MedlinePlus</strong><span>Información médica</span></article>
+          <article class="source-card"><strong>NICE</strong><span>Guías clínicas</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="peru-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="peru-title">Perú</h2>
+          <p>Instituciones nacionales consideradas para contenidos de orientación, prevención y salud pública.</p>
+        </div>
+        <div class="source-grid">
+          <article class="source-card"><strong>MINSA</strong><span>Autoridad sanitaria</span></article>
+          <article class="source-card"><strong>EsSalud</strong><span>Seguridad social</span></article>
+          <article class="source-card"><strong>INS</strong><span>Instituto nacional</span></article>
+          <article class="source-card"><strong>DIGEMID</strong><span>Medicamentos</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sociedades-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="sociedades-title">Sociedades Científicas</h2>
+          <p>Estructura preparada para incorporar futuras referencias especializadas por disciplina médica.</p>
+        </div>
+        <div class="placeholder-card">
+          <h3>Próximas incorporaciones</h3>
+          <p>Este bloque permitirá ordenar sociedades científicas por especialidad, país, tipo de documento y fecha de revisión.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="notice" aria-label="Aviso educativo">
+        <strong>Aviso</strong>
+        La información publicada por IDB tiene fines educativos y no reemplaza la evaluación, diagnóstico ni tratamiento realizado por un profesional de la salud.
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" loading="lazy" decoding="async">
+        <p>Orientación digital, recursos prácticos y contenidos claros para acompañar decisiones de bienestar.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navegación</h3>
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h3>VITA</h3>
+        <a href="index.html#vita">Hablar con VITA</a>
+        <span>Orientación personalizada</span>
+        <span>Recursos seleccionados</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          <strong>Instituto Digital de Bienestar</strong><br>
+          www.idb.org.pe · © 2026
+        </div>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+          <a href="https://x.com/" aria-label="X">X</a>
+          <a href="https://www.youtube.com/" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+menuToggle?.addEventListener('click', () => {
+  nav?.classList.toggle('active');
+});
+  </script>
+</body>
+</html>
