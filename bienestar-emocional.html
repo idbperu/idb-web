@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienestar Emocional | Instituto Digital de Bienestar</title>
+  <meta name="description" content="Página educativa del Instituto Digital de Bienestar sobre bienestar emocional, estrés cotidiano, manejo emocional, relaciones saludables, resiliencia y apoyo social.">
+  <link rel="canonical" href="https://idb.org.pe/bienestar-emocional.html">
+  <meta property="og:title" content="Bienestar Emocional | Instituto Digital de Bienestar">
+  <meta property="og:description" content="Página educativa del Instituto Digital de Bienestar sobre bienestar emocional, estrés cotidiano, manejo emocional, relaciones saludables, resiliencia y apoyo social.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://idb.org.pe/imagenes/bienestar-emocional-idb.jpg">
+  <meta property="og:url" content="https://idb.org.pe/bienestar-emocional.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bienestar Emocional | Instituto Digital de Bienestar">
+  <meta name="twitter:description" content="Página educativa del Instituto Digital de Bienestar sobre bienestar emocional, estrés cotidiano, manejo emocional, relaciones saludables, resiliencia y apoyo social.">
+  <meta name="twitter:image" content="https://idb.org.pe/imagenes/bienestar-emocional-idb.jpg">
+  <style>
+    :root {
+      --green: #1f8f73;
+      --green-dark: #176c59;
+      --green-soft: #e8f5f0;
+      --teal: #1da7b2;
+      --blue: #206f9f;
+      --lime: #8cc63f;
+      --ink: #16312d;
+      --muted: #65756f;
+      --line: #dfe8e4;
+      --paper: #ffffff;
+      --mist: #f6faf8;
+      --shadow: 0 18px 45px rgba(22, 49, 45, 0.13);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: 78px;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid rgba(223, 232, 228, 0.9);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      width: min(var(--max), calc(100% - 40px));
+      height: 78px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(300px, 1fr) auto minmax(120px, 1fr);
+      align-items: center;
+      gap: 28px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      justify-self: start;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+    .brand-logo {
+      display: block;
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+    .brand-text {
+      display: grid;
+      gap: 2px;
+      line-height: 1.08;
+    }
+    .brand-text strong { font-size: 1.12rem; }
+    .brand-text span {
+      font-size: 0.86rem;
+      color: var(--muted);
+      font-weight: 760;
+    }
+    .nav {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: #2c4a45;
+      font-size: 0.95rem;
+      font-weight: 650;
+    }
+    .nav a {
+      position: relative;
+      padding: 28px 0;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 21px;
+      height: 2px;
+      background: var(--green);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+    .nav a:hover::after, .nav a[aria-current="page"]::after { transform: scaleX(1); }
+    .vita-button {
+      justify-self: end;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 16px;
+      border: 1px solid rgba(31, 143, 115, 0.26);
+      border-radius: 999px;
+      color: var(--green-dark);
+      background: var(--green-soft);
+      font-size: 0.92rem;
+      font-weight: 760;
+    }
+
+    .hero {
+      color: #fff;
+      background:
+    linear-gradient(rgba(16,43,38,.65),rgba(16,43,38,.65)),
+    url('./imagenes/bienestar-emocional-idb.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    }
+    .hero-inner {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 520px;
+      margin: 0 auto;
+      padding: 82px 0 70px;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 56px;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--lime);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 820px;
+      font-size: clamp(2.45rem, 5vw, 4.8rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .hero p {
+      margin: 22px 0 0;
+      max-width: 690px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: clamp(1.02rem, 1.5vw, 1.22rem);
+    }
+    .hero-media {
+      min-height: 360px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(232, 245, 240, 0.16), rgba(255, 255, 255, 0.08));
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+    }
+    .hero-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .section { padding: 92px 0; }
+    .section-soft { background: var(--mist); }
+    .section-head { margin-bottom: 34px; }
+    .section-head h2 {
+      margin: 0;
+      max-width: 800px;
+      font-size: clamp(1.9rem, 3vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .section-head p {
+      margin: 16px 0 0;
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 42px;
+      align-items: start;
+    }
+    .info-panel {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .info-panel h3 {
+      margin: 0 0 12px;
+      font-size: 1.3rem;
+    }
+    .info-panel p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .principles {
+      display: grid;
+      gap: 14px;
+    }
+    .principle {
+      padding: 18px 20px;
+      border-left: 4px solid var(--green);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+    }
+    .principle strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--green-dark);
+    }
+    .principle span { color: var(--muted); }
+
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .topic-card, .article-card, .recommendation {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+    }
+    .topic-card {
+      min-height: 230px;
+      padding: 24px;
+    }
+    .card-number {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--green-dark);
+      background: var(--green-soft);
+      font-weight: 900;
+    }
+    .topic-card h3, .article-card h3, .recommendation h3 {
+      margin: 0 0 10px;
+      font-size: 1.14rem;
+      line-height: 1.22;
+    }
+    .topic-card p, .article-card p, .recommendation p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .article-card {
+      min-height: 228px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 22px;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+    .article-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(31, 143, 115, 0.38);
+      box-shadow: 0 22px 42px rgba(22, 49, 45, 0.13);
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--green-dark);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .article-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--teal));
+    }
+    .article-link {
+      margin-top: 22px;
+      color: var(--green-dark);
+      font-weight: 850;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.05);
+    }
+    summary {
+      cursor: pointer;
+      padding: 20px 24px;
+      color: var(--ink);
+      font-weight: 800;
+    }
+    details p {
+      margin: 0;
+      padding: 0 24px 22px;
+      color: var(--muted);
+    }
+
+    .recommendations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .recommendation {
+      min-height: 178px;
+      padding: 24px;
+      border-top: 5px solid var(--green);
+    }
+
+    .references {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .references li {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      color: var(--muted);
+    }
+    .references strong { color: var(--ink); }
+
+    .cta {
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(23, 108, 89, 0.96), rgba(31, 143, 115, 0.94)),
+        radial-gradient(circle at 16% 22%, rgba(255, 255, 255, 0.22), transparent 28%);
+    }
+    .cta-inner {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 270px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 34px;
+    }
+    .cta h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    .cta p {
+      margin: 16px 0 0;
+      max-width: 650px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 1.06rem;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: transform 180ms ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-light {
+      color: var(--green-dark);
+      background: #fff;
+      box-shadow: 0 18px 32px rgba(0, 0, 0, 0.16);
+    }
+
+    .site-footer {
+      color: rgba(255, 255, 255, 0.82);
+      background: #102b26;
+    }
+    .footer-main {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 64px 0 46px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 34px;
+    }
+    .footer-col h3 {
+      margin: 0 0 18px;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .footer-col a, .footer-col span {
+      display: block;
+      margin: 9px 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.95rem;
+    }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.12); }
+    .footer-bottom-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.94rem;
+    }
+    .socials {
+      display: flex;
+      gap: 18px;
+      font-weight: 750;
+    }
+
+    @media (max-width: 1080px) {
+      .articles-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 980px) {
+      .site-header, .header-inner { height: auto; }
+      .header-inner {
+        min-height: 78px;
+        grid-template-columns: 1fr auto;
+        padding: 10px 0;
+      }
+      .nav {
+        order: 3;
+        grid-column: 1 / -1;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        overflow-x: auto;
+      }
+      .nav a {
+        padding: 8px 0 12px;
+        white-space: nowrap;
+      }
+      .nav a::after { bottom: 4px; }
+      .hero-inner, .two-col, .cta-inner { grid-template-columns: 1fr; }
+      .hero-media { max-width: 520px; }
+      .topics-grid, .recommendations-grid, .footer-main { grid-template-columns: repeat(2, 1fr); }
+      .articles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cta-inner { padding: 58px 0; }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner, .hero-inner, .wrap, .cta-inner, .footer-main, .footer-bottom-inner {
+        width: min(100% - 28px, var(--max));
+      }
+      .brand-text span { font-size: 0.76rem; }
+      .vita-button {
+        min-height: 36px;
+        padding: 0 12px;
+        font-size: 0.84rem;
+      }
+      .nav { justify-content: flex-start; }
+      .hero-inner {
+        min-height: 390px;
+        padding: 62px 0;
+      }
+      .hero-media, .hero-media img { min-height: 300px; }
+      .section { padding: 68px 0; }
+      .topics-grid, .articles-grid, .recommendations-grid, .footer-main { grid-template-columns: 1fr; }
+      .topic-card, .article-card, .recommendation { min-height: auto; }
+      .footer-bottom-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 22px 0;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://idb.org.pe/#organization",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "logo": "https://idb.org.pe/imagenes/logo-idb.png"
+      },
+      {
+        "@type": "MedicalOrganization",
+        "@id": "https://idb.org.pe/#medical-organization",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "logo": "https://idb.org.pe/imagenes/logo-idb.png",
+        "medicalSpecialty": [
+          "PublicHealth",
+          "PreventiveMedicine"
+        ],
+        "parentOrganization": {
+          "@id": "https://idb.org.pe/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://idb.org.pe/#website",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "publisher": {
+          "@id": "https://idb.org.pe/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://idb.org.pe/index.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://idb.org.pe/bienestar-emocional.html#webpage",
+        "url": "https://idb.org.pe/bienestar-emocional.html",
+        "name": "Bienestar Emocional | Instituto Digital de Bienestar",
+        "description": "Página educativa del Instituto Digital de Bienestar sobre bienestar emocional, estrés cotidiano, manejo emocional, relaciones saludables, resiliencia y apoyo social.",
+        "image": "https://idb.org.pe/imagenes/bienestar-emocional-idb.jpg",
+        "isPartOf": {
+          "@id": "https://idb.org.pe/#website"
+        },
+        "publisher": {
+          "@id": "https://idb.org.pe/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://idb.org.pe/bienestar-emocional.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://idb.org.pe/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Bienestar Emocional",
+            "item": "https://idb.org.pe/bienestar-emocional.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" class="brand-logo" onerror="this.hidden=true" loading="lazy" decoding="async">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">Bienestar emocional</p>
+          <h1>Comprender lo que sentimos también es cuidar la salud</h1>
+          <p>El bienestar emocional permite reconocer emociones, afrontar desafíos cotidianos, construir relaciones y pedir apoyo cuando es necesario. No significa sentirse bien todo el tiempo.</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="intro-title">
+      <div class="wrap two-col">
+        <div class="section-head">
+          <p class="eyebrow">Una mirada integral</p>
+          <h2 id="intro-title">Qué es el bienestar emocional</h2>
+          <p>Es la capacidad de reconocer y expresar emociones, adaptarse a cambios, mantener vínculos y participar en actividades significativas. Está influido por experiencias personales, condiciones de vida y redes de apoyo.</p>
+        </div>
+        <div class="principles">
+          <div class="principle"><strong>Reconocimiento</strong><span>Identificar emociones y necesidades ayuda a responder con mayor claridad.</span></div>
+          <div class="principle"><strong>Regulación</strong><span>Manejar una emoción no significa eliminarla, sino atravesarla sin perder de vista el contexto.</span></div>
+          <div class="principle"><strong>Conexión</strong><span>Los vínculos seguros y respetuosos ofrecen compañía, escucha y sentido de pertenencia.</span></div>
+          <div class="principle"><strong>Apoyo oportuno</strong><span>Pedir ayuda es una forma de cuidado cuando el malestar supera los recursos disponibles.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="estres-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Demandas diarias</p>
+          <h2 id="estres-title">Estrés cotidiano</h2>
+          <p>El estrés es una respuesta ante demandas, cambios o incertidumbre. Puede ser temporal y útil, pero cuando se prolonga o desborda puede afectar el descanso, la concentración y las relaciones.</p>
+        </div>
+        <div class="topics-grid">
+          <article class="topic-card"><div class="card-number">01</div><h3>Señales corporales</h3><p>Tensión muscular, cansancio, respiración rápida o molestias digestivas pueden acompañar momentos de estrés.</p></article>
+          <article class="topic-card"><div class="card-number">02</div><h3>Pensamientos repetitivos</h3><p>La preocupación constante puede dificultar la atención y mantener la mente en estado de alerta.</p></article>
+          <article class="topic-card"><div class="card-number">03</div><h3>Cambios de ánimo</h3><p>Irritabilidad, impaciencia o sensación de saturación pueden indicar necesidad de pausa y apoyo.</p></article>
+          <article class="topic-card"><div class="card-number">04</div><h3>Rutinas alteradas</h3><p>El sueño, la alimentación y el movimiento suelen cambiar durante periodos exigentes.</p></article>
+          <article class="topic-card"><div class="card-number">05</div><h3>Fuentes de presión</h3><p>Trabajo, estudio, cuidados, economía y cambios familiares pueden acumular demandas.</p></article>
+          <article class="topic-card"><div class="card-number">06</div><h3>Recuperación</h3><p>Descanso, organización, movimiento y conversación ayudan a recuperar recursos emocionales.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="manejo-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Autorregulación</p>
+          <h2 id="manejo-title">Manejo emocional</h2>
+          <p>Las emociones aportan información sobre lo que importa. Aprender a observarlas, nombrarlas y elegir una respuesta puede mejorar la forma de afrontar situaciones difíciles.</p>
+        </div>
+        <div class="recommendations-grid">
+          <article class="recommendation"><h3>Poner nombre a lo que ocurre</h3><p>Distinguir entre tristeza, miedo, enojo o frustración permite comprender mejor la experiencia.</p></article>
+          <article class="recommendation"><h3>Hacer una pausa</h3><p>Detenerse unos minutos antes de actuar puede abrir espacio para una respuesta más consciente.</p></article>
+          <article class="recommendation"><h3>Respirar con calma</h3><p>Una respiración lenta y cómoda puede ayudar a disminuir la activación del momento.</p></article>
+          <article class="recommendation"><h3>Expresar con respeto</h3><p>Hablar desde la propia experiencia facilita comunicar necesidades sin culpar ni atacar.</p></article>
+          <article class="recommendation"><h3>Registrar patrones</h3><p>Anotar situaciones, emociones y respuestas ayuda a reconocer desencadenantes y recursos útiles.</p></article>
+          <article class="recommendation"><h3>Aceptar emociones difíciles</h3><p>Sentir malestar no es un fracaso; algunas experiencias necesitan tiempo, compañía y apoyo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="relaciones-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Vínculos</p>
+          <h2 id="relaciones-title">Relaciones saludables</h2>
+          <p>Una relación saludable combina respeto, comunicación, confianza y límites. Puede haber desacuerdos, pero no debería existir miedo, humillación, control o violencia.</p>
+        </div>
+        <div class="topics-grid">
+          <article class="topic-card"><div class="card-number">01</div><h3>Escucha activa</h3><p>Prestar atención y confirmar lo comprendido reduce malentendidos.</p></article>
+          <article class="topic-card"><div class="card-number">02</div><h3>Límites claros</h3><p>Expresar lo que resulta aceptable protege el bienestar y la autonomía.</p></article>
+          <article class="topic-card"><div class="card-number">03</div><h3>Comunicación respetuosa</h3><p>Hablar de conductas concretas facilita resolver problemas sin descalificar a la persona.</p></article>
+          <article class="topic-card"><div class="card-number">04</div><h3>Reciprocidad</h3><p>Dar y recibir apoyo de manera equilibrada fortalece la confianza.</p></article>
+          <article class="topic-card"><div class="card-number">05</div><h3>Reparación</h3><p>Reconocer errores y acordar cambios ayuda a reconstruir vínculos después de un conflicto.</p></article>
+          <article class="topic-card"><div class="card-number">06</div><h3>Seguridad</h3><p>Ante control, amenazas o violencia, es importante buscar apoyo en personas y servicios confiables.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="resiliencia-title">
+      <div class="wrap two-col">
+        <div class="section-head">
+          <p class="eyebrow">Adaptación</p>
+          <h2 id="resiliencia-title">Resiliencia</h2>
+          <p>La resiliencia es la capacidad de adaptarse y reconstruir recursos frente a dificultades. No implica soportarlo todo en soledad ni evitar el dolor.</p>
+        </div>
+        <div class="principles">
+          <div class="principle"><strong>Flexibilidad</strong><span>Ajustar expectativas y estrategias ayuda cuando las circunstancias cambian.</span></div>
+          <div class="principle"><strong>Sentido</strong><span>Conectar las acciones con valores y propósitos puede orientar decisiones difíciles.</span></div>
+          <div class="principle"><strong>Aprendizaje</strong><span>Revisar experiencias pasadas permite reconocer fortalezas y apoyos disponibles.</span></div>
+          <div class="principle"><strong>Comunidad</strong><span>La resiliencia también se construye con vínculos, recursos y condiciones sociales favorables.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="apoyo-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Redes de cuidado</p>
+          <h2 id="apoyo-title">Apoyo social</h2>
+          <p>Contar con personas y espacios de confianza puede disminuir el aislamiento, facilitar soluciones prácticas y sostener el bienestar durante etapas complejas.</p>
+        </div>
+        <div class="recommendations-grid">
+          <article class="recommendation"><h3>Personas de confianza</h3><p>Identificar a quién llamar para conversar o pedir ayuda prepara una red disponible.</p></article>
+          <article class="recommendation"><h3>Apoyo práctico</h3><p>Compartir tareas, información o cuidados puede aliviar demandas concretas.</p></article>
+          <article class="recommendation"><h3>Espacios comunitarios</h3><p>Grupos culturales, educativos, vecinales o deportivos ofrecen pertenencia y participación.</p></article>
+          <article class="recommendation"><h3>Conversaciones honestas</h3><p>Explicar qué tipo de apoyo se necesita evita suposiciones y facilita acuerdos.</p></article>
+          <article class="recommendation"><h3>Acompañamiento profesional</h3><p>Los servicios de salud pueden orientar cuando el malestar es persistente o difícil de manejar.</p></article>
+          <article class="recommendation"><h3>Cuidado del cuidador</h3><p>Quienes acompañan a otras personas también necesitan descanso, límites y apoyo propio.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="alertas-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Atención oportuna</p>
+          <h2 id="alertas-title">Señales de alerta</h2>
+          <p>Estas señales no constituyen un diagnóstico. Conviene buscar orientación profesional cuando persisten, aumentan o interfieren con la vida cotidiana. Ante riesgo inmediato, se debe contactar a emergencias o servicios locales de crisis.</p>
+        </div>
+        <div class="topics-grid">
+          <article class="topic-card"><div class="card-number">01</div><h3>Malestar persistente</h3><p>Tristeza, ansiedad, irritabilidad o vacío que se mantienen y resultan difíciles de manejar.</p></article>
+          <article class="topic-card"><div class="card-number">02</div><h3>Pérdida de interés</h3><p>Dejar de disfrutar actividades, vínculos o responsabilidades que antes eran significativos.</p></article>
+          <article class="topic-card"><div class="card-number">03</div><h3>Aislamiento marcado</h3><p>Alejarse de otras personas durante un periodo prolongado o sentir que no existe apoyo disponible.</p></article>
+          <article class="topic-card"><div class="card-number">04</div><h3>Cambios intensos</h3><p>Alteraciones importantes del sueño, apetito, energía, concentración o conducta.</p></article>
+          <article class="topic-card"><div class="card-number">05</div><h3>Dificultad para funcionar</h3><p>El malestar impide estudiar, trabajar, cuidarse o cumplir actividades esenciales.</p></article>
+          <article class="topic-card"><div class="card-number">06</div><h3>Riesgo de daño</h3><p>Pensamientos de hacerse daño o no querer vivir requieren ayuda inmediata y acompañamiento.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="articulos-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Artículos destacados</p>
+          <h2 id="articulos-title">Lecturas para cuidar el bienestar emocional</h2>
+          <p>Doce contenidos educativos para comprender emociones, fortalecer vínculos y reconocer cuándo pedir apoyo.</p>
+        </div>
+        <div class="articles-grid">
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Conceptos</div><h3>Bienestar emocional sin perfección</h3><p>Por qué sentirse bien no significa evitar todas las emociones difíciles.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Estrés</div><h3>Cómo reconocer la sobrecarga</h3><p>Señales físicas, mentales y conductuales que invitan a hacer una pausa.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Emociones</div><h3>Nombrar lo que sentimos</h3><p>Un primer paso para comprender necesidades y elegir respuestas.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Pausa</div><h3>Respiración y regulación cotidiana</h3><p>Prácticas breves para recuperar calma durante momentos de tensión.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Vínculos</div><h3>Comunicación emocional respetuosa</h3><p>Cómo expresar experiencias y necesidades con mayor claridad.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Límites</div><h3>Decir no también es cuidarse</h3><p>Límites claros para proteger tiempo, energía y seguridad personal.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Conflictos</div><h3>Desacuerdos sin descalificaciones</h3><p>Herramientas para conversar sobre problemas y buscar acuerdos.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Resiliencia</div><h3>Adaptarse a cambios difíciles</h3><p>Recursos personales y colectivos que ayudan a atravesar transiciones.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Apoyo</div><h3>Cómo pedir ayuda de forma concreta</h3><p>Preparar una conversación y explicar qué acompañamiento se necesita.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Comunidad</div><h3>Conexión social y pertenencia</h3><p>El valor de participar en espacios seguros y significativos.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Autocuidado</div><h3>Rutinas que sostienen el bienestar</h3><p>Descanso, movimiento y organización como bases cotidianas.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Prevención</div><h3>Cuándo buscar apoyo profesional</h3><p>Señales que justifican una consulta o atención inmediata.</p></div><a class="article-link" href="bienestar-emocional.html">Leer artículo</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2 id="faq-title">Dudas comunes sobre bienestar emocional</h2>
+        </div>
+        <div class="faq">
+          <details><summary>¿Tener bienestar emocional significa estar feliz siempre?</summary><p>No. Implica reconocer y manejar distintas emociones, incluidas las difíciles, con recursos y apoyo adecuados.</p></details>
+          <details><summary>¿Todo estrés es perjudicial?</summary><p>No. Una respuesta breve puede ayudar a afrontar una demanda. El problema aparece cuando el estrés es intenso, prolongado o supera los recursos disponibles.</p></details>
+          <details><summary>¿Pedir ayuda es una señal de debilidad?</summary><p>No. Reconocer una necesidad y buscar apoyo es una acción responsable de cuidado.</p></details>
+          <details><summary>¿Cómo puedo apoyar a alguien que atraviesa un momento difícil?</summary><p>Escucha sin juzgar, pregunta qué necesita y facilita acceso a apoyo profesional si el malestar es intenso o existe riesgo.</p></details>
+          <details><summary>¿Cuándo conviene consultar a un profesional?</summary><p>Cuando el malestar persiste, empeora, afecta actividades habituales o resulta difícil de manejar con los recursos disponibles.</p></details>
+          <details><summary>¿Qué hacer ante pensamientos de autolesión o suicidio?</summary><p>No dejar sola a la persona, reducir el acceso a medios de daño y contactar de inmediato a emergencias o servicios locales de crisis.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="recomendaciones-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Recomendaciones generales</p>
+          <h2 id="recomendaciones-title">Prácticas cotidianas para fortalecer recursos emocionales</h2>
+          <p>Estas orientaciones son educativas y no sustituyen una evaluación individual. Cada persona puede adaptar las prácticas a sus necesidades, cultura y circunstancias.</p>
+        </div>
+        <div class="recommendations-grid">
+          <article class="recommendation"><h3>Observa sin juzgar</h3><p>Reconoce emociones y señales corporales antes de decidir cómo responder.</p></article>
+          <article class="recommendation"><h3>Cuida rutinas básicas</h3><p>Descanso, alimentación, movimiento y pausas aportan una base para afrontar demandas.</p></article>
+          <article class="recommendation"><h3>Protege tus límites</h3><p>Organiza responsabilidades y comunica lo que puedes asumir de manera realista.</p></article>
+          <article class="recommendation"><h3>Mantén vínculos</h3><p>Reserva espacios para conversar y participar en actividades compartidas.</p></article>
+          <article class="recommendation"><h3>Reduce la autoexigencia</h3><p>Los cambios sostenibles suelen construirse con pasos pequeños y flexibles.</p></article>
+          <article class="recommendation"><h3>Busca apoyo temprano</h3><p>No es necesario esperar a una crisis para conversar con un profesional.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="fuentes-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Fuentes científicas</p>
+          <h2 id="fuentes-title">Referencias sobre salud mental y bienestar emocional</h2>
+          <p>El contenido tiene fines educativos generales y se basa en recursos institucionales de salud pública y salud mental.</p>
+        </div>
+        <ul class="references">
+          <li><strong>OMS.</strong> Recursos sobre salud mental, promoción del bienestar, prevención y determinantes sociales.</li>
+          <li><strong>OPS.</strong> Información regional sobre salud mental comunitaria, apoyo psicosocial y acceso a servicios en las Américas.</li>
+          <li><strong>NIH.</strong> Información científica y educativa sobre estrés, salud, conducta y bienestar.</li>
+          <li><strong>NIMH.</strong> Recursos del National Institute of Mental Health sobre señales de alerta, búsqueda de ayuda y salud mental.</li>
+          <li><strong>MedlinePlus.</strong> Información para pacientes sobre estrés, salud mental, relaciones y preparación para consultas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-inner">
+        <div>
+          <h2>Consulta más recursos en Biblioteca IDB</h2>
+          <p>Explora contenidos educativos sobre prevención, nutrición, actividad física, sueño y envejecimiento saludable.</p>
+        </div>
+        <a class="button button-light" href="recursos.html">Ir a Recursos IDB</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" loading="lazy" decoding="async">
+        <p>Orientación digital, recursos prácticos y contenidos claros para acompañar decisiones de bienestar.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navegación</h3>
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h3>VITA</h3>
+        <a href="index.html#vita">Hablar con VITA</a>
+        <span>Orientación personalizada</span>
+        <span>Recursos seleccionados</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          <strong>Instituto Digital de Bienestar</strong><br>
+          www.idb.org.pe · © 2026
+        </div>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+          <a href="https://x.com/" aria-label="X">X</a>
+          <a href="https://www.youtube.com/" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+menuToggle?.addEventListener('click', () => {
+  nav?.classList.toggle('active');
+});
+  </script>
+</body>
+</html>
