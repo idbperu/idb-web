@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Instituto Digital de Bienestar</title>
+  <meta name="description" content="Canales claros para resolver tus dudas sobre bienestar y acceder a orientación digital del Instituto Digital de Bienestar.">
+  <link rel="canonical" href="https://idb.org.pe/contacto.html">
+  <meta property="og:title" content="Contacto | Instituto Digital de Bienestar">
+  <meta property="og:description" content="Canales claros para resolver tus dudas sobre bienestar y acceder a orientación digital del Instituto Digital de Bienestar.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://idb.org.pe/imagenes/vita-institucional-idb.png">
+  <meta property="og:url" content="https://idb.org.pe/contacto.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contacto | Instituto Digital de Bienestar">
+  <meta name="twitter:description" content="Canales claros para resolver tus dudas sobre bienestar y acceder a orientación digital del Instituto Digital de Bienestar.">
+  <meta name="twitter:image" content="https://idb.org.pe/imagenes/vita-institucional-idb.png">
+
+  <style>
+    :root {
+      --green: #1f8f73;
+      --green-dark: #176c59;
+      --green-soft: #e8f5f0;
+      --teal: #1da7b2;
+      --blue: #206f9f;
+      --lime: #8cc63f;
+      --ink: #16312d;
+      --muted: #65756f;
+      --line: #dfe8e4;
+      --paper: #ffffff;
+      --mist: #f6faf8;
+      --shadow: 0 18px 45px rgba(22, 49, 45, 0.13);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button, input { font: inherit; }
+    section[id] { scroll-margin-top: 110px; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: 72px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      width: min(var(--max), calc(100% - 40px));
+      height: 72px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(96px, 1fr) auto;
+      align-items: center;
+      gap: 22px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      justify-self: start;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+      .brand-logo {
+      width: 110px;
+      height: auto;
+      display: block;
+    }
+    .nav {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #263a36;
+      font-size: 0.89rem;
+      font-weight: 560;
+    }
+    .nav a {
+      position: relative;
+      padding: 28px 0;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 21px;
+      height: 1px;
+      background: var(--green);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+    .nav a:hover::after,
+    .nav a[aria-current="page"]::after { transform: scaleX(1); }
+  .menu-toggle{
+  display:none;
+  width:42px;
+  height:42px;
+  border:0;
+  background:transparent;
+  cursor:pointer;
+  }
+  
+  .menu-toggle span{
+    display:block;
+    width:22px;
+    height:2px;
+    margin:5px auto;
+    background:#1f2937;
+    border-radius:999px;
+  }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 800;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-green {
+      color: #fff;
+      background: linear-gradient(135deg, #1aa092, #178f82);
+      box-shadow: 0 10px 22px rgba(23, 143, 130, 0.18);
+    }
+    .button-light {
+      min-height:46px;
+      padding:0 22px;
+      color:var(--green-dark);
+      background:#fff;
+      border:1px solid rgba(255,255,255,.72);
+      box-shadow:0 12px 24px rgba(0,0,0,.14);
+      font-size:.92rem;
+      font-weight:800;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .section {
+      padding: 96px 0 88px;
+      background: var(--paper);
+    }
+    .section-mist { background: var(--mist); }
+    .section-head {
+      display: grid;
+      justify-items: center;
+      gap: 14px;
+      margin-bottom: 38px;
+      text-align: center;
+    }
+    .section-head h2 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(2.1rem, 3.45vw, 3.4rem);
+      line-height: 1.06;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .section-head p {
+      margin: 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+    .section-kicker {
+      margin: 0 0 11px;
+      color: var(--green-dark);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .contact-hero {
+      padding: 72px 0 64px;
+      background: #fff;
+    }
+    .contact-hero-grid {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, .94fr) minmax(420px, 1.06fr);
+      gap: 46px;
+      align-items: center;
+    }
+    .contact-hero-copy h1 {
+      margin: 0;
+      max-width: 720px;
+      color: #0f172a;
+      font-size: clamp(2.55rem, 4.35vw, 4.45rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .contact-hero-copy p {
+      margin: 20px 0 0;
+      max-width: 620px;
+      color: #647085;
+      font-size: clamp(1.02rem, 1.42vw, 1.2rem);
+    }
+    .contact-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .contact-hero-panel {
+      position: relative;
+      min-height: 420px;
+      overflow: hidden;
+      border-radius: 28px;
+      background: var(--green-soft);
+      box-shadow: 0 22px 52px rgba(22,49,45,.10);
+      isolation: isolate;
+    }
+    .contact-hero-panel img {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(.8) saturate(.9);
+    }
+    .contact-hero-panel::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(8,31,27,.08), rgba(8,31,27,.78)),
+        linear-gradient(90deg, rgba(8,31,27,.42), transparent 62%);
+    }
+    .contact-hero-panel-content {
+      position: absolute;
+      left: 28px;
+      right: 28px;
+      bottom: 28px;
+      color: #fff;
+    }
+    .contact-hero-panel-content strong {
+      display: block;
+      max-width: 460px;
+      font-size: clamp(1.55rem, 2.4vw, 2.35rem);
+      line-height: 1.05;
+      text-shadow: 0 2px 12px rgba(0,0,0,.32);
+    }
+    .contact-hero-panel-content span {
+      display: block;
+      margin-top: 12px;
+      max-width: 420px;
+      color: rgba(255,255,255,.88);
+      font-size: .95rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .contact-card {
+      min-height: 310px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(31, 143, 115, 0.38);
+      box-shadow: 0 22px 42px rgba(22, 49, 45, 0.13);
+    }
+    .contact-card span {
+      display: inline-flex;
+      width: 12px;
+      height: 12px;
+      margin-bottom: 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--teal));
+      box-shadow: 0 0 0 7px var(--green-soft);
+    }
+    .contact-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      line-height: 1.18;
+    }
+    .contact-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+    .contact-card strong,
+    .contact-card .mail-link {
+      display: inline-block;
+      margin-top: 22px;
+      color: var(--green-dark);
+      font-weight: 850;
+    }
+    .contact-card .button {
+      align-self: flex-start;
+      margin-top: 24px;
+    }
+
+    .vita-help {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 46px;
+      align-items: center;
+    }
+    .vita-help-visual {
+      min-height: 430px;
+      overflow: hidden;
+      border-radius: 28px;
+      background: var(--green-soft);
+      box-shadow: var(--shadow);
+    }
+    .vita-help-visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 430px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .vita-help-copy h2 {
+      margin: 0;
+      max-width: 620px;
+      font-size: clamp(2rem, 3.3vw, 3.2rem);
+      line-height: 1.06;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .vita-help-copy > p:not(.section-kicker) {
+      margin: 20px 0 0;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+    .help-list {
+      display: grid;
+      gap: 14px;
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .help-list li {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 12px;
+      color: #294b45;
+      font-weight: 720;
+    }
+    .help-list li::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      margin-top: 3px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(31,143,115,.18), rgba(29,167,178,.18));
+      box-shadow: inset 0 0 0 1px rgba(31,143,115,.22);
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      padding: 22px 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.05);
+    }
+    .faq-item h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      line-height: 1.25;
+    }
+    .faq-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .cta-section {
+      position: relative;
+      overflow: hidden;
+      padding: 86px 0;
+      color: #fff;
+      background:
+        radial-gradient(circle at 90% 15%, rgba(140,198,63,.18), transparent 28%),
+        radial-gradient(circle at 8% 88%, rgba(29,167,178,.22), transparent 34%),
+        linear-gradient(135deg,#102b26,#176c59);
+    }
+    .cta-grid {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 36px;
+      align-items: center;
+    }
+    .cta-grid h2 {
+      margin: 0;
+      max-width: 780px;
+      color: #fff;
+      font-size: clamp(2.1rem, 3.4vw, 3.45rem);
+      line-height: 1.04;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .cta-grid p {
+      margin: 18px 0 0;
+      max-width: 680px;
+      color: rgba(255,255,255,.82);
+      font-size: 1.02rem;
+    }
+
+    .site-footer{
+    color:#2B3A37;
+    background: linear-gradient(
+    180deg,
+    #EEF6F2 0%,
+    #E4F0EA 55%,
+    #D8EAE1 100%
+);
+    border-top:1px solid #D9EDE4;
+}
+    .footer-main {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 50px 0 32px;
+      display: grid;
+      grid-template-columns: minmax(320px, 1.45fr) repeat(2, minmax(150px, 0.55fr));
+      gap: 48px;
+      align-items: start;
+    }
+    .footer-brand {
+      display: grid;
+      gap: 16px;
+      max-width: 460px;
+    }
+    .footer-brand img {
+      width: 72px;
+      height: auto;
+    }
+    .footer-brand p {
+      margin: 0;
+      color: #5E726C;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+    .footer-col h3 {
+      margin: 0 0 18px;
+      color:#163C35;
+      font-size: 0.86rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .footer-col a,
+    .footer-col span {
+      display: block;
+      margin: 7px 0;
+      color:#61756E;
+      font-size: 0.9rem;
+    }
+    .footer-col a:hover { color:#1A8C73; }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.09); }
+    .footer-bottom-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      color:#6F827C;
+      font-size: 0.86rem;
+    }
+    .socials {
+      display: flex;
+      gap: 18px;
+      font-weight: 750;
+    }
+
+    @media (max-width: 980px) {
+      .site-header,
+      .header-inner { height: auto; }
+      .header-inner {
+        min-height: 78px;
+        grid-template-columns: auto auto;
+        padding: 10px 0;
+      }
+      .menu-toggle {
+      display: block;
+      justify-self: end;
+      margin-right: 0;
+      }
+      .nav {
+        display: none;
+        grid-column: 1 / -1;
+        width: 100%;
+        padding: 14px 0 8px;
+      }
+      .nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .nav a {
+        padding: 8px 0 12px;
+        white-space: nowrap;
+      }
+      .nav a::after { bottom: 4px; }
+      .contact-hero-grid,
+      .vita-help,
+      .cta-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-grid,
+      .footer-main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .contact-hero-panel,
+      .vita-help-visual,
+      .vita-help-visual img {
+        min-height: 360px;
+      }
+      .cta-grid {
+        gap: 28px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner,
+      .wrap,
+      .contact-hero-grid,
+      .cta-grid,
+      .footer-main,
+      .footer-bottom-inner {
+        width: min(100% - 28px, var(--max));
+      }
+      .brand-logo { width:105px; }
+      .nav { justify-content: center; }
+      .contact-hero {
+        padding: 42px 0 54px;
+      }
+      .contact-hero-copy h1 {
+        font-size: clamp(2rem, 10vw, 2.75rem);
+      }
+      .contact-hero-copy p {
+        font-size: .95rem;
+      }
+      .contact-hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 22px;
+      }
+      .button { width: 100%; }
+      .contact-hero-panel {
+        min-height: 300px;
+        border-radius: 22px;
+      }
+      .contact-hero-panel-content {
+        left: 22px;
+        right: 22px;
+        bottom: 22px;
+      }
+      .section {
+        padding: 76px 0;
+      }
+      .section-head {
+        margin-bottom: 28px;
+      }
+      .section-head h2,
+      .vita-help-copy h2,
+      .cta-grid h2 {
+        font-size: clamp(1.85rem, 8vw, 2.35rem);
+      }
+      .contact-grid,
+      .footer-main {
+        grid-template-columns: 1fr;
+      }
+      .contact-card {
+        min-height: auto;
+        padding: 24px;
+      }
+      .contact-card .button {
+        align-self: stretch;
+      }
+      .vita-help {
+        gap: 28px;
+      }
+      .vita-help-visual,
+      .vita-help-visual img {
+        min-height: 290px;
+        border-radius: 22px;
+      }
+      .faq-item {
+        padding: 20px;
+      }
+      .cta-section {
+        padding: 64px 0;
+      }
+      .footer-main {
+        padding: 16px 0 22px;
+        gap: 24px;
+      }
+      .footer-col h3 {
+        margin-bottom: 10px;
+      }
+      .footer-col a,
+      .footer-col span {
+        margin: 5px 0;
+      }
+      .footer-bottom-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        min-height: auto;
+        gap: 14px;
+        padding: 16px 0;
+      }
+      .socials {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://idb.org.pe/#organization",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "logo": "https://idb.org.pe/imagenes/logo-idb.png"
+      },
+      {
+        "@type": "MedicalOrganization",
+        "@id": "https://idb.org.pe/#medical-organization",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "logo": "https://idb.org.pe/imagenes/logo-idb.png",
+        "medicalSpecialty": [
+          "PublicHealth",
+          "PreventiveMedicine"
+        ],
+        "parentOrganization": {
+          "@id": "https://idb.org.pe/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://idb.org.pe/#website",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "publisher": {
+          "@id": "https://idb.org.pe/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://idb.org.pe/index.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://idb.org.pe/contacto.html#webpage",
+        "url": "https://idb.org.pe/contacto.html",
+        "name": "Contacto | Instituto Digital de Bienestar",
+        "description": "Canales claros para resolver tus dudas sobre bienestar y acceder a orientación digital del Instituto Digital de Bienestar.",
+        "image": "https://idb.org.pe/imagenes/vita-institucional-idb.png",
+        "isPartOf": {
+          "@id": "https://idb.org.pe/#website"
+        },
+        "publisher": {
+          "@id": "https://idb.org.pe/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://idb.org.pe/contacto.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://idb.org.pe/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contacto",
+            "item": "https://idb.org.pe/contacto.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" class="brand-logo" onerror="this.hidden=true" loading="lazy" decoding="async">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero" id="inicio">
+      <div class="contact-hero-grid">
+        <div class="contact-hero-copy">
+          <p class="section-kicker">Contacto IDB</p>
+          <h1>Estamos aquí para ayudarte.</h1>
+          <p>Encuentra orientación, recursos y canales claros para resolver tus dudas sobre bienestar.</p>
+          <div class="contact-hero-actions">
+            <a class="button button-green" href="#canales">Ver canales</a>
+            <a class="button" href="#vita">Consultar con VITA</a>
+          </div>
+        </div>
+        <figure class="contact-hero-panel" aria-label="Orientación del Instituto Digital de Bienestar">
+          <img src="./imagenes/medico-orientando-a-paciente-idb.png" alt="Profesional orientando a una persona sobre bienestar" loading="eager" decoding="async">
+          <div class="contact-hero-panel-content">
+            <strong>Un punto de partida claro para encontrar orientación.</strong>
+            <span>Canales digitales, recursos prácticos y apoyo para ubicar la información adecuada.</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-mist" id="canales" aria-labelledby="canales-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Canales de contacto</p>
+          <h2 id="canales-title">Elige el canal adecuado para tu consulta</h2>
+          <p>Según el tipo de duda, puedes iniciar una orientación digital, escribirnos o explorar recursos disponibles.</p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <div>
+              <span aria-hidden="true"></span>
+              <h3>WhatsApp con VITA</h3>
+              <p>Canal principal de orientación digital.</p>
+            </div>
+            <a class="button button-green" href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">Consultar con VITA</a>
+          </article>
+          <article class="contact-card">
+            <div>
+              <span aria-hidden="true"></span>
+              <h3>Correo institucional</h3>
+              <p>Para consultas institucionales, alianzas o comunicaciones formales.</p>
+              <a class="mail-link" href="mailto:contacto@idb.org.pe">contacto@idb.org.pe</a>
+            </div>
+          </article>
+          <article class="contact-card">
+            <div>
+              <span aria-hidden="true"></span>
+              <h3>Recursos digitales</h3>
+              <p>Explora guías, temas y materiales prácticos disponibles en la web.</p>
+            </div>
+            <a class="button button-green" href="recursos.html">Ver recursos</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vita-ayuda" aria-labelledby="vita-ayuda-title">
+      <div class="wrap vita-help">
+        <figure class="vita-help-visual">
+          <img src="./imagenes/vita-institucional-idb.png" alt="VITA acompañando una consulta de bienestar" loading="lazy" decoding="async">
+        </figure>
+        <div class="vita-help-copy">
+          <p class="section-kicker">¿En qué puede ayudarte VITA?</p>
+          <h2 id="vita-ayuda-title">Orientación práctica para encontrar el siguiente paso</h2>
+          <p>VITA te ayuda a ubicar información dentro del ecosistema IDB y a preparar mejor tus preguntas.</p>
+          <ul class="help-list">
+            <li>Orientarte sobre síntomas frecuentes.</li>
+            <li>Ayudarte a encontrar recursos relacionados.</li>
+            <li>Resolver dudas generales sobre medicamentos.</li>
+            <li>Prepararte para una consulta médica.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-mist" id="preguntas" aria-labelledby="preguntas-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Preguntas frecuentes</p>
+          <h2 id="preguntas-title">Información clara antes de contactarnos</h2>
+          <p>Respuestas breves sobre el alcance de IDB, VITA y los recursos disponibles.</p>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>¿IDB reemplaza una consulta médica?</h3>
+            <p>No. IDB ofrece información educativa y orientación general; no sustituye la evaluación de un profesional de salud.</p>
+          </article>
+          <article class="faq-item">
+            <h3>¿Puedo consultar con VITA por WhatsApp?</h3>
+            <p>Sí. WhatsApp es el canal principal para iniciar orientación digital y encontrar recursos relacionados con tu duda.</p>
+          </article>
+          <article class="faq-item">
+            <h3>¿Qué tipo de información puedo encontrar?</h3>
+            <p>Encontrarás contenidos sobre bienestar, prevención, medicamentos, exámenes médicos y temas frecuentes de salud.</p>
+          </article>
+          <article class="faq-item">
+            <h3>¿El servicio está disponible para todo el Perú?</h3>
+            <p>Sí. Los recursos digitales de IDB están disponibles en línea para personas que accedan desde cualquier región del país.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="vita" aria-labelledby="vita-title">
+      <div class="cta-grid">
+        <div>
+          <h2 id="vita-title">Empieza con una consulta simple.</h2>
+          <p>Describe tu duda y VITA te ayudará a encontrar una ruta clara dentro del ecosistema IDB.</p>
+        </div>
+        <a class="button button-light" href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar">Consultar con VITA</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" loading="lazy" decoding="async">
+        <p>Orientación digital, recursos prácticos y contenidos claros para acompañar decisiones de bienestar.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navegación</h3>
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h3>VITA</h3>
+        <a href="#vita">Hablar con VITA</a>
+        <span>Orientación personalizada</span>
+        <span>Recursos seleccionados</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          <strong>Instituto Digital de Bienestar</strong><br>
+          www.idb.org.pe · © 2026
+        </div>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+          <a href="https://x.com/" aria-label="X">X</a>
+          <a href="https://www.youtube.com/" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+</script>
+</body>
+</html>
