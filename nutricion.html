@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrición | Instituto Digital de Bienestar</title>
+  <meta name="description" content="Página educativa del Instituto Digital de Bienestar sobre alimentación saludable, hidratación, proteínas, frutas y verduras, fibra dietética y control de peso.">
+  <link rel="canonical" href="https://idb.org.pe/nutricion.html">
+  <meta property="og:title" content="Nutrición | Instituto Digital de Bienestar">
+  <meta property="og:description" content="Página educativa del Instituto Digital de Bienestar sobre alimentación saludable, hidratación, proteínas, frutas y verduras, fibra dietética y control de peso.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://idb.org.pe/imagenes/nutricion-idb.jpg">
+  <meta property="og:url" content="https://idb.org.pe/nutricion.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nutrición | Instituto Digital de Bienestar">
+  <meta name="twitter:description" content="Página educativa del Instituto Digital de Bienestar sobre alimentación saludable, hidratación, proteínas, frutas y verduras, fibra dietética y control de peso.">
+  <meta name="twitter:image" content="https://idb.org.pe/imagenes/nutricion-idb.jpg">
+  <style>
+    :root {
+      --green: #1f8f73;
+      --green-dark: #176c59;
+      --green-soft: #e8f5f0;
+      --teal: #1da7b2;
+      --blue: #206f9f;
+      --lime: #8cc63f;
+      --ink: #16312d;
+      --muted: #65756f;
+      --line: #dfe8e4;
+      --paper: #ffffff;
+      --mist: #f6faf8;
+      --shadow: 0 18px 45px rgba(22, 49, 45, 0.13);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: 78px;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid rgba(223, 232, 228, 0.9);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      width: min(var(--max), calc(100% - 40px));
+      height: 78px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(300px, 1fr) auto minmax(120px, 1fr);
+      align-items: center;
+      gap: 28px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      justify-self: start;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+    .brand-logo{
+    width:72px;
+    height:auto;
+    display:block;
+    }
+
+    .brand-text {
+      display: grid;
+      gap: 2px;
+      line-height: 1.08;
+    }
+    .brand-text strong { font-size: 1.12rem; }
+    .brand-text span {
+      font-size: 0.86rem;
+      color: var(--muted);
+      font-weight: 760;
+    }
+    .nav {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: #2c4a45;
+      font-size: 0.95rem;
+      font-weight: 650;
+    }
+    .nav a {
+      position: relative;
+      padding: 28px 0;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 21px;
+      height: 2px;
+      background: var(--green);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+    .nav a:hover::after, .nav a[aria-current="page"]::after { transform: scaleX(1); }
+    .vita-button {
+      justify-self: end;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 16px;
+      border: 1px solid rgba(31, 143, 115, 0.26);
+      border-radius: 999px;
+      color: var(--green-dark);
+      background: var(--green-soft);
+      font-size: 0.92rem;
+      font-weight: 760;
+    }
+
+    .hero {
+      color: #fff;
+      background:
+      linear-gradient(rgba(16,43,38,.65),rgba(16,43,38,.65)),
+      url('./imagenes/nutricion-idb.jpg');
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+    }
+    .hero-inner {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 520px;
+      margin: 0 auto;
+      padding: 82px 0 70px;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 56px;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--lime);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 820px;
+      font-size: clamp(2.45rem, 5vw, 4.8rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .hero p {
+      margin: 22px 0 0;
+      max-width: 690px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: clamp(1.02rem, 1.5vw, 1.22rem);
+    }
+    .hero-media {
+      min-height: 360px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(232, 245, 240, 0.16), rgba(255, 255, 255, 0.08));
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+    }
+    .hero-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .section { padding: 92px 0; }
+    .section-soft { background: var(--mist); }
+    .section-head { margin-bottom: 34px; }
+    .section-head h2 {
+      margin: 0;
+      max-width: 800px;
+      font-size: clamp(1.9rem, 3vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .section-head p {
+      margin: 16px 0 0;
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 42px;
+      align-items: start;
+    }
+    .info-panel {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .info-panel h3 {
+      margin: 0 0 12px;
+      font-size: 1.3rem;
+    }
+    .info-panel p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .principles {
+      display: grid;
+      gap: 14px;
+    }
+    .principle {
+      padding: 18px 20px;
+      border-left: 4px solid var(--green);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+    }
+    .principle strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--green-dark);
+    }
+    .principle span { color: var(--muted); }
+
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .topic-card, .article-card, .recommendation {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+    }
+    .topic-card {
+      min-height: 230px;
+      padding: 24px;
+    }
+    .card-number {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--green-dark);
+      background: var(--green-soft);
+      font-weight: 900;
+    }
+    .topic-card h3, .article-card h3, .recommendation h3 {
+      margin: 0 0 10px;
+      font-size: 1.14rem;
+      line-height: 1.22;
+    }
+    .topic-card p, .article-card p, .recommendation p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .article-card {
+      min-height: 228px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 22px;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+    .article-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(31, 143, 115, 0.38);
+      box-shadow: 0 22px 42px rgba(22, 49, 45, 0.13);
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--green-dark);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .article-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--teal));
+    }
+    .article-link {
+      margin-top: 22px;
+      color: var(--green-dark);
+      font-weight: 850;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.05);
+    }
+    summary {
+      cursor: pointer;
+      padding: 20px 24px;
+      color: var(--ink);
+      font-weight: 800;
+    }
+    details p {
+      margin: 0;
+      padding: 0 24px 22px;
+      color: var(--muted);
+    }
+
+    .recommendations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .recommendation {
+      min-height: 178px;
+      padding: 24px;
+      border-top: 5px solid var(--green);
+    }
+
+    .references {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .references li {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      color: var(--muted);
+    }
+    .references strong { color: var(--ink); }
+
+    .cta {
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(23, 108, 89, 0.96), rgba(31, 143, 115, 0.94)),
+        radial-gradient(circle at 16% 22%, rgba(255, 255, 255, 0.22), transparent 28%);
+    }
+    .cta-inner {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 270px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 34px;
+    }
+    .cta h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    .cta p {
+      margin: 16px 0 0;
+      max-width: 650px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 1.06rem;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: transform 180ms ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-light {
+      color: var(--green-dark);
+      background: #fff;
+      box-shadow: 0 18px 32px rgba(0, 0, 0, 0.16);
+    }
+
+    .site-footer {
+      color: rgba(255, 255, 255, 0.82);
+      background: #102b26;
+    }
+    .footer-main {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 64px 0 46px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 34px;
+    }
+    .footer-col h3 {
+      margin: 0 0 18px;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .footer-col a, .footer-col span {
+      display: block;
+      margin: 9px 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.95rem;
+    }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.12); }
+    .footer-bottom-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.94rem;
+    }
+    .socials {
+      display: flex;
+      gap: 18px;
+      font-weight: 750;
+    }
+
+    @media (max-width: 1080px) {
+      .articles-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 980px) {
+      .site-header, .header-inner { height: auto; }
+      .header-inner {
+        min-height: 78px;
+        grid-template-columns: 1fr auto;
+        padding: 10px 0;
+      }
+      .nav {
+        order: 3;
+        grid-column: 1 / -1;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        overflow-x: auto;
+      }
+      .nav a {
+        padding: 8px 0 12px;
+        white-space: nowrap;
+      }
+      .nav a::after { bottom: 4px; }
+      .hero-inner, .two-col, .cta-inner { grid-template-columns: 1fr; }
+      .hero-media { max-width: 520px; }
+      .topics-grid, .recommendations-grid, .footer-main { grid-template-columns: repeat(2, 1fr); }
+      .articles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cta-inner { padding: 58px 0; }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner, .hero-inner, .wrap, .cta-inner, .footer-main, .footer-bottom-inner {
+        width: min(100% - 28px, var(--max));
+      }
+      .brand-text span { font-size: 0.76rem; }
+      .vita-button {
+        min-height: 36px;
+        padding: 0 12px;
+        font-size: 0.84rem;
+      }
+      .nav { justify-content: flex-start; }
+      .hero-inner {
+        min-height: 390px;
+        padding: 62px 0;
+      }
+      .hero-media, .hero-media img { min-height: 300px; }
+      .section { padding: 68px 0; }
+      .topics-grid, .articles-grid, .recommendations-grid, .footer-main { grid-template-columns: 1fr; }
+      .topic-card, .article-card, .recommendation { min-height: auto; }
+      .footer-bottom-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 22px 0;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://idb.org.pe/#organization",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "logo": "https://idb.org.pe/imagenes/logo-idb.png"
+      },
+      {
+        "@type": "MedicalOrganization",
+        "@id": "https://idb.org.pe/#medical-organization",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "logo": "https://idb.org.pe/imagenes/logo-idb.png",
+        "medicalSpecialty": [
+          "PublicHealth",
+          "PreventiveMedicine"
+        ],
+        "parentOrganization": {
+          "@id": "https://idb.org.pe/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://idb.org.pe/#website",
+        "name": "Instituto Digital de Bienestar",
+        "url": "https://idb.org.pe/",
+        "publisher": {
+          "@id": "https://idb.org.pe/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://idb.org.pe/index.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://idb.org.pe/nutricion.html#webpage",
+        "url": "https://idb.org.pe/nutricion.html",
+        "name": "Nutrición | Instituto Digital de Bienestar",
+        "description": "Página educativa del Instituto Digital de Bienestar sobre alimentación saludable, hidratación, proteínas, frutas y verduras, fibra dietética y control de peso.",
+        "image": "https://idb.org.pe/imagenes/nutricion-idb.jpg",
+        "isPartOf": {
+          "@id": "https://idb.org.pe/#website"
+        },
+        "publisher": {
+          "@id": "https://idb.org.pe/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://idb.org.pe/nutricion.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://idb.org.pe/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Nutrición",
+            "item": "https://idb.org.pe/nutricion.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" class="brand-logo" onerror="this.hidden=true" loading="lazy" decoding="async">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">Nutrición</p>
+          <h1>Alimentación saludable para sostener energía, bienestar y prevención</h1>
+          <p>La nutrición es una herramienta educativa para comprender mejor lo que comemos, organizar hábitos cotidianos y tomar decisiones informadas sin recurrir a enfoques extremos.</p>
+        </div>
+      
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="intro-title">
+      <div class="wrap two-col">
+        <div class="section-head">
+          <p class="eyebrow">Introducción</p>
+          <h2 id="intro-title">Qué es una alimentación saludable</h2>
+          <p>Una alimentación saludable es un patrón de consumo variado, suficiente, equilibrado y adaptable al contexto de cada persona. Su objetivo educativo es favorecer bienestar general, energía cotidiana y mejores decisiones de autocuidado.</p>
+        </div>
+        <div class="principles">
+          <div class="principle"><strong>Variedad</strong><span>Incluir distintos grupos de alimentos ayuda a cubrir necesidades nutricionales generales.</span></div>
+          <div class="principle"><strong>Equilibrio</strong><span>Combinar alimentos, porciones y horarios de forma flexible favorece una rutina sostenible.</span></div>
+          <div class="principle"><strong>Bienestar preventivo</strong><span>Los hábitos alimentarios pueden apoyar energía, digestión, concentración y salud a largo plazo.</span></div>
+          <div class="principle"><strong>Contexto personal</strong><span>La cultura, disponibilidad, economía, preferencias y etapa de vida influyen en las decisiones alimentarias.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="temas-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Temas principales</p>
+          <h2 id="temas-title">Conceptos clave para aprender sobre nutrición</h2>
+          <p>Estos temas ofrecen una base educativa para comprender componentes habituales de una alimentación saludable. No reemplazan la orientación individual de profesionales de salud o nutrición.</p>
+        </div>
+        <div class="topics-grid">
+          <article class="topic-card"><div class="card-number">01</div><h3>Alimentación equilibrada</h3><p>Organizar comidas con distintos grupos de alimentos permite construir una rutina más completa y flexible.</p></article>
+          <article class="topic-card"><div class="card-number">02</div><h3>Hidratación</h3><p>El consumo adecuado de líquidos favorece funciones corporales, concentración y bienestar cotidiano.</p></article>
+          <article class="topic-card"><div class="card-number">03</div><h3>Proteínas</h3><p>Las proteínas participan en mantenimiento de tejidos, saciedad y procesos corporales esenciales.</p></article>
+          <article class="topic-card"><div class="card-number">04</div><h3>Frutas y verduras</h3><p>Aportan fibra, vitaminas, minerales y compuestos presentes en patrones alimentarios saludables.</p></article>
+          <article class="topic-card"><div class="card-number">05</div><h3>Fibra dietética</h3><p>La fibra contribuye a la salud digestiva y está presente en alimentos vegetales variados.</p></article>
+          <article class="topic-card"><div class="card-number">06</div><h3>Control de peso</h3><p>El peso corporal se relaciona con múltiples factores; el enfoque educativo prioriza hábitos sostenibles.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="articulos-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Artículos destacados</p>
+          <h2 id="articulos-title">Lecturas educativas de nutrición</h2>
+          <p>Una selección de contenidos para iniciar conversaciones, aclarar conceptos y fortalecer hábitos de alimentación desde una mirada preventiva.</p>
+        </div>
+        <div class="articles-grid">
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Guía</div><h3>Cómo construir un plato equilibrado</h3><p>Una forma sencilla de visualizar variedad y balance en comidas cotidianas.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Educación</div><h3>Qué significa comer variado</h3><p>Ideas para ampliar opciones sin complicar la planificación semanal.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Hábitos</div><h3>Hidratación durante el día</h3><p>Señales cotidianas y recordatorios útiles para cuidar el consumo de líquidos.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Conceptos</div><h3>Proteínas en la alimentación diaria</h3><p>Qué son, dónde se encuentran y por qué forman parte de una dieta equilibrada.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Práctico</div><h3>Frutas y verduras en rutinas reales</h3><p>Ideas para incorporarlas de manera flexible según gustos y disponibilidad.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Glosario</div><h3>Fibra soluble e insoluble</h3><p>Una explicación simple para reconocer fuentes alimentarias de fibra.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Organización</div><h3>Planificación de compras saludables</h3><p>Cómo preparar una lista de compras más útil y menos improvisada.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Lectura</div><h3>Etiquetas nutricionales sin confusión</h3><p>Porciones, ingredientes y datos básicos para comparar productos.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Bienestar</div><h3>Alimentación y energía cotidiana</h3><p>Relación entre horarios, calidad de alimentos y sensación de vitalidad.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Prevención</div><h3>Hábitos sostenibles para el peso</h3><p>Un enfoque gradual que evita promesas rápidas y prioriza continuidad.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Familia</div><h3>Comer mejor en casa</h3><p>Acuerdos simples para que la alimentación sea más organizada y compartida.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+          <article class="article-card"><div><div class="article-meta"><span class="article-dot"></span>Rutina</div><h3>Snacks y colaciones con intención</h3><p>Cómo pensar opciones prácticas que acompañen el ritmo del día.</p></div><a class="article-link" href="nutricion.html">Leer artículo</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2 id="faq-title">Dudas comunes sobre alimentación saludable</h2>
+        </div>
+        <div class="faq">
+          <details><summary>¿Una alimentación saludable significa seguir una dieta estricta?</summary><p>No necesariamente. Desde un enfoque educativo, se trata de construir patrones sostenibles, variados y adaptados al contexto personal.</p></details>
+          <details><summary>¿Hay alimentos buenos y malos?</summary><p>Es más útil observar frecuencia, porciones, contexto y patrón general de alimentación que clasificar alimentos de forma rígida.</p></details>
+          <details><summary>¿La hidratación depende solo del agua?</summary><p>El agua es una fuente principal, pero el consumo total de líquidos puede variar según clima, actividad, alimentos y necesidades individuales.</p></details>
+          <details><summary>¿Las proteínas solo vienen de alimentos animales?</summary><p>No. Existen fuentes animales y vegetales. La variedad ayuda a cubrir necesidades generales dentro de un patrón equilibrado.</p></details>
+          <details><summary>¿El control de peso debe ser el objetivo principal?</summary><p>El peso es solo un indicador entre muchos. El enfoque preventivo prioriza hábitos, bienestar, energía, calidad de alimentación y acompañamiento profesional cuando sea necesario.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="recomendaciones-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Recomendaciones generales</p>
+          <h2 id="recomendaciones-title">Orientaciones educativas para empezar</h2>
+          <p>Estas recomendaciones son generales y no sustituyen una evaluación personalizada. Pueden servir como punto de partida para revisar hábitos y preparar consultas.</p>
+        </div>
+        <div class="recommendations-grid">
+          <article class="recommendation"><h3>Planifica con flexibilidad</h3><p>Organiza compras y comidas posibles para tu semana real, no para una rutina ideal difícil de sostener.</p></article>
+          <article class="recommendation"><h3>Prioriza alimentos variados</h3><p>Incluye cereales, tubérculos, legumbres, frutas, verduras, proteínas y grasas saludables según disponibilidad.</p></article>
+          <article class="recommendation"><h3>Observa señales de saciedad</h3><p>Comer con atención puede ayudar a reconocer hambre, satisfacción y hábitos automáticos.</p></article>
+          <article class="recommendation"><h3>Cuida el entorno alimentario</h3><p>Tener opciones prácticas disponibles facilita mejores decisiones durante días ocupados.</p></article>
+          <article class="recommendation"><h3>Evita soluciones extremas</h3><p>Los cambios sostenibles suelen ser más útiles que restricciones severas o promesas rápidas.</p></article>
+          <article class="recommendation"><h3>Consulta fuentes confiables</h3><p>Usa información institucional y busca orientación profesional para necesidades específicas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="fuentes-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Fuentes científicas</p>
+          <h2 id="fuentes-title">Referencias para educación nutricional</h2>
+          <p>El contenido se basa en criterios educativos generales y debe complementarse con orientación profesional individual cuando corresponda.</p>
+        </div>
+        <ul class="references">
+          <li><strong>OMS.</strong> Recursos sobre alimentación saludable, prevención de enfermedades no transmisibles y promoción de hábitos protectores.</li>
+          <li><strong>OPS.</strong> Material regional sobre nutrición, alimentación saludable y políticas de salud pública.</li>
+          <li><strong>NIH.</strong> Información educativa sobre nutrientes, suplementos, alimentación y salud general.</li>
+          <li><strong>MedlinePlus.</strong> Biblioteca de información para pacientes sobre nutrición, hidratación, fibra, proteínas y lectura de etiquetas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-inner">
+        <div>
+          <h2>Consulta más recursos en Biblioteca IDB</h2>
+          <p>Explora contenidos educativos sobre prevención, actividad física, sueño, bienestar emocional y envejecimiento saludable.</p>
+        </div>
+        <a class="button button-light" href="recursos.html">Ir a Recursos IDB</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" loading="lazy" decoding="async">
+        <p>Orientación digital, recursos prácticos y contenidos claros para acompañar decisiones de bienestar.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navegación</h3>
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h3>VITA</h3>
+        <a href="index.html#vita">Hablar con VITA</a>
+        <span>Orientación personalizada</span>
+        <span>Recursos seleccionados</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          <strong>Instituto Digital de Bienestar</strong><br>
+          www.idb.org.pe · © 2026
+        </div>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+          <a href="https://x.com/" aria-label="X">X</a>
+          <a href="https://www.youtube.com/" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+menuToggle?.addEventListener('click', () => {
+  nav?.classList.toggle('active');
+});
+  </script>
+</body>
+</html>
