@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temas | Instituto Digital de Bienestar</title>
+  <meta name="description" content="Explora temas de salud y bienestar con información clara y confiable.">
+  <meta property="og:title" content="Temas | Instituto Digital de Bienestar">
+  <meta property="og:description" content="Información práctica sobre síntomas frecuentes, enfermedades, medicamentos, prevención y bienestar.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://idb.org.pe/imagenes/hero-idb.jpg">
+  <meta property="og:url" content="https://idb.org.pe/temas.html">
+
+  <style>
+    :root {
+      --green: #1f8f73;
+      --green-dark: #176c59;
+      --green-soft: #e8f5f0;
+      --teal: #1da7b2;
+      --blue: #206f9f;
+      --lime: #8cc63f;
+      --ink: #16312d;
+      --muted: #65756f;
+      --line: #dfe8e4;
+      --paper: #ffffff;
+      --mist: #f6faf8;
+      --shadow: 0 18px 45px rgba(22, 49, 45, 0.13);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button, input { font: inherit; }
+    section[id] { scroll-margin-top: 110px; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: 72px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      width: min(var(--max), calc(100% - 40px));
+      height: 72px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(96px, 1fr) auto;
+      align-items: center;
+      gap: 22px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      justify-self: start;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+      .brand-logo {
+      width: 110px;
+      height: auto;
+      display: block;
+    }
+    .nav {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #263a36;
+      font-size: 0.89rem;
+      font-weight: 560;
+    }
+    .nav a {
+      position: relative;
+      padding: 28px 0;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 21px;
+      height: 1px;
+      background: var(--green);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+    .nav a:hover::after,
+    .nav a[aria-current="page"]::after { transform: scaleX(1); }
+    .menu-toggle{
+    display:none;
+    width:42px;
+    height:42px;
+    border:0;
+    background:transparent;
+    cursor:pointer;
+    }
+  
+    .menu-toggle span{
+      display:block;
+      width:22px;
+      height:2px;
+      margin:5px auto;
+      background:#1f2937;
+      border-radius:999px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 800;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-green {
+      color: #fff;
+      background: linear-gradient(135deg, #1aa092, #178f82);
+      box-shadow: 0 10px 22px rgba(23, 143, 130, 0.18);
+    }
+    .button-light {
+      min-height:46px;
+      padding:0 22px;
+      color:var(--green-dark);
+      background:#fff;
+      border:1px solid rgba(255,255,255,.72);
+      box-shadow:0 12px 24px rgba(0,0,0,.14);
+      font-size:.92rem;
+      font-weight:800;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .section {
+      padding: 96px 0 88px;
+      background: var(--paper);
+    }
+    .section-mist { background: var(--mist); }
+    .section-head {
+      display: grid;
+      justify-items: center;
+      gap: 14px;
+      margin-bottom: 38px;
+      text-align: center;
+    }
+    .section-head h2 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(2.1rem, 3.45vw, 3.4rem);
+      line-height: 1.06;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .section-head p {
+      margin: 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+    .section-kicker {
+      margin: 0 0 11px;
+      color: var(--green-dark);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .topics-hero {
+      padding: 72px 0 58px;
+      background: #fff;
+    }
+    .topics-hero-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      justify-items: center;
+      text-align: center;
+    }
+    .topics-hero-copy {
+      width: min(100%, 920px);
+      display: grid;
+      justify-items: center;
+    }
+    .topics-hero h1 {
+      margin: 0;
+      max-width: 1000px;
+      color: #0f172a;
+      font-size: clamp(2.55rem, 4.35vw, 4.45rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+    .topics-hero p {
+      margin: 18px 0 0;
+      max-width: 780px;
+      color: #647085;
+      font-size: clamp(1.02rem, 1.45vw, 1.22rem);
+    }
+    .hero-search{
+    width:min(100%,920px);
+    margin:30px auto 0;
+    padding:6px;
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:8px;
+    border:1px solid #dce6ef;
+    border-radius:999px;
+    background:#fff;
+    box-shadow:0 22px 50px rgba(15,23,42,.09);
+}
+    .hero-search input {
+      min-width: 0;
+      height: 44px;
+      padding: 0 28px;
+      border: 0;
+      outline: 0;
+      color: var(--ink);
+      background: transparent;
+    }
+    .hero-search button {
+      min-height: 44px;
+      min-width: 76px;
+      padding: 0 22px;
+      border: 0;
+      border-left: 1px solid #dce6ef;
+      border-radius: 999px;
+      color: #253044;
+      background: #fff;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .search-icon {
+      width: 21px;
+      height: 21px;
+      display: block;
+      stroke: currentColor;
+    }
+    .topic-chips {
+      width: min(100%, 920px);
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+    .topic-chips a {
+      flex: 0 0 auto;
+      padding: 8px 14px;
+      border: 1px solid rgba(226, 232, 240, 0.7);
+      border-radius: 999px;
+      color: #1f2937;
+      background: #f8fafc;
+      font-size: 0.86rem;
+      font-weight: 650;
+    }
+
+    .consulted-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .topic-card {
+      display: grid;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+    .topic-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(31, 143, 115, 0.38);
+      box-shadow: 0 22px 42px rgba(22, 49, 45, 0.13);
+    }
+    .topic-card img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+    .topic-card-content {
+      min-height: 250px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .topic-card span {
+      color: var(--green-dark);
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .topic-card h3 {
+      margin: 18px 0 10px;
+      font-size: 1.36rem;
+      line-height: 1.16;
+    }
+    .topic-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+    .topic-card .article-link {
+      margin-top: 22px;
+      color: var(--green-dark);
+      font-weight: 850;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .category-card {
+      position: relative;
+      min-height: 330px;
+      display: flex;
+      align-items: end;
+      overflow: hidden;
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--green-dark);
+      box-shadow: 0 12px 34px rgba(22, 49, 45, 0.12);
+      isolation: isolate;
+    }
+    .category-card img {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 500ms ease;
+    }
+    .category-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(8, 31, 27, 0.06) 0%, rgba(8, 31, 27, 0.36) 42%, rgba(8, 31, 27, 0.9) 100%),
+        linear-gradient(90deg, rgba(8, 31, 27, 0.24), transparent 58%);
+    }
+    .category-card:hover img { transform: scale(1.045); }
+    .category-card-content { padding: 26px; }
+    .category-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.56rem;
+      line-height: 1.15;
+    }
+    .category-card p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.88rem;
+    }
+    .category-card span {
+      display: inline-block;
+      margin-top: 17px;
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .assist-panel {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 44px;
+      align-items: center;
+      padding: 54px 58px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: #fff;
+      box-shadow: 0 18px 45px rgba(22, 49, 45, 0.08);
+    }
+    .assist-copy h2 {
+      margin: 0;
+      max-width: 560px;
+      font-size: clamp(2rem, 3.3vw, 3.2rem);
+      line-height: 1.06;
+      text-wrap: balance;
+    }
+    .assist-copy p {
+      margin: 18px 0 0;
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .assist-tools {
+      display: grid;
+      gap: 14px;
+    }
+    .assist-tools .hero-search {
+      width: 100%;
+      margin: 0;
+      box-shadow: 0 16px 34px rgba(15,23,42,.08);
+    }
+    .assist-tools .button {
+      justify-self: start;
+    }
+
+    .cta-final {
+      position: relative;
+      min-height: 520px;
+      overflow: hidden;
+      color: #fff;
+      background: #102b26;
+      isolation: isolate;
+    }
+    .cta-final > img {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(.72) saturate(.92);
+    }
+    .cta-final::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(90deg, rgba(16,43,38,.9), rgba(16,43,38,.58), rgba(16,43,38,.22)),
+        linear-gradient(180deg, rgba(16,43,38,.08), rgba(16,43,38,.6));
+    }
+    .cta-final-inner {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 520px;
+      margin: 0 auto;
+      display: grid;
+      align-items: center;
+    }
+    .cta-final-copy {
+      max-width: 620px;
+    }
+    .cta-final-copy h2 {
+      margin: 0;
+      color: #fff;
+      font-size: clamp(2.15rem, 3.4vw, 3.45rem);
+      line-height: 1.04;
+      text-wrap: balance;
+    }
+    .cta-final-copy p {
+      margin: 18px 0 28px;
+      color: rgba(255,255,255,.84);
+      font-size: 1.02rem;
+    }
+    .wa-icon {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+    }
+
+    .site-footer{
+    color:#2B3A37;
+    background: linear-gradient(
+    180deg,
+    #EEF6F2 0%,
+    #E4F0EA 55%,
+    #D8EAE1 100%
+);
+    border-top:1px solid #D9EDE4;
+}
+    .footer-main {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 50px 0 32px;
+      display: grid;
+      grid-template-columns: minmax(320px, 1.45fr) repeat(2, minmax(150px, 0.55fr));
+      gap: 48px;
+      align-items: start;
+    }
+    .footer-brand {
+      display: grid;
+      gap: 16px;
+      max-width: 460px;
+    }
+    .footer-brand img {
+      width: 72px;
+      height: auto;
+    }
+    .footer-brand p {
+      margin: 0;
+      color: #5E726C;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+    .footer-col h3 {
+      margin: 0 0 18px;
+      color:#163C35;
+      font-size: 0.86rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .footer-col a,
+    .footer-col span {
+      display: block;
+      margin: 7px 0;
+      color:#61756E;
+      font-size: 0.9rem;
+    }
+    .footer-col a:hover { color:#1A8C73; }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.09); }
+    .footer-bottom-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      color:#6F827C;
+      font-size: 0.86rem;
+    }
+    .socials {
+      display: flex;
+      gap: 18px;
+      font-weight: 750;
+    }
+
+    @media (max-width: 980px) {
+      .site-header,
+      .header-inner { height: auto; }
+      .header-inner {
+        min-height: 78px;
+        grid-template-columns: auto auto;
+        padding: 10px 0;
+      }
+      .menu-toggle {
+      display: block;
+      justify-self: end;
+      margin-right: 0;
+      }
+      .nav {
+        display: none;
+        grid-column: 1 / -1;
+        width: 100%;
+        padding: 14px 0 8px;
+      }
+      .nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .nav a {
+        padding: 8px 0 12px;
+        white-space: nowrap;
+      }
+      .nav a::after { bottom: 4px; }
+      .consulted-grid,
+      .category-grid,
+      .footer-main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .assist-panel {
+        grid-template-columns: 1fr;
+        padding: 44px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner,
+      .wrap,
+      .topics-hero-inner,
+      .cta-final-inner,
+      .footer-main,
+      .footer-bottom-inner {
+        width: min(100% - 28px, var(--max));
+      }
+      .brand-logo { width:105px; }
+      .nav { justify-content: center; }
+      .topics-hero {
+        padding: 42px 0 54px;
+      }
+      .topics-hero h1 {
+        font-size: clamp(2rem, 10vw, 2.75rem);
+      }
+      .topics-hero p {
+        font-size: .95rem;
+      }
+      .hero-search {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 22px;
+        border-radius: 24px;
+      }
+      .hero-search input {
+        height: 42px;
+        padding: 0 18px;
+      }
+      .hero-search button {
+        width: 100%;
+        min-height: 42px;
+        border-left: 0;
+        border-top: 1px solid #dce6ef;
+      }
+      .topic-chips {
+        width: 100%;
+        justify-content: center;
+        margin-top: 18px;
+        gap: 7px;
+      }
+      .topic-chips a {
+        padding: 7px 11px;
+        font-size: .8rem;
+      }
+      .section { padding: 76px 0; }
+      .section-head {
+        margin-bottom: 28px;
+      }
+      .section-head h2,
+      .assist-copy h2,
+      .cta-final-copy h2 {
+        font-size: clamp(1.85rem, 8vw, 2.35rem);
+      }
+      .consulted-grid,
+      .category-grid,
+      .footer-main {
+        grid-template-columns: 1fr;
+      }
+      .consulted-grid,
+      .category-grid {
+        gap: 28px;
+      }
+      .topic-card-content {
+        min-height: auto;
+        padding: 24px;
+      }
+      .category-card {
+        min-height: 245px;
+      }
+      .category-card-content {
+        padding: 22px;
+      }
+      .assist-panel {
+        padding: 28px 22px;
+        border-radius: 22px;
+      }
+      .assist-tools .button {
+        justify-self: stretch;
+      }
+      .cta-final,
+      .cta-final-inner {
+        min-height: 440px;
+      }
+      .cta-final::after {
+        background:
+          linear-gradient(90deg, rgba(16,43,38,.92), rgba(16,43,38,.62)),
+          linear-gradient(180deg, rgba(16,43,38,.12), rgba(16,43,38,.66));
+      }
+      .button { width: 100%; }
+      .footer-main {
+        padding: 16px 0 22px;
+        gap: 24px;
+      }
+      .footer-col h3 {
+        margin-bottom: 10px;
+      }
+      .footer-col a,
+      .footer-col span {
+        margin: 5px 0;
+      }
+      .footer-bottom-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        min-height: auto;
+        gap: 14px;
+        padding: 16px 0;
+      }
+      .socials {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
+        <img src="./imagenes/logo-idb.png" alt="" class="brand-logo" onerror="this.hidden=true">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="topics-hero" id="inicio">
+      <div class="topics-hero-inner">
+        <div class="topics-hero-copy">
+          <p class="section-kicker">Temas de bienestar</p>
+          <h1>Explora temas de salud y bienestar con información clara y confiable.</h1>
+          <p>Encuentra información práctica sobre síntomas frecuentes, enfermedades, medicamentos, prevención y bienestar.</p>
+          <form class="hero-search" action="#consultados" role="search">
+            <input type="search" name="q" aria-label="Buscar temas de salud y bienestar" placeholder="Busca un síntoma, enfermedad, medicamento o tema...">
+            <button type="submit" aria-label="Buscar">
+              <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m20 20-3.5-3.5"></path>
+              </svg>
+            </button>
+          </form>
+          <div class="topic-chips" aria-label="Temas rápidos">
+            <a href="#consultados">Gastritis</a>
+            <a href="#consultados">Diabetes</a>
+            <a href="#consultados">Ansiedad</a>
+            <a href="#consultados">Insomnio</a>
+            <a href="#consultados">Dolor de espalda</a>
+            <a href="recursos.html#medicamentos">Medicamentos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-mist" id="consultados" aria-labelledby="consultados-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Temas más consultados</p>
+          <h2 id="consultados-title">Información útil para dudas frecuentes</h2>
+          <p>Recursos introductorios para comprender síntomas, condiciones y hábitos antes de tomar el siguiente paso.</p>
+        </div>
+        <div class="consulted-grid">
+          <article class="topic-card">
+            <img src="./imagenes/sintomas-enfermedades-idb.jpg" alt="Persona consultando síntomas y enfermedades" loading="lazy">
+            <div class="topic-card-content">
+              <div>
+                <span>Síntomas frecuentes</span>
+                <h3>Gastritis</h3>
+                <p>Información práctica sobre molestias digestivas, señales de atención y hábitos que pueden influir.</p>
+              </div>
+              <a class="article-link" href="recursos.html#preguntas">Ver información</a>
+            </div>
+          </article>
+          <article class="topic-card">
+            <img src="./imagenes/diabetes-idb.png" alt="Material educativo sobre diabetes" loading="lazy">
+            <div class="topic-card-content">
+              <div>
+                <span>Enfermedades crónicas</span>
+                <h3>Diabetes</h3>
+                <p>Guías generales para entender controles, hábitos y preguntas que conviene preparar.</p>
+              </div>
+              <a class="article-link" href="prevencion.html">Ver información</a>
+            </div>
+          </article>
+          <article class="topic-card">
+            <img src="./imagenes/salud-mental-y-bienestar-emocional-idb.png" alt="Recursos de salud mental y bienestar emocional" loading="lazy">
+            <div class="topic-card-content">
+              <div>
+                <span>Bienestar emocional</span>
+                <h3>Ansiedad</h3>
+                <p>Estrategias educativas para reconocer tensión, ordenar emociones y buscar apoyo oportuno.</p>
+              </div>
+              <a class="article-link" href="bienestar-emocional.html">Ver información</a>
+            </div>
+          </article>
+          <article class="topic-card">
+            <img src="./imagenes/sueno-idb.jpg" alt="Rutina tranquila para preparar el descanso" loading="lazy">
+            <div class="topic-card-content">
+              <div>
+                <span>Descanso</span>
+                <h3>Insomnio</h3>
+                <p>Orientación sobre hábitos de sueño, señales de alerta y preparación de una consulta.</p>
+              </div>
+              <a class="article-link" href="sueno.html">Ver información</a>
+            </div>
+          </article>
+          <article class="topic-card">
+            <img src="./imagenes/actividad-fisica-idb.jpg" alt="Pareja adulta caminando en un parque" loading="lazy">
+            <div class="topic-card-content">
+              <div>
+                <span>Movimiento</span>
+                <h3>Dolor de espalda</h3>
+                <p>Información sobre prevención, movimiento cotidiano y señales para pedir orientación.</p>
+              </div>
+              <a class="article-link" href="actividad-fisica.html">Ver información</a>
+            </div>
+          </article>
+          <article class="topic-card">
+            <img src="./imagenes/medicamentos-idb.jpg" alt="Persona revisando medicamentos de forma ordenada" loading="lazy">
+            <div class="topic-card-content">
+              <div>
+                <span>Medicamentos</span>
+                <h3>Uso responsable</h3>
+                <p>Herramientas para ordenar indicaciones, horarios y dudas sobre tratamientos.</p>
+              </div>
+              <a class="article-link" href="recursos.html#medicamentos">Ver información</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categorias" aria-labelledby="categorias-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Explorar por categorías</p>
+          <h2 id="categorias-title">Áreas clave para cuidar tu bienestar</h2>
+          <p>Accede a contenidos organizados por hábitos, prevención y etapas de la vida.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="nutricion.html">
+            <img src="./imagenes/nutricion-idb.jpg" alt="Preparación de una comida equilibrada" loading="lazy">
+            <div class="category-card-content">
+              <h3>Nutrición</h3>
+              <p>Hábitos alimentarios para una mejor calidad de vida.</p>
+              <span>Explorar</span>
+            </div>
+          </a>
+          <a class="category-card" href="actividad-fisica.html">
+            <img src="./imagenes/actividad-fisica-idb.jpg" alt="Pareja adulta caminando en un parque" loading="lazy">
+            <div class="category-card-content">
+              <h3>Actividad Física</h3>
+              <p>Movimiento diario para mantener salud y autonomía.</p>
+              <span>Explorar</span>
+            </div>
+          </a>
+          <a class="category-card" href="sueno.html">
+            <img src="./imagenes/sueno-idb.jpg" alt="Rutina tranquila para preparar el descanso" loading="lazy">
+            <div class="category-card-content">
+              <h3>Sueño</h3>
+              <p>Descanso y hábitos que favorecen la recuperación diaria.</p>
+              <span>Explorar</span>
+            </div>
+          </a>
+          <a class="category-card" href="bienestar-emocional.html">
+            <img src="./imagenes/bienestar-emocional-idb.jpg" alt="Adulto practicando respiración consciente" loading="lazy">
+            <div class="category-card-content">
+              <h3>Bienestar Emocional</h3>
+              <p>Estrategias para manejar el estrés y fortalecer tu equilibrio.</p>
+              <span>Explorar</span>
+            </div>
+          </a>
+          <a class="category-card" href="prevencion.html">
+            <img src="./imagenes/prevencion-idb.jpg" alt="Pareja adulta revisando información preventiva" loading="lazy">
+            <div class="category-card-content">
+              <h3>Prevención</h3>
+              <p>Información útil para cuidar tu salud con anticipación.</p>
+              <span>Explorar</span>
+            </div>
+          </a>
+          <a class="category-card" href="envejecimiento-saludable.html">
+            <img src="./imagenes/envejecimiento-saludable-idb.jpg" alt="Adulto mayor activo durante su rutina diaria" loading="lazy">
+            <div class="category-card-content">
+              <h3>Envejecimiento Saludable</h3>
+              <p>Recursos para una vida activa, autónoma y segura.</p>
+              <span>Explorar</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-mist" id="ayuda" aria-labelledby="ayuda-title">
+      <div class="wrap">
+        <div class="assist-panel">
+          <div class="assist-copy">
+            <p class="section-kicker">¿No encuentras el tema?</p>
+            <h2 id="ayuda-title">Describe tu duda y encuentra una ruta clara</h2>
+            <p>Busca por síntoma, medicamento o situación cotidiana. Si necesitas orientación, VITA puede ayudarte a ordenar la información.</p>
+          </div>
+          <div class="assist-tools">
+            <form class="hero-search" action="#consultados" role="search">
+              <input type="search" name="q" aria-label="Buscar un tema no encontrado" placeholder="Escribe lo que necesitas consultar...">
+              <button type="submit" aria-label="Buscar">
+                <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <path d="m20 20-3.5-3.5"></path>
+                </svg>
+              </button>
+            </form>
+            <a class="button button-green" href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">Consultar con VITA</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-final" id="vita" aria-labelledby="vita-title">
+      <img src="./imagenes/vita-institucional-idb.png" alt="VITA acompañando una consulta de bienestar" loading="lazy">
+      <div class="cta-final-inner">
+        <div class="cta-final-copy">
+          <p class="section-kicker">Orientación digital</p>
+          <h2 id="vita-title">Encuentra información con más calma y mejores preguntas</h2>
+          <p>VITA puede ayudarte a ubicar recursos, ordenar tus dudas y preparar el siguiente paso.</p>
+          <a class="button button-light" href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">
+            <img class="wa-icon" src="./imagenes/whatsapp.svg" alt="" aria-hidden="true">
+            Consultar con VITA
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar">
+        <p>Orientación digital, recursos prácticos y contenidos claros para acompañar decisiones de bienestar.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navegación</h3>
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h3>VITA</h3>
+        <a href="#vita">Hablar con VITA</a>
+        <span>Orientación personalizada</span>
+        <span>Recursos seleccionados</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          <strong>Instituto Digital de Bienestar</strong><br>
+          www.idb.org.pe · © 2026
+        </div>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+          <a href="https://x.com/" aria-label="X">X</a>
+          <a href="https://www.youtube.com/" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+</script>
+</body>
+</html>
