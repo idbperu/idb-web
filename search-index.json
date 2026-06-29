@@ -1,0 +1,1802 @@
+[
+  {
+    "titulo": "Dolor de cabeza",
+    "tipo": "sintoma",
+    "categoria": "Neurologia",
+    "prioridad": 2,
+    "description": "Orientación sobre Dolor de cabeza: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=dolor-de-cabeza",
+    "keywords": [
+      "dolor de cabeza",
+      "cefalea",
+      "cabeza",
+      "presion en la cabeza",
+      "molestia de cabeza"
+    ]
+  },
+  {
+    "titulo": "Dolor abdominal",
+    "tipo": "sintoma",
+    "categoria": "Sistema digestivo",
+    "prioridad": 2,
+    "description": "Orientación sobre Dolor abdominal: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=dolor-abdominal",
+    "keywords": [
+      "dolor abdominal",
+      "dolor de barriga",
+      "dolor de estomago",
+      "abdomen",
+      "colico"
+    ]
+  },
+  {
+    "titulo": "Fiebre",
+    "tipo": "sintoma",
+    "categoria": "Sintomas generales",
+    "prioridad": 2,
+    "description": "Orientación sobre fiebre, cuidados generales, señales de alarma y cuándo consultar a un profesional.",
+    "fuente": "CDC",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=fiebre",
+    "keywords": [
+      "fiebre",
+      "temperatura",
+      "calentura",
+      "escalofrios",
+      "malestar"
+    ]
+  },
+  {
+    "titulo": "Tos",
+    "tipo": "sintoma",
+    "categoria": "Sistema respiratorio",
+    "prioridad": 2,
+    "description": "Orientación sobre Tos: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "CDC",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=tos",
+    "keywords": [
+      "tos",
+      "tos seca",
+      "tos con flema",
+      "garganta",
+      "respiratorio"
+    ]
+  },
+  {
+    "titulo": "Ansiedad",
+    "tipo": "sintoma",
+    "categoria": "Bienestar emocional",
+    "prioridad": 2,
+    "description": "Orientación sobre ansiedad, síntomas frecuentes, manejo inicial y cuándo buscar apoyo profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=ansiedad",
+    "keywords": [
+      "ansiedad",
+      "nervios",
+      "preocupacion",
+      "angustia",
+      "inquietud"
+    ]
+  },
+  {
+    "titulo": "Estrés",
+    "tipo": "sintoma",
+    "categoria": "Bienestar emocional",
+    "prioridad": 2,
+    "description": "Guía breve para reconocer estrés, reducir sobrecarga y saber cuándo pedir orientación profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=estres",
+    "keywords": [
+      "estres",
+      "tension",
+      "sobrecarga",
+      "agotamiento mental",
+      "presion"
+    ]
+  },
+  {
+    "titulo": "Insomnio",
+    "tipo": "sintoma",
+    "categoria": "Sueño",
+    "prioridad": 2,
+    "description": "Orientación sobre dificultad para dormir, hábitos de sueño, causas posibles y cuándo consultar.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=insomnio",
+    "keywords": [
+      "insomnio",
+      "no puedo dormir",
+      "dificultad para dormir",
+      "desvelo",
+      "sueño"
+    ]
+  },
+  {
+    "titulo": "Náuseas",
+    "tipo": "sintoma",
+    "categoria": "Sistema digestivo",
+    "prioridad": 2,
+    "description": "Orientación sobre Náuseas: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=nauseas",
+    "keywords": [
+      "nauseas",
+      "ganas de vomitar",
+      "vomito",
+      "mareo estomacal",
+      "asco"
+    ]
+  },
+  {
+    "titulo": "Mareos",
+    "tipo": "sintoma",
+    "categoria": "Neurologia",
+    "prioridad": 2,
+    "description": "Orientación sobre Mareos: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=mareos",
+    "keywords": [
+      "mareos",
+      "vertigo",
+      "inestabilidad",
+      "aturdimiento",
+      "me mareo"
+    ]
+  },
+  {
+    "titulo": "Fatiga",
+    "tipo": "sintoma",
+    "categoria": "Sintomas generales",
+    "prioridad": 2,
+    "description": "Orientación sobre Fatiga: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=fatiga",
+    "keywords": [
+      "fatiga",
+      "cansancio",
+      "agotamiento",
+      "sin energia",
+      "debilidad"
+    ]
+  },
+  {
+    "titulo": "Dolor de garganta",
+    "tipo": "sintoma",
+    "categoria": "Sistema respiratorio",
+    "prioridad": 2,
+    "description": "Orientación sobre Dolor de garganta: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=dolor-de-garganta",
+    "keywords": [
+      "dolor de garganta",
+      "garganta irritada",
+      "ardor de garganta",
+      "faringe",
+      "amigdalas"
+    ]
+  },
+  {
+    "titulo": "Dolor de espalda",
+    "tipo": "sintoma",
+    "categoria": "Sistema musculoesqueletico",
+    "prioridad": 2,
+    "description": "Orientación sobre Dolor de espalda: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=dolor-de-espalda",
+    "keywords": [
+      "dolor de espalda",
+      "lumbalgia",
+      "espalda",
+      "dolor lumbar",
+      "columna"
+    ]
+  },
+  {
+    "titulo": "Dolor de pecho",
+    "tipo": "sintoma",
+    "categoria": "Sistema cardiovascular",
+    "prioridad": 1,
+    "description": "Señal que puede requerir atención urgente. Revisa causas posibles, alertas y cuándo buscar ayuda inmediata.",
+    "fuente": "MINSA",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=dolor-de-pecho",
+    "keywords": [
+      "dolor de pecho",
+      "opresion",
+      "pecho",
+      "dolor toracico",
+      "presion en pecho"
+    ]
+  },
+  {
+    "titulo": "Palpitaciones",
+    "tipo": "sintoma",
+    "categoria": "Sistema cardiovascular",
+    "prioridad": 2,
+    "description": "Orientación sobre Palpitaciones: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=palpitaciones",
+    "keywords": [
+      "palpitaciones",
+      "corazon acelerado",
+      "taquicardia",
+      "latidos",
+      "ritmo cardiaco"
+    ]
+  },
+  {
+    "titulo": "Dificultad para respirar",
+    "tipo": "sintoma",
+    "categoria": "Sistema respiratorio",
+    "prioridad": 1,
+    "description": "Síntoma que puede ser urgente. Conoce señales de alarma, causas posibles y cuándo buscar atención médica.",
+    "fuente": "MINSA",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=dificultad-para-respirar",
+    "keywords": [
+      "dificultad para respirar",
+      "falta de aire",
+      "ahogo",
+      "disnea",
+      "respirar"
+    ]
+  },
+  {
+    "titulo": "Diarrea",
+    "tipo": "sintoma",
+    "categoria": "Sistema digestivo",
+    "prioridad": 2,
+    "description": "Orientación sobre Diarrea: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=diarrea",
+    "keywords": [
+      "diarrea",
+      "deposiciones liquidas",
+      "estomago suelto",
+      "evacuaciones",
+      "digestivo"
+    ]
+  },
+  {
+    "titulo": "Estreñimiento",
+    "tipo": "sintoma",
+    "categoria": "Sistema digestivo",
+    "prioridad": 2,
+    "description": "Orientación sobre Estreñimiento: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=estrenimiento",
+    "keywords": [
+      "estreñimiento",
+      "estrenimiento",
+      "no puedo evacuar",
+      "constipacion",
+      "transito lento"
+    ]
+  },
+  {
+    "titulo": "Acidez",
+    "tipo": "sintoma",
+    "categoria": "Sistema digestivo",
+    "prioridad": 2,
+    "description": "Orientación sobre Acidez: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=acidez",
+    "keywords": [
+      "acidez",
+      "ardor",
+      "agruras",
+      "reflujo",
+      "quemazon"
+    ]
+  },
+  {
+    "titulo": "Gases",
+    "tipo": "sintoma",
+    "categoria": "Sistema digestivo",
+    "prioridad": 2,
+    "description": "Orientación sobre Gases: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=gases",
+    "keywords": [
+      "gases",
+      "flatulencia",
+      "hinchazon",
+      "abdomen inflamado",
+      "meteorismo"
+    ]
+  },
+  {
+    "titulo": "Pérdida de apetito",
+    "tipo": "sintoma",
+    "categoria": "Sintomas generales",
+    "prioridad": 2,
+    "description": "Orientación sobre Pérdida de apetito: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=perdida-de-apetito",
+    "keywords": [
+      "perdida de apetito",
+      "sin hambre",
+      "no quiero comer",
+      "apetito",
+      "inapetencia"
+    ]
+  },
+  {
+    "titulo": "Dolor muscular",
+    "tipo": "sintoma",
+    "categoria": "Sistema musculoesqueletico",
+    "prioridad": 2,
+    "description": "Orientación sobre Dolor muscular: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=dolor-muscular",
+    "keywords": [
+      "dolor muscular",
+      "mialgia",
+      "musculos",
+      "dolor corporal",
+      "contractura"
+    ]
+  },
+  {
+    "titulo": "Dolor articular",
+    "tipo": "sintoma",
+    "categoria": "Sistema musculoesqueletico",
+    "prioridad": 2,
+    "description": "Orientación sobre Dolor articular: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=dolor-articular",
+    "keywords": [
+      "dolor articular",
+      "articulaciones",
+      "rodilla",
+      "cadera",
+      "hombro"
+    ]
+  },
+  {
+    "titulo": "Congestión nasal",
+    "tipo": "sintoma",
+    "categoria": "Sistema respiratorio",
+    "prioridad": 2,
+    "description": "Orientación sobre Congestión nasal: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "CDC",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=congestion-nasal",
+    "keywords": [
+      "congestion nasal",
+      "nariz tapada",
+      "mocos",
+      "resfrio",
+      "rinitis"
+    ]
+  },
+  {
+    "titulo": "Picazón",
+    "tipo": "sintoma",
+    "categoria": "Piel",
+    "prioridad": 2,
+    "description": "Orientación sobre Picazón: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=picazon",
+    "keywords": [
+      "picazon",
+      "comezon",
+      "prurito",
+      "piel",
+      "irritacion"
+    ]
+  },
+  {
+    "titulo": "Erupción en la piel",
+    "tipo": "sintoma",
+    "categoria": "Piel",
+    "prioridad": 2,
+    "description": "Orientación sobre Erupción en la piel: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=erupcion-en-la-piel",
+    "keywords": [
+      "erupcion",
+      "ronchas",
+      "sarpullido",
+      "piel roja",
+      "alergia en piel"
+    ]
+  },
+  {
+    "titulo": "Gastritis",
+    "tipo": "enfermedad",
+    "categoria": "Sistema digestivo",
+    "prioridad": 1,
+    "description": "Información sobre gastritis, ardor, dolor estomacal, cuidados generales y señales para consultar.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=gastritis",
+    "keywords": [
+      "gastritis",
+      "ardor",
+      "acidez",
+      "dolor de estomago",
+      "estomago"
+    ]
+  },
+  {
+    "titulo": "Diabetes",
+    "tipo": "enfermedad",
+    "categoria": "Endocrinologia",
+    "prioridad": 1,
+    "description": "Guía sobre diabetes, control de glucosa, hábitos saludables, alertas y seguimiento médico.",
+    "fuente": "OPS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=diabetes",
+    "keywords": [
+      "diabetes",
+      "azucar",
+      "glucosa",
+      "diabetes tipo 2",
+      "insulina"
+    ]
+  },
+  {
+    "titulo": "Hipertensión",
+    "tipo": "enfermedad",
+    "categoria": "Sistema cardiovascular",
+    "prioridad": 1,
+    "description": "Información sobre presión alta, controles, riesgos cardiovasculares y cuándo buscar evaluación.",
+    "fuente": "OPS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=hipertension",
+    "keywords": [
+      "hipertension",
+      "presion alta",
+      "presion arterial",
+      "tension alta",
+      "cardiovascular"
+    ]
+  },
+  {
+    "titulo": "Colesterol alto",
+    "tipo": "enfermedad",
+    "categoria": "Sistema cardiovascular",
+    "prioridad": 1,
+    "description": "Orientación sobre colesterol elevado, hábitos, riesgos cardiovasculares y controles recomendados.",
+    "fuente": "OPS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=colesterol-alto",
+    "keywords": [
+      "colesterol",
+      "colesterol alto",
+      "ldl",
+      "trigliceridos",
+      "grasas en sangre"
+    ]
+  },
+  {
+    "titulo": "Reflujo gastroesofágico",
+    "tipo": "enfermedad",
+    "categoria": "Sistema digestivo",
+    "prioridad": 1,
+    "description": "Información sobre reflujo, acidez, medidas generales, medicamentos y cuándo consultar.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=reflujo-gastroesofagico",
+    "keywords": [
+      "reflujo",
+      "acidez",
+      "agruras",
+      "ardor",
+      "regurgitacion"
+    ]
+  },
+  {
+    "titulo": "Artrosis",
+    "tipo": "enfermedad",
+    "categoria": "Sistema musculoesqueletico",
+    "prioridad": 1,
+    "description": "Información clara sobre Artrosis, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=artrosis",
+    "keywords": [
+      "artrosis",
+      "osteoartritis",
+      "dolor articular",
+      "rodilla",
+      "desgaste"
+    ]
+  },
+  {
+    "titulo": "Migraña",
+    "tipo": "enfermedad",
+    "categoria": "Neurologia",
+    "prioridad": 1,
+    "description": "Orientación sobre migraña, desencadenantes, señales de alarma y opciones de manejo general.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=migrana",
+    "keywords": [
+      "migraña",
+      "migrana",
+      "dolor de cabeza",
+      "aura",
+      "cefalea"
+    ]
+  },
+  {
+    "titulo": "Obesidad",
+    "tipo": "enfermedad",
+    "categoria": "Nutricion",
+    "prioridad": 1,
+    "description": "Información sobre obesidad, riesgos, hábitos sostenibles y acompañamiento profesional.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=obesidad",
+    "keywords": [
+      "obesidad",
+      "peso",
+      "sobrepeso",
+      "indice de masa corporal",
+      "imc"
+    ]
+  },
+  {
+    "titulo": "Gastroenteritis",
+    "tipo": "enfermedad",
+    "categoria": "Sistema digestivo",
+    "prioridad": 1,
+    "description": "Información clara sobre Gastroenteritis, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=gastroenteritis",
+    "keywords": [
+      "gastroenteritis",
+      "diarrea",
+      "vomitos",
+      "infeccion estomacal",
+      "dolor abdominal"
+    ]
+  },
+  {
+    "titulo": "Anemia",
+    "tipo": "enfermedad",
+    "categoria": "Sangre",
+    "prioridad": 1,
+    "description": "Información clara sobre Anemia, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=anemia",
+    "keywords": [
+      "anemia",
+      "hemoglobina baja",
+      "hierro",
+      "cansancio",
+      "palidez"
+    ]
+  },
+  {
+    "titulo": "Asma",
+    "tipo": "enfermedad",
+    "categoria": "Sistema respiratorio",
+    "prioridad": 1,
+    "description": "Información clara sobre Asma, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "CDC",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=asma",
+    "keywords": [
+      "asma",
+      "silbidos",
+      "falta de aire",
+      "bronquios",
+      "inhalador"
+    ]
+  },
+  {
+    "titulo": "Rinitis alérgica",
+    "tipo": "enfermedad",
+    "categoria": "Sistema respiratorio",
+    "prioridad": 1,
+    "description": "Información clara sobre Rinitis alérgica, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "CDC",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=rinitis-alergica",
+    "keywords": [
+      "rinitis alergica",
+      "alergia",
+      "estornudos",
+      "nariz tapada",
+      "mocos"
+    ]
+  },
+  {
+    "titulo": "Bronquitis",
+    "tipo": "enfermedad",
+    "categoria": "Sistema respiratorio",
+    "prioridad": 1,
+    "description": "Información clara sobre Bronquitis, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "CDC",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=bronquitis",
+    "keywords": [
+      "bronquitis",
+      "tos",
+      "flema",
+      "bronquios",
+      "respiratorio"
+    ]
+  },
+  {
+    "titulo": "Resfrío común",
+    "tipo": "enfermedad",
+    "categoria": "Sistema respiratorio",
+    "prioridad": 1,
+    "description": "Información clara sobre Resfrío común, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "CDC",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=resfrio-comun",
+    "keywords": [
+      "resfrio",
+      "gripe",
+      "mocos",
+      "tos",
+      "estornudos"
+    ]
+  },
+  {
+    "titulo": "Infección urinaria",
+    "tipo": "enfermedad",
+    "categoria": "Sistema urinario",
+    "prioridad": 1,
+    "description": "Información clara sobre Infección urinaria, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=infeccion-urinaria",
+    "keywords": [
+      "infeccion urinaria",
+      "ardor al orinar",
+      "cistitis",
+      "orina",
+      "dolor al orinar"
+    ]
+  },
+  {
+    "titulo": "Depresión",
+    "tipo": "enfermedad",
+    "categoria": "Salud mental",
+    "prioridad": 1,
+    "description": "Información clara sobre Depresión, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=depresion",
+    "keywords": [
+      "depresion",
+      "tristeza",
+      "desanimo",
+      "salud mental",
+      "apatia"
+    ]
+  },
+  {
+    "titulo": "Trastorno de ansiedad",
+    "tipo": "enfermedad",
+    "categoria": "Salud mental",
+    "prioridad": 1,
+    "description": "Información clara sobre Trastorno de ansiedad, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=trastorno-de-ansiedad",
+    "keywords": [
+      "trastorno de ansiedad",
+      "ansiedad",
+      "panico",
+      "preocupacion",
+      "nervios"
+    ]
+  },
+  {
+    "titulo": "Osteoporosis",
+    "tipo": "enfermedad",
+    "categoria": "Sistema musculoesqueletico",
+    "prioridad": 1,
+    "description": "Información clara sobre Osteoporosis, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=osteoporosis",
+    "keywords": [
+      "osteoporosis",
+      "huesos",
+      "calcio",
+      "fracturas",
+      "densidad osea"
+    ]
+  },
+  {
+    "titulo": "Hígado graso",
+    "tipo": "enfermedad",
+    "categoria": "Sistema digestivo",
+    "prioridad": 1,
+    "description": "Información clara sobre Hígado graso, síntomas frecuentes, prevención, manejo general y cuándo consultar.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=higado-graso",
+    "keywords": [
+      "higado graso",
+      "esteatosis",
+      "higado",
+      "grasa",
+      "transaminasas"
+    ]
+  },
+  {
+    "titulo": "Paracetamol",
+    "tipo": "medicamento",
+    "categoria": "Analgesicos",
+    "prioridad": 3,
+    "description": "Uso general de paracetamol para dolor y fiebre, dosis seguras, precauciones y señales de alerta.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=paracetamol",
+    "keywords": [
+      "paracetamol",
+      "acetaminofen",
+      "dolor",
+      "fiebre",
+      "analgesico"
+    ]
+  },
+  {
+    "titulo": "Ibuprofeno",
+    "tipo": "medicamento",
+    "categoria": "Antiinflamatorios",
+    "prioridad": 3,
+    "description": "Medicamento para dolor, inflamación y fiebre. Revisa uso general, precauciones y riesgos frecuentes.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=ibuprofeno",
+    "keywords": [
+      "ibuprofeno",
+      "antiinflamatorio",
+      "dolor",
+      "fiebre",
+      "inflamacion"
+    ]
+  },
+  {
+    "titulo": "Omeprazol",
+    "tipo": "medicamento",
+    "categoria": "Gastrointestinales",
+    "prioridad": 3,
+    "description": "Uso general de omeprazol para acidez y reflujo, precauciones y cuándo consultar.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=omeprazol",
+    "keywords": [
+      "omeprazol",
+      "acidez",
+      "gastritis",
+      "reflujo",
+      "protector gastrico"
+    ]
+  },
+  {
+    "titulo": "Amoxicilina",
+    "tipo": "medicamento",
+    "categoria": "Antibioticos",
+    "prioridad": 3,
+    "description": "Antibiótico de uso médico. Conoce indicaciones generales, precauciones y por qué evitar automedicarse.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=amoxicilina",
+    "keywords": [
+      "amoxicilina",
+      "antibiotico",
+      "infeccion",
+      "bacterias",
+      "penicilina"
+    ]
+  },
+  {
+    "titulo": "Loratadina",
+    "tipo": "medicamento",
+    "categoria": "Antihistaminicos",
+    "prioridad": 3,
+    "description": "Antihistamínico para alergias. Revisa uso general, precauciones y dudas frecuentes.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=loratadina",
+    "keywords": [
+      "loratadina",
+      "alergia",
+      "antihistaminico",
+      "rinitis",
+      "picazon"
+    ]
+  },
+  {
+    "titulo": "Cetirizina",
+    "tipo": "medicamento",
+    "categoria": "Antihistaminicos",
+    "prioridad": 3,
+    "description": "Uso general de Cetirizina, precauciones, efectos frecuentes y preguntas para conversar con un profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=cetirizina",
+    "keywords": [
+      "cetirizina",
+      "alergia",
+      "urticaria",
+      "picazon",
+      "antihistaminico"
+    ]
+  },
+  {
+    "titulo": "Losartán",
+    "tipo": "medicamento",
+    "categoria": "Antihipertensivos",
+    "prioridad": 3,
+    "description": "Uso general de Losartán, precauciones, efectos frecuentes y preguntas para conversar con un profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=losartan",
+    "keywords": [
+      "losartan",
+      "presion alta",
+      "hipertension",
+      "antihipertensivo",
+      "presion"
+    ]
+  },
+  {
+    "titulo": "Metformina",
+    "tipo": "medicamento",
+    "categoria": "Antidiabeticos",
+    "prioridad": 3,
+    "description": "Uso general de Metformina, precauciones, efectos frecuentes y preguntas para conversar con un profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=metformina",
+    "keywords": [
+      "metformina",
+      "diabetes",
+      "glucosa",
+      "azucar",
+      "antidiabetico"
+    ]
+  },
+  {
+    "titulo": "Atorvastatina",
+    "tipo": "medicamento",
+    "categoria": "Hipolipemiantes",
+    "prioridad": 3,
+    "description": "Uso general de Atorvastatina, precauciones, efectos frecuentes y preguntas para conversar con un profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=atorvastatina",
+    "keywords": [
+      "atorvastatina",
+      "colesterol",
+      "estatinas",
+      "ldl",
+      "trigliceridos"
+    ]
+  },
+  {
+    "titulo": "Aspirina",
+    "tipo": "medicamento",
+    "categoria": "Analgesicos",
+    "prioridad": 3,
+    "description": "Uso general de Aspirina, precauciones, efectos frecuentes y preguntas para conversar con un profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=aspirina",
+    "keywords": [
+      "aspirina",
+      "acido acetilsalicilico",
+      "dolor",
+      "antiagregante",
+      "inflamacion"
+    ]
+  },
+  {
+    "titulo": "Diclofenaco",
+    "tipo": "medicamento",
+    "categoria": "Antiinflamatorios",
+    "prioridad": 3,
+    "description": "Uso general de Diclofenaco, precauciones, efectos frecuentes y preguntas para conversar con un profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=diclofenaco",
+    "keywords": [
+      "diclofenaco",
+      "dolor",
+      "inflamacion",
+      "antiinflamatorio",
+      "muscular"
+    ]
+  },
+  {
+    "titulo": "Naproxeno",
+    "tipo": "medicamento",
+    "categoria": "Antiinflamatorios",
+    "prioridad": 3,
+    "description": "Uso general de Naproxeno, precauciones, efectos frecuentes y preguntas para conversar con un profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=naproxeno",
+    "keywords": [
+      "naproxeno",
+      "dolor",
+      "inflamacion",
+      "antiinflamatorio",
+      "menstrual"
+    ]
+  },
+  {
+    "titulo": "Salbutamol",
+    "tipo": "medicamento",
+    "categoria": "Respiratorios",
+    "prioridad": 3,
+    "description": "Uso general de Salbutamol, precauciones, efectos frecuentes y preguntas para conversar con un profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=salbutamol",
+    "keywords": [
+      "salbutamol",
+      "asma",
+      "inhalador",
+      "bronquios",
+      "falta de aire"
+    ]
+  },
+  {
+    "titulo": "Azitromicina",
+    "tipo": "medicamento",
+    "categoria": "Antibioticos",
+    "prioridad": 3,
+    "description": "Uso general de Azitromicina, precauciones, efectos frecuentes y preguntas para conversar con un profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=azitromicina",
+    "keywords": [
+      "azitromicina",
+      "antibiotico",
+      "infeccion",
+      "respiratorio",
+      "bacterias"
+    ]
+  },
+  {
+    "titulo": "Clonazepam",
+    "tipo": "medicamento",
+    "categoria": "Sistema nervioso",
+    "prioridad": 3,
+    "description": "Uso general de Clonazepam, precauciones, efectos frecuentes y preguntas para conversar con un profesional.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=clonazepam",
+    "keywords": [
+      "clonazepam",
+      "ansiedad",
+      "sueño",
+      "benzodiacepina",
+      "nervios"
+    ]
+  },
+  {
+    "titulo": "Hemograma",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Examen de sangre que evalúa glóbulos rojos, blancos y plaquetas. Conoce para qué sirve.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=hemograma",
+    "keywords": [
+      "hemograma",
+      "sangre",
+      "globulos rojos",
+      "globulos blancos",
+      "plaquetas"
+    ]
+  },
+  {
+    "titulo": "Glucosa",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Prueba que mide azúcar en sangre. Ayuda a detectar o controlar alteraciones metabólicas.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=glucosa",
+    "keywords": [
+      "glucosa",
+      "azucar",
+      "diabetes",
+      "glicemia",
+      "sangre"
+    ]
+  },
+  {
+    "titulo": "Colesterol total",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Examen que mide colesterol en sangre y orienta el riesgo cardiovascular junto con otros datos.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=colesterol-total",
+    "keywords": [
+      "colesterol",
+      "colesterol total",
+      "ldl",
+      "hdl",
+      "perfil lipidico"
+    ]
+  },
+  {
+    "titulo": "Radiografía",
+    "tipo": "examen",
+    "categoria": "Imagenes",
+    "prioridad": 3,
+    "description": "Estudio de imagen para evaluar huesos, tórax u otras zonas según indicación médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=radiografia",
+    "keywords": [
+      "radiografia",
+      "rayos x",
+      "placa",
+      "imagen",
+      "huesos"
+    ]
+  },
+  {
+    "titulo": "Tomografía",
+    "tipo": "examen",
+    "categoria": "Imagenes",
+    "prioridad": 3,
+    "description": "Imagen médica detallada que ayuda a evaluar órganos, lesiones o emergencias según indicación.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=tomografia",
+    "keywords": [
+      "tomografia",
+      "tac",
+      "scanner",
+      "imagen",
+      "corte"
+    ]
+  },
+  {
+    "titulo": "Resonancia magnética",
+    "tipo": "examen",
+    "categoria": "Imagenes",
+    "prioridad": 3,
+    "description": "Estudio de imagen sin rayos X que permite evaluar tejidos, articulaciones y órganos con detalle.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=resonancia-magnetica",
+    "keywords": [
+      "resonancia",
+      "resonancia magnetica",
+      "rm",
+      "imagen",
+      "tejidos"
+    ]
+  },
+  {
+    "titulo": "Examen de orina",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Qué evalúa Examen de orina, cuándo puede indicarse y cómo entender sus resultados de forma general.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=examen-de-orina",
+    "keywords": [
+      "examen de orina",
+      "orina",
+      "infeccion urinaria",
+      "uroanalisis",
+      "sedimento"
+    ]
+  },
+  {
+    "titulo": "Creatinina",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Qué evalúa Creatinina, cuándo puede indicarse y cómo entender sus resultados de forma general.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=creatinina",
+    "keywords": [
+      "creatinina",
+      "riñon",
+      "rinon",
+      "funcion renal",
+      "sangre"
+    ]
+  },
+  {
+    "titulo": "Urea",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Qué evalúa Urea, cuándo puede indicarse y cómo entender sus resultados de forma general.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=urea",
+    "keywords": [
+      "urea",
+      "riñon",
+      "rinon",
+      "funcion renal",
+      "sangre"
+    ]
+  },
+  {
+    "titulo": "Triglicéridos",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Qué evalúa Triglicéridos, cuándo puede indicarse y cómo entender sus resultados de forma general.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=trigliceridos",
+    "keywords": [
+      "trigliceridos",
+      "grasas",
+      "colesterol",
+      "perfil lipidico",
+      "sangre"
+    ]
+  },
+  {
+    "titulo": "Electrocardiograma",
+    "tipo": "examen",
+    "categoria": "Cardiologia",
+    "prioridad": 3,
+    "description": "Qué evalúa Electrocardiograma, cuándo puede indicarse y cómo entender sus resultados de forma general.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=electrocardiograma",
+    "keywords": [
+      "electrocardiograma",
+      "ecg",
+      "corazon",
+      "ritmo cardiaco",
+      "cardiologia"
+    ]
+  },
+  {
+    "titulo": "Ecografía abdominal",
+    "tipo": "examen",
+    "categoria": "Imagenes",
+    "prioridad": 3,
+    "description": "Qué evalúa Ecografía abdominal, cuándo puede indicarse y cómo entender sus resultados de forma general.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=ecografia-abdominal",
+    "keywords": [
+      "ecografia abdominal",
+      "ultrasonido",
+      "abdomen",
+      "higado",
+      "vesicula"
+    ]
+  },
+  {
+    "titulo": "Perfil hepático",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Qué evalúa Perfil hepático, cuándo puede indicarse y cómo entender sus resultados de forma general.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=perfil-hepatico",
+    "keywords": [
+      "perfil hepatico",
+      "higado",
+      "transaminasas",
+      "bilirrubina",
+      "enzimas hepaticas"
+    ]
+  },
+  {
+    "titulo": "Perfil tiroideo",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Qué evalúa Perfil tiroideo, cuándo puede indicarse y cómo entender sus resultados de forma general.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=perfil-tiroideo",
+    "keywords": [
+      "perfil tiroideo",
+      "tiroides",
+      "tsh",
+      "t4",
+      "hormonas"
+    ]
+  },
+  {
+    "titulo": "Prueba de embarazo",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Qué evalúa Prueba de embarazo, cuándo puede indicarse y cómo entender sus resultados de forma general.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=prueba-de-embarazo",
+    "keywords": [
+      "prueba de embarazo",
+      "embarazo",
+      "hcg",
+      "gestacion",
+      "test"
+    ]
+  },
+  {
+    "titulo": "Sueño",
+    "tipo": "bienestar",
+    "categoria": "Descanso",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Sueño para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=sueno",
+    "keywords": [
+      "sueño",
+      "sueno",
+      "descanso",
+      "dormir",
+      "insomnio"
+    ]
+  },
+  {
+    "titulo": "Nutrición",
+    "tipo": "bienestar",
+    "categoria": "Alimentacion",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Nutrición para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=nutricion",
+    "keywords": [
+      "nutricion",
+      "alimentacion",
+      "comida saludable",
+      "dieta",
+      "habitos alimentarios"
+    ]
+  },
+  {
+    "titulo": "Actividad Física",
+    "tipo": "bienestar",
+    "categoria": "Movimiento",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Actividad Física para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=actividad-fisica",
+    "keywords": [
+      "actividad fisica",
+      "ejercicio",
+      "movimiento",
+      "caminar",
+      "fuerza"
+    ]
+  },
+  {
+    "titulo": "Salud Mental",
+    "tipo": "bienestar",
+    "categoria": "Bienestar emocional",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Salud Mental para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=salud-mental",
+    "keywords": [
+      "salud mental",
+      "bienestar emocional",
+      "ansiedad",
+      "estres",
+      "emociones"
+    ]
+  },
+  {
+    "titulo": "Prevención",
+    "tipo": "bienestar",
+    "categoria": "Prevencion",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Prevención para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "MINSA",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=prevencion",
+    "keywords": [
+      "prevencion",
+      "chequeo",
+      "control",
+      "habitos protectores",
+      "salud preventiva"
+    ]
+  },
+  {
+    "titulo": "Envejecimiento saludable",
+    "tipo": "bienestar",
+    "categoria": "Adulto mayor",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Envejecimiento saludable para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OPS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=envejecimiento-saludable",
+    "keywords": [
+      "envejecimiento saludable",
+      "adulto mayor",
+      "autonomia",
+      "mayores",
+      "calidad de vida"
+    ]
+  },
+  {
+    "titulo": "Hidratación",
+    "tipo": "bienestar",
+    "categoria": "Habitos saludables",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Hidratación para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=hidratacion",
+    "keywords": [
+      "hidratacion",
+      "agua",
+      "beber agua",
+      "liquidos",
+      "sed"
+    ]
+  },
+  {
+    "titulo": "Manejo del estrés",
+    "tipo": "bienestar",
+    "categoria": "Bienestar emocional",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Manejo del estrés para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=manejo-del-estres",
+    "keywords": [
+      "manejo del estres",
+      "estres",
+      "relajacion",
+      "respiracion",
+      "pausa"
+    ]
+  },
+  {
+    "titulo": "Rutina de sueño",
+    "tipo": "bienestar",
+    "categoria": "Descanso",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Rutina de sueño para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=rutina-de-sueno",
+    "keywords": [
+      "rutina de sueño",
+      "rutina de sueno",
+      "dormir mejor",
+      "horario",
+      "descanso"
+    ]
+  },
+  {
+    "titulo": "Alimentación saludable",
+    "tipo": "bienestar",
+    "categoria": "Alimentacion",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Alimentación saludable para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=alimentacion-saludable",
+    "keywords": [
+      "alimentacion saludable",
+      "comer sano",
+      "nutricion",
+      "frutas",
+      "verduras"
+    ]
+  },
+  {
+    "titulo": "Control preventivo",
+    "tipo": "bienestar",
+    "categoria": "Prevencion",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Control preventivo para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "MINSA",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=control-preventivo",
+    "keywords": [
+      "control preventivo",
+      "chequeo",
+      "prevencion",
+      "consulta",
+      "tamizaje"
+    ]
+  },
+  {
+    "titulo": "Peso saludable",
+    "tipo": "bienestar",
+    "categoria": "Habitos saludables",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Peso saludable para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=peso-saludable",
+    "keywords": [
+      "peso saludable",
+      "peso",
+      "sobrepeso",
+      "obesidad",
+      "habitos"
+    ]
+  },
+  {
+    "titulo": "Respiración consciente",
+    "tipo": "bienestar",
+    "categoria": "Bienestar emocional",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Respiración consciente para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=respiracion-consciente",
+    "keywords": [
+      "respiracion",
+      "respiracion consciente",
+      "calma",
+      "ansiedad",
+      "relajacion"
+    ]
+  },
+  {
+    "titulo": "Pausas activas",
+    "tipo": "bienestar",
+    "categoria": "Movimiento",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Pausas activas para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=pausas-activas",
+    "keywords": [
+      "pausas activas",
+      "movimiento",
+      "sedentarismo",
+      "ejercicio",
+      "oficina"
+    ]
+  },
+  {
+    "titulo": "Equilibrio y caídas",
+    "tipo": "bienestar",
+    "categoria": "Adulto mayor",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Equilibrio y caídas para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OPS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=equilibrio-y-caidas",
+    "keywords": [
+      "equilibrio",
+      "caidas",
+      "adulto mayor",
+      "estabilidad",
+      "prevencion"
+    ]
+  },
+  {
+    "titulo": "Preparar una consulta médica",
+    "tipo": "bienestar",
+    "categoria": "Orientacion",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Preparar una consulta médica para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "EsSalud",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=preparar-una-consulta-medica",
+    "keywords": [
+      "consulta medica",
+      "preparar consulta",
+      "preguntas al medico",
+      "orientacion",
+      "guia"
+    ]
+  },
+  {
+    "titulo": "Entender resultados médicos",
+    "tipo": "bienestar",
+    "categoria": "Orientacion",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Entender resultados médicos para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "EsSalud",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=entender-resultados-medicos",
+    "keywords": [
+      "resultados medicos",
+      "examenes",
+      "analisis",
+      "informe medico",
+      "laboratorio"
+    ]
+  },
+  {
+    "titulo": "Uso seguro de medicamentos",
+    "tipo": "bienestar",
+    "categoria": "Orientacion",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Uso seguro de medicamentos para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "EsSalud",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=uso-seguro-de-medicamentos",
+    "keywords": [
+      "uso seguro de medicamentos",
+      "medicinas",
+      "dosis",
+      "horarios",
+      "tratamiento"
+    ]
+  },
+  {
+    "titulo": "Señales de alarma",
+    "tipo": "bienestar",
+    "categoria": "Prevencion",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Señales de alarma para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "MINSA",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=senales-de-alarma",
+    "keywords": [
+      "señales de alarma",
+      "senales de alarma",
+      "urgencia",
+      "emergencia",
+      "alerta"
+    ]
+  },
+  {
+    "titulo": "Hábitos cardiovasculares",
+    "tipo": "bienestar",
+    "categoria": "Sistema cardiovascular",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Hábitos cardiovasculares para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OPS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=habitos-cardiovasculares",
+    "keywords": [
+      "habitos cardiovasculares",
+      "corazon",
+      "presion",
+      "colesterol",
+      "actividad fisica"
+    ]
+  },
+  {
+    "titulo": "Autocuidado diario",
+    "tipo": "bienestar",
+    "categoria": "Habitos saludables",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Autocuidado diario para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OMS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=autocuidado-diario",
+    "keywords": [
+      "autocuidado",
+      "bienestar",
+      "habitos",
+      "rutina",
+      "salud"
+    ]
+  },
+  {
+    "titulo": "Salud digestiva",
+    "tipo": "bienestar",
+    "categoria": "Sistema digestivo",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Salud digestiva para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OPS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=salud-digestiva",
+    "keywords": [
+      "salud digestiva",
+      "digestivo",
+      "gastritis",
+      "reflujo",
+      "dolor abdominal"
+    ]
+  },
+  {
+    "titulo": "Salud respiratoria",
+    "tipo": "bienestar",
+    "categoria": "Sistema respiratorio",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Salud respiratoria para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "CDC",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=salud-respiratoria",
+    "keywords": [
+      "salud respiratoria",
+      "tos",
+      "asma",
+      "bronquitis",
+      "respirar"
+    ]
+  },
+  {
+    "titulo": "Bienestar familiar",
+    "tipo": "bienestar",
+    "categoria": "Familia",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Bienestar familiar para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "OPS",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=bienestar-familiar",
+    "keywords": [
+      "bienestar familiar",
+      "familia",
+      "habitos",
+      "cuidado",
+      "prevencion"
+    ]
+  },
+  {
+    "titulo": "Organización de medicamentos",
+    "tipo": "bienestar",
+    "categoria": "Orientacion",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Organización de medicamentos para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "EsSalud",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=organizacion-de-medicamentos",
+    "keywords": [
+      "organizacion de medicamentos",
+      "pastillero",
+      "horarios",
+      "dosis",
+      "tratamiento"
+    ]
+  },
+  {
+    "titulo": "Preguntas frecuentes de salud",
+    "tipo": "bienestar",
+    "categoria": "Orientacion",
+    "prioridad": 4,
+    "description": "Guía práctica sobre Preguntas frecuentes de salud para mejorar hábitos, prevenir riesgos y tomar decisiones de salud informadas.",
+    "fuente": "MINSA",
+    "nivel": "Oficial",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=preguntas-frecuentes-de-salud",
+    "keywords": [
+      "preguntas frecuentes",
+      "dudas de salud",
+      "orientacion",
+      "recursos",
+      "consulta"
+    ]
+  }
+]
