@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de bienestar | Instituto Digital de Bienestar</title>
+  <meta name="description" content="Consulta información educativa sobre temas de salud y bienestar dentro del Instituto Digital de Bienestar.">
+  <link rel="canonical" href="https://idb.org.pe/consulta.html">
+  <meta property="og:title" content="Consulta de bienestar | Instituto Digital de Bienestar">
+  <meta property="og:description" content="Información clara y educativa sobre temas de salud y bienestar.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://idb.org.pe/consulta.html">
+  <meta name="twitter:card" content="summary">
+  <style>
+    :root {
+      --green: #1f8f73;
+      --green-dark: #176c59;
+      --green-soft: #e8f5f0;
+      --ink: #16312d;
+      --muted: #65756f;
+      --line: #dfe8e4;
+      --paper: #ffffff;
+      --mist: #f6faf8;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button, input { font: inherit; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: 72px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      width: min(var(--max), calc(100% - 40px));
+      height: 72px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(96px, 1fr) auto;
+      align-items: center;
+      gap: 22px;
+    }
+    .brand { display: inline-flex; align-items: center; justify-self: start; }
+    .brand-logo { width: 110px; height: auto; }
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #263a36;
+      font-size: .89rem;
+      font-weight: 560;
+    }
+    .nav a { padding: 28px 0; }
+    .menu-toggle {
+      display: none;
+      width: 38px;
+      height: 38px;
+      border: 0;
+      background: transparent;
+    }
+    .menu-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin: 5px auto;
+      background: var(--green-dark);
+    }
+
+    .consult-main {
+      min-height: 70vh;
+      background:
+        radial-gradient(circle at 86% 8%, rgba(31, 143, 115, .08), transparent 28%),
+        linear-gradient(180deg, #fff 0%, var(--mist) 100%);
+    }
+    .consult-wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 34px 0 60px;
+    }
+    .consult-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+      align-items: start;
+    }
+    .consult-card,
+    .consult-panel,
+    .quick-block,
+    .related-card {
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(223,232,228,.92);
+      border-radius: 14px;
+      box-shadow: 0 16px 42px rgba(22, 49, 45, .06);
+    }
+    .consult-card,
+    .consult-panel { padding: clamp(18px, 3vw, 34px); }
+    .consult-card { grid-column: 1; }
+    .consult-actions-panel {
+      grid-column: 2;
+      grid-row: 1;
+      position: sticky;
+      top: 94px;
+      display: grid;
+      gap: 10px;
+    }
+    .consult-details { grid-column: 1; }
+    .related-section { grid-column: 2; }
+    .consult-secondary { grid-column: 2; }
+    .breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 0 0 12px;
+      color: #6f7d78;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+    .breadcrumb a { color: var(--green-dark); }
+    .consult-kicker {
+      margin: 0 0 10px;
+      color: var(--green-dark);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(2rem, 6vw, 3.7rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .consult-description {
+      margin: 14px 0 0;
+      max-width: 720px;
+      color: #4d615b;
+      font-size: clamp(1rem, 2.2vw, 1.12rem);
+    }
+    .source-line {
+      margin: 10px 0 0;
+      color: #77847f;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+    .consult-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 16px 0 0;
+      color: #53645f;
+      font-size: .84rem;
+      font-weight: 760;
+    }
+    .quick-grid {
+      display: grid;
+      gap: 10px;
+    }
+    .quick-block { padding: 15px; box-shadow: none; }
+    .quick-block h2 {
+      margin: 0 0 8px;
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+    .quick-block p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+    .notice {
+      grid-column: 1;
+      margin: 0;
+      color: #7b8884;
+      font-size: .78rem;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-weight: 800;
+      cursor: pointer;
+      text-align: center;
+    }
+    .button-green {
+      border-color: transparent;
+      color: #fff;
+      background: var(--green);
+      box-shadow: 0 12px 26px rgba(31, 143, 115, .22);
+    }
+    .button-primary { min-height: 54px; width: 100%; }
+    .button-light { background: #fff; color: var(--green-dark); }
+    .related-section h2 {
+      margin: 0 0 2px;
+      color: var(--ink);
+      font-size: 1rem;
+    }
+    .related-list {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .related-card {
+      display: grid;
+      gap: 4px;
+      padding: 11px;
+      box-shadow: none;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+    .related-card:hover {
+      border-color: rgba(31, 143, 115, .35);
+      transform: translateY(-1px);
+    }
+    .related-card strong {
+      color: var(--ink);
+      font-size: .92rem;
+      line-height: 1.25;
+    }
+    .related-card span {
+      color: #73817c;
+      font-size: .75rem;
+      font-weight: 700;
+    }
+    .consult-search {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 0;
+    }
+    .consult-search input {
+      min-width: 0;
+      height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0 16px;
+      color: var(--ink);
+      background: #fff;
+      outline: none;
+    }
+    .consult-secondary {
+      display: grid;
+      gap: 10px;
+    }
+    .consult-empty { color: var(--muted); }
+    .site-footer { background: #10231f; color: rgba(255,255,255,.78); }
+    .footer-main {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 54px 0;
+      display: grid;
+      grid-template-columns: 1.3fr .7fr .7fr;
+      gap: 32px;
+    }
+    .footer-brand img { width: 118px; margin-bottom: 18px; }
+    .footer-col { display: grid; gap: 10px; align-content: start; }
+    .footer-col h3 { margin: 0 0 4px; color: #fff; font-size: .92rem; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); }
+    .footer-bottom-inner {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 22px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: .84rem;
+    }
+    .socials { display: flex; gap: 14px; }
+
+    @media (min-width: 721px) and (max-width: 980px) {
+      .consult-wrap { padding: 30px 0 52px; }
+      .consult-layout {
+        grid-template-columns: minmax(0, 1fr) 280px;
+        gap: 16px;
+      }
+      .consult-card,
+      .consult-panel { padding: 18px; }
+      .button-primary { min-height: 50px; }
+    }
+
+    @media (max-width: 720px) {
+      .header-inner { min-height: 72px; height: auto; grid-template-columns: auto auto; padding: 10px 0; }
+      .menu-toggle { display: block; justify-self: end; }
+      .nav { display: none; grid-column: 1 / -1; flex-direction: column; align-items: flex-start; gap: 12px; padding: 10px 0; }
+      .nav.active { display: flex; }
+      .nav a { padding: 6px 0; }
+      .consult-wrap { padding: 22px 0 44px; }
+      .consult-layout { grid-template-columns: 1fr; gap: 12px; }
+      .consult-card,
+      .consult-panel { grid-column: 1; border-radius: 14px; padding: 17px; }
+      .consult-actions-panel { grid-column: 1; grid-row: auto; position: static; order: 2; }
+      .consult-card { order: 1; }
+      .consult-details { order: 3; }
+      .related-section { order: 4; }
+      .consult-secondary { order: 5; }
+      .notice { order: 6; }
+      .know-block { display: none; }
+      h1 { font-size: clamp(2rem, 10vw, 2.75rem); }
+      .consult-description { margin-top: 12px; }
+      .consult-meta { display: none; }
+      .quick-block { padding: 13px; }
+      .button-primary { min-height: 52px; }
+      .footer-main { grid-template-columns: 1fr; padding: 40px 0; }
+      .footer-bottom-inner { display: grid; }
+      .socials { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" class="brand-logo" onerror="this.hidden=true" loading="lazy" decoding="async">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="consult-main">
+    <section class="consult-wrap" aria-live="polite">
+      <div class="consult-layout" id="consult-result">
+        <article class="consult-card">
+          <p class="consult-kicker">Consulta IDB</p>
+          <h1>Cargando consulta...</h1>
+          <p class="consult-description">Estamos preparando la información solicitada.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" loading="lazy" decoding="async">
+        <p>Orientación digital, recursos prácticos y contenidos claros para acompañar decisiones de bienestar.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navegación</h3>
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h3>VITA</h3>
+        <a href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">Hablar con VITA</a>
+        <span>Orientación personalizada</span>
+        <span>Recursos seleccionados</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          <strong>Instituto Digital de Bienestar</strong><br>
+          www.idb.org.pe · © 2026
+        </div>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+          <a href="https://x.com/" aria-label="X">X</a>
+          <a href="https://www.youtube.com/" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const VITA_URL = "https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.";
+
+    function normalizeText(value) {
+      return String(value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim();
+    }
+
+    function slugify(value) {
+      return normalizeText(value)
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    }
+
+    function getQuery() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get("q") || "";
+    }
+
+    function findRecord(records, query) {
+      const normalizedQuery = normalizeText(query);
+      const slugQuery = slugify(query);
+
+      const preparedRecords = records.map((record) => {
+        const title = normalizeText(record.titulo);
+        const titleSlug = slugify(record.titulo);
+        const keywords = Array.isArray(record.keywords) ? record.keywords : [];
+        const normalizedKeywords = keywords.map((keyword) => normalizeText(keyword));
+        const keywordSlugs = keywords.map((keyword) => slugify(keyword));
+
+        return {
+          record,
+          title,
+          titleSlug,
+          normalizedKeywords,
+          keywordSlugs
+        };
+      });
+
+      const exactMatch = preparedRecords.find((item) => item.title === normalizedQuery
+        || item.titleSlug === slugQuery
+        || item.normalizedKeywords.some((keyword) => keyword === normalizedQuery)
+        || item.keywordSlugs.some((keyword) => keyword === slugQuery));
+
+      if (exactMatch) {
+        return exactMatch.record;
+      }
+
+      const partialMatch = preparedRecords.find((item) => item.title.includes(normalizedQuery)
+        || item.titleSlug.includes(slugQuery)
+        || item.normalizedKeywords.some((keyword) => keyword.includes(normalizedQuery))
+        || item.keywordSlugs.some((keyword) => keyword.includes(slugQuery)));
+
+      return partialMatch ? partialMatch.record : null;
+    }
+
+    function createTextElement(tag, className, text) {
+      const element = document.createElement(tag);
+      if (className) element.className = className;
+      element.textContent = text;
+      return element;
+    }
+
+    function createQuickBlock(title, text) {
+      const block = document.createElement("section");
+      block.className = "quick-block";
+      if (title === "Lo que debes saber") {
+        block.classList.add("know-block");
+      }
+      block.append(
+        createTextElement("h2", "", title),
+        createTextElement("p", "", text)
+      );
+      return block;
+    }
+
+    function getQuickResponse(record) {
+      const title = record.titulo || "este tema";
+      const type = normalizeText(record.tipo);
+
+      if (type === "medicamento") {
+        return `${title} es un medicamento de consulta frecuente. Revisa su uso general con orientación profesional, especialmente si tienes alergias, tomas otros medicamentos, estás embarazada o lo usaría un niño, adulto mayor o persona con enfermedad renal o hepática.`;
+      }
+
+      if (type === "sintoma") {
+        return `${title} puede tener distintas causas y debe interpretarse junto con su intensidad, duración y otros signos. Observa su evolución y busca orientación si persiste, empeora o aparece con señales de alarma.`;
+      }
+
+      if (type === "enfermedad") {
+        return `${title} requiere información clara, seguimiento y evaluación profesional para confirmar diagnóstico, controlar la evolución y decidir los pasos adecuados según cada persona.`;
+      }
+
+      if (type === "examen") {
+        return `${title} ayuda a obtener información sobre el estado de salud, pero sus resultados deben interpretarse con la historia clínica, síntomas y criterio de un profesional.`;
+      }
+
+      return `${title} forma parte de una orientación educativa de bienestar. Úsalo como punto de partida para entender mejor el tema y buscar apoyo profesional si tienes dudas.`;
+    }
+
+    function getConsultText(record) {
+      const type = normalizeText(record.tipo);
+
+      if (type === "medicamento") {
+        return "Consulta si tienes dudas sobre dosis, interacción con otros medicamentos, embarazo, alergias, enfermedad renal o hepática, o uso en niños y adultos mayores.";
+      }
+
+      if (type === "sintoma") {
+        return "Consulta si el síntoma es intenso, persiste, empeora o se acompaña de otros signos que te preocupan.";
+      }
+
+      if (type === "enfermedad") {
+        return "Consulta con un profesional de salud para diagnóstico, control, seguimiento y orientación según tu situación personal.";
+      }
+
+      if (type === "examen") {
+        return "Consulta para interpretar los resultados según tu historia clínica, síntomas, antecedentes y motivo del examen.";
+      }
+
+      return "Consulta con un profesional de salud si tienes dudas, molestias persistentes o necesitas orientación personalizada.";
+    }
+
+    function calculateRelated(records, currentRecord) {
+      const currentTitle = normalizeText(currentRecord.titulo);
+      const currentCategory = normalizeText(currentRecord.categoria);
+      const currentType = normalizeText(currentRecord.tipo);
+      const currentKeywords = new Set((currentRecord.keywords || []).map((keyword) => normalizeText(keyword)));
+
+      const scored = records
+        .filter((record) => normalizeText(record.titulo) !== currentTitle)
+        .map((record) => {
+          const sameCategory = normalizeText(record.categoria) === currentCategory ? 2 : 0;
+          const sharedKeywords = (record.keywords || []).filter((keyword) => currentKeywords.has(normalizeText(keyword))).length;
+          const sameType = normalizeText(record.tipo) === currentType ? 1 : 0;
+          return { record, score: sameCategory + sharedKeywords, fallbackScore: sameType };
+        })
+        .filter((item) => item.score > 0)
+        .sort((a, b) => b.score - a.score || a.record.titulo.localeCompare(b.record.titulo, "es"))
+        .slice(0, 4);
+
+      if (scored.length >= 3) {
+        return scored.map((item) => item.record);
+      }
+
+      const selectedTitles = new Set(scored.map((item) => normalizeText(item.record.titulo)));
+      const fallback = records
+        .filter((record) => normalizeText(record.titulo) !== currentTitle)
+        .filter((record) => !selectedTitles.has(normalizeText(record.titulo)))
+        .map((record) => ({
+          record,
+          fallbackScore: normalizeText(record.tipo) === currentType ? 1 : 0
+        }))
+        .filter((item) => item.fallbackScore > 0)
+        .sort((a, b) => a.record.titulo.localeCompare(b.record.titulo, "es"))
+        .slice(0, 4 - scored.length);
+
+      return scored.concat(fallback).map((item) => item.record);
+    }
+
+    function renderVitaAction(container) {
+      const vita = document.createElement("a");
+      vita.className = "button button-green button-primary";
+      vita.href = VITA_URL;
+      vita.textContent = "Hablar con VITA por WhatsApp";
+
+      container.append(vita);
+    }
+
+    function renderBackAction(container) {
+      const back = document.createElement("a");
+      back.className = "button button-light";
+      back.href = "index.html#medical-search";
+      back.textContent = "Volver a buscar";
+      container.append(back);
+    }
+
+    function renderSearch(container, query) {
+      const form = document.createElement("form");
+      form.className = "consult-search";
+      form.role = "search";
+
+      const input = document.createElement("input");
+      input.type = "search";
+      input.name = "q";
+      input.placeholder = "Buscar otro tema...";
+      input.value = query || "";
+      input.setAttribute("aria-label", "Buscar otro tema");
+
+      const button = document.createElement("button");
+      button.className = "button button-green";
+      button.type = "submit";
+      button.textContent = "Buscar otro tema";
+
+      form.append(input, button);
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const nextQuery = slugify(input.value);
+        if (nextQuery) {
+          window.location.href = `consulta.html?q=${encodeURIComponent(nextQuery)}`;
+        }
+      });
+
+      container.append(form);
+    }
+
+    function renderRelated(container, records, currentRecord) {
+      const related = calculateRelated(records, currentRecord);
+      if (!related.length) return;
+
+      container.append(createTextElement("h2", "", "Temas relacionados"));
+
+      const list = document.createElement("div");
+      list.className = "related-list";
+
+      related.forEach((record) => {
+        const link = document.createElement("a");
+        link.className = "related-card";
+        link.href = `consulta.html?q=${encodeURIComponent(slugify(record.titulo))}`;
+        link.append(
+          createTextElement("strong", "", record.titulo || "Consulta"),
+          createTextElement("span", "", record.categoria || record.tipo || "IDB")
+        );
+        list.append(link);
+      });
+
+      container.append(list);
+    }
+
+    function renderRecord(record, query, records) {
+      const container = document.querySelector("#consult-result");
+      container.innerHTML = "";
+
+      const main = document.createElement("article");
+      main.className = "consult-card";
+
+      const breadcrumb = document.createElement("nav");
+      breadcrumb.className = "breadcrumb";
+      breadcrumb.setAttribute("aria-label", "Ruta de navegación");
+      const homeLink = document.createElement("a");
+      homeLink.href = "index.html";
+      homeLink.textContent = "Inicio";
+      breadcrumb.append(homeLink, createTextElement("span", "", ">"), createTextElement("span", "", "Consulta"));
+
+      const title = document.createElement("h1");
+      title.textContent = record.titulo || "Consulta";
+
+      const description = document.createElement("p");
+      description.className = "consult-description";
+      description.textContent = record.description || "Información educativa disponible dentro del ecosistema IDB.";
+
+      const source = document.createElement("p");
+      source.className = "source-line";
+      source.textContent = record.fuente ? `Fuente: ${record.fuente}` : "";
+      if (!record.fuente) source.hidden = true;
+
+      const meta = document.createElement("div");
+      meta.className = "consult-meta";
+
+      [
+        record.tipo && `Tipo: ${record.tipo}`,
+        record.categoria && `Categoría: ${record.categoria}`
+      ].filter(Boolean).forEach((label) => {
+        meta.append(createTextElement("span", "", label));
+      });
+
+      const quickGrid = document.createElement("div");
+      quickGrid.className = "quick-grid";
+      quickGrid.append(
+        createQuickBlock("Respuesta rápida", getQuickResponse(record)),
+        createQuickBlock("Cuándo consultar", getConsultText(record)),
+        createQuickBlock("Señales de alarma", "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita o empeoramiento rápido.")
+      );
+
+      const actions = document.createElement("aside");
+      actions.className = "consult-panel consult-actions-panel";
+      actions.setAttribute("aria-label", "Acciones de consulta");
+      renderVitaAction(actions);
+
+      const details = document.createElement("div");
+      details.className = "quick-grid consult-details";
+      details.append(...Array.from(quickGrid.children));
+
+      const related = document.createElement("aside");
+      related.className = "consult-panel related-section";
+      related.setAttribute("aria-label", "Temas relacionados");
+      renderRelated(related, records, record);
+
+      const secondary = document.createElement("aside");
+      secondary.className = "consult-panel consult-secondary";
+      secondary.setAttribute("aria-label", "Buscar otro tema");
+      renderBackAction(secondary);
+      renderSearch(secondary, query);
+
+      const notice = createTextElement("p", "notice", "Esta información es orientativa y no reemplaza la evaluación de un profesional de salud.");
+
+      main.append(breadcrumb, title, description, source, meta);
+      container.append(main, actions, details, related, secondary, notice);
+      document.title = `${record.titulo} | Instituto Digital de Bienestar`;
+    }
+
+    function renderEmpty(query) {
+      const container = document.querySelector("#consult-result");
+      container.innerHTML = "";
+
+      const main = document.createElement("article");
+      main.className = "consult-card";
+
+      const breadcrumb = document.createElement("nav");
+      breadcrumb.className = "breadcrumb";
+      breadcrumb.setAttribute("aria-label", "Ruta de navegación");
+      const homeLink = document.createElement("a");
+      homeLink.href = "index.html";
+      homeLink.textContent = "Inicio";
+      breadcrumb.append(homeLink, createTextElement("span", "", ">"), createTextElement("span", "", "Consulta"));
+
+      const title = document.createElement("h1");
+      title.textContent = "No encontramos información exacta";
+
+      const description = document.createElement("p");
+      description.className = "consult-description consult-empty";
+      description.textContent = "No encontramos información exacta para esta consulta. Puedes intentar otra búsqueda o hablar con VITA.";
+
+      main.append(breadcrumb, title, description);
+
+      const actions = document.createElement("aside");
+      actions.className = "consult-panel consult-actions-panel";
+      actions.setAttribute("aria-label", "Acciones de consulta");
+      renderVitaAction(actions);
+
+      const secondary = document.createElement("aside");
+      secondary.className = "consult-panel consult-secondary";
+      secondary.setAttribute("aria-label", "Buscar otro tema");
+      renderBackAction(secondary);
+      renderSearch(secondary, query);
+
+      container.append(main, actions, secondary);
+    }
+
+    async function loadConsultation() {
+      const query = getQuery();
+
+      if (!query.trim()) {
+        renderEmpty(query);
+        return;
+      }
+
+      try {
+        const response = await fetch("search-index.json");
+        const records = await response.json();
+        const record = Array.isArray(records) ? findRecord(records, query) : null;
+
+        if (record) {
+          renderRecord(record, query, records);
+        } else {
+          renderEmpty(query);
+        }
+      } catch (error) {
+        renderEmpty(query);
+      }
+    }
+
+    document.querySelector(".menu-toggle")?.addEventListener("click", () => {
+      document.querySelector(".nav")?.classList.toggle("active");
+    });
+
+    loadConsultation();
+  </script>
+</body>
+</html>
