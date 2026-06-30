@@ -1,0 +1,42 @@
+{
+  "id": "tema-ejemplo",
+  "slug": "tema-ejemplo",
+  "titulo": "Tema ejemplo",
+  "tipo": "bienestar",
+  "categoria": "Categoria ejemplo",
+  "descripcion": "",
+  "respuesta_rapida": "",
+  "para_que_sirve": "",
+  "causas": "",
+  "sintomas": [],
+  "factores_riesgo": [],
+  "prevencion": [],
+  "cuando_consultar": "",
+  "senales_alarma": "",
+  "precauciones": [],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "",
+      "respuesta": ""
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "",
+      "slug": "",
+      "categoria": "",
+      "titulo": ""
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "",
+      "organizacion": "",
+      "titulo": "",
+      "url": "",
+      "tipo": ""
+    }
+  ],
+  "ultima_revision": "2026-06",
+  "version": "1.0"
+}

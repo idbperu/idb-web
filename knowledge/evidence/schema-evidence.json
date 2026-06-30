@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://idb.org.pe/knowledge/evidence/schema-evidence.json",
+  "title": "IDB Evidence Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "tema_id",
+    "tipo",
+    "titulo",
+    "organizacion",
+    "pais",
+    "url",
+    "fecha_publicacion",
+    "fecha_revision",
+    "nivel_evidencia",
+    "resumen",
+    "palabras_clave",
+    "idioma",
+    "estado"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identificador unico del registro de evidencia."
+    },
+    "tema_id": {
+      "type": "string",
+      "description": "ID del tema del Knowledge Base al que se asocia la evidencia."
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "Guía clínica",
+        "Revisión sistemática",
+        "Metaanálisis",
+        "Consenso",
+        "Norma técnica",
+        "Artículo científico",
+        "Documento institucional"
+      ]
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "organizacion": {
+      "type": "string",
+      "enum": [
+        "OMS",
+        "OPS",
+        "MINSA",
+        "EsSalud",
+        "INS",
+        "DIGEMID",
+        "CDC",
+        "NIH",
+        "FDA",
+        "MedlinePlus",
+        "NICE",
+        "Sociedades científicas"
+      ]
+    },
+    "pais": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "fecha_publicacion": {
+      "type": "string",
+      "pattern": "^\\d{4}(-\\d{2}){0,2}$"
+    },
+    "fecha_revision": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}$"
+    },
+    "nivel_evidencia": {
+      "type": "string",
+      "description": "Nivel interno de confianza o jerarquia de evidencia."
+    },
+    "resumen": {
+      "type": "string"
+    },
+    "palabras_clave": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "idioma": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "Borrador",
+        "En revisión",
+        "Aprobado",
+        "Archivado"
+      ]
+    }
+  }
+}

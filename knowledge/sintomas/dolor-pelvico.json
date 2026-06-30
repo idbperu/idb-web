@@ -1,0 +1,100 @@
+{
+  "id": "sintoma-dolor-pelvico",
+  "slug": "dolor-pelvico",
+  "titulo": "Dolor pelvico",
+  "tipo": "sintoma",
+  "categoria": "Ginecologico y urinario",
+  "descripcion": "Dolor pelvico es una senal que el cuerpo muestra cuando algo cambia en el ambito urinario. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
+  "respuesta_rapida": "Dolor pelvico puede relacionarse con infeccion urinaria, irritacion, deshidratacion, calculos o problemas de vejiga o rinon. Puedes observar la evolucion si es minimo, aislado y mejora con hidratacion; conviene consultar si hay fiebre, sangre en orina, dolor de costado, embarazo, dolor intenso o persistencia. La clave es no mirar el sintoma aislado, sino su contexto.",
+  "para_que_sirve": "Reconocer y describir dolor pelvico ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
+  "causas": "Las causas frecuentes incluyen infeccion urinaria, irritacion, deshidratacion, calculos o problemas de vejiga o rinon. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
+  "sintomas": [
+    "Dolor pelvico",
+    "dolor bajo vientre",
+    "dolor en la pelvis",
+    "dolor abajo del abdomen"
+  ],
+  "factores_riesgo": [
+    "inicio brusco o intensidad inusual",
+    "duracion prolongada o episodios repetidos",
+    "enfermedades previas, embarazo, infancia o edad avanzada",
+    "aparicion junto con fiebre alta, dolor fuerte, desmayo, falta de aire o sangrado"
+  ],
+  "prevencion": [
+    "mantener hidratacion y descanso adecuados cuando corresponda",
+    "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
+    "registrar evolucion y sintomas asociados",
+    "buscar orientacion temprana si limita actividades o se repite"
+  ],
+  "cuando_consultar": "Consulta por dolor pelvico si hay fiebre, sangre en orina, dolor de costado, embarazo, dolor intenso o persistencia. Puedes observar la evolucion solo si es minimo, aislado y mejora con hidratacion, pero busca orientacion si hay infecciones urinarias repetidas, enfermedad renal o edad avanzada. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
+  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
+  "precauciones": [
+    "No ignores sintomas que progresan rapido o cambian de forma marcada.",
+    "Evita automedicarte si no conoces la causa.",
+    "No retrases atencion cuando existan señales de alarma.",
+    "Ten a mano informacion sobre medicamentos, alergias y antecedentes."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Que puede significar Dolor pelvico?",
+      "respuesta": "Puede relacionarse con infeccion urinaria, irritacion, deshidratacion, calculos o problemas de vejiga o rinon. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
+    },
+    {
+      "pregunta": "¿Cuando puedo observar en casa?",
+      "respuesta": "Cuando es leve, no hay señales de alarma y cumple esta condicion: si es minimo, aislado y mejora con hidratacion."
+    },
+    {
+      "pregunta": "¿Que informacion debo registrar?",
+      "respuesta": "Inicio, duracion, intensidad, desencadenantes, sintomas asociados, temperatura, medicamentos usados y si ya ocurrio antes."
+    },
+    {
+      "pregunta": "¿Cuando no debo esperar?",
+      "respuesta": "No esperes si si hay fiebre, sangre en orina, dolor de costado, embarazo, dolor intenso o persistencia, o si aparecen signos como falta de aire, desmayo, sangrado, confusion o dolor de pecho."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-menstruacion",
+      "slug": "menstruacion",
+      "categoria": "Relacionados",
+      "titulo": "menstruacion"
+    },
+    {
+      "id": "rel-infeccion-urinaria",
+      "slug": "infeccion-urinaria",
+      "categoria": "Relacionados",
+      "titulo": "infeccion urinaria"
+    },
+    {
+      "id": "rel-ginecologia",
+      "slug": "ginecologia",
+      "categoria": "Relacionados",
+      "titulo": "ginecologia"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus",
+      "organizacion": "MedlinePlus",
+      "titulo": "Informacion para pacientes",
+      "url": "https://medlineplus.gov/spanish/",
+      "tipo": "Referencia educativa"
+    },
+    {
+      "id": "ops",
+      "organizacion": "OPS",
+      "titulo": "Informacion sanitaria regional",
+      "url": "https://www.paho.org/es",
+      "tipo": "Organismo sanitario"
+    },
+    {
+      "id": "minsa",
+      "organizacion": "MINSA",
+      "titulo": "Orientacion sanitaria para la poblacion",
+      "url": "https://www.gob.pe/minsa",
+      "tipo": "Referencia nacional"
+    }
+  ],
+  "ultima_revision": "2026-06",
+  "version": "1.0"
+}

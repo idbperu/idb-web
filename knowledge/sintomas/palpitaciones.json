@@ -1,0 +1,100 @@
+{
+  "id": "sintoma-palpitaciones",
+  "slug": "palpitaciones",
+  "titulo": "Palpitaciones",
+  "tipo": "sintoma",
+  "categoria": "Cardiovascular",
+  "descripcion": "Palpitaciones es una senal que el cuerpo muestra cuando algo cambia en el ambito cardiovascular. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
+  "respuesta_rapida": "Palpitaciones puede relacionarse con esfuerzo, ansiedad, cafeina, presion arterial, alteraciones del ritmo o problemas de circulacion. Puedes observar la evolucion solo si es breve, leve y claramente relacionado con un desencadenante no grave; conviene consultar si aparece con falta de aire, sudor frio, desmayo, dolor de pecho, debilidad o sensacion de gravedad. La clave es no mirar el sintoma aislado, sino su contexto.",
+  "para_que_sirve": "Reconocer y describir palpitaciones ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
+  "causas": "Las causas frecuentes incluyen esfuerzo, ansiedad, cafeina, presion arterial, alteraciones del ritmo o problemas de circulacion. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
+  "sintomas": [
+    "Palpitaciones",
+    "corazon acelerado",
+    "latidos fuertes",
+    "taquicardia"
+  ],
+  "factores_riesgo": [
+    "inicio brusco o intensidad inusual",
+    "duracion prolongada o episodios repetidos",
+    "enfermedades previas, embarazo, infancia o edad avanzada",
+    "aparicion junto con fiebre alta, dolor fuerte, desmayo, falta de aire o sangrado"
+  ],
+  "prevencion": [
+    "mantener hidratacion y descanso adecuados cuando corresponda",
+    "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
+    "registrar evolucion y sintomas asociados",
+    "buscar orientacion temprana si limita actividades o se repite"
+  ],
+  "cuando_consultar": "Consulta por palpitaciones si aparece con falta de aire, sudor frio, desmayo, dolor de pecho, debilidad o sensacion de gravedad. Puedes observar la evolucion solo si es breve, leve y tiene un desencadenante claro no grave, pero busca orientacion si hay hipertension, diabetes, colesterol alto o antecedentes cardiacos. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
+  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
+  "precauciones": [
+    "No ignores sintomas que progresan rapido o cambian de forma marcada.",
+    "Evita automedicarte si no conoces la causa.",
+    "No retrases atencion cuando existan señales de alarma.",
+    "Ten a mano informacion sobre medicamentos, alergias y antecedentes."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Que puede significar Palpitaciones?",
+      "respuesta": "Puede relacionarse con esfuerzo, ansiedad, cafeina, presion arterial, alteraciones del ritmo o problemas de circulacion. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
+    },
+    {
+      "pregunta": "¿Cuando puedo observar en casa?",
+      "respuesta": "Cuando es leve, no hay señales de alarma y cumple esta condicion: solo si es breve, leve y claramente relacionado con un desencadenante no grave."
+    },
+    {
+      "pregunta": "¿Que informacion debo registrar?",
+      "respuesta": "Inicio, duracion, intensidad, desencadenantes, sintomas asociados, temperatura, medicamentos usados y si ya ocurrio antes."
+    },
+    {
+      "pregunta": "¿Cuando no debo esperar?",
+      "respuesta": "No esperes si si aparece con falta de aire, sudor frio, desmayo, dolor de pecho, debilidad o sensacion de gravedad, o si aparecen signos como falta de aire, desmayo, sangrado, confusion o dolor de pecho."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-ansiedad",
+      "slug": "ansiedad",
+      "categoria": "Relacionados",
+      "titulo": "ansiedad"
+    },
+    {
+      "id": "rel-arritmia",
+      "slug": "arritmia",
+      "categoria": "Relacionados",
+      "titulo": "arritmia"
+    },
+    {
+      "id": "rel-cafeina",
+      "slug": "cafeina",
+      "categoria": "Relacionados",
+      "titulo": "cafeina"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus",
+      "organizacion": "MedlinePlus",
+      "titulo": "Informacion para pacientes",
+      "url": "https://medlineplus.gov/spanish/",
+      "tipo": "Referencia educativa"
+    },
+    {
+      "id": "ops",
+      "organizacion": "OPS",
+      "titulo": "Informacion sanitaria regional",
+      "url": "https://www.paho.org/es",
+      "tipo": "Organismo sanitario"
+    },
+    {
+      "id": "minsa",
+      "organizacion": "MINSA",
+      "titulo": "Orientacion sanitaria para la poblacion",
+      "url": "https://www.gob.pe/minsa",
+      "tipo": "Referencia nacional"
+    }
+  ],
+  "ultima_revision": "2026-06",
+  "version": "1.0"
+}

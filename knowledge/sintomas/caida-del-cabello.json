@@ -1,0 +1,100 @@
+{
+  "id": "sintoma-caida-del-cabello",
+  "slug": "caida-del-cabello",
+  "titulo": "Caida del cabello",
+  "tipo": "sintoma",
+  "categoria": "Piel y cabello",
+  "descripcion": "Para orientar caida del cabello, importa mas la evolucion completa que un dato aislado. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
+  "respuesta_rapida": "Caida del cabello puede relacionarse con alergias, irritacion, infecciones, picaduras, sequedad, medicamentos o contacto con sustancias. Puedes observar la evolucion si es localizado, leve, no se extiende y no hay sintomas generales; conviene consultar si se expande, duele, supura, hay fiebre, hinchazon facial o dificultad respiratoria. La clave es no mirar el sintoma aislado, sino su contexto.",
+  "para_que_sirve": "Reconocer y describir caida del cabello ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
+  "causas": "Las causas frecuentes incluyen alergias, irritacion, infecciones, picaduras, sequedad, medicamentos o contacto con sustancias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
+  "sintomas": [
+    "Caida del cabello",
+    "se me cae el pelo",
+    "perdida de cabello",
+    "alopecia"
+  ],
+  "factores_riesgo": [
+    "inicio brusco o intensidad inusual",
+    "duracion prolongada o episodios repetidos",
+    "enfermedades previas, embarazo, infancia o edad avanzada",
+    "aparicion junto con fiebre alta, dolor fuerte, desmayo, falta de aire o sangrado"
+  ],
+  "prevencion": [
+    "mantener hidratacion y descanso adecuados cuando corresponda",
+    "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
+    "registrar evolucion y sintomas asociados",
+    "buscar orientacion temprana si limita actividades o se repite"
+  ],
+  "cuando_consultar": "Consulta por caida del cabello si se expande, duele, supura, aparece fiebre, hinchazon facial o dificultad respiratoria. Puedes observar la evolucion solo si es localizado, leve, no se extiende y no hay sintomas generales, pero busca orientacion si hay alergias conocidas, diabetes, heridas abiertas o uso reciente de medicamentos. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
+  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
+  "precauciones": [
+    "No ignores sintomas que progresan rapido o cambian de forma marcada.",
+    "Evita automedicarte si no conoces la causa.",
+    "No retrases atencion cuando existan señales de alarma.",
+    "Ten a mano informacion sobre medicamentos, alergias y antecedentes."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Que puede significar Caida del cabello?",
+      "respuesta": "Puede relacionarse con alergias, irritacion, infecciones, picaduras, sequedad, medicamentos o contacto con sustancias. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
+    },
+    {
+      "pregunta": "¿Cuando puedo observar en casa?",
+      "respuesta": "Cuando es leve, no hay señales de alarma y cumple esta condicion: si es localizado, leve, no se extiende y no hay sintomas generales."
+    },
+    {
+      "pregunta": "¿Que informacion debo registrar?",
+      "respuesta": "Inicio, duracion, intensidad, desencadenantes, sintomas asociados, temperatura, medicamentos usados y si ya ocurrio antes."
+    },
+    {
+      "pregunta": "¿Cuando no debo esperar?",
+      "respuesta": "No esperes si si se expande, duele, supura, hay fiebre, hinchazon facial o dificultad respiratoria, o si aparecen signos como falta de aire, desmayo, sangrado, confusion o dolor de pecho."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-estres",
+      "slug": "estres",
+      "categoria": "Relacionados",
+      "titulo": "estres"
+    },
+    {
+      "id": "rel-tiroides",
+      "slug": "tiroides",
+      "categoria": "Relacionados",
+      "titulo": "tiroides"
+    },
+    {
+      "id": "rel-anemia",
+      "slug": "anemia",
+      "categoria": "Relacionados",
+      "titulo": "anemia"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus",
+      "organizacion": "MedlinePlus",
+      "titulo": "Informacion para pacientes",
+      "url": "https://medlineplus.gov/spanish/",
+      "tipo": "Referencia educativa"
+    },
+    {
+      "id": "ops",
+      "organizacion": "OPS",
+      "titulo": "Informacion sanitaria regional",
+      "url": "https://www.paho.org/es",
+      "tipo": "Organismo sanitario"
+    },
+    {
+      "id": "minsa",
+      "organizacion": "MINSA",
+      "titulo": "Orientacion sanitaria para la poblacion",
+      "url": "https://www.gob.pe/minsa",
+      "tipo": "Referencia nacional"
+    }
+  ],
+  "ultima_revision": "2026-06",
+  "version": "1.0"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "medicamento-ciprofloxacino",
+  "slug": "ciprofloxacino",
+  "titulo": "Ciprofloxacino",
+  "tipo": "medicamento",
+  "categoria": "Medicamentos",
+  "descripcion": "Cuando se habla de Ciprofloxacino, conviene pensar en dos preguntas: para que fue indicado y que condiciones personales pueden cambiar su seguridad. Esa mirada evita automedicacion y combinaciones riesgosas. Se relaciona principalmente con infecciones bacterianas confirmadas o sospechadas por un profesional. Antes de usarlo, es clave revisar enfermedades previas, embarazo o lactancia, edad, alergias y tratamientos actuales. Esta informacion busca ayudarte a conversar mejor con un profesional, no a decidir un tratamiento por cuenta propia.",
+  "respuesta_rapida": "Ciprofloxacino suele considerarse para infecciones bacterianas confirmadas o sospechadas por un profesional. En el organismo, actua contra bacterias sensibles, no contra virus como los del resfrio comun. No debe usarse para probar suerte ni mantenerse sin seguimiento si los sintomas persisten, cambian o se acompanan de señales de alarma.",
+  "para_que_sirve": "Sirve como herramienta terapeutica cuando la situacion coincide con su perfil de uso y los riesgos han sido considerados. actua contra bacterias sensibles, no contra virus como los del resfrio comun. La misma molestia puede requerir decisiones distintas en dos personas, por eso la orientacion profesional sigue siendo central.",
+  "causas": "No es una causa de enfermedad. Se evalua cuando hay un problema de salud que podria beneficiarse de infecciones bacterianas confirmadas o sospechadas por un profesional. Si el motivo no esta claro, usarlo puede retrasar el diagnostico o cubrir señales importantes.",
+  "sintomas": [],
+  "factores_riesgo": [
+    "antecedente de reaccion alergica o efecto adverso",
+    "embarazo, lactancia, infancia o edad avanzada",
+    "enfermedad renal, hepatica, cardiovascular, gastrica o neurologica segun el caso",
+    "uso de varios medicamentos, suplementos o anticoagulantes"
+  ],
+  "prevencion": [
+    "evitar automedicacion y uso compartido",
+    "conservar el envase original y revisar fecha de vencimiento",
+    "informar todos los medicamentos y suplementos en consulta",
+    "consultar si el problema reaparece o necesita uso frecuente"
+  ],
+  "cuando_consultar": "Consulta antes de usar Ciprofloxacino si tienes dudas sobre su conveniencia, si tomas otros medicamentos, si hay embarazo o lactancia, si pertenece a un nino o adulto mayor, o si tienes antecedentes de alergia, enfermedad renal, hepatica, cardiaca, gastrica o de salud mental. Tambien consulta si aparece alergias, diarrea intensa, erupciones, uso incompleto o uso sin indicacion.",
+  "senales_alarma": "Busca atencion inmediata si despues de usarlo aparece dificultad para respirar, hinchazon de cara o labios, desmayo, ronchas extensas, sangrado importante, confusion, dolor de pecho, debilidad subita o empeoramiento rapido. Tambien presta atencion a alergias, diarrea intensa, erupciones, uso incompleto o uso sin indicacion.",
+  "precauciones": [
+    "Vigila especialmente alergias, diarrea intensa, erupciones, uso incompleto o uso sin indicacion.",
+    "No lo combines con otros medicamentos sin orientacion profesional.",
+    "No lo uses para reemplazar una evaluacion si el sintoma es intenso, nuevo o persistente.",
+    "No suspendas tratamientos indicados sin consultar."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Ciprofloxacino sirve para cualquier molestia?",
+      "respuesta": "No. Se relaciona con infecciones bacterianas confirmadas o sospechadas por un profesional, pero la indicacion depende del contexto y de la evaluacion de riesgos."
+    },
+    {
+      "pregunta": "¿Que debo contar antes de usarlo?",
+      "respuesta": "Alergias, embarazo o lactancia, enfermedades previas, medicamentos actuales, suplementos y reacciones anteriores."
+    },
+    {
+      "pregunta": "¿Puedo mezclarlo con otros medicamentos?",
+      "respuesta": "No conviene hacerlo sin orientacion, porque algunas combinaciones aumentan efectos no deseados o reducen la seguridad."
+    },
+    {
+      "pregunta": "¿Cuando debo buscar ayuda pronto?",
+      "respuesta": "Si aparece alergias, diarrea intensa, erupciones, uso incompleto o uso sin indicacion, o cualquier señal de alarma como falta de aire, desmayo, hinchazon o sangrado."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-fiebre",
+      "slug": "fiebre",
+      "categoria": "Orientacion",
+      "titulo": "Fiebre"
+    },
+    {
+      "id": "rel-infeccion-urinaria",
+      "slug": "infeccion-urinaria",
+      "categoria": "Orientacion",
+      "titulo": "Infeccion urinaria"
+    },
+    {
+      "id": "rel-dolor-de-garganta",
+      "slug": "dolor-de-garganta",
+      "categoria": "Orientacion",
+      "titulo": "Dolor de garganta"
+    },
+    {
+      "id": "rel-resistencia-antimicrobiana",
+      "slug": "resistencia-antimicrobiana",
+      "categoria": "Orientacion",
+      "titulo": "Resistencia antimicrobiana"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "fda",
+      "organizacion": "FDA",
+      "titulo": "Informacion regulatoria sobre medicamentos",
+      "url": "https://www.fda.gov/drugs",
+      "tipo": "Referencia regulatoria"
+    },
+    {
+      "id": "medlineplus",
+      "organizacion": "MedlinePlus",
+      "titulo": "Medicamentos y suplementos",
+      "url": "https://medlineplus.gov/spanish/druginformation.html",
+      "tipo": "Referencia educativa"
+    },
+    {
+      "id": "nih",
+      "organizacion": "NIH",
+      "titulo": "Informacion de salud para pacientes",
+      "url": "https://www.nih.gov/health-information",
+      "tipo": "Referencia cientifica"
+    }
+  ],
+  "ultima_revision": "2026-06",
+  "version": "1.0"
+}

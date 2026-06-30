@@ -1,0 +1,113 @@
+{
+  "id": "enfermedad-artritis-reumatoide",
+  "slug": "artritis-reumatoide",
+  "titulo": "Artritis reumatoide",
+  "tipo": "enfermedad",
+  "categoria": "Reumatologia",
+  "descripcion": "La orientacion sobre Artritis reumatoide debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
+  "respuesta_rapida": "Artritis reumatoide se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
+  "para_que_sirve": "Conocer Artritis reumatoide ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
+  "causas": "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "sintomas": [
+    "fatiga",
+    "malestar general",
+    "dolor de cuerpo",
+    "fiebre"
+  ],
+  "factores_riesgo": [
+    "antecedentes familiares",
+    "edad",
+    "otras enfermedades",
+    "habitos de vida"
+  ],
+  "prevencion": [
+    "controles preventivos",
+    "actividad fisica segura",
+    "alimentacion equilibrada",
+    "consulta temprana ante sintomas persistentes"
+  ],
+  "cuando_consultar": "Consulta si sospechas artritis reumatoide, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
+  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
+  "precauciones": [
+    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
+    "No suspendas controles ni tratamientos indicados sin consultar.",
+    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
+    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Que es Artritis reumatoide?",
+      "respuesta": "Es una condicion relacionada con salud general. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+    },
+    {
+      "pregunta": "¿Que sintomas pueden aparecer?",
+      "respuesta": "Pueden observarse fatiga, malestar general, dolor de cuerpo, fiebre, aunque no todas las personas presentan los mismos signos."
+    },
+    {
+      "pregunta": "¿Se puede prevenir o controlar?",
+      "respuesta": "En muchos casos ayudan medidas como controles preventivos, actividad fisica segura, alimentacion equilibrada, junto con seguimiento profesional cuando corresponde."
+    },
+    {
+      "pregunta": "¿Cuando debo consultar?",
+      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-fatiga",
+      "slug": "fatiga",
+      "categoria": "Relacionados",
+      "titulo": "fatiga"
+    },
+    {
+      "id": "rel-malestar-general",
+      "slug": "malestar-general",
+      "categoria": "Relacionados",
+      "titulo": "malestar general"
+    },
+    {
+      "id": "rel-dolor-de-cuerpo",
+      "slug": "dolor-de-cuerpo",
+      "categoria": "Relacionados",
+      "titulo": "dolor de cuerpo"
+    },
+    {
+      "id": "rel-fiebre",
+      "slug": "fiebre",
+      "categoria": "Relacionados",
+      "titulo": "fiebre"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "oms",
+      "organizacion": "OMS",
+      "titulo": "Temas de salud",
+      "url": "https://www.who.int/health-topics",
+      "tipo": "Organismo sanitario"
+    },
+    {
+      "id": "ops",
+      "organizacion": "OPS",
+      "titulo": "Informacion sanitaria regional",
+      "url": "https://www.paho.org/es",
+      "tipo": "Organismo sanitario"
+    },
+    {
+      "id": "medlineplus",
+      "organizacion": "MedlinePlus",
+      "titulo": "Informacion para pacientes",
+      "url": "https://medlineplus.gov/spanish/",
+      "tipo": "Referencia educativa"
+    },
+    {
+      "id": "cdc",
+      "organizacion": "CDC",
+      "titulo": "Informacion de salud publica",
+      "url": "https://www.cdc.gov/spanish/",
+      "tipo": "Salud publica"
+    }
+  ],
+  "ultima_revision": "2026-06",
+  "version": "1.0"
+}

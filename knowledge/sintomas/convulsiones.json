@@ -1,0 +1,100 @@
+{
+  "id": "sintoma-convulsiones",
+  "slug": "convulsiones",
+  "titulo": "Convulsiones",
+  "tipo": "sintoma",
+  "categoria": "Neurologia",
+  "descripcion": "Convulsiones es una senal que el cuerpo muestra cuando algo cambia en el ambito neurologico. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
+  "respuesta_rapida": "Convulsiones puede relacionarse con tension, migraña, deshidratacion, alteraciones del equilibrio, cambios metabolicos o problemas neurologicos. Puedes observar la evolucion si es conocido, leve y mejora sin progresar; conviene consultar si es repentino, intenso, nuevo o aparece con debilidad, confusion, dificultad para hablar, desmayo o cambios visuales. La clave es no mirar el sintoma aislado, sino su contexto.",
+  "para_que_sirve": "Reconocer y describir convulsiones ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
+  "causas": "Las causas frecuentes incluyen tension, migraña, deshidratacion, alteraciones del equilibrio, cambios metabolicos o problemas neurologicos. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
+  "sintomas": [
+    "Convulsiones",
+    "ataque convulsivo",
+    "se sacude el cuerpo",
+    "crisis convulsiva"
+  ],
+  "factores_riesgo": [
+    "inicio brusco o intensidad inusual",
+    "duracion prolongada o episodios repetidos",
+    "enfermedades previas, embarazo, infancia o edad avanzada",
+    "aparicion junto con fiebre alta, dolor fuerte, desmayo, falta de aire o sangrado"
+  ],
+  "prevencion": [
+    "mantener hidratacion y descanso adecuados cuando corresponda",
+    "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
+    "registrar evolucion y sintomas asociados",
+    "buscar orientacion temprana si limita actividades o se repite"
+  ],
+  "cuando_consultar": "Consulta por convulsiones si es repentino, intenso, nuevo o aparece con debilidad, confusion, dificultad para hablar, desmayo o cambios visuales. Puedes observar la evolucion solo si es conocido, leve y mejora sin progresar, pero busca orientacion si hay golpe reciente, fiebre alta, anticoagulantes o enfermedades neurologicas previas. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
+  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
+  "precauciones": [
+    "No ignores sintomas que progresan rapido o cambian de forma marcada.",
+    "Evita automedicarte si no conoces la causa.",
+    "No retrases atencion cuando existan señales de alarma.",
+    "Ten a mano informacion sobre medicamentos, alergias y antecedentes."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Que puede significar Convulsiones?",
+      "respuesta": "Puede relacionarse con tension, migraña, deshidratacion, alteraciones del equilibrio, cambios metabolicos o problemas neurologicos. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
+    },
+    {
+      "pregunta": "¿Cuando puedo observar en casa?",
+      "respuesta": "Cuando es leve, no hay señales de alarma y cumple esta condicion: si es conocido, leve y mejora sin progresar."
+    },
+    {
+      "pregunta": "¿Que informacion debo registrar?",
+      "respuesta": "Inicio, duracion, intensidad, desencadenantes, sintomas asociados, temperatura, medicamentos usados y si ya ocurrio antes."
+    },
+    {
+      "pregunta": "¿Cuando no debo esperar?",
+      "respuesta": "No esperes si si es repentino, intenso, nuevo o aparece con debilidad, confusion, dificultad para hablar, desmayo o cambios visuales, o si aparecen signos como falta de aire, desmayo, sangrado, confusion o dolor de pecho."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-epilepsia",
+      "slug": "epilepsia",
+      "categoria": "Relacionados",
+      "titulo": "epilepsia"
+    },
+    {
+      "id": "rel-fiebre",
+      "slug": "fiebre",
+      "categoria": "Relacionados",
+      "titulo": "fiebre"
+    },
+    {
+      "id": "rel-urgencia",
+      "slug": "urgencia",
+      "categoria": "Relacionados",
+      "titulo": "urgencia"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus",
+      "organizacion": "MedlinePlus",
+      "titulo": "Informacion para pacientes",
+      "url": "https://medlineplus.gov/spanish/",
+      "tipo": "Referencia educativa"
+    },
+    {
+      "id": "ops",
+      "organizacion": "OPS",
+      "titulo": "Informacion sanitaria regional",
+      "url": "https://www.paho.org/es",
+      "tipo": "Organismo sanitario"
+    },
+    {
+      "id": "minsa",
+      "organizacion": "MINSA",
+      "titulo": "Orientacion sanitaria para la poblacion",
+      "url": "https://www.gob.pe/minsa",
+      "tipo": "Referencia nacional"
+    }
+  ],
+  "ultima_revision": "2026-06",
+  "version": "1.0"
+}
