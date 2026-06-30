@@ -108,6 +108,66 @@
     .consult-card,
     .consult-panel { padding: clamp(18px, 3vw, 34px); }
     .consult-card { grid-column: 1; }
+    .consult-hero-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(150px, 220px);
+      gap: clamp(18px, 3vw, 28px);
+      align-items: center;
+    }
+    .consult-copy { min-width: 0; }
+    .consult-visual {
+      position: relative;
+      margin: 0;
+      min-height: 164px;
+      border-radius: 18px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 30% 24%, rgba(31,143,115,.16), transparent 34%),
+        linear-gradient(145deg, #eff8f4 0%, #f8fbfa 100%);
+      border: 1px solid rgba(223,232,228,.8);
+    }
+    .consult-visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 164px;
+      object-fit: cover;
+      filter: saturate(.96);
+    }
+    .consult-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 45%, rgba(13, 47, 40, .16));
+      pointer-events: none;
+    }
+    .consult-category-mark {
+      min-height: 164px;
+      display: grid;
+      place-items: center;
+      padding: 22px;
+      text-align: center;
+    }
+    .consult-category-mark strong {
+      display: grid;
+      place-items: center;
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      color: var(--green-dark);
+      background: rgba(255,255,255,.8);
+      box-shadow: inset 0 0 0 1px rgba(31,143,115,.12);
+      font-size: 1rem;
+      letter-spacing: .04em;
+    }
+    .consult-category-mark span {
+      display: block;
+      color: #60746d;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
     .consult-actions-panel {
       grid-column: 2;
       grid-row: 1;
@@ -206,6 +266,18 @@
       box-shadow: 0 12px 26px rgba(31, 143, 115, .22);
     }
     .button-primary { min-height: 54px; width: 100%; }
+    .button-vita {
+      gap: 9px;
+    }
+    .button-vita-logo {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      border-radius: 50%;
+      flex: 0 0 auto;
+      background: rgba(255,255,255,.92);
+      padding: 2px;
+    }
     .button-light { background: #fff; color: var(--green-dark); }
     .related-section h2 {
       margin: 0 0 2px;
@@ -259,29 +331,73 @@
       gap: 10px;
     }
     .consult-empty { color: var(--muted); }
-    .site-footer { background: #10231f; color: rgba(255,255,255,.78); }
+    .site-footer{
+      color:#2B3A37;
+      background: linear-gradient(
+        180deg,
+        #EEF6F2 0%,
+        #E4F0EA 55%,
+        #D8EAE1 100%
+      );
+      border-top:1px solid #D9EDE4;
+    }
     .footer-main {
       width: min(var(--max), calc(100% - 40px));
       margin: 0 auto;
-      padding: 54px 0;
+      padding: 50px 0 32px;
       display: grid;
-      grid-template-columns: 1.3fr .7fr .7fr;
-      gap: 32px;
+      grid-template-columns: minmax(320px, 1.45fr) repeat(2, minmax(150px, 0.55fr));
+      gap: 48px;
+      align-items: start;
     }
-    .footer-brand img { width: 118px; margin-bottom: 18px; }
-    .footer-col { display: grid; gap: 10px; align-content: start; }
-    .footer-col h3 { margin: 0 0 4px; color: #fff; font-size: .92rem; }
-    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); }
+    .footer-brand {
+      display: grid;
+      gap: 16px;
+      max-width: 460px;
+    }
+    .footer-brand img {
+      width: 72px;
+      height: auto;
+    }
+    .footer-brand p {
+      margin: 0;
+      color: #5E726C;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+    .footer-col h3 {
+      margin: 0 0 18px;
+      color:#163C35;
+      font-size: 0.86rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .footer-col a,
+    .footer-col span {
+      display: block;
+      margin: 7px 0;
+      color:#61756E;
+      font-size: 0.9rem;
+    }
+    .footer-col a:hover { color:#1A8C73; }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.09); }
     .footer-bottom-inner {
       width: min(var(--max), calc(100% - 40px));
       margin: 0 auto;
-      padding: 22px 0;
+      min-height: 68px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      font-size: .84rem;
+      gap: 24px;
+      flex-wrap: wrap;
+      color:#6F827C;
+      font-size: 0.86rem;
     }
-    .socials { display: flex; gap: 14px; }
+    .socials {
+      display: flex;
+      gap: 18px;
+      font-weight: 750;
+    }
 
     @media (min-width: 721px) and (max-width: 980px) {
       .consult-wrap { padding: 30px 0 52px; }
@@ -291,7 +407,16 @@
       }
       .consult-card,
       .consult-panel { padding: 18px; }
+      .consult-hero-card { grid-template-columns: minmax(0, 1fr) 150px; }
+      .consult-visual,
+      .consult-visual img,
+      .consult-category-mark { min-height: 140px; }
       .button-primary { min-height: 50px; }
+      .footer-main { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 641px) and (max-width: 720px) {
+      .footer-main { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 720px) {
@@ -311,14 +436,60 @@
       .consult-secondary { order: 5; }
       .notice { order: 6; }
       .know-block { display: none; }
+      .consult-hero-card {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .consult-visual {
+        min-height: 86px;
+        max-height: 96px;
+      }
+      .consult-visual img {
+        min-height: 86px;
+        max-height: 96px;
+      }
+      .consult-category-mark {
+        min-height: 86px;
+        padding: 14px;
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+        text-align: left;
+        place-items: center start;
+      }
+      .consult-category-mark strong {
+        width: 48px;
+        height: 48px;
+        margin: 0;
+      }
       h1 { font-size: clamp(2rem, 10vw, 2.75rem); }
       .consult-description { margin-top: 12px; }
       .consult-meta { display: none; }
       .quick-block { padding: 13px; }
       .button-primary { min-height: 52px; }
-      .footer-main { grid-template-columns: 1fr; padding: 40px 0; }
-      .footer-bottom-inner { display: grid; }
-      .socials { flex-wrap: wrap; }
+    }
+
+    @media (max-width: 640px) {
+      .footer-main {
+        grid-template-columns: 1fr;
+        padding: 16px 0 22px;
+        gap: 24px;
+        width: min(100% - 28px, var(--max));
+      }
+      .footer-col h3 { margin-bottom: 10px; }
+      .footer-col a,
+      .footer-col span { margin: 5px 0; }
+      .footer-bottom-inner {
+        width: min(100% - 28px, var(--max));
+        align-items: flex-start;
+        flex-direction: column;
+        min-height: auto;
+        gap: 14px;
+        padding: 16px 0;
+      }
+      .socials {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+      }
     }
   </style>
 </head>
@@ -369,7 +540,7 @@
       </div>
       <div class="footer-col">
         <h3>VITA</h3>
-        <a href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">Hablar con VITA</a>
+        <a href="#vita">Hablar con VITA</a>
         <span>Orientación personalizada</span>
         <span>Recursos seleccionados</span>
       </div>
@@ -575,6 +746,64 @@
       return block;
     }
 
+    function getEditorialVisual(record) {
+      const title = normalizeText(record.titulo);
+      const type = normalizeText(record.tipo);
+      const category = normalizeText(record.categoria);
+      const imageMap = [
+        { matches: ["diabetes"], src: "imagenes/diabetes-idb.jpg", alt: "Orientación sobre diabetes" },
+        { matches: ["asma", "respiratorio", "respiratoria", "respirar", "tos"], src: "imagenes/sintomas-enfermedades-idb.jpg", alt: "Orientación sobre síntomas respiratorios" },
+        { matches: ["fiebre"], src: "imagenes/sintomas-enfermedades-idb.jpg", alt: "Orientación sobre fiebre" },
+        { matches: ["cardiovascular", "corazon", "hipertension", "presion arterial"], src: "imagenes/salud-cardiovascular-idb.png", alt: "Orientación sobre salud cardiovascular" },
+        { matches: ["higado", "hepatico", "hepatica"], alt: "Orientación sobre salud hepática" },
+        { matches: ["gastritis", "digestivo", "digestiva", "estomago", "abdominal", "reflujo"], src: "imagenes/gastritis-idb.jpg", alt: "Orientación sobre salud digestiva" },
+        { matches: ["dolor de espalda", "espalda"], src: "imagenes/dolor-espalda-idb.jpg", alt: "Orientación sobre dolor de espalda" },
+        { matches: ["dolor"], src: "imagenes/sintomas-enfermedades-idb.jpg", alt: "Orientación sobre dolor y síntomas frecuentes" },
+        { matches: ["medicamento", "medicamentos"], src: "imagenes/medicamentos-idb.jpg", alt: "Orientación sobre medicamentos" },
+        { matches: ["examen", "examenes"], src: "imagenes/examenes-medicos-idb.jpg", alt: "Orientación sobre exámenes médicos" },
+        { matches: ["sintoma", "sintomas", "mareo", "nausea"], src: "imagenes/sintomas-enfermedades-idb.jpg", alt: "Orientación sobre síntomas frecuentes" },
+        { matches: ["enfermedad", "enfermedades"], src: "imagenes/sintomas-enfermedades-idb.jpg", alt: "Orientación sobre enfermedades frecuentes" },
+        { matches: ["salud mental", "ansiedad", "estres"], src: "imagenes/salud-mental-idb.jpg", alt: "Orientación sobre bienestar emocional" },
+        { matches: ["nutricion"], src: "imagenes/nutricion-idb.jpg", alt: "Orientación sobre nutrición" },
+        { matches: ["prevencion"], src: "imagenes/prevencion-idb.jpg", alt: "Orientación sobre prevención" }
+      ];
+      const haystack = `${title} ${type} ${category}`;
+      const match = imageMap.find((item) => item.matches.some((term) => haystack.includes(term)));
+
+      return {
+        src: match?.src || "",
+        alt: match?.alt || `Orientación IDB sobre ${record.categoria || record.tipo || "bienestar"}`,
+        label: record.categoria || record.tipo || "Consulta IDB",
+        initials: (record.tipo || record.categoria || "IDB").slice(0, 2).toUpperCase()
+      };
+    }
+
+    function createEditorialVisual(record) {
+      const visual = getEditorialVisual(record);
+      const wrapper = document.createElement("figure");
+      wrapper.className = "consult-visual";
+      wrapper.setAttribute("aria-label", visual.label);
+
+      if (visual.src) {
+        const image = document.createElement("img");
+        image.src = visual.src;
+        image.alt = visual.alt;
+        image.loading = "lazy";
+        image.decoding = "async";
+        wrapper.append(image);
+        return wrapper;
+      }
+
+      const mark = document.createElement("div");
+      mark.className = "consult-category-mark";
+      mark.append(
+        createTextElement("strong", "", visual.initials),
+        createTextElement("span", "", visual.label)
+      );
+      wrapper.append(mark);
+      return wrapper;
+    }
+
     function getQuickResponse(record) {
       if (record._knowledge?.respuesta_rapida) {
         return record._knowledge.respuesta_rapida;
@@ -671,9 +900,16 @@
 
     function renderVitaAction(container) {
       const vita = document.createElement("a");
-      vita.className = "button button-green button-primary";
+      vita.className = "button button-green button-primary button-vita";
       vita.href = VITA_URL;
-      vita.textContent = "Hablar con VITA por WhatsApp";
+      const logo = document.createElement("img");
+      logo.className = "button-vita-logo";
+      logo.src = "imagenes/vita/logo-vita.png";
+      logo.alt = "";
+      logo.loading = "lazy";
+      logo.decoding = "async";
+      logo.onerror = () => logo.remove();
+      vita.append(logo, createTextElement("span", "", "Hablar con VITA por WhatsApp"));
 
       container.append(vita);
     }
@@ -746,7 +982,10 @@
       container.innerHTML = "";
 
       const main = document.createElement("article");
-      main.className = "consult-card";
+      main.className = "consult-card consult-hero-card";
+
+      const copy = document.createElement("div");
+      copy.className = "consult-copy";
 
       const breadcrumb = document.createElement("nav");
       breadcrumb.className = "breadcrumb";
@@ -808,7 +1047,8 @@
 
       const notice = createTextElement("p", "notice", "Esta información es orientativa y no reemplaza la evaluación de un profesional de salud.");
 
-      main.append(breadcrumb, title, description, source, meta);
+      copy.append(breadcrumb, title, description, source, meta);
+      main.append(copy, createEditorialVisual(record));
       container.append(main, actions, details, related, secondary, notice);
       document.title = `${record.titulo} | Instituto Digital de Bienestar`;
     }
