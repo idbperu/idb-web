@@ -37,6 +37,91 @@
       .trim();
   }
 
+  function normalizeQueryText(value) {
+    return normalizeText(value)
+      .replace(/[¿?¡!.,;:()[\]{}]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function uniqueValues(values) {
+    return [...new Set(values.map(normalizeQueryText).filter(Boolean))];
+  }
+
+  function slugify(value) {
+    return normalizeQueryText(value)
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+
+  function detectQueryIntent(query) {
+    const normalized = normalizeQueryText(query);
+    const wantsMedication = /\b(que puedo tomar|que tomar|medicamento|pastilla|jarabe|antiinflamatorio|analgesico)\b/.test(normalized);
+    const symptomLanguage = /\b(tengo|me duele|dolor|fiebre|tos|mareo|nausea|vomito|diarrea|ardor|malestar|cansancio|fatiga)\b/.test(normalized);
+    const meaningLanguage = /\b(que significa|significa|alto|alta|bajo|baja|resultado|examen|analisis)\b/.test(normalized);
+
+    if (wantsMedication && !symptomLanguage) return "medicamento";
+    if (meaningLanguage && /\b(glucosa|hemograma|colesterol|trigliceridos|examen|analisis)\b/.test(normalized)) return "examen";
+    if (symptomLanguage) return "sintoma";
+    return "";
+  }
+
+  function createQueryVariants(query) {
+    const normalized = normalizeQueryText(query);
+    const variants = [normalized];
+
+    const phraseAliases = [
+      ["para que sirve ", ""],
+      ["para que es ", ""],
+      ["para que se usa ", ""],
+      ["que es ", ""],
+      ["que significa ", ""],
+      ["como bajar la fiebre", "fiebre"],
+      ["como quitar la fiebre", "fiebre"],
+      ["como controlar la fiebre", "fiebre"],
+      ["que puedo tomar para la fiebre", "fiebre"],
+      ["que tomar para la fiebre", "fiebre"],
+      ["tengo fiebre", "fiebre"],
+      ["me duele la cabeza", "dolor de cabeza"],
+      ["dolor en la cabeza", "dolor de cabeza"],
+      ["me duele el estomago", "dolor de estomago"],
+      ["dolor de barriga", "dolor abdominal"],
+      ["azucar alta", "glucosa"],
+      ["glucosa alta", "glucosa"],
+      ["tengo tos", "tos"],
+      ["tengo ansiedad", "ansiedad"],
+      ["no puedo dormir", "insomnio"]
+    ];
+
+    phraseAliases.forEach(([from, to]) => {
+      if (normalized === from.trim()) variants.push(to);
+      if (normalized.startsWith(from)) variants.push(normalized.replace(from, ""));
+      if (normalized.includes(from.trim())) {
+        variants.push(normalized.replace(from.trim(), to));
+        if (to) variants.push(to);
+      }
+    });
+
+    const painMatch = normalized.match(/\bme duele (la|el|los|las)?\s*(.+)$/);
+    if (painMatch?.[2]) {
+      variants.push(`dolor de ${painMatch[2]}`);
+    }
+
+    const symptomQuestionMatch = normalized.match(/\b(?:que puedo tomar para|que tomar para|como bajar|como quitar|como controlar)\s+(?:la|el|los|las)?\s*(.+)$/);
+    if (symptomQuestionMatch?.[1]) {
+      variants.push(symptomQuestionMatch[1]);
+    }
+
+    const stripped = normalized
+      .replace(/\b(hola|por favor|quisiera|quiero|necesito|saber|informacion|sobre|acerca de|que|significa|tengo|siento|presento|del|de la|de el|un|una|el|la|los|las|mi|mis)\b/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+    variants.push(stripped);
+    variants.push(stripped.replace(/\b(alto|alta|bajo|baja|elevado|elevada|normal|anormal|positivo|negativo)\b/g, " ").replace(/\s+/g, " ").trim());
+
+    return uniqueValues(variants);
+  }
+
   function normalizeRecord(record) {
     const searchableParts = [
       record.titulo,
@@ -51,6 +136,10 @@
     return {
       ...record,
       prioridad: Number.isFinite(Number(record.prioridad)) ? Number(record.prioridad) : 4,
+      _title: normalizeText(record.titulo),
+      _slug: slugify(record.titulo),
+      _keywords: Array.isArray(record.keywords) ? record.keywords.map(normalizeText) : [],
+      _keywordSlugs: Array.isArray(record.keywords) ? record.keywords.map(slugify) : [],
       _searchText: normalizeText(searchableParts.join(" "))
     };
   }
@@ -190,34 +279,47 @@
     };
   }
 
-  function scoreRecord(record, query) {
-    const title = normalizeText(record.titulo);
+  function scoreRecordVariant(record, query, intent = "") {
+    const title = record._title || normalizeText(record.titulo);
+    const titleSlug = record._slug || slugify(record.titulo);
     const category = normalizeText(record.categoria);
     const type = normalizeText(record.tipo);
-    const keywords = Array.isArray(record.keywords) ? record.keywords.map(normalizeText) : [];
+    const keywords = record._keywords || (Array.isArray(record.keywords) ? record.keywords.map(normalizeText) : []);
+    const keywordSlugs = record._keywordSlugs || (Array.isArray(record.keywords) ? record.keywords.map(slugify) : []);
+    const querySlug = slugify(query);
+    const intentBoost = intent && type === intent ? 18 : 0;
+    const symptomSafetyBoost = intent === "sintoma" && type === "sintoma" ? 12 : 0;
 
-    if (title === query) return 100;
-    if (title.startsWith(query)) return 80;
-    if (keywords.some((keyword) => keyword === query)) return 70;
-    if (keywords.some((keyword) => keyword.startsWith(query))) return 60;
-    if (title.includes(query)) return 50;
-    if (keywords.some((keyword) => keyword.includes(query))) return 40;
-    if (category.includes(query)) return 25;
-    if (type.includes(query)) return 20;
-    if (record._searchText.includes(query)) return 10;
+    if (title === query || titleSlug === querySlug) return 120 + intentBoost;
+    if (keywords.some((keyword) => keyword === query) || keywordSlugs.some((keyword) => keyword === querySlug)) return 105 + intentBoost + symptomSafetyBoost;
+    if (title.length > 3 && query.includes(title)) return 100 + intentBoost;
+    if (keywords.some((keyword) => keyword.length > 4 && query.includes(keyword))) return 88 + intentBoost + symptomSafetyBoost;
+    if (title.startsWith(query) || titleSlug.startsWith(querySlug)) return 92 + intentBoost;
+    if (keywords.some((keyword) => keyword.startsWith(query)) || keywordSlugs.some((keyword) => keyword.startsWith(querySlug))) return 78 + intentBoost;
+    if (title.includes(query) || titleSlug.includes(querySlug)) return 64 + intentBoost;
+    if (keywords.some((keyword) => keyword.includes(query)) || keywordSlugs.some((keyword) => keyword.includes(querySlug))) return 54 + intentBoost + symptomSafetyBoost;
+    if (record._searchText.includes(query)) return 32 + intentBoost;
+    if (category.includes(query)) return 25 + intentBoost;
+    if (type.includes(query)) return 20 + intentBoost;
     return 0;
   }
 
+  function scoreRecord(record, query, intent = "") {
+    return createQueryVariants(query)
+      .reduce((bestScore, variant) => Math.max(bestScore, scoreRecordVariant(record, variant, intent)), 0);
+  }
+
   function searchMedicalIndex(query, options = {}) {
-    const normalizedQuery = normalizeText(query);
+    const normalizedQuery = normalizeQueryText(query);
     const limit = Number.isFinite(options.limit) ? options.limit : 8;
+    const intent = detectQueryIntent(normalizedQuery);
 
     if (!normalizedQuery) {
       return [];
     }
 
     return searchIndex
-      .map((record) => ({ record, score: scoreRecord(record, normalizedQuery) }))
+      .map((record) => ({ record, score: scoreRecord(record, normalizedQuery, intent) }))
       .filter((entry) => entry.score > 0)
       .sort((a, b) => {
         return b.score - a.score
