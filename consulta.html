@@ -1131,12 +1131,16 @@
       const haystack = ` ${normalizeText(`${record.titulo} ${record.tipo} ${record.categoria} ${(record.keywords || []).join(" ")}`)} `;
       if (haystack.includes("medicamento") || normalizeText(record.tipo) === "medicamento") return "medicamentos";
       if (haystack.includes("higado") || haystack.includes("gastritis") || haystack.includes("digestivo") || haystack.includes("estomago") || haystack.includes("abdominal") || haystack.includes("reflujo")) return "digestivo";
-      if (haystack.includes("asma") || haystack.includes(" tos ") || haystack.includes("respiratorio") || haystack.includes("respirar")) return "respiratorio";
+      if (haystack.includes("ansiedad") || haystack.includes("estres") || haystack.includes("emocional") || haystack.includes("salud mental") || haystack.includes("mental")) return "mental";
+      const hasFeverContext = haystack.includes("fiebre") || haystack.includes("temperatura") || haystack.includes("febril") || haystack.includes("calentura");
+      const hasPediatricContext = haystack.includes(" nino ") || haystack.includes(" nina ") || haystack.includes(" bebe ") || haystack.includes(" hijo ") || haystack.includes(" hija ") || haystack.includes("pediatrico");
+      if (hasFeverContext && hasPediatricContext) return "infantil";
+      if (hasFeverContext) return "diagnostico";
+      if (haystack.includes("asma") || haystack.includes(" tos ") || haystack.includes("respiratorio") || haystack.includes("respirar") || haystack.includes("bronquios")) return "respiratorio";
       if (haystack.includes("diabetes") || haystack.includes("glucosa") || haystack.includes("metabolico") || haystack.includes("colesterol")) return "metabolico";
       if (haystack.includes("cardio") || haystack.includes("corazon") || haystack.includes("hipertension") || haystack.includes("presion arterial")) return "cardiovascular";
       if (haystack.includes("examen") || haystack.includes("hemograma") || haystack.includes("laboratorio") || haystack.includes("analisis")) return "laboratorio";
       if (haystack.includes("dolor") || haystack.includes("espalda") || haystack.includes("artrosis")) return "dolor-rehabilitacion";
-      if (haystack.includes("ansiedad") || haystack.includes("estres") || haystack.includes("mental") || haystack.includes("emocional")) return "mental";
       if (haystack.includes("nutricion") || haystack.includes("obesidad")) return "nutricion";
       if (haystack.includes("prevencion") || haystack.includes("vacuna")) return "prevencion";
       if (haystack.includes("dermat")) return "dermatologia";
