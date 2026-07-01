@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulta de bienestar | Instituto Digital de Bienestar</title>
-  <meta name="description" content="Consulta información educativa sobre temas de salud y bienestar dentro del Instituto Digital de Bienestar.">
+  <title>Consulta médica IDB | Instituto Digital de Bienestar</title>
+  <meta name="description" content="Ficha médica educativa del Instituto Digital de Bienestar con respuesta rápida, señales de alarma, temas relacionados y orientación de VITA.">
   <link rel="canonical" href="https://idb.org.pe/consulta.html">
-  <meta property="og:title" content="Consulta de bienestar | Instituto Digital de Bienestar">
-  <meta property="og:description" content="Información clara y educativa sobre temas de salud y bienestar.">
+  <meta property="og:title" content="Consulta médica IDB | Instituto Digital de Bienestar">
+  <meta property="og:description" content="Información médica educativa, clara y confiable para pacientes.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://idb.org.pe/consulta.html">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <style>
     :root {
+      --blue: #1769aa;
+      --blue-dark: #0d4778;
+      --blue-soft: #eaf4fb;
       --green: #1f8f73;
       --green-dark: #176c59;
-      --green-soft: #e8f5f0;
-      --ink: #16312d;
-      --muted: #65756f;
-      --line: #dfe8e4;
+      --ink: #10233f;
+      --muted: #607086;
+      --line: #dce8f2;
       --paper: #ffffff;
-      --mist: #f6faf8;
+      --soft: #f5f9fc;
+      --warning: #fff6e6;
+      --danger: #fff0f0;
       --max: 1180px;
+      --radius: 20px;
+      --shadow: 0 20px 55px rgba(16, 35, 63, .08);
     }
 
     * { box-sizing: border-box; }
@@ -30,7 +36,7 @@
       color: var(--ink);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: var(--paper);
-      line-height: 1.55;
+      line-height: 1.58;
     }
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
@@ -39,306 +45,494 @@
     .site-header {
       position: sticky;
       top: 0;
-      z-index: 20;
-      height: 72px;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(14px);
+      z-index: 50;
+      background: rgba(255, 255, 255, .94);
+      border-bottom: 1px solid rgba(220, 232, 242, .72);
+      backdrop-filter: blur(16px);
     }
     .header-inner {
-      width: min(var(--max), calc(100% - 40px));
-      height: 72px;
+      width: min(var(--max), calc(100% - 32px));
+      min-height: 76px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: minmax(96px, 1fr) auto;
+      grid-template-columns: auto minmax(240px, 1fr) auto;
       align-items: center;
       gap: 22px;
     }
-    .brand { display: inline-flex; align-items: center; justify-self: start; }
-    .brand-logo { width: 110px; height: auto; }
+    .brand { display: inline-flex; align-items: center; }
+    .brand-logo { width: 112px; height: auto; }
+    .top-search {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 8px 0 18px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(16, 35, 63, .04);
+    }
+    .top-search input {
+      width: 100%;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      color: var(--ink);
+      background: transparent;
+    }
+    .top-search button {
+      min-width: 78px;
+      height: 34px;
+      border: 0;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--blue);
+      font-weight: 800;
+      cursor: pointer;
+    }
     .nav {
       display: flex;
       align-items: center;
-      gap: 24px;
-      color: #263a36;
-      font-size: .89rem;
-      font-weight: 560;
+      gap: 20px;
+      color: #334b63;
+      font-size: .9rem;
+      font-weight: 750;
+      white-space: nowrap;
     }
-    .nav a { padding: 28px 0; }
-    .menu-toggle {
-      display: none;
-      width: 38px;
-      height: 38px;
-      border: 0;
-      background: transparent;
-    }
-    .menu-toggle span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      margin: 5px auto;
-      background: var(--green-dark);
-    }
+    .nav a:hover { color: var(--blue); }
 
-    .consult-main {
-      min-height: 70vh;
+    .page {
       background:
-        radial-gradient(circle at 86% 8%, rgba(31, 143, 115, .08), transparent 28%),
-        linear-gradient(180deg, #fff 0%, var(--mist) 100%);
+        radial-gradient(circle at 92% 4%, rgba(23, 105, 170, .12), transparent 26%),
+        linear-gradient(180deg, #f8fbfe 0%, #fff 40%, #f6faf8 100%);
     }
-    .consult-wrap {
+    .wrap {
       width: min(var(--max), calc(100% - 32px));
       margin: 0 auto;
-      padding: 34px 0 60px;
     }
-    .consult-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 320px;
-      gap: 20px;
-      align-items: start;
-    }
-    .consult-card,
-    .consult-panel,
-    .quick-block,
-    .related-card {
-      background: rgba(255,255,255,.92);
-      border: 1px solid rgba(223,232,228,.92);
-      border-radius: 14px;
-      box-shadow: 0 16px 42px rgba(22, 49, 45, .06);
-    }
-    .consult-card,
-    .consult-panel { padding: clamp(18px, 3vw, 34px); }
-    .consult-card { grid-column: 1; }
-    .consult-hero-card {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(150px, 220px);
-      gap: clamp(18px, 3vw, 28px);
-      align-items: center;
-    }
-    .consult-copy { min-width: 0; }
-    .consult-visual {
-      position: relative;
-      margin: 0;
-      min-height: 164px;
-      border-radius: 18px;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 30% 24%, rgba(31,143,115,.16), transparent 34%),
-        linear-gradient(145deg, #eff8f4 0%, #f8fbfa 100%);
-      border: 1px solid rgba(223,232,228,.8);
-    }
-    .consult-visual img {
-      width: 100%;
-      height: 100%;
-      min-height: 164px;
-      object-fit: cover;
-      filter: saturate(.96);
-    }
-    .consult-visual::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 45%, rgba(13, 47, 40, .16));
-      pointer-events: none;
-    }
-    .consult-category-mark {
-      min-height: 164px;
-      display: grid;
-      place-items: center;
-      padding: 22px;
-      text-align: center;
-    }
-    .consult-category-mark strong {
-      display: grid;
-      place-items: center;
-      width: 64px;
-      height: 64px;
-      margin: 0 auto 12px;
-      border-radius: 50%;
-      color: var(--green-dark);
-      background: rgba(255,255,255,.8);
-      box-shadow: inset 0 0 0 1px rgba(31,143,115,.12);
-      font-size: 1rem;
-      letter-spacing: .04em;
-    }
-    .consult-category-mark span {
-      display: block;
-      color: #60746d;
-      font-size: .78rem;
-      font-weight: 800;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-    }
-    .consult-actions-panel {
-      grid-column: 2;
-      grid-row: 1;
-      position: sticky;
-      top: 94px;
-      display: grid;
-      gap: 10px;
-    }
-    .consult-details { grid-column: 1; }
-    .related-section { grid-column: 2; }
-    .consult-secondary { grid-column: 2; }
     .breadcrumb {
       display: flex;
       flex-wrap: wrap;
       gap: 7px;
-      margin: 0 0 12px;
-      color: #6f7d78;
-      font-size: .78rem;
-      font-weight: 700;
+      padding: 24px 0 12px;
+      color: #677b8f;
+      font-size: .82rem;
+      font-weight: 760;
     }
-    .breadcrumb a { color: var(--green-dark); }
-    .consult-kicker {
-      margin: 0 0 10px;
-      color: var(--green-dark);
+    .breadcrumb a { color: var(--blue-dark); }
+
+    .medical-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 400px);
+      gap: clamp(24px, 4vw, 52px);
+      align-items: center;
+      padding: 10px 0 34px;
+    }
+    .hero-copy { min-width: 0; }
+    .category-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 32px;
+      padding: 0 12px;
+      border: 1px solid rgba(23, 105, 170, .14);
+      border-radius: 999px;
+      color: var(--blue-dark);
+      background: rgba(234, 244, 251, .86);
       font-size: .78rem;
-      font-weight: 800;
+      font-weight: 850;
       letter-spacing: .04em;
       text-transform: uppercase;
     }
     h1 {
-      margin: 0;
-      max-width: 760px;
-      font-size: clamp(2rem, 6vw, 3.7rem);
-      line-height: 1;
-      letter-spacing: -0.02em;
+      margin: 18px 0 0;
+      max-width: 820px;
+      color: #0f2d4a;
+      font-size: clamp(2.25rem, 6vw, 4.35rem);
+      line-height: .98;
+      letter-spacing: -0.035em;
     }
-    .consult-description {
-      margin: 14px 0 0;
-      max-width: 720px;
-      color: #4d615b;
-      font-size: clamp(1rem, 2.2vw, 1.12rem);
+    .hero-summary {
+      max-width: 740px;
+      margin: 18px 0 0;
+      color: #42586f;
+      font-size: clamp(1.02rem, 2vw, 1.18rem);
     }
-    .source-line {
-      margin: 10px 0 0;
-      color: #77847f;
-      font-size: .78rem;
-      font-weight: 700;
-    }
-    .consult-meta {
+    .hero-meta {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 18px;
-      margin: 16px 0 0;
-      color: #53645f;
-      font-size: .84rem;
+      gap: 10px 18px;
+      margin: 18px 0 0;
+      color: #637589;
+      font-size: .86rem;
       font-weight: 760;
     }
-    .quick-grid {
-      display: grid;
+    .share-row {
+      display: flex;
+      flex-wrap: wrap;
       gap: 10px;
+      margin-top: 22px;
     }
-    .quick-block { padding: 15px; box-shadow: none; }
-    .quick-block h2 {
-      margin: 0 0 8px;
-      color: var(--ink);
-      font-size: 1rem;
-      line-height: 1.2;
-    }
-    .quick-block p {
-      margin: 0;
-      color: var(--muted);
-      font-size: .92rem;
-    }
-    .notice {
-      grid-column: 1;
-      margin: 0;
-      color: #7b8884;
-      font-size: .78rem;
-    }
-    .button {
+    .share-btn,
+    .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      gap: 9px;
       min-height: 44px;
       padding: 0 18px;
-      border-radius: 999px;
       border: 1px solid var(--line);
-      font-weight: 800;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--blue-dark);
+      font-weight: 850;
       cursor: pointer;
       text-align: center;
     }
-    .button-green {
-      border-color: transparent;
+    .share-btn:hover,
+    .btn:hover { border-color: rgba(23,105,170,.34); }
+    .hero-vita {
       color: #fff;
-      background: var(--green);
-      box-shadow: 0 12px 26px rgba(31, 143, 115, .22);
+      border-color: transparent;
+      background: linear-gradient(135deg, var(--green) 0%, var(--blue) 100%);
+      box-shadow: 0 12px 28px rgba(31, 143, 115, .18);
     }
-    .button-primary { min-height: 54px; width: 100%; }
-    .button-vita {
-      gap: 9px;
-    }
-    .button-vita-logo {
+    .hero-vita img {
       width: 22px;
       height: 22px;
       object-fit: contain;
       border-radius: 50%;
-      flex: 0 0 auto;
-      background: rgba(255,255,255,.92);
+      background: rgba(255,255,255,.95);
       padding: 2px;
     }
-    .button-light { background: #fff; color: var(--green-dark); }
-    .related-section h2 {
-      margin: 0 0 2px;
-      color: var(--ink);
+    .medical-image {
+      position: relative;
+      min-height: 310px;
+      border-radius: 28px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 36% 24%, rgba(23,105,170,.16), transparent 34%),
+        linear-gradient(145deg, #eaf4fb 0%, #f8fcff 100%);
+      border: 1px solid rgba(220,232,242,.9);
+      box-shadow: var(--shadow);
+    }
+    .medical-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 310px;
+      object-fit: cover;
+    }
+    .medical-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 45%, rgba(9, 34, 57, .18));
+      pointer-events: none;
+    }
+    .neutral-visual {
+      min-height: 310px;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+      text-align: center;
+    }
+    .neutral-visual strong {
+      display: grid;
+      place-items: center;
+      width: 84px;
+      height: 84px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      color: var(--blue-dark);
+      background: rgba(255,255,255,.82);
+      box-shadow: inset 0 0 0 1px rgba(23,105,170,.16);
+      font-size: 1.15rem;
+      letter-spacing: .06em;
+    }
+    .neutral-visual span {
+      color: #526a82;
+      font-size: .86rem;
+      font-weight: 850;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 24px;
+      align-items: start;
+      padding: 8px 0 68px;
+    }
+    .main-flow {
+      grid-column: 1;
+      display: grid;
+      gap: 18px;
+      min-width: 0;
+    }
+    .card {
+      max-width: 100%;
+      min-width: 0;
+      border: 1px solid rgba(220,232,242,.95);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 14px 40px rgba(16, 35, 63, .055);
+    }
+    .quick-answer {
+      display: grid;
+      grid-template-columns: 46px minmax(0, 1fr);
+      gap: 16px;
+      padding: clamp(20px, 3vw, 28px);
+      background: linear-gradient(135deg, #edf7ff 0%, #f8fcff 100%);
+      border-color: rgba(23,105,170,.18);
+    }
+    .line-icon {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      color: var(--blue);
+      background: #fff;
+      box-shadow: inset 0 0 0 1px rgba(23,105,170,.12);
+      font-weight: 900;
+    }
+    .quick-answer h2,
+    .section-card h2,
+    .alert-card h2,
+    .rail-card h2,
+    .interest-section h2 {
+      margin: 0;
+      color: var(--blue-dark);
+      font-size: clamp(1.16rem, 2vw, 1.45rem);
+      line-height: 1.18;
+    }
+    .quick-answer p,
+    .section-card p,
+    .alert-card p,
+    .rail-card p {
+      margin: 10px 0 0;
+      color: #4c6176;
+    }
+    .section-card { padding: clamp(20px, 3vw, 30px); }
+    .section-card,
+    .quick-answer,
+    .info-grid,
+    .alert-stack,
+    .interest-section {
+      max-width: 100%;
+      min-width: 0;
+    }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+      max-width: 100%;
+    }
+    .tab-btn {
+      min-height: 38px;
+      padding: 0 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #385168;
+      background: #fff;
+      font-size: .86rem;
+      font-weight: 820;
+      cursor: pointer;
+    }
+    .tab-btn.active {
+      color: #fff;
+      border-color: var(--blue);
+      background: var(--blue);
+    }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .mini-card {
+      padding: 18px;
+      border: 1px solid rgba(220,232,242,.95);
+      border-radius: 18px;
+      background: #fff;
+    }
+    .mini-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 8px;
+      color: var(--blue-dark);
       font-size: 1rem;
+    }
+    .mini-card p {
+      margin: 0;
+      color: #5c6e81;
+      font-size: .94rem;
+    }
+    .alert-stack {
+      display: grid;
+      gap: 14px;
+    }
+    .alert-card {
+      padding: 20px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(220,232,242,.95);
+      background: #fff;
+    }
+    .alert-card.warning { background: var(--warning); border-color: #f1d7a9; }
+    .alert-card.danger { background: var(--danger); border-color: #f3c2c2; }
+    .alert-card.consult { background: #eef8f5; border-color: #cae8dd; }
+    .faq-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    details {
+      border: 1px solid rgba(220,232,242,.95);
+      border-radius: 16px;
+      background: #fff;
+      padding: 14px 16px;
+    }
+    summary {
+      color: var(--ink);
+      font-weight: 850;
+      cursor: pointer;
+    }
+    details p { margin: 10px 0 0; color: #586b7d; }
+
+    .sidebar {
+      grid-column: 2;
+      grid-row: 1;
+      position: sticky;
+      top: 96px;
+      display: grid;
+      gap: 14px;
+      min-width: 0;
+    }
+    .rail-card { padding: 20px; }
+    .vita-card {
+      color: #fff;
+      background: linear-gradient(135deg, #1f8f73 0%, #1769aa 100%);
+      border: 0;
+      box-shadow: 0 18px 42px rgba(31, 143, 115, .22);
+    }
+    .vita-card h2,
+    .vita-card p { color: #fff; }
+    .vita-logo {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: rgba(255,255,255,.95);
+      padding: 3px;
+      margin-bottom: 12px;
+    }
+    .btn-vita {
+      width: 100%;
+      margin-top: 16px;
+      color: var(--green-dark);
+      background: #fff;
+      border-color: transparent;
+    }
+    .small-list {
+      display: grid;
+      gap: 10px;
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+      color: #52677d;
+      font-size: .92rem;
+    }
+    .small-list li {
+      display: grid;
+      grid-template-columns: 20px minmax(0, 1fr);
+      gap: 8px;
     }
     .related-list {
       display: grid;
-      gap: 8px;
-      margin-top: 10px;
-    }
-    .related-card {
-      display: grid;
-      gap: 4px;
-      padding: 11px;
-      box-shadow: none;
-      transition: transform .2s ease, border-color .2s ease;
-    }
-    .related-card:hover {
-      border-color: rgba(31, 143, 115, .35);
-      transform: translateY(-1px);
-    }
-    .related-card strong {
-      color: var(--ink);
-      font-size: .92rem;
-      line-height: 1.25;
-    }
-    .related-card span {
-      color: #73817c;
-      font-size: .75rem;
-      font-weight: 700;
-    }
-    .consult-search {
-      display: grid;
-      grid-template-columns: 1fr;
       gap: 10px;
-      margin-top: 0;
+      margin-top: 14px;
     }
-    .consult-search input {
-      min-width: 0;
-      height: 46px;
+    .related-link {
+      display: grid;
+      gap: 3px;
+      padding: 12px;
       border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 0 16px;
-      color: var(--ink);
+      border-radius: 14px;
       background: #fff;
-      outline: none;
     }
-    .consult-secondary {
+    .related-link strong { color: var(--ink); font-size: .95rem; }
+    .related-link span { color: #6c7d8d; font-size: .78rem; font-weight: 800; }
+
+    .interest-section {
+      grid-column: 1 / -1;
+      margin-top: 4px;
+    }
+    .interest-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .interest-head p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+    .interest-row {
       display: grid;
-      gap: 10px;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(220px, 1fr);
+      gap: 14px;
+      max-width: 100%;
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      padding-bottom: 4px;
+      scroll-snap-type: x proximity;
     }
-    .consult-empty { color: var(--muted); }
+    .interest-card {
+      min-height: 242px;
+      overflow: hidden;
+      scroll-snap-align: start;
+    }
+    .interest-card img {
+      width: 100%;
+      height: 118px;
+      object-fit: cover;
+    }
+    .interest-copy {
+      padding: 14px;
+    }
+    .interest-copy span {
+      color: var(--blue);
+      font-size: .74rem;
+      font-weight: 900;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .interest-copy strong {
+      display: block;
+      margin-top: 6px;
+      color: var(--ink);
+      line-height: 1.22;
+    }
+
+    .notice {
+      grid-column: 1 / -1;
+      margin: 0;
+      color: #728292;
+      font-size: .82rem;
+    }
+    .empty-state {
+      padding: 48px 0 70px;
+    }
+
     .site-footer{
       color:#2B3A37;
-      background: linear-gradient(
-        180deg,
-        #EEF6F2 0%,
-        #E4F0EA 55%,
-        #D8EAE1 100%
-      );
+      background: linear-gradient(180deg, #EEF6F2 0%, #E4F0EA 55%, #D8EAE1 100%);
       border-top:1px solid #D9EDE4;
     }
     .footer-main {
@@ -346,30 +540,18 @@
       margin: 0 auto;
       padding: 50px 0 32px;
       display: grid;
-      grid-template-columns: minmax(320px, 1.45fr) repeat(2, minmax(150px, 0.55fr));
-      gap: 48px;
+      grid-template-columns: minmax(320px, 1.45fr) repeat(3, minmax(130px, 0.55fr));
+      gap: 42px;
       align-items: start;
     }
-    .footer-brand {
-      display: grid;
-      gap: 16px;
-      max-width: 460px;
-    }
-    .footer-brand img {
-      width: 72px;
-      height: auto;
-    }
-    .footer-brand p {
-      margin: 0;
-      color: #5E726C;
-      font-size: 0.92rem;
-      line-height: 1.65;
-    }
+    .footer-brand { display: grid; gap: 16px; max-width: 460px; }
+    .footer-brand img { width: 72px; height: auto; }
+    .footer-brand p { margin: 0; color: #5E726C; font-size: .92rem; line-height: 1.65; }
     .footer-col h3 {
       margin: 0 0 18px;
       color:#163C35;
-      font-size: 0.86rem;
-      letter-spacing: 0.04em;
+      font-size: .86rem;
+      letter-spacing: .04em;
       text-transform: uppercase;
     }
     .footer-col a,
@@ -377,118 +559,125 @@
       display: block;
       margin: 7px 0;
       color:#61756E;
-      font-size: 0.9rem;
+      font-size: .9rem;
     }
     .footer-col a:hover { color:#1A8C73; }
-    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.09); }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, .09); }
     .footer-bottom-inner {
       width: min(var(--max), calc(100% - 40px));
-      margin: 0 auto;
       min-height: 68px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 24px;
       flex-wrap: wrap;
       color:#6F827C;
-      font-size: 0.86rem;
+      font-size: .86rem;
     }
+    .legal-links,
     .socials {
       display: flex;
-      gap: 18px;
+      flex-wrap: wrap;
+      gap: 12px 18px;
       font-weight: 750;
     }
 
-    @media (min-width: 721px) and (max-width: 980px) {
-      .consult-wrap { padding: 30px 0 52px; }
-      .consult-layout {
-        grid-template-columns: minmax(0, 1fr) 280px;
-        gap: 16px;
+    @media (max-width: 980px) {
+      .header-inner { grid-template-columns: auto 1fr; }
+      .top-search { grid-column: 1 / -1; order: 3; margin-bottom: 12px; }
+      .nav { justify-self: end; gap: 14px; }
+      .medical-hero { grid-template-columns: 1fr; }
+      .medical-image,
+      .medical-image img,
+      .neutral-visual { min-height: 230px; }
+      .content-grid { grid-template-columns: 1fr; }
+      .main-flow { grid-column: 1; }
+      .sidebar {
+        grid-column: 1;
+        grid-row: auto;
+        order: -1;
+        position: static;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
-      .consult-card,
-      .consult-panel { padding: 18px; }
-      .consult-hero-card { grid-template-columns: minmax(0, 1fr) 150px; }
-      .consult-visual,
-      .consult-visual img,
-      .consult-category-mark { min-height: 140px; }
-      .button-primary { min-height: 50px; }
+      .vita-card { grid-column: 1 / -1; }
       .footer-main { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    @media (min-width: 641px) and (max-width: 720px) {
-      .footer-main { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    @media (max-width: 720px) {
-      .header-inner { min-height: 72px; height: auto; grid-template-columns: auto auto; padding: 10px 0; }
-      .menu-toggle { display: block; justify-self: end; }
-      .nav { display: none; grid-column: 1 / -1; flex-direction: column; align-items: flex-start; gap: 12px; padding: 10px 0; }
-      .nav.active { display: flex; }
-      .nav a { padding: 6px 0; }
-      .consult-wrap { padding: 22px 0 44px; }
-      .consult-layout { grid-template-columns: 1fr; gap: 12px; }
-      .consult-card,
-      .consult-panel { grid-column: 1; border-radius: 14px; padding: 17px; }
-      .consult-actions-panel { grid-column: 1; grid-row: auto; position: static; order: 2; }
-      .consult-card { order: 1; }
-      .consult-details { order: 3; }
-      .related-section { order: 4; }
-      .consult-secondary { order: 5; }
-      .notice { order: 6; }
-      .know-block { display: none; }
-      .consult-hero-card {
-        grid-template-columns: 1fr;
-        gap: 14px;
-      }
-      .consult-visual {
-        min-height: 86px;
-        max-height: 96px;
-      }
-      .consult-visual img {
-        min-height: 86px;
-        max-height: 96px;
-      }
-      .consult-category-mark {
-        min-height: 86px;
-        padding: 14px;
-        grid-template-columns: auto 1fr;
-        gap: 12px;
-        text-align: left;
-        place-items: center start;
-      }
-      .consult-category-mark strong {
-        width: 48px;
-        height: 48px;
-        margin: 0;
-      }
-      h1 { font-size: clamp(2rem, 10vw, 2.75rem); }
-      .consult-description { margin-top: 12px; }
-      .consult-meta { display: none; }
-      .quick-block { padding: 13px; }
-      .button-primary { min-height: 52px; }
     }
 
     @media (max-width: 640px) {
+      .header-inner,
+      .wrap,
+      .footer-main,
+      .footer-bottom-inner { width: min(100% - 28px, var(--max)); }
+      .header-inner {
+        min-height: 66px;
+        gap: 12px;
+      }
+      .brand-logo { width: 104px; }
+      .nav {
+        grid-column: 1 / -1;
+        justify-self: start;
+        width: 100%;
+        min-width: 0;
+        overflow-x: auto;
+        padding-bottom: 2px;
+      }
+      .top-search { min-height: 42px; margin-bottom: 10px; }
+      .breadcrumb { padding-top: 18px; }
+      .medical-hero { gap: 16px; padding-bottom: 20px; }
+      h1 { font-size: clamp(2rem, 12vw, 3rem); }
+      .hero-summary { font-size: 1rem; }
+      .medical-image,
+      .medical-image img,
+      .neutral-visual {
+        min-height: 132px;
+        max-height: 150px;
+      }
+      .neutral-visual {
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+        padding: 14px;
+        text-align: left;
+        place-items: center start;
+      }
+      .neutral-visual strong {
+        width: 52px;
+        height: 52px;
+        margin: 0;
+      }
+      .content-grid { padding-bottom: 44px; }
+      .quick-answer {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .info-grid,
+      .sidebar { grid-template-columns: 1fr; }
+      .sidebar .rail-card:not(.vita-card) { display: none; }
+      .tabs {
+        max-width: calc(100vw - 70px);
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        padding-bottom: 2px;
+      }
+      .tab-btn { flex: 0 0 auto; }
+      .interest-section { min-width: 0; }
+      .interest-row { grid-auto-columns: minmax(210px, 82vw); }
+      .interest-head { display: grid; }
       .footer-main {
         grid-template-columns: 1fr;
-        padding: 16px 0 22px;
+        padding: 28px 0 22px;
         gap: 24px;
-        width: min(100% - 28px, var(--max));
       }
       .footer-col h3 { margin-bottom: 10px; }
       .footer-col a,
       .footer-col span { margin: 5px 0; }
       .footer-bottom-inner {
-        width: min(100% - 28px, var(--max));
         align-items: flex-start;
         flex-direction: column;
         min-height: auto;
         gap: 14px;
         padding: 16px 0;
-      }
-      .socials {
-        flex-wrap: wrap;
-        gap: 12px 18px;
       }
     }
   </style>
@@ -497,31 +686,25 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
-        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" class="brand-logo" onerror="this.hidden=true" loading="lazy" decoding="async">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" class="brand-logo" loading="lazy" decoding="async">
       </a>
-      <button class="menu-toggle" aria-label="Abrir menú" type="button">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <form class="top-search" role="search" aria-label="Buscar en IDB">
+        <input type="search" name="q" placeholder="Buscar síntomas, medicamentos o enfermedades" aria-label="Buscar tema de salud">
+        <button type="submit">Buscar</button>
+      </form>
       <nav class="nav" aria-label="Navegación principal">
-        <a href="index.html">Inicio</a>
-        <a href="temas.html">Temas</a>
-        <a href="recursos.html">Recursos</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="temas.html">Temas de salud</a>
+        <a href="recursos.html">Herramientas</a>
+        <a href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">VITA</a>
       </nav>
     </div>
   </header>
 
-  <main class="consult-main">
-    <section class="consult-wrap" aria-live="polite">
-      <div class="consult-layout" id="consult-result">
-        <article class="consult-card">
-          <p class="consult-kicker">Consulta IDB</p>
-          <h1>Cargando consulta...</h1>
-          <p class="consult-description">Estamos preparando la información solicitada.</p>
-        </article>
-      </div>
+  <main class="page" id="consulta-app" aria-live="polite">
+    <section class="wrap empty-state">
+      <p class="category-pill">Consulta IDB</p>
+      <h1>Cargando consulta...</h1>
+      <p class="hero-summary">Estamos preparando una ficha médica clara y orientativa.</p>
     </section>
   </main>
 
@@ -529,20 +712,27 @@
     <div class="footer-main">
       <div class="footer-brand">
         <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" loading="lazy" decoding="async">
-        <p>Orientación digital, recursos prácticos y contenidos claros para acompañar decisiones de bienestar.</p>
+        <p>IDB Salud ofrece orientación digital, recursos prácticos y contenidos claros para acompañar decisiones de bienestar.</p>
       </div>
       <div class="footer-col">
-        <h3>Navegación</h3>
+        <h3>Enlaces rápidos</h3>
         <a href="index.html">Inicio</a>
-        <a href="temas.html">Temas</a>
-        <a href="recursos.html">Recursos</a>
+        <a href="temas.html">Temas de salud</a>
+        <a href="recursos.html">Herramientas</a>
         <a href="contacto.html">Contacto</a>
       </div>
       <div class="footer-col">
+        <h3>Categorías</h3>
+        <a href="temas.html">Síntomas</a>
+        <a href="recursos.html#medicamentos">Medicamentos</a>
+        <a href="recursos.html#examenes">Exámenes</a>
+        <a href="fuentes.html">Fuentes</a>
+      </div>
+      <div class="footer-col">
         <h3>VITA</h3>
-        <a href="#vita">Hablar con VITA</a>
-        <span>Orientación personalizada</span>
-        <span>Recursos seleccionados</span>
+        <a href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">Hablar con VITA</a>
+        <span>Orientación educativa</span>
+        <span>No reemplaza una consulta médica</span>
       </div>
     </div>
     <div class="footer-bottom">
@@ -551,10 +741,10 @@
           <strong>Instituto Digital de Bienestar</strong><br>
           www.idb.org.pe · © 2026
         </div>
-        <div class="socials" aria-label="Redes sociales">
-          <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
-          <a href="https://x.com/" aria-label="X">X</a>
-          <a href="https://www.youtube.com/" aria-label="YouTube">YouTube</a>
+        <div class="legal-links" aria-label="Información legal">
+          <a href="contacto.html">Contacto</a>
+          <a href="fuentes.html">Privacidad</a>
+          <a href="fuentes.html">Términos</a>
         </div>
       </div>
     </div>
@@ -564,31 +754,16 @@
     const VITA_URL = "https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.";
     const KNOWLEDGE_CATEGORY_MAP = {
       enfermedad: "enfermedades",
-      enfermedades: "enfermedades",
       sintoma: "sintomas",
-      sintomas: "sintomas",
       medicamento: "medicamentos",
-      medicamentos: "medicamentos",
       examen: "examenes",
-      examenes: "examenes",
       procedimiento: "procedimientos",
-      procedimientos: "procedimientos",
       vacuna: "vacunas",
-      vacunas: "vacunas",
       prevencion: "prevencion",
       nutricion: "nutricion",
       "actividad fisica": "actividad-fisica",
-      "actividad-fisica": "actividad-fisica",
       "salud mental": "salud-mental",
-      "salud-mental": "salud-mental",
-      "adulto mayor": "adulto-mayor",
-      "adulto-mayor": "adulto-mayor",
-      "salud infantil": "salud-infantil",
-      "salud-infantil": "salud-infantil",
-      "salud mujer": "salud-mujer",
-      "salud-mujer": "salud-mujer",
-      "salud hombre": "salud-hombre",
-      "salud-hombre": "salud-hombre"
+      "adulto mayor": "adulto-mayor"
     };
     const KNOWLEDGE_CATEGORIES = [
       "enfermedades",
@@ -601,11 +776,27 @@
       "nutricion",
       "actividad-fisica",
       "salud-mental",
-      "adulto-mayor",
-      "salud-infantil",
-      "salud-mujer",
-      "salud-hombre"
+      "adulto-mayor"
     ];
+    const VISUALS = {
+      medicamentos: "imagenes/consulta/medicamentos/medicamentos-idb.webp",
+      digestivo: "imagenes/consulta/digestivo/digestivo-idb.webp",
+      respiratorio: "imagenes/consulta/respiratorio/respiratorio-idb.webp",
+      cardiovascular: "imagenes/consulta/cardiovascular/cardiovascular-idb.webp",
+      laboratorio: "imagenes/consulta/laboratorio/laboratorio-idb.webp",
+      metabolico: "imagenes/consulta/metabolico/metabolico-idb.webp",
+      neurologico: "imagenes/consulta/neurologico/neurologico-idb.webp",
+      mental: "imagenes/consulta/mental/mental-idb.webp",
+      dermatologia: "imagenes/consulta/dermatologia/dermatologia-idb.webp",
+      nutricion: "imagenes/consulta/nutricion/nutricion-idb.webp",
+      prevencion: "imagenes/consulta/prevencion/prevencion-idb.webp",
+      "dolor-rehabilitacion": "imagenes/consulta/dolor-rehabilitacion/dolor-rehabilitacion-idb.webp",
+      diagnostico: "imagenes/consulta/diagnostico/diagnostico-idb.webp",
+      "adulto-mayor": "imagenes/consulta/adulto-mayor/adulto-mayor-idb.webp",
+      infantil: "imagenes/consulta/infantil/infantil-idb.webp",
+      mujer: "imagenes/consulta/mujer/mujer-idb.webp",
+      hombre: "imagenes/consulta/hombre/hombre-idb.webp"
+    };
 
     function normalizeText(value) {
       return String(value || "")
@@ -622,16 +813,27 @@
     }
 
     function getQuery() {
-      const params = new URLSearchParams(window.location.search);
-      return params.get("q") || "";
+      return new URLSearchParams(window.location.search).get("q") || "";
+    }
+
+    function createText(tag, className, text) {
+      const element = document.createElement(tag);
+      if (className) element.className = className;
+      element.textContent = text;
+      return element;
+    }
+
+    function getSourceLabel(record) {
+      if (record.fuente) return record.fuente;
+      if (!Array.isArray(record.fuentes)) return "";
+      return record.fuentes
+        .map((source) => typeof source === "string" ? source : source.organizacion)
+        .filter(Boolean)
+        .join(" / ");
     }
 
     function getKnowledgeCategory(record) {
-      const candidates = [
-        record?.tipo,
-        record?.categoria
-      ].map((value) => normalizeText(value));
-
+      const candidates = [record?.tipo, record?.categoria].map(normalizeText);
       const match = candidates.find((value) => KNOWLEDGE_CATEGORY_MAP[value]);
       return match ? KNOWLEDGE_CATEGORY_MAP[match] : "";
     }
@@ -646,44 +848,25 @@
       }
     }
 
-    function getSourceLabel(record) {
-      if (record.fuente) return record.fuente;
-      if (!Array.isArray(record.fuentes) || !record.fuentes.length) return "";
-
-      return record.fuentes
-        .map((source) => typeof source === "string" ? source : source.organizacion)
-        .filter(Boolean)
-        .join(" / ");
-    }
-
-    function normalizeKnowledgeTopic(topic, fallbackRecord) {
-      const sourceLabel = getSourceLabel(topic);
-
-      return {
-        ...fallbackRecord,
-        ...topic,
-        titulo: topic.titulo || fallbackRecord?.titulo || "Consulta",
-        tipo: topic.tipo || fallbackRecord?.tipo || "",
-        categoria: topic.categoria || fallbackRecord?.categoria || "",
-        description: topic.descripcion || fallbackRecord?.description || "",
-        fuente: sourceLabel || fallbackRecord?.fuente || "",
-        keywords: fallbackRecord?.keywords || [],
-        url: `consulta.html?q=${encodeURIComponent(topic.slug || fallbackRecord?.titulo || "")}`,
-        _knowledge: topic,
-        _source: "knowledge"
-      };
-    }
-
     async function loadKnowledgeTopic(slug, category, fallbackRecord) {
       if (!slug) return null;
-
       const categories = category ? [category] : KNOWLEDGE_CATEGORIES;
 
       for (const categoryId of categories) {
         const topic = await fetchJsonIfExists(`knowledge/${categoryId}/${slug}.json`);
-        if (topic) {
-          return normalizeKnowledgeTopic(topic, fallbackRecord);
-        }
+        if (!topic) continue;
+
+        return {
+          ...fallbackRecord,
+          ...topic,
+          titulo: topic.titulo || fallbackRecord?.titulo || "Consulta",
+          tipo: topic.tipo || fallbackRecord?.tipo || "",
+          categoria: topic.categoria || fallbackRecord?.categoria || "",
+          description: topic.descripcion || fallbackRecord?.description || "",
+          fuente: getSourceLabel(topic) || fallbackRecord?.fuente || "",
+          keywords: fallbackRecord?.keywords || [],
+          _knowledge: topic
+        };
       }
 
       return null;
@@ -692,408 +875,499 @@
     function findRecord(records, query) {
       const normalizedQuery = normalizeText(query);
       const slugQuery = slugify(query);
-
-      const preparedRecords = records.map((record) => {
-        const title = normalizeText(record.titulo);
-        const titleSlug = slugify(record.titulo);
+      const prepared = records.map((record) => {
         const keywords = Array.isArray(record.keywords) ? record.keywords : [];
-        const normalizedKeywords = keywords.map((keyword) => normalizeText(keyword));
-        const keywordSlugs = keywords.map((keyword) => slugify(keyword));
-
         return {
           record,
-          title,
-          titleSlug,
-          normalizedKeywords,
-          keywordSlugs
+          title: normalizeText(record.titulo),
+          titleSlug: slugify(record.titulo),
+          keywords: keywords.map(normalizeText),
+          keywordSlugs: keywords.map(slugify)
         };
       });
 
-      const exactMatch = preparedRecords.find((item) => item.title === normalizedQuery
+      const exact = prepared.find((item) => item.title === normalizedQuery
         || item.titleSlug === slugQuery
-        || item.normalizedKeywords.some((keyword) => keyword === normalizedQuery)
+        || item.keywords.some((keyword) => keyword === normalizedQuery)
         || item.keywordSlugs.some((keyword) => keyword === slugQuery));
+      if (exact) return exact.record;
 
-      if (exactMatch) {
-        return exactMatch.record;
-      }
-
-      const partialMatch = preparedRecords.find((item) => item.title.includes(normalizedQuery)
+      const partial = prepared.find((item) => item.title.includes(normalizedQuery)
         || item.titleSlug.includes(slugQuery)
-        || item.normalizedKeywords.some((keyword) => keyword.includes(normalizedQuery))
+        || item.keywords.some((keyword) => keyword.includes(normalizedQuery))
         || item.keywordSlugs.some((keyword) => keyword.includes(slugQuery)));
-
-      return partialMatch ? partialMatch.record : null;
+      return partial ? partial.record : null;
     }
 
-    function createTextElement(tag, className, text) {
-      const element = document.createElement(tag);
-      if (className) element.className = className;
-      element.textContent = text;
-      return element;
+    function visualCategory(record) {
+      const haystack = ` ${normalizeText(`${record.titulo} ${record.tipo} ${record.categoria} ${(record.keywords || []).join(" ")}`)} `;
+      if (haystack.includes("medicamento") || normalizeText(record.tipo) === "medicamento") return "medicamentos";
+      if (haystack.includes("higado") || haystack.includes("gastritis") || haystack.includes("digestivo") || haystack.includes("estomago") || haystack.includes("abdominal") || haystack.includes("reflujo")) return "digestivo";
+      if (haystack.includes("asma") || haystack.includes(" tos ") || haystack.includes("respiratorio") || haystack.includes("respirar")) return "respiratorio";
+      if (haystack.includes("diabetes") || haystack.includes("glucosa") || haystack.includes("metabolico") || haystack.includes("colesterol")) return "metabolico";
+      if (haystack.includes("cardio") || haystack.includes("corazon") || haystack.includes("hipertension") || haystack.includes("presion arterial")) return "cardiovascular";
+      if (haystack.includes("examen") || haystack.includes("hemograma") || haystack.includes("laboratorio") || haystack.includes("analisis")) return "laboratorio";
+      if (haystack.includes("dolor") || haystack.includes("espalda") || haystack.includes("artrosis")) return "dolor-rehabilitacion";
+      if (haystack.includes("ansiedad") || haystack.includes("estres") || haystack.includes("mental") || haystack.includes("emocional")) return "mental";
+      if (haystack.includes("nutricion") || haystack.includes("obesidad")) return "nutricion";
+      if (haystack.includes("prevencion") || haystack.includes("vacuna")) return "prevencion";
+      if (haystack.includes("dermat")) return "dermatologia";
+      if (haystack.includes("migrana") || haystack.includes("cabeza") || haystack.includes("neurolog")) return "neurologico";
+      return "";
     }
 
-    function createQuickBlock(title, text) {
-      const block = document.createElement("section");
-      block.className = "quick-block";
-      if (title === "Lo que debes saber") {
-        block.classList.add("know-block");
+    function createVisual(record) {
+      const category = visualCategory(record);
+      const figure = document.createElement("figure");
+      figure.className = "medical-image";
+      const src = VISUALS[category];
+
+      if (src) {
+        const image = document.createElement("img");
+        image.src = src;
+        image.alt = `Imagen editorial IDB para ${record.titulo}`;
+        image.loading = "lazy";
+        image.decoding = "async";
+        image.onerror = () => {
+          figure.innerHTML = "";
+          figure.append(createNeutralVisual(record, category));
+        };
+        figure.append(image);
+        return figure;
       }
+
+      figure.append(createNeutralVisual(record, category));
+      return figure;
+    }
+
+    function createNeutralVisual(record, category) {
+      const block = document.createElement("div");
+      block.className = "neutral-visual";
+      const label = record.categoria || record.tipo || "Consulta IDB";
       block.append(
-        createTextElement("h2", "", title),
-        createTextElement("p", "", text)
+        createText("strong", "", (category || label || "IDB").slice(0, 2).toUpperCase()),
+        createText("span", "", label)
       );
       return block;
     }
 
-    function getEditorialVisual(record) {
-      const title = normalizeText(record.titulo);
-      const type = normalizeText(record.tipo);
-      const category = normalizeText(record.categoria);
-      const imageMap = [
-        { matches: ["diabetes"], src: "imagenes/diabetes-idb.jpg", alt: "Orientación sobre diabetes" },
-        { matches: ["asma", "respiratorio", "respiratoria", "respirar", "tos"], src: "imagenes/sintomas-enfermedades-idb.jpg", alt: "Orientación sobre síntomas respiratorios" },
-        { matches: ["fiebre"], src: "imagenes/sintomas-enfermedades-idb.jpg", alt: "Orientación sobre fiebre" },
-        { matches: ["cardiovascular", "corazon", "hipertension", "presion arterial"], src: "imagenes/salud-cardiovascular-idb.png", alt: "Orientación sobre salud cardiovascular" },
-        { matches: ["higado", "hepatico", "hepatica"], alt: "Orientación sobre salud hepática" },
-        { matches: ["gastritis", "digestivo", "digestiva", "estomago", "abdominal", "reflujo"], src: "imagenes/gastritis-idb.jpg", alt: "Orientación sobre salud digestiva" },
-        { matches: ["dolor de espalda", "espalda"], src: "imagenes/dolor-espalda-idb.jpg", alt: "Orientación sobre dolor de espalda" },
-        { matches: ["dolor"], src: "imagenes/sintomas-enfermedades-idb.jpg", alt: "Orientación sobre dolor y síntomas frecuentes" },
-        { matches: ["medicamento", "medicamentos"], src: "imagenes/medicamentos-idb.jpg", alt: "Orientación sobre medicamentos" },
-        { matches: ["examen", "examenes"], src: "imagenes/examenes-medicos-idb.jpg", alt: "Orientación sobre exámenes médicos" },
-        { matches: ["sintoma", "sintomas", "mareo", "nausea"], src: "imagenes/sintomas-enfermedades-idb.jpg", alt: "Orientación sobre síntomas frecuentes" },
-        { matches: ["enfermedad", "enfermedades"], src: "imagenes/sintomas-enfermedades-idb.jpg", alt: "Orientación sobre enfermedades frecuentes" },
-        { matches: ["salud mental", "ansiedad", "estres"], src: "imagenes/salud-mental-idb.jpg", alt: "Orientación sobre bienestar emocional" },
-        { matches: ["nutricion"], src: "imagenes/nutricion-idb.jpg", alt: "Orientación sobre nutrición" },
-        { matches: ["prevencion"], src: "imagenes/prevencion-idb.jpg", alt: "Orientación sobre prevención" }
-      ];
-      const haystack = `${title} ${type} ${category}`;
-      const match = imageMap.find((item) => item.matches.some((term) => haystack.includes(term)));
-
-      return {
-        src: match?.src || "",
-        alt: match?.alt || `Orientación IDB sobre ${record.categoria || record.tipo || "bienestar"}`,
-        label: record.categoria || record.tipo || "Consulta IDB",
-        initials: (record.tipo || record.categoria || "IDB").slice(0, 2).toUpperCase()
-      };
-    }
-
-    function createEditorialVisual(record) {
-      const visual = getEditorialVisual(record);
-      const wrapper = document.createElement("figure");
-      wrapper.className = "consult-visual";
-      wrapper.setAttribute("aria-label", visual.label);
-
-      if (visual.src) {
-        const image = document.createElement("img");
-        image.src = visual.src;
-        image.alt = visual.alt;
-        image.loading = "lazy";
-        image.decoding = "async";
-        wrapper.append(image);
-        return wrapper;
-      }
-
-      const mark = document.createElement("div");
-      mark.className = "consult-category-mark";
-      mark.append(
-        createTextElement("strong", "", visual.initials),
-        createTextElement("span", "", visual.label)
-      );
-      wrapper.append(mark);
-      return wrapper;
-    }
-
-    function getQuickResponse(record) {
-      if (record._knowledge?.respuesta_rapida) {
-        return record._knowledge.respuesta_rapida;
-      }
-
+    function quickResponse(record) {
+      if (record._knowledge?.respuesta_rapida) return record._knowledge.respuesta_rapida;
       const title = record.titulo || "este tema";
       const type = normalizeText(record.tipo);
-
       if (type === "medicamento") {
-        return `${title} es un medicamento de consulta frecuente. Revisa su uso general con orientación profesional, especialmente si tienes alergias, tomas otros medicamentos, estás embarazada o lo usaría un niño, adulto mayor o persona con enfermedad renal o hepática.`;
+        return `${title} es un medicamento de consulta frecuente. Su uso debe evaluarse según antecedentes, otros medicamentos y orientación profesional; esta ficha no indica dosis ni reemplaza una consulta.`;
       }
-
       if (type === "sintoma") {
-        return `${title} puede tener distintas causas y debe interpretarse junto con su intensidad, duración y otros signos. Observa su evolución y busca orientación si persiste, empeora o aparece con señales de alarma.`;
+        return `${title} puede tener varias causas. Observa intensidad, duración y síntomas asociados, y busca orientación si persiste, empeora o aparece con señales de alarma.`;
       }
-
       if (type === "enfermedad") {
-        return `${title} requiere información clara, seguimiento y evaluación profesional para confirmar diagnóstico, controlar la evolución y decidir los pasos adecuados según cada persona.`;
+        return `${title} requiere información clara, evaluación profesional y seguimiento. Esta ficha resume qué vigilar, cuándo consultar y cómo interpretar el tema con seguridad.`;
       }
-
       if (type === "examen") {
-        return `${title} ayuda a obtener información sobre el estado de salud, pero sus resultados deben interpretarse con la historia clínica, síntomas y criterio de un profesional.`;
+        return `${title} ayuda a evaluar información de salud, pero sus resultados deben interpretarse junto con la historia clínica y el criterio profesional.`;
       }
-
-      return `${title} forma parte de una orientación educativa de bienestar. Úsalo como punto de partida para entender mejor el tema y buscar apoyo profesional si tienes dudas.`;
+      return `${title} forma parte de una orientación educativa de IDB para comprender mejor el tema y decidir cuándo buscar apoyo profesional.`;
     }
 
-    function getConsultText(record) {
-      if (record._knowledge?.cuando_consultar) {
-        return record._knowledge.cuando_consultar;
-      }
-
+    function sectionText(record, section) {
+      const knowledge = record._knowledge || {};
       const type = normalizeText(record.tipo);
+      const title = record.titulo || "este tema";
+      const description = record.description || knowledge.descripcion || "Información educativa disponible dentro del ecosistema IDB.";
+      const defaults = {
+        descripcion: knowledge.descripcion || description,
+        usos: knowledge.para_que_sirve || (type === "medicamento"
+          ? `${title} puede utilizarse para objetivos específicos definidos por un profesional. La indicación depende del motivo de consulta, antecedentes y otros medicamentos.`
+          : `${title} ayuda a orientar qué observar, qué preguntas llevar a consulta y cuándo buscar apoyo profesional.`),
+        dosis: type === "medicamento"
+          ? "La dosis debe ser indicada por un profesional de salud según edad, antecedentes, otros medicamentos y condición clínica. IDB no entrega dosis ni pautas personalizadas."
+          : "No aplica una dosis para este tipo de consulta. La orientación se centra en comprender el tema, observar evolución y consultar cuando corresponda.",
+        efectos: type === "medicamento"
+          ? "Los medicamentos pueden causar efectos no deseados o interacciones. Consulta si aparecen molestias, alergias, empeoramiento o dudas sobre seguridad."
+          : "Algunos síntomas o enfermedades pueden acompañarse de cambios nuevos o persistentes. Presta atención a evolución, intensidad y signos asociados.",
+        precauciones: Array.isArray(knowledge.precauciones) && knowledge.precauciones.length
+          ? knowledge.precauciones.join(" ")
+          : "Evita tomar decisiones importantes de salud solo con información general. Consulta si tienes embarazo, alergias, enfermedades crónicas, uso de medicamentos o dudas específicas.",
+        interacciones: type === "medicamento"
+          ? "Las interacciones pueden ocurrir con otros medicamentos, suplementos, alcohol o condiciones de salud. Revisa siempre con un profesional antes de combinar tratamientos."
+          : "La interpretación puede cambiar según antecedentes, edad, medicamentos, enfermedades previas y contexto clínico."
+      };
+      return defaults[section] || description;
+    }
 
-      if (type === "medicamento") {
-        return "Consulta si tienes dudas sobre dosis, interacción con otros medicamentos, embarazo, alergias, enfermedad renal o hepática, o uso en niños y adultos mayores.";
-      }
-
-      if (type === "sintoma") {
-        return "Consulta si el síntoma es intenso, persiste, empeora o se acompaña de otros signos que te preocupan.";
-      }
-
-      if (type === "enfermedad") {
-        return "Consulta con un profesional de salud para diagnóstico, control, seguimiento y orientación según tu situación personal.";
-      }
-
-      if (type === "examen") {
-        return "Consulta para interpretar los resultados según tu historia clínica, síntomas, antecedentes y motivo del examen.";
-      }
-
+    function consultText(record) {
+      if (record._knowledge?.cuando_consultar) return record._knowledge.cuando_consultar;
+      const type = normalizeText(record.tipo);
+      if (type === "medicamento") return "Consulta si tienes dudas sobre dosis, interacciones, embarazo, alergias, enfermedad renal o hepática, o uso en niños y adultos mayores.";
+      if (type === "sintoma") return "Consulta si el síntoma es intenso, persiste, empeora, se repite o se acompaña de otros signos que te preocupan.";
+      if (type === "enfermedad") return "Consulta para confirmar diagnóstico, definir seguimiento y recibir orientación según tu situación personal.";
+      if (type === "examen") return "Consulta para interpretar resultados según historia clínica, síntomas, antecedentes y motivo del examen.";
       return "Consulta con un profesional de salud si tienes dudas, molestias persistentes o necesitas orientación personalizada.";
     }
 
-    function getAlarmText(record) {
+    function alarmText(record) {
       return record._knowledge?.senales_alarma || "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita o empeoramiento rápido.";
+    }
+
+    function faqs(record) {
+      if (Array.isArray(record._knowledge?.preguntas_frecuentes) && record._knowledge.preguntas_frecuentes.length) {
+        return record._knowledge.preguntas_frecuentes.slice(0, 5);
+      }
+      const title = record.titulo || "este tema";
+      return [
+        { pregunta: `¿Esta información reemplaza una consulta médica?`, respuesta: "No. Es orientación educativa para comprender mejor el tema y saber cuándo consultar." },
+        { pregunta: `¿Qué debo observar sobre ${title}?`, respuesta: "Observa intensidad, duración, cambios recientes, síntomas asociados y antecedentes relevantes." },
+        { pregunta: "¿Cuándo debo pedir ayuda?", respuesta: consultText(record) },
+        { pregunta: "¿VITA puede orientarme?", respuesta: "Sí. VITA puede ayudarte a ordenar tu duda y encontrar una ruta clara dentro del ecosistema IDB." }
+      ];
     }
 
     function calculateRelated(records, currentRecord) {
       const currentTitle = normalizeText(currentRecord.titulo);
       const currentCategory = normalizeText(currentRecord.categoria);
       const currentType = normalizeText(currentRecord.tipo);
-      const currentKeywords = new Set((currentRecord.keywords || []).map((keyword) => normalizeText(keyword)));
-
-      const scored = records
+      const currentKeywords = new Set((currentRecord.keywords || []).map(normalizeText));
+      return records
         .filter((record) => normalizeText(record.titulo) !== currentTitle)
         .map((record) => {
-          const sameCategory = normalizeText(record.categoria) === currentCategory ? 2 : 0;
-          const sharedKeywords = (record.keywords || []).filter((keyword) => currentKeywords.has(normalizeText(keyword))).length;
+          const sameCategory = normalizeText(record.categoria) === currentCategory ? 3 : 0;
           const sameType = normalizeText(record.tipo) === currentType ? 1 : 0;
-          return { record, score: sameCategory + sharedKeywords, fallbackScore: sameType };
+          const shared = (record.keywords || []).filter((keyword) => currentKeywords.has(normalizeText(keyword))).length;
+          return { record, score: sameCategory + sameType + shared };
         })
         .filter((item) => item.score > 0)
         .sort((a, b) => b.score - a.score || a.record.titulo.localeCompare(b.record.titulo, "es"))
-        .slice(0, 4);
-
-      if (scored.length >= 3) {
-        return scored.map((item) => item.record);
-      }
-
-      const selectedTitles = new Set(scored.map((item) => normalizeText(item.record.titulo)));
-      const fallback = records
-        .filter((record) => normalizeText(record.titulo) !== currentTitle)
-        .filter((record) => !selectedTitles.has(normalizeText(record.titulo)))
-        .map((record) => ({
-          record,
-          fallbackScore: normalizeText(record.tipo) === currentType ? 1 : 0
-        }))
-        .filter((item) => item.fallbackScore > 0)
-        .sort((a, b) => a.record.titulo.localeCompare(b.record.titulo, "es"))
-        .slice(0, 4 - scored.length);
-
-      return scored.concat(fallback).map((item) => item.record);
+        .slice(0, 4)
+        .map((item) => item.record);
     }
 
-    function renderVitaAction(container) {
-      const vita = document.createElement("a");
-      vita.className = "button button-green button-primary button-vita";
-      vita.href = VITA_URL;
-      const logo = document.createElement("img");
-      logo.className = "button-vita-logo";
-      logo.src = "imagenes/vita/logo-vita.png";
-      logo.alt = "";
-      logo.loading = "lazy";
-      logo.decoding = "async";
-      logo.onerror = () => logo.remove();
-      vita.append(logo, createTextElement("span", "", "Hablar con VITA por WhatsApp"));
-
-      container.append(vita);
-    }
-
-    function renderBackAction(container) {
-      const back = document.createElement("a");
-      back.className = "button button-light";
-      back.href = "index.html#medical-search";
-      back.textContent = "Volver a buscar";
-      container.append(back);
-    }
-
-    function renderSearch(container, query) {
-      const form = document.createElement("form");
-      form.className = "consult-search";
-      form.role = "search";
-
-      const input = document.createElement("input");
-      input.type = "search";
-      input.name = "q";
-      input.placeholder = "Buscar otro tema...";
-      input.value = query || "";
-      input.setAttribute("aria-label", "Buscar otro tema");
-
-      const button = document.createElement("button");
-      button.className = "button button-green";
-      button.type = "submit";
-      button.textContent = "Buscar otro tema";
-
-      form.append(input, button);
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const nextQuery = slugify(input.value);
-        if (nextQuery) {
-          window.location.href = `consulta.html?q=${encodeURIComponent(nextQuery)}`;
-        }
-      });
-
-      container.append(form);
+    function createRelatedLink(record) {
+      const link = document.createElement("a");
+      link.className = "related-link";
+      link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
+      link.append(
+        createText("strong", "", record.titulo || "Consulta"),
+        createText("span", "", `${record.tipo || "Tema"} · ${record.categoria || "IDB"}`)
+      );
+      return link;
     }
 
     function renderRelated(container, records, currentRecord) {
-      const knowledgeRelated = Array.isArray(currentRecord._knowledge?.temas_relacionados)
-        ? currentRecord._knowledge.temas_relacionados
-        : [];
-      const related = knowledgeRelated.length ? knowledgeRelated.slice(0, 4) : calculateRelated(records, currentRecord);
+      const related = calculateRelated(records, currentRecord);
       if (!related.length) return;
-
-      container.append(createTextElement("h2", "", "Temas relacionados"));
-
       const list = document.createElement("div");
       list.className = "related-list";
-
-      related.forEach((record) => {
-        const link = document.createElement("a");
-        link.className = "related-card";
-        link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
-        link.append(
-          createTextElement("strong", "", record.titulo || "Consulta"),
-          createTextElement("span", "", record.categoria || record.tipo || "IDB")
-        );
-        list.append(link);
-      });
-
+      related.forEach((record) => list.append(createRelatedLink(record)));
       container.append(list);
     }
 
-    function renderRecord(record, query, records) {
-      const container = document.querySelector("#consult-result");
-      container.innerHTML = "";
+    function renderInterest(container, records, currentRecord) {
+      const related = calculateRelated(records, currentRecord).slice(0, 4);
+      if (!related.length) return;
 
-      const main = document.createElement("article");
-      main.className = "consult-card consult-hero-card";
-
+      const section = document.createElement("section");
+      section.className = "interest-section";
+      const head = document.createElement("div");
+      head.className = "interest-head";
       const copy = document.createElement("div");
-      copy.className = "consult-copy";
+      copy.append(
+        createText("h2", "", "También te puede interesar"),
+        createText("p", "", "Temas conectados para seguir comprendiendo tu salud.")
+      );
+      head.append(copy);
 
+      const row = document.createElement("div");
+      row.className = "interest-row";
+      related.forEach((record) => {
+        const link = document.createElement("a");
+        link.className = "card interest-card";
+        link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
+        const category = visualCategory(record);
+        const src = VISUALS[category] || VISUALS.diagnostico;
+        const image = document.createElement("img");
+        image.src = src;
+        image.alt = `Imagen editorial IDB para ${record.titulo}`;
+        image.loading = "lazy";
+        image.decoding = "async";
+        const cardCopy = document.createElement("div");
+        cardCopy.className = "interest-copy";
+        cardCopy.append(
+          createText("span", "", record.categoria || record.tipo || "IDB"),
+          createText("strong", "", record.titulo || "Consulta"),
+          createText("small", "", record.tipo || "Tema de salud")
+        );
+        link.append(image, cardCopy);
+        row.append(link);
+      });
+      section.append(head, row);
+      container.append(section);
+    }
+
+    function buildMiniCard(title, text) {
+      const card = document.createElement("article");
+      card.className = "mini-card";
+      card.append(
+        createText("h3", "", title),
+        createText("p", "", text)
+      );
+      return card;
+    }
+
+    function renderRecord(record, query, records) {
+      const app = document.querySelector("#consulta-app");
+      const source = getSourceLabel(record);
+      const updated = record.ultima_revision || record._knowledge?.ultima_revision || "2026-06";
+      const typeLabel = record.tipo ? record.tipo.charAt(0).toUpperCase() + record.tipo.slice(1) : "Consulta";
+      const related = calculateRelated(records, record);
+      document.title = `${record.titulo} | Instituto Digital de Bienestar`;
+      document.querySelector(".top-search input").value = query || record.titulo || "";
+
+      app.innerHTML = "";
+
+      const top = document.createElement("div");
+      top.className = "wrap";
       const breadcrumb = document.createElement("nav");
       breadcrumb.className = "breadcrumb";
       breadcrumb.setAttribute("aria-label", "Ruta de navegación");
-      const homeLink = document.createElement("a");
-      homeLink.href = "index.html";
-      homeLink.textContent = "Inicio";
-      breadcrumb.append(homeLink, createTextElement("span", "", ">"), createTextElement("span", "", "Consulta"));
-
-      const title = document.createElement("h1");
-      title.textContent = record.titulo || "Consulta";
-
-      const description = document.createElement("p");
-      description.className = "consult-description";
-      description.textContent = record.description || "Información educativa disponible dentro del ecosistema IDB.";
-
-      const source = document.createElement("p");
-      source.className = "source-line";
-      source.textContent = record.fuente ? `Fuente: ${record.fuente}` : "";
-      if (!record.fuente) source.hidden = true;
-
-      const meta = document.createElement("div");
-      meta.className = "consult-meta";
-
-      [
-        record.tipo && `Tipo: ${record.tipo}`,
-        record.categoria && `Categoría: ${record.categoria}`
-      ].filter(Boolean).forEach((label) => {
-        meta.append(createTextElement("span", "", label));
-      });
-
-      const quickGrid = document.createElement("div");
-      quickGrid.className = "quick-grid";
-      quickGrid.append(
-        createQuickBlock("Respuesta rápida", getQuickResponse(record)),
-        createQuickBlock("Cuándo consultar", getConsultText(record)),
-        createQuickBlock("Señales de alarma", getAlarmText(record))
+      breadcrumb.append(
+        Object.assign(document.createElement("a"), { href: "index.html", textContent: "Inicio" }),
+        createText("span", "", ">"),
+        Object.assign(document.createElement("a"), { href: "temas.html", textContent: record.categoria || typeLabel }),
+        createText("span", "", ">"),
+        createText("span", "", record.titulo || "Consulta")
       );
 
-      const actions = document.createElement("aside");
-      actions.className = "consult-panel consult-actions-panel";
-      actions.setAttribute("aria-label", "Acciones de consulta");
-      renderVitaAction(actions);
+      const hero = document.createElement("section");
+      hero.className = "medical-hero";
+      const heroCopy = document.createElement("div");
+      heroCopy.className = "hero-copy";
+      const title = createText("h1", "", record.titulo || "Consulta");
+      const summary = createText("p", "hero-summary", record.description || "Información educativa disponible dentro del ecosistema IDB.");
+      const meta = document.createElement("div");
+      meta.className = "hero-meta";
+      meta.append(
+        createText("span", "", `Última actualización: ${updated}`),
+        createText("span", "", "Lectura: 2 min"),
+        createText("span", "", source ? `Fuente: ${source}` : "Fuente: IDB")
+      );
+      const share = document.createElement("div");
+      share.className = "share-row";
+      const heroVitaLogo = document.createElement("img");
+      heroVitaLogo.src = "imagenes/logo-vita.png";
+      heroVitaLogo.alt = "";
+      heroVitaLogo.loading = "lazy";
+      heroVitaLogo.decoding = "async";
+      const heroVita = Object.assign(document.createElement("a"), {
+        className: "share-btn hero-vita",
+        href: VITA_URL
+      });
+      heroVita.append(heroVitaLogo, createText("span", "", "Hablar con VITA"));
+      const copyBtn = createText("button", "share-btn", "Copiar enlace");
+      copyBtn.type = "button";
+      copyBtn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(window.location.href);
+          copyBtn.textContent = "Enlace copiado";
+        } catch (error) {
+          copyBtn.textContent = "Copia no disponible";
+        }
+      });
+      const waShare = Object.assign(document.createElement("a"), {
+        className: "share-btn",
+        href: `https://wa.me/?text=${encodeURIComponent(`Consulta IDB: ${record.titulo} ${window.location.href}`)}`,
+        textContent: "Compartir"
+      });
+      heroCopy.append(createText("span", "category-pill", `${typeLabel} · ${record.categoria || "IDB"}`), title, summary, meta, share);
+      share.append(heroVita, copyBtn, waShare);
+      hero.append(heroCopy, createVisual(record));
+      top.append(breadcrumb, hero);
 
-      const details = document.createElement("div");
-      details.className = "quick-grid consult-details";
-      details.append(...Array.from(quickGrid.children));
+      const grid = document.createElement("section");
+      grid.className = "wrap content-grid";
 
-      const related = document.createElement("aside");
-      related.className = "consult-panel related-section";
-      related.setAttribute("aria-label", "Temas relacionados");
-      renderRelated(related, records, record);
+      const main = document.createElement("div");
+      main.className = "main-flow";
+      const quick = document.createElement("section");
+      quick.className = "card quick-answer";
+      quick.append(
+        createText("div", "line-icon", "i"),
+        (() => {
+          const block = document.createElement("div");
+          block.append(createText("h2", "", "Respuesta rápida"), createText("p", "", quickResponse(record)));
+          return block;
+        })()
+      );
 
-      const secondary = document.createElement("aside");
-      secondary.className = "consult-panel consult-secondary";
-      secondary.setAttribute("aria-label", "Buscar otro tema");
-      renderBackAction(secondary);
-      renderSearch(secondary, query);
+      const content = document.createElement("section");
+      content.className = "card section-card";
+      const tabs = document.createElement("div");
+      tabs.className = "tabs";
+      const tabData = [
+        ["descripcion", "Descripción"],
+        ["usos", "Usos"],
+        ["dosis", "Dosis"],
+        ["efectos", "Efectos secundarios"],
+        ["precauciones", "Precauciones"],
+        ["interacciones", "Interacciones"],
+        ["faq", "Preguntas frecuentes"]
+      ];
+      const panels = document.createElement("div");
+      tabData.forEach(([id, label], index) => {
+        const button = createText("button", `tab-btn${index === 0 ? " active" : ""}`, label);
+        button.type = "button";
+        button.setAttribute("aria-controls", `panel-${id}`);
+        button.addEventListener("click", () => {
+          content.querySelectorAll(".tab-btn").forEach((item) => item.classList.remove("active"));
+          content.querySelectorAll(".tab-panel").forEach((item) => item.classList.remove("active"));
+          button.classList.add("active");
+          content.querySelector(`#panel-${id}`).classList.add("active");
+        });
+        tabs.append(button);
 
-      const notice = createTextElement("p", "notice", "Esta información es orientativa y no reemplaza la evaluación de un profesional de salud.");
+        const panel = document.createElement("div");
+        panel.className = `tab-panel${index === 0 ? " active" : ""}`;
+        panel.id = `panel-${id}`;
+        if (id === "faq") {
+          const faqList = document.createElement("div");
+          faqList.className = "faq-list";
+          faqs(record).forEach((item) => {
+            const detail = document.createElement("details");
+            detail.append(
+              createText("summary", "", item.pregunta || item.p || "Pregunta frecuente"),
+              createText("p", "", item.respuesta || item.r || "Información orientativa disponible en IDB.")
+            );
+            faqList.append(detail);
+          });
+          panel.append(faqList);
+        } else {
+          panel.append(createText("p", "", sectionText(record, id)));
+        }
+        panels.append(panel);
+      });
+      content.append(tabs, panels);
 
-      copy.append(breadcrumb, title, description, source, meta);
-      main.append(copy, createEditorialVisual(record));
-      container.append(main, actions, details, related, secondary, notice);
-      document.title = `${record.titulo} | Instituto Digital de Bienestar`;
+      const miniGrid = document.createElement("section");
+      miniGrid.className = "info-grid";
+      miniGrid.append(
+        buildMiniCard("¿Para qué sirve?", sectionText(record, "usos")),
+        buildMiniCard("¿Cómo actúa?", normalizeText(record.tipo) === "medicamento" ? "Actúa mediante mecanismos propios de su grupo farmacológico. La explicación exacta depende del medicamento y debe revisarse con orientación profesional." : "Ayuda a reconocer patrones, contexto y cambios que pueden orientar una consulta más clara."),
+        buildMiniCard("Dosis habitual", sectionText(record, "dosis")),
+        buildMiniCard("Presentaciones", normalizeText(record.tipo) === "medicamento" ? "Las presentaciones pueden variar según el país y el fabricante. Consulta el envase y la indicación profesional." : "La información se presenta como orientación educativa, no como indicación de tratamiento."),
+        buildMiniCard("Efectos secundarios", sectionText(record, "efectos")),
+        buildMiniCard("Precauciones", sectionText(record, "precauciones"))
+      );
+
+      const alerts = document.createElement("section");
+      alerts.className = "alert-stack";
+      [
+        ["Información importante", "warning", "Esta ficha es educativa. No indica diagnósticos, dosis ni tratamientos personalizados."],
+        ["Señales de alarma", "danger", alarmText(record)],
+        ["Cuándo consultar a un médico", "consult", consultText(record)]
+      ].forEach(([heading, className, text]) => {
+        const alert = document.createElement("article");
+        alert.className = `alert-card ${className}`;
+        alert.append(createText("h2", "", heading), createText("p", "", text));
+        alerts.append(alert);
+      });
+
+      main.append(quick, content, miniGrid, alerts);
+
+      const sidebar = document.createElement("aside");
+      sidebar.className = "sidebar";
+      sidebar.setAttribute("aria-label", "Acciones y recursos de consulta");
+      const vita = document.createElement("section");
+      vita.className = "card rail-card vita-card";
+      const vitaLogo = document.createElement("img");
+      vitaLogo.src = "imagenes/logo-vita.png";
+      vitaLogo.alt = "VITA";
+      vitaLogo.className = "vita-logo";
+      vitaLogo.loading = "lazy";
+      vitaLogo.decoding = "async";
+      const vitaLink = Object.assign(document.createElement("a"), {
+        className: "btn btn-vita",
+        href: VITA_URL,
+        textContent: "Hablar con VITA"
+      });
+      vita.append(vitaLogo, createText("h2", "", "¿Necesitas orientación?"), createText("p", "", "Describe tu duda y VITA te ayudará a encontrar una ruta clara dentro de IDB."), vitaLink);
+
+      const peru = document.createElement("section");
+      peru.className = "card rail-card";
+      peru.append(
+        createText("h2", "", "Contexto en Perú"),
+        createText("p", "", "La frecuencia y el riesgo pueden variar según edad, antecedentes, ubicación y acceso a servicios de salud.")
+      );
+
+      const tips = document.createElement("section");
+      tips.className = "card rail-card";
+      tips.append(createText("h2", "", "Consejos rápidos"));
+      const tipsList = document.createElement("ul");
+      tipsList.className = "small-list";
+      ["Registra duración e intensidad.", "Anota medicamentos o antecedentes.", "Busca ayuda ante señales de alarma."].forEach((tip) => {
+        const item = document.createElement("li");
+        item.append(createText("span", "", "+"), createText("span", "", tip));
+        tipsList.append(item);
+      });
+      tips.append(tipsList);
+
+      const relatedCard = document.createElement("section");
+      relatedCard.className = "card rail-card";
+      relatedCard.append(createText("h2", "", "Temas relacionados"));
+      if (related.length) renderRelated(relatedCard, records, record);
+      else relatedCard.append(createText("p", "", "Pronto agregaremos más temas conectados."));
+
+      const resources = document.createElement("section");
+      resources.className = "card rail-card";
+      resources.append(
+        createText("h2", "", "Recursos útiles"),
+        (() => {
+          const list = document.createElement("div");
+          list.className = "related-list";
+          [
+            ["recursos.html", "Guías prácticas", "Herramientas IDB"],
+            ["fuentes.html", "Fuentes de referencia", "Criterio editorial"],
+            ["index.html#medical-search", "Volver a buscar", "Buscador médico"]
+          ].forEach(([href, titleText, metaText]) => {
+            const link = document.createElement("a");
+            link.className = "related-link";
+            link.href = href;
+            link.append(createText("strong", "", titleText), createText("span", "", metaText));
+            list.append(link);
+          });
+          return list;
+        })()
+      );
+
+      sidebar.append(vita, peru, tips, relatedCard, resources);
+      grid.append(main, sidebar);
+      renderInterest(grid, records, record);
+      grid.append(createText("p", "notice", "Esta información es orientativa y no reemplaza la evaluación, diagnóstico ni tratamiento realizado por un profesional de salud."));
+      app.append(top, grid);
     }
 
     function renderEmpty(query) {
-      const container = document.querySelector("#consult-result");
-      container.innerHTML = "";
-
-      const main = document.createElement("article");
-      main.className = "consult-card";
-
-      const breadcrumb = document.createElement("nav");
-      breadcrumb.className = "breadcrumb";
-      breadcrumb.setAttribute("aria-label", "Ruta de navegación");
-      const homeLink = document.createElement("a");
-      homeLink.href = "index.html";
-      homeLink.textContent = "Inicio";
-      breadcrumb.append(homeLink, createTextElement("span", "", ">"), createTextElement("span", "", "Consulta"));
-
-      const title = document.createElement("h1");
-      title.textContent = "No encontramos información exacta";
-
-      const description = document.createElement("p");
-      description.className = "consult-description consult-empty";
-      description.textContent = "No encontramos información exacta para esta consulta. Puedes intentar otra búsqueda o hablar con VITA.";
-
-      main.append(breadcrumb, title, description);
-
-      const actions = document.createElement("aside");
-      actions.className = "consult-panel consult-actions-panel";
-      actions.setAttribute("aria-label", "Acciones de consulta");
-      renderVitaAction(actions);
-
-      const secondary = document.createElement("aside");
-      secondary.className = "consult-panel consult-secondary";
-      secondary.setAttribute("aria-label", "Buscar otro tema");
-      renderBackAction(secondary);
-      renderSearch(secondary, query);
-
-      container.append(main, actions, secondary);
+      const app = document.querySelector("#consulta-app");
+      document.querySelector(".top-search input").value = query || "";
+      app.innerHTML = "";
+      const wrap = document.createElement("section");
+      wrap.className = "wrap empty-state";
+      wrap.append(
+        createText("span", "category-pill", "Consulta IDB"),
+        createText("h1", "", "No encontramos información exacta"),
+        createText("p", "hero-summary", "Puedes intentar otra búsqueda o hablar con VITA para recibir orientación dentro del ecosistema IDB.")
+      );
+      const actions = document.createElement("div");
+      actions.className = "share-row";
+      actions.append(
+        Object.assign(document.createElement("a"), { className: "btn", href: "index.html#medical-search", textContent: "Volver a buscar" }),
+        Object.assign(document.createElement("a"), { className: "btn", href: VITA_URL, textContent: "Hablar con VITA" })
+      );
+      wrap.append(actions);
+      app.append(wrap);
     }
 
     async function loadConsultation() {
       const query = getQuery();
-
       if (!query.trim()) {
         renderEmpty(query);
         return;
@@ -1102,25 +1376,24 @@
       try {
         const response = await fetch("search-index.json");
         const records = await response.json();
-        const slugQuery = slugify(query);
         const fallbackRecord = Array.isArray(records) ? findRecord(records, query) : null;
         const category = getKnowledgeCategory(fallbackRecord);
-        const knowledgeSlug = slugQuery || slugify(fallbackRecord?.titulo);
-        const knowledgeRecord = await loadKnowledgeTopic(knowledgeSlug, category, fallbackRecord);
+        const slug = slugify(query) || slugify(fallbackRecord?.titulo);
+        const knowledgeRecord = await loadKnowledgeTopic(slug, category, fallbackRecord);
         const record = knowledgeRecord || fallbackRecord;
 
-        if (record) {
-          renderRecord(record, query, records);
-        } else {
-          renderEmpty(query);
-        }
+        if (record) renderRecord(record, query, records);
+        else renderEmpty(query);
       } catch (error) {
         renderEmpty(query);
       }
     }
 
-    document.querySelector(".menu-toggle")?.addEventListener("click", () => {
-      document.querySelector(".nav")?.classList.toggle("active");
+    document.querySelector(".top-search")?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const input = event.currentTarget.querySelector("input");
+      const next = slugify(input.value);
+      if (next) window.location.href = `consulta.html?q=${encodeURIComponent(next)}`;
     });
 
     loadConsultation();
