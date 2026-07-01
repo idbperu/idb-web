@@ -968,71 +968,26 @@
       "adulto-mayor"
     ];
     const AUTHORIZED_STATS_SOURCES = ["MINSA", "INS", "CDC Perú", "OPS", "OMS", "INEI", "EsSalud"];
-    const VISUALS = {
-      medicamentos: "imagenes/consulta/medicamentos/medicamentos-01.webp",
-      digestivo: "imagenes/consulta/digestivo/digestivo-idb.webp",
-      respiratorio: "imagenes/consulta/respiratorio/respiratorio-idb.webp",
-      cardiovascular: "imagenes/consulta/cardiovascular/cardiovascular-idb.webp",
-      laboratorio: "imagenes/consulta/laboratorio/laboratorio-idb.webp",
-      metabolico: "imagenes/consulta/metabolico/metabolico-idb.webp",
-      neurologico: "imagenes/consulta/neurologico/neurologico-idb.webp",
-      mental: "imagenes/consulta/mental/mental-idb.webp",
-      dermatologia: "imagenes/consulta/dermatologia/dermatologia-idb.webp",
-      nutricion: "imagenes/consulta/nutricion/nutricion-idb.webp",
-      prevencion: "imagenes/consulta/prevencion/prevencion-idb.webp",
-      "dolor-rehabilitacion": "imagenes/consulta/dolor-rehabilitacion/dolor-rehabilitacion-idb.webp",
-      diagnostico: "imagenes/consulta/diagnostico/diagnostico-idb.webp",
-      "adulto-mayor": "imagenes/consulta/adulto-mayor/adulto-mayor-idb.webp",
-      infantil: "imagenes/consulta/infantil/infantil-idb.webp",
-      mujer: "imagenes/consulta/mujer/mujer-idb.webp",
-      hombre: "imagenes/consulta/hombre/hombre-idb.webp"
-    };
-    const VISUAL_VARIANTS = {
-      medicamentos: [
-        "imagenes/consulta/medicamentos/medicamentos-01.webp",
-        "imagenes/consulta/medicamentos/medicamentos-02.webp",
-        "imagenes/consulta/medicamentos/medicamentos-03.webp"
-      ],
-      digestivo: [
-        "imagenes/consulta/digestivo/digestivo-02.webp",
-        "imagenes/consulta/digestivo/digestivo-idb.webp"
-      ],
-      respiratorio: [
-        "imagenes/consulta/respiratorio/respiratorio-02.webp",
-        "imagenes/consulta/respiratorio/respiratorio-idb.webp"
-      ],
-      cardiovascular: [
-        "imagenes/consulta/cardiovascular/cardiovascular-idb.webp"
-      ],
-      laboratorio: [
-        "imagenes/consulta/laboratorio/laboratorio-idb.webp",
-        "imagenes/consulta/laboratorio/examenes-medicos-idb.webp"
-      ],
-      metabolico: [
-        "imagenes/consulta/metabolico/diabetes-02.webp",
-        "imagenes/consulta/metabolico/diabetes-idb.webp",
-        "imagenes/consulta/metabolico/metabolico-idb.webp"
-      ],
-      neurologico: [
-        "imagenes/consulta/neurologico/neurologico-idb.webp"
-      ],
-      mental: [
-        "imagenes/consulta/mental/mental-idb.webp",
-        "imagenes/consulta/mental/bienestar-emocional-2-idb.webp",
-        "imagenes/consulta/mental/salud-mental-y-bienestar-emocional-idb.webp"
-      ],
-      "dolor-rehabilitacion": [
-        "imagenes/consulta/dolor-rehabilitacion/dolor-rehabilitacion-idb.webp"
-      ],
-      prevencion: [
-        "imagenes/consulta/prevencion/prevencion-idb.webp",
-        "imagenes/consulta/prevencion/guias-salud-idb.webp"
-      ],
-      nutricion: [
-        "imagenes/consulta/nutricion/nutricion-idb.webp",
-        "imagenes/consulta/nutricion/nutricion-03.webp"
-      ]
-    };
+    const EDITORIAL_VISUAL_CATEGORIES = new Set([
+      "primeros-auxilios",
+      "adulto-mayor",
+      "cardiovascular",
+      "dermatologia",
+      "diagnostico",
+      "digestivo",
+      "dolor-rehabilitacion",
+      "hombre",
+      "infantil",
+      "laboratorio",
+      "medicamentos",
+      "mental",
+      "metabolico",
+      "mujer",
+      "neurologico",
+      "nutricion",
+      "prevencion",
+      "respiratorio"
+    ]);
 
     function normalizeText(value) {
       return String(value || "")
@@ -1190,16 +1145,12 @@
     }
 
     function visualCandidates(category) {
-      if (!category) return [];
-      const future = [
+      if (!EDITORIAL_VISUAL_CATEGORIES.has(category)) return [];
+      return [
         `imagenes/consulta/${category}/${category}-01.webp`,
         `imagenes/consulta/${category}/${category}-02.webp`,
         `imagenes/consulta/${category}/${category}-03.webp`
-      ];
-      const known = VISUAL_VARIANTS[category] || [];
-      const fallback = VISUALS[category] ? [VISUALS[category]] : [];
-      const candidates = [...future, ...known, ...fallback];
-      return [...new Set(candidates)].sort(() => Math.random() - 0.5);
+      ].sort(() => Math.random() - 0.5);
     }
 
     function createVisual(record) {
