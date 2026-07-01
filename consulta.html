@@ -980,7 +980,7 @@
       "infantil",
       "laboratorio",
       "medicamentos",
-      "mental",
+      "salud-mental",
       "metabolico",
       "mujer",
       "neurologico",
@@ -988,6 +988,26 @@
       "prevencion",
       "respiratorio"
     ]);
+    const CATEGORY_ASSETS = {
+      "adulto-mayor": { folder: "adulto-mayor", icon: "bed.svg" },
+      cardiovascular: { folder: "cardiovascular", icon: "heart-handshake.svg" },
+      dermatologia: { folder: "dermatologia", icon: "shield.svg" },
+      diagnostico: { folder: "diagnostico", icon: "stethoscope.svg" },
+      digestivo: { folder: "digestivo", icon: "heart.svg" },
+      "dolor-rehabilitacion": { folder: "dolor-rehabilitacion", icon: "activity.svg" },
+      hombre: { folder: "hombre", icon: "user.svg" },
+      infantil: { folder: "infantil", icon: "ambulance.svg" },
+      laboratorio: { folder: "laboratorio", icon: "microscope.svg" },
+      medicamentos: { folder: "medicamentos", icon: "pill.svg" },
+      "salud-mental": { folder: "salud-mental", icon: "heart-handshake.svg" },
+      metabolico: { folder: "metabolico", icon: "thermometer.svg" },
+      mujer: { folder: "mujer", icon: "user.svg" },
+      neurologico: { folder: "neurologico", icon: "atom.svg" },
+      nutricion: { folder: "nutricion", icon: "heart.svg" },
+      prevencion: { folder: "prevencion", icon: "shield.svg" },
+      respiratorio: { folder: "respiratorio", icon: "activity.svg" },
+      "primeros-auxilios": { folder: "primeros-auxilios", icon: "ambulance.svg" }
+    };
 
     function normalizeText(value) {
       return String(value || "")
@@ -1130,7 +1150,7 @@
     function visualCategory(record) {
       const haystack = ` ${normalizeText(`${record.titulo} ${record.tipo} ${record.categoria} ${(record.keywords || []).join(" ")}`)} `;
       const categories = [
-        ["mental", ["mental", "emocion", "psicolog", "ansied", "estres", "depres", "panic", "insom"]],
+        ["salud-mental", ["mental", "emocion", "psicolog", "ansied", "estres", "depres", "panic", "insom"]],
         ["respiratorio", ["respir", "asma", "bronqu", "pulmon", "tos", "neumon"]],
         ["digestivo", ["digest", "estom", "gastr", "reflu", "colon", "intestin", "higad", "vesicula", "pancrea", "abdomin"]],
         ["cardiovascular", ["cardio", "corazon", "hiperten", "presion arterial", "arter", "vascular"]],
@@ -1155,11 +1175,12 @@
     }
 
     function visualCandidates(category) {
-      if (!EDITORIAL_VISUAL_CATEGORIES.has(category)) return [];
+      const asset = CATEGORY_ASSETS[category];
+      if (!asset?.folder) return [];
       return [
-        `imagenes/consulta/${category}/${category}-01.webp`,
-        `imagenes/consulta/${category}/${category}-02.webp`,
-        `imagenes/consulta/${category}/${category}-03.webp`
+        "imagenes/consulta/" + asset.folder + "/" + asset.folder + "-01.webp",
+        "imagenes/consulta/" + asset.folder + "/" + asset.folder + "-02.webp",
+        "imagenes/consulta/" + asset.folder + "/" + asset.folder + "-03.webp"
       ];
     }
 
@@ -1208,18 +1229,18 @@
       const title = record.titulo || "este tema";
       const type = normalizeText(record.tipo);
       if (type === "medicamento") {
-        return `${title} es un medicamento de consulta frecuente. Su uso debe evaluarse según antecedentes, otros medicamentos y orientación profesional; esta ficha no indica dosis ni reemplaza una consulta.`;
+        return title + " puede ser útil cuando está indicado para una condición concreta, pero no debe usarse como decisión automática. La seguridad depende de antecedentes, otros medicamentos, alergias y del motivo por el que se consulta.";
       }
       if (type === "sintoma") {
-        return `${title} puede tener varias causas. Observa intensidad, duración y síntomas asociados, y busca orientación si persiste, empeora o aparece con señales de alarma.`;
+        return title + " puede aparecer por causas leves o por situaciones que requieren evaluación. Observa cuándo empezó, cuánto dura, qué tan intenso es y si se acompaña de fiebre, dolor fuerte, dificultad para respirar u otros cambios.";
       }
       if (type === "enfermedad") {
-        return `${title} requiere información clara, evaluación profesional y seguimiento. Esta ficha resume qué vigilar, cuándo consultar y cómo interpretar el tema con seguridad.`;
+        return title + " se comprende mejor con una evaluación ordenada: qué ocurre, qué factores influyen, cómo prevenir complicaciones y cuándo realizar seguimiento. Esta ficha orienta, pero no confirma diagnósticos.";
       }
       if (type === "examen") {
-        return `${title} ayuda a evaluar información de salud, pero sus resultados deben interpretarse junto con la historia clínica y el criterio profesional.`;
+        return title + " aporta información clínica que debe interpretarse junto con síntomas, antecedentes, medicamentos y el motivo del estudio. Un resultado aislado no define por sí solo una decisión médica.";
       }
-      return `${title} forma parte de una orientación educativa de IDB para comprender mejor el tema y decidir cuándo buscar apoyo profesional.`;
+      return title + " es una consulta educativa de IDB para ordenar información, reconocer señales importantes y decidir cuándo buscar orientación profesional.";
     }
 
     function sectionText(record, section) {
@@ -1227,23 +1248,47 @@
       const type = normalizeText(record.tipo);
       const title = record.titulo || "este tema";
       const description = record.description || knowledge.descripcion || "Información educativa disponible dentro del ecosistema IDB.";
-      const defaults = {
+      const byType = {
+        medicamento: {
+          descripcion: knowledge.descripcion || title + " es un medicamento que puede tener beneficios y riesgos según la persona que lo use. La indicación, duración y forma de uso deben revisarse con criterio profesional, especialmente si hay enfermedades crónicas o uso de otros tratamientos.",
+          usos: knowledge.para_que_sirve || "Puede emplearse para objetivos terapéuticos específicos, de acuerdo con su grupo farmacológico y la evaluación clínica. No todos los síntomas requieren medicamento, y no todos los medicamentos son adecuados para todas las personas.",
+          dosis: "IDB no indica dosis ni cambios de tratamiento. La dosis depende de edad, peso, diagnóstico, función renal o hepática, otros medicamentos y presentación disponible. No aumentes, suspendas ni combines medicamentos sin orientación profesional.",
+          efectos: "Presta atención a molestias nuevas, alergias, somnolencia, sangrados, dolor abdominal intenso, dificultad para respirar o empeoramiento del cuadro. Ante una reacción inesperada, suspende la automedicación y busca orientación.",
+          precauciones: Array.isArray(knowledge.precauciones) && knowledge.precauciones.length ? knowledge.precauciones.join(" ") : "Consulta antes de usarlo si estás embarazada, tienes alergias, enfermedad renal o hepática, antecedentes de sangrado, tomas anticoagulantes u otros tratamientos continuos.",
+          interacciones: "Puede interactuar con otros medicamentos, suplementos, alcohol o enfermedades de base. Llevar una lista de lo que tomas ayuda a que el profesional evalúe riesgos y evite combinaciones inseguras."
+        },
+        sintoma: {
+          descripcion: knowledge.descripcion || title + " es una señal del cuerpo, no un diagnóstico. Puede relacionarse con situaciones pasajeras o con condiciones que requieren evaluación, por eso importa observar el contexto completo.",
+          usos: "Sirve como punto de partida para ordenar la consulta: inicio, duración, intensidad, desencadenantes, síntomas acompañantes y antecedentes. Esa información ayuda a decidir si observar, consultar o buscar atención urgente.",
+          dosis: "No corresponde hablar de dosis para un síntoma. Evita automedicarte para ocultarlo si es intenso, nuevo, persistente o se acompaña de señales de alarma.",
+          efectos: "La evolución es una pista importante: si aumenta, cambia de patrón, aparece con debilidad, fiebre persistente, dolor fuerte o dificultad para respirar, conviene consultar pronto.",
+          precauciones: "Anota cuándo empezó, qué lo mejora o empeora, si se repite y qué otros síntomas aparecen. Esta información evita suposiciones y mejora la orientación profesional.",
+          interacciones: "Edad, embarazo, enfermedades previas, medicamentos y antecedentes familiares pueden cambiar la interpretación del síntoma. Por eso la evaluación debe adaptarse a cada persona."
+        },
+        enfermedad: {
+          descripcion: knowledge.descripcion || title + " es una condición que debe entenderse por sus causas, evolución, factores de riesgo y posibles complicaciones. La confirmación y el seguimiento corresponden a un profesional de salud.",
+          usos: knowledge.para_que_sirve || "Esta ficha ayuda a reconocer qué se suele vigilar, qué hábitos pueden apoyar la prevención y qué información conviene llevar a una consulta médica.",
+          dosis: "No aplica una dosis. El manejo puede incluir controles, cambios de hábitos, estudios o tratamientos definidos por un profesional según cada caso.",
+          efectos: "Sin seguimiento, algunas enfermedades pueden progresar o afectar otros órganos. Consultar a tiempo permite confirmar el diagnóstico, controlar riesgos y ajustar el plan de cuidado.",
+          precauciones: Array.isArray(knowledge.precauciones) && knowledge.precauciones.length ? knowledge.precauciones.join(" ") : "Evita asumir que todos los casos evolucionan igual. Ante síntomas nuevos, empeoramiento o dudas sobre tratamiento, busca evaluación profesional.",
+          interacciones: "El riesgo y la evolución pueden cambiar por edad, antecedentes familiares, hábitos, otros diagnósticos y medicamentos. El seguimiento debe considerar ese contexto."
+        },
+        examen: {
+          descripcion: knowledge.descripcion || title + " es una herramienta de evaluación. Su valor está en relacionar el resultado con síntomas, antecedentes, examen físico y motivo por el que fue solicitado.",
+          usos: knowledge.para_que_sirve || "Puede ayudar a detectar alteraciones, hacer seguimiento o complementar una evaluación médica, pero no reemplaza la interpretación profesional.",
+          dosis: "No aplica una dosis. Algunos exámenes requieren preparación, horario específico o condiciones previas; sigue la indicación recibida por el servicio de salud.",
+          efectos: "Un resultado fuera de rango no siempre significa enfermedad, y un resultado normal no siempre descarta un problema. El contexto clínico es fundamental.",
+          precauciones: "Informa medicamentos, suplementos, embarazo, ayuno, síntomas y diagnósticos previos, porque pueden modificar el resultado o su interpretación.",
+          interacciones: "El resultado puede variar por técnica, laboratorio, edad, sexo, enfermedades previas o tratamientos. Revísalo con un profesional antes de tomar decisiones."
+        }
+      };
+      const defaults = byType[type] || {
         descripcion: knowledge.descripcion || description,
-        usos: knowledge.para_que_sirve || (type === "medicamento"
-          ? `${title} puede utilizarse para objetivos específicos definidos por un profesional. La indicación depende del motivo de consulta, antecedentes y otros medicamentos.`
-          : `${title} ayuda a orientar qué observar, qué preguntas llevar a consulta y cuándo buscar apoyo profesional.`),
-        dosis: type === "medicamento"
-          ? "La dosis debe ser indicada por un profesional de salud según edad, antecedentes, otros medicamentos y condición clínica. IDB no entrega dosis ni pautas personalizadas."
-          : "No aplica una dosis para este tipo de consulta. La orientación se centra en comprender el tema, observar evolución y consultar cuando corresponda.",
-        efectos: type === "medicamento"
-          ? "Los medicamentos pueden causar efectos no deseados o interacciones. Consulta si aparecen molestias, alergias, empeoramiento o dudas sobre seguridad."
-          : "Algunos síntomas o enfermedades pueden acompañarse de cambios nuevos o persistentes. Presta atención a evolución, intensidad y signos asociados.",
-        precauciones: Array.isArray(knowledge.precauciones) && knowledge.precauciones.length
-          ? knowledge.precauciones.join(" ")
-          : "Evita tomar decisiones importantes de salud solo con información general. Consulta si tienes embarazo, alergias, enfermedades crónicas, uso de medicamentos o dudas específicas.",
-        interacciones: type === "medicamento"
-          ? "Las interacciones pueden ocurrir con otros medicamentos, suplementos, alcohol o condiciones de salud. Revisa siempre con un profesional antes de combinar tratamientos."
-          : "La interpretación puede cambiar según antecedentes, edad, medicamentos, enfermedades previas y contexto clínico."
+        usos: title + " ayuda a ordenar información de salud, reconocer dudas importantes y preparar una conversación más clara con un profesional.",
+        dosis: "No aplica una dosis para este tipo de consulta.",
+        efectos: "Observa cambios, persistencia o empeoramiento, y consulta si algo te preocupa.",
+        precauciones: "Evita tomar decisiones importantes solo con información general.",
+        interacciones: "La interpretación puede cambiar según antecedentes, edad y contexto clínico."
       };
       return defaults[section] || description;
     }
@@ -1251,15 +1296,20 @@
     function consultText(record) {
       if (record._knowledge?.cuando_consultar) return record._knowledge.cuando_consultar;
       const type = normalizeText(record.tipo);
-      if (type === "medicamento") return "Consulta si tienes dudas sobre dosis, interacciones, embarazo, alergias, enfermedad renal o hepática, o uso en niños y adultos mayores.";
-      if (type === "sintoma") return "Consulta si el síntoma es intenso, persiste, empeora, se repite o se acompaña de otros signos que te preocupan.";
-      if (type === "enfermedad") return "Consulta para confirmar diagnóstico, definir seguimiento y recibir orientación según tu situación personal.";
-      if (type === "examen") return "Consulta para interpretar resultados según historia clínica, síntomas, antecedentes y motivo del examen.";
-      return "Consulta con un profesional de salud si tienes dudas, molestias persistentes o necesitas orientación personalizada.";
+      if (type === "medicamento") return "Consulta antes de usarlo si tienes embarazo, alergias, enfermedad renal o hepática, tomas otros medicamentos, es para un niño o adulto mayor, o si no tienes clara la indicación. No modifiques dosis ni combines tratamientos por cuenta propia.";
+      if (type === "sintoma") return "Consulta si el síntoma es intenso, dura más de lo esperado, empeora, se repite, limita tus actividades o aparece junto con fiebre persistente, dolor fuerte, vómitos, decaimiento marcado u otros signos que te preocupan.";
+      if (type === "enfermedad") return "Consulta para confirmar el diagnóstico, evaluar factores de riesgo, definir seguimiento y prevenir complicaciones. También conviene consultar si aparecen síntomas nuevos o si el control habitual cambia.";
+      if (type === "examen") return "Consulta para interpretar el resultado según tu historia clínica, síntomas, medicamentos, motivo del examen y rangos usados por el laboratorio o centro de salud.";
+      return "Consulta con un profesional si tienes dudas, molestias persistentes, cambios importantes o necesitas orientación personalizada.";
     }
 
     function alarmText(record) {
-      return record._knowledge?.senales_alarma || "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita o empeoramiento rápido.";
+      if (record._knowledge?.senales_alarma) return record._knowledge.senales_alarma;
+      const type = normalizeText(record.tipo);
+      if (type === "medicamento") return "Busca atención inmediata si presentas dificultad para respirar, hinchazón de labios o rostro, ronchas extensas, desmayo, sangrado importante, dolor de pecho o empeoramiento rápido después de usar un medicamento.";
+      if (type === "sintoma") return "Busca atención inmediata si hay dificultad para respirar, dolor de pecho, pérdida de conciencia, debilidad súbita, confusión, sangrado importante, dolor muy intenso o empeoramiento rápido.";
+      if (type === "examen") return "Busca atención inmediata si el resultado se acompaña de dificultad para respirar, dolor de pecho, desmayo, sangrado importante, debilidad súbita o deterioro rápido del estado general.";
+      return "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita o empeoramiento rápido.";
     }
 
     function faqs(record) {
@@ -1429,53 +1479,53 @@
       if (type === "medicamento") {
         return {
           subtitle: "Información farmacológica",
-          summary: "Este bloque resume puntos de seguridad útiles para conversar con un profesional antes de usar o combinar medicamentos.",
+          summary: "La seguridad de un medicamento depende tanto del producto como de la persona que lo usa. Este contexto ayuda a revisar indicación, precauciones e interacciones antes de tomar decisiones.",
           items: [
-            ["Uso seguro", "Confirmar indicación", "Usarlo solo cuando corresponde y evitar ajustar o suspender por cuenta propia."],
-            ["Interacciones", "Revisar combinaciones", "Consultar si tomas otros medicamentos, suplementos o tienes condiciones crónicas."],
-            ["Cuándo consultar", "Dudas o reacciones", "Pedir orientación ante alergias, embarazo, uso en niños o síntomas inesperados."]
+            ["Uso seguro", "Indicación clara", "Usarlo solo cuando corresponde y evitar iniciar, suspender o ajustar dosis sin orientación profesional."],
+            ["Interacciones", "Revisión necesaria", "Otros medicamentos, suplementos, alcohol o enfermedades de base pueden cambiar su seguridad."],
+            ["Cuándo consultar", "Dudas o reacciones", "Pedir ayuda si hay alergias, embarazo, uso en niños o adultos mayores, o síntomas inesperados."]
           ]
         };
       }
       if (type === "sintoma") {
         return {
           subtitle: "Contexto clínico",
-          summary: "Un síntoma puede tener causas leves o requerir evaluación. La clave es observar evolución, intensidad y señales asociadas.",
+          summary: "Un síntoma se interpreta mejor observando evolución, intensidad y señales acompañantes. Esta mirada evita conclusiones apresuradas y ayuda a decidir cuándo consultar.",
           items: [
-            ["Frecuencia orientativa", "Consulta común", "Muchos síntomas son motivos frecuentes de orientación inicial y deben interpretarse por contexto."],
-            ["Qué observar", "Duración e intensidad", "Registrar cuándo empezó, qué lo mejora o empeora y si aparecen otros síntomas."],
-            ["Cuándo buscar atención", "Empeora o preocupa", "Consultar si es intenso, persiste, se repite o aparece con señales de alarma."]
+            ["Qué observar", "Inicio y evolución", "Registrar cuándo empezó, cuánto dura, si se repite y qué lo mejora o empeora."],
+            ["Síntomas asociados", "Contexto completo", "Fiebre, dolor intenso, vómitos, falta de aire o decaimiento cambian la prioridad de atención."],
+            ["Atención urgente", "Señales de alarma", "Buscar ayuda si progresa rápido, limita funciones básicas o aparece con signos graves."]
           ]
         };
       }
       if (type === "enfermedad") {
         return {
           subtitle: "Contexto de salud pública",
-          summary: "Este tema puede requerir prevención, seguimiento y evaluación profesional según antecedentes y evolución individual.",
+          summary: "Comprender una enfermedad implica mirar prevención, factores de riesgo y seguimiento. La evaluación profesional confirma el diagnóstico y reduce complicaciones.",
           items: [
-            ["Relevancia sanitaria", "Seguimiento oportuno", "Comprender el problema ayuda a reconocer riesgos y tomar mejores decisiones."],
-            ["Factores de riesgo", "Variables personales", "Antecedentes, hábitos y condiciones previas pueden modificar el riesgo."],
-            ["Prevención", "Medidas sostenidas", "La prevención y los controles ayudan a reducir complicaciones cuando corresponda."]
+            ["Relevancia sanitaria", "Seguimiento oportuno", "El control adecuado permite detectar cambios y ajustar el cuidado a tiempo."],
+            ["Factores de riesgo", "Perfil individual", "Antecedentes, hábitos, edad y otras condiciones pueden modificar la evolución."],
+            ["Prevención", "Acciones sostenidas", "Controles, hábitos saludables y adherencia al plan médico ayudan a reducir riesgos."]
           ]
         };
       }
       if (type === "examen") {
         return {
           subtitle: "Interpretación clínica",
-          summary: "Un examen entrega información útil, pero no debe interpretarse de forma aislada ni fuera del motivo de consulta.",
+          summary: "Un examen aporta datos, pero su significado depende del motivo de solicitud y del estado de salud de la persona.",
           items: [
-            ["Qué evalúa", "Información de salud", "Aporta datos que ayudan a orientar una evaluación profesional."],
-            ["Por qué se solicita", "Contexto clínico", "Puede pedirse por síntomas, controles, seguimiento o antecedentes."],
-            ["Interpretación", "Profesional", "Los resultados deben revisarse junto con historia clínica, edad, síntomas y medicamentos."]
+            ["Qué evalúa", "Dato clínico", "Ayuda a observar una función, marcador o hallazgo específico."],
+            ["Por qué se solicita", "Pregunta médica", "Puede pedirse por síntomas, seguimiento, control preventivo o sospecha clínica."],
+            ["Interpretación", "No aislada", "Debe revisarse junto con historia clínica, medicamentos, edad y síntomas actuales."]
           ]
         };
       }
       return {
         subtitle: "Contexto médico",
-        summary: "Información orientativa para comprender el tema y decidir cuándo buscar apoyo profesional.",
+        summary: "IDB organiza información educativa para ayudarte a reconocer qué observar, qué preguntas hacer y cuándo buscar apoyo profesional.",
         items: [
-          ["Qué observar", "Cambios relevantes", "Registrar evolución, antecedentes y molestias asociadas."],
-          ["Prevención", "Medidas razonables", "Los hábitos y controles pueden ayudar según el caso."],
+          ["Qué observar", "Cambios relevantes", "Registrar evolución, molestias asociadas y antecedentes importantes."],
+          ["Prevención", "Medidas razonables", "Hábitos, controles y seguimiento pueden aportar según el caso."],
           ["Consulta", "Orientación profesional", "Buscar apoyo si hay dudas, persistencia o señales de alarma."]
         ]
       };
@@ -1559,43 +1609,50 @@
       const category = normalizeText(record.categoria);
       if (type === "medicamento") {
         return [
-          ["Uso principal", "Alivio o control terapéutico", "Debe usarse solo cuando corresponde a su indicación médica o farmacéutica."],
-          ["Precaución importante", "Interacciones y antecedentes", "Consultar si usas otros medicamentos, tienes alergias, embarazo o enfermedades crónicas."],
-          ["Señal de alarma", "Reacción inesperada", "Buscar ayuda ante dificultad para respirar, hinchazón, ronchas extensas o empeoramiento rápido."]
+          ["Uso principal", "Indicación profesional", "Su utilidad depende del motivo de uso y de la evaluación de riesgos personales."],
+          ["Precaución clave", "No automedicarse", "No iniciar, combinar, suspender ni modificar dosis sin orientación profesional."],
+          ["Consultar pronto", "Reacción inesperada", "Buscar ayuda ante alergia, falta de aire, hinchazón, sangrado o empeoramiento rápido."]
         ];
       }
       if (title.includes("fiebre")) {
         return [
-          ["Qué observar", "Temperatura y estado general", "Registrar medición, duración y síntomas asociados."],
-          ["Duración", "Evolución", "Consultar si persiste, se repite o empeora."],
-          ["Señales de alarma", "Atención inmediata", "Buscar ayuda ante dificultad respiratoria o confusión."]
+          ["Qué observar", "Temperatura y estado general", "Registrar medición, duración, decaimiento y síntomas acompañantes."],
+          ["Duración", "Evolución", "Consultar si persiste, se repite, sube rápidamente o no mejora."],
+          ["Alarma", "Atención inmediata", "Buscar ayuda ante dificultad respiratoria, confusión, rigidez o deterioro rápido."]
         ];
       }
       if (title.includes("diabetes") || category.includes("metabol")) {
         return [
-          ["Factores de riesgo", "Metabólicos y familiares", "Influyen antecedentes, peso, edad y hábitos."],
-          ["Prevención", "Hábitos sostenidos", "Alimentación, actividad física y controles pueden reducir riesgo."],
-          ["Seguimiento", "Continuo", "Requiere evaluación, monitoreo y acompañamiento profesional."]
+          ["Seguimiento", "Continuo", "Requiere controles periódicos y revisión de hábitos, síntomas y resultados."],
+          ["Factores de riesgo", "Metabólicos y familiares", "Peso, antecedentes, edad y actividad física pueden influir."],
+          ["Prevención", "Hábitos sostenidos", "Alimentación, movimiento y controles ayudan a reducir complicaciones."]
         ];
       }
       if (type === "sintoma") {
         return [
-          ["Qué observar", "Evolución", "Registrar duración, intensidad y síntomas asociados."],
-          ["Duración", "Persistencia", "Consultar si no mejora o se repite."],
-          ["Señales de alarma", "Urgencia", "Dolor de pecho, falta de aire o deterioro rápido requieren atención."]
+          ["Inicio", "Cuándo empezó", "La fecha de inicio y la evolución ayudan a orientar la consulta."],
+          ["Intensidad", "Leve a severa", "Importa si limita actividades, despierta por la noche o aumenta rápido."],
+          ["Acompañantes", "Otros signos", "Fiebre, falta de aire, vómitos o debilidad cambian la urgencia."]
         ];
       }
       if (type === "examen") {
         return [
-          ["Qué evalúa", "Información clínica", "Ayuda a orientar una evaluación profesional."],
-          ["Interpretación", "Profesional", "Debe revisarse con historia clínica y síntomas."],
-          ["Resultado", "Contextual", "Un valor aislado no define diagnóstico por sí solo."]
+          ["Qué aporta", "Información clínica", "Ayuda a responder una pregunta de salud específica."],
+          ["Interpretación", "Con contexto", "Debe relacionarse con síntomas, antecedentes y motivo del examen."],
+          ["Siguiente paso", "Revisión profesional", "Un valor aislado no define diagnóstico ni tratamiento por sí solo."]
+        ];
+      }
+      if (type === "enfermedad") {
+        return [
+          ["Comprensión", "Qué ocurre", "Conocer la condición ayuda a vigilar evolución y riesgos."],
+          ["Prevención", "Reducir riesgos", "Hábitos, controles y seguimiento pueden disminuir complicaciones."],
+          ["Consulta", "Confirmación médica", "El diagnóstico y manejo deben adaptarse a cada persona."]
         ];
       }
       return [
-        ["Antecedentes", "Individuales", "Los antecedentes y hábitos pueden influir."],
-        ["Prevención", "Orientación general", "Las medidas dependen de la evaluación personal."],
-        ["Consulta médica", "Oportuna", "Buscar orientación ante dudas o cambios importantes."]
+        ["Contexto", "Información orientativa", "Ayuda a ordenar dudas y preparar una consulta más clara."],
+        ["Observación", "Cambios relevantes", "Registrar evolución y síntomas asociados aporta valor clínico."],
+        ["Consulta", "Apoyo profesional", "Buscar orientación si hay dudas, persistencia o señales de alarma."]
       ];
     }
 
@@ -1638,7 +1695,7 @@
         slugify(record.titulo),
         slugify(record.slug)
       ];
-      if (visualCategory(record) === "mental") candidates.push("salud-mental");
+      if (visualCategory(record) === "salud-mental") candidates.push("salud-mental");
       return [...new Set(candidates.filter(Boolean))];
     }
 
