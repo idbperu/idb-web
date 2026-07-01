@@ -1129,23 +1129,29 @@
 
     function visualCategory(record) {
       const haystack = ` ${normalizeText(`${record.titulo} ${record.tipo} ${record.categoria} ${(record.keywords || []).join(" ")}`)} `;
-      if (haystack.includes("medicamento") || normalizeText(record.tipo) === "medicamento") return "medicamentos";
-      if (haystack.includes("higado") || haystack.includes("gastritis") || haystack.includes("digestivo") || haystack.includes("estomago") || haystack.includes("abdominal") || haystack.includes("reflujo")) return "digestivo";
-      if (haystack.includes("ansiedad") || haystack.includes("estres") || haystack.includes("emocional") || haystack.includes("salud mental") || haystack.includes("mental")) return "mental";
-      const hasFeverContext = haystack.includes("fiebre") || haystack.includes("temperatura") || haystack.includes("febril") || haystack.includes("calentura");
-      const hasPediatricContext = haystack.includes(" nino ") || haystack.includes(" nina ") || haystack.includes(" bebe ") || haystack.includes(" hijo ") || haystack.includes(" hija ") || haystack.includes("pediatrico");
-      if (hasFeverContext && hasPediatricContext) return "infantil";
-      if (hasFeverContext) return "diagnostico";
-      if (haystack.includes("asma") || haystack.includes(" tos ") || haystack.includes("respiratorio") || haystack.includes("respirar") || haystack.includes("bronquios")) return "respiratorio";
-      if (haystack.includes("diabetes") || haystack.includes("glucosa") || haystack.includes("metabolico") || haystack.includes("colesterol")) return "metabolico";
-      if (haystack.includes("cardio") || haystack.includes("corazon") || haystack.includes("hipertension") || haystack.includes("presion arterial")) return "cardiovascular";
-      if (haystack.includes("examen") || haystack.includes("hemograma") || haystack.includes("laboratorio") || haystack.includes("analisis")) return "laboratorio";
-      if (haystack.includes("dolor") || haystack.includes("espalda") || haystack.includes("artrosis")) return "dolor-rehabilitacion";
-      if (haystack.includes("nutricion") || haystack.includes("obesidad")) return "nutricion";
-      if (haystack.includes("prevencion") || haystack.includes("vacuna")) return "prevencion";
-      if (haystack.includes("dermat")) return "dermatologia";
-      if (haystack.includes("migrana") || haystack.includes("cabeza") || haystack.includes("neurolog")) return "neurologico";
-      return "";
+      const categories = [
+        ["mental", ["mental", "emocion", "psicolog", "ansied", "estres", "depres", "panic", "insom"]],
+        ["respiratorio", ["respir", "asma", "bronqu", "pulmon", "tos", "neumon"]],
+        ["digestivo", ["digest", "estom", "gastr", "reflu", "colon", "intestin", "higad", "vesicula", "pancrea", "abdomin"]],
+        ["cardiovascular", ["cardio", "corazon", "hiperten", "presion arterial", "arter", "vascular"]],
+        ["metabolico", ["diabet", "glucos", "insulin", "colesterol", "triglicer", "obes"]],
+        ["laboratorio", ["laborat", "analisis", "hemogram", "perfil", "biops", "tomograf", "radiograf", "resonan", "ecograf"]],
+        ["diagnostico", ["diagnost", "fiebre", "febril", "temperatura", "calentura"]],
+        ["infantil", ["nino", "nina", "bebe", "hijo", "hija", "pediatr"]],
+        ["medicamentos", ["medic", "farmac", "tableta", "capsula", "jarabe", "antibiot", "ibupro", "paracetam", "diclofen", "naprox", "omepraz"]],
+        ["neurologico", ["neuro", "migra", "cefalea", "convulsion", "epilep", "alzheimer", "parkinson"]],
+        ["dermatologia", ["dermat", "piel", "eczema", "psorias", "acne"]],
+        ["nutricion", ["nutric", "aliment", "dieta", "peso"]],
+        ["prevencion", ["prevenc", "vacun", "tamiz"]],
+        ["dolor-rehabilitacion", ["dolor", "espalda", "rodilla", "hombro", "articul", "rehabil", "artrosis"]],
+        ["adulto-mayor", ["adulto mayor", "geriatr"]],
+        ["hombre", ["prostata", "erectil", "mascul"]],
+        ["mujer", ["embarazo", "gineco", "menop", "ovario", "mama"]],
+        ["primeros-auxilios", ["quemadura", "fractura", "hemorrag", "accidente", "primeros auxilios"]]
+      ];
+
+      const match = categories.find(([, roots]) => roots.some((root) => haystack.includes(root)));
+      return match ? match[0] : "";
     }
 
     function visualCandidates(category) {
