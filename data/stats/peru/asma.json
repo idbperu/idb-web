@@ -1,0 +1,33 @@
+{
+  "tema": "asma",
+  "pais": "Perú",
+  "ultima_actualizacion": "2026-06",
+  "proxima_revision": "2026-12",
+  "fuentes": [
+    {
+      "nombre": "MINSA",
+      "url": "",
+      "fecha_consulta": "2026-06"
+    }
+  ],
+  "resumen": "",
+  "indicadores": [
+    {
+      "titulo": "Prevalencia estimada",
+      "valor": "0%",
+      "unidad": "%",
+      "descripcion": "",
+      "fuente": "MINSA"
+    }
+  ],
+  "graficos": [
+    {
+      "tipo": "barras",
+      "titulo": "Distribución por edad",
+      "labels": ["18-29", "30-44", "45-59", "60+"],
+      "values": [0, 0, 0, 0],
+      "unidad": "%",
+      "fuente": "MINSA"
+    }
+  ]
+}

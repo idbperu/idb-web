@@ -1,0 +1,33 @@
+{
+  "tema": "dengue",
+  "pais": "Perú",
+  "ultima_actualizacion": "2026-06",
+  "proxima_revision": "2026-12",
+  "fuentes": [
+    {
+      "nombre": "CDC Perú",
+      "url": "",
+      "fecha_consulta": "2026-06"
+    }
+  ],
+  "resumen": "",
+  "indicadores": [
+    {
+      "titulo": "Casos notificados",
+      "valor": "0",
+      "unidad": "casos",
+      "descripcion": "",
+      "fuente": "CDC Perú"
+    }
+  ],
+  "graficos": [
+    {
+      "tipo": "barras",
+      "titulo": "Distribución por edad",
+      "labels": ["18-29", "30-44", "45-59", "60+"],
+      "values": [0, 0, 0, 0],
+      "unidad": "%",
+      "fuente": "CDC Perú"
+    }
+  ]
+}

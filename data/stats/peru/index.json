@@ -1,0 +1,24 @@
+{
+  "pais": "Perú",
+  "ultima_actualizacion": "2026-06",
+  "proxima_revision": "2026-12",
+  "fuentes_autorizadas": [
+    "MINSA",
+    "INS",
+    "CDC Perú",
+    "OPS",
+    "OMS",
+    "INEI",
+    "EsSalud"
+  ],
+  "registros": [
+    "diabetes",
+    "hipertension",
+    "obesidad",
+    "anemia",
+    "dengue",
+    "tuberculosis",
+    "asma",
+    "salud-mental"
+  ]
+}
