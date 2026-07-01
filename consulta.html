@@ -1150,7 +1150,7 @@
         `imagenes/consulta/${category}/${category}-01.webp`,
         `imagenes/consulta/${category}/${category}-02.webp`,
         `imagenes/consulta/${category}/${category}-03.webp`
-      ].sort(() => Math.random() - 0.5);
+      ];
     }
 
     function createVisual(record) {
@@ -1321,32 +1321,30 @@
 
       const row = document.createElement("div");
       row.className = "interest-row";
-      const usedMedia = new Set();
-      const usedCategories = new Set();
+      const categoryImageIndexes = new Map();
       related.forEach((record) => {
         const link = document.createElement("a");
         link.className = "card interest-card";
         link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
         const category = visualCategory(record);
-        const candidates = usedCategories.has(category) ? [] : visualCandidates(category);
+        const candidates = visualCandidates(category);
         let media;
-        const nextCandidate = candidates.find((candidate) => !usedMedia.has(candidate));
-        if (nextCandidate) {
-          usedCategories.add(category);
-          usedMedia.add(nextCandidate);
+        if (candidates.length) {
+          const currentIndex = categoryImageIndexes.get(category) || 0;
+          const imageIndex = currentIndex % candidates.length;
+          categoryImageIndexes.set(category, currentIndex + 1);
           media = document.createElement("img");
-          media.src = nextCandidate;
-          media.dataset.candidateIndex = String(candidates.indexOf(nextCandidate));
+          media.src = candidates[imageIndex];
+          media.dataset.candidateIndex = String(imageIndex);
           media.alt = `Imagen editorial IDB para ${record.titulo}`;
           media.loading = "lazy";
           media.decoding = "async";
           media.onerror = () => {
-            const nextIndex = Number(media.dataset.candidateIndex || 0) + 1;
-            const fallback = candidates.slice(nextIndex).find((candidate) => !usedMedia.has(candidate));
-            if (fallback) {
-              usedMedia.add(fallback);
-              media.dataset.candidateIndex = String(candidates.indexOf(fallback));
-              media.src = fallback;
+            const failedIndex = Number(media.dataset.candidateIndex || 0);
+            const fallbackIndex = (failedIndex + 1) % candidates.length;
+            if (fallbackIndex !== failedIndex) {
+              media.dataset.candidateIndex = String(fallbackIndex);
+              media.src = candidates[fallbackIndex];
               return;
             }
             const neutral = createText("div", "interest-neutral", record.categoria || record.tipo || "Consulta IDB");
