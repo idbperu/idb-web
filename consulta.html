@@ -158,15 +158,6 @@
       color: #42586f;
       font-size: clamp(1.02rem, 2vw, 1.18rem);
     }
-    .hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 18px;
-      margin: 18px 0 0;
-      color: #637589;
-      font-size: .86rem;
-      font-weight: 760;
-    }
     .share-row {
       display: flex;
       flex-wrap: wrap;
@@ -278,24 +269,40 @@
       background: rgba(255,255,255,.94);
       box-shadow: 0 14px 40px rgba(16, 35, 63, .055);
     }
+    .title-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0;
+      color: var(--blue-dark);
+      font-size: clamp(1.16rem, 2vw, 1.45rem);
+      line-height: 1.18;
+    }
+    .title-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      flex: 0 0 28px;
+      border-radius: 10px;
+      color: var(--blue);
+      background: rgba(234, 244, 251, .95);
+    }
+    .title-icon svg {
+      width: 17px;
+      height: 17px;
+      stroke: currentColor;
+      stroke-width: 1.9;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
     .quick-answer {
       display: grid;
-      grid-template-columns: 46px minmax(0, 1fr);
-      gap: 16px;
       padding: clamp(20px, 3vw, 28px);
       background: linear-gradient(135deg, #edf7ff 0%, #f8fcff 100%);
       border-color: rgba(23,105,170,.18);
-    }
-    .line-icon {
-      display: grid;
-      place-items: center;
-      width: 46px;
-      height: 46px;
-      border-radius: 16px;
-      color: var(--blue);
-      background: #fff;
-      box-shadow: inset 0 0 0 1px rgba(23,105,170,.12);
-      font-weight: 900;
     }
     .quick-answer h2,
     .section-card h2,
@@ -313,6 +320,48 @@
     .rail-card p {
       margin: 10px 0 0;
       color: #4c6176;
+    }
+    .key-facts {
+      grid-column: 1 / -1;
+      display: grid;
+      gap: 14px;
+      margin: 0 0 10px;
+    }
+    .key-facts h2 {
+      margin: 0;
+    }
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .fact-card {
+      padding: 16px;
+      border: 1px solid rgba(220,232,242,.95);
+      border-radius: 18px;
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 10px 28px rgba(16, 35, 63, .045);
+    }
+    .fact-card span {
+      display: block;
+      color: var(--blue);
+      font-size: .74rem;
+      font-weight: 900;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .fact-card strong {
+      display: block;
+      margin-top: 7px;
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1.22;
+    }
+    .fact-card p {
+      margin: 7px 0 0;
+      color: #637589;
+      font-size: .84rem;
+      line-height: 1.4;
     }
     .section-card { padding: clamp(20px, 3vw, 30px); }
     .section-card,
@@ -360,12 +409,22 @@
       background: #fff;
     }
     .mini-card h3 {
-      display: flex;
-      align-items: center;
-      gap: 10px;
       margin: 0 0 8px;
-      color: var(--blue-dark);
       font-size: 1rem;
+    }
+    .mini-card .title-line,
+    .rail-card .title-line {
+      font-size: 1rem;
+    }
+    .mini-card .title-icon,
+    .rail-card .title-icon {
+      width: 26px;
+      height: 26px;
+      flex-basis: 26px;
+      border-radius: 9px;
+    }
+    .tab-panel .title-line {
+      margin-bottom: 14px;
     }
     .mini-card p {
       margin: 0;
@@ -451,6 +510,81 @@
       grid-template-columns: 20px minmax(0, 1fr);
       gap: 8px;
     }
+    .peru-stats {
+      display: grid;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .stat-source {
+      display: inline-flex;
+      width: fit-content;
+      margin-top: 12px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      color: var(--blue-dark);
+      background: rgba(234, 244, 251, .9);
+      font-size: .72rem;
+      font-weight: 850;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+    .stat-dial {
+      display: grid;
+      grid-template-columns: 78px minmax(0, 1fr);
+      gap: 14px;
+      align-items: center;
+    }
+    .dial {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      background:
+        conic-gradient(var(--blue) var(--dial-value, 58%), #e4edf5 0);
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+    .dial::after {
+      content: "";
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+    }
+    .dial span {
+      position: relative;
+      z-index: 1;
+      color: var(--blue-dark);
+      font-size: .8rem;
+      font-weight: 900;
+    }
+    .mini-bars {
+      display: grid;
+      gap: 8px;
+    }
+    .mini-bar {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 8px;
+      align-items: center;
+      color: #5d7184;
+      font-size: .78rem;
+      font-weight: 800;
+    }
+    .bar-track {
+      height: 8px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e7eff6;
+    }
+    .bar-track span {
+      display: block;
+      width: var(--bar-value, 50%);
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--blue), #49a7c8);
+    }
     .related-list {
       display: grid;
       gap: 10px;
@@ -469,7 +603,7 @@
 
     .interest-section {
       grid-column: 1 / -1;
-      margin-top: 4px;
+      margin-top: 12px;
     }
     .interest-head {
       display: flex;
@@ -485,8 +619,8 @@
     .interest-row {
       display: grid;
       grid-auto-flow: column;
-      grid-auto-columns: minmax(220px, 1fr);
-      gap: 14px;
+      grid-auto-columns: minmax(280px, 1fr);
+      gap: 18px;
       max-width: 100%;
       overflow-x: auto;
       overscroll-behavior-inline: contain;
@@ -494,17 +628,17 @@
       scroll-snap-type: x proximity;
     }
     .interest-card {
-      min-height: 242px;
+      min-height: 318px;
       overflow: hidden;
       scroll-snap-align: start;
     }
     .interest-card img {
       width: 100%;
-      height: 118px;
+      height: 170px;
       object-fit: cover;
     }
     .interest-copy {
-      padding: 14px;
+      padding: 18px;
     }
     .interest-copy span {
       color: var(--blue);
@@ -517,14 +651,31 @@
       display: block;
       margin-top: 6px;
       color: var(--ink);
+      font-size: 1.08rem;
       line-height: 1.22;
     }
 
-    .notice {
+    .legal-note {
       grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
       margin: 0;
+      padding: 14px;
+      border: 1px solid rgba(220,232,242,.95);
+      border-radius: 16px;
+      background: rgba(255,255,255,.72);
       color: #728292;
-      font-size: .82rem;
+      font-size: .74rem;
+      line-height: 1.35;
+    }
+    .legal-note strong {
+      display: block;
+      margin-bottom: 3px;
+      color: #516477;
+      font-size: .7rem;
+      letter-spacing: .04em;
+      text-transform: uppercase;
     }
     .empty-state {
       padding: 48px 0 70px;
@@ -592,6 +743,7 @@
       .medical-image img,
       .neutral-visual { min-height: 230px; }
       .content-grid { grid-template-columns: 1fr; }
+      .facts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .main-flow { grid-column: 1; }
       .sidebar {
         grid-column: 1;
@@ -664,6 +816,10 @@
       .interest-section { min-width: 0; }
       .interest-row { grid-auto-columns: minmax(210px, 82vw); }
       .interest-head { display: grid; }
+      .interest-card { min-height: 290px; }
+      .interest-card img { height: 142px; }
+      .facts-grid { grid-template-columns: 1fr; }
+      .legal-note { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .footer-main {
         grid-template-columns: 1fr;
         padding: 28px 0 22px;
@@ -823,6 +979,38 @@
       return element;
     }
 
+    function icon(name) {
+      const paths = {
+        pulse: '<path d="M3 12h4l2-5 4 10 2-5h6"></path>',
+        target: '<circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle>',
+        activity: '<path d="M4 14h3l2-7 4 10 2-5h5"></path>',
+        shield: '<path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z"></path>',
+        alert: '<path d="M12 4l9 16H3L12 4z"></path><path d="M12 9v5"></path><path d="M12 17h.01"></path>',
+        help: '<circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.7 2.7 0 0 1 5 1.4c0 2-2.5 2.1-2.5 4"></path><path d="M12 18h.01"></path>',
+        pills: '<path d="M10 21l10-10a4 4 0 0 0-6-6L4 15a4 4 0 0 0 6 6z"></path><path d="M8 11l5 5"></path>',
+        layers: '<path d="M12 3l9 5-9 5-9-5 9-5z"></path><path d="M3 13l9 5 9-5"></path>',
+        clock: '<circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path>',
+        bottle: '<path d="M9 3h6"></path><path d="M10 3v5l-2 3v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-8l-2-3V3"></path>',
+        chart: '<path d="M4 19V5"></path><path d="M8 19v-7"></path><path d="M12 19V9"></path><path d="M16 19v-4"></path><path d="M20 19V7"></path>',
+        link: '<path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"></path><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"></path>',
+        book: '<path d="M4 5a3 3 0 0 1 3-2h13v16H7a3 3 0 0 0-3 2V5z"></path><path d="M4 5v16"></path>',
+        map: '<path d="M9 18l-6 3V6l6-3 6 3 6-3v15l-6 3-6-3z"></path><path d="M9 3v15"></path><path d="M15 6v15"></path>',
+        spark: '<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"></path>'
+      };
+      const wrapper = document.createElement("span");
+      wrapper.className = "title-icon";
+      wrapper.setAttribute("aria-hidden", "true");
+      wrapper.innerHTML = `<svg viewBox="0 0 24 24">${paths[name] || paths.pulse}</svg>`;
+      return wrapper;
+    }
+
+    function titleLine(text, iconName = "pulse", level = "h2") {
+      const heading = document.createElement(level);
+      heading.className = "title-line";
+      heading.append(icon(iconName), createText("span", "", text));
+      return heading;
+    }
+
     function getSourceLabel(record) {
       if (record.fuente) return record.fuente;
       if (!Array.isArray(record.fuentes)) return "";
@@ -916,27 +1104,40 @@
       return "";
     }
 
+    function visualCandidates(category) {
+      const fallback = VISUALS[category] || VISUALS.diagnostico;
+      if (!category) return [fallback];
+      return [
+        `imagenes/consulta/${category}/${category}-01.webp`,
+        `imagenes/consulta/${category}/${category}-02.webp`,
+        `imagenes/consulta/${category}/${category}-03.webp`,
+        fallback,
+        VISUALS.diagnostico
+      ];
+    }
+
     function createVisual(record) {
       const category = visualCategory(record);
       const figure = document.createElement("figure");
       figure.className = "medical-image";
-      const src = VISUALS[category];
-
-      if (src) {
-        const image = document.createElement("img");
-        image.src = src;
-        image.alt = `Imagen editorial IDB para ${record.titulo}`;
-        image.loading = "lazy";
-        image.decoding = "async";
-        image.onerror = () => {
-          figure.innerHTML = "";
-          figure.append(createNeutralVisual(record, category));
-        };
-        figure.append(image);
-        return figure;
-      }
-
-      figure.append(createNeutralVisual(record, category));
+      const candidates = visualCandidates(category);
+      const image = document.createElement("img");
+      image.src = candidates[0];
+      image.dataset.candidateIndex = "0";
+      image.alt = `Imagen editorial IDB para ${record.titulo}`;
+      image.loading = "lazy";
+      image.decoding = "async";
+      image.onerror = () => {
+        const nextIndex = Number(image.dataset.candidateIndex || 0) + 1;
+        if (candidates[nextIndex]) {
+          image.dataset.candidateIndex = String(nextIndex);
+          image.src = candidates[nextIndex];
+          return;
+        }
+        figure.innerHTML = "";
+        figure.append(createNeutralVisual(record, category));
+      };
+      figure.append(image);
       return figure;
     }
 
@@ -1072,7 +1273,7 @@
       head.className = "interest-head";
       const copy = document.createElement("div");
       copy.append(
-        createText("h2", "", "También te puede interesar"),
+        titleLine("También te puede interesar", "link"),
         createText("p", "", "Temas conectados para seguir comprendiendo tu salud.")
       );
       head.append(copy);
@@ -1084,12 +1285,20 @@
         link.className = "card interest-card";
         link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
         const category = visualCategory(record);
-        const src = VISUALS[category] || VISUALS.diagnostico;
         const image = document.createElement("img");
-        image.src = src;
+        const candidates = visualCandidates(category);
+        image.src = candidates[0];
+        image.dataset.candidateIndex = "0";
         image.alt = `Imagen editorial IDB para ${record.titulo}`;
         image.loading = "lazy";
         image.decoding = "async";
+        image.onerror = () => {
+          const nextIndex = Number(image.dataset.candidateIndex || 0) + 1;
+          if (candidates[nextIndex]) {
+            image.dataset.candidateIndex = String(nextIndex);
+            image.src = candidates[nextIndex];
+          }
+        };
         const cardCopy = document.createElement("div");
         cardCopy.className = "interest-copy";
         cardCopy.append(
@@ -1104,14 +1313,143 @@
       container.append(section);
     }
 
-    function buildMiniCard(title, text) {
+    function buildMiniCard(title, text, iconName) {
       const card = document.createElement("article");
       card.className = "mini-card";
       card.append(
-        createText("h3", "", title),
+        titleLine(title, iconName, "h3"),
         createText("p", "", text)
       );
       return card;
+    }
+
+    function keyFacts(record) {
+      const type = normalizeText(record.tipo);
+      const title = normalizeText(record.titulo);
+      const category = normalizeText(record.categoria);
+      if (type === "medicamento") {
+        return [
+          ["Uso principal", "Según indicación", "Depende del motivo de consulta y evaluación profesional."],
+          ["Vía de administración", "Según presentación", "Puede variar por país, fabricante y formulación."],
+          ["Precaución principal", "Interacciones", "Revisar otros medicamentos, antecedentes y condiciones especiales."],
+          ["Alergias", "Consultar antes", "Evitar uso si hubo reacción previa o duda de seguridad."],
+          ["Automedicación", "No recomendada", "No iniciar, suspender ni ajustar sin orientación profesional."]
+        ];
+      }
+      if (title.includes("fiebre")) {
+        return [
+          ["Qué observar", "Temperatura y estado general", "Registrar medición, duración y síntomas asociados."],
+          ["Duración", "Evolución", "Consultar si persiste, se repite o empeora."],
+          ["Intensidad", "Cambios rápidos", "Vigilar decaimiento marcado o deterioro general."],
+          ["Señales de alarma", "Atención inmediata", "Buscar ayuda ante dificultad respiratoria o confusión."],
+          ["Cuándo consultar", "Según contexto", "Más vigilancia en niños pequeños y adultos mayores."]
+        ];
+      }
+      if (title.includes("diabetes") || category.includes("metabol")) {
+        return [
+          ["Factores de riesgo", "Metabólicos y familiares", "Influyen antecedentes, peso, edad y hábitos."],
+          ["Prevención", "Hábitos sostenidos", "Alimentación, actividad física y controles pueden reducir riesgo."],
+          ["Seguimiento", "Continuo", "Requiere evaluación, monitoreo y acompañamiento profesional."],
+          ["Complicaciones", "Reducibles", "El control oportuno disminuye riesgos a largo plazo."],
+          ["Consulta médica", "Necesaria", "El diagnóstico depende de pruebas e historia clínica."]
+        ];
+      }
+      if (type === "sintoma") {
+        return [
+          ["Qué observar", "Evolución", "Registrar duración, intensidad y síntomas asociados."],
+          ["Duración", "Persistencia", "Consultar si no mejora o se repite."],
+          ["Intensidad", "Cambios", "Vigilar empeoramiento o aparición brusca."],
+          ["Señales de alarma", "Urgencia", "Dolor de pecho, falta de aire o deterioro rápido requieren atención."],
+          ["Cuándo consultar", "Según contexto", "Edad, antecedentes y medicamentos cambian la interpretación."]
+        ];
+      }
+      if (type === "examen") {
+        return [
+          ["Qué evalúa", "Información clínica", "Ayuda a orientar una evaluación profesional."],
+          ["Preparación", "Variable", "Depende del tipo de examen y la indicación recibida."],
+          ["Interpretación", "Profesional", "Debe revisarse con historia clínica y síntomas."],
+          ["Resultado", "Contextual", "Un valor aislado no define diagnóstico por sí solo."],
+          ["Seguimiento", "Según hallazgos", "Puede requerir controles o pruebas complementarias."]
+        ];
+      }
+      return [
+        ["Factores de riesgo", "Individuales", "Edad, antecedentes y hábitos pueden influir."],
+        ["Prevención", "Según el caso", "Las medidas dependen del riesgo personal."],
+        ["Seguimiento", "Profesional", "La evaluación depende de historia clínica y síntomas."],
+        ["Complicaciones", "Variables", "Consultar ayuda a prevenir o detectar cambios relevantes."],
+        ["Consulta médica", "Oportuna", "Buscar orientación ante dudas o cambios importantes."]
+      ];
+    }
+
+    function createKeyFacts(record) {
+      const section = document.createElement("section");
+      section.className = "key-facts";
+      section.append(titleLine("Datos clave", "chart"));
+      const grid = document.createElement("div");
+      grid.className = "facts-grid";
+      keyFacts(record).slice(0, 6).forEach(([label, value, detail]) => {
+        const card = document.createElement("article");
+        card.className = "fact-card";
+        card.append(createText("span", "", label), createText("strong", "", value), createText("p", "", detail));
+        grid.append(card);
+      });
+      section.append(grid);
+      return section;
+    }
+
+    function createPeruStats(record) {
+      const section = document.createElement("section");
+      section.className = "card rail-card";
+      section.append(titleLine("Contexto Perú", "map"));
+      section.append(createText("p", "", "Datos referenciales disponibles según fuentes oficiales. La frecuencia puede variar por edad, antecedentes y región."));
+      const stats = document.createElement("div");
+      stats.className = "peru-stats";
+      const dialWrap = document.createElement("div");
+      dialWrap.className = "stat-dial";
+      const dial = document.createElement("div");
+      dial.className = "dial";
+      dial.style.setProperty("--dial-value", "62%");
+      dial.append(createText("span", "", "Ref."));
+      const dialText = document.createElement("div");
+      dialText.append(createText("strong", "", "Indicador editorial"), createText("p", "", "Preparado para integrar incidencia, prevalencia u hospitalizaciones cuando existan datos validados."));
+      dialWrap.append(dial, dialText);
+      const bars = document.createElement("div");
+      bars.className = "mini-bars";
+      [
+        ["Edad", "62%"],
+        ["Región", "48%"],
+        ["Riesgo", "70%"]
+      ].forEach(([label, value]) => {
+        const row = document.createElement("div");
+        row.className = "mini-bar";
+        const track = document.createElement("div");
+        track.className = "bar-track";
+        const fill = document.createElement("span");
+        fill.style.setProperty("--bar-value", value);
+        track.append(fill);
+        row.append(createText("span", "", label), track);
+        bars.append(row);
+      });
+      stats.append(dialWrap, bars);
+      section.append(stats, createText("span", "stat-source", "Fuente: pendiente de integración oficial"));
+      return section;
+    }
+
+    function createLegalNote(updated, source) {
+      const note = document.createElement("section");
+      note.className = "legal-note";
+      [
+        ["Fecha de actualización", updated],
+        ["Fuente editorial", source || "IDB"],
+        ["Equipo editorial IDB", "Revisión educativa interna"],
+        ["Descargo", "No reemplaza evaluación, diagnóstico ni tratamiento profesional."],
+        ["Política editorial", "Contenido basado en fuentes oficiales y criterio editorial IDB."]
+      ].forEach(([label, value]) => {
+        const item = document.createElement("div");
+        item.append(createText("strong", "", label), createText("span", "", value));
+        note.append(item);
+      });
+      return note;
     }
 
     function renderRecord(record, query, records) {
@@ -1144,13 +1482,6 @@
       heroCopy.className = "hero-copy";
       const title = createText("h1", "", record.titulo || "Consulta");
       const summary = createText("p", "hero-summary", record.description || "Información educativa disponible dentro del ecosistema IDB.");
-      const meta = document.createElement("div");
-      meta.className = "hero-meta";
-      meta.append(
-        createText("span", "", `Última actualización: ${updated}`),
-        createText("span", "", "Lectura: 2 min"),
-        createText("span", "", source ? `Fuente: ${source}` : "Fuente: IDB")
-      );
       const share = document.createElement("div");
       share.className = "share-row";
       const heroVitaLogo = document.createElement("img");
@@ -1178,10 +1509,10 @@
         href: `https://wa.me/?text=${encodeURIComponent(`Consulta IDB: ${record.titulo} ${window.location.href}`)}`,
         textContent: "Compartir"
       });
-      heroCopy.append(createText("span", "category-pill", `${typeLabel} · ${record.categoria || "IDB"}`), title, summary, meta, share);
+      heroCopy.append(createText("span", "category-pill", `${typeLabel} · ${record.categoria || "IDB"}`), title, summary, share);
       share.append(heroVita, copyBtn, waShare);
       hero.append(heroCopy, createVisual(record));
-      top.append(breadcrumb, hero);
+      top.append(breadcrumb, hero, createKeyFacts(record));
 
       const grid = document.createElement("section");
       grid.className = "wrap content-grid";
@@ -1191,10 +1522,9 @@
       const quick = document.createElement("section");
       quick.className = "card quick-answer";
       quick.append(
-        createText("div", "line-icon", "i"),
         (() => {
           const block = document.createElement("div");
-          block.append(createText("h2", "", "Respuesta rápida"), createText("p", "", quickResponse(record)));
+          block.append(titleLine("Respuesta rápida", "pulse"), createText("p", "", quickResponse(record)));
           return block;
         })()
       );
@@ -1231,6 +1561,7 @@
         if (id === "faq") {
           const faqList = document.createElement("div");
           faqList.className = "faq-list";
+          panel.append(titleLine("Preguntas frecuentes", "help"));
           faqs(record).forEach((item) => {
             const detail = document.createElement("details");
             detail.append(
@@ -1250,24 +1581,23 @@
       const miniGrid = document.createElement("section");
       miniGrid.className = "info-grid";
       miniGrid.append(
-        buildMiniCard("¿Para qué sirve?", sectionText(record, "usos")),
-        buildMiniCard("¿Cómo actúa?", normalizeText(record.tipo) === "medicamento" ? "Actúa mediante mecanismos propios de su grupo farmacológico. La explicación exacta depende del medicamento y debe revisarse con orientación profesional." : "Ayuda a reconocer patrones, contexto y cambios que pueden orientar una consulta más clara."),
-        buildMiniCard("Dosis habitual", sectionText(record, "dosis")),
-        buildMiniCard("Presentaciones", normalizeText(record.tipo) === "medicamento" ? "Las presentaciones pueden variar según el país y el fabricante. Consulta el envase y la indicación profesional." : "La información se presenta como orientación educativa, no como indicación de tratamiento."),
-        buildMiniCard("Efectos secundarios", sectionText(record, "efectos")),
-        buildMiniCard("Precauciones", sectionText(record, "precauciones"))
+        buildMiniCard("¿Para qué sirve?", sectionText(record, "usos"), "target"),
+        buildMiniCard("¿Cómo actúa?", normalizeText(record.tipo) === "medicamento" ? "Actúa mediante mecanismos propios de su grupo farmacológico. La explicación exacta depende del medicamento y debe revisarse con orientación profesional." : "Ayuda a reconocer patrones, contexto y cambios que pueden orientar una consulta más clara.", "activity"),
+        buildMiniCard("Dosis habitual", sectionText(record, "dosis"), "clock"),
+        buildMiniCard("Presentaciones", normalizeText(record.tipo) === "medicamento" ? "Las presentaciones pueden variar según el país y el fabricante. Consulta el envase y la indicación profesional." : "La información se presenta como orientación educativa, no como indicación de tratamiento.", "bottle"),
+        buildMiniCard("Efectos secundarios", sectionText(record, "efectos"), "alert"),
+        buildMiniCard("Precauciones", sectionText(record, "precauciones"), "shield")
       );
 
       const alerts = document.createElement("section");
       alerts.className = "alert-stack";
       [
-        ["Información importante", "warning", "Esta ficha es educativa. No indica diagnósticos, dosis ni tratamientos personalizados."],
-        ["Señales de alarma", "danger", alarmText(record)],
-        ["Cuándo consultar a un médico", "consult", consultText(record)]
-      ].forEach(([heading, className, text]) => {
+        ["Señales de alarma", "danger", "alert", alarmText(record)],
+        ["Cuándo consultar a un médico", "consult", "shield", consultText(record)]
+      ].forEach(([heading, className, iconName, text]) => {
         const alert = document.createElement("article");
         alert.className = `alert-card ${className}`;
-        alert.append(createText("h2", "", heading), createText("p", "", text));
+        alert.append(titleLine(heading, iconName), createText("p", "", text));
         alerts.append(alert);
       });
 
@@ -1291,16 +1621,11 @@
       });
       vita.append(vitaLogo, createText("h2", "", "¿Necesitas orientación?"), createText("p", "", "Describe tu duda y VITA te ayudará a encontrar una ruta clara dentro de IDB."), vitaLink);
 
-      const peru = document.createElement("section");
-      peru.className = "card rail-card";
-      peru.append(
-        createText("h2", "", "Contexto en Perú"),
-        createText("p", "", "La frecuencia y el riesgo pueden variar según edad, antecedentes, ubicación y acceso a servicios de salud.")
-      );
+      const peru = createPeruStats(record);
 
       const tips = document.createElement("section");
       tips.className = "card rail-card";
-      tips.append(createText("h2", "", "Consejos rápidos"));
+      tips.append(titleLine("Consejos rápidos", "spark"));
       const tipsList = document.createElement("ul");
       tipsList.className = "small-list";
       ["Registra duración e intensidad.", "Anota medicamentos o antecedentes.", "Busca ayuda ante señales de alarma."].forEach((tip) => {
@@ -1310,16 +1635,10 @@
       });
       tips.append(tipsList);
 
-      const relatedCard = document.createElement("section");
-      relatedCard.className = "card rail-card";
-      relatedCard.append(createText("h2", "", "Temas relacionados"));
-      if (related.length) renderRelated(relatedCard, records, record);
-      else relatedCard.append(createText("p", "", "Pronto agregaremos más temas conectados."));
-
       const resources = document.createElement("section");
       resources.className = "card rail-card";
       resources.append(
-        createText("h2", "", "Recursos útiles"),
+        titleLine("Recursos útiles", "book"),
         (() => {
           const list = document.createElement("div");
           list.className = "related-list";
@@ -1338,10 +1657,10 @@
         })()
       );
 
-      sidebar.append(vita, peru, tips, relatedCard, resources);
+      sidebar.append(vita, peru, tips, resources);
       grid.append(main, sidebar);
       renderInterest(grid, records, record);
-      grid.append(createText("p", "notice", "Esta información es orientativa y no reemplaza la evaluación, diagnóstico ni tratamiento realizado por un profesional de salud."));
+      grid.append(createLegalNote(updated, source));
       app.append(top, grid);
     }
 
