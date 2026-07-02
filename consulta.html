@@ -634,6 +634,23 @@
       justify-content: space-between;
       gap: 18px;
     }
+    .reference-head-meta {
+      display: grid;
+      gap: 5px;
+      min-width: 170px;
+      justify-items: end;
+      color: #6a7d8f;
+      font-size: .72rem;
+      font-weight: 760;
+      line-height: 1.35;
+      text-align: right;
+    }
+    .reference-head-meta strong {
+      display: block;
+      color: var(--blue-dark);
+      font-size: .78rem;
+      font-weight: 900;
+    }
     .reference-head h2 {
       margin: 0;
       color: var(--blue-dark);
@@ -654,6 +671,17 @@
       gap: 14px;
       align-items: stretch;
     }
+    .reference-secondary-slot {
+      min-width: 0;
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity .45s ease, transform .45s ease;
+    }
+    .reference-secondary-slot.is-changing {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    .reference-secondary-slot .reference-card { height: 100%; }
     .reference-card {
       min-width: 0;
       padding: 16px;
@@ -757,6 +785,13 @@
       white-space: nowrap;
     }
     .reference-chart { display: grid; gap: 7px; margin-top: 14px; }
+    .reference-line-chart {
+      display: block;
+      width: 100%;
+      height: 38px;
+      margin-top: 2px;
+      overflow: visible;
+    }
     .reference-bar {
       display: grid;
       grid-template-columns: 46px minmax(0, 1fr) 44px;
@@ -1023,6 +1058,10 @@
       .tab-btn { flex: 0 0 auto; }
       .reference-strip { padding: 15px; }
       .reference-head { display: grid; }
+      .reference-head-meta {
+        justify-items: start;
+        text-align: left;
+      }
       .reference-grid {
         grid-template-columns: minmax(230px, 82vw);
         grid-auto-flow: column;
@@ -1179,7 +1218,8 @@
       "respiratorio"
     ]);
     const HEALTH_REFERENCE_TOPICS = ["anemia", "asma", "dengue", "diabetes", "hipertension", "obesidad", "salud-mental", "tuberculosis"];
-    const HEALTH_REFERENCE_ICONS = {
+    const ICON_BASE_PATH = "imagenes/consulta/iconos/";
+    const GLOBAL_ICON_MAP = {
       asma: "stethoscope",
       dengue: "microscope",
       diabetes: "activity",
@@ -1200,6 +1240,16 @@
       ["anemia", ["palidez", "cansancio", "anemia", "hierro"]],
       ["tuberculosis", ["tuberculosis", "tos persistente", "sudor nocturno"]]
     ];
+    const HEALTH_REFERENCE_SECONDARIES = {
+      asma: ["tuberculosis", "salud-mental", "dengue", "anemia"],
+      diabetes: ["obesidad", "hipertension", "anemia", "salud-mental"],
+      hipertension: ["diabetes", "obesidad", "salud-mental"],
+      obesidad: ["diabetes", "hipertension", "salud-mental"],
+      dengue: ["anemia", "asma", "tuberculosis"],
+      anemia: ["diabetes", "obesidad", "tuberculosis"],
+      tuberculosis: ["asma", "anemia", "salud-mental"],
+      "salud-mental": ["asma", "obesidad", "hipertension"]
+    };
     const CATEGORY_ASSETS = {
       "adulto-mayor": { folder: "adulto-mayor", icon: "bed.svg" },
       cardiovascular: { folder: "cardiovascular", icon: "heart-handshake.svg" },
@@ -1766,32 +1816,41 @@
 
     async function loadHealthReferenceItems(record) {
       const topics = await loadHealthReferenceTopicList();
-      const primarySlug = relatedHealthReferenceTopic(record);
+      const matchedPrimary = relatedHealthReferenceTopic(record);
       const seedText = slugify(record?.titulo || getQuery() || "idb");
       const rotationSeed = Math.abs(seedText.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0));
-      const rest = topics.filter((slug) => slug !== primarySlug);
-      const offset = rest.length ? rotationSeed % rest.length : 0;
-      const rotated = rest.slice(offset).concat(rest.slice(0, offset));
       const fallbackOffset = topics.length ? rotationSeed % topics.length : 0;
-      const fallback = topics.slice(fallbackOffset).concat(topics.slice(0, fallbackOffset)).slice(0, 3);
-      const slugs = primarySlug ? [primarySlug, ...rotated.slice(0, 2)] : fallback;
-      const loaded = await Promise.all(slugs.map(loadHealthReferenceTopic));
-      return loaded.filter(Boolean).slice(0, 3);
+      const fallbackTopics = topics.slice(fallbackOffset).concat(topics.slice(0, fallbackOffset));
+      const primarySlug = matchedPrimary || fallbackTopics[0];
+      if (!primarySlug) return { primary: null, secondaries: [] };
+      const prioritySecondaries = HEALTH_REFERENCE_SECONDARIES[primarySlug] || [];
+      const secondarySlugs = [...prioritySecondaries, ...fallbackTopics, ...topics]
+        .filter((slug, index, list) => slug && slug !== primarySlug && list.indexOf(slug) === index);
+      const loaded = await Promise.all([primarySlug, ...secondarySlugs].map(loadHealthReferenceTopic));
+      return {
+        primary: loaded[0] || null,
+        secondaries: loaded.slice(1).filter(Boolean)
+      };
     }
 
     function healthReferenceTitle(slug) {
       return String(slug || "general").replace(/-/g, " ");
     }
 
+    function iconPath(name) {
+      return ICON_BASE_PATH + (name || GLOBAL_ICON_MAP.general) + ".svg";
+    }
+
     function createHealthReferenceIcon(slug) {
-      const iconName = HEALTH_REFERENCE_ICONS[slug] || HEALTH_REFERENCE_ICONS.general;
+      const iconName = GLOBAL_ICON_MAP[slug] || GLOBAL_ICON_MAP.general;
       const box = document.createElement("span");
       box.className = "reference-icon";
       const image = document.createElement("img");
-      image.src = "imagenes/consulta/iconos/" + iconName + ".svg";
+      image.src = iconPath(iconName);
       image.alt = "";
       image.loading = "lazy";
       image.decoding = "async";
+      image.onerror = () => { image.src = iconPath(GLOBAL_ICON_MAP.general); };
       box.append(image);
       return box;
     }
@@ -1831,6 +1890,28 @@
         .map((label, index) => ({ label, value: Number(chart.values[index]) || 0 }))
         .filter((point) => point.value > 0);
       const max = Math.max(...points.map((point) => point.value), 1);
+      const chartType = normalizeText(chart.tipo || "barras");
+      if (chartType.includes("linea") || chartType.includes("line")) {
+        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svg.setAttribute("viewBox", "0 0 120 36");
+        svg.setAttribute("aria-hidden", "true");
+        svg.classList.add("reference-line-chart");
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        const d = points.map((point, index) => {
+          const x = points.length === 1 ? 60 : (index / (points.length - 1)) * 112 + 4;
+          const y = 32 - (point.value / max) * 26;
+          return (index ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1);
+        }).join(" ");
+        path.setAttribute("d", d);
+        path.setAttribute("fill", "none");
+        path.setAttribute("stroke", "#1769aa");
+        path.setAttribute("stroke-width", "2");
+        path.setAttribute("stroke-linecap", "round");
+        path.setAttribute("stroke-linejoin", "round");
+        svg.append(path);
+        block.append(svg);
+        return block;
+      }
       points.forEach(({ label, value }) => {
         const row = document.createElement("div");
         row.className = "reference-bar";
@@ -1876,28 +1957,62 @@
           createText("p", "reference-summary", "Información estadística en proceso de actualización."),
           createText("p", "reference-summary", "IDB incorporará próximamente indicadores oficiales provenientes de MINSA, INS, CDC Perú, OPS, OMS e INEI.")
         );
-      } else {
-        card.append(createText("p", "reference-summary", "Gráfico en proceso de actualización con datos oficiales."));
       }
       const source = Array.isArray(item.fuentes) && item.fuentes[0]?.nombre ? item.fuentes[0].nombre : indicators[0]?.fuente || "Fuente institucional";
       card.append(createText("div", "reference-meta", "Fuente: " + source + " · Actualizado: " + (item.ultima_actualizacion || "Sin fecha")));
       return card;
     }
 
+    function referenceSource(item) {
+      return Array.isArray(item?.fuentes) && item.fuentes[0]?.nombre ? item.fuentes[0].nombre : "Fuente oficial";
+    }
+
+    function createReferenceSecondarySlot(items, startIndex) {
+      const slot = document.createElement("div");
+      slot.className = "reference-secondary-slot";
+      let index = startIndex;
+      const render = () => {
+        if (!items.length) return;
+        slot.replaceChildren(createHealthReferenceCard(items[index % items.length], false));
+      };
+      render();
+      if (items.length > 2) {
+        window.setInterval(() => {
+          slot.classList.add("is-changing");
+          window.setTimeout(() => {
+            index = (index + 2) % items.length;
+            render();
+            slot.classList.remove("is-changing");
+          }, 260);
+        }, 9000 + startIndex * 1400);
+      }
+      return slot;
+    }
+
     async function renderHealthReference(container, record) {
-      const items = await loadHealthReferenceItems(record);
-      if (!items.length) return;
+      const { primary, secondaries } = await loadHealthReferenceItems(record);
+      if (!primary) return;
+      const visibleSecondaries = secondaries.slice(0, 2);
       const section = document.createElement("section");
       section.className = "reference-strip";
       const head = document.createElement("div");
       head.className = "reference-head";
       const copy = document.createElement("div");
-      copy.append(createText("h2", "", "Información referencial en salud"), createText("p", "", "Datos informativos de referencia para ampliar el contexto de salud pública."));
-      head.append(copy, createText("span", "reference-note", "Información referencial. No reemplaza una consulta médica."));
+      copy.append(createText("h2", "", "Información referencial en salud"), createText("p", "", "Indicadores oficiales para comprender mejor esta condición."));
+      const meta = document.createElement("div");
+      meta.className = "reference-head-meta";
+      meta.append(
+        createText("span", "", "Última actualización"),
+        createText("strong", "", primary.ultima_actualizacion || "Sin fecha"),
+        createText("span", "", "Fuente oficial"),
+        createText("strong", "", referenceSource(primary))
+      );
+      head.append(copy, meta);
       const grid = document.createElement("div");
       grid.className = "reference-grid";
-      items.forEach((item, index) => grid.append(createHealthReferenceCard(item, index === 0)));
-      section.append(head, grid);
+      grid.append(createHealthReferenceCard(primary, true));
+      visibleSecondaries.forEach((_, index) => grid.append(createReferenceSecondarySlot(secondaries, index)));
+      section.append(head, grid, createText("span", "reference-note", "Información referencial. No reemplaza una consulta médica."));
       container.append(section);
     }
     function createStatsChart(chart) {
