@@ -615,6 +615,137 @@
     .related-link strong { color: var(--ink); font-size: .95rem; }
     .related-link span { color: #6c7d8d; font-size: .78rem; font-weight: 800; }
 
+    .reference-strip {
+      grid-column: 1 / -1;
+      display: grid;
+      gap: 14px;
+      margin-top: 10px;
+      padding: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(23, 105, 170, .18);
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(31, 143, 115, .18), transparent 30%),
+        linear-gradient(135deg, #0f2d4a 0%, #10233f 58%, #123d4f 100%);
+      color: #edf7ff;
+      box-shadow: 0 18px 44px rgba(16, 35, 63, .12);
+    }
+    .reference-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .reference-head h2 {
+      margin: 0;
+      color: #fff;
+      font-size: clamp(1.08rem, 1.8vw, 1.35rem);
+      line-height: 1.15;
+    }
+    .reference-head p {
+      margin: 6px 0 0;
+      color: rgba(237, 247, 255, .72);
+      font-size: .86rem;
+    }
+    .reference-grid {
+      display: grid;
+      grid-template-columns: minmax(280px, 1.3fr) repeat(2, minmax(210px, .85fr));
+      gap: 12px;
+      align-items: stretch;
+    }
+    .reference-card {
+      min-width: 0;
+      padding: 14px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 16px;
+      background: rgba(255,255,255,.075);
+      backdrop-filter: blur(10px);
+    }
+    .reference-card.primary { background: rgba(255,255,255,.11); }
+    .reference-card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .reference-icon {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 34px;
+      border-radius: 11px;
+      background: rgba(255,255,255,.12);
+    }
+    .reference-icon img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: .92;
+    }
+    .reference-card h3 {
+      margin: 0;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+    .reference-card small {
+      display: block;
+      margin-top: 2px;
+      color: rgba(237,247,255,.62);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .reference-summary {
+      margin: 0 0 10px;
+      color: rgba(237,247,255,.78);
+      font-size: .84rem;
+      line-height: 1.45;
+    }
+    .reference-indicators { display: grid; gap: 7px; margin-top: 10px; }
+    .reference-indicator {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      color: rgba(237,247,255,.8);
+      font-size: .78rem;
+    }
+    .reference-indicator strong { color: #fff; white-space: nowrap; }
+    .reference-chart { display: grid; gap: 6px; margin-top: 12px; }
+    .reference-bar {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr) 42px;
+      gap: 8px;
+      align-items: center;
+      color: rgba(237,247,255,.65);
+      font-size: .68rem;
+      font-weight: 800;
+    }
+    .reference-track {
+      height: 5px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255,255,255,.12);
+    }
+    .reference-fill {
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #55d6b0, #8ac7ff);
+    }
+    .reference-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 12px;
+      margin-top: 10px;
+      color: rgba(237,247,255,.55);
+      font-size: .68rem;
+      font-weight: 760;
+    }
+    .reference-note { color: rgba(237,247,255,.62); font-size: .72rem; }
     .interest-section {
       grid-column: 1 / -1;
       margin-top: 12px;
@@ -843,6 +974,18 @@
         padding-bottom: 2px;
       }
       .tab-btn { flex: 0 0 auto; }
+      .reference-strip { padding: 15px; }
+      .reference-head { display: grid; }
+      .reference-grid {
+        grid-template-columns: minmax(230px, 82vw);
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(230px, 82vw);
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        padding-bottom: 2px;
+        scroll-snap-type: x proximity;
+      }
+      .reference-card { scroll-snap-align: start; }
       .interest-section { min-width: 0; }
       .interest-row { grid-auto-columns: minmax(210px, 82vw); }
       .interest-head { display: grid; }
@@ -988,6 +1131,28 @@
       "prevencion",
       "respiratorio"
     ]);
+    const HEALTH_REFERENCE_TOPICS = ["anemia", "asma", "dengue", "diabetes", "hipertension", "obesidad", "salud-mental", "tuberculosis"];
+    const HEALTH_REFERENCE_ICONS = {
+      asma: "stethoscope",
+      dengue: "microscope",
+      diabetes: "activity",
+      hipertension: "heart",
+      obesidad: "activity",
+      "salud-mental": "heart-handshake",
+      anemia: "microscope",
+      tuberculosis: "hospital",
+      general: "shield"
+    };
+    const HEALTH_REFERENCE_RELATIONS = [
+      ["asma", ["tos", "bronquios", "respirar", "asma", "silbido", "falta de aire"]],
+      ["dengue", ["fiebre", "mosquito", "dengue", "dolor cuerpo"]],
+      ["diabetes", ["glucosa", "azucar", "diabetes"]],
+      ["hipertension", ["presion", "hipertension", "tension alta"]],
+      ["obesidad", ["peso", "obesidad", "sobrepeso", "imc"]],
+      ["salud-mental", ["ansiedad", "estres", "depresion", "salud mental"]],
+      ["anemia", ["palidez", "cansancio", "anemia", "hierro"]],
+      ["tuberculosis", ["tuberculosis", "tos persistente", "sudor nocturno"]]
+    ];
     const CATEGORY_ASSETS = {
       "adulto-mayor": { folder: "adulto-mayor", icon: "bed.svg" },
       cardiovascular: { folder: "cardiovascular", icon: "heart-handshake.svg" },
@@ -1531,6 +1696,134 @@
       };
     }
 
+    function healthReferenceQuery(record) {
+      return normalizeText((record?.titulo || "") + " " + (record?.tipo || "") + " " + (record?.categoria || "") + " " + ((record?.keywords || []).join(" ")));
+    }
+
+    function relatedHealthReferenceTopic(record) {
+      const haystack = healthReferenceQuery(record);
+      const match = HEALTH_REFERENCE_RELATIONS.find(([, roots]) => roots.some((root) => haystack.includes(root)));
+      return match ? match[0] : "";
+    }
+
+    async function loadHealthReferenceTopic(slug) {
+      if (!slug || slug === "index") return null;
+      const data = await fetchJsonIfExists("data/stats/peru/" + slug + ".json");
+      return data ? { ...data, slug } : null;
+    }
+
+    async function loadHealthReferenceTopicList() {
+      const index = await fetchJsonIfExists("data/stats/peru/index.json");
+      return Array.isArray(index?.registros) && index.registros.length ? index.registros : HEALTH_REFERENCE_TOPICS;
+    }
+
+    async function loadHealthReferenceItems(record) {
+      const topics = await loadHealthReferenceTopicList();
+      const primarySlug = relatedHealthReferenceTopic(record);
+      const seedText = slugify(record?.titulo || getQuery() || "idb");
+      const rotationSeed = Math.abs(seedText.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0));
+      const rest = topics.filter((slug) => slug !== primarySlug);
+      const offset = rest.length ? rotationSeed % rest.length : 0;
+      const rotated = rest.slice(offset).concat(rest.slice(0, offset));
+      const fallbackOffset = topics.length ? rotationSeed % topics.length : 0;
+      const fallback = topics.slice(fallbackOffset).concat(topics.slice(0, fallbackOffset)).slice(0, 3);
+      const slugs = primarySlug ? [primarySlug, ...rotated.slice(0, 2)] : fallback;
+      const loaded = await Promise.all(slugs.map(loadHealthReferenceTopic));
+      return loaded.filter(Boolean).slice(0, 3);
+    }
+
+    function healthReferenceTitle(slug) {
+      return String(slug || "general").replace(/-/g, " ");
+    }
+
+    function createHealthReferenceIcon(slug) {
+      const iconName = HEALTH_REFERENCE_ICONS[slug] || HEALTH_REFERENCE_ICONS.general;
+      const box = document.createElement("span");
+      box.className = "reference-icon";
+      const image = document.createElement("img");
+      image.src = "imagenes/consulta/iconos/" + iconName + ".svg";
+      image.alt = "";
+      image.loading = "lazy";
+      image.decoding = "async";
+      box.append(image);
+      return box;
+    }
+
+    function validReferenceIndicators(item) {
+      return Array.isArray(item?.indicadores) ? item.indicadores.filter((indicator) => indicator?.titulo).slice(0, 2) : [];
+    }
+
+    function validReferenceChart(item) {
+      if (!Array.isArray(item?.graficos)) return null;
+      return item.graficos.find((chart) => Array.isArray(chart.labels) && Array.isArray(chart.values) && chart.labels.length && chart.values.length) || null;
+    }
+
+    function createReferenceChart(chart) {
+      const block = document.createElement("div");
+      block.className = "reference-chart";
+      const values = chart.values.map((value) => Number(value) || 0);
+      const max = Math.max(...values, 1);
+      chart.labels.slice(0, values.length).forEach((label, index) => {
+        const value = values[index] || 0;
+        const row = document.createElement("div");
+        row.className = "reference-bar";
+        const track = document.createElement("div");
+        track.className = "reference-track";
+        const fill = document.createElement("div");
+        fill.className = "reference-fill";
+        fill.style.width = max > 0 ? Math.max(0, Math.min(100, (value / max) * 100)) + "%" : "0%";
+        track.append(fill);
+        row.append(createText("span", "", String(label)), track, createText("strong", "", String(value) + (chart.unidad || "")));
+        block.append(row);
+      });
+      return block;
+    }
+
+    function createHealthReferenceCard(item, isPrimary = false) {
+      const card = document.createElement("article");
+      card.className = "reference-card" + (isPrimary ? " primary" : "");
+      const top = document.createElement("div");
+      top.className = "reference-card-top";
+      const titleWrap = document.createElement("div");
+      titleWrap.append(createText("h3", "", healthReferenceTitle(item.slug || item.tema)), createText("small", "", isPrimary ? "Relacionado con tu consulta" : "Referencia complementaria"));
+      top.append(createHealthReferenceIcon(item.slug || item.tema), titleWrap);
+      card.append(top);
+      if (item.resumen) card.append(createText("p", "reference-summary", item.resumen));
+      const indicators = validReferenceIndicators(item);
+      if (indicators.length) {
+        const list = document.createElement("div");
+        list.className = "reference-indicators";
+        indicators.forEach((indicator) => {
+          const row = document.createElement("div");
+          row.className = "reference-indicator";
+          row.append(createText("span", "", indicator.titulo), createText("strong", "", String(indicator.valor || "") + (indicator.unidad && !String(indicator.valor || "").includes(indicator.unidad) ? " " + indicator.unidad : "")));
+          list.append(row);
+        });
+        card.append(list);
+      }
+      const chart = validReferenceChart(item);
+      if (chart) card.append(createReferenceChart(chart));
+      const source = Array.isArray(item.fuentes) && item.fuentes[0]?.nombre ? item.fuentes[0].nombre : indicators[0]?.fuente || "Fuente no especificada";
+      card.append(createText("div", "reference-meta", "Fuente: " + source + " · Actualizado: " + (item.ultima_actualizacion || "Sin fecha")));
+      return card;
+    }
+
+    async function renderHealthReference(container, record) {
+      const items = await loadHealthReferenceItems(record);
+      if (!items.length) return;
+      const section = document.createElement("section");
+      section.className = "reference-strip";
+      const head = document.createElement("div");
+      head.className = "reference-head";
+      const copy = document.createElement("div");
+      copy.append(createText("h2", "", "Información referencial en salud"), createText("p", "", "Datos informativos de referencia para ampliar el contexto de salud pública."));
+      head.append(copy, createText("span", "reference-note", "Información referencial. No reemplaza una consulta médica."));
+      const grid = document.createElement("div");
+      grid.className = "reference-grid";
+      items.forEach((item, index) => grid.append(createHealthReferenceCard(item, index === 0)));
+      section.append(head, grid);
+      container.append(section);
+    }
     function createStatsChart(chart) {
       const block = document.createElement("div");
       block.className = "context-chart";
@@ -1707,7 +2000,7 @@
       return null;
     }
 
-    function renderRecord(record, query, records, stats) {
+    async function renderRecord(record, query, records, stats) {
       const app = document.querySelector("#consulta-app");
       const source = getSourceLabel(record);
       const updated = record.ultima_revision || record._knowledge?.ultima_revision || "2026-06";
@@ -1878,6 +2171,7 @@
 
       sidebar.append(vita);
       grid.append(main, sidebar);
+      await renderHealthReference(grid, record);
       renderInterest(grid, records, record);
       grid.append(createLegalNote(updated, source));
       app.append(top, grid);
@@ -1922,7 +2216,7 @@
 
         if (record) {
           const stats = await loadStatsForRecord(record, query);
-          renderRecord(record, query, records, stats);
+          await renderRecord(record, query, records, stats);
         } else {
           renderEmpty(query);
         }
