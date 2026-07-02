@@ -1231,14 +1231,14 @@
       general: "shield"
     };
     const HEALTH_REFERENCE_RELATIONS = [
+      ["tuberculosis", ["tuberculosis", "tos persistente", "sudor nocturno"]],
+      ["salud-mental", ["ansiedad", "estres", "depresion", "salud mental"]],
       ["asma", ["tos", "bronquios", "respirar", "asma", "silbido", "falta de aire"]],
       ["dengue", ["fiebre", "mosquito", "dengue", "dolor cuerpo"]],
       ["diabetes", ["glucosa", "azucar", "diabetes"]],
       ["hipertension", ["presion", "hipertension", "tension alta"]],
       ["obesidad", ["peso", "obesidad", "sobrepeso", "imc"]],
-      ["salud-mental", ["ansiedad", "estres", "depresion", "salud mental"]],
-      ["anemia", ["palidez", "cansancio", "anemia", "hierro"]],
-      ["tuberculosis", ["tuberculosis", "tos persistente", "sudor nocturno"]]
+      ["anemia", ["palidez", "cansancio", "anemia", "hierro"]]
     ];
     const HEALTH_REFERENCE_SECONDARIES = {
       asma: ["tuberculosis", "salud-mental", "dengue", "anemia"],
@@ -2043,7 +2043,7 @@
     function createStatsContext(record, stats) {
       const section = document.createElement("section");
       section.className = "context-section";
-      section.append(titleLine("Datos y contexto", "chart"));
+      section.append(titleLine("Información referencial en salud", "chart"));
 
       if (hasRealStats(stats)) {
         const indicators = validStatsIndicators(stats);
@@ -2251,7 +2251,7 @@
       heroCopy.append(createText("span", "category-pill", `${typeLabel} · ${record.categoria || "IDB"}`), title, summary, share);
       share.append(heroVita, copyBtn, waShare);
       hero.append(heroCopy, createVisual(record));
-      top.append(breadcrumb, hero, createKeyFacts(record), createStatsContext(record, stats));
+      top.append(breadcrumb, hero, createKeyFacts(record));
 
       const grid = document.createElement("section");
       grid.className = "wrap content-grid";
