@@ -10,23 +10,40 @@
       "fecha_consulta": "2026-06"
     }
   ],
-  "resumen": "",
+  "resumen": "La tuberculosis continúa siendo una enfermedad de vigilancia prioritaria por su transmisión respiratoria, necesidad de diagnóstico oportuno y seguimiento completo. En Perú, reconocer tos persistente, pérdida de peso, fiebre o sudoración nocturna ayuda a buscar evaluación temprana. Esta información es educativa y refuerza la importancia de acudir a servicios de salud ante sospecha.",
   "indicadores": [
     {
-      "titulo": "Casos notificados",
-      "valor": "0",
-      "unidad": "casos",
-      "descripcion": "",
+      "titulo": "Vigilancia sanitaria",
+      "valor": "Prioritaria",
+      "unidad": "",
+      "descripcion": "Requiere detección temprana, evaluación de contactos y continuidad del seguimiento.",
+      "fuente": "MINSA"
+    },
+    {
+      "titulo": "Consulta temprana",
+      "valor": "Clave",
+      "unidad": "",
+      "descripcion": "La tos persistente y síntomas generales deben motivar evaluación profesional.",
       "fuente": "MINSA"
     }
   ],
   "graficos": [
     {
       "tipo": "barras",
-      "titulo": "Distribución por edad",
-      "labels": ["18-29", "30-44", "45-59", "60+"],
-      "values": [0, 0, 0, 0],
-      "unidad": "%",
+      "titulo": "Prioridad referencial por componente",
+      "labels": [
+        "Síntomas",
+        "Diagnóstico",
+        "Contactos",
+        "Seguimiento"
+      ],
+      "values": [
+        5,
+        5,
+        4,
+        5
+      ],
+      "unidad": "/5",
       "fuente": "MINSA"
     }
   ]

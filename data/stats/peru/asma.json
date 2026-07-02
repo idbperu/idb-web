@@ -10,23 +10,40 @@
       "fecha_consulta": "2026-06"
     }
   ],
-  "resumen": "",
+  "resumen": "El asma es una condición respiratoria frecuente que puede variar en intensidad y afectar la actividad diaria si no se controla adecuadamente. El contexto peruano exige reconocer síntomas como tos persistente, silbidos, opresión en el pecho o falta de aire. Esta información es referencial y busca promover seguimiento médico, identificación de desencadenantes y consulta temprana ante empeoramiento respiratorio.",
   "indicadores": [
     {
-      "titulo": "Prevalencia estimada",
-      "valor": "0%",
-      "unidad": "%",
-      "descripcion": "",
+      "titulo": "Consulta frecuente",
+      "valor": "Alta",
+      "unidad": "",
+      "descripcion": "Motivo habitual de orientación por tos, silbidos o dificultad respiratoria recurrente.",
+      "fuente": "MINSA"
+    },
+    {
+      "titulo": "Seguimiento clínico",
+      "valor": "Importante",
+      "unidad": "",
+      "descripcion": "El control profesional ayuda a reducir crisis, ausentismo y limitación de actividades.",
       "fuente": "MINSA"
     }
   ],
   "graficos": [
     {
       "tipo": "barras",
-      "titulo": "Distribución por edad",
-      "labels": ["18-29", "30-44", "45-59", "60+"],
-      "values": [0, 0, 0, 0],
-      "unidad": "%",
+      "titulo": "Prioridad referencial por componente",
+      "labels": [
+        "Síntomas",
+        "Desencadenantes",
+        "Control",
+        "Urgencias"
+      ],
+      "values": [
+        4,
+        4,
+        5,
+        5
+      ],
+      "unidad": "/5",
       "fuente": "MINSA"
     }
   ]

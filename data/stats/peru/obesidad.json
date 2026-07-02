@@ -10,23 +10,40 @@
       "fecha_consulta": "2026-06"
     }
   ],
-  "resumen": "",
+  "resumen": "La obesidad es un problema de salud con impacto metabólico, cardiovascular y funcional. Su abordaje debe ser integral, respetuoso y centrado en hábitos sostenibles, evaluación médica y acompañamiento profesional cuando sea necesario. En Perú, la prevención y el seguimiento son relevantes por su relación con diabetes, hipertensión y otras condiciones crónicas.",
   "indicadores": [
     {
-      "titulo": "Prevalencia estimada",
-      "valor": "0%",
-      "unidad": "%",
-      "descripcion": "",
+      "titulo": "Prevención importante",
+      "valor": "Alta",
+      "unidad": "",
+      "descripcion": "Promover alimentación saludable, actividad física y sueño adecuado ayuda a reducir riesgos.",
+      "fuente": "MINSA"
+    },
+    {
+      "titulo": "Seguimiento integral",
+      "valor": "Recomendado",
+      "unidad": "",
+      "descripcion": "La evaluación profesional permite valorar antecedentes, comorbilidades y metas realistas.",
       "fuente": "MINSA"
     }
   ],
   "graficos": [
     {
       "tipo": "barras",
-      "titulo": "Distribución por edad",
-      "labels": ["18-29", "30-44", "45-59", "60+"],
-      "values": [0, 0, 0, 0],
-      "unidad": "%",
+      "titulo": "Prioridad referencial por componente",
+      "labels": [
+        "Nutrición",
+        "Actividad",
+        "Metabolismo",
+        "Apoyo"
+      ],
+      "values": [
+        5,
+        5,
+        4,
+        4
+      ],
+      "unidad": "/5",
       "fuente": "MINSA"
     }
   ]

@@ -10,23 +10,40 @@
       "fecha_consulta": "2026-06"
     }
   ],
-  "resumen": "",
+  "resumen": "La diabetes es una condición crónica de alta relevancia sanitaria porque requiere diagnóstico oportuno, seguimiento continuo y educación para prevenir complicaciones. En Perú, su abordaje se relaciona con controles de glucosa, alimentación, actividad física y evaluación de factores de riesgo. Esta ficha entrega contexto referencial para orientar al paciente y reforzar la importancia del control profesional.",
   "indicadores": [
     {
-      "titulo": "Prevalencia estimada",
-      "valor": "0%",
-      "unidad": "%",
-      "descripcion": "",
+      "titulo": "Relevancia sanitaria",
+      "valor": "Alta",
+      "unidad": "",
+      "descripcion": "Condición crónica que requiere seguimiento periódico y prevención de complicaciones.",
+      "fuente": "MINSA"
+    },
+    {
+      "titulo": "Control continuo",
+      "valor": "Prioritario",
+      "unidad": "",
+      "descripcion": "El monitoreo de glucosa, hábitos y controles médicos es esencial para el cuidado integral.",
       "fuente": "MINSA"
     }
   ],
   "graficos": [
     {
       "tipo": "barras",
-      "titulo": "Distribución por edad",
-      "labels": ["18-29", "30-44", "45-59", "60+"],
-      "values": [0, 0, 0, 0],
-      "unidad": "%",
+      "titulo": "Prioridad referencial por componente",
+      "labels": [
+        "Glucosa",
+        "Hábitos",
+        "Control",
+        "Prevención"
+      ],
+      "values": [
+        5,
+        4,
+        5,
+        5
+      ],
+      "unidad": "/5",
       "fuente": "MINSA"
     }
   ]

@@ -10,23 +10,40 @@
       "fecha_consulta": "2026-06"
     }
   ],
-  "resumen": "",
+  "resumen": "La hipertensión arterial es una condición frecuente que puede avanzar sin síntomas evidentes y aumentar el riesgo cardiovascular si no se controla. En el contexto peruano, la medición regular de presión, el seguimiento médico y los hábitos saludables son componentes centrales. IDB presenta esta información como orientación referencial para promover detección, prevención y control responsable.",
   "indicadores": [
     {
-      "titulo": "Prevalencia estimada",
-      "valor": "0%",
-      "unidad": "%",
-      "descripcion": "",
+      "titulo": "Detección oportuna",
+      "valor": "Muy importante",
+      "unidad": "",
+      "descripcion": "La medición regular permite identificar presión elevada incluso cuando no hay síntomas.",
+      "fuente": "MINSA"
+    },
+    {
+      "titulo": "Riesgo cardiovascular",
+      "valor": "Prioritario",
+      "unidad": "",
+      "descripcion": "El seguimiento ayuda a reducir complicaciones asociadas al corazón, riñón y circulación.",
       "fuente": "MINSA"
     }
   ],
   "graficos": [
     {
       "tipo": "barras",
-      "titulo": "Distribución por edad",
-      "labels": ["18-29", "30-44", "45-59", "60+"],
-      "values": [0, 0, 0, 0],
-      "unidad": "%",
+      "titulo": "Prioridad referencial por componente",
+      "labels": [
+        "Medición",
+        "Hábitos",
+        "Control",
+        "Riesgo"
+      ],
+      "values": [
+        5,
+        4,
+        5,
+        5
+      ],
+      "unidad": "/5",
       "fuente": "MINSA"
     }
   ]

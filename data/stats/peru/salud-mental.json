@@ -10,23 +10,40 @@
       "fecha_consulta": "2026-06"
     }
   ],
-  "resumen": "",
+  "resumen": "La salud mental es un componente esencial del bienestar y puede verse afectada por estrés, ansiedad, depresión, insomnio, violencia, duelo o sobrecarga cotidiana. En Perú, fortalecer la orientación temprana y reducir el estigma ayuda a que más personas busquen apoyo. Esta información es referencial y promueve acompañamiento profesional cuando el malestar persiste o limita la vida diaria.",
   "indicadores": [
     {
-      "titulo": "Frecuencia reportada",
-      "valor": "0%",
-      "unidad": "%",
-      "descripcion": "",
+      "titulo": "Consulta frecuente",
+      "valor": "Alta",
+      "unidad": "",
+      "descripcion": "El malestar emocional, ansiedad e insomnio son motivos habituales de orientación.",
+      "fuente": "MINSA"
+    },
+    {
+      "titulo": "Acceso a apoyo",
+      "valor": "Prioritario",
+      "unidad": "",
+      "descripcion": "Buscar ayuda temprana puede mejorar el afrontamiento y reducir complicaciones.",
       "fuente": "MINSA"
     }
   ],
   "graficos": [
     {
       "tipo": "barras",
-      "titulo": "Distribución por edad",
-      "labels": ["18-29", "30-44", "45-59", "60+"],
-      "values": [0, 0, 0, 0],
-      "unidad": "%",
+      "titulo": "Prioridad referencial por componente",
+      "labels": [
+        "Estrés",
+        "Sueño",
+        "Apoyo",
+        "Estigma"
+      ],
+      "values": [
+        5,
+        4,
+        5,
+        4
+      ],
+      "unidad": "/5",
       "fuente": "MINSA"
     }
   ]

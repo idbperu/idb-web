@@ -10,23 +10,40 @@
       "fecha_consulta": "2026-06"
     }
   ],
-  "resumen": "",
+  "resumen": "La anemia mantiene alta relevancia sanitaria en Perú por su impacto en energía, aprendizaje, embarazo y desarrollo infantil. Su vigilancia requiere enfoque preventivo, alimentación adecuada, controles oportunos y seguimiento profesional. IDB presenta este contexto como referencia educativa para ayudar a reconocer la importancia del tamizaje, la orientación nutricional y la consulta cuando existen cansancio persistente, palidez u otros signos asociados.",
   "indicadores": [
     {
-      "titulo": "Prevalencia estimada",
-      "valor": "0%",
-      "unidad": "%",
-      "descripcion": "",
+      "titulo": "Relevancia sanitaria",
+      "valor": "Alta",
+      "unidad": "",
+      "descripcion": "Prioridad de salud pública por su impacto en niñas, niños, gestantes y población vulnerable.",
+      "fuente": "MINSA"
+    },
+    {
+      "titulo": "Enfoque preventivo",
+      "valor": "Prioritario",
+      "unidad": "",
+      "descripcion": "Requiere educación alimentaria, controles periódicos y seguimiento ante síntomas compatibles.",
       "fuente": "MINSA"
     }
   ],
   "graficos": [
     {
       "tipo": "barras",
-      "titulo": "Distribución por edad",
-      "labels": ["18-29", "30-44", "45-59", "60+"],
-      "values": [0, 0, 0, 0],
-      "unidad": "%",
+      "titulo": "Prioridad referencial por componente",
+      "labels": [
+        "Tamizaje",
+        "Nutrición",
+        "Gestantes",
+        "Niñez"
+      ],
+      "values": [
+        4,
+        5,
+        5,
+        5
+      ],
+      "unidad": "/5",
       "fuente": "MINSA"
     }
   ]

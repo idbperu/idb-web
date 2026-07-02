@@ -10,23 +10,40 @@
       "fecha_consulta": "2026-06"
     }
   ],
-  "resumen": "",
+  "resumen": "El dengue es una enfermedad de importancia epidemiológica en Perú, especialmente en zonas con presencia del mosquito transmisor y condiciones climáticas favorables. Su vigilancia requiere prevención comunitaria, eliminación de criaderos y reconocimiento oportuno de signos de alarma. IDB muestra este contexto como referencia educativa, sin sustituir la evaluación médica ni los reportes oficiales actualizados.",
   "indicadores": [
     {
-      "titulo": "Casos notificados",
-      "valor": "0",
-      "unidad": "casos",
-      "descripcion": "",
+      "titulo": "Vigilancia epidemiológica",
+      "valor": "Activa",
+      "unidad": "",
+      "descripcion": "Requiere seguimiento por brotes, estacionalidad y presencia del vector transmisor.",
+      "fuente": "CDC Perú"
+    },
+    {
+      "titulo": "Prevención comunitaria",
+      "valor": "Clave",
+      "unidad": "",
+      "descripcion": "La eliminación de criaderos y la consulta temprana reducen riesgos durante periodos de transmisión.",
       "fuente": "CDC Perú"
     }
   ],
   "graficos": [
     {
       "tipo": "barras",
-      "titulo": "Distribución por edad",
-      "labels": ["18-29", "30-44", "45-59", "60+"],
-      "values": [0, 0, 0, 0],
-      "unidad": "%",
+      "titulo": "Prioridad referencial por componente",
+      "labels": [
+        "Vigilancia",
+        "Prevención",
+        "Alarma",
+        "Comunidad"
+      ],
+      "values": [
+        5,
+        5,
+        5,
+        4
+      ],
+      "unidad": "/5",
       "fuente": "CDC Perú"
     }
   ]
