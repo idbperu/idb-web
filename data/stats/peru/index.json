@@ -12,13 +12,16 @@
     "EsSalud"
   ],
   "registros": [
+    "anemia",
+    "asma",
+    "dengue",
     "diabetes",
     "hipertension",
     "obesidad",
-    "anemia",
-    "dengue",
-    "tuberculosis",
-    "asma",
-    "salud-mental"
-  ]
+    "salud-mental",
+    "tuberculosis"
+  ],
+  "fuente_principal": "",
+  "fuentes": [],
+  "nota": "Información referencial. No reemplaza una consulta médica."
 }

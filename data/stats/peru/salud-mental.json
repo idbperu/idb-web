@@ -5,9 +5,9 @@
   "proxima_revision": "2026-12",
   "fuentes": [
     {
-      "nombre": "MINSA",
-      "url": "",
-      "fecha_consulta": "2026-06"
+      "nombre": "INEI - ENDES Enfermedades No Transmisibles y Transmisibles 2024",
+      "url": "https://proyectos.inei.gob.pe/endes/2024/SALUD/ENFERMEDADES_ENDES_2024.pdf",
+      "fecha_consulta": "2026-07"
     }
   ],
   "resumen": "La salud mental es un componente esencial del bienestar y puede verse afectada por estrés, ansiedad, depresión, insomnio, violencia, duelo o sobrecarga cotidiana. En Perú, fortalecer la orientación temprana y reducir el estigma ayuda a que más personas busquen apoyo. Esta información es referencial y promueve acompañamiento profesional cuando el malestar persiste o limita la vida diaria.",
@@ -46,5 +46,42 @@
       "unidad": "/5",
       "fuente": "MINSA"
     }
-  ]
+  ],
+  "historico": {
+    "2023": 10.9,
+    "2024": 10.6,
+    "2025": 0
+  },
+  "dashboard": {
+    "barras": {
+      "titulo": "Tendencia referencial",
+      "labels": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "values": [
+        10.9,
+        10.6,
+        0
+      ],
+      "unidad": "%"
+    },
+    "circular": {
+      "titulo": "Distribución referencial",
+      "labels": [
+        "Prevención",
+        "Seguimiento",
+        "Consulta"
+      ],
+      "values": [
+        0,
+        0,
+        0
+      ],
+      "unidad": "%"
+    }
+  },
+  "fuente_principal": "INEI - ENDES",
+  "nota": "Información referencial. No reemplaza una consulta médica."
 }

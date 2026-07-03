@@ -638,232 +638,142 @@
     .related-link strong { color: var(--ink); font-size: .95rem; }
     .related-link span { color: #6c7d8d; font-size: .78rem; font-weight: 800; }
 
-    .reference-strip {
-      grid-column: 1 / -1;
+    .reference-dashboard {
       display: grid;
       gap: 16px;
-      margin-top: 10px;
       padding: 18px;
-      overflow: hidden;
-      border: 1px solid rgba(220, 232, 242, .95);
-      border-radius: var(--radius);
-      background: #FFFFFF;
+      border: 1px solid rgba(220, 232, 242, .96);
+      border-radius: 18px;
+      background: #fff;
       color: var(--ink);
-      box-shadow: 0 14px 40px rgba(16, 35, 63, .055);
+      box-shadow: 0 16px 36px rgba(16, 35, 63, .07);
     }
-    .reference-head {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 18px;
-    }
-    .reference-head-meta {
-      display: grid;
-      gap: 5px;
-      min-width: 170px;
-      justify-items: end;
-      color: #6a7d8f;
-      font-size: .72rem;
-      font-weight: 760;
-      line-height: 1.35;
-      text-align: right;
-    }
-    .reference-head-meta strong {
-      display: block;
-      color: var(--blue-dark);
-      font-size: .78rem;
-      font-weight: 900;
-    }
-    .reference-head h2 {
+    .reference-dashboard h2 {
       margin: 0;
       color: var(--blue-dark);
-      font-size: clamp(1.12rem, 1.8vw, 1.42rem);
-      line-height: 1.15;
+      font-size: 1.06rem;
+      line-height: 1.18;
       letter-spacing: 0;
     }
-    .reference-head p {
-      max-width: 620px;
-      margin: 7px 0 0;
-      color: #5b6f82;
-      font-size: .9rem;
-      line-height: 1.5;
-    }
-    .reference-grid {
-      display: grid;
-      grid-template-columns: minmax(280px, 1.3fr) repeat(2, minmax(210px, .85fr));
-      gap: 14px;
-      align-items: stretch;
-    }
-    .reference-secondary-slot {
-      min-width: 0;
-      opacity: 1;
-      transform: translateY(0);
-      transition: opacity .45s ease, transform .45s ease;
-    }
-    .reference-secondary-slot.is-changing {
-      opacity: 0;
-      transform: translateY(8px);
-    }
-    .reference-secondary-slot .reference-card { height: 100%; }
-    .reference-card {
-      min-width: 0;
-      padding: 15px;
-      border: 1px solid rgba(220, 232, 242, .95);
-      border-radius: 18px;
-      background:
-        linear-gradient(180deg, rgba(234, 244, 251, .34), rgba(255,255,255,0) 30%),
-        #fff;
-      box-shadow: 0 10px 28px rgba(16, 35, 63, .045);
-    }
-    .reference-card.primary {
-      border-color: rgba(31, 143, 115, .24);
-      box-shadow: 0 14px 34px rgba(31, 143, 115, .075);
-    }
-    .reference-card-top {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      margin-bottom: 12px;
-    }
-    .reference-icon {
-      width: 38px;
-      height: 38px;
-      display: grid;
-      place-items: center;
-      flex: 0 0 38px;
-      border: 1px solid rgba(23, 105, 170, .12);
-      border-radius: 13px;
-      background: linear-gradient(135deg, rgba(234, 244, 251, .95), rgba(238, 248, 245, .95));
-    }
-    .reference-icon img {
-      width: 21px;
-      height: 21px;
-      object-fit: contain;
-      filter: invert(32%) sepia(68%) saturate(1024%) hue-rotate(176deg) brightness(86%) contrast(90%);
-      opacity: .9;
-    }
-    .reference-card h3 {
-      margin: 0;
-      color: var(--blue-dark);
-      font-size: 1rem;
-      line-height: 1.2;
-      text-transform: capitalize;
-    }
-    .reference-card small {
-      display: block;
-      margin-top: 3px;
-      color: var(--green-dark);
-      font-size: .7rem;
-      font-weight: 850;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-    }
-    .reference-summary {
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      margin: 0 0 12px;
-      color: #5a6e81;
-      font-size: .84rem;
+    .reference-dashboard p {
+      margin: 5px 0 0;
+      color: #64768a;
+      font-size: .78rem;
       line-height: 1.45;
     }
-    .reference-indicators {
+    .reference-chart-block {
       display: grid;
-      gap: 8px;
-      margin-top: 10px;
-    }
-    .reference-indicator {
-      position: relative;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 4px 10px;
-      align-items: center;
-      min-height: 46px;
-      padding: 10px 10px 10px 40px;
-      border: 1px solid rgba(220, 232, 242, .95);
-      border-radius: 14px;
-      background: #fff;
-      color: #506477;
-      font-size: .76rem;
-      box-shadow: 0 8px 20px rgba(16, 35, 63, .035);
-    }
-    .reference-indicator::before {
-      content: "";
-      position: absolute;
-      left: 12px;
-      top: 50%;
-      width: 22px;
-      height: 22px;
-      border-radius: 8px;
-      transform: translateY(-50%);
-      background:
-        linear-gradient(135deg, rgba(23,105,170,.14), rgba(31,143,115,.14)),
-        url("imagenes/consulta/iconos/activity.svg") center / 14px 14px no-repeat;
-    }
-    .reference-indicator span {
+      gap: 10px;
       min-width: 0;
-      line-height: 1.35;
     }
-    .reference-indicator strong {
-      color: var(--blue-dark);
-      font-size: .96rem;
-      font-weight: 900;
-      white-space: nowrap;
-    }
-    .reference-recommendations {
-      margin-top: 12px;
-      padding: 12px;
-      border: 1px solid rgba(220, 232, 242, .95);
-      border-radius: 14px;
-      background: rgba(245, 249, 252, .72);
-    }
-    .reference-recommendations h4 {
-      margin: 0 0 8px;
-      color: var(--blue-dark);
-      font-size: .78rem;
+    .reference-chart-title {
+      color: #4e6276;
+      font-size: .72rem;
       font-weight: 900;
       letter-spacing: .02em;
     }
-    .reference-recommendations ul {
+    .reference-bars {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      align-items: end;
+      min-height: 116px;
+      padding: 8px 6px 0;
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(245, 249, 252, .82), rgba(255,255,255,0));
+    }
+    .reference-bar-item {
+      display: grid;
+      grid-template-rows: auto 76px auto;
+      gap: 6px;
+      min-width: 0;
+      align-items: end;
+      justify-items: center;
+    }
+    .reference-bar-value {
+      color: var(--blue-dark);
+      font-size: .72rem;
+      font-weight: 900;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .reference-bar-track {
+      width: 100%;
+      max-width: 34px;
+      height: 76px;
+      display: flex;
+      align-items: end;
+      border-radius: 999px;
+      background: #edf4f8;
+      overflow: hidden;
+    }
+    .reference-bar-fill {
+      width: 100%;
+      min-height: 4px;
+      border-radius: inherit;
+      background: linear-gradient(180deg, var(--blue), var(--green));
+    }
+    .reference-bar-label {
+      color: #6f8192;
+      font-size: .7rem;
+      font-weight: 850;
+    }
+    .reference-donut-row {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+    }
+    .reference-donut {
+      width: 92px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      position: relative;
+      background: conic-gradient(var(--blue) 0 34%, var(--green) 34% 67%, #d9e4ec 67% 100%);
+      box-shadow: inset 0 0 0 1px rgba(16, 35, 63, .04);
+    }
+    .reference-donut::after {
+      content: "";
+      position: absolute;
+      inset: 22px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 0 0 1px rgba(220, 232, 242, .9);
+    }
+    .reference-legend {
       display: grid;
       gap: 6px;
       margin: 0;
       padding: 0;
       list-style: none;
     }
-    .reference-recommendations li {
-      position: relative;
-      padding-left: 15px;
-      color: #506477;
-      font-size: .76rem;
-      line-height: 1.35;
+    .reference-legend li {
+      display: grid;
+      grid-template-columns: 9px minmax(0, 1fr) auto;
+      gap: 7px;
+      align-items: center;
+      color: #5b6f82;
+      font-size: .72rem;
+      line-height: 1.25;
     }
-    .reference-recommendations li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: .55em;
-      width: 6px;
-      height: 6px;
+    .reference-dot {
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
-      background: var(--green);
+      background: var(--dot-color, #d9e4ec);
     }
-    .reference-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px 12px;
-      margin-top: 12px;
-      padding-top: 10px;
-      border-top: 1px solid rgba(220, 232, 242, .82);
-      color: #708294;
+    .reference-legend strong {
+      color: var(--blue-dark);
       font-size: .7rem;
-      font-weight: 760;
+      font-weight: 900;
     }
-    .reference-note {
-      color: #6a7d8f;
-      font-size: .74rem;
-      line-height: 1.4;
+    .reference-source {
+      padding-top: 10px;
+      border-top: 1px solid rgba(220, 232, 242, .95);
+      color: #758696;
+      font-size: .7rem;
+      line-height: 1.35;
+      text-align: left;
     }
     .interest-section {
       grid-column: 1 / -1;
@@ -1096,22 +1006,13 @@
         padding-bottom: 2px;
       }
       .tab-btn { flex: 0 0 auto; }
-      .reference-strip { padding: 15px; }
-      .reference-head { display: grid; }
-      .reference-head-meta {
-        justify-items: start;
-        text-align: left;
+      .reference-dashboard { padding: 15px; }
+      .reference-donut-row {
+        grid-template-columns: 82px minmax(0, 1fr);
+        gap: 10px;
       }
-      .reference-grid {
-        grid-template-columns: minmax(230px, 82vw);
-        grid-auto-flow: column;
-        grid-auto-columns: minmax(230px, 82vw);
-        overflow-x: auto;
-        overscroll-behavior-inline: contain;
-        padding-bottom: 2px;
-        scroll-snap-type: x proximity;
-      }
-      .reference-card { scroll-snap-align: start; }
+      .reference-donut { width: 82px; }
+      .reference-donut::after { inset: 20px; }
       .interest-section { min-width: 0; }
       .interest-row { grid-auto-columns: minmax(210px, 82vw); }
       .interest-head { display: grid; }
@@ -1906,172 +1807,143 @@
       };
     }
 
-    function healthReferenceTitle(slug) {
-      return humanTitle(slug || "general");
+    function referenceSource(item) {
+      return String(item?.fuente_principal || "").trim();
     }
 
-    function iconPath(name) {
-      return ICON_BASE_PATH + (name || GLOBAL_ICON_MAP.general) + ".svg";
+    function referenceHistoricalData(item) {
+      const historico = item?.historico || {};
+      return ["2023", "2024", "2025"]
+        .map((year) => ({ label: year, value: Number(historico[year] || 0) }))
+        .filter((entry) => entry.value > 0);
     }
 
-    function createHealthReferenceIcon(slug) {
-      const iconName = GLOBAL_ICON_MAP[slug] || GLOBAL_ICON_MAP.general;
-      const box = document.createElement("span");
-      box.className = "reference-icon";
-      const image = document.createElement("img");
-      image.src = iconPath(iconName);
-      image.alt = "";
-      image.loading = "lazy";
-      image.decoding = "async";
-      image.onerror = () => { image.src = iconPath(GLOBAL_ICON_MAP.general); };
-      box.append(image);
-      return box;
+    function hasRealHealthReferenceData(item) {
+      return Boolean(referenceSource(item)) && referenceHistoricalData(item).length >= 2;
     }
 
-    function hasReferenceValue(value) {
-      const raw = String(value ?? "").trim();
-      if (!raw) return false;
-      const numeric = Number(raw.replace("%", "").replace(",", "."));
-      return !Number.isFinite(numeric) || numeric > 0;
+    function compactReferenceValue(value) {
+      const number = Number(value) || 0;
+      if (number >= 1000000) return (number / 1000000).toFixed(number >= 10000000 ? 0 : 1).replace(".0", "") + "M";
+      if (number >= 1000) return (number / 1000).toFixed(number >= 10000 ? 0 : 1).replace(".0", "") + "k";
+      return String(number);
     }
 
-    function formatReferenceValue(indicator) {
-      const raw = String(indicator?.valor || "").trim();
-      const unit = indicator?.unidad || "";
-      return raw + (unit && !raw.includes(unit) ? " " + unit : "");
-    }
-
-    function validReferenceIndicators(item) {
-      return Array.isArray(item?.indicadores)
-        ? item.indicadores.filter((indicator) => indicator?.titulo && hasReferenceValue(indicator.valor)).slice(0, 2)
-        : [];
-    }
-
-    function validReferenceChart(item) {
-      if (!Array.isArray(item?.graficos)) return null;
-      return item.graficos.find((chart) => {
-        const labels = Array.isArray(chart.labels) ? chart.labels : [];
-        const values = Array.isArray(chart.values) ? chart.values : [];
-        return labels.length && values.length && values.some((value) => Number(value) > 0);
-      }) || null;
-    }
-
-    function createReferenceChart() {
-      return null;
-    }
-
-    function referenceRecommendations(slug) {
-      const byTopic = {
-        asma: ["Evitar humo, polvo y cambios bruscos de temperatura.", "Mantener hidratación y reconocer desencadenantes.", "Consultar si hay dificultad para respirar o silbidos persistentes."],
-        diabetes: ["Priorizar alimentación saludable y actividad física regular.", "Controlar glucosa según indicación profesional.", "Mantener seguimiento médico periódico."],
-        hipertension: ["Reducir sal y ultraprocesados.", "Realizar actividad física moderada si no hay contraindicación.", "Controlar presión arterial periódicamente."],
-        obesidad: ["Mejorar hábitos de alimentación y movimiento progresivamente.", "Evitar dietas extremas sin supervisión profesional.", "Consultar si hay diabetes, hipertensión o apnea del sueño."],
-        dengue: ["Mantener hidratación.", "Evitar automedicación.", "Acudir a atención si hay dolor abdominal, sangrado, somnolencia o dificultad respiratoria."],
-        tuberculosis: ["Consultar si la tos persiste más de dos semanas.", "No abandonar controles si hay sospecha o diagnóstico.", "Mantener ventilación y evaluación médica."],
-        anemia: ["Revisar alimentación rica en hierro.", "Consultar si hay cansancio, palidez o mareos persistentes.", "Evaluar hemoglobina según orientación profesional."],
-        "salud-mental": ["Mantener rutinas de sueño y apoyo social.", "Buscar ayuda si la ansiedad o tristeza limita la vida diaria.", "Consultar ante ideas de daño o crisis emocional."]
+    function referenceBarData(item) {
+      const chart = item?.dashboard?.barras;
+      const history = referenceHistoricalData(item);
+      return {
+        title: chart?.titulo || "Tendencia referencial",
+        labels: history.map((entry) => entry.label),
+        values: history.map((entry) => entry.value),
+        unit: chart?.unidad || "casos"
       };
-      return byTopic[slug] || ["Observar evolución y síntomas asociados.", "Mantener controles preventivos según orientación profesional.", "Consultar si aparecen señales de alarma o dudas persistentes."];
     }
 
-    function createReferenceRecommendations(slug) {
+    function createReferenceBars(item) {
+      const data = referenceBarData(item);
+      const max = Math.max(...data.values, 1);
       const block = document.createElement("div");
-      block.className = "reference-recommendations";
-      block.append(createText("h4", "", "Recomendaciones generales"));
-      const list = document.createElement("ul");
-      referenceRecommendations(slug).slice(0, 3).forEach((text) => list.append(createText("li", "", text)));
-      block.append(list);
+      block.className = "reference-chart-block";
+      block.append(createText("span", "reference-chart-title", data.title));
+      const bars = document.createElement("div");
+      bars.className = "reference-bars";
+      bars.style.gridTemplateColumns = `repeat(${data.labels.length}, minmax(0, 1fr))`;
+      data.labels.forEach((label, index) => {
+        const value = data.values[index] || 0;
+        const itemNode = document.createElement("div");
+        itemNode.className = "reference-bar-item";
+        const track = document.createElement("span");
+        track.className = "reference-bar-track";
+        const fill = document.createElement("span");
+        fill.className = "reference-bar-fill";
+        fill.style.height = Math.max(6, Math.round((value / max) * 76)) + "px";
+        track.append(fill);
+        itemNode.append(
+          createText("strong", "reference-bar-value", compactReferenceValue(value)),
+          track,
+          createText("span", "reference-bar-label", label)
+        );
+        bars.append(itemNode);
+      });
+      block.append(bars);
       return block;
     }
 
-    function createHealthReferenceCard(item, isPrimary = false) {
-      const card = document.createElement("article");
-      card.className = "reference-card" + (isPrimary ? " primary" : "");
-      const top = document.createElement("div");
-      top.className = "reference-card-top";
-      const titleWrap = document.createElement("div");
-      titleWrap.append(createText("h3", "", healthReferenceTitle(item.slug || item.tema)), createText("small", "", isPrimary ? "Relacionado con tu consulta" : "Referencia complementaria"));
-      top.append(createHealthReferenceIcon(item.slug || item.tema), titleWrap);
-      card.append(top);
-      const slug = item.slug || item.tema || "general";
-      const indicators = validReferenceIndicators(item);
-      if (item.resumen) card.append(createText("p", "reference-summary", item.resumen));
-      card.append(createReferenceRecommendations(slug));
-      if (indicators.length) {
-        const list = document.createElement("div");
-        list.className = "reference-indicators";
-        indicators.slice(0, 3).forEach((indicator) => {
-          const row = document.createElement("div");
-          row.className = "reference-indicator";
-          row.append(createText("span", "", indicator.titulo), createText("strong", "", formatReferenceValue(indicator)));
-          list.append(row);
-        });
-        card.append(list);
-      } else {
-        card.append(
-          createText("p", "reference-summary", "Información estadística en proceso de actualización."),
-          createText("p", "reference-summary", "IDB incorporará próximamente indicadores oficiales provenientes de MINSA, INS, CDC Perú, OPS, OMS e INEI.")
-        );
-      }
-      const source = Array.isArray(item.fuentes) && item.fuentes[0]?.nombre ? item.fuentes[0].nombre : indicators[0]?.fuente || "Fuente institucional";
-      card.append(createText("div", "reference-meta", "Fuente: " + source + " · Actualizado: " + (item.ultima_actualizacion || "Sin fecha")));
+    function referenceCircularData(item) {
+      const circular = item?.dashboard?.circular || {};
+      const values = Array.isArray(circular.values) ? circular.values.slice(0, 3).map((value) => Number(value || 0)) : [];
+      if (!values.length || values.every((value) => value <= 0)) return null;
+      const labels = Array.isArray(circular.labels) && circular.labels.length ? circular.labels.slice(0, values.length) : ["Prevención", "Seguimiento", "Consulta"].slice(0, values.length);
+      return {
+        title: circular.titulo || "Distribución referencial",
+        labels,
+        values,
+        unit: circular.unidad || "%"
+      };
+    }
+
+    function createReferenceDonut(item) {
+      const data = referenceCircularData(item);
+      if (!data) return null;
+      const total = data.values.reduce((sum, value) => sum + value, 0) || 1;
+      const colors = ["var(--blue)", "var(--green)", "#d9e4ec"];
+      let cursor = 0;
+      const stops = data.values.map((value, index) => {
+        const start = cursor;
+        const end = cursor + (value / total) * 100;
+        cursor = end;
+        return `${colors[index] || "#d9e4ec"} ${start.toFixed(2)}% ${end.toFixed(2)}%`;
+      }).join(", ");
+      const block = document.createElement("div");
+      block.className = "reference-chart-block";
+      block.append(createText("span", "reference-chart-title", data.title));
+      const row = document.createElement("div");
+      row.className = "reference-donut-row";
+      const donut = document.createElement("div");
+      donut.className = "reference-donut";
+      donut.style.background = `conic-gradient(${stops})`;
+      donut.setAttribute("role", "img");
+      donut.setAttribute("aria-label", data.title);
+      const legend = document.createElement("ul");
+      legend.className = "reference-legend";
+      data.labels.forEach((label, index) => {
+        const li = document.createElement("li");
+        const dot = document.createElement("span");
+        dot.className = "reference-dot";
+        dot.style.setProperty("--dot-color", colors[index] || "#d9e4ec");
+        li.append(dot, createText("span", "", label), createText("strong", "", compactReferenceValue(data.values[index] || 0) + data.unit));
+        legend.append(li);
+      });
+      row.append(donut, legend);
+      block.append(row);
+      return block;
+    }
+
+    function createHealthReferenceDashboard(item) {
+      if (!hasRealHealthReferenceData(item)) return null;
+      const card = document.createElement("section");
+      card.className = "reference-dashboard";
+      card.setAttribute("aria-label", "Datos de salud en Perú");
+      const head = document.createElement("div");
+      head.append(
+        createText("h2", "", "Datos de salud en Perú"),
+        createText("p", "", "Información referencial basada en fuentes oficiales")
+      );
+      const donut = createReferenceDonut(item);
+      card.append(
+        head,
+        createReferenceBars(item),
+        createText("div", "reference-source", "Fuente: " + referenceSource(item) + " · Actualización: " + (item.ultima_actualizacion || "2026-06"))
+      );
+      if (donut) card.insertBefore(donut, card.lastElementChild);
       return card;
     }
 
-    function referenceSource(item) {
-      return Array.isArray(item?.fuentes) && item.fuentes[0]?.nombre ? item.fuentes[0].nombre : "Fuente oficial";
-    }
-
-    function createReferenceSecondarySlot(items, startIndex) {
-      const slot = document.createElement("div");
-      slot.className = "reference-secondary-slot";
-      let index = startIndex;
-      let paused = false;
-      const render = () => {
-        if (!items.length) return;
-        slot.replaceChildren(createHealthReferenceCard(items[index % items.length], false));
-      };
-      const rotate = () => {
-        if (paused || items.length <= 2) return;
-        slot.classList.add("is-changing");
-        window.setTimeout(() => {
-          index = (index + 2) % items.length;
-          render();
-          slot.classList.remove("is-changing");
-        }, 360);
-      };
-      render();
-      slot.addEventListener("mouseenter", () => { paused = true; });
-      slot.addEventListener("mouseleave", () => { paused = false; });
-      if (items.length > 2) window.setInterval(rotate, 10000);
-      return slot;
-    }
-
     async function renderHealthReference(container, record) {
-      const { primary, secondaries } = await loadHealthReferenceItems(record);
-      if (!primary) return;
-      const visibleSecondaries = secondaries.slice(0, 2);
-      const section = document.createElement("section");
-      section.className = "reference-strip";
-      const head = document.createElement("div");
-      head.className = "reference-head";
-      const copy = document.createElement("div");
-      copy.append(createText("h2", "", "Información referencial en salud"), createText("p", "", "Indicadores oficiales para comprender mejor esta condición."));
-      const meta = document.createElement("div");
-      meta.className = "reference-head-meta";
-      meta.append(
-        createText("span", "", "Última actualización"),
-        createText("strong", "", primary.ultima_actualizacion || "Sin fecha"),
-        createText("span", "", "Fuente oficial"),
-        createText("strong", "", referenceSource(primary))
-      );
-      head.append(copy, meta);
-      const grid = document.createElement("div");
-      grid.className = "reference-grid";
-      grid.append(createHealthReferenceCard(primary, true));
-      visibleSecondaries.forEach((_, index) => grid.append(createReferenceSecondarySlot(secondaries, index)));
-      section.append(head, grid, createText("span", "reference-note", "Información referencial. No reemplaza una consulta médica."));
-      container.append(section);
+      const { primary } = await loadHealthReferenceItems(record);
+      const dashboard = createHealthReferenceDashboard(primary);
+      if (dashboard) container.append(dashboard);
     }
     function keyFacts(record) {
       const type = normalizeText(record.tipo);
@@ -2354,8 +2226,8 @@
       vita.append(vitaLogo, createText("h2", "", "¿Necesitas orientación?"), createText("p", "", "Describe tu duda y VITA te ayudará a encontrar una ruta clara dentro de IDB."), vitaLink);
 
       sidebar.append(vita);
+      await renderHealthReference(sidebar, record);
       grid.append(main, sidebar);
-      await renderHealthReference(grid, record);
       renderInterest(grid, records, record);
       grid.append(createLegalNote(updated, source));
       app.append(top, grid);

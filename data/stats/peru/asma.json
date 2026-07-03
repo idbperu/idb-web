@@ -46,5 +46,42 @@
       "unidad": "/5",
       "fuente": "MINSA"
     }
-  ]
+  ],
+  "historico": {
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+  },
+  "dashboard": {
+    "barras": {
+      "titulo": "Tendencia referencial",
+      "labels": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "values": [
+        0,
+        0,
+        0
+      ],
+      "unidad": "casos"
+    },
+    "circular": {
+      "titulo": "Distribución referencial",
+      "labels": [
+        "Prevención",
+        "Seguimiento",
+        "Consulta"
+      ],
+      "values": [
+        0,
+        0,
+        0
+      ],
+      "unidad": "%"
+    }
+  },
+  "fuente_principal": "",
+  "nota": "Información referencial. No reemplaza una consulta médica."
 }

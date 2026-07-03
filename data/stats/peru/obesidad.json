@@ -5,9 +5,9 @@
   "proxima_revision": "2026-12",
   "fuentes": [
     {
-      "nombre": "MINSA",
-      "url": "",
-      "fecha_consulta": "2026-06"
+      "nombre": "INEI - ENDES Enfermedades No Transmisibles y Transmisibles 2024",
+      "url": "https://proyectos.inei.gob.pe/endes/2024/SALUD/ENFERMEDADES_ENDES_2024.pdf",
+      "fecha_consulta": "2026-07"
     }
   ],
   "resumen": "La obesidad es un problema de salud con impacto metabólico, cardiovascular y funcional. Su abordaje debe ser integral, respetuoso y centrado en hábitos sostenibles, evaluación médica y acompañamiento profesional cuando sea necesario. En Perú, la prevención y el seguimiento son relevantes por su relación con diabetes, hipertensión y otras condiciones crónicas.",
@@ -46,5 +46,42 @@
       "unidad": "/5",
       "fuente": "MINSA"
     }
-  ]
+  ],
+  "historico": {
+    "2023": 24.1,
+    "2024": 25.7,
+    "2025": 0
+  },
+  "dashboard": {
+    "barras": {
+      "titulo": "Tendencia referencial",
+      "labels": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "values": [
+        24.1,
+        25.7,
+        0
+      ],
+      "unidad": "%"
+    },
+    "circular": {
+      "titulo": "Distribución referencial",
+      "labels": [
+        "Prevención",
+        "Seguimiento",
+        "Consulta"
+      ],
+      "values": [
+        0,
+        0,
+        0
+      ],
+      "unidad": "%"
+    }
+  },
+  "fuente_principal": "INEI - ENDES",
+  "nota": "Información referencial. No reemplaza una consulta médica."
 }

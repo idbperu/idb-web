@@ -5,9 +5,9 @@
   "proxima_revision": "2026-12",
   "fuentes": [
     {
-      "nombre": "CDC Perú",
-      "url": "",
-      "fecha_consulta": "2026-06"
+      "nombre": "MINSA - CDC Perú / INEI",
+      "url": "https://www.inei.gob.pe/media/MenuRecursivo/indices_tematicos/c5_4_1.xlsx",
+      "fecha_consulta": "2026-07"
     }
   ],
   "resumen": "El dengue es una enfermedad de importancia epidemiológica en Perú, especialmente en zonas con presencia del mosquito transmisor y condiciones climáticas favorables. Su vigilancia requiere prevención comunitaria, eliminación de criaderos y reconocimiento oportuno de signos de alarma. IDB muestra este contexto como referencia educativa, sin sustituir la evaluación médica ni los reportes oficiales actualizados.",
@@ -46,5 +46,42 @@
       "unidad": "/5",
       "fuente": "CDC Perú"
     }
-  ]
+  ],
+  "historico": {
+    "2023": 256641,
+    "2024": 244744,
+    "2025": 0
+  },
+  "dashboard": {
+    "barras": {
+      "titulo": "Tendencia referencial",
+      "labels": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "values": [
+        256641,
+        244744,
+        0
+      ],
+      "unidad": "casos"
+    },
+    "circular": {
+      "titulo": "Distribución referencial",
+      "labels": [
+        "Prevención",
+        "Seguimiento",
+        "Consulta"
+      ],
+      "values": [
+        0,
+        0,
+        0
+      ],
+      "unidad": "%"
+    }
+  },
+  "fuente_principal": "MINSA / CDC Perú vía INEI",
+  "nota": "Información referencial. No reemplaza una consulta médica."
 }
