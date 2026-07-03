@@ -486,6 +486,29 @@
     }
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
+    .section-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .section-list li {
+      position: relative;
+      padding-left: 18px;
+      color: #506477;
+      line-height: 1.65;
+    }
+    .section-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .72em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+    }
     .info-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1529,35 +1552,123 @@
     }
 
     function quickResponse(record) {
-      if (record._knowledge?.respuesta_rapida) return record._knowledge.respuesta_rapida;
       const title = displayRecordTitle(record, "este tema");
       const titleKey = normalizeText(title);
       const type = normalizeText(record.tipo);
       if (titleKey.includes("dolor de cabeza") || titleKey.includes("cefalea") || titleKey.includes("migrana")) {
-        return "Dolor de cabeza / cefalea: síntoma frecuente que puede relacionarse con tensión, migraña, sinusitis, fiebre, deshidratación o falta de descanso. La mayoría de casos son leves, pero algunos requieren evaluación.";
+        return "Dolor de cabeza (cefalea) es dolor o presión en cualquier zona de la cabeza. Puede ocurrir por tensión, migraña, sinusitis, fiebre, deshidratación o falta de descanso. Si es leve, hidrátate, descansa y observa si cambia o se repite.";
       }
-      if (titleKey.includes("tos")) {
-        return "Tos: reflejo que ayuda a limpiar las vías respiratorias. Puede aparecer por resfriados, alergias, asma, bronquitis, irritantes o infecciones; consulta si persiste, empeora o se acompaña de falta de aire, fiebre alta o dolor de pecho.";
+      if (titleKey.includes("asma")) {
+        return "Asma es una enfermedad respiratoria que inflama y estrecha los bronquios. Puede activarse por alergias, infecciones, ejercicio, humo o aire frío. Si las molestias son leves, evita irritantes y observa la respiración.";
+      }
+      if (titleKey.includes("gastritis")) {
+        return "Gastritis es inflamación o irritación del revestimiento del estómago. Puede aparecer por irritantes, estrés físico, alcohol, antiinflamatorios o infección por Helicobacter pylori. Si es leve, evita comidas irritantes y observa la evolución.";
       }
       if (titleKey.includes("hipertension") || titleKey.includes("presion alta")) {
-        return "Hipertensión arterial: presión de la sangre elevada de forma sostenida. Puede no dar síntomas, pero aumenta el riesgo cardiovascular; requiere medición correcta, seguimiento y evaluación profesional.";
+        return "Hipertensión arterial (presión alta) es una elevación persistente de la presión de la sangre en las arterias. Suele no dar síntomas, pero aumenta el riesgo cardiovascular. Si se detecta, mide de nuevo en reposo y agenda evaluación.";
       }
-      if (titleKey.includes("colesterol alto")) {
-        return "Colesterol alto: exceso de grasas en sangre, especialmente LDL, que puede aumentar el riesgo de enfermedad cardiovascular. Se evalúa con análisis de sangre y se maneja con hábitos y seguimiento profesional.";
+      if (titleKey.includes("diabetes")) {
+        return "Diabetes es una enfermedad en la que la glucosa en sangre se mantiene elevada. Ocurre por falta de insulina, resistencia a la insulina o ambas. Si hay síntomas leves o dudas, registra señales y solicita evaluación.";
+      }
+      if (titleKey.includes("atorvastatina")) {
+        return "Atorvastatina es una estatina, un medicamento que ayuda a reducir colesterol LDL. Actúa disminuyendo la producción de colesterol en el hígado. Si fue indicada, úsala solo según orientación profesional y reporta molestias.";
+      }
+      if (titleKey.includes("paracetamol")) {
+        return "Paracetamol es un analgésico y antipirético: ayuda con dolor y fiebre. Actúa sobre señales de dolor y temperatura. Si el malestar es leve, observa la causa y evita combinar medicamentos sin consultar.";
+      }
+      if (titleKey.includes("losartan")) {
+        return "Losartán es un antihipertensivo que ayuda a relajar los vasos sanguíneos. Actúa bloqueando una señal que eleva la presión arterial. Si fue indicado, mantén controles y no lo suspendas por cuenta propia.";
       }
       if (type === "medicamento") {
-        return title + " es un medicamento que puede ser útil cuando existe una indicación clínica concreta. Su seguridad depende de antecedentes, otros medicamentos, alergias y del motivo de uso; esta información es educativa y no reemplaza la indicación profesional.";
+        return title + " es un medicamento con usos específicos según su grupo farmacológico. Puede indicarse por distintas enfermedades o síntomas. Si la molestia es leve, evita automedicarte y confirma si realmente corresponde usarlo.";
       }
       if (type === "sintoma") {
-        return title + " puede aparecer por causas leves o por situaciones que requieren evaluación. Observa cuándo empezó, cuánto dura, qué tan intenso es y si se acompaña de fiebre, dolor fuerte, dificultad para respirar u otros cambios.";
+        return title + " es una señal del cuerpo, no un diagnóstico. Puede aparecer por causas leves o por problemas que requieren revisión. Si es leve, observa duración, intensidad y síntomas acompañantes.";
       }
       if (type === "enfermedad") {
-        return title + " se comprende mejor con una evaluación ordenada: qué ocurre, qué factores influyen, cómo prevenir complicaciones y cuándo realizar seguimiento. Esta ficha orienta, pero no confirma diagnósticos.";
+        return title + " es una condición de salud que necesita entenderse por su evolución y riesgos. Puede relacionarse con antecedentes, hábitos u otras enfermedades. Si no hay alarma, organiza información y consulta para confirmar.";
       }
       if (type === "examen") {
-        return title + " aporta información clínica que debe interpretarse junto con síntomas, antecedentes, medicamentos y el motivo del estudio. Un resultado aislado no define por sí solo una decisión médica.";
+        return title + " es una prueba que aporta información clínica. Su resultado depende del contexto, síntomas y antecedentes. Si hay una alteración leve, evita interpretarla sola y revisa el resultado con un profesional.";
       }
-      return title + " es una consulta educativa de IDB para ordenar información, reconocer señales importantes y decidir cuándo buscar orientación profesional.";
+      return title + " es una consulta educativa para comprender una duda de salud. Puede tener varias causas o interpretaciones. Si es leve, observa la evolución y busca orientación si persiste.";
+    }
+
+    function medicationDescription(title) {
+      const key = normalizeText(title);
+      if (key.includes("losartan")) return "Losartán pertenece a los antagonistas del receptor de angiotensina II. Ayuda a relajar los vasos sanguíneos y se usa con frecuencia en hipertensión arterial, protección renal en algunas personas con diabetes y otros contextos cardiovasculares definidos por un profesional.";
+      if (key.includes("atorvastatina")) return "Atorvastatina pertenece a las estatinas. Disminuye la producción de colesterol en el hígado y ayuda a reducir el colesterol LDL. Suele utilizarse en colesterol alto y en personas con riesgo cardiovascular aumentado.";
+      if (key.includes("paracetamol")) return "Paracetamol es un analgésico y antipirético. Ayuda a aliviar dolor leve o moderado y fiebre. Actúa sobre vías de dolor y regulación de temperatura, sin tratar necesariamente la causa del síntoma.";
+      return title + " se usa con objetivos terapéuticos específicos según su grupo farmacológico. Su mecanismo de acción, beneficios y riesgos dependen de la indicación, antecedentes y otros tratamientos de la persona.";
+    }
+
+    function diseaseDescription(title) {
+      const key = normalizeText(title);
+      if (key.includes("asma")) return "El asma causa inflamación de las vías respiratorias y puede producir tos, silbidos, opresión en el pecho o falta de aire. Tiende a evolucionar con periodos de control y crisis. Influyen alergias, infecciones, humo, ejercicio, clima y antecedentes familiares.";
+      if (key.includes("hipertension")) return "La hipertensión arterial es presión elevada de forma sostenida. Puede avanzar durante años sin síntomas y aumentar el riesgo de daño en corazón, cerebro, riñones y vasos sanguíneos. Influyen edad, antecedentes familiares, peso, alimentación, sedentarismo y otras enfermedades.";
+      if (key.includes("gastritis")) return "La gastritis es inflamación de la mucosa del estómago. Puede ser temporal o persistente, y provocar ardor, dolor en la parte alta del abdomen, náuseas o llenura. Influyen irritantes, alcohol, antiinflamatorios, estrés físico e infección por Helicobacter pylori.";
+      if (key.includes("diabetes")) return "La diabetes mantiene la glucosa elevada por falta de insulina, resistencia a la insulina o ambas. Puede evolucionar lentamente y afectar vasos sanguíneos, riñones, ojos y nervios. Influyen antecedentes familiares, peso, edad, alimentación, actividad física y otras condiciones metabólicas.";
+      return title + " es una condición que se entiende por su definición, evolución y factores de riesgo. Puede cambiar con el tiempo y requiere confirmar diagnóstico, vigilar complicaciones y adaptar el seguimiento a cada persona.";
+    }
+
+    function symptomDescription(title) {
+      const key = normalizeText(title);
+      if (key.includes("dolor de cabeza") || key.includes("cefalea")) return "La cefalea es una señal frecuente. Puede sentirse como presión, punzada o dolor pulsátil. Suele aparecer con tensión muscular, migraña, falta de sueño, estrés, fiebre, sinusitis, deshidratación o cambios en la rutina.";
+      if (key.includes("tos")) return "La tos es un reflejo que protege las vías respiratorias. Puede ser seca o con flema. Suele aparecer con resfriados, alergias, asma, bronquitis, reflujo, irritantes ambientales o infecciones respiratorias.";
+      return title + " es una señal que ayuda a orientar qué está pasando. Importa conocer inicio, duración, intensidad, desencadenantes y síntomas acompañantes para distinguir causas leves de situaciones que requieren evaluación.";
+    }
+
+    function medicationPresentation() {
+      return ["Tabletas", "Cápsulas", "Jarabe o solución oral", "Crema o gel", "Ampollas", "Gotas"];
+    }
+
+    function sectionItems(record, section) {
+      const title = displayRecordTitle(record, "este tema");
+      const type = normalizeText(record.tipo);
+      if (section === "presentacion") return medicationPresentation();
+      if (section === "efectos") return [
+        "Frecuentes: molestias leves como náuseas, dolor de cabeza, sueño, mareo o malestar digestivo, según el medicamento.",
+        "Poco frecuentes: alergias leves, cambios en análisis, irritación o síntomas nuevos que conviene comentar.",
+        "Signos de alarma: dificultad para respirar, hinchazón de labios o rostro, desmayo, sangrado importante o reacción intensa."
+      ];
+      if (section === "precauciones") return [
+        "Informa alergias, enfermedades previas y medicamentos que ya usas.",
+        "Evita automedicarte o combinar tratamientos sin orientación.",
+        "Consulta durante embarazo, lactancia, infancia o adulto mayor.",
+        "Esta información no sustituye una evaluación médica."
+      ];
+      if (section === "interacciones") return [
+        "Puede interactuar con otros medicamentos de uso continuo.",
+        "Alcohol y suplementos pueden cambiar efectos o riesgos.",
+        "Algunas enfermedades del hígado, riñón o corazón modifican la seguridad.",
+        "Lleva una lista de lo que tomas a cada consulta."
+      ];
+      if (type === "sintoma" && section === "causas") return [
+        "Infecciones virales o bacterianas.",
+        "Irritación, alergias, tensión, esfuerzo o falta de descanso.",
+        "Migraña, reflujo, asma u otras condiciones según el síntoma.",
+        "Medicamentos, hábitos o enfermedades previas también pueden influir."
+      ];
+      if (type === "enfermedad" && section === "causas") return [
+        "Antecedentes familiares o predisposición personal.",
+        "Edad, peso, alimentación, actividad física y sueño.",
+        "Otras enfermedades o medicamentos pueden aumentar el riesgo.",
+        "Ambiente, infecciones o irritantes influyen en algunas condiciones."
+      ];
+      if (section === "complicaciones") return [
+        "Empeoramiento o mayor duración del problema.",
+        "Limitación para respirar, alimentarse, dormir o realizar actividades.",
+        "Mayor riesgo si hay embarazo, edad avanzada o enfermedades previas.",
+        "Algunas condiciones pueden afectar otros órganos si no se controlan."
+      ];
+      if (section === "prevencion") return [
+        "Mantén controles preventivos según edad y antecedentes.",
+        "Cuida sueño, hidratación, alimentación y actividad física.",
+        "Evita tabaco, alcohol en exceso e irritantes conocidos.",
+        "Consulta ante cambios persistentes o síntomas que se repiten."
+      ];
+      if (section === "consulta") return [consultText(record)];
+      return [sectionText(record, section)];
     }
 
     function sectionText(record, section) {
@@ -1567,25 +1678,24 @@
       const description = record.description || knowledge.descripcion || "Información educativa disponible dentro del ecosistema IDB.";
       const byType = {
         medicamento: {
-          descripcion: knowledge.descripcion || title + " es un medicamento que puede tener beneficios y riesgos según la persona que lo use. Puede explicarse por su uso terapéutico y su mecanismo general, pero la indicación y el seguimiento deben revisarse con criterio profesional.",
-          usos: knowledge.para_que_sirve || "Puede emplearse para objetivos terapéuticos específicos, de acuerdo con su grupo farmacológico y la evaluación clínica. No todos los síntomas requieren medicamento, y no todos los medicamentos son adecuados para todas las personas.",
-          presentacion: "Puede encontrarse en presentaciones comunes como tabletas, cápsulas, solución, gotas, inhaladores, cremas o inyectables según el medicamento, el país y el fabricante. Revisa el envase y confirma cualquier duda con un profesional.",
-          efectos: "Presta atención a molestias nuevas, alergias, somnolencia, sangrados, dolor abdominal intenso, dificultad para respirar o empeoramiento del cuadro. Ante una reacción inesperada, suspende la automedicación y busca orientación.",
-          precauciones: Array.isArray(knowledge.precauciones) && knowledge.precauciones.length ? knowledge.precauciones.join(" ") : "Consulta antes de usarlo si estás embarazada, tienes alergias, enfermedad renal o hepática, antecedentes de sangrado, tomas anticoagulantes u otros tratamientos continuos.",
-          interacciones: "Puede interactuar con otros medicamentos, suplementos, alcohol o enfermedades de base. Llevar una lista de lo que tomas ayuda a que el profesional evalúe riesgos y evite combinaciones inseguras."
+          descripcion: medicationDescription(title),
+          presentacion: "Formas farmacéuticas habituales. La disponibilidad cambia según país, marca y presentación comercial.",
+          efectos: "Los efectos pueden variar entre personas. Observa molestias nuevas y consulta si son intensas, persistentes o aparecen signos de alarma.",
+          precauciones: "Usa esta información como orientación general. La seguridad depende de antecedentes, embarazo, lactancia, edad, alergias y otros tratamientos.",
+          interacciones: "Las interacciones dependen del medicamento, dosis indicada, enfermedades de base y otros productos que la persona usa."
         },
         sintoma: {
-          descripcion: knowledge.descripcion || title + " es una señal del cuerpo, no un diagnóstico. Puede relacionarse con situaciones pasajeras o con condiciones que requieren evaluación, por eso importa observar el contexto completo.",
-          causas: "Puede deberse a causas leves o transitorias, pero también a infecciones, inflamación, irritación, lesiones, migraña, alergias, cambios metabólicos u otras condiciones según el síntoma y el contexto.",
-          complicaciones: "La evolución es una pista importante: si aumenta, cambia de patrón, aparece con debilidad, fiebre persistente, dolor fuerte o dificultad para respirar, conviene consultar pronto.",
-          prevencion: "Anota cuándo empezó, qué lo mejora o empeora, si se repite y qué otros síntomas aparecen. Dormir bien, hidratarse, evitar irritantes y controlar condiciones previas puede ayudar según el caso.",
+          descripcion: symptomDescription(title),
+          causas: "Las causas cambian según el síntoma y el contexto. Importan edad, duración, intensidad, desencadenantes, fiebre, dolor, respiración y antecedentes.",
+          complicaciones: "Un síntoma persistente puede ocultar una condición que necesita revisión. También puede afectar sueño, alimentación, respiración o actividades diarias.",
+          prevencion: "La prevención depende de la causa. Ayuda dormir bien, hidratarse, evitar irritantes, controlar alergias o enfermedades previas y registrar patrones.",
           consulta: consultText(record)
         },
         enfermedad: {
-          descripcion: knowledge.descripcion || title + " es una condición que debe entenderse por sus causas, evolución, factores de riesgo y posibles complicaciones. La confirmación y el seguimiento corresponden a un profesional de salud.",
-          causas: "Puede relacionarse con factores genéticos, hábitos, edad, otras enfermedades, ambiente o infecciones, según la condición. Identificar factores de riesgo ayuda a orientar la prevención y el seguimiento.",
-          complicaciones: "Sin seguimiento, algunas enfermedades pueden progresar o afectar otros órganos. Consultar a tiempo permite confirmar el diagnóstico, controlar riesgos y ajustar el plan de cuidado.",
-          prevencion: Array.isArray(knowledge.precauciones) && knowledge.precauciones.length ? knowledge.precauciones.join(" ") : "Los controles, hábitos sostenidos, vacunación cuando corresponda y seguimiento de factores de riesgo pueden reducir complicaciones.",
+          descripcion: diseaseDescription(title),
+          causas: "Los factores de riesgo pueden combinar antecedentes familiares, edad, hábitos, ambiente, infecciones, peso, alimentación, actividad física u otras enfermedades.",
+          complicaciones: "Algunas enfermedades avanzan sin molestias claras. El seguimiento ayuda a reducir daño, detectar cambios y prevenir consecuencias en otros órganos.",
+          prevencion: "La prevención se apoya en controles, hábitos sostenidos, vacunación cuando corresponde y manejo de factores de riesgo conocidos.",
           consulta: consultText(record)
         },
         examen: {
@@ -1626,16 +1736,22 @@
     }
 
     function faqs(record) {
-      if (Array.isArray(record._knowledge?.preguntas_frecuentes) && record._knowledge.preguntas_frecuentes.length) {
-        return record._knowledge.preguntas_frecuentes.slice(0, 5);
-      }
       const title = displayRecordTitle(record, "este tema");
-      return [
-        { pregunta: `¿Esta información reemplaza una consulta médica?`, respuesta: "No. Es orientación educativa para comprender mejor el tema y saber cuándo consultar." },
-        { pregunta: `¿Qué debo observar sobre ${title}?`, respuesta: "Observa intensidad, duración, cambios recientes, síntomas asociados y antecedentes relevantes." },
-        { pregunta: "¿Cuándo debo pedir ayuda?", respuesta: consultText(record) },
-        { pregunta: "¿VITA puede orientarme?", respuesta: "Sí. VITA puede ayudarte a ordenar tu duda y encontrar una ruta clara dentro del ecosistema IDB." }
-      ];
+      const type = normalizeText(record.tipo);
+      const items = type === "medicamento"
+        ? [
+          { pregunta: `¿${title} sirve para todos?`, respuesta: "No. Depende de la indicación y antecedentes." },
+          { pregunta: "¿Puedo combinarlo con otros productos?", respuesta: "Consulta antes de combinar medicamentos, alcohol o suplementos." },
+          { pregunta: "¿Qué datos debo informar?", respuesta: "Alergias, embarazo, lactancia, enfermedades y tratamientos actuales." },
+          { pregunta: "¿Esta ficha indica tratamiento?", respuesta: "No. Es información educativa para conversar mejor con un profesional." }
+        ]
+        : [
+          { pregunta: `¿${title} confirma un diagnóstico?`, respuesta: "No. Requiere contexto y evaluación." },
+          { pregunta: "¿Qué conviene observar?", respuesta: "Inicio, duración, intensidad y síntomas asociados." },
+          { pregunta: "¿Cuándo consultar?", respuesta: "Si persiste, empeora, se repite o limita actividades." },
+          { pregunta: "¿Es útil llevar un registro?", respuesta: "Sí. Ayuda a explicar mejor lo que ocurre." }
+        ];
+      return items.slice(0, 5);
     }
 
     function calculateRelated(records, currentRecord) {
@@ -2191,7 +2307,15 @@
           });
           panel.append(faqList);
         } else {
-          panel.append(createText("p", "", sectionText(record, id)));
+          const items = sectionItems(record, id);
+          if (items.length > 1) {
+            const list = document.createElement("ul");
+            list.className = "section-list";
+            items.forEach((item) => list.append(createText("li", "", item)));
+            panel.append(list);
+          } else {
+            panel.append(createText("p", "", items[0] || sectionText(record, id)));
+          }
         }
         panels.append(panel);
       });
