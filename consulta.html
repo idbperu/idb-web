@@ -872,6 +872,7 @@
       min-height: 318px;
       overflow: hidden;
       scroll-snap-align: start;
+      background: linear-gradient(180deg, #f7fbfd 0%, #eef8f5 100%);
     }
     .interest-card img {
       width: 100%;
@@ -1127,8 +1128,10 @@
         <button type="submit">Buscar</button>
       </form>
       <nav class="nav" aria-label="Navegación principal">
-        <a href="temas.html">Temas de salud</a>
-        <a href="recursos.html">Herramientas</a>
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
         <a href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">VITA</a>
       </nav>
     </div>
@@ -1268,7 +1271,7 @@
     };
     const CATEGORY_ASSETS = {
       "adulto-mayor": { folder: "adulto-mayor", icon: "bed.svg" },
-      cardiovascular: { folder: "cardiovascular", icon: "heart-handshake.svg" },
+      cardiovascular: { folder: "cardiovascular", icon: "heart-handshake.svg", images: ["cardiovascular-idb.webp", "cardiovascular-01..webp", "cardiovascular-02..webp"] },
       dermatologia: { folder: "dermatologia", icon: "shield.svg" },
       diagnostico: { folder: "diagnostico", icon: "stethoscope.svg" },
       digestivo: { folder: "digestivo", icon: "heart.svg" },
@@ -1277,8 +1280,8 @@
       infantil: { folder: "infantil", icon: "ambulance.svg" },
       laboratorio: { folder: "laboratorio", icon: "microscope.svg" },
       medicamentos: { folder: "medicamentos", icon: "pill.svg" },
-      "salud-mental": { folder: "salud-mental", icon: "heart-handshake.svg" },
-      metabolico: { folder: "metabolico", icon: "thermometer.svg" },
+      "salud-mental": { folder: "salud-mental", icon: "heart-handshake.svg", prefix: "salud-mental-y-bienestar-emocional" },
+      metabolico: { folder: "metabolico", icon: "thermometer.svg", prefix: "diabetes" },
       mujer: { folder: "mujer", icon: "user.svg" },
       neurologico: { folder: "neurologico", icon: "atom.svg" },
       nutricion: { folder: "nutricion", icon: "heart.svg" },
@@ -1304,7 +1307,19 @@
     function humanTitle(value) {
       const raw = String(value || "").trim().replace(/[-_]+/g, " ").replace(/\s+/g, " ");
       if (!raw) return "Consulta";
+      const titleOverrides = {
+        hipertension: "Hipertensión",
+        losartan: "Losartán",
+        neurologia: "Neurología",
+        "dolor y neurologia": "Dolor y neurología"
+      };
+      const override = titleOverrides[slugify(raw)] || titleOverrides[normalizeText(raw)];
+      if (override) return override;
       return raw.charAt(0).toUpperCase() + raw.slice(1).toLowerCase();
+    }
+
+    function displayRecordTitle(record, fallback = "Consulta") {
+      return humanTitle(record?.titulo || record?.slug || fallback);
     }
 
     function getQuery() {
@@ -1434,11 +1449,12 @@
     function visualCategory(record) {
       const haystack = ` ${normalizeText(`${record.titulo} ${record.tipo} ${record.categoria} ${(record.keywords || []).join(" ")}`)} `;
       const categories = [
-        ["salud-mental", ["mental", "emocion", "psicolog", "ansied", "estres", "depres", "panic", "insom"]],
-        ["respiratorio", ["respir", "asma", "bronqu", "pulmon", "tos", "neumon"]],
-        ["digestivo", ["digest", "estom", "gastr", "reflu", "colon", "intestin", "higad", "vesicula", "pancrea", "abdomin"]],
-        ["cardiovascular", ["cardio", "corazon", "hiperten", "presion arterial", "arter", "vascular"]],
-        ["metabolico", ["diabet", "glucos", "insulin", "colesterol", "triglicer", "obes"]],
+        ["cardiovascular", ["hipertension", "presion alta", "tension alta", "colesterol", "cardio", "corazon", "presion arterial", "arter", "vascular"]],
+        ["digestivo", ["gastritis", "acidez", "reflujo", "digestion", "digest", "estom", "gastr", "colon", "intestin", "higad", "vesicula", "pancrea", "abdomin"]],
+        ["neurologico", ["dolor de cabeza", "cefalea", "migrana", "migra", "neuro", "convulsion", "epilep", "alzheimer", "parkinson"]],
+        ["respiratorio", ["respir", "asma", "bronqu", "bronquitis", "pulmon", "tos", "neumon"]],
+        ["salud-mental", ["salud mental", "mental", "emocion", "psicolog", "ansied", "estres", "depres", "panic", "insom"]],
+        ["metabolico", ["diabet", "glucos", "insulin", "triglicer", "obes"]],
         ["laboratorio", ["laborat", "analisis", "hemogram", "perfil", "biops", "tomograf", "radiograf", "resonan", "ecograf"]],
         ["diagnostico", ["diagnost", "fiebre", "febril", "temperatura", "calentura"]],
         ["infantil", ["nino", "nina", "bebe", "hijo", "hija", "pediatr"]],
@@ -1459,12 +1475,16 @@
     }
 
     function visualCandidates(category) {
-      const asset = CATEGORY_ASSETS[category] || CATEGORY_ASSETS.prevencion;
+      const asset = CATEGORY_ASSETS[category];
       if (!asset?.folder) return [];
+      if (Array.isArray(asset.images) && asset.images.length) {
+        return asset.images.map((name) => "imagenes/consulta/" + asset.folder + "/" + name);
+      }
+      const prefix = asset.prefix || asset.folder;
       return [
-        "imagenes/consulta/" + asset.folder + "/" + asset.folder + "-01.webp",
-        "imagenes/consulta/" + asset.folder + "/" + asset.folder + "-02.webp",
-        "imagenes/consulta/" + asset.folder + "/" + asset.folder + "-03.webp"
+        "imagenes/consulta/" + asset.folder + "/" + prefix + "-01.webp",
+        "imagenes/consulta/" + asset.folder + "/" + prefix + "-02.webp",
+        "imagenes/consulta/" + asset.folder + "/" + prefix + "-03.webp"
       ];
     }
 
@@ -1480,7 +1500,7 @@
       const image = document.createElement("img");
       image.src = candidates[0];
       image.dataset.candidateIndex = "0";
-      image.alt = `Imagen editorial IDB para ${humanTitle(record.titulo || record.slug)}`;
+      image.alt = `Imagen editorial IDB para ${displayRecordTitle(record)}`;
       image.loading = "lazy";
       image.decoding = "async";
       image.onerror = () => {
@@ -1500,7 +1520,7 @@
     function createNeutralVisual(record, category) {
       const block = document.createElement("div");
       block.className = "neutral-visual";
-      const label = record.categoria || record.tipo || "Consulta IDB";
+      const label = humanTitle(record.categoria || record.tipo || "Consulta IDB");
       block.append(
         createText("strong", "", (category || label || "IDB").slice(0, 2).toUpperCase()),
         createText("span", "", label)
@@ -1510,10 +1530,23 @@
 
     function quickResponse(record) {
       if (record._knowledge?.respuesta_rapida) return record._knowledge.respuesta_rapida;
-      const title = record.titulo || "este tema";
+      const title = displayRecordTitle(record, "este tema");
+      const titleKey = normalizeText(title);
       const type = normalizeText(record.tipo);
+      if (titleKey.includes("dolor de cabeza") || titleKey.includes("cefalea") || titleKey.includes("migrana")) {
+        return "Dolor de cabeza / cefalea: síntoma frecuente que puede relacionarse con tensión, migraña, sinusitis, fiebre, deshidratación o falta de descanso. La mayoría de casos son leves, pero algunos requieren evaluación.";
+      }
+      if (titleKey.includes("tos")) {
+        return "Tos: reflejo que ayuda a limpiar las vías respiratorias. Puede aparecer por resfriados, alergias, asma, bronquitis, irritantes o infecciones; consulta si persiste, empeora o se acompaña de falta de aire, fiebre alta o dolor de pecho.";
+      }
+      if (titleKey.includes("hipertension") || titleKey.includes("presion alta")) {
+        return "Hipertensión arterial: presión de la sangre elevada de forma sostenida. Puede no dar síntomas, pero aumenta el riesgo cardiovascular; requiere medición correcta, seguimiento y evaluación profesional.";
+      }
+      if (titleKey.includes("colesterol alto")) {
+        return "Colesterol alto: exceso de grasas en sangre, especialmente LDL, que puede aumentar el riesgo de enfermedad cardiovascular. Se evalúa con análisis de sangre y se maneja con hábitos y seguimiento profesional.";
+      }
       if (type === "medicamento") {
-        return title + " puede ser útil cuando está indicado para una condición concreta, pero no debe usarse como decisión automática. La seguridad depende de antecedentes, otros medicamentos, alergias y del motivo por el que se consulta.";
+        return title + " es un medicamento que puede ser útil cuando existe una indicación clínica concreta. Su seguridad depende de antecedentes, otros medicamentos, alergias y del motivo de uso; esta información es educativa y no reemplaza la indicación profesional.";
       }
       if (type === "sintoma") {
         return title + " puede aparecer por causas leves o por situaciones que requieren evaluación. Observa cuándo empezó, cuánto dura, qué tan intenso es y si se acompaña de fiebre, dolor fuerte, dificultad para respirar u otros cambios.";
@@ -1530,49 +1563,45 @@
     function sectionText(record, section) {
       const knowledge = record._knowledge || {};
       const type = normalizeText(record.tipo);
-      const title = record.titulo || "este tema";
+      const title = displayRecordTitle(record, "este tema");
       const description = record.description || knowledge.descripcion || "Información educativa disponible dentro del ecosistema IDB.";
       const byType = {
         medicamento: {
-          descripcion: knowledge.descripcion || title + " es un medicamento que puede tener beneficios y riesgos según la persona que lo use. La indicación, duración y forma de uso deben revisarse con criterio profesional, especialmente si hay enfermedades crónicas o uso de otros tratamientos.",
+          descripcion: knowledge.descripcion || title + " es un medicamento que puede tener beneficios y riesgos según la persona que lo use. Puede explicarse por su uso terapéutico y su mecanismo general, pero la indicación y el seguimiento deben revisarse con criterio profesional.",
           usos: knowledge.para_que_sirve || "Puede emplearse para objetivos terapéuticos específicos, de acuerdo con su grupo farmacológico y la evaluación clínica. No todos los síntomas requieren medicamento, y no todos los medicamentos son adecuados para todas las personas.",
-          dosis: "IDB no indica dosis ni cambios de tratamiento. La dosis depende de edad, peso, diagnóstico, función renal o hepática, otros medicamentos y presentación disponible. No aumentes, suspendas ni combines medicamentos sin orientación profesional.",
+          presentacion: "Puede encontrarse en presentaciones comunes como tabletas, cápsulas, solución, gotas, inhaladores, cremas o inyectables según el medicamento, el país y el fabricante. Revisa el envase y confirma cualquier duda con un profesional.",
           efectos: "Presta atención a molestias nuevas, alergias, somnolencia, sangrados, dolor abdominal intenso, dificultad para respirar o empeoramiento del cuadro. Ante una reacción inesperada, suspende la automedicación y busca orientación.",
           precauciones: Array.isArray(knowledge.precauciones) && knowledge.precauciones.length ? knowledge.precauciones.join(" ") : "Consulta antes de usarlo si estás embarazada, tienes alergias, enfermedad renal o hepática, antecedentes de sangrado, tomas anticoagulantes u otros tratamientos continuos.",
           interacciones: "Puede interactuar con otros medicamentos, suplementos, alcohol o enfermedades de base. Llevar una lista de lo que tomas ayuda a que el profesional evalúe riesgos y evite combinaciones inseguras."
         },
         sintoma: {
           descripcion: knowledge.descripcion || title + " es una señal del cuerpo, no un diagnóstico. Puede relacionarse con situaciones pasajeras o con condiciones que requieren evaluación, por eso importa observar el contexto completo.",
-          usos: "Sirve como punto de partida para ordenar la consulta: inicio, duración, intensidad, desencadenantes, síntomas acompañantes y antecedentes. Esa información ayuda a decidir si observar, consultar o buscar atención urgente.",
-          dosis: "No corresponde hablar de dosis para un síntoma. Evita automedicarte para ocultarlo si es intenso, nuevo, persistente o se acompaña de señales de alarma.",
-          efectos: "La evolución es una pista importante: si aumenta, cambia de patrón, aparece con debilidad, fiebre persistente, dolor fuerte o dificultad para respirar, conviene consultar pronto.",
-          precauciones: "Anota cuándo empezó, qué lo mejora o empeora, si se repite y qué otros síntomas aparecen. Esta información evita suposiciones y mejora la orientación profesional.",
-          interacciones: "Edad, embarazo, enfermedades previas, medicamentos y antecedentes familiares pueden cambiar la interpretación del síntoma. Por eso la evaluación debe adaptarse a cada persona."
+          causas: "Puede deberse a causas leves o transitorias, pero también a infecciones, inflamación, irritación, lesiones, migraña, alergias, cambios metabólicos u otras condiciones según el síntoma y el contexto.",
+          complicaciones: "La evolución es una pista importante: si aumenta, cambia de patrón, aparece con debilidad, fiebre persistente, dolor fuerte o dificultad para respirar, conviene consultar pronto.",
+          prevencion: "Anota cuándo empezó, qué lo mejora o empeora, si se repite y qué otros síntomas aparecen. Dormir bien, hidratarse, evitar irritantes y controlar condiciones previas puede ayudar según el caso.",
+          consulta: consultText(record)
         },
         enfermedad: {
           descripcion: knowledge.descripcion || title + " es una condición que debe entenderse por sus causas, evolución, factores de riesgo y posibles complicaciones. La confirmación y el seguimiento corresponden a un profesional de salud.",
-          usos: knowledge.para_que_sirve || "Esta ficha ayuda a reconocer qué se suele vigilar, qué hábitos pueden apoyar la prevención y qué información conviene llevar a una consulta médica.",
-          dosis: "No aplica una dosis. El manejo puede incluir controles, cambios de hábitos, estudios o tratamientos definidos por un profesional según cada caso.",
-          efectos: "Sin seguimiento, algunas enfermedades pueden progresar o afectar otros órganos. Consultar a tiempo permite confirmar el diagnóstico, controlar riesgos y ajustar el plan de cuidado.",
-          precauciones: Array.isArray(knowledge.precauciones) && knowledge.precauciones.length ? knowledge.precauciones.join(" ") : "Evita asumir que todos los casos evolucionan igual. Ante síntomas nuevos, empeoramiento o dudas sobre tratamiento, busca evaluación profesional.",
-          interacciones: "El riesgo y la evolución pueden cambiar por edad, antecedentes familiares, hábitos, otros diagnósticos y medicamentos. El seguimiento debe considerar ese contexto."
+          causas: "Puede relacionarse con factores genéticos, hábitos, edad, otras enfermedades, ambiente o infecciones, según la condición. Identificar factores de riesgo ayuda a orientar la prevención y el seguimiento.",
+          complicaciones: "Sin seguimiento, algunas enfermedades pueden progresar o afectar otros órganos. Consultar a tiempo permite confirmar el diagnóstico, controlar riesgos y ajustar el plan de cuidado.",
+          prevencion: Array.isArray(knowledge.precauciones) && knowledge.precauciones.length ? knowledge.precauciones.join(" ") : "Los controles, hábitos sostenidos, vacunación cuando corresponda y seguimiento de factores de riesgo pueden reducir complicaciones.",
+          consulta: consultText(record)
         },
         examen: {
           descripcion: knowledge.descripcion || title + " es una herramienta de evaluación. Su valor está en relacionar el resultado con síntomas, antecedentes, examen físico y motivo por el que fue solicitado.",
-          usos: knowledge.para_que_sirve || "Puede ayudar a detectar alteraciones, hacer seguimiento o complementar una evaluación médica, pero no reemplaza la interpretación profesional.",
-          dosis: "No aplica una dosis. Algunos exámenes requieren preparación, horario específico o condiciones previas; sigue la indicación recibida por el servicio de salud.",
-          efectos: "Un resultado fuera de rango no siempre significa enfermedad, y un resultado normal no siempre descarta un problema. El contexto clínico es fundamental.",
-          precauciones: "Informa medicamentos, suplementos, embarazo, ayuno, síntomas y diagnósticos previos, porque pueden modificar el resultado o su interpretación.",
-          interacciones: "El resultado puede variar por técnica, laboratorio, edad, sexo, enfermedades previas o tratamientos. Revísalo con un profesional antes de tomar decisiones."
+          causas: knowledge.para_que_sirve || "Puede ayudar a detectar alteraciones, hacer seguimiento o complementar una evaluación médica, pero no reemplaza la interpretación profesional.",
+          complicaciones: "Un resultado fuera de rango no siempre significa enfermedad, y un resultado normal no siempre descarta un problema. El contexto clínico es fundamental.",
+          prevencion: "Informa medicamentos, suplementos, embarazo, ayuno, síntomas y diagnósticos previos, porque pueden modificar el resultado o su interpretación.",
+          consulta: consultText(record)
         }
       };
       const defaults = byType[type] || {
         descripcion: knowledge.descripcion || description,
-        usos: title + " ayuda a ordenar información de salud, reconocer dudas importantes y preparar una conversación más clara con un profesional.",
-        dosis: "No aplica una dosis para este tipo de consulta.",
-        efectos: "Observa cambios, persistencia o empeoramiento, y consulta si algo te preocupa.",
-        precauciones: "Evita tomar decisiones importantes solo con información general.",
-        interacciones: "La interpretación puede cambiar según antecedentes, edad y contexto clínico."
+        causas: title + " ayuda a ordenar información de salud, reconocer dudas importantes y preparar una conversación más clara con un profesional.",
+        complicaciones: "Observa cambios, persistencia o empeoramiento, y consulta si algo te preocupa.",
+        prevencion: "Evita tomar decisiones importantes solo con información general.",
+        consulta: consultText(record)
       };
       return defaults[section] || description;
     }
@@ -1600,7 +1629,7 @@
       if (Array.isArray(record._knowledge?.preguntas_frecuentes) && record._knowledge.preguntas_frecuentes.length) {
         return record._knowledge.preguntas_frecuentes.slice(0, 5);
       }
-      const title = record.titulo || "este tema";
+      const title = displayRecordTitle(record, "este tema");
       return [
         { pregunta: `¿Esta información reemplaza una consulta médica?`, respuesta: "No. Es orientación educativa para comprender mejor el tema y saber cuándo consultar." },
         { pregunta: `¿Qué debo observar sobre ${title}?`, respuesta: "Observa intensidad, duración, cambios recientes, síntomas asociados y antecedentes relevantes." },
@@ -1633,8 +1662,8 @@
       link.className = "related-link";
       link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
       link.append(
-        createText("strong", "", humanTitle(record.titulo || record.slug || "Consulta")),
-        createText("span", "", `${record.tipo || "Tema"} · ${record.categoria || "IDB"}`)
+        createText("strong", "", displayRecordTitle(record)),
+        createText("span", "", `${humanTitle(record.tipo || "Tema")} · ${humanTitle(record.categoria || "IDB")}`)
       );
       return link;
     }
@@ -1680,7 +1709,7 @@
           media = document.createElement("img");
           media.src = candidates[imageIndex];
           media.dataset.candidateIndex = String(imageIndex);
-          media.alt = `Imagen editorial IDB para ${humanTitle(record.titulo || record.slug)}`;
+          media.alt = `Imagen editorial IDB para ${displayRecordTitle(record)}`;
           media.loading = "lazy";
           media.decoding = "async";
           media.onerror = () => {
@@ -1700,9 +1729,9 @@
         const cardCopy = document.createElement("div");
         cardCopy.className = "interest-copy";
         cardCopy.append(
-          createText("span", "", record.categoria || record.tipo || "IDB"),
-          createText("strong", "", humanTitle(record.titulo || record.slug || "Consulta")),
-          createText("small", "", record.tipo || "Tema de salud")
+          createText("span", "", humanTitle(record.categoria || record.tipo || "IDB")),
+          createText("strong", "", displayRecordTitle(record)),
+          createText("small", "", humanTitle(record.tipo || "Tema de salud"))
         );
         link.append(media, cardCopy);
         row.append(link);
@@ -2036,11 +2065,11 @@
       const app = document.querySelector("#consulta-app");
       const source = getSourceLabel(record);
       const updated = record.ultima_revision || record._knowledge?.ultima_revision || "2026-06";
-      const typeLabel = record.tipo ? record.tipo.charAt(0).toUpperCase() + record.tipo.slice(1) : "Consulta";
+      const typeLabel = humanTitle(record.tipo || "Consulta");
       const related = calculateRelated(records, record);
-      const displayTitle = humanTitle(record.titulo || query || "Consulta");
+      const displayTitle = displayRecordTitle(record, query || "Consulta");
       document.title = `${displayTitle} | Instituto Digital de Bienestar`;
-      document.querySelector(".top-search input").value = query || displayTitle || "";
+      document.querySelector(".top-search input").value = displayTitle || "";
 
       app.innerHTML = "";
 
@@ -2052,7 +2081,7 @@
       breadcrumb.append(
         Object.assign(document.createElement("a"), { href: "index.html", textContent: "Inicio" }),
         createText("span", "", ">"),
-        Object.assign(document.createElement("a"), { href: "temas.html", textContent: record.categoria || typeLabel }),
+        Object.assign(document.createElement("a"), { href: "temas.html", textContent: humanTitle(record.categoria || typeLabel) }),
         createText("span", "", ">"),
         createText("span", "", displayTitle)
       );
@@ -2090,7 +2119,7 @@
         href: `https://wa.me/?text=${encodeURIComponent(`Consulta IDB: ${displayTitle} ${window.location.href}`)}`,
         textContent: "Compartir"
       });
-      heroCopy.append(createText("span", "category-pill", `${typeLabel} · ${record.categoria || "IDB"}`), title, summary, share);
+      heroCopy.append(createText("span", "category-pill", `${typeLabel} · ${humanTitle(record.categoria || "IDB")}`), title, summary, share);
       share.append(heroVita, copyBtn, waShare);
       hero.append(heroCopy, createVisual(record));
       top.append(breadcrumb, hero, createKeyFacts(record));
@@ -2114,15 +2143,24 @@
       content.className = "card section-card";
       const tabs = document.createElement("div");
       tabs.className = "tabs";
-      const tabData = [
-        ["descripcion", "Descripción"],
-        ["usos", "Usos"],
-        ["dosis", "Dosis"],
-        ["efectos", "Efectos secundarios"],
-        ["precauciones", "Precauciones"],
-        ["interacciones", "Interacciones"],
-        ["faq", "Preguntas frecuentes"]
-      ];
+      const isMedication = normalizeText(record.tipo) === "medicamento";
+      const tabData = isMedication
+        ? [
+          ["descripcion", "Descripción"],
+          ["presentacion", "Presentación"],
+          ["faq", "Preguntas frecuentes"],
+          ["efectos", "Efectos secundarios"],
+          ["precauciones", "Precauciones"],
+          ["interacciones", "Interacciones"]
+        ]
+        : [
+          ["descripcion", "Descripción"],
+          ["causas", "Causas frecuentes"],
+          ["faq", "Preguntas frecuentes"],
+          ["complicaciones", "Complicaciones"],
+          ["prevencion", "Prevención"],
+          ["consulta", "Cuándo consultar"]
+        ];
       const panels = document.createElement("div");
       tabData.forEach(([id, label], index) => {
         const button = createText("button", `tab-btn${index === 0 ? " active" : ""}`, label);
@@ -2159,17 +2197,6 @@
       });
       content.append(tabs, panels);
 
-      const miniGrid = document.createElement("section");
-      miniGrid.className = "info-grid";
-      miniGrid.append(
-        buildMiniCard("¿Para qué sirve?", sectionText(record, "usos"), "target"),
-        buildMiniCard("¿Cómo actúa?", normalizeText(record.tipo) === "medicamento" ? "Actúa mediante mecanismos propios de su grupo farmacológico. La explicación exacta depende del medicamento y debe revisarse con orientación profesional." : "Ayuda a reconocer patrones, contexto y cambios que pueden orientar una consulta más clara.", "activity"),
-        buildMiniCard("Dosis habitual", sectionText(record, "dosis"), "clock"),
-        buildMiniCard("Presentaciones", normalizeText(record.tipo) === "medicamento" ? "Las presentaciones pueden variar según el país y el fabricante. Consulta el envase y la indicación profesional." : "La información se presenta como orientación educativa, no como indicación de tratamiento.", "bottle"),
-        buildMiniCard("Efectos secundarios", sectionText(record, "efectos"), "alert"),
-        buildMiniCard("Precauciones", sectionText(record, "precauciones"), "shield")
-      );
-
       const alerts = document.createElement("section");
       alerts.className = "alert-stack";
       [
@@ -2182,7 +2209,7 @@
         alerts.append(alert);
       });
 
-      main.append(quick, content, miniGrid, alerts);
+      main.append(quick, content, alerts);
 
       const sidebar = document.createElement("aside");
       sidebar.className = "sidebar";
@@ -2212,7 +2239,7 @@
 
     function renderEmpty(query) {
       const app = document.querySelector("#consulta-app");
-      document.querySelector(".top-search input").value = query || "";
+      document.querySelector(".top-search input").value = query ? humanTitle(query) : "";
       app.innerHTML = "";
       const wrap = document.createElement("section");
       wrap.className = "wrap empty-state";
