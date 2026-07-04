@@ -68,7 +68,8 @@
 
   function createQueryVariants(query) {
     const normalized = normalizeQueryText(query);
-    const variants = [normalized, ...medicalQueryCandidates(normalized)];
+    const interpreted = interpretMedicalQuery(normalized);
+    const variants = [normalized, interpreted.corrected, interpreted.medicalText, ...interpreted.medicalCandidates];
 
     const phraseAliases = [
       ["para que sirve ", ""],
@@ -122,30 +123,148 @@
     return uniqueValues(variants);
   }
 
-  function medicalQueryCandidates(query) {
+  const QUERY_CORRECTIONS = [
+    [/\bdolro\b/g, "dolor"],
+    [/\bcabesa\b/g, "cabeza"],
+    [/\bprecion\b/g, "presion"],
+    [/\bhipertencion\b/g, "hipertension"],
+    [/\bhipertenciona\b/g, "hipertension"],
+    [/\bdiavetes\b/g, "diabetes"],
+    [/\bdiabetesa\b/g, "diabetes"],
+    [/\bgripee\b/g, "gripe"],
+    [/\bgrippe\b/g, "gripe"],
+    [/\bfievre\b/g, "fiebre"],
+    [/\btoss\b/g, "tos"],
+    [/\bansieda\b/g, "ansiedad"],
+    [/\bdeprecion\b/g, "depresion"],
+    [/\bmigranaa\b/g, "migrana"],
+    [/\bninio\b/g, "nino"],
+    [/\bninia\b/g, "nina"],
+    [/\bbebes\b/g, "bebe"],
+    [/\bansiano\b/g, "anciano"],
+    [/\bansiana\b/g, "anciana"],
+    [/\bancaino\b/g, "anciano"],
+    [/\btersera edad\b/g, "tercera edad"],
+    [/\badulto mallor\b/g, "adulto mayor"],
+    [/\bmujer bieja\b/g, "mujer mayor"],
+    [/\bhombre biejo\b/g, "hombre mayor"],
+    [/\bcorason\b/g, "corazon"],
+    [/\balerjia\b/g, "alergia"]
+  ];
+
+  const CONTEXT_DEFINITIONS = {
+    pediatric: [
+      "nino", "nina", "bebe", "lactante", "recien nacido", "neonato", "infantil",
+      "pediatrico", "escolar", "adolescente", "menor", "hijo", "hija", "pequeno", "pequena"
+    ],
+    olderAdult: [
+      "adulto mayor", "persona mayor", "tercera edad", "anciano", "anciana", "ancianito",
+      "ancianita", "abuelo", "abuela", "abuelito", "abuelita", "edad avanzada", "mayor"
+    ],
+    male: ["hombre", "varon", "caballero", "padre", "papa", "abuelo", "abuelito"],
+    female: ["mujer", "senora", "dama", "madre", "mama", "abuela", "abuelita"]
+  };
+
+  const MEDICAL_SYNONYMS = [
+    [["presion alta", "tension alta"], "hipertension"],
+    [["azucar alta", "glucosa alta"], "glucosa"],
+    [["dolor cabeza", "dolor en la cabeza", "cefalea"], "dolor de cabeza"],
+    [["dolor de barriga", "dolor barriga", "dolor abdominal", "dolor de panza"], "dolor de estomago"],
+    [["vomitar", "vomito", "vomitos"], "nauseas"],
+    [["resfrio", "resfriado", "gripe"], "resfrio comun"],
+    [["agotamiento"], "fatiga"],
+    [["tristeza"], "depresion"],
+    [["estres"], "ansiedad"],
+    [["corazon", "dolor de corazon", "dolor en el corazon", "pecho", "dolor pecho", "dolor toracico"], "dolor de pecho"],
+    [["huesos", "duelen los huesos", "dolor de huesos", "articulaciones", "dolor articulaciones"], "dolor articular"],
+    [["alergia", "alergico", "alergica"], "erupcion en la piel"]
+  ];
+
+  function applyQueryCorrections(query) {
+    let text = normalizeQueryText(query).replace(/[-_]+/g, " ");
+    QUERY_CORRECTIONS.forEach(([pattern, replacement]) => {
+      text = text.replace(pattern, replacement);
+    });
+    return text.replace(/\s+/g, " ").trim();
+  }
+
+  function containsTerm(text, term) {
+    return new RegExp(`(^|\\s)${term.replace(/\s+/g, "\\s+")}(\\s|$)`).test(text);
+  }
+
+  function detectQueryContext(query) {
+    const corrected = applyQueryCorrections(query);
+    const spaced = ` ${corrected} `;
+    const pediatric = CONTEXT_DEFINITIONS.pediatric.some((term) => containsTerm(spaced, term));
+    const olderAdult = CONTEXT_DEFINITIONS.olderAdult.some((term) => containsTerm(spaced, term));
+    const male = CONTEXT_DEFINITIONS.male.some((term) => containsTerm(spaced, term));
+    const female = CONTEXT_DEFINITIONS.female.some((term) => containsTerm(spaced, term));
+    return {
+      pediatric,
+      olderAdult,
+      male,
+      female,
+      age: pediatric ? "pediatric" : olderAdult ? "older-adult" : "",
+      sex: female ? "female" : male ? "male" : ""
+    };
+  }
+
+  function synonymCandidates(text) {
+    const candidates = [];
+    MEDICAL_SYNONYMS.forEach(([aliases, target]) => {
+      aliases.forEach((alias) => {
+        if (containsTerm(` ${text} `, alias)) candidates.push(target, text.replace(new RegExp(`\\b${alias.replace(/\s+/g, "\\s+")}\\b`, "g"), target));
+      });
+    });
+    return candidates;
+  }
+
+  function stripContextLanguage(query) {
+    const removable = [
+      ...CONTEXT_DEFINITIONS.pediatric,
+      ...CONTEXT_DEFINITIONS.olderAdult,
+      ...CONTEXT_DEFINITIONS.male,
+      ...CONTEXT_DEFINITIONS.female,
+      "a", "le", "les", "mi", "mis", "el", "la", "los", "las", "un", "una", "con",
+      "tiene", "tienen", "tengo", "tendra", "presenta", "presento", "dio", "tiene", "me",
+      "su", "sus", "por", "para"
+    ];
+    let text = ` ${query} `;
+    removable
+      .sort((a, b) => b.length - a.length)
+      .forEach((term) => {
+        text = text.replace(new RegExp(`\\b${term.replace(/\s+/g, "\\s+")}\\b`, "g"), " ");
+      });
+    return text.replace(/\s+/g, " ").trim();
+  }
+
+  function interpretMedicalQuery(query) {
     const raw = normalizeQueryText(query).replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
-    const corrected = raw
-      .replace(/\bdolro\b/g, "dolor")
-      .replace(/\bhipertencion\b/g, "hipertension")
-      .replace(/\bninio\b/g, "nino")
-      .replace(/\bbebes\b/g, "bebe");
-    const candidates = [raw, corrected];
+    const corrected = applyQueryCorrections(raw);
+    const context = detectQueryContext(corrected);
+    const stripped = stripContextLanguage(corrected);
+    const candidates = [raw, corrected, stripped, ...synonymCandidates(corrected), ...synonymCandidates(stripped)];
+
+    const painMatch = corrected.match(/\b(?:me|le|les)?\s*(?:duele|duelen)\s+(?:el|la|los|las)?\s*(.+)$/);
+    if (painMatch?.[1]) {
+      candidates.push(`dolor de ${painMatch[1]}`);
+      candidates.push(...synonymCandidates(`dolor de ${painMatch[1]}`));
+    }
+
     if (/\bdolor cabeza\b/.test(corrected)) candidates.push(corrected.replace(/\bdolor cabeza\b/g, "dolor de cabeza"));
     if (/\bpresion alta\b/.test(corrected)) candidates.push("hipertension");
 
-    const contextWords = [
-      "recien nacido", "adulto mayor", "tercera edad", "pediatrico", "infantil", "lactante",
-      "nino", "nina", "bebe", "anciano", "hombre", "masculino", "varon", "mujer", "femenino",
-      "embarazo", "gestante", "menopausia", "ginecologico"
-    ];
-    let stripped = ` ${corrected} `;
-    contextWords.forEach((word) => {
-      stripped = stripped.replace(new RegExp(`\\b${word}\\b`, "g"), " ");
-    });
-    stripped = stripped.replace(/\b(con|de|del|la|el|un|una)\b/g, " ").replace(/\s+/g, " ").trim();
-    if (stripped) candidates.push(stripped);
+    return {
+      raw,
+      corrected,
+      context,
+      medicalText: stripped || corrected,
+      medicalCandidates: uniqueValues(candidates)
+    };
+  }
 
-    return uniqueValues(candidates);
+  function medicalQueryCandidates(query) {
+    return interpretMedicalQuery(query).medicalCandidates;
   }
 
   function normalizeRecord(record) {
@@ -738,12 +857,15 @@
 
   window.IDBMedicalSearch = {
     attach: attachMedicalSearch,
+    detectQueryContext,
     findRecord,
     getKnowledgeSources,
     getHistory: readSearchHistory,
     iconForType: getTypeIcon,
+    interpretQuery: interpretMedicalQuery,
     load: loadSearchIndex,
     medicalQueryCandidates,
+    normalizeQueryIntent: applyQueryCorrections,
     normalize: normalizeText,
     saveSearch: saveSearchTerm,
     search: searchMedicalIndex
