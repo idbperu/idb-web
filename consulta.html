@@ -1251,7 +1251,7 @@
     }
 
     function normalizeQueryIntent(query) {
-      let text = ` ${normalizeText(query)} `;
+      let text = ` ${normalizeText(query).replace(/[-_]+/g, " ")} `;
       const replacements = [
         [/\bninio\b/g, " nino "],
         [/\bninos\b/g, " nino "],
@@ -1391,10 +1391,8 @@
     }
 
     function findRecord(records, query) {
-      const queryCandidates = visualSearchQueryCandidates(query).map((candidate) => ({
-        text: normalizeText(candidate),
-        slug: slugify(candidate)
-      }));
+      const normalizedQuery = normalizeText(query);
+      const slugQuery = slugify(query);
       const prepared = records.map((record) => {
         const keywords = Array.isArray(record.keywords) ? record.keywords : [];
         return {
@@ -1406,20 +1404,18 @@
         };
       });
 
-      const exact = queryCandidates
-        .map((candidate) => prepared.find((item) => item.title === candidate.text
-          || item.titleSlug === candidate.slug
-          || item.keywords.some((keyword) => keyword === candidate.text)
-          || item.keywordSlugs.some((keyword) => keyword === candidate.slug)))
-        .find(Boolean);
+      const exact = prepared.find((item) => item.title === normalizedQuery
+        || item.titleSlug === slugQuery
+        || item.keywords.some((keyword) => keyword === normalizedQuery)
+        || item.keywordSlugs.some((keyword) => keyword === slugQuery));
       if (exact) return exact.record;
 
-      const partial = queryCandidates
-        .map((candidate) => prepared.find((item) => item.title.includes(candidate.text)
-          || item.titleSlug.includes(candidate.slug)
-          || item.keywords.some((keyword) => keyword.includes(candidate.text))
-          || item.keywordSlugs.some((keyword) => keyword.includes(candidate.slug))))
-        .find(Boolean);
+      const partial = prepared.find((item) => item.title.includes(normalizedQuery)
+        || normalizedQuery.includes(item.title)
+        || item.titleSlug.includes(slugQuery)
+        || slugQuery.includes(item.titleSlug)
+        || item.keywords.some((keyword) => keyword.includes(normalizedQuery) || normalizedQuery.includes(keyword))
+        || item.keywordSlugs.some((keyword) => keyword.includes(slugQuery) || slugQuery.includes(keyword)));
       return partial ? partial.record : null;
     }
 
@@ -2330,7 +2326,11 @@
         const records = await response.json();
         const fallbackRecord = Array.isArray(records) ? findRecord(records, query) : null;
         const category = getKnowledgeCategory(fallbackRecord);
-        const slug = slugify(query) || slugify(fallbackRecord?.titulo);
+        const querySlug = slugify(query);
+        const recordSlug = slugify(fallbackRecord?.slug || fallbackRecord?.titulo);
+        const keywordSlugs = Array.isArray(fallbackRecord?.keywords) ? fallbackRecord.keywords.map(slugify) : [];
+        const shouldUseRecordSlug = recordSlug && (querySlug.includes(recordSlug) || keywordSlugs.includes(querySlug));
+        const slug = shouldUseRecordSlug ? recordSlug : querySlug || recordSlug;
         const knowledgeRecord = await loadKnowledgeTopic(slug, category, fallbackRecord);
         const record = knowledgeRecord || fallbackRecord;
 
