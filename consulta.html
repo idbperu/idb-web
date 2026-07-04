@@ -1250,6 +1250,53 @@
       return new URLSearchParams(window.location.search).get("q") || "";
     }
 
+    function normalizeQueryIntent(query) {
+      let text = ` ${normalizeText(query)} `;
+      const replacements = [
+        [/\bninio\b/g, " nino "],
+        [/\bninos\b/g, " nino "],
+        [/\bninas\b/g, " nina "],
+        [/\bbebes\b/g, " bebe "],
+        [/\bpediatrica\b/g, " pediatrico "],
+        [/\bpediatricas\b/g, " pediatrico "],
+        [/\bpediatricos\b/g, " pediatrico "],
+        [/\bdolro\b/g, " dolor "],
+        [/\bhipertencion\b/g, " hipertension "],
+        [/\bancianos\b/g, " adulto mayor "],
+        [/\banciano\b/g, " adulto mayor "],
+        [/\btercera edad\b/g, " adulto mayor "]
+      ];
+      replacements.forEach(([pattern, replacement]) => {
+        text = text.replace(pattern, replacement);
+      });
+      return text.replace(/\s+/g, " ").trim();
+    }
+
+    function visualSearchQueryCandidates(query) {
+      const raw = normalizeText(query);
+      const intent = normalizeQueryIntent(query);
+      const candidates = [raw, intent];
+      const knownTopics = ["dolor de cabeza", "dolor abdominal", "presion alta", "hipertension", "fiebre", "tos", "diarrea", "asma"];
+      knownTopics.forEach((topic) => {
+        if (intent.includes(topic)) candidates.push(topic === "presion alta" ? "hipertension" : topic);
+      });
+
+      const contextWords = [
+        "recien nacido", "adulto mayor", "tercera edad", "pediatrico", "infantil", "lactante",
+        "nino", "nina", "bebe", "anciano", "hombre", "masculino", "varon", "mujer", "femenino",
+        "embarazo", "gestante", "menopausia", "ginecologico"
+      ];
+      let stripped = ` ${intent} `;
+      contextWords.forEach((word) => {
+        stripped = stripped.replace(new RegExp(`\\b${word}\\b`, "g"), " ");
+      });
+      stripped = stripped.replace(/\b(con|de|del|la|el|un|una)\b/g, " ").replace(/\s+/g, " ").trim();
+      if (stripped) candidates.push(stripped);
+
+      return [...new Set(candidates.filter(Boolean))];
+    }
+
+
     function createText(tag, className, text) {
       const element = document.createElement(tag);
       if (className) element.className = className;
@@ -1344,8 +1391,10 @@
     }
 
     function findRecord(records, query) {
-      const normalizedQuery = normalizeText(query);
-      const slugQuery = slugify(query);
+      const queryCandidates = visualSearchQueryCandidates(query).map((candidate) => ({
+        text: normalizeText(candidate),
+        slug: slugify(candidate)
+      }));
       const prepared = records.map((record) => {
         const keywords = Array.isArray(record.keywords) ? record.keywords : [];
         return {
@@ -1357,41 +1406,56 @@
         };
       });
 
-      const exact = prepared.find((item) => item.title === normalizedQuery
-        || item.titleSlug === slugQuery
-        || item.keywords.some((keyword) => keyword === normalizedQuery)
-        || item.keywordSlugs.some((keyword) => keyword === slugQuery));
+      const exact = queryCandidates
+        .map((candidate) => prepared.find((item) => item.title === candidate.text
+          || item.titleSlug === candidate.slug
+          || item.keywords.some((keyword) => keyword === candidate.text)
+          || item.keywordSlugs.some((keyword) => keyword === candidate.slug)))
+        .find(Boolean);
       if (exact) return exact.record;
 
-      const partial = prepared.find((item) => item.title.includes(normalizedQuery)
-        || item.titleSlug.includes(slugQuery)
-        || item.keywords.some((keyword) => keyword.includes(normalizedQuery))
-        || item.keywordSlugs.some((keyword) => keyword.includes(slugQuery)));
+      const partial = queryCandidates
+        .map((candidate) => prepared.find((item) => item.title.includes(candidate.text)
+          || item.titleSlug.includes(candidate.slug)
+          || item.keywords.some((keyword) => keyword.includes(candidate.text))
+          || item.keywordSlugs.some((keyword) => keyword.includes(candidate.slug))))
+        .find(Boolean);
       return partial ? partial.record : null;
     }
 
-    function visualCategory(record) {
-      const haystack = ` ${normalizeText(`${record.titulo} ${record.tipo} ${record.categoria} ${(record.keywords || []).join(" ")}`)} `;
+    function visualCategory(record, query = "") {
+      const queryIntent = normalizeQueryIntent(query);
+      const queryHaystack = ` ${queryIntent} `;
+      const recordHaystack = normalizeText(`${record?.titulo || ""} ${record?.tipo || ""} ${record?.categoria || ""} ${(record?.keywords || []).join(" ")}`);
+      const haystack = ` ${recordHaystack} ${queryIntent} `;
+      const isHeadacheQuery = queryHaystack.includes(" dolor de cabeza ") || queryHaystack.includes(" dolor cabeza ") || queryHaystack.includes(" cefalea ") || queryHaystack.includes(" migrana ");
+      const contextCategories = [
+        ["infantil", ["nino", "nina", "bebe", "infantil", "pediatrico", "lactante", "recien nacido"]],
+        ["adulto-mayor", ["adulto mayor", "anciano", "tercera edad"]],
+        ["hombre", ["hombre", "masculino", "varon", "prostata"]],
+        ["mujer", ["mujer", "femenino", "embarazo", "gestante", "menopausia", "ginecologico"]],
+        ["primeros-auxilios", ["accidente", "golpe", "quemadura", "herida", "sangrado", "corte", "fractura"]],
+        ["dolor-rehabilitacion", ["dolor", "espalda", "rodilla", "cuello", "hombro", "articulacion", "rehabilitacion"]]
+      ];
+      const contextMatch = contextCategories.find(([category, roots]) => {
+        if (category === "dolor-rehabilitacion" && isHeadacheQuery) return false;
+        return roots.some((root) => queryHaystack.includes(root));
+      });
+      if (contextMatch) return contextMatch[0];
+
       const categories = [
         ["cardiovascular", ["hipertension", "presion alta", "tension alta", "colesterol", "cardio", "corazon", "presion arterial", "arter", "vascular"]],
-        ["digestivo", ["gastritis", "acidez", "reflujo", "digestion", "digest", "estom", "gastr", "colon", "intestin", "higad", "vesicula", "pancrea", "abdomin"]],
+        ["digestivo", ["gastritis", "acidez", "reflujo", "digestion", "digest", "estom", "gastr", "colon", "intestin", "higad", "vesicula", "pancrea", "abdomin", "diarrea"]],
         ["neurologico", ["dolor de cabeza", "cefalea", "migrana", "migra", "neuro", "convulsion", "epilep", "alzheimer", "parkinson"]],
         ["respiratorio", ["respir", "asma", "bronqu", "bronquitis", "pulmon", "tos", "neumon"]],
         ["salud-mental", ["salud mental", "mental", "emocion", "psicolog", "ansied", "estres", "depres", "panic", "insom"]],
         ["metabolico", ["diabet", "glucos", "insulin", "triglicer", "obes"]],
         ["laboratorio", ["laborat", "analisis", "hemogram", "perfil", "biops", "tomograf", "radiograf", "resonan", "ecograf"]],
         ["diagnostico", ["diagnost", "fiebre", "febril", "temperatura", "calentura"]],
-        ["infantil", ["nino", "nina", "bebe", "hijo", "hija", "pediatr"]],
         ["medicamentos", ["medic", "farmac", "tableta", "capsula", "jarabe", "antibiot", "ibupro", "paracetam", "diclofen", "naprox", "omepraz"]],
-        ["neurologico", ["neuro", "migra", "cefalea", "convulsion", "epilep", "alzheimer", "parkinson"]],
         ["dermatologia", ["dermat", "piel", "eczema", "psorias", "acne"]],
         ["nutricion", ["nutric", "aliment", "dieta", "peso"]],
-        ["prevencion", ["prevenc", "vacun", "tamiz"]],
-        ["dolor-rehabilitacion", ["dolor", "espalda", "rodilla", "hombro", "articul", "rehabil", "artrosis"]],
-        ["adulto-mayor", ["adulto mayor", "geriatr"]],
-        ["hombre", ["prostata", "erectil", "mascul"]],
-        ["mujer", ["embarazo", "gineco", "menop", "ovario", "mama"]],
-        ["primeros-auxilios", ["quemadura", "fractura", "hemorrag", "accidente", "primeros auxilios"]]
+        ["prevencion", ["prevenc", "vacun", "tamiz"]]
       ];
 
       const match = categories.find(([, roots]) => roots.some((root) => haystack.includes(root)));
@@ -1412,8 +1476,8 @@
       ];
     }
 
-    function createVisual(record) {
-      const category = visualCategory(record);
+    function createVisual(record, query = getQuery()) {
+      const category = visualCategory(record, query);
       const figure = document.createElement("figure");
       figure.className = "medical-image";
       const candidates = visualCandidates(category);
@@ -1716,7 +1780,7 @@
         const link = document.createElement("a");
         link.className = "card interest-card";
         link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
-        const category = visualCategory(record);
+        const category = visualCategory(record, getQuery());
         const candidates = visualCandidates(category);
         let media;
         if (candidates.length) {
