@@ -663,28 +663,29 @@
     }
     .reference-chart-block {
       display: grid;
-      gap: 10px;
+      gap: 12px;
       min-width: 0;
     }
     .reference-chart-title {
-      color: #4e6276;
-      font-size: .72rem;
+      color: var(--blue-dark);
+      font-size: .74rem;
       font-weight: 900;
       letter-spacing: .02em;
     }
     .reference-bars {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
+      gap: 12px;
       align-items: end;
-      min-height: 116px;
-      padding: 8px 6px 0;
+      justify-content: center;
+      min-height: 104px;
+      padding: 10px 12px 2px;
       border-radius: 14px;
-      background: linear-gradient(180deg, rgba(245, 249, 252, .82), rgba(255,255,255,0));
+      background: linear-gradient(180deg, rgba(245, 249, 252, .96), rgba(255,255,255,.2));
     }
     .reference-bar-item {
       display: grid;
-      grid-template-rows: auto 76px auto;
+      grid-template-rows: auto 72px auto;
       gap: 6px;
       min-width: 0;
       align-items: end;
@@ -699,13 +700,14 @@
     }
     .reference-bar-track {
       width: 100%;
-      max-width: 34px;
-      height: 76px;
+      max-width: 30px;
+      height: 72px;
       display: flex;
       align-items: end;
       border-radius: 999px;
-      background: #edf4f8;
+      background: #eaf2f7;
       overflow: hidden;
+      box-shadow: inset 0 0 0 1px rgba(23, 105, 170, .05);
     }
     .reference-bar-fill {
       width: 100%;
@@ -1296,6 +1298,19 @@
       return [...new Set(candidates.filter(Boolean))];
     }
 
+    function medicalQueryCandidates(query) {
+      const raw = normalizeText(query).replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
+      let corrected = raw
+        .replace(/\bdolro\b/g, "dolor")
+        .replace(/\bhipertencion\b/g, "hipertension")
+        .replace(/\bninio\b/g, "nino")
+        .replace(/\bbebes\b/g, "bebe");
+      const candidates = [raw, corrected];
+      if (/\bdolor cabeza\b/.test(corrected)) candidates.push(corrected.replace(/\bdolor cabeza\b/g, "dolor de cabeza"));
+      if (/\bpresion alta\b/.test(corrected)) candidates.push("hipertension");
+      return [...new Set(candidates.filter(Boolean))];
+    }
+
 
     function createText(tag, className, text) {
       const element = document.createElement(tag);
@@ -1391,8 +1406,10 @@
     }
 
     function findRecord(records, query) {
-      const normalizedQuery = normalizeText(query);
-      const slugQuery = slugify(query);
+      const queryCandidates = medicalQueryCandidates(query).map((candidate) => ({
+        text: normalizeText(candidate),
+        slug: slugify(candidate)
+      }));
       const prepared = records.map((record) => {
         const keywords = Array.isArray(record.keywords) ? record.keywords : [];
         return {
@@ -1404,18 +1421,27 @@
         };
       });
 
-      const exact = prepared.find((item) => item.title === normalizedQuery
-        || item.titleSlug === slugQuery
-        || item.keywords.some((keyword) => keyword === normalizedQuery)
-        || item.keywordSlugs.some((keyword) => keyword === slugQuery));
+      const exactTitle = queryCandidates.map((candidate) => prepared.find((item) => item.title === candidate.text)).find(Boolean);
+      if (exactTitle) return exactTitle.record;
+
+      const exactSlug = queryCandidates.map((candidate) => prepared.find((item) => item.titleSlug === candidate.slug)).find(Boolean);
+      if (exactSlug) return exactSlug.record;
+
+      const exactKeyword = queryCandidates.map((candidate) => prepared.find((item) => item.keywords.some((keyword) => keyword === candidate.text))).find(Boolean);
+      if (exactKeyword) return exactKeyword.record;
+
+      const exactKeywordSlug = queryCandidates.map((candidate) => prepared.find((item) => item.keywordSlugs.some((keyword) => keyword === candidate.slug))).find(Boolean);
+      const exact = exactKeywordSlug;
       if (exact) return exact.record;
 
-      const partial = prepared.find((item) => item.title.includes(normalizedQuery)
-        || normalizedQuery.includes(item.title)
-        || item.titleSlug.includes(slugQuery)
-        || slugQuery.includes(item.titleSlug)
-        || item.keywords.some((keyword) => keyword.includes(normalizedQuery) || normalizedQuery.includes(keyword))
-        || item.keywordSlugs.some((keyword) => keyword.includes(slugQuery) || slugQuery.includes(keyword)));
+      const partial = queryCandidates
+        .map((candidate) => prepared.find((item) => item.title.includes(candidate.text)
+          || candidate.text.includes(item.title)
+          || item.titleSlug.includes(candidate.slug)
+          || candidate.slug.includes(item.titleSlug)
+          || item.keywords.some((keyword) => keyword.includes(candidate.text) || candidate.text.includes(keyword))
+          || item.keywordSlugs.some((keyword) => keyword.includes(candidate.slug) || candidate.slug.includes(keyword))))
+        .find(Boolean);
       return partial ? partial.record : null;
     }
 
@@ -1435,7 +1461,7 @@
       ];
       const contextMatch = contextCategories.find(([category, roots]) => {
         if (category === "dolor-rehabilitacion" && isHeadacheQuery) return false;
-        return roots.some((root) => queryHaystack.includes(root));
+        return roots.some((root) => queryHaystack.includes(` ${root} `));
       });
       if (contextMatch) return contextMatch[0];
 
@@ -1445,8 +1471,8 @@
         ["neurologico", ["dolor de cabeza", "cefalea", "migrana", "migra", "neuro", "convulsion", "epilep", "alzheimer", "parkinson"]],
         ["respiratorio", ["respir", "asma", "bronqu", "bronquitis", "pulmon", "tos", "neumon"]],
         ["salud-mental", ["salud mental", "mental", "emocion", "psicolog", "ansied", "estres", "depres", "panic", "insom"]],
+        ["laboratorio", ["laborat", "examen", "analisis", "hemogram", "perfil", "biops", "tomograf", "radiograf", "resonan", "ecograf"]],
         ["metabolico", ["diabet", "glucos", "insulin", "triglicer", "obes"]],
-        ["laboratorio", ["laborat", "analisis", "hemogram", "perfil", "biops", "tomograf", "radiograf", "resonan", "ecograf"]],
         ["diagnostico", ["diagnost", "fiebre", "febril", "temperatura", "calentura"]],
         ["medicamentos", ["medic", "farmac", "tableta", "capsula", "jarabe", "antibiot", "ibupro", "paracetam", "diclofen", "naprox", "omepraz"]],
         ["dermatologia", ["dermat", "piel", "eczema", "psorias", "acne"]],
@@ -1720,7 +1746,7 @@
       const currentCategory = normalizeText(currentRecord.categoria);
       const currentType = normalizeText(currentRecord.tipo);
       const currentKeywords = new Set((currentRecord.keywords || []).map(normalizeText));
-      return records
+      const scored = records
         .filter((record) => normalizeText(record.titulo) !== currentTitle)
         .map((record) => {
           const sameCategory = normalizeText(record.categoria) === currentCategory ? 3 : 0;
@@ -1728,10 +1754,15 @@
           const shared = (record.keywords || []).filter((keyword) => currentKeywords.has(normalizeText(keyword))).length;
           return { record, score: sameCategory + sameType + shared };
         })
-        .filter((item) => item.score > 0)
-        .sort((a, b) => b.score - a.score || a.record.titulo.localeCompare(b.record.titulo, "es"))
-        .slice(0, 4)
-        .map((item) => item.record);
+        .sort((a, b) => b.score - a.score || a.record.titulo.localeCompare(b.record.titulo, "es"));
+      const direct = scored.filter((item) => normalizeText(item.record.categoria) === currentCategory || (item.record.keywords || []).some((keyword) => currentKeywords.has(normalizeText(keyword))));
+      const system = scored.filter((item) => normalizeText(item.record.tipo) === currentType && !direct.includes(item));
+      const complementary = scored.filter((item) => !direct.includes(item) && !system.includes(item));
+      const selected = [];
+      [direct.slice(0, 2), system.slice(0, 1), complementary.slice(0, 1), direct, system, complementary].flat().forEach((item) => {
+        if (item && selected.length < 4 && !selected.includes(item.record)) selected.push(item.record);
+      });
+      return selected;
     }
 
     function createRelatedLink(record) {
@@ -1772,17 +1803,25 @@
       const row = document.createElement("div");
       row.className = "interest-row";
       const categoryImageIndexes = new Map();
+      const usedImages = new Set();
       related.forEach((record) => {
         const link = document.createElement("a");
         link.className = "card interest-card";
         link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
-        const category = visualCategory(record, getQuery());
+        const category = visualCategory(record);
         const candidates = visualCandidates(category);
         let media;
         if (candidates.length) {
           const currentIndex = categoryImageIndexes.get(category) || 0;
-          const imageIndex = currentIndex % candidates.length;
+          const imageIndex = candidates.findIndex((candidate, index) => index >= currentIndex && !usedImages.has(candidate));
+          const fallbackImageIndex = candidates.findIndex((candidate) => !usedImages.has(candidate));
+          const selectedIndex = imageIndex >= 0 ? imageIndex : fallbackImageIndex;
+          if (selectedIndex < 0) {
+            media = createText("div", "interest-neutral", humanTitle(record.categoria || record.tipo || "Consulta IDB"));
+          } else {
+          const imageIndex = selectedIndex;
           categoryImageIndexes.set(category, currentIndex + 1);
+          usedImages.add(candidates[imageIndex]);
           media = document.createElement("img");
           media.src = candidates[imageIndex];
           media.dataset.candidateIndex = String(imageIndex);
@@ -1800,6 +1839,7 @@
             const neutral = createText("div", "interest-neutral", humanTitle(record.categoria || record.tipo || "Consulta IDB"));
             media.replaceWith(neutral);
           };
+          }
         } else {
           media = createText("div", "interest-neutral", humanTitle(record.categoria || record.tipo || "Consulta IDB"));
         }
@@ -2328,9 +2368,7 @@
         const category = getKnowledgeCategory(fallbackRecord);
         const querySlug = slugify(query);
         const recordSlug = slugify(fallbackRecord?.slug || fallbackRecord?.titulo);
-        const keywordSlugs = Array.isArray(fallbackRecord?.keywords) ? fallbackRecord.keywords.map(slugify) : [];
-        const shouldUseRecordSlug = recordSlug && (querySlug.includes(recordSlug) || keywordSlugs.includes(querySlug));
-        const slug = shouldUseRecordSlug ? recordSlug : querySlug || recordSlug;
+        const slug = recordSlug || querySlug;
         const knowledgeRecord = await loadKnowledgeTopic(slug, category, fallbackRecord);
         const record = knowledgeRecord || fallbackRecord;
 
