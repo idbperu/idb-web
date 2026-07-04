@@ -1165,7 +1165,7 @@
     </div>
   </footer>
 
-  <script src="search.js?v=idb-2.2"></script>
+  <script src="search.js?v=idb-2.3"></script>
   <script>
     const VITA_URL = "https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.";
     const KNOWLEDGE_CATEGORY_MAP = {
@@ -1309,58 +1309,14 @@
       if (typeof window.IDBMedicalSearch?.normalizeQueryIntent === "function") {
         return window.IDBMedicalSearch.normalizeQueryIntent(query);
       }
-      let text = ` ${normalizeText(query).replace(/[-_]+/g, " ")} `;
-      const replacements = [
-        [/\bninio\b/g, " nino "],
-        [/\bninia\b/g, " nina "],
-        [/\bninos\b/g, " nino "],
-        [/\bninas\b/g, " nina "],
-        [/\bbebes\b/g, " bebe "],
-        [/\bpediatrica\b/g, " pediatrico "],
-        [/\bpediatricas\b/g, " pediatrico "],
-        [/\bpediatricos\b/g, " pediatrico "],
-        [/\bdolro\b/g, " dolor "],
-        [/\bcabesa\b/g, " cabeza "],
-        [/\bprecion\b/g, " presion "],
-        [/\bhipertencion\b/g, " hipertension "],
-        [/\bhipertenciona\b/g, " hipertension "],
-        [/\bfievre\b/g, " fiebre "],
-        [/\btoss\b/g, " tos "],
-        [/\bcorason\b/g, " corazon "],
-        [/\balerjia\b/g, " alergia "],
-        [/\bansiano\b/g, " anciano "],
-        [/\bansiana\b/g, " anciana "],
-        [/\btersera edad\b/g, " tercera edad "],
-        [/\badulto mallor\b/g, " adulto mayor "],
-        [/\bancianos\b/g, " adulto mayor "],
-        [/\banciano\b/g, " adulto mayor "],
-        [/\btercera edad\b/g, " adulto mayor "]
-      ];
-      replacements.forEach(([pattern, replacement]) => {
-        text = text.replace(pattern, replacement);
-      });
-      return text.replace(/\s+/g, " ").trim();
+      return normalizeText(query).replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
     }
 
     function queryContext(query) {
       if (typeof window.IDBMedicalSearch?.detectQueryContext === "function") {
         return window.IDBMedicalSearch.detectQueryContext(query);
       }
-      const intent = ` ${normalizeQueryIntent(query)} `;
-      const pediatric = [" nino ", " nina ", " bebe ", " lactante ", " pediatrico ", " infantil ", " hijo ", " hija ", " recien nacido ", " neonato ", " escolar ", " adolescente ", " menor "]
-        .some((term) => intent.includes(term));
-      const olderAdult = [" adulto mayor ", " persona mayor ", " tercera edad ", " anciano ", " anciana ", " ancianito ", " ancianita ", " abuelo ", " abuela ", " abuelito ", " abuelita ", " edad avanzada "]
-        .some((term) => intent.includes(term));
-      const male = [" hombre ", " varon ", " caballero ", " padre ", " papa ", " abuelo ", " abuelito "].some((term) => intent.includes(term));
-      const female = [" mujer ", " senora ", " dama ", " madre ", " mama ", " abuela ", " abuelita "].some((term) => intent.includes(term));
-      return {
-        pediatric,
-        olderAdult,
-        male,
-        female,
-        age: pediatric ? "pediatric" : olderAdult ? "older-adult" : "",
-        sex: female ? "female" : male ? "male" : ""
-      };
+      return { pediatric: false, olderAdult: false, male: false, female: false, age: "", sex: "" };
     }
 
     function hasPediatricContext(query) {
@@ -2241,14 +2197,16 @@
       return null;
     }
 
-    async function renderRecord(record, query, records, stats) {
+    async function renderRecord(record, query, records, stats, interpretation = null) {
       const app = document.querySelector("#consulta-app");
       const source = getSourceLabel(record);
       const updated = record.ultima_revision || record._knowledge?.ultima_revision || "2026-06";
       const typeLabel = humanTitle(record.tipo || "Consulta");
       const related = calculateRelated(records, record);
       const displayTitle = displayRecordTitle(record, query || "Consulta");
-      const context = queryContext(query);
+      const context = typeof window.IDBMedicalSearch?.detectQueryContext === "function"
+        ? window.IDBMedicalSearch.detectQueryContext(query)
+        : queryContext(query);
       const pediatricMode = context.pediatric;
       const olderAdultMode = context.olderAdult;
       document.title = `${displayTitle} | Instituto Digital de Bienestar`;
@@ -2276,6 +2234,8 @@
       const categoryBadge = createText("span", "category-pill", `${typeLabel} · ${humanTitle(record.categoria || "IDB")}`);
       const pediatricBadge = pediatricMode ? createText("span", "category-pill context-pill pediatric-pill", "Orientación pediátrica") : null;
       const olderAdultBadge = olderAdultMode ? createText("span", "category-pill context-pill older-adult-pill", "Orientación para adulto mayor") : null;
+      const maleBadge = !pediatricMode && !olderAdultMode && context.sex === "male" ? createText("span", "category-pill context-pill", "Orientación para hombre") : null;
+      const femaleBadge = !pediatricMode && !olderAdultMode && context.sex === "female" ? createText("span", "category-pill context-pill", "Orientación para mujer") : null;
       const title = createText("h1", "", displayTitle);
       const summary = createText("p", "hero-summary", record.description || "Información educativa disponible dentro del ecosistema IDB.");
       const share = document.createElement("div");
@@ -2308,9 +2268,11 @@
       heroCopy.append(categoryBadge);
       if (pediatricBadge) heroCopy.append(pediatricBadge);
       if (olderAdultBadge) heroCopy.append(olderAdultBadge);
+      if (maleBadge) heroCopy.append(maleBadge);
+      if (femaleBadge) heroCopy.append(femaleBadge);
       heroCopy.append(title, summary, share);
       share.append(heroVita, copyBtn, waShare);
-      hero.append(heroCopy, createVisual(record));
+      hero.append(heroCopy, createVisual(record, query));
       top.append(breadcrumb, hero, createKeyFacts(record));
 
       const grid = document.createElement("section");
@@ -2467,12 +2429,23 @@
       }
 
       try {
-        for (let attempt = 0; attempt < 20 && typeof window.IDBMedicalSearch?.findRecord !== "function"; attempt += 1) {
+        for (let attempt = 0; attempt < 20 && (
+          typeof window.IDBMedicalSearch?.findRecord !== "function"
+          || typeof window.IDBMedicalSearch?.detectQueryContext !== "function"
+          || typeof window.IDBMedicalSearch?.interpretQuery !== "function"
+          || typeof window.IDBMedicalSearch?.medicalQueryCandidates !== "function"
+        ); attempt += 1) {
           await new Promise((resolve) => window.setTimeout(resolve, 25));
         }
+        const searchApi = window.IDBMedicalSearch || {};
+        const detectedContext = typeof searchApi.detectQueryContext === "function" ? searchApi.detectQueryContext(query) : null;
+        const candidates = typeof searchApi.medicalQueryCandidates === "function" ? searchApi.medicalQueryCandidates(query) : [];
+        const interpretation = typeof searchApi.interpretQuery === "function"
+          ? { ...searchApi.interpretQuery(query), context: detectedContext, medicalCandidates: candidates }
+          : { context: detectedContext, medicalCandidates: candidates };
         const response = await fetch("search-index.json");
         const records = await response.json();
-        const fallbackRecord = Array.isArray(records) ? window.IDBMedicalSearch?.findRecord(records, query) : null;
+        const fallbackRecord = Array.isArray(records) ? searchApi.findRecord?.(records, query) : null;
         const category = getKnowledgeCategory(fallbackRecord);
         const querySlug = slugify(query);
         const recordSlug = slugify(fallbackRecord?.slug || fallbackRecord?.titulo);
@@ -2482,7 +2455,7 @@
 
         if (record) {
           const stats = await loadStatsForRecord(record, query);
-          await renderRecord(record, query, records, stats);
+          await renderRecord(record, query, records, stats, interpretation);
         } else {
           renderEmpty(query);
         }
@@ -2494,7 +2467,7 @@
     document.querySelector(".top-search")?.addEventListener("submit", (event) => {
       event.preventDefault();
       const input = event.currentTarget.querySelector("input");
-      const next = slugify(input.value);
+      const next = input.value.trim();
       if (next) window.location.href = `consulta.html?q=${encodeURIComponent(next)}`;
     });
 
