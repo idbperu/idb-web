@@ -68,7 +68,7 @@
 
   function createQueryVariants(query) {
     const normalized = normalizeQueryText(query);
-    const variants = [normalized];
+    const variants = [normalized, ...medicalQueryCandidates(normalized)];
 
     const phraseAliases = [
       ["para que sirve ", ""],
@@ -120,6 +120,32 @@
     variants.push(stripped.replace(/\b(alto|alta|bajo|baja|elevado|elevada|normal|anormal|positivo|negativo)\b/g, " ").replace(/\s+/g, " ").trim());
 
     return uniqueValues(variants);
+  }
+
+  function medicalQueryCandidates(query) {
+    const raw = normalizeQueryText(query).replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
+    const corrected = raw
+      .replace(/\bdolro\b/g, "dolor")
+      .replace(/\bhipertencion\b/g, "hipertension")
+      .replace(/\bninio\b/g, "nino")
+      .replace(/\bbebes\b/g, "bebe");
+    const candidates = [raw, corrected];
+    if (/\bdolor cabeza\b/.test(corrected)) candidates.push(corrected.replace(/\bdolor cabeza\b/g, "dolor de cabeza"));
+    if (/\bpresion alta\b/.test(corrected)) candidates.push("hipertension");
+
+    const contextWords = [
+      "recien nacido", "adulto mayor", "tercera edad", "pediatrico", "infantil", "lactante",
+      "nino", "nina", "bebe", "anciano", "hombre", "masculino", "varon", "mujer", "femenino",
+      "embarazo", "gestante", "menopausia", "ginecologico"
+    ];
+    let stripped = ` ${corrected} `;
+    contextWords.forEach((word) => {
+      stripped = stripped.replace(new RegExp(`\\b${word}\\b`, "g"), " ");
+    });
+    stripped = stripped.replace(/\b(con|de|del|la|el|un|una)\b/g, " ").replace(/\s+/g, " ").trim();
+    if (stripped) candidates.push(stripped);
+
+    return uniqueValues(candidates);
   }
 
   function normalizeRecord(record) {
@@ -309,6 +335,45 @@
       .reduce((bestScore, variant) => Math.max(bestScore, scoreRecordVariant(record, variant, intent)), 0);
   }
 
+  function findRecord(records, query) {
+    const queryCandidates = medicalQueryCandidates(query).map((candidate) => ({
+      text: normalizeText(candidate),
+      slug: slugify(candidate)
+    }));
+    const prepared = records.map((record) => {
+      const normalizedRecord = record._title ? record : normalizeRecord(record);
+      return {
+        record,
+        title: normalizedRecord._title,
+        titleSlug: normalizedRecord._slug,
+        keywords: normalizedRecord._keywords,
+        keywordSlugs: normalizedRecord._keywordSlugs
+      };
+    });
+
+    const exactTitle = queryCandidates.map((candidate) => prepared.find((item) => item.title === candidate.text)).find(Boolean);
+    if (exactTitle) return exactTitle.record;
+
+    const exactSlug = queryCandidates.map((candidate) => prepared.find((item) => item.titleSlug === candidate.slug)).find(Boolean);
+    if (exactSlug) return exactSlug.record;
+
+    const exactKeyword = queryCandidates.map((candidate) => prepared.find((item) => item.keywords.some((keyword) => keyword === candidate.text))).find(Boolean);
+    if (exactKeyword) return exactKeyword.record;
+
+    const exactKeywordSlug = queryCandidates.map((candidate) => prepared.find((item) => item.keywordSlugs.some((keyword) => keyword === candidate.slug))).find(Boolean);
+    if (exactKeywordSlug) return exactKeywordSlug.record;
+
+    const partial = queryCandidates
+      .map((candidate) => prepared.find((item) => item.title.includes(candidate.text)
+        || candidate.text.includes(item.title)
+        || item.titleSlug.includes(candidate.slug)
+        || candidate.slug.includes(item.titleSlug)
+        || item.keywords.some((keyword) => keyword.includes(candidate.text) || candidate.text.includes(keyword))
+        || item.keywordSlugs.some((keyword) => keyword.includes(candidate.slug) || candidate.slug.includes(keyword))))
+      .find(Boolean);
+    return partial ? partial.record : null;
+  }
+
   function searchMedicalIndex(query, options = {}) {
     const normalizedQuery = normalizeQueryText(query);
     const limit = Number.isFinite(options.limit) ? options.limit : 8;
@@ -402,6 +467,11 @@
   function selectSearchResult(record, context = {}) {
     const title = record?.titulo || "";
     saveSearchTerm(title, record);
+
+    if (context.preserveQuery && context.input?.value?.trim()) {
+      window.location.href = `consulta.html?q=${encodeURIComponent(context.input.value.trim())}`;
+      return;
+    }
 
     if (hasNavigableUrl(record)) {
       window.location.href = record.url.trim();
@@ -578,6 +648,7 @@
         if (results.length) {
           selectSearchResult(results[0], {
             input,
+            preserveQuery: true,
             resultsElement,
             limit: 8,
             vitaUrl: DEFAULT_VITA_URL
@@ -667,10 +738,12 @@
 
   window.IDBMedicalSearch = {
     attach: attachMedicalSearch,
+    findRecord,
     getKnowledgeSources,
     getHistory: readSearchHistory,
     iconForType: getTypeIcon,
     load: loadSearchIndex,
+    medicalQueryCandidates,
     normalize: normalizeText,
     saveSearch: saveSearchTerm,
     search: searchMedicalIndex

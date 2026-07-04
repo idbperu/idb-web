@@ -661,6 +661,12 @@
       font-size: .78rem;
       line-height: 1.45;
     }
+    .reference-dashboard .reference-indicator {
+      margin-top: 8px;
+      color: var(--blue-dark);
+      font-size: .76rem;
+      font-weight: 850;
+    }
     .reference-chart-block {
       display: grid;
       gap: 12px;
@@ -1113,6 +1119,7 @@
     </div>
   </footer>
 
+  <script src="search.js?v=idb-2.2"></script>
   <script>
     const VITA_URL = "https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.";
     const KNOWLEDGE_CATEGORY_MAP = {
@@ -1179,9 +1186,9 @@
       ["tuberculosis", ["tuberculosis", "tos persistente", "sudor nocturno"]],
       ["salud-mental", ["ansiedad", "estres", "depresion", "salud mental"]],
       ["asma", ["tos", "bronquios", "respirar", "asma", "silbido", "falta de aire"]],
-      ["dengue", ["fiebre", "mosquito", "dengue", "dolor cuerpo"]],
+      ["dengue", ["dengue", "mosquito"]],
       ["diabetes", ["glucosa", "azucar", "diabetes"]],
-      ["hipertension", ["presion", "hipertension", "tension alta"]],
+      ["hipertension", ["presion arterial", "presion alta", "hipertension", "tension alta"]],
       ["obesidad", ["peso", "obesidad", "sobrepeso", "imc"]],
       ["anemia", ["palidez", "cansancio", "anemia", "hierro"]]
     ];
@@ -1213,7 +1220,7 @@
       nutricion: { folder: "nutricion", icon: "heart.svg" },
       prevencion: { folder: "prevencion", icon: "shield.svg" },
       respiratorio: { folder: "respiratorio", icon: "activity.svg" },
-      "primeros-auxilios": { folder: "primeros-auxilios", icon: "ambulance.svg" }
+      "primeros-auxilios": { folder: " primeros-auxilios", icon: "ambulance.svg", prefix: "primeros-auxilios" }
     };
 
     function normalizeText(value) {
@@ -1273,44 +1280,6 @@
       });
       return text.replace(/\s+/g, " ").trim();
     }
-
-    function visualSearchQueryCandidates(query) {
-      const raw = normalizeText(query);
-      const intent = normalizeQueryIntent(query);
-      const candidates = [raw, intent];
-      const knownTopics = ["dolor de cabeza", "dolor abdominal", "presion alta", "hipertension", "fiebre", "tos", "diarrea", "asma"];
-      knownTopics.forEach((topic) => {
-        if (intent.includes(topic)) candidates.push(topic === "presion alta" ? "hipertension" : topic);
-      });
-
-      const contextWords = [
-        "recien nacido", "adulto mayor", "tercera edad", "pediatrico", "infantil", "lactante",
-        "nino", "nina", "bebe", "anciano", "hombre", "masculino", "varon", "mujer", "femenino",
-        "embarazo", "gestante", "menopausia", "ginecologico"
-      ];
-      let stripped = ` ${intent} `;
-      contextWords.forEach((word) => {
-        stripped = stripped.replace(new RegExp(`\\b${word}\\b`, "g"), " ");
-      });
-      stripped = stripped.replace(/\b(con|de|del|la|el|un|una)\b/g, " ").replace(/\s+/g, " ").trim();
-      if (stripped) candidates.push(stripped);
-
-      return [...new Set(candidates.filter(Boolean))];
-    }
-
-    function medicalQueryCandidates(query) {
-      const raw = normalizeText(query).replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
-      let corrected = raw
-        .replace(/\bdolro\b/g, "dolor")
-        .replace(/\bhipertencion\b/g, "hipertension")
-        .replace(/\bninio\b/g, "nino")
-        .replace(/\bbebes\b/g, "bebe");
-      const candidates = [raw, corrected];
-      if (/\bdolor cabeza\b/.test(corrected)) candidates.push(corrected.replace(/\bdolor cabeza\b/g, "dolor de cabeza"));
-      if (/\bpresion alta\b/.test(corrected)) candidates.push("hipertension");
-      return [...new Set(candidates.filter(Boolean))];
-    }
-
 
     function createText(tag, className, text) {
       const element = document.createElement(tag);
@@ -1390,11 +1359,11 @@
         if (!topic) continue;
 
         return {
-          ...fallbackRecord,
           ...topic,
-          titulo: topic.titulo || fallbackRecord?.titulo || "Consulta",
-          tipo: topic.tipo || fallbackRecord?.tipo || "",
-          categoria: topic.categoria || fallbackRecord?.categoria || "",
+          ...fallbackRecord,
+          titulo: fallbackRecord?.titulo || topic.titulo || "Consulta",
+          tipo: fallbackRecord?.tipo || topic.tipo || "",
+          categoria: fallbackRecord?.categoria || topic.categoria || "",
           description: topic.descripcion || fallbackRecord?.description || "",
           fuente: getSourceLabel(topic) || fallbackRecord?.fuente || "",
           keywords: fallbackRecord?.keywords || [],
@@ -1403,46 +1372,6 @@
       }
 
       return null;
-    }
-
-    function findRecord(records, query) {
-      const queryCandidates = medicalQueryCandidates(query).map((candidate) => ({
-        text: normalizeText(candidate),
-        slug: slugify(candidate)
-      }));
-      const prepared = records.map((record) => {
-        const keywords = Array.isArray(record.keywords) ? record.keywords : [];
-        return {
-          record,
-          title: normalizeText(record.titulo),
-          titleSlug: slugify(record.titulo),
-          keywords: keywords.map(normalizeText),
-          keywordSlugs: keywords.map(slugify)
-        };
-      });
-
-      const exactTitle = queryCandidates.map((candidate) => prepared.find((item) => item.title === candidate.text)).find(Boolean);
-      if (exactTitle) return exactTitle.record;
-
-      const exactSlug = queryCandidates.map((candidate) => prepared.find((item) => item.titleSlug === candidate.slug)).find(Boolean);
-      if (exactSlug) return exactSlug.record;
-
-      const exactKeyword = queryCandidates.map((candidate) => prepared.find((item) => item.keywords.some((keyword) => keyword === candidate.text))).find(Boolean);
-      if (exactKeyword) return exactKeyword.record;
-
-      const exactKeywordSlug = queryCandidates.map((candidate) => prepared.find((item) => item.keywordSlugs.some((keyword) => keyword === candidate.slug))).find(Boolean);
-      const exact = exactKeywordSlug;
-      if (exact) return exact.record;
-
-      const partial = queryCandidates
-        .map((candidate) => prepared.find((item) => item.title.includes(candidate.text)
-          || candidate.text.includes(item.title)
-          || item.titleSlug.includes(candidate.slug)
-          || candidate.slug.includes(item.titleSlug)
-          || item.keywords.some((keyword) => keyword.includes(candidate.text) || candidate.text.includes(keyword))
-          || item.keywordSlugs.some((keyword) => keyword.includes(candidate.slug) || candidate.slug.includes(keyword))))
-        .find(Boolean);
-      return partial ? partial.record : null;
     }
 
     function visualCategory(record, query = "") {
@@ -1471,7 +1400,7 @@
         ["neurologico", ["dolor de cabeza", "cefalea", "migrana", "migra", "neuro", "convulsion", "epilep", "alzheimer", "parkinson"]],
         ["respiratorio", ["respir", "asma", "bronqu", "bronquitis", "pulmon", "tos", "neumon"]],
         ["salud-mental", ["salud mental", "mental", "emocion", "psicolog", "ansied", "estres", "depres", "panic", "insom"]],
-        ["laboratorio", ["laborat", "examen", "analisis", "hemogram", "perfil", "biops", "tomograf", "radiograf", "resonan", "ecograf"]],
+        ["laboratorio", ["laborat", "examen", "analisis", "hemogram", "perfil", "biops", "tomograf", "radiograf", "resonan", "ecograf", "sangre", "anemia", "hierro"]],
         ["metabolico", ["diabet", "glucos", "insulin", "triglicer", "obes"]],
         ["diagnostico", ["diagnost", "fiebre", "febril", "temperatura", "calentura"]],
         ["medicamentos", ["medic", "farmac", "tableta", "capsula", "jarabe", "antibiot", "ibupro", "paracetam", "diclofen", "naprox", "omepraz"]],
@@ -1496,6 +1425,21 @@
         "imagenes/consulta/" + asset.folder + "/" + prefix + "-02.webp",
         "imagenes/consulta/" + asset.folder + "/" + prefix + "-03.webp"
       ];
+    }
+
+    function allVisualCandidates() {
+      return Object.keys(CATEGORY_ASSETS)
+        .flatMap((category) => visualCandidates(category))
+        .filter((candidate, index, list) => candidate && list.indexOf(candidate) === index);
+    }
+
+    function chooseVisualCandidate(candidates, usedImages, startIndex = 0) {
+      const ordered = candidates.slice(startIndex).concat(candidates.slice(0, startIndex));
+      return ordered.find((candidate) => !usedImages.has(candidate))
+        || allVisualCandidates().find((candidate) => !usedImages.has(candidate))
+        || candidates[0]
+        || allVisualCandidates()[0]
+        || "";
     }
 
     function createVisual(record, query = getQuery()) {
@@ -1810,39 +1754,24 @@
         link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
         const category = visualCategory(record);
         const candidates = visualCandidates(category);
-        let media;
-        if (candidates.length) {
-          const currentIndex = categoryImageIndexes.get(category) || 0;
-          const imageIndex = candidates.findIndex((candidate, index) => index >= currentIndex && !usedImages.has(candidate));
-          const fallbackImageIndex = candidates.findIndex((candidate) => !usedImages.has(candidate));
-          const selectedIndex = imageIndex >= 0 ? imageIndex : fallbackImageIndex;
-          if (selectedIndex < 0) {
-            media = createText("div", "interest-neutral", humanTitle(record.categoria || record.tipo || "Consulta IDB"));
-          } else {
-          const imageIndex = selectedIndex;
-          categoryImageIndexes.set(category, currentIndex + 1);
-          usedImages.add(candidates[imageIndex]);
-          media = document.createElement("img");
-          media.src = candidates[imageIndex];
-          media.dataset.candidateIndex = String(imageIndex);
-          media.alt = `Imagen editorial IDB para ${displayRecordTitle(record)}`;
-          media.loading = "lazy";
-          media.decoding = "async";
-          media.onerror = () => {
-            const failedIndex = Number(media.dataset.candidateIndex || 0);
-            const fallbackIndex = (failedIndex + 1) % candidates.length;
-            if (fallbackIndex !== failedIndex) {
-              media.dataset.candidateIndex = String(fallbackIndex);
-              media.src = candidates[fallbackIndex];
-              return;
-            }
-            const neutral = createText("div", "interest-neutral", humanTitle(record.categoria || record.tipo || "Consulta IDB"));
-            media.replaceWith(neutral);
-          };
+        const currentIndex = categoryImageIndexes.get(category) || 0;
+        const selected = chooseVisualCandidate(candidates, usedImages, currentIndex);
+        const selectedIndex = Math.max(candidates.indexOf(selected), 0);
+        categoryImageIndexes.set(category, selectedIndex + 1);
+        if (selected) usedImages.add(selected);
+
+        const media = document.createElement("img");
+        media.src = selected;
+        media.alt = `Imagen editorial IDB para ${displayRecordTitle(record)}`;
+        media.loading = "lazy";
+        media.decoding = "async";
+        media.onerror = () => {
+          const fallback = chooseVisualCandidate(allVisualCandidates(), usedImages);
+          if (fallback && media.src.indexOf(fallback) === -1) {
+            usedImages.add(fallback);
+            media.src = fallback;
           }
-        } else {
-          media = createText("div", "interest-neutral", humanTitle(record.categoria || record.tipo || "Consulta IDB"));
-        }
+        };
         const cardCopy = document.createElement("div");
         cardCopy.className = "interest-copy";
         cardCopy.append(
@@ -1891,11 +1820,12 @@
     async function loadHealthReferenceItems(record) {
       const topics = await loadHealthReferenceTopicList();
       const matchedPrimary = relatedHealthReferenceTopic(record);
+      if (!matchedPrimary) return { primary: null, secondaries: [] };
       const seedText = slugify(record?.titulo || getQuery() || "idb");
       const rotationSeed = Math.abs(seedText.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0));
       const fallbackOffset = topics.length ? rotationSeed % topics.length : 0;
       const fallbackTopics = topics.slice(fallbackOffset).concat(topics.slice(0, fallbackOffset));
-      const primarySlug = matchedPrimary || fallbackTopics[0];
+      const primarySlug = matchedPrimary;
       if (!primarySlug) return { primary: null, secondaries: [] };
       const prioritySecondaries = HEALTH_REFERENCE_SECONDARIES[primarySlug] || [];
       const secondarySlugs = [...prioritySecondaries, ...fallbackTopics, ...topics]
@@ -1938,6 +1868,20 @@
         values: history.map((entry) => entry.value),
         unit: chart?.unidad || "casos"
       };
+    }
+
+    function referenceIndicatorLabel(item) {
+      const slug = item?.slug || item?.tema || "";
+      const labels = {
+        anemia: "Anemia",
+        dengue: "Dengue",
+        diabetes: "Diabetes mellitus",
+        hipertension: "Hipertensión arterial",
+        obesidad: "Obesidad",
+        "salud-mental": "Salud mental",
+        tuberculosis: "Tuberculosis"
+      };
+      return labels[slug] || humanTitle(item?.tema || item?.titulo || slug || "Indicador");
     }
 
     function createReferenceBars(item) {
@@ -2028,7 +1972,8 @@
       const head = document.createElement("div");
       head.append(
         createText("h2", "", "Datos de salud en Perú"),
-        createText("p", "", "Información referencial basada en fuentes oficiales")
+        createText("p", "", "Información referencial basada en fuentes oficiales"),
+        createText("p", "reference-indicator", "Indicador: " + referenceIndicatorLabel(item))
       );
       const donut = createReferenceDonut(item);
       card.append(
@@ -2362,9 +2307,12 @@
       }
 
       try {
+        for (let attempt = 0; attempt < 20 && typeof window.IDBMedicalSearch?.findRecord !== "function"; attempt += 1) {
+          await new Promise((resolve) => window.setTimeout(resolve, 25));
+        }
         const response = await fetch("search-index.json");
         const records = await response.json();
-        const fallbackRecord = Array.isArray(records) ? findRecord(records, query) : null;
+        const fallbackRecord = Array.isArray(records) ? window.IDBMedicalSearch?.findRecord(records, query) : null;
         const category = getKnowledgeCategory(fallbackRecord);
         const querySlug = slugify(query);
         const recordSlug = slugify(fallbackRecord?.slug || fallbackRecord?.titulo);
