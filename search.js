@@ -135,6 +135,8 @@
     [/\bgrippe\b/g, "gripe"],
     [/\bfievre\b/g, "fiebre"],
     [/\btoss\b/g, "tos"],
+    [/\btso\b/g, "tos"],
+    [/\btoz\b/g, "tos"],
     [/\bansieda\b/g, "ansiedad"],
     [/\bdeprecion\b/g, "depresion"],
     [/\bmigranaa\b/g, "migrana"],
@@ -149,7 +151,17 @@
     [/\bmujer bieja\b/g, "mujer mayor"],
     [/\bhombre biejo\b/g, "hombre mayor"],
     [/\bcorason\b/g, "corazon"],
-    [/\balerjia\b/g, "alergia"]
+    [/\balerjia\b/g, "alergia"],
+    [/\basitromisina\b/g, "azitromicina"],
+    [/\basitromicina\b/g, "azitromicina"],
+    [/\bazitromisina\b/g, "azitromicina"],
+    [/\bazytromicina\b/g, "azitromicina"],
+    [/\bgaraganta\b/g, "garganta"],
+    [/\bgargata\b/g, "garganta"],
+    [/\bestomgo\b/g, "estomago"],
+    [/\bestomagoo\b/g, "estomago"],
+    [/\brespirasion\b/g, "respiracion"],
+    [/\baogo\b/g, "ahogo"]
   ];
 
   const CONTEXT_DEFINITIONS = {
@@ -166,6 +178,11 @@
   };
 
   const MEDICAL_SYNONYMS = [
+    [["me falta el aire", "falta de aire", "no puedo respirar bien", "siento que me ahogo", "me ahogo", "ahogo", "disnea", "respirar mal"], "dificultad para respirar"],
+    [["tos con flema", "tos con moco", "tos con mocos", "flema", "moco en el pecho", "expectoracion"], "tos"],
+    [["me duele la garganta", "garganta inflamada", "garganta irritada", "ardor de garganta"], "dolor de garganta"],
+    [["me duele el estomago", "dolor en el estomago", "dolor de estomago", "dolor estomago"], "dolor abdominal"],
+    [["me arde el estomago", "ardor de estomago", "ardor en el estomago", "acidez", "agruras", "vinagrera"], "gastritis"],
     [["presion alta", "tension alta"], "hipertension"],
     [["azucar alta", "glucosa alta"], "glucosa"],
     [["dolor cabeza", "dolor en la cabeza", "cabesa", "cefalea"], "dolor de cabeza"],
@@ -227,6 +244,22 @@
     return candidates;
   }
 
+  function clinicalIntentCandidates(text) {
+    const candidates = [];
+    const hasBreathingIntent = /\b(me falta el aire|falta de aire|no puedo respirar bien|siento que me ahogo|me ahogo|ahogo|disnea|respirar mal|no respiro bien)\b/.test(text);
+    const hasProductiveCough = /\btos\b.*\b(flema|moco|mocos|expectoracion)\b|\b(flema|moco|mocos|expectoracion)\b.*\btos\b/.test(text);
+    const hasThroatIntent = /\b(me duele la garganta|dolor de garganta|garganta inflamada|garganta irritada|ardor de garganta)\b/.test(text);
+    const hasBurningStomach = /\b(arde|ardor|acidez|agruras|vinagrera)\b.*\bestomago\b|\bestomago\b.*\b(arde|ardor|acidez|agruras|vinagrera)\b/.test(text);
+    const hasStomachPain = /\b(dolor de estomago|dolor estomago|me duele el estomago|dolor en el estomago|dolor de barriga|dolor de panza|dolor abdominal)\b/.test(text);
+
+    if (hasBreathingIntent) candidates.push("dificultad para respirar", "falta de aire");
+    if (hasProductiveCough) candidates.push("tos");
+    if (hasThroatIntent) candidates.push("dolor de garganta");
+    if (hasBurningStomach) candidates.push("gastritis", "reflujo gastroesofagico");
+    if (hasStomachPain) candidates.push("dolor abdominal", "gastritis");
+    return candidates;
+  }
+
   function stripContextLanguage(query) {
     const removable = [
       ...CONTEXT_DEFINITIONS.pediatric,
@@ -252,7 +285,8 @@
     const corrected = applyQueryCorrections(raw);
     const context = detectQueryContext(corrected);
     const stripped = stripContextLanguage(corrected);
-    const candidates = [raw, corrected, stripped, ...synonymCandidates(corrected), ...synonymCandidates(stripped)];
+    const clinicalCandidates = [...clinicalIntentCandidates(corrected), ...clinicalIntentCandidates(stripped)];
+    const candidates = [...clinicalCandidates, raw, corrected, stripped, ...synonymCandidates(corrected), ...synonymCandidates(stripped)];
 
     const painMatch = corrected.match(/\b(?:me|le|les)?\s*(?:duele|duelen)\s+(?:el|la|los|las)?\s*(.+)$/);
     if (painMatch?.[1]) {
@@ -759,6 +793,61 @@
     input.setAttribute("aria-expanded", "false");
   }
 
+  function enhanceClearButton(input, resultsElement) {
+    if (!input || !resultsElement || input.dataset.medicalClearEnhanced === "true") {
+      return;
+    }
+
+    const parent = input.parentElement;
+    if (!parent) return;
+
+    input.dataset.medicalClearEnhanced = "true";
+    if (getComputedStyle(parent).position === "static") {
+      parent.style.position = "relative";
+    }
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "medical-search-clear";
+    button.setAttribute("aria-label", "Limpiar búsqueda");
+    button.textContent = "×";
+    applyResultDetailStyles(button, {
+      alignItems: "center",
+      background: "rgba(255, 255, 255, .94)",
+      border: "1px solid rgba(42, 64, 55, .16)",
+      borderRadius: "999px",
+      color: "#53645c",
+      cursor: "pointer",
+      display: "none",
+      fontSize: "1.1rem",
+      fontWeight: "800",
+      height: "28px",
+      justifyContent: "center",
+      lineHeight: "1",
+      position: "absolute",
+      right: "96px",
+      top: "50%",
+      transform: "translateY(-50%)",
+      width: "28px",
+      zIndex: "4"
+    });
+
+    const syncVisibility = () => {
+      button.style.display = normalizeText(input.value) ? "flex" : "none";
+    };
+
+    button.addEventListener("click", () => {
+      input.value = "";
+      closeResultsPanel(input, resultsElement);
+      syncVisibility();
+      input.focus();
+    });
+    input.addEventListener("input", syncVisibility);
+    input.addEventListener("search", syncVisibility);
+    parent.append(button);
+    syncVisibility();
+  }
+
   function renderInteractiveSearch(input, resultsElement, options = {}) {
     const query = input.value.trim();
 
@@ -788,6 +877,7 @@
     }
 
     input.dataset.medicalSearchEnhanced = "true";
+    enhanceClearButton(input, resultsElement);
 
     const scheduleRender = () => {
       window.setTimeout(() => {

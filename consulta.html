@@ -2015,19 +2015,71 @@
       const currentTitle = normalizeText(currentRecord.titulo);
       const currentCategory = normalizeText(currentRecord.categoria);
       const currentType = normalizeText(currentRecord.tipo);
+      const currentSlug = canonicalTopicSlug(currentRecord);
       const currentKeywords = new Set((currentRecord.keywords || []).map(normalizeText));
+      const pediatricContext = isPediatricQuery();
       return records
         .filter((record) => normalizeText(record.titulo) !== currentTitle)
+        .filter((record) => canonicalTopicSlug(record) !== currentSlug)
+        .filter((record) => !pediatricContext || !isAdultOnlyRecord(record))
         .map((record) => {
           const sameCategory = normalizeText(record.categoria) === currentCategory ? 3 : 0;
           const sameType = normalizeText(record.tipo) === currentType ? 1 : 0;
           const shared = (record.keywords || []).filter((keyword) => currentKeywords.has(normalizeText(keyword))).length;
-          return { record, score: sameCategory + sameType + shared };
+          const clinical = clinicalRelatedScore(currentSlug, record, pediatricContext);
+          return { record, score: sameCategory + sameType + shared + clinical };
         })
         .filter((item) => item.score > 0)
         .sort((a, b) => b.score - a.score || a.record.titulo.localeCompare(b.record.titulo, "es"))
         .slice(0, 4)
         .map((item) => item.record);
+    }
+
+    const CLINICAL_RELATED = {
+      fiebre: ["tos", "dolor-de-garganta", "diarrea", "vomitos", "dolor-de-cuerpo", "deshidratacion", "fiebre-en-ninos"],
+      tos: ["falta-de-aire", "dificultad-para-respirar", "dolor-de-garganta", "asma", "bronquitis", "flema", "tos-en-ninos"],
+      diarrea: ["vomitos", "dolor-abdominal", "deshidratacion", "gastroenteritis", "diarrea-en-ninos"],
+      "dolor-de-garganta": ["tos", "fiebre", "faringitis", "amigdalitis", "congestion-nasal"],
+      "dolor-abdominal": ["diarrea", "vomitos", "gastritis", "gastroenteritis", "reflujo-gastroesofagico"],
+      "falta-de-aire": ["tos", "asma", "dolor-de-pecho", "bronquitis", "silbido-en-el-pecho"],
+      "dificultad-para-respirar": ["tos", "asma", "dolor-de-pecho", "bronquitis", "silbido-en-el-pecho"],
+      "dolor-de-cabeza": ["fiebre", "vomitos", "mareos", "migrana", "dolor-de-cabeza-fuerte"],
+      insomnio: ["ansiedad", "estres", "sueno", "rutina-de-sueno", "manejo-del-estres"]
+    };
+
+    function recordSearchText(record) {
+      return normalizeText([
+        record.slug,
+        record.titulo,
+        record.tipo,
+        record.categoria,
+        record.description,
+        ...(Array.isArray(record.keywords) ? record.keywords : [])
+      ].filter(Boolean).join(" "));
+    }
+
+    function isPediatricQuery() {
+      const haystack = ` ${normalizeText(`${getQuery()} ${getContext()}`)} `;
+      return getContext() === "pediatrico" || /\b(hijo|hija|bebe|nino|nina|menor|pediatrico|lactante|infantil)\b/.test(haystack);
+    }
+
+    function isAdultOnlyRecord(record) {
+      return /\b(embarazo|gestante|prenatal|menopausia|prostata|prostatico|salud masculina|salud del hombre|salud femenina|salud de la mujer|ginecologico|vaginal|uterino|ovario|mama|mamario|disfuncion erectil|testiculo|andropausia)\b/.test(recordSearchText(record));
+    }
+
+    function canonicalTopicSlug(record) {
+      const slug = normalizeText(record.slug || slugify(record.titulo));
+      return normalizeText(KNOWLEDGE_SLUG_ALIASES[slug] || slug);
+    }
+
+    function clinicalRelatedScore(currentSlug, record, pediatricContext) {
+      const recordSlug = canonicalTopicSlug(record);
+      const recordText = recordSearchText(record);
+      let score = (CLINICAL_RELATED[currentSlug] || []).some((slug) => recordSlug === normalizeText(slug)) ? 10 : 0;
+      if (pediatricContext && /\b(nino|nina|bebe|pediatrico|infantil|deshidratacion|fiebre|tos|diarrea|vomitos|falta de aire|dificultad para respirar)\b/.test(recordText)) {
+        score += 5;
+      }
+      return score;
     }
 
     function createRelatedLink(record) {

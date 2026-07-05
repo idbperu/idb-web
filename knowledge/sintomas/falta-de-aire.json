@@ -5,7 +5,7 @@
   "tipo": "sintoma",
   "categoria": "Respiratorio",
   "descripcion": "Sentir falta de aire no siempre significa una enfermedad grave, pero merece contexto: intensidad, duracion y sintomas asociados. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
-  "respuesta_rapida": "Falta de aire puede relacionarse con resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Puedes observar la evolucion si no hay falta de aire, fiebre alta ni decaimiento importante; conviene consultar si hay dificultad para respirar, dolor de pecho, labios morados, fiebre alta o empeoramiento rapido. La clave es no mirar el sintoma aislado, sino su contexto.",
+  "respuesta_rapida": "La falta de aire es una senal que debe tomarse en serio, sobre todo si aparece de forma repentina o impide hablar, caminar o descansar. Puede relacionarse con asma, infecciones respiratorias, ansiedad, alergias o problemas del corazon o pulmones. Si es leve y conocida, observa la evolucion y evita irritantes. Consulta pronto si se repite o empeora. Busca urgencias si hay labios morados, dolor de pecho, silbidos intensos, confusion, desmayo o dificultad para respirar en reposo.",
   "para_que_sirve": "Reconocer y describir falta de aire ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
   "causas": "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
   "sintomas": [
@@ -114,7 +114,7 @@
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Falta de aire puede relacionarse con resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Puedes observar la evolucion si no hay falta de aire, fiebre alta ni decaimiento importante; conviene consultar si hay dificultad para respirar, dolor de pecho, labios morados, fiebre alta o empeoramiento rapido. La clave es no mirar el sintoma aislado, sino su contexto."
+      "contenido": "La falta de aire es una senal que debe tomarse en serio, sobre todo si aparece de forma repentina o impide hablar, caminar o descansar. Puede relacionarse con asma, infecciones respiratorias, ansiedad, alergias o problemas del corazon o pulmones. Si es leve y conocida, observa la evolucion y evita irritantes. Consulta pronto si se repite o empeora. Busca urgencias si hay labios morados, dolor de pecho, silbidos intensos, confusion, desmayo o dificultad para respirar en reposo."
     },
     {
       "titulo": "¿Qué puede significar?",

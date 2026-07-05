@@ -5,7 +5,7 @@
   "tipo": "sintoma",
   "categoria": "Respiratorio",
   "descripcion": "Dolor de garganta es una senal que el cuerpo muestra cuando algo cambia en el ambito respiratorio. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
-  "respuesta_rapida": "Dolor de garganta puede relacionarse con resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Puedes observar la evolucion si no hay falta de aire, fiebre alta ni decaimiento importante; conviene consultar si hay dificultad para respirar, dolor de pecho, labios morados, fiebre alta o empeoramiento rapido. La clave es no mirar el sintoma aislado, sino su contexto.",
+  "respuesta_rapida": "El dolor de garganta suele deberse a virus, irritacion, alergias o infecciones de la garganta. Puede acompañarse de tos, fiebre, ronquera o ganglios inflamados. En casa ayuda hidratarse, evitar humo y descansar la voz. Consulta si dura mas de 3 a 5 dias, hay fiebre alta, placas, dolor intenso o dificultad para tragar. Acude a urgencias si cuesta respirar, no puedes tragar saliva, hay hinchazon importante del cuello o decaimiento marcado.",
   "para_que_sirve": "Reconocer y describir dolor de garganta ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
   "causas": "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
   "sintomas": [
@@ -114,7 +114,7 @@
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Dolor de garganta puede relacionarse con resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Puedes observar la evolucion si no hay falta de aire, fiebre alta ni decaimiento importante; conviene consultar si hay dificultad para respirar, dolor de pecho, labios morados, fiebre alta o empeoramiento rapido. La clave es no mirar el sintoma aislado, sino su contexto."
+      "contenido": "El dolor de garganta suele deberse a virus, irritacion, alergias o infecciones de la garganta. Puede acompañarse de tos, fiebre, ronquera o ganglios inflamados. En casa ayuda hidratarse, evitar humo y descansar la voz. Consulta si dura mas de 3 a 5 dias, hay fiebre alta, placas, dolor intenso o dificultad para tragar. Acude a urgencias si cuesta respirar, no puedes tragar saliva, hay hinchazon importante del cuello o decaimiento marcado."
     },
     {
       "titulo": "¿Qué puede significar?",

@@ -32,7 +32,11 @@
       "dolor de barriga",
       "dolor de estomago",
       "abdomen",
-      "colico"
+      "colico",
+      "me duele el estomago",
+      "dolor en el estomago",
+      "dolor estomago",
+      "estomago"
     ]
   },
   {
@@ -68,7 +72,13 @@
       "tos seca",
       "tos con flema",
       "garganta",
-      "respiratorio"
+      "respiratorio",
+      "tos con moco",
+      "tos con mocos",
+      "tso",
+      "toz",
+      "flema",
+      "moco en el pecho"
     ]
   },
   {
@@ -212,7 +222,11 @@
       "garganta irritada",
       "ardor de garganta",
       "faringe",
-      "amigdalas"
+      "amigdalas",
+      "me duele la garganta",
+      "garganta inflamada",
+      "garaganta",
+      "gargata"
     ]
   },
   {
@@ -284,7 +298,13 @@
       "falta de aire",
       "ahogo",
       "disnea",
-      "respirar"
+      "respirar",
+      "me falta el aire",
+      "no puedo respirar bien",
+      "siento que me ahogo",
+      "me ahogo",
+      "no respiro bien",
+      "respirar mal"
     ]
   },
   {
@@ -482,7 +502,11 @@
       "ardor",
       "acidez",
       "dolor de estomago",
-      "estomago"
+      "estomago",
+      "me arde el estomago",
+      "ardor de estomago",
+      "ardor en el estomago",
+      "agruras"
     ]
   },
   {
@@ -1058,7 +1082,11 @@
       "antibiotico",
       "infeccion",
       "respiratorio",
-      "bacterias"
+      "bacterias",
+      "asitromisina",
+      "asitromicina",
+      "azitromisina",
+      "azytromicina"
     ]
   },
   {

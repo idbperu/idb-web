@@ -5,7 +5,7 @@
   "tipo": "sintoma",
   "categoria": "Respiratorio",
   "descripcion": "Tos puede aparecer de forma aislada o junto con otros cambios del organismo. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
-  "respuesta_rapida": "Tos puede relacionarse con resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Puedes observar la evolucion si no hay falta de aire, fiebre alta ni decaimiento importante; conviene consultar si hay dificultad para respirar, dolor de pecho, labios morados, fiebre alta o empeoramiento rapido. La clave es no mirar el sintoma aislado, sino su contexto.",
+  "respuesta_rapida": "La tos es un reflejo que ayuda a limpiar las vias respiratorias. Puede aparecer por resfrio, alergias, irritantes, asma o bronquitis; si hay flema o moco, observa color, cantidad y duracion. En casa ayuda tomar liquidos, evitar humo y vigilar la respiracion. Consulta si dura mas de una semana, hay fiebre, silbidos o empeora. Busca urgencias si falta el aire, hay labios morados, dolor de pecho, decaimiento intenso o dificultad para hablar.",
   "para_que_sirve": "Reconocer y describir tos ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
   "causas": "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
   "sintomas": [
@@ -114,7 +114,7 @@
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Tos puede relacionarse con resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Puedes observar la evolucion si no hay falta de aire, fiebre alta ni decaimiento importante; conviene consultar si hay dificultad para respirar, dolor de pecho, labios morados, fiebre alta o empeoramiento rapido. La clave es no mirar el sintoma aislado, sino su contexto."
+      "contenido": "La tos es un reflejo que ayuda a limpiar las vias respiratorias. Puede aparecer por resfrio, alergias, irritantes, asma o bronquitis; si hay flema o moco, observa color, cantidad y duracion. En casa ayuda tomar liquidos, evitar humo y vigilar la respiracion. Consulta si dura mas de una semana, hay fiebre, silbidos o empeora. Busca urgencias si falta el aire, hay labios morados, dolor de pecho, decaimiento intenso o dificultad para hablar."
     },
     {
       "titulo": "¿Qué puede significar?",

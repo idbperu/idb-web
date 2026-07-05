@@ -5,7 +5,7 @@
   "tipo": "sintoma",
   "categoria": "Sueño",
   "descripcion": "Para orientar insomnio, importa mas la evolucion completa que un dato aislado. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
-  "respuesta_rapida": "Insomnio puede relacionarse con estres, preocupaciones, falta de descanso, cambios de rutina, consumo de sustancias o condiciones de salud mental. Puedes observar la evolucion si es leve y mejora con descanso, apoyo y rutinas saludables; conviene consultar si interfiere con la vida diaria, se prolonga, empeora o aparecen pensamientos de hacerse dano. La clave es no mirar el sintoma aislado, sino su contexto.",
+  "respuesta_rapida": "El insomnio puede aparecer por estres, preocupaciones, cambios de horario, dolor, cafeina, pantallas o problemas de salud. Si es reciente, intenta una rutina regular de sueno, evita estimulantes por la tarde y reduce pantallas antes de dormir. Consulta si dura varias semanas, afecta tu trabajo o animo, o necesitas medicacion para dormir. Busca ayuda urgente si aparecen ideas de hacerte dano, ansiedad intensa, confusion o somnolencia peligrosa durante el dia.",
   "para_que_sirve": "Reconocer y describir insomnio ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
   "causas": "Las causas frecuentes incluyen estres, preocupaciones, falta de descanso, cambios de rutina, consumo de sustancias o condiciones de salud mental. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
   "sintomas": [
@@ -114,7 +114,7 @@
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Insomnio puede relacionarse con estres, preocupaciones, falta de descanso, cambios de rutina, consumo de sustancias o condiciones de salud mental. Puedes observar la evolucion si es leve y mejora con descanso, apoyo y rutinas saludables; conviene consultar si interfiere con la vida diaria, se prolonga, empeora o aparecen pensamientos de hacerse dano. La clave es no mirar el sintoma aislado, sino su contexto."
+      "contenido": "El insomnio puede aparecer por estres, preocupaciones, cambios de horario, dolor, cafeina, pantallas o problemas de salud. Si es reciente, intenta una rutina regular de sueno, evita estimulantes por la tarde y reduce pantallas antes de dormir. Consulta si dura varias semanas, afecta tu trabajo o animo, o necesitas medicacion para dormir. Busca ayuda urgente si aparecen ideas de hacerte dano, ansiedad intensa, confusion o somnolencia peligrosa durante el dia."
     },
     {
       "titulo": "¿Qué puede significar?",
