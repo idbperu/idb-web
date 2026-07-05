@@ -538,6 +538,26 @@
     .tab-panel .title-line {
       margin-bottom: 14px;
     }
+    .important-note {
+      margin-top: 28px;
+      padding: 18px 20px;
+      border-top: 1px solid rgba(96, 112, 134, .2);
+      border-radius: 0 0 16px 16px;
+      color: #667586;
+      background: #f7f9fb;
+    }
+    .important-note h2 {
+      margin: 0;
+      color: #506173;
+      font-size: .98rem;
+      line-height: 1.25;
+    }
+    .important-note p {
+      margin: 8px 0 0;
+      color: #667586;
+      font-size: .9rem;
+      line-height: 1.6;
+    }
     .mini-card p {
       margin: 0;
       color: #5c6e81;
@@ -1139,6 +1159,10 @@
       "salud-mental",
       "adulto-mayor"
     ];
+    const KNOWLEDGE_SLUG_ALIASES = {
+      "dificultad-para-respirar": "falta-de-aire"
+    };
+    let statsIndexCache = null;
     const AUTHORIZED_STATS_SOURCES = ["MINSA", "INS", "CDC Perú", "OPS", "OMS", "INEI", "EsSalud"];
     const EDITORIAL_VISUAL_CATEGORIES = new Set([
       "primeros-auxilios",
@@ -1148,13 +1172,11 @@
       "diagnostico",
       "digestivo",
       "dolor-rehabilitacion",
-      "hombre",
       "infantil",
       "laboratorio",
       "medicamentos",
       "salud-mental",
       "metabolico",
-      "mujer",
       "neurologico",
       "nutricion",
       "prevencion",
@@ -1195,18 +1217,16 @@
     };
     const CATEGORY_ASSETS = {
       "adulto-mayor": { folder: "adulto-mayor", icon: "bed.svg" },
-      cardiovascular: { folder: "cardiovascular", icon: "heart-handshake.svg", images: ["cardiovascular-idb.webp", "cardiovascular-01..webp", "cardiovascular-02..webp"] },
+      cardiovascular: { folder: "cardiovascular", icon: "heart-handshake.svg", images: ["cardiovascular-01..webp", "cardiovascular-02..webp", "cardiovascular-03.webp"] },
       dermatologia: { folder: "dermatologia", icon: "shield.svg" },
       diagnostico: { folder: "diagnostico", icon: "stethoscope.svg" },
       digestivo: { folder: "digestivo", icon: "heart.svg" },
       "dolor-rehabilitacion": { folder: "dolor-rehabilitacion", icon: "activity.svg" },
-      hombre: { folder: "hombre", icon: "user.svg" },
       infantil: { folder: "infantil", icon: "ambulance.svg" },
       laboratorio: { folder: "laboratorio", icon: "microscope.svg" },
       medicamentos: { folder: "medicamentos", icon: "pill.svg" },
       "salud-mental": { folder: "salud-mental", icon: "heart-handshake.svg", prefix: "salud-mental-y-bienestar-emocional" },
       metabolico: { folder: "metabolico", icon: "thermometer.svg", prefix: "diabetes" },
-      mujer: { folder: "mujer", icon: "user.svg" },
       neurologico: { folder: "neurologico", icon: "atom.svg" },
       nutricion: { folder: "nutricion", icon: "heart.svg" },
       prevencion: { folder: "prevencion", icon: "shield.svg" },
@@ -1250,21 +1270,61 @@
       return new URLSearchParams(window.location.search).get("q") || "";
     }
 
+    function getContext() {
+      const value = normalizeText(new URLSearchParams(window.location.search).get("context") || "");
+      const allowed = {
+        pediatrico: "pediatrico",
+        infantil: "pediatrico",
+        "adulto-mayor": "adulto-mayor",
+        "adulto mayor": "adulto-mayor",
+        hombre: "",
+        mujer: "",
+        adulto: ""
+      };
+      return allowed[value] || "";
+    }
+
     function normalizeQueryIntent(query) {
       let text = ` ${normalizeText(query)} `;
       const replacements = [
         [/\bninio\b/g, " nino "],
         [/\bninos\b/g, " nino "],
         [/\bninas\b/g, " nina "],
+        [/\bhijos\b/g, " hijo "],
+        [/\bhijas\b/g, " hija "],
         [/\bbebes\b/g, " bebe "],
         [/\bpediatrica\b/g, " pediatrico "],
         [/\bpediatricas\b/g, " pediatrico "],
         [/\bpediatricos\b/g, " pediatrico "],
         [/\bdolro\b/g, " dolor "],
+        [/\bcabesa\b/g, " cabeza "],
+        [/\bprecion\b/g, " presion "],
         [/\bhipertencion\b/g, " hipertension "],
+        [/\bhipertension\b/g, " hipertension "],
+        [/\bestres\b/g, " ansiedad "],
+        [/\bvomito\b/g, " vomitos "],
+        [/\bvomitos\b/g, " vomitos "],
+        [/\bno puedo dormir\b/g, " insomnio "],
+        [/\bbronquios\b/g, " asma "],
+        [/\bdolor de huesos\b/g, " dolor articular "],
+        [/\bduelen los huesos\b/g, " dolor articular "],
+        [/\bbienestar emocional\b/g, " ansiedad "],
         [/\bancianos\b/g, " adulto mayor "],
         [/\banciano\b/g, " adulto mayor "],
-        [/\btercera edad\b/g, " adulto mayor "]
+        [/\btercera edad\b/g, " adulto mayor "],
+        [/\babuelitos\b/g, " adulto mayor "],
+        [/\babuelitas\b/g, " adulto mayor "],
+        [/\babuelito\b/g, " adulto mayor "],
+        [/\babuelita\b/g, " adulto mayor "],
+        [/\babuelo\b/g, " adulto mayor "],
+        [/\babuela\b/g, " adulto mayor "],
+        [/\bnana\b/g, " adulto mayor "],
+        [/\bpapa\b/g, " adulto "],
+        [/\bpadre\b/g, " adulto "],
+        [/\besposo\b/g, " adulto "],
+        [/\bmama\b/g, " adulto "],
+        [/\bmadre\b/g, " adulto "],
+        [/\besposa\b/g, " adulto "]
       ];
       replacements.forEach(([pattern, replacement]) => {
         text = text.replace(pattern, replacement);
@@ -1276,21 +1336,27 @@
       const raw = normalizeText(query);
       const intent = normalizeQueryIntent(query);
       const candidates = [raw, intent];
-      const knownTopics = ["dolor de cabeza", "dolor abdominal", "presion alta", "hipertension", "fiebre", "tos", "diarrea", "asma"];
+      const knownTopics = ["dolor de cabeza", "dolor abdominal", "dolor articular", "presion alta", "hipertension", "fiebre", "tos", "diarrea", "asma", "insomnio", "ansiedad", "gastritis", "diabetes", "paracetamol", "ibuprofeno", "omeprazol"];
       knownTopics.forEach((topic) => {
         if (intent.includes(topic)) candidates.push(topic === "presion alta" ? "hipertension" : topic);
       });
+      if (/\bduele\b.*\bcabeza\b/.test(intent) || /\bdolor cabeza\b/.test(intent)) candidates.push("dolor de cabeza");
+      if (/\bpresion alta\b/.test(intent)) candidates.push("hipertension");
+      if (/\breflujo\b/.test(intent)) candidates.push("reflujo gastroesofagico");
+      if (/\balergia\b/.test(intent)) candidates.push("erupcion en la piel");
+      if (/\bmedicamento\s+/.test(intent)) candidates.push(intent.replace(/\bmedicamento\s+/g, ""));
 
       const contextWords = [
         "recien nacido", "adulto mayor", "tercera edad", "pediatrico", "infantil", "lactante",
         "nino", "nina", "bebe", "anciano", "hombre", "masculino", "varon", "mujer", "femenino",
-        "embarazo", "gestante", "menopausia", "ginecologico"
+        "embarazo", "gestante", "menopausia", "ginecologico", "hijo", "hija", "menor", "papa",
+        "padre", "esposo", "mama", "madre", "esposa"
       ];
       let stripped = ` ${intent} `;
       contextWords.forEach((word) => {
         stripped = stripped.replace(new RegExp(`\\b${word}\\b`, "g"), " ");
       });
-      stripped = stripped.replace(/\b(con|de|del|la|el|un|una)\b/g, " ").replace(/\s+/g, " ").trim();
+      stripped = stripped.replace(/\b(con|de|del|la|el|un|una|mi|mis|tiene|tengo|le|les|a|porque|por|que|hace|cuatro|dias|medicamento)\b/g, " ").replace(/\s+/g, " ").trim();
       if (stripped) candidates.push(stripped);
 
       return [...new Set(candidates.filter(Boolean))];
@@ -1361,6 +1427,21 @@
       }
     }
 
+    function resolveKnowledgeSlug(slug) {
+      const normalized = slugify(slug);
+      return KNOWLEDGE_SLUG_ALIASES[normalized] || normalized;
+    }
+
+    async function availableStatsSlugs() {
+      if (!statsIndexCache) {
+        statsIndexCache = fetchJsonIfExists("data/stats/peru/index.json").then((index) => {
+          const registros = Array.isArray(index?.registros) ? index.registros : [];
+          return new Set(registros.map(slugify).filter(Boolean));
+        });
+      }
+      return statsIndexCache;
+    }
+
     async function loadStatsTopic(slug) {
       if (!slug) return null;
       return fetchJsonIfExists(`data/stats/peru/${slug}.json`);
@@ -1368,10 +1449,11 @@
 
     async function loadKnowledgeTopic(slug, category, fallbackRecord) {
       if (!slug) return null;
+      const resolvedSlug = resolveKnowledgeSlug(slug);
       const categories = category ? [category] : KNOWLEDGE_CATEGORIES;
 
       for (const categoryId of categories) {
-        const topic = await fetchJsonIfExists(`knowledge/${categoryId}/${slug}.json`);
+        const topic = await fetchJsonIfExists(`knowledge/${categoryId}/${resolvedSlug}.json`);
         if (!topic) continue;
 
         return {
@@ -1423,19 +1505,19 @@
       return partial ? partial.record : null;
     }
 
-    function visualCategory(record, query = "") {
+    function visualCategory(record, query = "", context = getContext()) {
       const queryIntent = normalizeQueryIntent(query);
       const queryHaystack = ` ${queryIntent} `;
       const recordHaystack = normalizeText(`${record?.titulo || ""} ${record?.tipo || ""} ${record?.categoria || ""} ${(record?.keywords || []).join(" ")}`);
       const haystack = ` ${recordHaystack} ${queryIntent} `;
+      if (context === "pediatrico") return "infantil";
+      if (context === "adulto-mayor") return "adulto-mayor";
+      if (normalizeText(record?.tipo) === "medicamento") return "medicamentos";
       const isHeadacheQuery = queryHaystack.includes(" dolor de cabeza ") || queryHaystack.includes(" dolor cabeza ") || queryHaystack.includes(" cefalea ") || queryHaystack.includes(" migrana ");
       const contextCategories = [
-        ["infantil", ["nino", "nina", "bebe", "infantil", "pediatrico", "lactante", "recien nacido"]],
+        ["infantil", ["nino", "nina", "bebe", "infantil", "pediatrico", "lactante", "recien nacido", "hijo", "hija", "menor"]],
         ["adulto-mayor", ["adulto mayor", "anciano", "tercera edad"]],
-        ["hombre", ["hombre", "masculino", "varon", "prostata"]],
-        ["mujer", ["mujer", "femenino", "embarazo", "gestante", "menopausia", "ginecologico"]],
-        ["primeros-auxilios", ["accidente", "golpe", "quemadura", "herida", "sangrado", "corte", "fractura"]],
-        ["dolor-rehabilitacion", ["dolor", "espalda", "rodilla", "cuello", "hombro", "articulacion", "rehabilitacion"]]
+        ["primeros-auxilios", ["accidente", "golpe", "quemadura", "herida", "sangrado", "corte", "fractura"]]
       ];
       const contextMatch = contextCategories.find(([category, roots]) => {
         if (category === "dolor-rehabilitacion" && isHeadacheQuery) return false;
@@ -1445,15 +1527,16 @@
 
       const categories = [
         ["cardiovascular", ["hipertension", "presion alta", "tension alta", "colesterol", "cardio", "corazon", "presion arterial", "arter", "vascular"]],
-        ["digestivo", ["gastritis", "acidez", "reflujo", "digestion", "digest", "estom", "gastr", "colon", "intestin", "higad", "vesicula", "pancrea", "abdomin", "diarrea"]],
         ["neurologico", ["dolor de cabeza", "cefalea", "migrana", "migra", "neuro", "convulsion", "epilep", "alzheimer", "parkinson"]],
-        ["respiratorio", ["respir", "asma", "bronqu", "bronquitis", "pulmon", "tos", "neumon"]],
+        ["respiratorio", ["respir", "asma", "bronqu", "bronquitis", "pulmon", " tos ", "neumon"]],
+        ["medicamentos", ["medic", "farmac", "tableta", "capsula", "jarabe", "antibiot", "ibupro", "paracetam", "diclofen", "naprox", "omepraz"]],
+        ["digestivo", ["gastritis", "acidez", "reflujo", "digestion", "digest", "estom", "gastr", "colon", "intestin", "higad", "vesicula", "pancrea", "abdomin", "diarrea", "vomito"]],
         ["salud-mental", ["salud mental", "mental", "emocion", "psicolog", "ansied", "estres", "depres", "panic", "insom"]],
         ["metabolico", ["diabet", "glucos", "insulin", "triglicer", "obes"]],
         ["laboratorio", ["laborat", "analisis", "hemogram", "perfil", "biops", "tomograf", "radiograf", "resonan", "ecograf"]],
         ["diagnostico", ["diagnost", "fiebre", "febril", "temperatura", "calentura"]],
-        ["medicamentos", ["medic", "farmac", "tableta", "capsula", "jarabe", "antibiot", "ibupro", "paracetam", "diclofen", "naprox", "omepraz"]],
         ["dermatologia", ["dermat", "piel", "eczema", "psorias", "acne"]],
+        ["dolor-rehabilitacion", ["dolor", "espalda", "rodilla", "cuello", "hombro", "articulacion", "rehabilitacion"]],
         ["nutricion", ["nutric", "aliment", "dieta", "peso"]],
         ["prevencion", ["prevenc", "vacun", "tamiz"]]
       ];
@@ -1476,8 +1559,8 @@
       ];
     }
 
-    function createVisual(record, query = getQuery()) {
-      const category = visualCategory(record, query);
+    function createVisual(record, query = getQuery(), context = getContext()) {
+      const category = visualCategory(record, query, context);
       const figure = document.createElement("figure");
       figure.className = "medical-image";
       const candidates = visualCandidates(category);
@@ -1503,6 +1586,20 @@
       };
       figure.append(image);
       return figure;
+    }
+
+    function contextLabel(context) {
+      const labels = {
+        pediatrico: "Pediátrico",
+        "adulto-mayor": "Adulto mayor",
+        adulto: "Adulto"
+      };
+      return labels[context] || "";
+    }
+
+    function categoryBadgeText(record, typeLabel) {
+      const parts = [contextLabel(getContext()), `${typeLabel} · ${humanTitle(record.categoria || "IDB")}`].filter(Boolean);
+      return parts.join(" · ");
     }
 
     function createNeutralVisual(record, category) {
@@ -1634,6 +1731,201 @@
       ];
       if (section === "consulta") return [consultText(record)];
       return [sectionText(record, section)];
+    }
+
+    function textFromSectionValue(value) {
+      if (value == null) return "";
+      if (typeof value === "string" || typeof value === "number") return String(value).trim();
+      if (typeof value === "object") {
+        const direct = value.texto || value.contenido || value.descripcion || value.titulo || value.organizacion || value.url;
+        if (direct) return String(direct).trim();
+        return Object.values(value).map(textFromSectionValue).filter(Boolean).join(" - ");
+      }
+      return "";
+    }
+
+    function normalizeSectionContent(content) {
+      if (Array.isArray(content)) {
+        return content.map(textFromSectionValue).filter(Boolean);
+      }
+      const text = textFromSectionValue(content);
+      return text ? [text] : [];
+    }
+
+    function hasStructuredSections(record) {
+      return Boolean(record?.plantilla_oficial && Array.isArray(record?.secciones) && record.secciones.length);
+    }
+
+    function structuredSections(record) {
+      const seen = new Set();
+      return (record.secciones || [])
+        .map((section) => ({
+          title: textFromSectionValue(section?.titulo),
+          items: normalizeSectionContent(section?.contenido)
+        }))
+        .filter((section) => section.title && section.items.length)
+        .filter((section) => {
+          const key = normalizeText(section.title);
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+    }
+
+    function structuredSectionByTitle(record, title) {
+      const key = normalizeText(title);
+      return structuredSections(record).find((section) => normalizeText(section.title) === key) || null;
+    }
+
+    function quickResponseText(record) {
+      const structured = structuredSectionByTitle(record, "Respuesta rápida");
+      return structured?.items?.[0] || quickResponse(record);
+    }
+
+    function importantInfoSection(record) {
+      const fromField = record.informacion_importante || record._knowledge?.informacion_importante;
+      const title = textFromSectionValue(fromField?.titulo) || "Información importante";
+      const items = normalizeSectionContent(fromField?.texto || fromField?.contenido);
+      const fromSections = structuredSectionByTitle(record, "Información importante");
+      const fallbackItems = fromSections?.items || [];
+      const content = items.length ? items : fallbackItems;
+      if (!content.length) return null;
+      return { title, items: content };
+    }
+
+    function renderSectionContent(container, items) {
+      const cleanItems = (items || []).map(textFromSectionValue).filter(Boolean);
+      if (!cleanItems.length) return;
+      if (cleanItems.length === 1) {
+        container.append(createText("p", "", cleanItems[0]));
+        return;
+      }
+      const list = document.createElement("ul");
+      list.className = "section-list";
+      cleanItems.forEach((item) => list.append(createText("li", "", item)));
+      container.append(list);
+    }
+
+    function sectionIcon(title) {
+      const key = normalizeText(title);
+      if (key.includes("fuente")) return "book";
+      if (key.includes("urgencia") || key.includes("alarma")) return "alert";
+      if (key.includes("consult")) return "shield";
+      if (key.includes("prevencion")) return "shield";
+      if (key.includes("tratamiento") || key.includes("utiliza") || key.includes("sirve")) return "pills";
+      if (key.includes("diagnostico")) return "target";
+      if (key.includes("causa") || key.includes("riesgo")) return "layers";
+      if (key.includes("sintoma")) return "activity";
+      return "pulse";
+    }
+
+    function renderImportantInfo(record) {
+      const info = importantInfoSection(record);
+      if (!info) return null;
+      const note = document.createElement("section");
+      note.className = "important-note";
+      note.append(titleLine(info.title, "book"));
+      renderSectionContent(note, info.items);
+      return note;
+    }
+
+    function renderStructuredContent(record) {
+      const content = document.createElement("section");
+      content.className = "card section-card";
+      const sections = structuredSections(record)
+        .filter((section) => !["respuesta rapida", "informacion importante"].includes(normalizeText(section.title)));
+
+      if (sections.length) {
+        const tabs = document.createElement("div");
+        tabs.className = "tabs";
+        const panels = document.createElement("div");
+        sections.forEach((section, index) => {
+          const id = `structured-${slugify(section.title) || index}`;
+          const button = createText("button", `tab-btn${index === 0 ? " active" : ""}`, section.title);
+          button.type = "button";
+          button.setAttribute("aria-controls", `panel-${id}`);
+          button.addEventListener("click", () => {
+            content.querySelectorAll(".tab-btn").forEach((item) => item.classList.remove("active"));
+            content.querySelectorAll(".tab-panel").forEach((item) => item.classList.remove("active"));
+            button.classList.add("active");
+            content.querySelector(`#panel-${id}`).classList.add("active");
+          });
+          tabs.append(button);
+
+          const panel = document.createElement("div");
+          panel.className = `tab-panel${index === 0 ? " active" : ""}`;
+          panel.id = `panel-${id}`;
+          panel.append(titleLine(section.title, sectionIcon(section.title)));
+          renderSectionContent(panel, section.items);
+          panels.append(panel);
+        });
+        content.append(tabs, panels);
+      }
+
+      const important = renderImportantInfo(record);
+      if (important) content.append(important);
+      return content.children.length ? content : null;
+    }
+
+    function renderLegacyContent(record) {
+      const content = document.createElement("section");
+      content.className = "card section-card";
+      const tabs = document.createElement("div");
+      tabs.className = "tabs";
+      const isMedication = normalizeText(record.tipo) === "medicamento";
+      const tabData = isMedication
+        ? [
+          ["descripcion", "Descripción"],
+          ["presentacion", "Presentación"],
+          ["faq", "Preguntas frecuentes"],
+          ["efectos", "Efectos secundarios"],
+          ["precauciones", "Precauciones"],
+          ["interacciones", "Interacciones"]
+        ]
+        : [
+          ["descripcion", "Descripción"],
+          ["causas", "Causas frecuentes"],
+          ["faq", "Preguntas frecuentes"],
+          ["complicaciones", "Complicaciones"],
+          ["prevencion", "Prevención"],
+          ["consulta", "Cuándo consultar"]
+        ];
+      const panels = document.createElement("div");
+      tabData.forEach(([id, label], index) => {
+        const button = createText("button", `tab-btn${index === 0 ? " active" : ""}`, label);
+        button.type = "button";
+        button.setAttribute("aria-controls", `panel-${id}`);
+        button.addEventListener("click", () => {
+          content.querySelectorAll(".tab-btn").forEach((item) => item.classList.remove("active"));
+          content.querySelectorAll(".tab-panel").forEach((item) => item.classList.remove("active"));
+          button.classList.add("active");
+          content.querySelector(`#panel-${id}`).classList.add("active");
+        });
+        tabs.append(button);
+
+        const panel = document.createElement("div");
+        panel.className = `tab-panel${index === 0 ? " active" : ""}`;
+        panel.id = `panel-${id}`;
+        if (id === "faq") {
+          const faqList = document.createElement("div");
+          faqList.className = "faq-list";
+          panel.append(titleLine("Preguntas frecuentes", "help"));
+          faqs(record).forEach((item) => {
+            const detail = document.createElement("details");
+            detail.append(
+              createText("summary", "", item.pregunta || item.p || "Pregunta frecuente"),
+              createText("p", "", item.respuesta || item.r || "Información orientativa disponible en IDB.")
+            );
+            faqList.append(detail);
+          });
+          panel.append(faqList);
+        } else {
+          renderSectionContent(panel, sectionItems(record, id));
+        }
+        panels.append(panel);
+      });
+      content.append(tabs, panels);
+      return content;
     }
 
     function sectionText(record, section) {
@@ -2106,7 +2398,9 @@
     }
 
     async function loadStatsForRecord(record, query) {
+      const available = await availableStatsSlugs();
       for (const slug of statsSlugCandidates(record, query)) {
+        if (!available.has(slug)) continue;
         const stats = await loadStatsTopic(slug);
         if (stats) return stats;
       }
@@ -2171,7 +2465,7 @@
         href: `https://wa.me/?text=${encodeURIComponent(`Consulta IDB: ${displayTitle} ${window.location.href}`)}`,
         textContent: "Compartir"
       });
-      heroCopy.append(createText("span", "category-pill", `${typeLabel} · ${humanTitle(record.categoria || "IDB")}`), title, summary, share);
+      heroCopy.append(createText("span", "category-pill", categoryBadgeText(record, typeLabel)), title, summary, share);
       share.append(heroVita, copyBtn, waShare);
       hero.append(heroCopy, createVisual(record));
       top.append(breadcrumb, hero, createKeyFacts(record));
@@ -2181,81 +2475,18 @@
 
       const main = document.createElement("div");
       main.className = "main-flow";
+      const usesStructuredSections = hasStructuredSections(record);
       const quick = document.createElement("section");
       quick.className = "card quick-answer";
       quick.append(
         (() => {
           const block = document.createElement("div");
-          block.append(titleLine("Respuesta rápida", "pulse"), createText("p", "", quickResponse(record)));
+          block.append(titleLine("Respuesta rápida", "pulse"), createText("p", "", quickResponseText(record)));
           return block;
         })()
       );
 
-      const content = document.createElement("section");
-      content.className = "card section-card";
-      const tabs = document.createElement("div");
-      tabs.className = "tabs";
-      const isMedication = normalizeText(record.tipo) === "medicamento";
-      const tabData = isMedication
-        ? [
-          ["descripcion", "Descripción"],
-          ["presentacion", "Presentación"],
-          ["faq", "Preguntas frecuentes"],
-          ["efectos", "Efectos secundarios"],
-          ["precauciones", "Precauciones"],
-          ["interacciones", "Interacciones"]
-        ]
-        : [
-          ["descripcion", "Descripción"],
-          ["causas", "Causas frecuentes"],
-          ["faq", "Preguntas frecuentes"],
-          ["complicaciones", "Complicaciones"],
-          ["prevencion", "Prevención"],
-          ["consulta", "Cuándo consultar"]
-        ];
-      const panels = document.createElement("div");
-      tabData.forEach(([id, label], index) => {
-        const button = createText("button", `tab-btn${index === 0 ? " active" : ""}`, label);
-        button.type = "button";
-        button.setAttribute("aria-controls", `panel-${id}`);
-        button.addEventListener("click", () => {
-          content.querySelectorAll(".tab-btn").forEach((item) => item.classList.remove("active"));
-          content.querySelectorAll(".tab-panel").forEach((item) => item.classList.remove("active"));
-          button.classList.add("active");
-          content.querySelector(`#panel-${id}`).classList.add("active");
-        });
-        tabs.append(button);
-
-        const panel = document.createElement("div");
-        panel.className = `tab-panel${index === 0 ? " active" : ""}`;
-        panel.id = `panel-${id}`;
-        if (id === "faq") {
-          const faqList = document.createElement("div");
-          faqList.className = "faq-list";
-          panel.append(titleLine("Preguntas frecuentes", "help"));
-          faqs(record).forEach((item) => {
-            const detail = document.createElement("details");
-            detail.append(
-              createText("summary", "", item.pregunta || item.p || "Pregunta frecuente"),
-              createText("p", "", item.respuesta || item.r || "Información orientativa disponible en IDB.")
-            );
-            faqList.append(detail);
-          });
-          panel.append(faqList);
-        } else {
-          const items = sectionItems(record, id);
-          if (items.length > 1) {
-            const list = document.createElement("ul");
-            list.className = "section-list";
-            items.forEach((item) => list.append(createText("li", "", item)));
-            panel.append(list);
-          } else {
-            panel.append(createText("p", "", items[0] || sectionText(record, id)));
-          }
-        }
-        panels.append(panel);
-      });
-      content.append(tabs, panels);
+      const content = usesStructuredSections ? renderStructuredContent(record) : renderLegacyContent(record);
 
       const alerts = document.createElement("section");
       alerts.className = "alert-stack";
@@ -2269,7 +2500,9 @@
         alerts.append(alert);
       });
 
-      main.append(quick, content, alerts);
+      main.append(quick);
+      if (content) main.append(content);
+      if (!usesStructuredSections) main.append(alerts);
 
       const sidebar = document.createElement("aside");
       sidebar.className = "sidebar";

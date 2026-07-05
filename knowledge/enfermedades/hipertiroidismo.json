@@ -108,6 +108,113 @@
       "tipo": "Salud publica"
     }
   ],
+  "plantilla_oficial": {
+    "tipo": "FICHA DE ENFERMEDADES",
+    "orden": [
+      "Respuesta rápida",
+      "¿Qué es?",
+      "Síntomas frecuentes",
+      "Causas",
+      "Factores de riesgo",
+      "Diagnóstico",
+      "Tratamiento",
+      "Prevención",
+      "Posibles complicaciones",
+      "Pronóstico",
+      "Especialidades relacionadas",
+      "Fuentes médicas",
+      "Información importante"
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Respuesta rápida",
+      "contenido": "Hipertiroidismo se relaciona con resistencia a la insulina, cambios hormonales, genetica, alimentacion, peso, actividad fisica y otros factores metabolicos. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+    },
+    {
+      "titulo": "¿Qué es?",
+      "contenido": "Comprender Hipertiroidismo exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+    },
+    {
+      "titulo": "Síntomas frecuentes",
+      "contenido": [
+        "sed excesiva",
+        "orinar frecuente",
+        "fatiga",
+        "cambios de peso"
+      ]
+    },
+    {
+      "titulo": "Causas",
+      "contenido": [
+        "Puede originarse o empeorar por resistencia a la insulina, cambios hormonales, genetica, alimentacion, peso, actividad fisica y otros factores metabolicos. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+      ]
+    },
+    {
+      "titulo": "Factores de riesgo",
+      "contenido": [
+        "antecedentes familiares",
+        "sobrepeso",
+        "sedentarismo",
+        "embarazo o edad avanzada"
+      ]
+    },
+    {
+      "titulo": "Diagnóstico",
+      "contenido": "El diagnóstico de Hipertiroidismo debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+    },
+    {
+      "titulo": "Tratamiento",
+      "contenido": "El tratamiento de Hipertiroidismo depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+    },
+    {
+      "titulo": "Prevención",
+      "contenido": [
+        "controles de glucosa cuando corresponda",
+        "alimentacion equilibrada",
+        "actividad fisica regular",
+        "seguimiento profesional si hay diagnostico previo"
+      ]
+    },
+    {
+      "titulo": "Posibles complicaciones",
+      "contenido": [
+        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+      ]
+    },
+    {
+      "titulo": "Pronóstico",
+      "contenido": "El pronóstico de Hipertiroidismo varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
+    },
+    {
+      "titulo": "Especialidades relacionadas",
+      "contenido": "Endocrino o medicina general"
+    },
+    {
+      "titulo": "Fuentes médicas",
+      "contenido": [
+        "OMS - Temas de salud",
+        "OPS - Informacion sanitaria regional",
+        "MedlinePlus - Informacion para pacientes",
+        "CDC - Informacion de salud publica"
+      ]
+    },
+    {
+      "titulo": "Información importante",
+      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+    }
+  ],
+  "informacion_importante": {
+    "titulo": "Información importante",
+    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
+    "presentacion_sugerida": {
+      "tamano": "ligeramente menor",
+      "color": "gris medio",
+      "fondo": "gris muy claro",
+      "aspecto": "discreto y elegante",
+      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
+    }
+  },
   "ultima_revision": "2026-06",
-  "version": "1.0"
+  "version": "1.1"
 }

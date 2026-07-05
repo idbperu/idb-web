@@ -144,6 +144,24 @@
     ]
   },
   {
+    "titulo": "Vomitos",
+    "tipo": "sintoma",
+    "categoria": "Sistema digestivo",
+    "prioridad": 2,
+    "description": "Orientación sobre vómitos: causas posibles, señales de alarma y cuándo buscar atención médica.",
+    "fuente": "MedlinePlus",
+    "nivel": "Científico",
+    "ultima_revision": "2026-06",
+    "url": "consulta.html?q=vomitos",
+    "keywords": [
+      "vomitos",
+      "vómitos",
+      "vomito",
+      "vomitar",
+      "devolver"
+    ]
+  },
+  {
     "titulo": "Mareos",
     "tipo": "sintoma",
     "categoria": "Neurologia",

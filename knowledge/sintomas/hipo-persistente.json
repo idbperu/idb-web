@@ -95,6 +95,100 @@
       "tipo": "Referencia nacional"
     }
   ],
+  "plantilla_oficial": {
+    "tipo": "FICHA DE SÍNTOMAS",
+    "orden": [
+      "Respuesta rápida",
+      "¿Qué puede significar?",
+      "Posibles causas",
+      "Síntomas asociados",
+      "Qué puedes hacer en casa",
+      "Cuándo consultar al médico",
+      "Cuándo acudir a urgencias",
+      "Especialidad relacionada",
+      "Enfermedades relacionadas",
+      "Fuentes médicas",
+      "Información importante"
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Respuesta rápida",
+      "contenido": "Hipo persistente puede relacionarse con comidas irritantes, gases, estrenimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. Puedes observar la evolucion si es leve, se relaciona con una comida y mejora con hidratacion y reposo; conviene consultar si hay dolor intenso, fiebre, sangre, vomitos persistentes, deshidratacion o perdida de peso. La clave es no mirar el sintoma aislado, sino su contexto."
+    },
+    {
+      "titulo": "¿Qué puede significar?",
+      "contenido": "Para orientar hipo persistente, importa mas la evolucion completa que un dato aislado. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion."
+    },
+    {
+      "titulo": "Posibles causas",
+      "contenido": [
+        "Las causas frecuentes incluyen comidas irritantes, gases, estrenimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
+      ]
+    },
+    {
+      "titulo": "Síntomas asociados",
+      "contenido": [
+        "Hipo persistente",
+        "hipo que no se va",
+        "hipo constante",
+        "hipo prolongado"
+      ]
+    },
+    {
+      "titulo": "Qué puedes hacer en casa",
+      "contenido": [
+        "mantener hidratacion y descanso adecuados cuando corresponda",
+        "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
+        "registrar evolucion y sintomas asociados",
+        "buscar orientacion temprana si limita actividades o se repite",
+        "No ignores sintomas que progresan rapido o cambian de forma marcada."
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar al médico",
+      "contenido": "Consulta por hipo persistente si aparece con dolor intenso, fiebre, sangre, vomitos persistentes, deshidratacion o perdida de peso. Puedes observar la evolucion solo si se relaciona con una comida y mejora con hidratacion y reposo, pero busca orientacion si hay embarazo, adulto mayor, nino pequeno o enfermedad digestiva previa. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion."
+    },
+    {
+      "titulo": "Cuándo acudir a urgencias",
+      "contenido": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
+    },
+    {
+      "titulo": "Especialidad relacionada",
+      "contenido": "Gastroenterología o medicina general"
+    },
+    {
+      "titulo": "Enfermedades relacionadas",
+      "contenido": [
+        "reflujo",
+        "irritacion",
+        "estomago"
+      ]
+    },
+    {
+      "titulo": "Fuentes médicas",
+      "contenido": [
+        "MedlinePlus - Informacion para pacientes",
+        "OPS - Informacion sanitaria regional",
+        "MINSA - Orientacion sanitaria para la poblacion"
+      ]
+    },
+    {
+      "titulo": "Información importante",
+      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+    }
+  ],
+  "informacion_importante": {
+    "titulo": "Información importante",
+    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
+    "presentacion_sugerida": {
+      "tamano": "ligeramente menor",
+      "color": "gris medio",
+      "fondo": "gris muy claro",
+      "aspecto": "discreto y elegante",
+      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
+    }
+  },
   "ultima_revision": "2026-06",
-  "version": "1.0"
+  "version": "1.1"
 }

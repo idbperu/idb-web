@@ -159,25 +159,30 @@
     ],
     olderAdult: [
       "adulto mayor", "persona mayor", "tercera edad", "anciano", "anciana", "ancianito",
-      "ancianita", "abuelo", "abuela", "abuelito", "abuelita", "edad avanzada", "mayor"
+      "ancianita", "abuelo", "abuela", "abuelito", "abuelita", "edad avanzada", "mayor", "nana"
     ],
-    male: ["hombre", "varon", "caballero", "padre", "papa", "abuelo", "abuelito"],
-    female: ["mujer", "senora", "dama", "madre", "mama", "abuela", "abuelita"]
+    male: ["hombre", "varon", "caballero", "padre", "papa", "esposo"],
+    female: ["mujer", "senora", "dama", "madre", "mama", "esposa"]
   };
 
   const MEDICAL_SYNONYMS = [
     [["presion alta", "tension alta"], "hipertension"],
     [["azucar alta", "glucosa alta"], "glucosa"],
-    [["dolor cabeza", "dolor en la cabeza", "cefalea"], "dolor de cabeza"],
+    [["dolor cabeza", "dolor en la cabeza", "cabesa", "cefalea"], "dolor de cabeza"],
     [["dolor de barriga", "dolor barriga", "dolor abdominal", "dolor de panza"], "dolor de estomago"],
-    [["vomitar", "vomito", "vomitos"], "nauseas"],
+    [["vomitar", "vomito", "vomitos"], "vomitos"],
     [["resfrio", "resfriado", "gripe"], "resfrio comun"],
     [["agotamiento"], "fatiga"],
     [["tristeza"], "depresion"],
     [["estres"], "ansiedad"],
+    [["bienestar emocional"], "ansiedad"],
+    [["salud emocional"], "ansiedad"],
+    [["no puedo dormir", "no logra dormir", "no duerme"], "insomnio"],
+    [["bronquios", "bronquio"], "asma"],
     [["corazon", "dolor de corazon", "dolor en el corazon", "pecho", "dolor pecho", "dolor toracico"], "dolor de pecho"],
     [["huesos", "duelen los huesos", "dolor de huesos", "articulaciones", "dolor articulaciones"], "dolor articular"],
-    [["alergia", "alergico", "alergica"], "erupcion en la piel"]
+    [["alergia", "alergico", "alergica"], "erupcion en la piel"],
+    [["reflujo"], "reflujo gastroesofagico"]
   ];
 
   function applyQueryCorrections(query) {
@@ -199,13 +204,16 @@
     const olderAdult = CONTEXT_DEFINITIONS.olderAdult.some((term) => containsTerm(spaced, term));
     const male = CONTEXT_DEFINITIONS.male.some((term) => containsTerm(spaced, term));
     const female = CONTEXT_DEFINITIONS.female.some((term) => containsTerm(spaced, term));
+    const maleSpecific = male && /\b(prostata|prostatico|salud masculina|salud del hombre)\b/.test(corrected);
+    const femaleSpecific = female && /\b(embarazo|gestante|menopausia|ginecologico|salud femenina|salud de la mujer)\b/.test(corrected);
     return {
       pediatric,
       olderAdult,
       male,
       female,
       age: pediatric ? "pediatric" : olderAdult ? "older-adult" : "",
-      sex: female ? "female" : male ? "male" : ""
+      sex: female ? "female" : male ? "male" : "",
+      canonical: pediatric ? "pediatrico" : olderAdult ? "adulto-mayor" : femaleSpecific ? "mujer" : maleSpecific ? "hombre" : "general"
     };
   }
 
@@ -227,7 +235,8 @@
       ...CONTEXT_DEFINITIONS.female,
       "a", "le", "les", "mi", "mis", "el", "la", "los", "las", "un", "una", "con",
       "tiene", "tienen", "tengo", "tendra", "presenta", "presento", "dio", "tiene", "me",
-      "su", "sus", "por", "para"
+      "su", "sus", "por", "para", "porque", "por que", "hace", "dias", "dia", "cuatro",
+      "medicamento", "medicina", "pastilla"
     ];
     let text = ` ${query} `;
     removable
@@ -253,6 +262,8 @@
 
     if (/\bdolor cabeza\b/.test(corrected)) candidates.push(corrected.replace(/\bdolor cabeza\b/g, "dolor de cabeza"));
     if (/\bpresion alta\b/.test(corrected)) candidates.push("hipertension");
+    if (/\bhipertension\b/.test(corrected)) candidates.push("hipertension");
+    if (/\bmedicamento\s+/.test(corrected)) candidates.push(corrected.replace(/\bmedicamento\s+/g, ""));
 
     return {
       raw,
@@ -514,6 +525,35 @@
       .map((entry) => entry.record);
   }
 
+  function canonicalContextParam(context) {
+    return context?.canonical && context.canonical !== "general" ? context.canonical : "";
+  }
+
+  function canonicalRecordSlug(record) {
+    const url = String(record?.url || "");
+    const query = url.split("?")[1] || "";
+    const params = new URLSearchParams(query);
+    return params.get("q") || slugify(record?.titulo || "");
+  }
+
+  function resolveSearchQuery(query, options = {}) {
+    const limit = Number.isFinite(options.limit) ? options.limit : 8;
+    const context = detectQueryContext(query);
+    const record = findRecord(searchIndex, query) || searchMedicalIndex(query, { limit })[0] || null;
+    const slug = canonicalRecordSlug(record) || slugify(stripContextLanguage(applyQueryCorrections(query)));
+    const contextParam = canonicalContextParam(context);
+    return {
+      query,
+      record,
+      slug,
+      tipo: normalizeText(record?.tipo || ""),
+      visualCategory: "",
+      prioridad: record?.prioridad || 4,
+      context: contextParam || "general",
+      url: slug ? `consulta.html?q=${encodeURIComponent(slug)}${contextParam ? `&context=${encodeURIComponent(contextParam)}` : ""}` : ""
+    };
+  }
+
   function getTypeIcon(type) {
     return TYPE_ICONS[normalizeText(type)] || "🔎";
   }
@@ -588,7 +628,8 @@
     saveSearchTerm(title, record);
 
     if (context.preserveQuery && context.input?.value?.trim()) {
-      window.location.href = `consulta.html?q=${encodeURIComponent(context.input.value.trim())}`;
+      const resolved = resolveSearchQuery(context.input.value.trim(), { limit: context.limit || 8 });
+      window.location.href = resolved.url || `consulta.html?q=${encodeURIComponent(context.input.value.trim())}`;
       return;
     }
 
@@ -867,6 +908,7 @@
     medicalQueryCandidates,
     normalizeQueryIntent: applyQueryCorrections,
     normalize: normalizeText,
+    resolve: resolveSearchQuery,
     saveSearch: saveSearchTerm,
     search: searchMedicalIndex
   };

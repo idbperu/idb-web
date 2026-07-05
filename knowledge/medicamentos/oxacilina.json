@@ -96,6 +96,91 @@
       "tipo": "Referencia cientifica"
     }
   ],
+  "plantilla_oficial": {
+    "tipo": "FICHA DE MEDICAMENTOS",
+    "orden": [
+      "Respuesta rápida",
+      "¿Para qué sirve?",
+      "Cómo actúa",
+      "Cómo se utiliza (informativo, no sustituye receta)",
+      "Efectos secundarios frecuentes",
+      "Precauciones",
+      "Interacciones importantes",
+      "Cuándo consultar al médico",
+      "Fuentes médicas",
+      "Información importante"
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Respuesta rápida",
+      "contenido": "Oxacilina suele considerarse para infecciones bacterianas confirmadas o sospechadas por un profesional. En el organismo, actua contra bacterias sensibles, no contra virus como los del resfrio comun. No debe usarse para probar suerte ni mantenerse sin seguimiento si los sintomas persisten, cambian o se acompanan de señales de alarma."
+    },
+    {
+      "titulo": "¿Para qué sirve?",
+      "contenido": "Sirve como herramienta terapeutica cuando la situacion coincide con su perfil de uso y los riesgos han sido considerados. actua contra bacterias sensibles, no contra virus como los del resfrio comun. La misma molestia puede requerir decisiones distintas en dos personas, por eso la orientacion profesional sigue siendo central."
+    },
+    {
+      "titulo": "Cómo actúa",
+      "contenido": "Actua contra bacterias sensibles, no contra virus como los del resfrio comun."
+    },
+    {
+      "titulo": "Cómo se utiliza (informativo, no sustituye receta)",
+      "contenido": "Se utiliza según la indicación de un profesional y la información del producto. Esta ficha no indica dosis personalizadas, duración de tratamiento ni reemplaza una receta."
+    },
+    {
+      "titulo": "Efectos secundarios frecuentes",
+      "contenido": [
+        "Pueden aparecer molestias o reacciones variables según la persona y el medicamento.",
+        "Vigila especialmente alergias, diarrea intensa, erupciones, uso incompleto o uso sin indicacion.",
+        "No lo combines con otros medicamentos sin orientacion profesional."
+      ]
+    },
+    {
+      "titulo": "Precauciones",
+      "contenido": [
+        "Vigila especialmente alergias, diarrea intensa, erupciones, uso incompleto o uso sin indicacion.",
+        "No lo combines con otros medicamentos sin orientacion profesional.",
+        "No lo uses para reemplazar una evaluacion si el sintoma es intenso, nuevo o persistente.",
+        "No suspendas tratamientos indicados sin consultar."
+      ]
+    },
+    {
+      "titulo": "Interacciones importantes",
+      "contenido": [
+        "Puede interactuar con otros medicamentos, suplementos, alcohol o productos naturales.",
+        "El riesgo cambia si hay enfermedades del hígado, riñón, corazón, estómago, embarazo, lactancia, infancia o edad avanzada.",
+        "Lleva a consulta una lista de todo lo que usas para evitar combinaciones inseguras."
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar al médico",
+      "contenido": "Consulta antes de usar Oxacilina si tienes dudas sobre su conveniencia, si tomas otros medicamentos, si hay embarazo o lactancia, si pertenece a un nino o adulto mayor, o si tienes antecedentes de alergia, enfermedad renal, hepatica, cardiaca, gastrica o de salud mental. Tambien consulta si aparece alergias, diarrea intensa, erupciones, uso incompleto o uso sin indicacion."
+    },
+    {
+      "titulo": "Fuentes médicas",
+      "contenido": [
+        "FDA - Informacion regulatoria sobre medicamentos",
+        "MedlinePlus - Medicamentos y suplementos",
+        "NIH - Informacion de salud para pacientes"
+      ]
+    },
+    {
+      "titulo": "Información importante",
+      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+    }
+  ],
+  "informacion_importante": {
+    "titulo": "Información importante",
+    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
+    "presentacion_sugerida": {
+      "tamano": "ligeramente menor",
+      "color": "gris medio",
+      "fondo": "gris muy claro",
+      "aspecto": "discreto y elegante",
+      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
+    }
+  },
   "ultima_revision": "2026-06",
-  "version": "1.0"
+  "version": "1.1"
 }
