@@ -6,12 +6,12 @@
   "categoria": "Respiratorio",
   "descripcion": "Sentir falta de aire no siempre significa una enfermedad grave, pero merece contexto: intensidad, duracion y sintomas asociados. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
   "respuesta_rapida": "La falta de aire es una senal que debe tomarse en serio, sobre todo si aparece de forma repentina o impide hablar, caminar o descansar. Puede relacionarse con asma, infecciones respiratorias, ansiedad, alergias o problemas del corazon o pulmones. Si es leve y conocida, observa la evolucion y evita irritantes. Consulta pronto si se repite o empeora. Busca urgencias si hay labios morados, dolor de pecho, silbidos intensos, confusion, desmayo o dificultad para respirar en reposo.",
-  "para_que_sirve": "Reconocer y describir falta de aire ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
-  "causas": "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
+  "para_que_sirve": "Reconocer y describir falta de aire ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atención inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
+  "causas": "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
   "sintomas": [
     "Falta de aire",
     "dificultad para respirar",
-    "me falta respiracion",
+    "me falta respiración",
     "sensacion de ahogo"
   ],
   "factores_riesgo": [
@@ -21,17 +21,17 @@
     "aparicion junto con fiebre alta, dolor fuerte, desmayo, falta de aire o sangrado"
   ],
   "prevencion": [
-    "mantener hidratacion y descanso adecuados cuando corresponda",
+    "mantener hidratación y descanso adecuados cuando corresponda",
     "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
     "registrar evolucion y sintomas asociados",
     "buscar orientacion temprana si limita actividades o se repite"
   ],
   "cuando_consultar": "Consulta por falta de aire si se acompana de dificultad para respirar, dolor de pecho, labios morados, fiebre alta o empeoramiento rapido. Puedes observar la evolucion solo si no hay falta de aire, fiebre alta ni decaimiento importante, pero busca orientacion si existen asma, EPOC, defensas bajas o edad extrema. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
+  "senales_alarma": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
   "precauciones": [
     "No ignores sintomas que progresan rapido o cambian de forma marcada.",
     "Evita automedicarte si no conoces la causa.",
-    "No retrases atencion cuando existan señales de alarma.",
+    "No retrases atención cuando existan señales de alarma.",
     "Ten a mano informacion sobre medicamentos, alergias y antecedentes."
   ],
   "preguntas_frecuentes": [
@@ -123,7 +123,7 @@
     {
       "titulo": "Posibles causas",
       "contenido": [
-        "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
+        "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
       ]
     },
     {
@@ -131,14 +131,14 @@
       "contenido": [
         "Falta de aire",
         "dificultad para respirar",
-        "me falta respiracion",
+        "me falta respiración",
         "sensacion de ahogo"
       ]
     },
     {
       "titulo": "Qué puedes hacer en casa",
       "contenido": [
-        "mantener hidratacion y descanso adecuados cuando corresponda",
+        "mantener hidratación y descanso adecuados cuando corresponda",
         "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
         "registrar evolucion y sintomas asociados",
         "buscar orientacion temprana si limita actividades o se repite",
@@ -151,7 +151,7 @@
     },
     {
       "titulo": "Cuándo acudir a urgencias",
-      "contenido": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
+      "contenido": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
     },
     {
       "titulo": "Especialidad relacionada",

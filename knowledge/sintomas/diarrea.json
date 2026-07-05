@@ -5,9 +5,9 @@
   "tipo": "sintoma",
   "categoria": "Digestivo",
   "descripcion": "Diarrea puede aparecer de forma aislada o junto con otros cambios del organismo. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
-  "respuesta_rapida": "La diarrea suele deberse a infecciones digestivas, alimentos irritantes o intolerancias. La prioridad es evitar la deshidratacion: ofrece liquidos frecuentes y, si corresponde, suero de rehidratacion oral. Consulta si dura mas de 24 a 48 horas, hay fiebre, dolor fuerte o no puedes hidratarte. Acude a urgencias si aparece sangre, vomitos persistentes, mucha sed, boca seca, mareos, orina escasa o si afecta a un bebe, adulto mayor o persona fragil.",
-  "para_que_sirve": "Reconocer y describir diarrea ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
-  "causas": "Las causas frecuentes incluyen comidas irritantes, gases, estrenimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
+  "respuesta_rapida": "La diarrea suele deberse a infecciones digestivas, alimentos irritantes o intolerancias. La prioridad es evitar la deshidratación: ofrece líquidos frecuentes y, si corresponde, suero de rehidratación oral. Consulta si dura mas de 24 a 48 horas, hay fiebre, dolor fuerte o no puedes hidratarte. Acude a urgencias si aparece sangre, vómitos persistentes, mucha sed, boca seca, mareos, orina escasa o si afecta a un bebé, adulto mayor o persona fragil.",
+  "para_que_sirve": "Reconocer y describir diarrea ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atención inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
+  "causas": "Las causas frecuentes incluyen comidas irritantes, gases, estreñimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
   "sintomas": [
     "Diarrea",
     "deposiciones liquidas",
@@ -21,27 +21,27 @@
     "aparicion junto con fiebre alta, dolor fuerte, desmayo, falta de aire o sangrado"
   ],
   "prevencion": [
-    "mantener hidratacion y descanso adecuados cuando corresponda",
+    "mantener hidratación y descanso adecuados cuando corresponda",
     "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
     "registrar evolucion y sintomas asociados",
     "buscar orientacion temprana si limita actividades o se repite"
   ],
-  "cuando_consultar": "Consulta por diarrea si aparece con dolor intenso, fiebre, sangre, vomitos persistentes, deshidratacion o perdida de peso. Puedes observar la evolucion solo si se relaciona con una comida y mejora con hidratacion y reposo, pero busca orientacion si hay embarazo, adulto mayor, nino pequeno o enfermedad digestiva previa. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
+  "cuando_consultar": "Consulta por diarrea si aparece con dolor intenso, fiebre, sangre, vómitos persistentes, deshidratación o perdida de peso. Puedes observar la evolucion solo si se relaciona con una comida y mejora con hidratación y reposo, pero busca orientacion si hay embarazo, adulto mayor, niño pequeño o enfermedad digestiva previa. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
+  "senales_alarma": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
   "precauciones": [
     "No ignores sintomas que progresan rapido o cambian de forma marcada.",
     "Evita automedicarte si no conoces la causa.",
-    "No retrases atencion cuando existan señales de alarma.",
+    "No retrases atención cuando existan señales de alarma.",
     "Ten a mano informacion sobre medicamentos, alergias y antecedentes."
   ],
   "preguntas_frecuentes": [
     {
       "pregunta": "¿Que puede significar Diarrea?",
-      "respuesta": "Puede relacionarse con comidas irritantes, gases, estrenimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
+      "respuesta": "Puede relacionarse con comidas irritantes, gases, estreñimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
     },
     {
       "pregunta": "¿Cuando puedo observar en casa?",
-      "respuesta": "Cuando es leve, no hay señales de alarma y cumple esta condicion: si es leve, se relaciona con una comida y mejora con hidratacion y reposo."
+      "respuesta": "Cuando es leve, no hay señales de alarma y cumple esta condicion: si es leve, se relaciona con una comida y mejora con hidratación y reposo."
     },
     {
       "pregunta": "¿Que informacion debo registrar?",
@@ -49,7 +49,7 @@
     },
     {
       "pregunta": "¿Cuando no debo esperar?",
-      "respuesta": "No esperes si si hay dolor intenso, fiebre, sangre, vomitos persistentes, deshidratacion o perdida de peso, o si aparecen signos como falta de aire, desmayo, sangrado, confusion o dolor de pecho."
+      "respuesta": "No esperes si si hay dolor intenso, fiebre, sangre, vómitos persistentes, deshidratación o perdida de peso, o si aparecen signos como falta de aire, desmayo, sangrado, confusion o dolor de pecho."
     }
   ],
   "temas_relacionados": [
@@ -66,10 +66,10 @@
       "titulo": "intoxicacion"
     },
     {
-      "id": "rel-deshidratacion",
-      "slug": "deshidratacion",
+      "id": "rel-deshidratación",
+      "slug": "deshidratación",
       "categoria": "Relacionados",
-      "titulo": "deshidratacion"
+      "titulo": "deshidratación"
     }
   ],
   "fuentes": [
@@ -114,7 +114,7 @@
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "La diarrea suele deberse a infecciones digestivas, alimentos irritantes o intolerancias. La prioridad es evitar la deshidratacion: ofrece liquidos frecuentes y, si corresponde, suero de rehidratacion oral. Consulta si dura mas de 24 a 48 horas, hay fiebre, dolor fuerte o no puedes hidratarte. Acude a urgencias si aparece sangre, vomitos persistentes, mucha sed, boca seca, mareos, orina escasa o si afecta a un bebe, adulto mayor o persona fragil."
+      "contenido": "La diarrea suele deberse a infecciones digestivas, alimentos irritantes o intolerancias. La prioridad es evitar la deshidratación: ofrece líquidos frecuentes y, si corresponde, suero de rehidratación oral. Consulta si dura mas de 24 a 48 horas, hay fiebre, dolor fuerte o no puedes hidratarte. Acude a urgencias si aparece sangre, vómitos persistentes, mucha sed, boca seca, mareos, orina escasa o si afecta a un bebé, adulto mayor o persona fragil."
     },
     {
       "titulo": "¿Qué puede significar?",
@@ -123,7 +123,7 @@
     {
       "titulo": "Posibles causas",
       "contenido": [
-        "Las causas frecuentes incluyen comidas irritantes, gases, estrenimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
+        "Las causas frecuentes incluyen comidas irritantes, gases, estreñimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
       ]
     },
     {
@@ -138,7 +138,7 @@
     {
       "titulo": "Qué puedes hacer en casa",
       "contenido": [
-        "mantener hidratacion y descanso adecuados cuando corresponda",
+        "mantener hidratación y descanso adecuados cuando corresponda",
         "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
         "registrar evolucion y sintomas asociados",
         "buscar orientacion temprana si limita actividades o se repite",
@@ -147,11 +147,11 @@
     },
     {
       "titulo": "Cuándo consultar al médico",
-      "contenido": "Consulta por diarrea si aparece con dolor intenso, fiebre, sangre, vomitos persistentes, deshidratacion o perdida de peso. Puedes observar la evolucion solo si se relaciona con una comida y mejora con hidratacion y reposo, pero busca orientacion si hay embarazo, adulto mayor, nino pequeno o enfermedad digestiva previa. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion."
+      "contenido": "Consulta por diarrea si aparece con dolor intenso, fiebre, sangre, vómitos persistentes, deshidratación o perdida de peso. Puedes observar la evolucion solo si se relaciona con una comida y mejora con hidratación y reposo, pero busca orientacion si hay embarazo, adulto mayor, niño pequeño o enfermedad digestiva previa. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion."
     },
     {
       "titulo": "Cuándo acudir a urgencias",
-      "contenido": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
+      "contenido": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
     },
     {
       "titulo": "Especialidad relacionada",
@@ -162,7 +162,7 @@
       "contenido": [
         "gastroenteritis",
         "intoxicacion",
-        "deshidratacion"
+        "deshidratación"
       ]
     },
     {

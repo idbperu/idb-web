@@ -14,7 +14,10 @@
       "cefalea",
       "cabeza",
       "presion en la cabeza",
-      "molestia de cabeza"
+      "molestia de cabeza",
+      "dolor en la nuca",
+      "dolor de nuca",
+      "me duele la nuca"
     ]
   },
   {
@@ -36,7 +39,10 @@
       "me duele el estomago",
       "dolor en el estomago",
       "dolor estomago",
-      "estomago"
+      "estomago",
+      "me duele la barriga",
+      "dolor en la barriga",
+      "dolor de panza"
     ]
   },
   {
@@ -262,7 +268,11 @@
       "opresion",
       "pecho",
       "dolor toracico",
-      "presion en pecho"
+      "presion en pecho",
+      "me duele el pecho",
+      "dolor en el pecho",
+      "presion en el pecho",
+      "opresion en el pecho"
     ]
   },
   {
@@ -322,7 +332,10 @@
       "deposiciones liquidas",
       "estomago suelto",
       "evacuaciones",
-      "digestivo"
+      "digestivo",
+      "pañal",
+      "pañales",
+      "pañal mojado"
     ]
   },
   {
@@ -340,7 +353,8 @@
       "estrenimiento",
       "no puedo evacuar",
       "constipacion",
-      "transito lento"
+      "transito lento",
+      "no puede evacuar"
     ]
   },
   {

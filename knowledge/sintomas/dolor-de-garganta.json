@@ -6,8 +6,8 @@
   "categoria": "Respiratorio",
   "descripcion": "Dolor de garganta es una senal que el cuerpo muestra cuando algo cambia en el ambito respiratorio. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
   "respuesta_rapida": "El dolor de garganta suele deberse a virus, irritacion, alergias o infecciones de la garganta. Puede acompañarse de tos, fiebre, ronquera o ganglios inflamados. En casa ayuda hidratarse, evitar humo y descansar la voz. Consulta si dura mas de 3 a 5 dias, hay fiebre alta, placas, dolor intenso o dificultad para tragar. Acude a urgencias si cuesta respirar, no puedes tragar saliva, hay hinchazon importante del cuello o decaimiento marcado.",
-  "para_que_sirve": "Reconocer y describir dolor de garganta ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
-  "causas": "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
+  "para_que_sirve": "Reconocer y describir dolor de garganta ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atención inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
+  "causas": "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
   "sintomas": [
     "Dolor de garganta",
     "garganta irritada",
@@ -21,17 +21,17 @@
     "aparicion junto con fiebre alta, dolor fuerte, desmayo, falta de aire o sangrado"
   ],
   "prevencion": [
-    "mantener hidratacion y descanso adecuados cuando corresponda",
+    "mantener hidratación y descanso adecuados cuando corresponda",
     "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
     "registrar evolucion y sintomas asociados",
     "buscar orientacion temprana si limita actividades o se repite"
   ],
   "cuando_consultar": "Consulta por dolor de garganta si se acompana de dificultad para respirar, dolor de pecho, labios morados, fiebre alta o empeoramiento rapido. Puedes observar la evolucion solo si no hay falta de aire, fiebre alta ni decaimiento importante, pero busca orientacion si existen asma, EPOC, defensas bajas o edad extrema. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
+  "senales_alarma": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
   "precauciones": [
     "No ignores sintomas que progresan rapido o cambian de forma marcada.",
     "Evita automedicarte si no conoces la causa.",
-    "No retrases atencion cuando existan señales de alarma.",
+    "No retrases atención cuando existan señales de alarma.",
     "Ten a mano informacion sobre medicamentos, alergias y antecedentes."
   ],
   "preguntas_frecuentes": [
@@ -123,7 +123,7 @@
     {
       "titulo": "Posibles causas",
       "contenido": [
-        "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
+        "Las causas frecuentes incluyen resfrio, alergias, irritantes ambientales, asma, bronquitis u otras infecciones respiratorias. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
       ]
     },
     {
@@ -138,7 +138,7 @@
     {
       "titulo": "Qué puedes hacer en casa",
       "contenido": [
-        "mantener hidratacion y descanso adecuados cuando corresponda",
+        "mantener hidratación y descanso adecuados cuando corresponda",
         "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
         "registrar evolucion y sintomas asociados",
         "buscar orientacion temprana si limita actividades o se repite",
@@ -151,7 +151,7 @@
     },
     {
       "titulo": "Cuándo acudir a urgencias",
-      "contenido": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
+      "contenido": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
     },
     {
       "titulo": "Especialidad relacionada",

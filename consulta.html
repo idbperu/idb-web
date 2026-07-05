@@ -1756,6 +1756,79 @@
       return Boolean(record?.plantilla_oficial && Array.isArray(record?.secciones) && record.secciones.length);
     }
 
+    const PEDIATRIC_SECTION_OVERRIDES = {
+      fiebre: {
+        "respuesta rapida": ["La fiebre en niños suele aparecer por infecciones respiratorias, digestivas u otras causas frecuentes. Observa la temperatura, el estado general, la respiración, la hidratación y si juega o responde como de costumbre. Ofrece líquidos y evita abrigarlo en exceso. Consulta al pediatra si la fiebre dura más de 48 horas, sube mucho, el niño está decaído o hay dolor importante. Acude a urgencias si hay dificultad para respirar, convulsiones, somnolencia marcada, rigidez de cuello, manchas moradas, signos de deshidratación o si es un bebé pequeño."],
+        "posibles causas": ["Infecciones virales o bacterianas, resfrío, gripe, otitis, infección urinaria, gastroenteritis, reacción a vacunas o inflamación.", "En bebés y niños pequeños importa valorar edad, estado general, hidratación, respiración y síntomas asociados."],
+        "sintomas asociados": ["Decaimiento, irritabilidad, escalofríos, dolor de garganta, tos, diarrea, vómitos, dolor de oído, menor apetito o menos pañales mojados."],
+        "que puedes hacer en casa": ["Ofrece líquidos con frecuencia, mantén ropa ligera, observa respiración y estado general, y registra temperatura y horarios.", "No automediques antibióticos ni combines medicamentos sin indicación pediátrica."],
+        "cuando consultar al medico": ["Consulta al pediatra si la fiebre dura más de 48 horas, aparece en un bebé pequeño, se repite, sube mucho o se acompaña de dolor, vómitos, diarrea, tos persistente o mal estado general."],
+        "cuando acudir a urgencias": ["Acude a urgencias si hay dificultad para respirar, labios morados, convulsiones, somnolencia marcada, rigidez de cuello, manchas moradas, llanto inconsolable, deshidratación o deterioro rápido."],
+        "especialidad relacionada": ["Pediatría."],
+        "enfermedades relacionadas": ["Resfrío común, gripe, otitis, infección urinaria, gastroenteritis, bronquitis o neumonía."]
+      },
+      tos: {
+        "respuesta rapida": ["La tos en niños suele acompañar resfríos, alergias, irritación de vías respiratorias, asma o bronquitis. Si hay flema, observa respiración, fiebre, silbidos, decaimiento y si puede tomar líquidos. Evita humo y ofrece líquidos. Consulta al pediatra si dura varios días, empeora, hay fiebre o silbidos. Busca urgencias si le falta el aire, se hunden las costillas, los labios se ponen morados, no puede hablar o está muy decaído."],
+        "posibles causas": ["Resfrío, gripe, bronquitis, asma, alergias, irritantes ambientales, goteo nasal o infección respiratoria."],
+        "sintomas asociados": ["Fiebre, mocos, flema, dolor de garganta, silbidos, respiración rápida, rechazo de alimentos, vómitos por tos o decaimiento."],
+        "que puedes hacer en casa": ["Ofrece líquidos, evita humo y olores fuertes, limpia secreciones nasales si corresponde y observa si respira con esfuerzo.", "No uses jarabes ni antibióticos sin indicación pediátrica."],
+        "cuando consultar al medico": ["Consulta al pediatra si la tos dura más de una semana, empeora, hay fiebre, silbidos, dolor de pecho, vómitos repetidos o antecedentes de asma."],
+        "cuando acudir a urgencias": ["Acude a urgencias si hay dificultad para respirar, hundimiento de costillas, labios morados, pausas al respirar, somnolencia marcada o no puede beber."],
+        "especialidad relacionada": ["Pediatría o neumología pediátrica."],
+        "enfermedades relacionadas": ["Resfrío común, bronquitis, asma, neumonía, laringitis o alergias respiratorias."]
+      },
+      diarrea: {
+        "respuesta rapida": ["La diarrea en niños suele deberse a infecciones digestivas, alimentos irritantes o intolerancias. La prioridad es evitar la deshidratación: ofrece líquidos frecuentes y suero de rehidratación oral si corresponde. Vigila orina, lágrimas, boca seca y energía. Consulta al pediatra si dura más de 24 horas, hay fiebre o dolor. Acude a urgencias si hay sangre, vómitos persistentes, mucha sed, somnolencia, ojos hundidos o pocos pañales mojados."],
+        "posibles causas": ["Gastroenteritis viral, alimentos contaminados, intolerancias, cambios de alimentación o, con menor frecuencia, infecciones que requieren evaluación."],
+        "sintomas asociados": ["Vómitos, fiebre, dolor abdominal, gases, rechazo de alimentos, sed, boca seca, menos orina o pañales menos mojados."],
+        "que puedes hacer en casa": ["Ofrece líquidos en pequeñas cantidades frecuentes y continúa alimentación suave si la tolera.", "Evita automedicar antidiarreicos y busca orientación si el niño es pequeño o se deshidrata."],
+        "cuando consultar al medico": ["Consulta al pediatra si la diarrea dura más de 24 horas, hay fiebre, dolor, vómitos, signos de deshidratación o el niño es bebé."],
+        "cuando acudir a urgencias": ["Acude a urgencias si hay sangre en heces, vómitos persistentes, somnolencia, ojos hundidos, boca muy seca, no orina o está muy decaído."],
+        "especialidad relacionada": ["Pediatría."],
+        "enfermedades relacionadas": ["Gastroenteritis, deshidratación, intolerancias alimentarias o infección digestiva."]
+      },
+      "dolor-abdominal": {
+        "respuesta rapida": ["El dolor abdominal en niños puede deberse a gases, estreñimiento, diarrea, gastroenteritis, infección urinaria, ansiedad o irritación digestiva. Observa dónde duele, si hay fiebre, vómitos, diarrea, rechazo de alimentos o dolor al orinar. Consulta al pediatra si persiste, aumenta o se repite. Acude a urgencias si el dolor es intenso, localizado, el abdomen está duro, hay sangre, vómitos persistentes, desmayo o signos de deshidratación."],
+        "posibles causas": ["Gases, estreñimiento, gastroenteritis, intolerancias, infección urinaria, reflujo, ansiedad o dolor asociado a fiebre."],
+        "sintomas asociados": ["Diarrea, vómitos, fiebre, abdomen hinchado, dolor al orinar, rechazo de alimentos, decaimiento o llanto inconsolable."],
+        "que puedes hacer en casa": ["Ofrece líquidos, comidas suaves si las tolera y observa evacuaciones, fiebre y localización del dolor.", "Evita laxantes, antibióticos o analgésicos sin indicación pediátrica."],
+        "cuando consultar al medico": ["Consulta al pediatra si el dolor dura varias horas, se repite, aumenta, limita caminar o se acompaña de fiebre, vómitos, diarrea o dolor al orinar."],
+        "cuando acudir a urgencias": ["Acude a urgencias si el dolor es fuerte o localizado, hay abdomen duro, sangre, vómitos persistentes, desmayo, somnolencia o signos de deshidratación."],
+        "especialidad relacionada": ["Pediatría o gastroenterología pediátrica."],
+        "enfermedades relacionadas": ["Gastroenteritis, estreñimiento, infección urinaria, apendicitis o intolerancias alimentarias."]
+      },
+      "dolor-de-garganta": {
+        "respuesta rapida": ["El dolor de garganta en niños suele aparecer por virus, irritación, alergias o infección de garganta. Observa fiebre, tos, mocos, dificultad para tragar, placas, ronquera y estado general. Ofrece líquidos y evita humo. Consulta al pediatra si dura más de 3 días, hay fiebre alta, dolor intenso o placas. Acude a urgencias si le cuesta respirar, no puede tragar saliva, hay hinchazón del cuello o decaimiento marcado."],
+        "posibles causas": ["Resfrío, gripe, faringitis viral, amigdalitis, alergias, irritantes o goteo nasal."],
+        "sintomas asociados": ["Fiebre, tos, mocos, ronquera, ganglios inflamados, rechazo de alimentos, dolor al tragar o mal aliento."],
+        "que puedes hacer en casa": ["Ofrece líquidos, alimentos suaves y descanso; evita humo y automedicación.", "No uses antibióticos sin evaluación pediátrica."],
+        "cuando consultar al medico": ["Consulta al pediatra si hay fiebre alta, placas, dolor intenso, síntomas por más de 3 días o dificultad para beber."],
+        "cuando acudir a urgencias": ["Acude a urgencias si hay dificultad para respirar, babeo, no puede tragar saliva, hinchazón importante del cuello o somnolencia marcada."],
+        "especialidad relacionada": ["Pediatría u otorrinolaringología pediátrica."],
+        "enfermedades relacionadas": ["Resfrío común, faringitis, amigdalitis, laringitis o alergias."]
+      },
+      "falta-de-aire": {
+        "respuesta rapida": ["La falta de aire en un niño siempre merece atención. Observa si respira rápido, se le hunden las costillas, tiene silbidos, labios morados, fiebre o no puede beber. Si es leve y ya tiene un plan indicado por su pediatra, síguelo y vigila de cerca. Consulta pronto si se repite o empeora. Acude a urgencias si respira con esfuerzo, no puede hablar o beber, está somnoliento, tiene labios morados o empeora rápido."],
+        "posibles causas": ["Asma, bronquitis, neumonía, alergia, laringitis, atragantamiento, infección respiratoria o crisis de ansiedad."],
+        "sintomas asociados": ["Respiración rápida, hundimiento de costillas, silbidos, tos, fiebre, labios morados, cansancio, dificultad para beber o hablar."],
+        "que puedes hacer en casa": ["Mantén al niño sentado, evita humo o irritantes y sigue el plan indicado si ya tiene asma u otra condición conocida.", "No retrases la atención si respira con esfuerzo."],
+        "cuando consultar al medico": ["Consulta al pediatra si la falta de aire es nueva, se repite, aparece con fiebre, tos persistente, silbidos o limita actividad."],
+        "cuando acudir a urgencias": ["Acude a urgencias si respira con esfuerzo, se hunden las costillas, tiene labios morados, no puede beber, está confuso o somnoliento."],
+        "especialidad relacionada": ["Pediatría o neumología pediátrica."],
+        "enfermedades relacionadas": ["Asma, bronquitis, neumonía, laringitis, alergia respiratoria o atragantamiento."]
+      },
+      "dolor-de-cabeza": {
+        "respuesta rapida": ["El dolor de cabeza en niños puede relacionarse con fiebre, falta de sueño, deshidratación, estrés, problemas visuales, migraña o infecciones. Observa intensidad, duración, vómitos, fiebre, rigidez de cuello, visión y comportamiento. Consulta al pediatra si es nuevo, se repite o limita actividades. Acude a urgencias si aparece de golpe, es muy intenso, hay confusión, debilidad, convulsiones, rigidez de cuello, desmayo o cambios visuales."],
+        "posibles causas": ["Fiebre, infecciones, migraña, tensión, falta de sueño, deshidratación, problemas de visión o golpes."],
+        "sintomas asociados": ["Vómitos, fiebre, sensibilidad a la luz, mareos, visión borrosa, rigidez de cuello, somnolencia o irritabilidad."],
+        "que puedes hacer en casa": ["Ofrece agua, descanso en un ambiente tranquilo y observa si hay fiebre, vómitos, golpe reciente o cambios neurológicos.", "Evita automedicar si el dolor es nuevo, fuerte o diferente."],
+        "cuando consultar al medico": ["Consulta al pediatra si el dolor se repite, despierta por la noche, limita actividades, aparece tras un golpe o viene con fiebre o vómitos."],
+        "cuando acudir a urgencias": ["Acude a urgencias si es súbito o muy intenso, hay debilidad, confusión, convulsiones, desmayo, rigidez de cuello o alteraciones visuales."],
+        "especialidad relacionada": ["Pediatría o neurología pediátrica."],
+        "enfermedades relacionadas": ["Migraña, infecciones con fiebre, deshidratación, sinusitis, problemas visuales o traumatismo."]
+      }
+    };
+
     function structuredSections(record) {
       const seen = new Set();
       return (record.secciones || [])
@@ -1763,6 +1836,7 @@
           title: textFromSectionValue(section?.titulo),
           items: normalizeSectionContent(section?.contenido)
         }))
+        .map((section) => adaptSectionForContext(record, section))
         .filter((section) => section.title && section.items.length)
         .filter((section) => {
           const key = normalizeText(section.title);
@@ -1770,6 +1844,33 @@
           seen.add(key);
           return true;
         });
+    }
+
+    function containsAdultOnlyContent(text) {
+      return /\b(embarazo|gestante|prenatal|menopausia|pr[oó]stata|prostatico|salud masculina|salud del hombre|salud femenina|salud de la mujer|ginecologico|vaginal|uterino|ovario|mamario|disfuncion erectil|testiculo|andropausia|anticoagulantes|epoc)\b/i.test(text);
+    }
+
+    function fallbackPediatricSection(title) {
+      const key = normalizeText(title);
+      if (key.includes("causa")) return ["En niños, la causa depende de la edad, duración, fiebre, hidratación, respiración y síntomas asociados. Si hay duda, conviene consultar al pediatra."];
+      if (key.includes("sintoma")) return ["Observa fiebre, respiración, hidratación, dolor, vómitos, diarrea, sueño, apetito y cambios en el comportamiento."];
+      if (key.includes("casa")) return ["Ofrece líquidos, observa la evolución y evita automedicar. Si el niño empeora o aparecen señales de alarma, busca atención médica."];
+      if (key.includes("consult")) return ["Consulta al pediatra si el síntoma persiste, empeora, se repite, aparece en un bebé pequeño o afecta alimentación, hidratación, respiración o actividad."];
+      if (key.includes("urgencia")) return ["Acude a urgencias si hay dificultad para respirar, somnolencia marcada, labios morados, convulsiones, deshidratación, dolor intenso o deterioro rápido."];
+      if (key.includes("especialidad")) return ["Pediatría."];
+      if (key.includes("enfermedad")) return ["Infecciones respiratorias o digestivas, deshidratación, alergias u otras condiciones pediátricas según el síntoma principal."];
+      return ["En niños, interpreta este contenido según edad, estado general, hidratación, respiración y señales de alarma."];
+    }
+
+    function adaptSectionForContext(record, section) {
+      if (!isPediatricQuery()) return section;
+      const slug = canonicalTopicSlug(record);
+      const key = normalizeText(section.title);
+      const override = PEDIATRIC_SECTION_OVERRIDES[slug]?.[key];
+      if (override) return { ...section, items: override };
+      if (key.includes("fuente") || key.includes("informacion importante")) return section;
+      const filtered = section.items.filter((item) => !containsAdultOnlyContent(item));
+      return { ...section, items: filtered.length ? filtered : fallbackPediatricSection(section.title) };
     }
 
     function structuredSectionByTitle(record, title) {
@@ -2022,6 +2123,7 @@
         .filter((record) => normalizeText(record.titulo) !== currentTitle)
         .filter((record) => canonicalTopicSlug(record) !== currentSlug)
         .filter((record) => !pediatricContext || !isAdultOnlyRecord(record))
+        .filter((record) => currentType === "medicamento" || normalizeText(record.tipo) !== "medicamento")
         .map((record) => {
           const sameCategory = normalizeText(record.categoria) === currentCategory ? 3 : 0;
           const sameType = normalizeText(record.tipo) === currentType ? 1 : 0;
@@ -2038,11 +2140,12 @@
     const CLINICAL_RELATED = {
       fiebre: ["tos", "dolor-de-garganta", "diarrea", "vomitos", "dolor-de-cuerpo", "deshidratacion", "fiebre-en-ninos"],
       tos: ["falta-de-aire", "dificultad-para-respirar", "dolor-de-garganta", "asma", "bronquitis", "flema", "tos-en-ninos"],
-      diarrea: ["vomitos", "dolor-abdominal", "deshidratacion", "gastroenteritis", "diarrea-en-ninos"],
-      "dolor-de-garganta": ["tos", "fiebre", "faringitis", "amigdalitis", "congestion-nasal"],
+      diarrea: ["vomitos", "dolor-abdominal", "deshidratacion", "gastroenteritis", "fiebre", "diarrea-en-ninos"],
+      "dolor-de-garganta": ["tos", "fiebre", "congestion-nasal", "resfrio-comun", "bronquitis"],
       "dolor-abdominal": ["diarrea", "vomitos", "gastritis", "gastroenteritis", "reflujo-gastroesofagico"],
       "falta-de-aire": ["tos", "asma", "dolor-de-pecho", "bronquitis", "silbido-en-el-pecho"],
       "dificultad-para-respirar": ["tos", "asma", "dolor-de-pecho", "bronquitis", "silbido-en-el-pecho"],
+      "dolor-de-pecho": ["dificultad-para-respirar", "falta-de-aire", "hipertension", "asma", "ansiedad"],
       "dolor-de-cabeza": ["fiebre", "vomitos", "mareos", "migrana", "dolor-de-cabeza-fuerte"],
       insomnio: ["ansiedad", "estres", "sueno", "rutina-de-sueno", "manejo-del-estres"]
     };
@@ -2076,7 +2179,7 @@
       const recordSlug = canonicalTopicSlug(record);
       const recordText = recordSearchText(record);
       let score = (CLINICAL_RELATED[currentSlug] || []).some((slug) => recordSlug === normalizeText(slug)) ? 10 : 0;
-      if (pediatricContext && /\b(nino|nina|bebe|pediatrico|infantil|deshidratacion|fiebre|tos|diarrea|vomitos|falta de aire|dificultad para respirar)\b/.test(recordText)) {
+      if (pediatricContext && /\b(nino|nina|bebe|pediatrico|infantil|deshidratacion|fiebre|tos|diarrea|vomitos)\b/.test(recordText)) {
         score += 5;
       }
       return score;
@@ -2412,7 +2515,14 @@
       section.append(titleLine("Datos clave", "chart"));
       const grid = document.createElement("div");
       grid.className = "facts-grid";
-      keyFacts(record).slice(0, 3).forEach(([label, value, detail]) => {
+      const facts = isPediatricQuery()
+        ? [
+          ["Contexto", "Edad y estado general", "En niños importa valorar edad, hidratación, respiración, fiebre y comportamiento."],
+          ["Observación", "Señales de alarma", "Dificultad para respirar, somnolencia, deshidratación o dolor intenso cambian la urgencia."],
+          ["Consulta", "Pediatría", "Busca orientación pediátrica si persiste, empeora, se repite o aparece en un bebé pequeño."]
+        ]
+        : keyFacts(record);
+      facts.slice(0, 3).forEach(([label, value, detail]) => {
         const card = document.createElement("article");
         card.className = "fact-card";
         card.append(createText("span", "", label), createText("strong", "", value), createText("p", "", detail));

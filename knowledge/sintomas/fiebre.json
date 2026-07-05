@@ -5,9 +5,9 @@
   "tipo": "sintoma",
   "categoria": "General",
   "descripcion": "Sentir fiebre no siempre significa una enfermedad grave, pero merece contexto: intensidad, duracion y sintomas asociados. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
-  "respuesta_rapida": "La fiebre suele ser una respuesta del cuerpo ante infecciones u otros procesos. Si la persona esta despierta, respira bien y puede tomar liquidos, suele ser razonable observar la evolucion y cuidar la hidratacion. Consulta si dura mas de 48 a 72 horas, sube mucho, reaparece o hay dolor importante. Acude a urgencias si hay dificultad para respirar, convulsiones, somnolencia marcada, rigidez de cuello, manchas moradas, deshidratacion o si se trata de un bebe pequeno.",
-  "para_que_sirve": "Reconocer y describir fiebre ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
-  "causas": "Las causas frecuentes incluyen cansancio, infecciones leves, estres, hidratacion insuficiente, cambios de rutina o condiciones previas. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
+  "respuesta_rapida": "La fiebre suele ser una respuesta del cuerpo ante infecciones u otros procesos. Si la persona esta despierta, respira bien y puede tomar líquidos, suele ser razonable observar la evolucion y cuidar la hidratación. Consulta si dura mas de 48 a 72 horas, sube mucho, reaparece o hay dolor importante. Acude a urgencias si hay dificultad para respirar, convulsiones, somnolencia marcada, rigidez de cuello, manchas moradas, deshidratación o si se trata de un bebé pequeño.",
+  "para_que_sirve": "Reconocer y describir fiebre ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atención inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
+  "causas": "Las causas frecuentes incluyen cansancio, infecciones leves, estres, hidratación insuficiente, cambios de rutina o condiciones previas. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
   "sintomas": [
     "Fiebre",
     "temperatura alta",
@@ -21,23 +21,23 @@
     "aparicion junto con fiebre alta, dolor fuerte, desmayo, falta de aire o sangrado"
   ],
   "prevencion": [
-    "mantener hidratacion y descanso adecuados cuando corresponda",
+    "mantener hidratación y descanso adecuados cuando corresponda",
     "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
     "registrar evolucion y sintomas asociados",
     "buscar orientacion temprana si limita actividades o se repite"
   ],
   "cuando_consultar": "Consulta por fiebre si persiste, se intensifica, se repite o afecta tus actividades diarias. Puedes observar la evolucion solo si es leve, reciente y mejora de manera progresiva, pero busca orientacion si hay antecedentes importantes o no sabes como interpretarlo. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
+  "senales_alarma": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
   "precauciones": [
     "No ignores sintomas que progresan rapido o cambian de forma marcada.",
     "Evita automedicarte si no conoces la causa.",
-    "No retrases atencion cuando existan señales de alarma.",
+    "No retrases atención cuando existan señales de alarma.",
     "Ten a mano informacion sobre medicamentos, alergias y antecedentes."
   ],
   "preguntas_frecuentes": [
     {
       "pregunta": "¿Que puede significar Fiebre?",
-      "respuesta": "Puede relacionarse con cansancio, infecciones leves, estres, hidratacion insuficiente, cambios de rutina o condiciones previas. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
+      "respuesta": "Puede relacionarse con cansancio, infecciones leves, estres, hidratación insuficiente, cambios de rutina o condiciones previas. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
     },
     {
       "pregunta": "¿Cuando puedo observar en casa?",
@@ -114,7 +114,7 @@
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "La fiebre suele ser una respuesta del cuerpo ante infecciones u otros procesos. Si la persona esta despierta, respira bien y puede tomar liquidos, suele ser razonable observar la evolucion y cuidar la hidratacion. Consulta si dura mas de 48 a 72 horas, sube mucho, reaparece o hay dolor importante. Acude a urgencias si hay dificultad para respirar, convulsiones, somnolencia marcada, rigidez de cuello, manchas moradas, deshidratacion o si se trata de un bebe pequeno."
+      "contenido": "La fiebre suele ser una respuesta del cuerpo ante infecciones u otros procesos. Si la persona esta despierta, respira bien y puede tomar líquidos, suele ser razonable observar la evolucion y cuidar la hidratación. Consulta si dura mas de 48 a 72 horas, sube mucho, reaparece o hay dolor importante. Acude a urgencias si hay dificultad para respirar, convulsiones, somnolencia marcada, rigidez de cuello, manchas moradas, deshidratación o si se trata de un bebé pequeño."
     },
     {
       "titulo": "¿Qué puede significar?",
@@ -123,7 +123,7 @@
     {
       "titulo": "Posibles causas",
       "contenido": [
-        "Las causas frecuentes incluyen cansancio, infecciones leves, estres, hidratacion insuficiente, cambios de rutina o condiciones previas. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
+        "Las causas frecuentes incluyen cansancio, infecciones leves, estres, hidratación insuficiente, cambios de rutina o condiciones previas. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
       ]
     },
     {
@@ -138,7 +138,7 @@
     {
       "titulo": "Qué puedes hacer en casa",
       "contenido": [
-        "mantener hidratacion y descanso adecuados cuando corresponda",
+        "mantener hidratación y descanso adecuados cuando corresponda",
         "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
         "registrar evolucion y sintomas asociados",
         "buscar orientacion temprana si limita actividades o se repite",
@@ -151,7 +151,7 @@
     },
     {
       "titulo": "Cuándo acudir a urgencias",
-      "contenido": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
+      "contenido": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
     },
     {
       "titulo": "Especialidad relacionada",

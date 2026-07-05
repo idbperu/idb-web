@@ -5,9 +5,9 @@
   "tipo": "sintoma",
   "categoria": "Dolor y neurologia",
   "descripcion": "Sentir dolor de cabeza no siempre significa una enfermedad grave, pero merece contexto: intensidad, duracion y sintomas asociados. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
-  "respuesta_rapida": "El dolor de cabeza suele relacionarse con tension, migraña, falta de sueno, deshidratacion, infecciones o problemas visuales. Si es parecido a episodios previos y mejora, puedes observarlo con reposo, agua y evitando desencadenantes. Consulta si es nuevo, se repite, cambia de patron o limita tus actividades. Acude a urgencias si es el peor dolor de tu vida, aparece de golpe, hay debilidad, confusion, fiebre con rigidez de cuello, convulsiones, desmayo o cambios en la vision.",
-  "para_que_sirve": "Reconocer y describir dolor de cabeza ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
-  "causas": "Las causas frecuentes incluyen tension, migraña, deshidratacion, alteraciones del equilibrio, cambios metabolicos o problemas neurologicos. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
+  "respuesta_rapida": "El dolor de cabeza suele relacionarse con tension, migraña, falta de sueño, deshidratación, infecciones o problemas visuales. Si es parecido a episodios previos y mejora, puedes observarlo con reposo, agua y evitando desencadenantes. Consulta si es nuevo, se repite, cambia de patron o limita tus actividades. Acude a urgencias si es el peor dolor de tu vida, aparece de golpe, hay debilidad, confusion, fiebre con rigidez de cuello, convulsiones, desmayo o cambios en la vision.",
+  "para_que_sirve": "Reconocer y describir dolor de cabeza ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atención inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
+  "causas": "Las causas frecuentes incluyen tension, migraña, deshidratación, alteraciones del equilibrio, cambios metabolicos o problemas neurologicos. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
   "sintomas": [
     "Dolor de cabeza",
     "cefalea",
@@ -21,23 +21,23 @@
     "aparicion junto con fiebre alta, dolor fuerte, desmayo, falta de aire o sangrado"
   ],
   "prevencion": [
-    "mantener hidratacion y descanso adecuados cuando corresponda",
+    "mantener hidratación y descanso adecuados cuando corresponda",
     "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
     "registrar evolucion y sintomas asociados",
     "buscar orientacion temprana si limita actividades o se repite"
   ],
   "cuando_consultar": "Consulta por dolor de cabeza si es repentino, intenso, nuevo o aparece con debilidad, confusion, dificultad para hablar, desmayo o cambios visuales. Puedes observar la evolucion solo si es conocido, leve y mejora sin progresar, pero busca orientacion si hay golpe reciente, fiebre alta, anticoagulantes o enfermedades neurologicas previas. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
+  "senales_alarma": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
   "precauciones": [
     "No ignores sintomas que progresan rapido o cambian de forma marcada.",
     "Evita automedicarte si no conoces la causa.",
-    "No retrases atencion cuando existan señales de alarma.",
+    "No retrases atención cuando existan señales de alarma.",
     "Ten a mano informacion sobre medicamentos, alergias y antecedentes."
   ],
   "preguntas_frecuentes": [
     {
       "pregunta": "¿Que puede significar Dolor de cabeza?",
-      "respuesta": "Puede relacionarse con tension, migraña, deshidratacion, alteraciones del equilibrio, cambios metabolicos o problemas neurologicos. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
+      "respuesta": "Puede relacionarse con tension, migraña, deshidratación, alteraciones del equilibrio, cambios metabolicos o problemas neurologicos. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
     },
     {
       "pregunta": "¿Cuando puedo observar en casa?",
@@ -114,7 +114,7 @@
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "El dolor de cabeza suele relacionarse con tension, migraña, falta de sueno, deshidratacion, infecciones o problemas visuales. Si es parecido a episodios previos y mejora, puedes observarlo con reposo, agua y evitando desencadenantes. Consulta si es nuevo, se repite, cambia de patron o limita tus actividades. Acude a urgencias si es el peor dolor de tu vida, aparece de golpe, hay debilidad, confusion, fiebre con rigidez de cuello, convulsiones, desmayo o cambios en la vision."
+      "contenido": "El dolor de cabeza suele relacionarse con tension, migraña, falta de sueño, deshidratación, infecciones o problemas visuales. Si es parecido a episodios previos y mejora, puedes observarlo con reposo, agua y evitando desencadenantes. Consulta si es nuevo, se repite, cambia de patron o limita tus actividades. Acude a urgencias si es el peor dolor de tu vida, aparece de golpe, hay debilidad, confusion, fiebre con rigidez de cuello, convulsiones, desmayo o cambios en la vision."
     },
     {
       "titulo": "¿Qué puede significar?",
@@ -123,7 +123,7 @@
     {
       "titulo": "Posibles causas",
       "contenido": [
-        "Las causas frecuentes incluyen tension, migraña, deshidratacion, alteraciones del equilibrio, cambios metabolicos o problemas neurologicos. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
+        "Las causas frecuentes incluyen tension, migraña, deshidratación, alteraciones del equilibrio, cambios metabolicos o problemas neurologicos. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
       ]
     },
     {
@@ -138,7 +138,7 @@
     {
       "titulo": "Qué puedes hacer en casa",
       "contenido": [
-        "mantener hidratacion y descanso adecuados cuando corresponda",
+        "mantener hidratación y descanso adecuados cuando corresponda",
         "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
         "registrar evolucion y sintomas asociados",
         "buscar orientacion temprana si limita actividades o se repite",
@@ -151,7 +151,7 @@
     },
     {
       "titulo": "Cuándo acudir a urgencias",
-      "contenido": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
+      "contenido": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
     },
     {
       "titulo": "Especialidad relacionada",

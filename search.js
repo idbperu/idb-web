@@ -142,6 +142,8 @@
     [/\bmigranaa\b/g, "migrana"],
     [/\bninio\b/g, "nino"],
     [/\bninia\b/g, "nina"],
+    [/\bniñio\b/g, "nino"],
+    [/\bniñia\b/g, "nina"],
     [/\bbebes\b/g, "bebe"],
     [/\bansiano\b/g, "anciano"],
     [/\bansiana\b/g, "anciana"],
@@ -160,6 +162,13 @@
     [/\bgargata\b/g, "garganta"],
     [/\bestomgo\b/g, "estomago"],
     [/\bestomagoo\b/g, "estomago"],
+    [/\bbarrigaa\b/g, "barriga"],
+    [/\bnuk\b/g, "nuca"],
+    [/\bnuca\b/g, "nuca"],
+    [/\bpanial\b/g, "panal"],
+    [/\bpañial\b/g, "panal"],
+    [/\bunia\b/g, "una"],
+    [/\bestrenimiento\b/g, "estrenimiento"],
     [/\brespirasion\b/g, "respiracion"],
     [/\baogo\b/g, "ahogo"]
   ];
@@ -181,8 +190,11 @@
     [["me falta el aire", "falta de aire", "no puedo respirar bien", "siento que me ahogo", "me ahogo", "ahogo", "disnea", "respirar mal"], "dificultad para respirar"],
     [["tos con flema", "tos con moco", "tos con mocos", "flema", "moco en el pecho", "expectoracion"], "tos"],
     [["me duele la garganta", "garganta inflamada", "garganta irritada", "ardor de garganta"], "dolor de garganta"],
-    [["me duele el estomago", "dolor en el estomago", "dolor de estomago", "dolor estomago"], "dolor abdominal"],
+    [["me duele el estomago", "dolor en el estomago", "dolor de estomago", "dolor estomago", "me duele la barriga", "dolor de barriga", "dolor en la barriga"], "dolor abdominal"],
     [["me arde el estomago", "ardor de estomago", "ardor en el estomago", "acidez", "agruras", "vinagrera"], "gastritis"],
+    [["me duele el pecho", "dolor en el pecho", "presion en el pecho", "opresion en el pecho"], "dolor de pecho"],
+    [["dolor en la nuca", "me duele la nuca", "dolor de nuca"], "dolor de cabeza"],
+    [["estrenimiento", "estreñimiento", "no puedo evacuar"], "estrenimiento"],
     [["presion alta", "tension alta"], "hipertension"],
     [["azucar alta", "glucosa alta"], "glucosa"],
     [["dolor cabeza", "dolor en la cabeza", "cabesa", "cefalea"], "dolor de cabeza"],
@@ -250,13 +262,17 @@
     const hasProductiveCough = /\btos\b.*\b(flema|moco|mocos|expectoracion)\b|\b(flema|moco|mocos|expectoracion)\b.*\btos\b/.test(text);
     const hasThroatIntent = /\b(me duele la garganta|dolor de garganta|garganta inflamada|garganta irritada|ardor de garganta)\b/.test(text);
     const hasBurningStomach = /\b(arde|ardor|acidez|agruras|vinagrera)\b.*\bestomago\b|\bestomago\b.*\b(arde|ardor|acidez|agruras|vinagrera)\b/.test(text);
-    const hasStomachPain = /\b(dolor de estomago|dolor estomago|me duele el estomago|dolor en el estomago|dolor de barriga|dolor de panza|dolor abdominal)\b/.test(text);
+    const hasStomachPain = /\b(dolor de estomago|dolor estomago|me duele el estomago|dolor en el estomago|me duele la barriga|dolor en la barriga|dolor de barriga|dolor de panza|dolor abdominal)\b/.test(text);
+    const hasChestPain = /\b(me duele el pecho|dolor en el pecho|dolor de pecho|opresion en el pecho|presion en el pecho)\b/.test(text);
+    const hasNeckHeadPain = /\b(dolor en la nuca|dolor de nuca|me duele la nuca)\b/.test(text);
 
     if (hasBreathingIntent) candidates.push("dificultad para respirar", "falta de aire");
     if (hasProductiveCough) candidates.push("tos");
     if (hasThroatIntent) candidates.push("dolor de garganta");
     if (hasBurningStomach) candidates.push("gastritis", "reflujo gastroesofagico");
     if (hasStomachPain) candidates.push("dolor abdominal", "gastritis");
+    if (hasChestPain) candidates.push("dolor de pecho");
+    if (hasNeckHeadPain) candidates.push("dolor de cabeza");
     return candidates;
   }
 

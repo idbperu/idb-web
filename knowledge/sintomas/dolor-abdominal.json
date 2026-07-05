@@ -5,9 +5,9 @@
   "tipo": "sintoma",
   "categoria": "Digestivo",
   "descripcion": "Dolor abdominal es una senal que el cuerpo muestra cuando algo cambia en el ambito digestivo. Para interpretarlo conviene observar cuando comenzo, si fue repentino o gradual, que tan intenso es, que lo mejora o empeora y si aparece con otros sintomas. En muchas ocasiones la causa es pasajera, pero algunos patrones requieren evaluacion.",
-  "respuesta_rapida": "El dolor abdominal puede venir de gases, diarrea, gastritis, infecciones, estrenimiento u otras causas. Observa donde duele, cuanto dura, si se relaciona con comidas y si hay fiebre, vomitos o diarrea. Si es leve y mejora, puedes hidratarte, comer suave y vigilar la evolucion. Consulta si persiste, se repite o aumenta. Acude a urgencias si el dolor es intenso o localizado, hay sangre, vomitos persistentes, abdomen duro, desmayo, fiebre alta o signos de deshidratacion.",
-  "para_que_sirve": "Reconocer y describir dolor abdominal ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atencion inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
-  "causas": "Las causas frecuentes incluyen comidas irritantes, gases, estrenimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
+  "respuesta_rapida": "El dolor abdominal puede venir de gases, diarrea, gastritis, infecciones, estreñimiento u otras causas. Observa donde duele, cuanto dura, si se relaciona con comidas y si hay fiebre, vómitos o diarrea. Si es leve y mejora, puedes hidratarte, comer suave y vigilar la evolucion. Consulta si persiste, se repite o aumenta. Acude a urgencias si el dolor es intenso o localizado, hay sangre, vómitos persistentes, abdomen duro, desmayo, fiebre alta o signos de deshidratación.",
+  "para_que_sirve": "Reconocer y describir dolor abdominal ayuda a decidir el siguiente paso: observacion, orientacion digital, consulta programada o atención inmediata. Anotar duracion, intensidad y sintomas asociados facilita una evaluacion mas segura.",
+  "causas": "Las causas frecuentes incluyen comidas irritantes, gases, estreñimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes.",
   "sintomas": [
     "Dolor abdominal",
     "dolor de barriga",
@@ -21,27 +21,27 @@
     "aparicion junto con fiebre alta, dolor fuerte, desmayo, falta de aire o sangrado"
   ],
   "prevencion": [
-    "mantener hidratacion y descanso adecuados cuando corresponda",
+    "mantener hidratación y descanso adecuados cuando corresponda",
     "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
     "registrar evolucion y sintomas asociados",
     "buscar orientacion temprana si limita actividades o se repite"
   ],
-  "cuando_consultar": "Consulta por dolor abdominal si aparece con dolor intenso, fiebre, sangre, vomitos persistentes, deshidratacion o perdida de peso. Puedes observar la evolucion solo si se relaciona con una comida y mejora con hidratacion y reposo, pero busca orientacion si hay embarazo, adulto mayor, nino pequeno o enfermedad digestiva previa. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
+  "cuando_consultar": "Consulta por dolor abdominal si aparece con dolor intenso, fiebre, sangre, vómitos persistentes, deshidratación o perdida de peso. Puedes observar la evolucion solo si se relaciona con una comida y mejora con hidratación y reposo, pero busca orientacion si hay embarazo, adulto mayor, niño pequeño o enfermedad digestiva previa. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion.",
+  "senales_alarma": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido.",
   "precauciones": [
     "No ignores sintomas que progresan rapido o cambian de forma marcada.",
     "Evita automedicarte si no conoces la causa.",
-    "No retrases atencion cuando existan señales de alarma.",
+    "No retrases atención cuando existan señales de alarma.",
     "Ten a mano informacion sobre medicamentos, alergias y antecedentes."
   ],
   "preguntas_frecuentes": [
     {
       "pregunta": "¿Que puede significar Dolor abdominal?",
-      "respuesta": "Puede relacionarse con comidas irritantes, gases, estrenimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
+      "respuesta": "Puede relacionarse con comidas irritantes, gases, estreñimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. La causa exacta depende de la evolucion y de los sintomas que lo acompanan."
     },
     {
       "pregunta": "¿Cuando puedo observar en casa?",
-      "respuesta": "Cuando es leve, no hay señales de alarma y cumple esta condicion: si es leve, se relaciona con una comida y mejora con hidratacion y reposo."
+      "respuesta": "Cuando es leve, no hay señales de alarma y cumple esta condicion: si es leve, se relaciona con una comida y mejora con hidratación y reposo."
     },
     {
       "pregunta": "¿Que informacion debo registrar?",
@@ -49,7 +49,7 @@
     },
     {
       "pregunta": "¿Cuando no debo esperar?",
-      "respuesta": "No esperes si si hay dolor intenso, fiebre, sangre, vomitos persistentes, deshidratacion o perdida de peso, o si aparecen signos como falta de aire, desmayo, sangrado, confusion o dolor de pecho."
+      "respuesta": "No esperes si si hay dolor intenso, fiebre, sangre, vómitos persistentes, deshidratación o perdida de peso, o si aparecen signos como falta de aire, desmayo, sangrado, confusion o dolor de pecho."
     }
   ],
   "temas_relacionados": [
@@ -66,8 +66,8 @@
       "titulo": "diarrea"
     },
     {
-      "id": "rel-estrenimiento",
-      "slug": "estrenimiento",
+      "id": "rel-estreñimiento",
+      "slug": "estreñimiento",
       "categoria": "Relacionados",
       "titulo": "estreñimiento"
     }
@@ -114,7 +114,7 @@
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "El dolor abdominal puede venir de gases, diarrea, gastritis, infecciones, estrenimiento u otras causas. Observa donde duele, cuanto dura, si se relaciona con comidas y si hay fiebre, vomitos o diarrea. Si es leve y mejora, puedes hidratarte, comer suave y vigilar la evolucion. Consulta si persiste, se repite o aumenta. Acude a urgencias si el dolor es intenso o localizado, hay sangre, vomitos persistentes, abdomen duro, desmayo, fiebre alta o signos de deshidratacion."
+      "contenido": "El dolor abdominal puede venir de gases, diarrea, gastritis, infecciones, estreñimiento u otras causas. Observa donde duele, cuanto dura, si se relaciona con comidas y si hay fiebre, vómitos o diarrea. Si es leve y mejora, puedes hidratarte, comer suave y vigilar la evolucion. Consulta si persiste, se repite o aumenta. Acude a urgencias si el dolor es intenso o localizado, hay sangre, vómitos persistentes, abdomen duro, desmayo, fiebre alta o signos de deshidratación."
     },
     {
       "titulo": "¿Qué puede significar?",
@@ -123,7 +123,7 @@
     {
       "titulo": "Posibles causas",
       "contenido": [
-        "Las causas frecuentes incluyen comidas irritantes, gases, estrenimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratacion, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
+        "Las causas frecuentes incluyen comidas irritantes, gases, estreñimiento, infecciones digestivas, reflujo, intolerancias o inflamacion. Tambien influyen edad, embarazo, enfermedades previas, medicamentos, hidratación, alimentacion, actividad fisica, descanso y exposicion a infecciones o irritantes."
       ]
     },
     {
@@ -138,7 +138,7 @@
     {
       "titulo": "Qué puedes hacer en casa",
       "contenido": [
-        "mantener hidratacion y descanso adecuados cuando corresponda",
+        "mantener hidratación y descanso adecuados cuando corresponda",
         "evitar automedicacion si el sintoma es nuevo, intenso o persistente",
         "registrar evolucion y sintomas asociados",
         "buscar orientacion temprana si limita actividades o se repite",
@@ -147,11 +147,11 @@
     },
     {
       "titulo": "Cuándo consultar al médico",
-      "contenido": "Consulta por dolor abdominal si aparece con dolor intenso, fiebre, sangre, vomitos persistentes, deshidratacion o perdida de peso. Puedes observar la evolucion solo si se relaciona con una comida y mejora con hidratacion y reposo, pero busca orientacion si hay embarazo, adulto mayor, nino pequeno o enfermedad digestiva previa. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion."
+      "contenido": "Consulta por dolor abdominal si aparece con dolor intenso, fiebre, sangre, vómitos persistentes, deshidratación o perdida de peso. Puedes observar la evolucion solo si se relaciona con una comida y mejora con hidratación y reposo, pero busca orientacion si hay embarazo, adulto mayor, niño pequeño o enfermedad digestiva previa. Si el sintoma cambia de patron, aumenta o te preocupa, es mejor pedir una evaluacion."
     },
     {
       "titulo": "Cuándo acudir a urgencias",
-      "contenido": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
+      "contenido": "Busca atención inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, labios morados, convulsiones o empeoramiento rapido."
     },
     {
       "titulo": "Especialidad relacionada",
