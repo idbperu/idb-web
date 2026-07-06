@@ -162,6 +162,8 @@
     [/\bgargata\b/g, "garganta"],
     [/\bestomgo\b/g, "estomago"],
     [/\bestomagoo\b/g, "estomago"],
+    [/\bestomacal\b/g, "estomago"],
+    [/\bestomacales\b/g, "estomago"],
     [/\bbarrigaa\b/g, "barriga"],
     [/\bnuk\b/g, "nuca"],
     [/\bnuca\b/g, "nuca"],
@@ -190,7 +192,7 @@
     [["me falta el aire", "falta de aire", "no puedo respirar bien", "siento que me ahogo", "me ahogo", "ahogo", "disnea", "respirar mal"], "dificultad para respirar"],
     [["tos con flema", "tos con moco", "tos con mocos", "flema", "moco en el pecho", "expectoracion"], "tos"],
     [["me duele la garganta", "garganta inflamada", "garganta irritada", "ardor de garganta"], "dolor de garganta"],
-    [["me duele el estomago", "dolor en el estomago", "dolor de estomago", "dolor estomago", "me duele la barriga", "dolor de barriga", "dolor en la barriga"], "dolor abdominal"],
+    [["me duele el estomago", "dolor en el estomago", "dolor de estomago", "dolor estomago", "dolor estomacal", "me duele la barriga", "dolor de barriga", "dolor en la barriga"], "dolor abdominal"],
     [["me arde el estomago", "ardor de estomago", "ardor en el estomago", "acidez", "agruras", "vinagrera"], "gastritis"],
     [["me duele el pecho", "dolor en el pecho", "presion en el pecho", "opresion en el pecho"], "dolor de pecho"],
     [["dolor en la nuca", "me duele la nuca", "dolor de nuca"], "dolor de cabeza"],
@@ -262,7 +264,7 @@
     const hasProductiveCough = /\btos\b.*\b(flema|moco|mocos|expectoracion)\b|\b(flema|moco|mocos|expectoracion)\b.*\btos\b/.test(text);
     const hasThroatIntent = /\b(me duele la garganta|dolor de garganta|garganta inflamada|garganta irritada|ardor de garganta)\b/.test(text);
     const hasBurningStomach = /\b(arde|ardor|acidez|agruras|vinagrera)\b.*\bestomago\b|\bestomago\b.*\b(arde|ardor|acidez|agruras|vinagrera)\b/.test(text);
-    const hasStomachPain = /\b(dolor de estomago|dolor estomago|me duele el estomago|dolor en el estomago|me duele la barriga|dolor en la barriga|dolor de barriga|dolor de panza|dolor abdominal)\b/.test(text);
+    const hasStomachPain = /\b(dolor de estomago|dolor estomago|dolor estomacal|me duele el estomago|dolor en el estomago|me duele la barriga|dolor en la barriga|dolor de barriga|dolor de panza|dolor abdominal)\b/.test(text);
     const hasChestPain = /\b(me duele el pecho|dolor en el pecho|dolor de pecho|opresion en el pecho|presion en el pecho)\b/.test(text);
     const hasNeckHeadPain = /\b(dolor en la nuca|dolor de nuca|me duele la nuca)\b/.test(text);
 
@@ -515,6 +517,37 @@
       .reduce((bestScore, variant) => Math.max(bestScore, scoreRecordVariant(record, variant, intent)), 0);
   }
 
+  function isMedicationExplicitQuery(query) {
+    const normalized = normalizeQueryText(query);
+    if (/\b(medicamento|medicina|pastilla|jarabe|tableta|capsula|dosis|tomar)\b/.test(normalized)) {
+      return true;
+    }
+    return searchIndex.some((record) => {
+      const normalizedRecord = record._title ? record : normalizeRecord(record);
+      return normalizeText(normalizedRecord.tipo) === "medicamento"
+        && (normalizedRecord._title === normalized || normalizedRecord._slug === slugify(normalized));
+    });
+  }
+
+  function typePriority(record, query, intent = "") {
+    const type = normalizeText(record?.tipo || "");
+    const medicationExplicit = intent === "medicamento" || isMedicationExplicitQuery(query);
+    if (medicationExplicit) return type === "medicamento" ? 0 : type === "sintoma" ? 1 : 2;
+    if (type === "sintoma") return 0;
+    if (type === "enfermedad") return 1;
+    if (type === "medicamento") return 2;
+    return 3;
+  }
+
+  function medicationMatchIsSpecific(record, query) {
+    const normalizedRecord = record._title ? record : normalizeRecord(record);
+    const querySlug = slugify(query);
+    return normalizedRecord._title === query
+      || normalizedRecord._slug === querySlug
+      || normalizedRecord._keywords.some((keyword) => keyword === query)
+      || normalizedRecord._keywordSlugs.some((keyword) => keyword === querySlug);
+  }
+
   function findRecord(records, query) {
     const queryCandidates = medicalQueryCandidates(query).map((candidate) => ({
       text: normalizeText(candidate),
@@ -563,14 +596,34 @@
       return [];
     }
 
-    return searchIndex
-      .map((record) => ({ record, score: scoreRecord(record, normalizedQuery, intent) }))
+    const entries = searchIndex
+      .map((record) => {
+        const score = scoreRecord(record, normalizedQuery, intent);
+        const type = normalizeText(record?.tipo || "");
+        const medicationExplicit = intent === "medicamento" || isMedicationExplicitQuery(normalizedQuery);
+        const medicationPenalty = type === "medicamento" && !medicationExplicit
+          ? (medicationMatchIsSpecific(record, normalizedQuery) ? 28 : 58)
+          : 0;
+        return {
+          record,
+          score: Math.max(0, score - medicationPenalty),
+          priority: typePriority(record, normalizedQuery, intent)
+        };
+      })
       .filter((entry) => entry.score > 0)
       .sort((a, b) => {
         return b.score - a.score
+          || a.priority - b.priority
           || a.record.prioridad - b.record.prioridad
           || a.record.titulo.localeCompare(b.record.titulo, "es");
-      })
+      });
+
+    const medicationExplicit = intent === "medicamento" || isMedicationExplicitQuery(normalizedQuery);
+    const clinicallyOrientedEntries = intent === "sintoma" && !medicationExplicit
+      ? entries.filter((entry) => normalizeText(entry.record?.tipo || "") !== "medicamento")
+      : entries;
+
+    return (clinicallyOrientedEntries.length ? clinicallyOrientedEntries : entries)
       .slice(0, limit)
       .map((entry) => entry.record);
   }

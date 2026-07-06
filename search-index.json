@@ -42,7 +42,8 @@
       "estomago",
       "me duele la barriga",
       "dolor en la barriga",
-      "dolor de panza"
+      "dolor de panza",
+      "dolor estomacal"
     ]
   },
   {
@@ -520,7 +521,9 @@
       "me arde el estomago",
       "ardor de estomago",
       "ardor en el estomago",
-      "agruras"
+      "agruras",
+      "dolor estomacal",
+      "ardor estomacal"
     ]
   },
   {

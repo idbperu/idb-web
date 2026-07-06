@@ -2119,10 +2119,13 @@
       const currentSlug = canonicalTopicSlug(currentRecord);
       const currentKeywords = new Set((currentRecord.keywords || []).map(normalizeText));
       const pediatricContext = isPediatricQuery();
+      const olderAdultContext = getContext() === "adulto-mayor";
       return records
         .filter((record) => normalizeText(record.titulo) !== currentTitle)
         .filter((record) => canonicalTopicSlug(record) !== currentSlug)
         .filter((record) => !pediatricContext || !isAdultOnlyRecord(record))
+        .filter((record) => pediatricContext || !isPediatricOnlyRecord(record))
+        .filter((record) => isRelatedContextCompatible(record, currentType, pediatricContext, olderAdultContext))
         .filter((record) => currentType === "medicamento" || normalizeText(record.tipo) !== "medicamento")
         .map((record) => {
           const sameCategory = normalizeText(record.categoria) === currentCategory ? 3 : 0;
@@ -2147,7 +2150,11 @@
       "dificultad-para-respirar": ["tos", "asma", "dolor-de-pecho", "bronquitis", "silbido-en-el-pecho"],
       "dolor-de-pecho": ["dificultad-para-respirar", "falta-de-aire", "hipertension", "asma", "ansiedad"],
       "dolor-de-cabeza": ["fiebre", "vomitos", "mareos", "migrana", "dolor-de-cabeza-fuerte"],
-      insomnio: ["ansiedad", "estres", "sueno", "rutina-de-sueno", "manejo-del-estres"]
+      "dolor-articular": ["artrosis", "osteoporosis", "radiografia", "dolor-de-espalda", "dolor-de-rodilla"],
+      insomnio: ["ansiedad", "estres", "sueno", "rutina-de-sueno", "manejo-del-estres"],
+      paracetamol: ["fiebre", "dolor-de-cabeza", "dolor-articular", "ibuprofeno"],
+      ibuprofeno: ["dolor-de-cabeza", "dolor-articular", "fiebre", "paracetamol"],
+      omeprazol: ["gastritis", "reflujo-gastroesofagico", "acidez"]
     };
 
     function recordSearchText(record) {
@@ -2170,6 +2177,25 @@
       return /\b(embarazo|gestante|prenatal|menopausia|prostata|prostatico|salud masculina|salud del hombre|salud femenina|salud de la mujer|ginecologico|vaginal|uterino|ovario|mama|mamario|disfuncion erectil|testiculo|andropausia)\b/.test(recordSearchText(record));
     }
 
+    function isPediatricOnlyRecord(record) {
+      return /\b(pediatrico|infantil|nino|nina|bebe|lactante|recien nacido|fiebre en ninos|tos en ninos|diarrea en ninos)\b/.test(recordSearchText(record));
+    }
+
+    function isRelatedContextCompatible(record, currentType, pediatricContext, olderAdultContext) {
+      const recordType = normalizeText(record.tipo);
+      const text = recordSearchText(record);
+      if (currentType === "medicamento") {
+        return pediatricContext || !isPediatricOnlyRecord(record);
+      }
+      if (pediatricContext) {
+        return recordType !== "medicamento" && !isAdultOnlyRecord(record);
+      }
+      if (olderAdultContext) {
+        return !isPediatricOnlyRecord(record) && !/\b(embarazo|gestante|pediatrico|infantil)\b/.test(text);
+      }
+      return !isPediatricOnlyRecord(record);
+    }
+
     function canonicalTopicSlug(record) {
       const slug = normalizeText(record.slug || slugify(record.titulo));
       return normalizeText(KNOWLEDGE_SLUG_ALIASES[slug] || slug);
@@ -2178,7 +2204,9 @@
     function clinicalRelatedScore(currentSlug, record, pediatricContext) {
       const recordSlug = canonicalTopicSlug(record);
       const recordText = recordSearchText(record);
-      let score = (CLINICAL_RELATED[currentSlug] || []).some((slug) => recordSlug === normalizeText(slug)) ? 10 : 0;
+      const relatedSlugs = CLINICAL_RELATED[currentSlug] || [];
+      const relatedIndex = relatedSlugs.findIndex((slug) => recordSlug === normalizeText(slug));
+      let score = relatedIndex >= 0 ? 16 - relatedIndex : 0;
       if (pediatricContext && /\b(nino|nina|bebe|pediatrico|infantil|deshidratacion|fiebre|tos|diarrea|vomitos)\b/.test(recordText)) {
         score += 5;
       }
@@ -2227,7 +2255,7 @@
         const link = document.createElement("a");
         link.className = "card interest-card";
         link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
-        const category = visualCategory(record, getQuery());
+        const category = visualCategory(record, "", getContext());
         const candidates = visualCandidates(category);
         let media;
         if (candidates.length) {
