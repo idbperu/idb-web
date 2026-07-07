@@ -2273,10 +2273,15 @@
       return score;
     }
 
+    function consultationUrl(slug, keepPediatricContext = isPediatricQuery()) {
+      const url = `consulta.html?q=${encodeURIComponent(slug)}`;
+      return keepPediatricContext ? `${url}&context=pediatrico` : url;
+    }
+
     function createRelatedLink(record) {
       const link = document.createElement("a");
       link.className = "related-link";
-      link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
+      link.href = consultationUrl(record.slug || slugify(record.titulo));
       link.append(
         createText("strong", "", displayRecordTitle(record)),
         createText("span", "", `${humanTitle(record.tipo || "Tema")} · ${humanTitle(record.categoria || "IDB")}`)
@@ -2346,7 +2351,7 @@
       related.forEach((record) => {
         const link = document.createElement("a");
         link.className = "card interest-card";
-        link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
+        link.href = consultationUrl(record.slug || slugify(record.titulo), pediatricContext);
         const category = visualCategory(record, "", getContext());
         const pediatricCandidates = pediatricContext ? pediatricVisualCandidates(record, "", "pediatrico") : [];
         const generalCandidates = visualCandidates(category);
@@ -2847,7 +2852,7 @@
       event.preventDefault();
       const input = event.currentTarget.querySelector("input");
       const next = slugify(input.value);
-      if (next) window.location.href = `consulta.html?q=${encodeURIComponent(next)}`;
+      if (next) window.location.href = consultationUrl(next);
     });
 
     loadConsultation();
