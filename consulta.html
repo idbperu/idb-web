@@ -1354,11 +1354,12 @@
       const raw = normalizeText(query);
       const intent = normalizeQueryIntent(query);
       const candidates = [raw, intent];
-      const knownTopics = ["dolor de cabeza", "dolor abdominal", "dolor articular", "presion alta", "hipertension", "fiebre", "tos", "diarrea", "asma", "insomnio", "ansiedad", "gastritis", "diabetes", "paracetamol", "ibuprofeno", "omeprazol"];
+      const knownTopics = ["dolor de cabeza", "dolor abdominal", "dolor de garganta", "dolor articular", "presion alta", "hipertension", "fiebre", "tos", "diarrea", "asma", "insomnio", "ansiedad", "gastritis", "diabetes", "paracetamol", "ibuprofeno", "omeprazol"];
       knownTopics.forEach((topic) => {
         if (intent.includes(topic)) candidates.push(topic === "presion alta" ? "hipertension" : topic);
       });
       if (/\bduele\b.*\bcabeza\b/.test(intent) || /\bdolor cabeza\b/.test(intent)) candidates.push("dolor de cabeza");
+      if (/\bgarganta\b/.test(intent)) candidates.push("dolor de garganta");
       if (/\bpresion alta\b/.test(intent)) candidates.push("hipertension");
       if (/\breflujo\b/.test(intent)) candidates.push("reflujo gastroesofagico");
       if (/\balergia\b/.test(intent)) candidates.push("erupcion en la piel");
@@ -1570,6 +1571,7 @@
     }
 
     function pediatricVisualCandidates(record, query = "", context = getContext()) {
+      const topicText = ` ${normalizeQueryIntent(`${record?.titulo || ""} ${record?.slug || ""}`)} `;
       const text = ` ${normalizeQueryIntent(`${query} ${record?.titulo || ""} ${record?.slug || ""} ${(record?.keywords || []).join(" ")}`)} `;
       if (!hasPediatricVisualContext(query, context) && !/\b(fiebre en nino|tos en nino|diarrea en nino|dolor de barriga en nino)\b/.test(text)) {
         return [];
@@ -1582,15 +1584,21 @@
         });
       };
 
-      if (/\b(fiebre|temperatura|febril|calentura)\b/.test(text)) {
-        add(hasGirlContext ? PEDIATRIC_VISUAL_IMAGES.feverGirl : PEDIATRIC_VISUAL_IMAGES.feverBoy, PEDIATRIC_VISUAL_IMAGES.feverGirl);
-      }
-      if (/\b(tos|toser)\b/.test(text)) add(PEDIATRIC_VISUAL_IMAGES.cough);
-      if (/\b(dolor abdominal|dolor de barriga|barriga|abdomen|abdominal|dolor de estomago|estomago)\b/.test(text)) {
+      if (/\b(dolor abdominal|dolor de barriga|barriga|abdomen|abdominal|dolor de estomago|estomago|diarrea|gastroenteritis|gastritis)\b/.test(topicText)) {
         add(PEDIATRIC_VISUAL_IMAGES.abdominal);
       }
+      if (/\b(dolor de garganta|garganta|amigdal|tragar)\b/.test(topicText)) add(PEDIATRIC_VISUAL_IMAGES.throat);
+      if (/\b(nausea|nauseas|vomito|vomitos)\b/.test(topicText)) add(PEDIATRIC_VISUAL_IMAGES.nausea);
+      if (/\b(tos|toser|bronquitis|asma|respirar|respiracion)\b/.test(topicText)) add(PEDIATRIC_VISUAL_IMAGES.cough);
+      if (/\b(fiebre|temperatura|febril|calentura)\b/.test(topicText)) {
+        add(hasGirlContext ? PEDIATRIC_VISUAL_IMAGES.feverGirl : PEDIATRIC_VISUAL_IMAGES.feverBoy, PEDIATRIC_VISUAL_IMAGES.feverGirl);
+      }
+
+      if (/\b(dolor abdominal|dolor de barriga|barriga|abdomen|abdominal|dolor de estomago|estomago)\b/.test(text)) add(PEDIATRIC_VISUAL_IMAGES.abdominal);
       if (/\b(dolor de garganta|garganta|amigdal|tragar)\b/.test(text)) add(PEDIATRIC_VISUAL_IMAGES.throat);
       if (/\b(nausea|nauseas|vomito|vomitos)\b/.test(text)) add(PEDIATRIC_VISUAL_IMAGES.nausea);
+      if (/\b(tos|toser)\b/.test(text)) add(PEDIATRIC_VISUAL_IMAGES.cough);
+      if (/\b(fiebre|temperatura|febril|calentura)\b/.test(text)) add(hasGirlContext ? PEDIATRIC_VISUAL_IMAGES.feverGirl : PEDIATRIC_VISUAL_IMAGES.feverBoy, PEDIATRIC_VISUAL_IMAGES.feverGirl);
 
       add(...PEDIATRIC_VISUAL_FALLBACKS);
       return candidates;
@@ -2222,7 +2230,7 @@
 
     function isPediatricQuery() {
       const haystack = ` ${normalizeText(`${getQuery()} ${getContext()}`)} `;
-      return getContext() === "pediatrico" || /\b(hijo|hija|bebe|nino|nina|menor|pediatrico|lactante|infantil)\b/.test(haystack);
+      return getContext() === "pediatrico" || /\b(hijo|hija|bebe|nino|nina|menor|pediatrico|lactante|infantil|escolar)\b/.test(haystack);
     }
 
     function isAdultOnlyRecord(record) {
@@ -2285,6 +2293,37 @@
       container.append(list);
     }
 
+    function uniqueImageCandidates(...groups) {
+      return groups.flat().filter(Boolean).filter((candidate, index, list) => list.indexOf(candidate) === index);
+    }
+
+    function createInterestNeutral(record) {
+      return createText("div", "interest-neutral", humanTitle(record.categoria || record.tipo || "Consulta IDB"));
+    }
+
+    function createInterestMedia(record, candidates) {
+      if (!candidates.length) return createInterestNeutral(record);
+      const media = document.createElement("img");
+      let candidateIndex = 0;
+
+      const useCandidate = () => {
+        if (candidateIndex >= candidates.length) {
+          media.replaceWith(createInterestNeutral(record));
+          return;
+        }
+        media.dataset.candidateIndex = String(candidateIndex);
+        media.src = candidates[candidateIndex];
+        candidateIndex += 1;
+      };
+
+      media.alt = `Imagen editorial IDB para ${displayRecordTitle(record)}`;
+      media.loading = "lazy";
+      media.decoding = "async";
+      media.onerror = useCandidate;
+      useCandidate();
+      return media;
+    }
+
     function renderInterest(container, records, currentRecord) {
       const related = calculateRelated(records, currentRecord).slice(0, 4);
       if (!related.length) return;
@@ -2303,37 +2342,21 @@
       const row = document.createElement("div");
       row.className = "interest-row";
       const categoryImageIndexes = new Map();
+      const pediatricContext = isPediatricQuery();
       related.forEach((record) => {
         const link = document.createElement("a");
         link.className = "card interest-card";
         link.href = `consulta.html?q=${encodeURIComponent(record.slug || slugify(record.titulo))}`;
         const category = visualCategory(record, "", getContext());
-        const candidates = visualCandidates(category);
-        let media;
-        if (candidates.length) {
-          const currentIndex = categoryImageIndexes.get(category) || 0;
-          const imageIndex = currentIndex % candidates.length;
-          categoryImageIndexes.set(category, currentIndex + 1);
-          media = document.createElement("img");
-          media.src = candidates[imageIndex];
-          media.dataset.candidateIndex = String(imageIndex);
-          media.alt = `Imagen editorial IDB para ${displayRecordTitle(record)}`;
-          media.loading = "lazy";
-          media.decoding = "async";
-          media.onerror = () => {
-            const failedIndex = Number(media.dataset.candidateIndex || 0);
-            const fallbackIndex = (failedIndex + 1) % candidates.length;
-            if (fallbackIndex !== failedIndex) {
-              media.dataset.candidateIndex = String(fallbackIndex);
-              media.src = candidates[fallbackIndex];
-              return;
-            }
-            const neutral = createText("div", "interest-neutral", humanTitle(record.categoria || record.tipo || "Consulta IDB"));
-            media.replaceWith(neutral);
-          };
-        } else {
-          media = createText("div", "interest-neutral", humanTitle(record.categoria || record.tipo || "Consulta IDB"));
-        }
+        const pediatricCandidates = pediatricContext ? pediatricVisualCandidates(record, "", "pediatrico") : [];
+        const generalCandidates = visualCandidates(category);
+        const currentIndex = categoryImageIndexes.get(category) || 0;
+        const rotatedGeneralCandidates = pediatricCandidates.length || !generalCandidates.length
+          ? generalCandidates
+          : generalCandidates.slice(currentIndex).concat(generalCandidates.slice(0, currentIndex));
+        if (!pediatricCandidates.length && generalCandidates.length) categoryImageIndexes.set(category, (currentIndex + 1) % generalCandidates.length);
+        const candidates = uniqueImageCandidates(pediatricCandidates, rotatedGeneralCandidates);
+        const media = createInterestMedia(record, candidates);
         const cardCopy = document.createElement("div");
         cardCopy.className = "interest-copy";
         cardCopy.append(
