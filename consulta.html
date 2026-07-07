@@ -1233,6 +1233,22 @@
       respiratorio: { folder: "respiratorio", icon: "activity.svg" },
       "primeros-auxilios": { folder: "primeros-auxilios", icon: "ambulance.svg" }
     };
+    const PEDIATRIC_VISUAL_IMAGES = {
+      feverBoy: "imagenes/consulta/infantil/infantil-fiebre-nino-01.webp",
+      feverGirl: "imagenes/consulta/infantil/infantil-fiebre-nina-01.webp",
+      cough: "imagenes/consulta/infantil/infantil-tos-nino-01.webp",
+      abdominal: "imagenes/consulta/infantil/infantil-dolor-abdominal-nino-01.webp",
+      throat: "imagenes/consulta/infantil/infantil-dolor-de-garganta-nino-01.webp",
+      nausea: "imagenes/consulta/infantil/infantil-nauseas-nino-01.webp"
+    };
+    const PEDIATRIC_VISUAL_FALLBACKS = [
+      PEDIATRIC_VISUAL_IMAGES.feverBoy,
+      PEDIATRIC_VISUAL_IMAGES.feverGirl,
+      PEDIATRIC_VISUAL_IMAGES.cough,
+      PEDIATRIC_VISUAL_IMAGES.abdominal,
+      PEDIATRIC_VISUAL_IMAGES.throat,
+      PEDIATRIC_VISUAL_IMAGES.nausea
+    ];
 
     function normalizeText(value) {
       return String(value || "")
@@ -1306,6 +1322,8 @@
         [/\bvomitos\b/g, " vomitos "],
         [/\bno puedo dormir\b/g, " insomnio "],
         [/\bbronquios\b/g, " asma "],
+        [/\bdolor de barriga\b/g, " dolor abdominal "],
+        [/\bdolor de estomago\b/g, " dolor abdominal "],
         [/\bdolor de huesos\b/g, " dolor articular "],
         [/\bduelen los huesos\b/g, " dolor articular "],
         [/\bbienestar emocional\b/g, " ansiedad "],
@@ -1515,7 +1533,7 @@
       if (normalizeText(record?.tipo) === "medicamento") return "medicamentos";
       const isHeadacheQuery = queryHaystack.includes(" dolor de cabeza ") || queryHaystack.includes(" dolor cabeza ") || queryHaystack.includes(" cefalea ") || queryHaystack.includes(" migrana ");
       const contextCategories = [
-        ["infantil", ["nino", "nina", "bebe", "infantil", "pediatrico", "lactante", "recien nacido", "hijo", "hija", "menor"]],
+        ["infantil", ["nino", "nina", "bebe", "infantil", "pediatrico", "lactante", "recien nacido", "hijo", "hija", "menor", "escolar"]],
         ["adulto-mayor", ["adulto mayor", "anciano", "tercera edad"]],
         ["primeros-auxilios", ["accidente", "golpe", "quemadura", "herida", "sangrado", "corte", "fractura"]]
       ];
@@ -1545,6 +1563,39 @@
       return match ? match[0] : "";
     }
 
+    function hasPediatricVisualContext(query = "", context = getContext()) {
+      if (context === "pediatrico") return true;
+      const haystack = ` ${normalizeQueryIntent(query)} `;
+      return /\b(hijo|hija|nino|nina|bebe|menor|pediatrico|infantil|lactante|recien nacido|escolar)\b/.test(haystack);
+    }
+
+    function pediatricVisualCandidates(record, query = "", context = getContext()) {
+      const text = ` ${normalizeQueryIntent(`${query} ${record?.titulo || ""} ${record?.slug || ""} ${(record?.keywords || []).join(" ")}`)} `;
+      if (!hasPediatricVisualContext(query, context) && !/\b(fiebre en nino|tos en nino|diarrea en nino|dolor de barriga en nino)\b/.test(text)) {
+        return [];
+      }
+      const candidates = [];
+      const hasGirlContext = /\b(hija|nina)\b/.test(text);
+      const add = (...images) => {
+        images.forEach((image) => {
+          if (image && !candidates.includes(image)) candidates.push(image);
+        });
+      };
+
+      if (/\b(fiebre|temperatura|febril|calentura)\b/.test(text)) {
+        add(hasGirlContext ? PEDIATRIC_VISUAL_IMAGES.feverGirl : PEDIATRIC_VISUAL_IMAGES.feverBoy, PEDIATRIC_VISUAL_IMAGES.feverGirl);
+      }
+      if (/\b(tos|toser)\b/.test(text)) add(PEDIATRIC_VISUAL_IMAGES.cough);
+      if (/\b(dolor abdominal|dolor de barriga|barriga|abdomen|abdominal|dolor de estomago|estomago)\b/.test(text)) {
+        add(PEDIATRIC_VISUAL_IMAGES.abdominal);
+      }
+      if (/\b(dolor de garganta|garganta|amigdal|tragar)\b/.test(text)) add(PEDIATRIC_VISUAL_IMAGES.throat);
+      if (/\b(nausea|nauseas|vomito|vomitos)\b/.test(text)) add(PEDIATRIC_VISUAL_IMAGES.nausea);
+
+      add(...PEDIATRIC_VISUAL_FALLBACKS);
+      return candidates;
+    }
+
     function visualCandidates(category) {
       const asset = CATEGORY_ASSETS[category];
       if (!asset?.folder) return [];
@@ -1563,7 +1614,8 @@
       const category = visualCategory(record, query, context);
       const figure = document.createElement("figure");
       figure.className = "medical-image";
-      const candidates = visualCandidates(category);
+      const pediatricCandidates = pediatricVisualCandidates(record, query, context);
+      const candidates = pediatricCandidates.length ? pediatricCandidates : visualCandidates(category);
       if (!candidates.length) {
         figure.append(createNeutralVisual(record, category));
         return figure;
