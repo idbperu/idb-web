@@ -454,6 +454,7 @@
     .section-card { padding: clamp(20px, 3vw, 30px); }
     .section-card,
     .quick-answer,
+    .rco-card,
     .info-grid,
     .alert-stack,
     .context-section,
@@ -557,6 +558,59 @@
       color: #667586;
       font-size: .9rem;
       line-height: 1.6;
+    }
+    .rco-card {
+      padding: clamp(20px, 3vw, 30px);
+      border-color: rgba(23, 105, 170, .12);
+      background: #fbfdff;
+    }
+    .rco-card > .title-line { margin-bottom: 16px; }
+    .rco-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .rco-panel {
+      min-width: 0;
+      padding: 16px;
+      border: 1px solid rgba(220, 232, 242, .95);
+      border-radius: 16px;
+      background: #fff;
+    }
+    .rco-panel h3 {
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-size: .98rem;
+      line-height: 1.25;
+    }
+    .rco-triage {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 34px;
+      padding: 0 12px;
+      border: 1px solid rgba(96, 112, 134, .18);
+      border-radius: 999px;
+      color: #334b63;
+      background: #f7f9fb;
+      font-weight: 850;
+    }
+    .rco-triage::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+    .rco-triage.green::before { background: var(--green); }
+    .rco-triage.yellow::before { background: #d9a226; }
+    .rco-triage.orange::before { background: #d66b22; }
+    .rco-triage.red::before { background: #c73b3b; }
+    .rco-otc-name {
+      display: block;
+      margin-bottom: 2px;
+      color: #334b63;
+      font-weight: 850;
     }
     .mini-card p {
       margin: 0;
@@ -1016,6 +1070,7 @@
         gap: 12px;
       }
       .info-grid,
+      .rco-grid,
       .sidebar { grid-template-columns: 1fr; }
       .sidebar .rail-card:not(.vita-card) { display: none; }
       .tabs {
@@ -1990,6 +2045,82 @@
       return note;
     }
 
+    function rcoArray(value) {
+      if (!Array.isArray(value)) return [];
+      return value.filter((item) => {
+        if (typeof item === "string") return item.trim();
+        if (!item || typeof item !== "object") return false;
+        return textFromSectionValue(item.nombre || item.uso_general || item.restricciones || item.texto || item.contenido);
+      });
+    }
+
+    function renderRcoList(container, items) {
+      const list = document.createElement("ul");
+      list.className = "section-list";
+      items.forEach((item) => {
+        const li = document.createElement("li");
+        if (item && typeof item === "object") {
+          const name = textFromSectionValue(item.nombre);
+          const use = textFromSectionValue(item.uso_general);
+          const restrictions = normalizeSectionContent(item.restricciones);
+          if (name) li.append(createText("strong", "rco-otc-name", name));
+          const details = [use, restrictions.length ? "Restricciones: " + restrictions.join("; ") : ""].filter(Boolean).join(". ");
+          li.append(document.createTextNode(details || textFromSectionValue(item)));
+        } else {
+          li.textContent = textFromSectionValue(item);
+        }
+        if (li.textContent.trim()) list.append(li);
+      });
+      if (list.children.length) container.append(list);
+    }
+
+    function appendRcoPanel(grid, title, items, iconName) {
+      const cleanItems = rcoArray(items);
+      if (!cleanItems.length) return;
+      const panel = document.createElement("article");
+      panel.className = "rco-panel";
+      panel.append(titleLine(title, iconName, "h3"));
+      renderRcoList(panel, cleanItems);
+      grid.append(panel);
+    }
+
+    function renderRco(record) {
+      const rco = record?.rco || record?._knowledge?.rco;
+      if (!rco || typeof rco !== "object") return null;
+
+      const allowedTriage = ["green", "yellow", "orange", "red"];
+      const triage = allowedTriage.includes(String(rco.triage || "").trim()) ? String(rco.triage).trim() : "";
+      const triageLabels = {
+        green: "Verde",
+        yellow: "Amarillo",
+        orange: "Naranja",
+        red: "Rojo"
+      };
+      const card = document.createElement("section");
+      card.className = "card section-card rco-card";
+      card.append(titleLine("Respuesta Clínica Orientativa", "shield"));
+      const grid = document.createElement("div");
+      grid.className = "rco-grid";
+
+      if (triage) {
+        const panel = document.createElement("article");
+        panel.className = "rco-panel";
+        const badge = createText("span", `rco-triage ${triage}`, triageLabels[triage]);
+        panel.append(titleLine("Semáforo Clínico", "target", "h3"), badge);
+        grid.append(panel);
+      }
+
+      appendRcoPanel(grid, "Qué puedes hacer ahora", rco.autocuidado, "activity");
+      appendRcoPanel(grid, "Qué deberías evitar", rco.evitar, "alert");
+      appendRcoPanel(grid, "Medicamentos OTC informativos", rco.otc, "pills");
+      appendRcoPanel(grid, "Cuándo consultar", rco.consultar, "shield");
+      appendRcoPanel(grid, "Signos de alarma", rco.urgencias, "alert");
+
+      if (!grid.children.length) return null;
+      card.append(grid);
+      return card;
+    }
+
     function renderStructuredContent(record) {
       const content = document.createElement("section");
       content.className = "card section-card";
@@ -2771,6 +2902,8 @@
       });
 
       main.append(quick);
+      const rco = renderRco(record);
+      if (rco) main.append(rco);
       if (content) main.append(content);
       if (!usesStructuredSections) main.append(alerts);
 
