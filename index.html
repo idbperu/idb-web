@@ -1273,6 +1273,15 @@ height:16px;
       .confidence-block { grid-template-columns: 1fr; }
     }
 
+    @media (max-width: 768px) {
+      .hero-photo-content h1 {
+        font-size: clamp(1.1rem, 2.75vw, 1.7rem);
+      }
+      .hero-photo-content p {
+        font-size: .77rem;
+      }
+    }
+
     @media (max-width: 640px) {
       .header-inner,
       .hero-inner,
@@ -1313,13 +1322,13 @@ height:16px;
         max-width: min(86%, 330px);
       }
       .hero-photo-content h1 {
-        font-size: clamp(1.16rem, 5.6vw, 1.42rem);
+        font-size: clamp(.95rem, 4.45vw, 1.14rem);
         line-height: 1.08;
       }
       .hero-photo-content p {
         margin: 10px 0 14px;
         max-width: 220px;
-        font-size: .76rem;
+        font-size: .65rem;
         font-weight: 500;
         line-height: 1.36;
       }
