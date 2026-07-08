@@ -2153,7 +2153,7 @@
     }
 
     function renderRco(record) {
-      const rco = record?.rco || record?._knowledge?.rco;
+      const rco = (record?.rco || record?._knowledge?.rco || {});
       if (!rco || typeof rco !== "object") return null;
 
       const createRcoSection = (title, items, iconName, className = "") => {
@@ -2165,6 +2165,70 @@
         renderRcoList(section, cleanItems);
         return section;
       };
+
+      const recordContext = normalizeText([
+        record?.titulo,
+        record?.slug,
+        record?.tipo,
+        record?.categoria,
+        record?.description,
+        record?._knowledge?.descripcion,
+        record?._knowledge?.categoria,
+        record?._knowledge?.tipo,
+        ...(Array.isArray(record?.keywords) ? record.keywords : []),
+        ...(Array.isArray(record?._knowledge?.sintomas) ? record._knowledge.sintomas : []),
+        ...(Array.isArray(record?._knowledge?.temas_relacionados) ? record._knowledge.temas_relacionados.map(textFromSectionValue) : [])
+      ].filter(Boolean).join(" "));
+      const titleContext = normalizeText(record?.titulo || record?._knowledge?.titulo || "");
+      const explicitOtc = rcoArray(rco.otc).slice(0, 2);
+      const urgentPattern = /\b(dolor de pecho|pecho con falta de aire|pecho con sudor frio|dificultad respiratoria|dificultad para respirar|falta de aire|perdida de conciencia|desmayo|convulsion|convulsiones|accidente cerebrovascular|derrame cerebral|acv|debilidad en un lado|sangrado abundante|sangrado importante|traumatismo grave|trauma grave|urgencia|emergencia)\b/;
+      const isUrgentForOtc = rco.triage === "red" || urgentPattern.test(recordContext);
+      const otcInfo = {
+        paracetamol: {
+          nombre: "Paracetamol",
+          uso_general: "Información general: habitualmente se utiliza como analgésico o antipirético de venta libre.",
+          restricciones: ["No reemplaza una evaluación si hay señales de alarma, síntomas intensos o persistentes."]
+        },
+        ibuprofeno: {
+          nombre: "Ibuprofeno",
+          uso_general: "Información general: habitualmente se utiliza como antiinflamatorio y analgésico de venta libre.",
+          restricciones: ["Puede no ser adecuado en embarazo, enfermedad renal, gastritis, anticoagulantes o antecedentes de sangrado."]
+        },
+        suero: {
+          nombre: "Sales de rehidratación oral",
+          uso_general: "Información general: se utilizan para apoyar la reposición de líquidos y sales en diarrea.",
+          restricciones: ["No reemplazan atención médica si hay deshidratación, sangre, fiebre alta o deterioro."]
+        },
+        loperamida: {
+          nombre: "Loperamida",
+          uso_general: "Información general: se utiliza en algunos cuadros de diarrea sin datos de alarma.",
+          restricciones: ["No corresponde si hay sangre, fiebre alta, dolor intenso, diarrea persistente o sospecha de infección invasiva."]
+        },
+        antiacidos: {
+          nombre: "Antiácidos",
+          uso_general: "Información general: suelen utilizarse para alivio temporal de acidez o ardor digestivo.",
+          restricciones: ["No reemplazan evaluación si hay dolor intenso, vómitos persistentes, pérdida de peso o sangre."]
+        },
+        alginatos: {
+          nombre: "Alginatos",
+          uso_general: "Información general: suelen utilizarse para molestias compatibles con reflujo o regurgitación.",
+          restricciones: ["No reemplazan evaluación si los síntomas son persistentes, progresivos o aparecen señales de alarma."]
+        }
+      };
+      const inferOtc = () => {
+        if (isUrgentForOtc) return [];
+        if (explicitOtc.length) return explicitOtc;
+        if (normalizeText(record?.tipo) === "medicamento") {
+          if (titleContext.includes("paracetamol")) return [otcInfo.paracetamol];
+          if (titleContext.includes("ibuprofeno")) return [otcInfo.ibuprofeno];
+          if (titleContext.includes("loperamida")) return [otcInfo.loperamida];
+        }
+        if (/\b(gastritis|reflujo|acidez|ardor estomacal|agruras)\b/.test(recordContext)) return [otcInfo.antiacidos, otcInfo.alginatos];
+        if (/\b(diarrea|heces liquidas)\b/.test(recordContext)) return [otcInfo.suero, otcInfo.loperamida];
+        if (/\b(fiebre|temperatura alta|calentura|dolor de garganta|cefalea|dolor de cabeza|migrana|dolor muscular|dolor lumbar|dolor de espalda|dolor musculoesqueletico|dolor articular|dolor de cuerpo|dolor de cuello|dolor de rodilla|dolor de hombro|dolor de pie|dolor de cadera)\b/.test(recordContext)) return [otcInfo.paracetamol, otcInfo.ibuprofeno];
+        return [];
+      };
+      const otcItems = inferOtc().slice(0, 2);
 
       const allowedTriage = ["green", "yellow", "orange", "red"];
       const triage = allowedTriage.includes(String(rco.triage || "").trim()) ? String(rco.triage).trim() : "";
@@ -2198,7 +2262,7 @@
         createRcoSection("Orientación", rco.evitar, "target"),
         createRcoSection("Qué puedes hacer ahora", rco.autocuidado, "activity"),
         createRcoSection("Cuándo consultar", rco.consultar, "shield"),
-        createRcoSection("Medicamentos OTC informativos", rcoArray(rco.otc).slice(0, 2), "pills", "compact")
+        createRcoSection("Medicamentos OTC informativos", otcItems, "pills", "compact")
       ].filter(Boolean).forEach((section) => flow.append(section));
 
       if (!flow.children.length) return null;
