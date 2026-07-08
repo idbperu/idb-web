@@ -560,52 +560,121 @@
       line-height: 1.6;
     }
     .rco-card {
-      padding: clamp(20px, 3vw, 30px);
-      border-color: rgba(23, 105, 170, .12);
-      background: #fbfdff;
-    }
-    .rco-card > .title-line { margin-bottom: 16px; }
-    .rco-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-    .rco-panel {
-      min-width: 0;
-      padding: 16px;
-      border: 1px solid rgba(220, 232, 242, .95);
-      border-radius: 16px;
+      overflow: hidden;
+      padding: 0;
+      border-color: rgba(23, 105, 170, .14);
       background: #fff;
     }
-    .rco-panel h3 {
-      margin: 0 0 10px;
-      color: var(--ink);
-      font-size: .98rem;
-      line-height: 1.25;
+    .rco-card > .title-line {
+      margin: 0;
+      padding: 22px clamp(18px, 3vw, 28px) 12px;
+    }
+    .rco-flow {
+      display: grid;
+      gap: 0;
+    }
+    .rco-priority {
+      padding: 0 clamp(18px, 3vw, 28px) 18px;
     }
     .rco-triage {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      min-height: 34px;
-      padding: 0 12px;
-      border: 1px solid rgba(96, 112, 134, .18);
-      border-radius: 999px;
-      color: #334b63;
-      background: #f7f9fb;
-      font-weight: 850;
+      position: relative;
+      display: grid;
+      grid-template-columns: 20px minmax(0, 1fr);
+      align-items: start;
+      width: calc(100% + (2 * clamp(18px, 3vw, 28px)));
+      margin-left: calc(-1 * clamp(18px, 3vw, 28px));
+      min-height: 96px;
+      gap: 10px 14px;
+      padding: 20px 22px;
+      border: 1px solid rgba(23, 105, 170, .14);
+      border-radius: 18px;
+      color: var(--ink);
+      background: #f3fbf8;
+      box-shadow: 0 14px 34px rgba(16, 35, 63, .06);
+      font-size: 22px;
+      font-weight: 920;
+      line-height: 1.25;
     }
     .rco-triage::before {
       content: "";
-      width: 10px;
-      height: 10px;
+      width: 20px;
+      height: 20px;
+      margin-top: 4px;
       border-radius: 50%;
       background: var(--green);
+      box-shadow: 0 0 0 5px rgba(31, 143, 115, .12);
     }
+    .rco-triage::after {
+      content: "Generalmente puede manejarse con autocuidado y observación.";
+      grid-column: 2;
+      color: #506477;
+      font-size: .94rem;
+      font-weight: 650;
+      line-height: 1.55;
+    }
+    .rco-triage.green { background: #f1fbf7; border-color: #cbeee2; }
     .rco-triage.green::before { background: var(--green); }
-    .rco-triage.yellow::before { background: #d9a226; }
-    .rco-triage.orange::before { background: #d66b22; }
-    .rco-triage.red::before { background: #c73b3b; }
+    .rco-triage.yellow {
+      background: #fffaf0;
+      border-color: #f1dcae;
+    }
+    .rco-triage.yellow::before {
+      background: #d9a226;
+      box-shadow: 0 0 0 5px rgba(217, 162, 38, .14);
+    }
+    .rco-triage.yellow::after { content: "Conviene ser evaluado por un profesional de salud en las próximas horas."; }
+    .rco-triage.orange {
+      background: #fff6ef;
+      border-color: #f4ceb5;
+    }
+    .rco-triage.orange::before {
+      background: #d66b22;
+      box-shadow: 0 0 0 5px rgba(214, 107, 34, .14);
+    }
+    .rco-triage.orange::after { content: "Conviene buscar atención médica durante el mismo día."; }
+    .rco-triage.red {
+      background: #fff4f4;
+      border-color: #efc1c1;
+    }
+    .rco-triage.red::before {
+      background: #c73b3b;
+      box-shadow: 0 0 0 5px rgba(199, 59, 59, .13);
+    }
+    .rco-triage.red::after { content: "Acuda inmediatamente a un servicio de urgencias."; }
+    .rco-alert {
+      margin: 0 clamp(18px, 3vw, 28px) 6px;
+      padding: 17px 18px;
+      border: 1px solid #f0c3c3;
+      border-radius: 16px;
+      background: #fff5f5;
+    }
+    .rco-alert .title-line,
+    .rco-section .title-line {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+    .rco-alert .section-list li {
+      color: #713030;
+      font-weight: 760;
+    }
+    .rco-alert .section-list li::before { background: #c73b3b; }
+    .rco-section {
+      margin: 0 clamp(18px, 3vw, 28px);
+      padding: 17px 0;
+      border-top: 1px solid rgba(220, 232, 242, .95);
+    }
+    .rco-section:first-of-type { border-top: 0; }
+    .rco-section .section-list {
+      gap: 8px;
+    }
+    .rco-section .section-list li {
+      color: #4e6174;
+      line-height: 1.6;
+    }
+    .rco-section.compact {
+      padding-bottom: 20px;
+    }
     .rco-otc-name {
       display: block;
       margin-bottom: 2px;
@@ -1070,7 +1139,6 @@
         gap: 12px;
       }
       .info-grid,
-      .rco-grid,
       .sidebar { grid-template-columns: 1fr; }
       .sidebar .rail-card:not(.vita-card) { display: none; }
       .tabs {
@@ -2088,36 +2156,53 @@
       const rco = record?.rco || record?._knowledge?.rco;
       if (!rco || typeof rco !== "object") return null;
 
+      const createRcoSection = (title, items, iconName, className = "") => {
+        const cleanItems = rcoArray(items);
+        if (!cleanItems.length) return null;
+        const section = document.createElement("section");
+        section.className = `rco-section${className ? " " + className : ""}`;
+        section.append(titleLine(title, iconName, "h3"));
+        renderRcoList(section, cleanItems);
+        return section;
+      };
+
       const allowedTriage = ["green", "yellow", "orange", "red"];
       const triage = allowedTriage.includes(String(rco.triage || "").trim()) ? String(rco.triage).trim() : "";
       const triageLabels = {
-        green: "🟢 Autocuidado inicial",
-        yellow: "🟡 Consulta médica recomendada",
-        orange: "🟠 Atención el mismo día",
-        red: "🔴 Urgencia médica"
+        green: "Atención domiciliaria",
+        yellow: "Consulta médica recomendada",
+        orange: "Atención el mismo día",
+        red: "Atención médica urgente"
       };
       const card = document.createElement("section");
       card.className = "card section-card rco-card";
       card.append(titleLine("Respuesta Clínica Orientativa", "shield"));
-      const grid = document.createElement("div");
-      grid.className = "rco-grid";
+      const flow = document.createElement("div");
+      flow.className = "rco-flow";
 
       if (triage) {
-        const panel = document.createElement("article");
-        panel.className = "rco-panel";
+        const priority = document.createElement("div");
+        priority.className = "rco-priority";
         const badge = createText("span", `rco-triage ${triage}`, triageLabels[triage]);
-        panel.append(titleLine("Semáforo Clínico", "target", "h3"), badge);
-        grid.append(panel);
+        priority.append(badge);
+        flow.append(priority);
       }
 
-      appendRcoPanel(grid, "Qué puedes hacer ahora", rco.autocuidado, "activity");
-      appendRcoPanel(grid, "Qué deberías evitar", rco.evitar, "alert");
-      appendRcoPanel(grid, "Medicamentos OTC informativos", rco.otc, "pills");
-      appendRcoPanel(grid, "Cuándo consultar", rco.consultar, "shield");
-      appendRcoPanel(grid, "Signos de alarma", rco.urgencias, "alert");
+      const alarms = createRcoSection("Signos de alarma", rco.urgencias, "alert");
+      if (alarms) {
+        alarms.className = "rco-alert";
+        flow.append(alarms);
+      }
 
-      if (!grid.children.length) return null;
-      card.append(grid);
+      [
+        createRcoSection("Orientación", rco.evitar, "target"),
+        createRcoSection("Qué puedes hacer ahora", rco.autocuidado, "activity"),
+        createRcoSection("Cuándo consultar", rco.consultar, "shield"),
+        createRcoSection("Medicamentos OTC informativos", rcoArray(rco.otc).slice(0, 2), "pills", "compact")
+      ].filter(Boolean).forEach((section) => flow.append(section));
+
+      if (!flow.children.length) return null;
+      card.append(flow);
       return card;
     }
 
