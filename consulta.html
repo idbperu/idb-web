@@ -2091,10 +2091,10 @@
       const allowedTriage = ["green", "yellow", "orange", "red"];
       const triage = allowedTriage.includes(String(rco.triage || "").trim()) ? String(rco.triage).trim() : "";
       const triageLabels = {
-        green: "Verde",
-        yellow: "Amarillo",
-        orange: "Naranja",
-        red: "Rojo"
+        green: "🟢 Autocuidado inicial",
+        yellow: "🟡 Consulta médica recomendada",
+        orange: "🟠 Atención el mismo día",
+        red: "🔴 Urgencia médica"
       };
       const card = document.createElement("section");
       card.className = "card section-card rco-card";

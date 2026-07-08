@@ -181,6 +181,42 @@
       "legibilidad": "debe leerse claramente sin competir con el contenido principal"
     }
   },
+  "rco": {
+    "triage": "green",
+    "autocuidado": [
+      "Como información general, paracetamol habitualmente se utiliza para dolor leve o fiebre.",
+      "Revisar antecedentes personales puede ayudar a identificar posibles contraindicaciones.",
+      "Evitar combinar productos con el mismo principio activo puede reducir riesgo de uso duplicado."
+    ],
+    "evitar": [
+      "Evitar combinarlo con alcohol.",
+      "Evitar usarlo si hay enfermedad hepática sin orientación profesional.",
+      "Evitar mezclarlo con otros medicamentos sin revisar composición, especialmente productos para gripe, resfrío o dolor."
+    ],
+    "otc": [
+      {
+        "nombre": "Paracetamol",
+        "uso_general": "Habitualmente se utiliza como analgésico y antipirético de venta libre para dolor leve o fiebre.",
+        "restricciones": [
+          "Esta información no indica dosis ni duración de uso.",
+          "Conviene revisar contraindicaciones, enfermedad hepática, consumo de alcohol y uso de otros productos con el mismo principio activo."
+        ]
+      }
+    ],
+    "consultar": [
+      "Considere buscar orientación si hay embarazo o lactancia.",
+      "Considere buscar orientación si existe enfermedad hepática.",
+      "Considere buscar orientación si usa anticoagulantes u otros medicamentos de forma continua.",
+      "Considere buscar atención médica si los síntomas persisten, empeoran o se repiten."
+    ],
+    "urgencias": [
+      "Reacción alérgica.",
+      "Dificultad para respirar.",
+      "Hinchazón de cara, labios o lengua.",
+      "Color amarillo en piel u ojos.",
+      "Sospecha de sobredosis o uso accidental de múltiples productos con paracetamol."
+    ]
+  },
   "ultima_revision": "2026-06",
   "version": "1.1"
 }

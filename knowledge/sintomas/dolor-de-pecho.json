@@ -189,6 +189,34 @@
       "legibilidad": "debe leerse claramente sin competir con el contenido principal"
     }
   },
+  "rco": {
+    "triage": "red",
+    "autocuidado": [
+      "Suspender la actividad puede ayudar mientras se valora la intensidad y evolución del dolor.",
+      "Sentarse o recostarse en una posición cómoda puede ayudar a reducir el esfuerzo.",
+      "Pedir ayuda a otra persona puede ser prudente si el dolor es intenso, nuevo o se acompaña de otros síntomas.",
+      "Evitar conducir puede reducir riesgos si aparece mareo, debilidad o empeoramiento."
+    ],
+    "evitar": [
+      "Evitar ignorar un dolor intenso, opresivo o diferente al habitual.",
+      "Evitar automedicarse para intentar ocultar el dolor.",
+      "Evitar esperar en casa si aparece falta de aire, sudoración fría, desmayo o deterioro rápido."
+    ],
+    "otc": [],
+    "consultar": [
+      "Considere buscar atención médica si el dolor es leve pero recurrente.",
+      "Considere buscar atención médica si el dolor aparece con esfuerzo o limita actividades.",
+      "Considere buscar atención médica si existen antecedentes cardiovasculares, hipertensión, diabetes o colesterol alto."
+    ],
+    "urgencias": [
+      "Dolor opresivo en el pecho.",
+      "Falta de aire.",
+      "Sudoración fría.",
+      "Desmayo o sensación de desmayo.",
+      "Dolor que se irradia a brazo, mandíbula o espalda.",
+      "Náuseas intensas o deterioro rápido."
+    ]
+  },
   "ultima_revision": "2026-06",
   "version": "1.1"
 }

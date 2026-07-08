@@ -189,6 +189,43 @@
       "legibilidad": "debe leerse claramente sin competir con el contenido principal"
     }
   },
+  "rco": {
+    "triage": "yellow",
+    "autocuidado": [
+      "Mantener una hidratación adecuada puede ayudar mientras se observa la evolución.",
+      "El reposo relativo puede ayudar si hay cansancio o malestar general.",
+      "Usar ropa ligera puede ayudar a evitar sobrecalentamiento.",
+      "Controlar la temperatura y registrar su evolución puede orientar mejor una consulta si fuera necesaria."
+    ],
+    "evitar": [
+      "Evitar antibióticos sin indicación profesional.",
+      "Evitar automedicación excesiva o combinar productos sin revisar su composición.",
+      "Evitar abrigarse en exceso si hay sensación de calor o temperatura elevada."
+    ],
+    "otc": [
+      {
+        "nombre": "Paracetamol",
+        "uso_general": "Habitualmente se utiliza como antipirético para fiebre, solo si no existen contraindicaciones.",
+        "restricciones": [
+          "No sustituye una evaluación si la fiebre persiste, sube mucho o se acompaña de señales de alarma.",
+          "Conviene revisar antecedentes, enfermedad hepática, consumo de alcohol y otros productos que puedan contener el mismo principio activo."
+        ]
+      }
+    ],
+    "consultar": [
+      "Considere buscar atención médica si la fiebre persiste o reaparece.",
+      "Considere buscar atención médica si la fiebre es alta o se acompaña de dolor importante.",
+      "Considere buscar atención médica si hay embarazo, edad avanzada, niño pequeño o enfermedad crónica."
+    ],
+    "urgencias": [
+      "Dificultad respiratoria.",
+      "Confusión o somnolencia marcada.",
+      "Rigidez de cuello.",
+      "Convulsiones.",
+      "Manchas moradas en la piel.",
+      "Deterioro rápido del estado general."
+    ]
+  },
   "ultima_revision": "2026-06",
   "version": "1.1"
 }
