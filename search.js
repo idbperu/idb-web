@@ -1,5 +1,6 @@
 (function () {
   const DEFAULT_INDEX_URL = "search-index.json";
+  const SEARCH_DICTIONARY_URL = "knowledge/catalogos/search-dictionary.json";
   const DEFAULT_VITA_URL = "https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.";
   const VITA_OTC_TEMPLATES_URL = "knowledge/catalogos/vita-otc-respuestas.json";
   const DEFAULT_SELECTORS = {
@@ -27,6 +28,8 @@
   };
   let searchIndex = [];
   let readyPromise = null;
+  let searchDictionaryPromise = null;
+  let searchDictionary = null;
   let vitaTemplatesPromise = null;
 
   const searchSources = new Map();
@@ -56,12 +59,19 @@
       .replace(/^-+|-+$/g, "");
   }
 
+  function escapeRegExp(value) {
+    return String(value || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
   function detectQueryIntent(query) {
     const normalized = normalizeQueryText(query);
+    const semantic = analyzeSemanticQuery(normalized);
     const wantsMedication = /\b(que puedo tomar|que tomar|medicamento|pastilla|jarabe|antiinflamatorio|analgesico)\b/.test(normalized);
     const symptomLanguage = /\b(tengo|me duele|dolor|fiebre|tos|mareo|nausea|vomito|diarrea|ardor|malestar|cansancio|fatiga)\b/.test(normalized);
     const meaningLanguage = /\b(que significa|significa|alto|alta|bajo|baja|resultado|examen|analisis)\b/.test(normalized);
 
+    if (semantic.medicationIntent) return "medicamento";
+    if (semantic.symptomIntent || semantic.urgencyMatches.length) return "sintoma";
     if (wantsMedication && !symptomLanguage) return "medicamento";
     if (meaningLanguage && /\b(glucosa|hemograma|colesterol|trigliceridos|examen|analisis)\b/.test(normalized)) return "examen";
     if (symptomLanguage) return "sintoma";
@@ -71,7 +81,8 @@
   function createQueryVariants(query) {
     const normalized = normalizeQueryText(query);
     const interpreted = interpretMedicalQuery(normalized);
-    const variants = [normalized, interpreted.corrected, interpreted.medicalText, ...interpreted.medicalCandidates];
+    const semantic = analyzeSemanticQuery(normalized);
+    const variants = [normalized, semantic.corrected, ...semantic.candidates, interpreted.corrected, interpreted.medicalText, ...interpreted.medicalCandidates];
 
     const phraseAliases = [
       ["para que sirve ", ""],
@@ -227,26 +238,218 @@
   }
 
   function containsTerm(text, term) {
-    return new RegExp(`(^|\\s)${term.replace(/\s+/g, "\\s+")}(\\s|$)`).test(text);
+    return new RegExp(`(^|\\s)${escapeRegExp(term).replace(/\s+/g, "\\s+")}(\\s|$)`).test(text);
+  }
+
+  function prepareSearchDictionary(dictionary) {
+    const categories = dictionary?.categorias && typeof dictionary.categorias === "object" ? dictionary.categorias : {};
+    const entries = Object.entries(categories).flatMap(([category, items]) => {
+      return (Array.isArray(items) ? items : [])
+        .map((entry) => ({
+          ...entry,
+          category,
+          _term: normalizeQueryText(entry.termino),
+          _normalizado: normalizeQueryText(entry.normalizado),
+          _slug: slugify(entry.slug_sugerido || ""),
+          _contexts: Array.isArray(entry.contexto) ? entry.contexto.map(normalizeQueryText) : []
+        }))
+        .filter((entry) => entry._term);
+    });
+
+    return {
+      version: dictionary?.version || "1.0",
+      categories,
+      entries,
+      corrections: entries.filter((entry) => entry.category === "errores_ortograficos"),
+      ready: true
+    };
+  }
+
+  async function loadSearchDictionary(url = SEARCH_DICTIONARY_URL) {
+    if (!searchDictionaryPromise) {
+      searchDictionaryPromise = fetch(url)
+        .then((response) => response.ok ? response.json() : null)
+        .then((dictionary) => {
+          searchDictionary = dictionary ? prepareSearchDictionary(dictionary) : null;
+          return searchDictionary;
+        })
+        .catch(() => {
+          searchDictionary = null;
+          return null;
+        });
+    }
+    return searchDictionaryPromise;
+  }
+
+  function getSearchDictionaryEntries() {
+    return searchDictionary?.entries || [];
+  }
+
+  function applySemanticCorrections(query) {
+    let text = applyQueryCorrections(query);
+    if (!searchDictionary?.corrections?.length) {
+      return text;
+    }
+
+    searchDictionary.corrections
+      .slice()
+      .sort((a, b) => b._term.length - a._term.length)
+      .forEach((entry) => {
+        if (!entry._normalizado || entry._term === entry._normalizado) return;
+        text = ` ${text} `.replace(new RegExp(`\\b${escapeRegExp(entry._term).replace(/\s+/g, "\\s+")}\\b`, "g"), ` ${entry._normalizado} `);
+      });
+    return text.replace(/\s+/g, " ").trim();
+  }
+
+  function semanticEntryMatches(text, entry) {
+    if (!text || !entry?._term) return false;
+    return containsTerm(` ${text} `, entry._term);
+  }
+
+  function parseNegationSegments(text) {
+    const segments = { negated: [], affirmed: [] };
+    const patterns = [
+      /\bno\s+(?:tengo|presento|presenta|hay|tiene)\s+(.+?)\s+(?:pero|aunque)\s+(?:tengo|presento|presenta|hay|con|tiene)\s+(.+)$/,
+      /\bsin\s+(.+?)\s+(?:pero\s+)?con\s+(.+)$/,
+      /\bno\s+(?:tengo|presento|presenta|hay|tiene)\s+(.+?),?\s+solo\s+(.+)$/,
+      /\bno\s+me\s+duele\s+(.+?)\s+(?:solo\s+)?(?:me\s+)?(?:duele|falta|arde|tengo)\s+(.+)$/
+    ];
+
+    patterns.forEach((pattern) => {
+      const match = text.match(pattern);
+      if (match?.[1]) segments.negated.push(match[1]);
+      if (match?.[2]) segments.affirmed.push(match[2]);
+    });
+
+    return {
+      negated: uniqueValues(segments.negated),
+      affirmed: uniqueValues(segments.affirmed)
+    };
+  }
+
+  function semanticCandidatesFromEntries(entries) {
+    const values = [];
+    entries.forEach((entry) => {
+      values.push(entry._normalizado);
+      if (entry.slug_sugerido) values.push(String(entry.slug_sugerido).replace(/-/g, " "));
+    });
+    return uniqueValues(values);
+  }
+
+  function analyzeSemanticQuery(query) {
+    const raw = normalizeQueryText(query).replace(/[-_]+/g, " ");
+    const corrected = applySemanticCorrections(raw);
+    const entries = getSearchDictionaryEntries();
+    const matches = entries.filter((entry) => semanticEntryMatches(corrected, entry) || semanticEntryMatches(raw, entry));
+    const negationSegments = parseNegationSegments(corrected);
+    const negatedMatches = entries.filter((entry) => {
+      return negationSegments.negated.some((segment) => semanticEntryMatches(segment, entry) || segment.includes(entry._term));
+    });
+    const affirmedMatches = entries.filter((entry) => {
+      return negationSegments.affirmed.some((segment) => semanticEntryMatches(segment, entry) || segment.includes(entry._term));
+    });
+    const negationPatternMatches = matches.filter((entry) => entry.category === "negaciones");
+    const positiveMatches = [...affirmedMatches, ...negationPatternMatches, ...matches]
+      .filter((entry) => entry.category !== "contexto_paciente")
+      .filter((entry) => !negatedMatches.some((negated) => negated._term === entry._term && negated.category === entry.category));
+    const contextMatches = matches.filter((entry) => entry.category === "contexto_paciente");
+    const urgencyMatches = matches.filter((entry) => entry.category === "urgencias" || entry.destino_sugerido === "urgencia");
+    const intentMatches = matches.filter((entry) => entry.category === "intenciones");
+    const medicationIntent = intentMatches.some((entry) => normalizeQueryText(entry.destino_sugerido) === "medicamento"
+      || entry._contexts.some((context) => ["medicamento", "dosis", "interacciones"].includes(context)));
+    const symptomIntent = intentMatches.some((entry) => normalizeQueryText(entry.destino_sugerido) === "sintoma");
+
+    return {
+      raw,
+      corrected,
+      matches,
+      positiveMatches,
+      contextMatches,
+      urgencyMatches,
+      intentMatches,
+      negatedMatches,
+      negatedSegments: negationSegments.negated,
+      affirmedSegments: negationSegments.affirmed,
+      medicationIntent,
+      symptomIntent,
+      candidates: semanticCandidatesFromEntries(positiveMatches)
+    };
+  }
+
+  function semanticContextFlags(query) {
+    const analysis = analyzeSemanticQuery(query);
+    const contexts = new Set(analysis.contextMatches.flatMap((entry) => entry._contexts));
+    return {
+      pediatric: contexts.has("pediatria"),
+      olderAdult: contexts.has("adulto mayor") || contexts.has("adulto_mayor"),
+      female: contexts.has("embarazo") || contexts.has("lactancia"),
+      pregnancy: contexts.has("embarazo"),
+      lactation: contexts.has("lactancia")
+    };
+  }
+
+  function semanticEntryMatchesRecord(record, entry) {
+    const normalizedRecord = record._title ? record : normalizeRecord(record);
+    const candidates = [
+      normalizedRecord._title,
+      normalizedRecord._slug,
+      ...(normalizedRecord._keywords || []),
+      ...(normalizedRecord._keywordSlugs || [])
+    ].filter(Boolean);
+    const entryValues = uniqueValues([
+      entry._normalizado,
+      entry._term,
+      String(entry.slug_sugerido || "").replace(/-/g, " "),
+      entry._slug
+    ]);
+    return entryValues.some((value) => candidates.some((candidate) => candidate === value || candidate.includes(value) || value.includes(candidate)));
+  }
+
+  function scoreSemanticRecord(record, analysis) {
+    if (!analysis?.matches?.length) return 0;
+    let boost = 0;
+    let penalty = 0;
+
+    analysis.positiveMatches.forEach((entry) => {
+      if (!semanticEntryMatchesRecord(record, entry)) return;
+      const priority = Number(entry.prioridad) || 0;
+      const type = normalizeText(record?.tipo || "");
+      const destination = normalizeText(entry.destino_sugerido || "");
+      const typeBoost = destination && destination === type ? 18 : 0;
+      const urgencyBoost = destination === "urgencia" || entry.category === "urgencias" ? 28 : 0;
+      const intentBoost = analysis.medicationIntent && type === "medicamento" ? 20 : analysis.symptomIntent && type === "sintoma" ? 12 : 0;
+      boost = Math.max(boost, Math.min(65, Math.round(priority * 0.42) + typeBoost + urgencyBoost + intentBoost));
+    });
+
+    analysis.negatedMatches.forEach((entry) => {
+      if (semanticEntryMatchesRecord(record, entry)) {
+        penalty = Math.max(penalty, 90);
+      }
+    });
+
+    return boost - penalty;
   }
 
   function detectQueryContext(query) {
-    const corrected = applyQueryCorrections(query);
+    const corrected = applySemanticCorrections(query);
     const spaced = ` ${corrected} `;
     const pediatric = CONTEXT_DEFINITIONS.pediatric.some((term) => containsTerm(spaced, term));
     const olderAdult = CONTEXT_DEFINITIONS.olderAdult.some((term) => containsTerm(spaced, term));
     const male = CONTEXT_DEFINITIONS.male.some((term) => containsTerm(spaced, term));
     const female = CONTEXT_DEFINITIONS.female.some((term) => containsTerm(spaced, term));
+    const semantic = semanticContextFlags(corrected);
     const maleSpecific = male && /\b(prostata|prostatico|salud masculina|salud del hombre)\b/.test(corrected);
-    const femaleSpecific = female && /\b(embarazo|gestante|menopausia|ginecologico|salud femenina|salud de la mujer)\b/.test(corrected);
+    const femaleSpecific = (female || semantic.female) && /\b(embarazo|gestante|menopausia|ginecologico|salud femenina|salud de la mujer|lactancia|lactar)\b/.test(corrected);
+    const hasPediatric = pediatric || semantic.pediatric;
+    const hasOlderAdult = olderAdult || semantic.olderAdult;
     return {
-      pediatric,
-      olderAdult,
+      pediatric: hasPediatric,
+      olderAdult: hasOlderAdult,
       male,
-      female,
-      age: pediatric ? "pediatric" : olderAdult ? "older-adult" : "",
+      female: female || semantic.female,
+      age: hasPediatric ? "pediatric" : hasOlderAdult ? "older-adult" : "",
       sex: female ? "female" : male ? "male" : "",
-      canonical: pediatric ? "pediatrico" : olderAdult ? "adulto-mayor" : femaleSpecific ? "mujer" : maleSpecific ? "hombre" : "general"
+      canonical: hasPediatric ? "pediatrico" : hasOlderAdult ? "adulto-mayor" : femaleSpecific ? "mujer" : maleSpecific ? "hombre" : "general"
     };
   }
 
@@ -302,11 +505,12 @@
 
   function interpretMedicalQuery(query) {
     const raw = normalizeQueryText(query).replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
-    const corrected = applyQueryCorrections(raw);
+    const semantic = analyzeSemanticQuery(raw);
+    const corrected = semantic.corrected || applyQueryCorrections(raw);
     const context = detectQueryContext(corrected);
     const stripped = stripContextLanguage(corrected);
     const clinicalCandidates = [...clinicalIntentCandidates(corrected), ...clinicalIntentCandidates(stripped)];
-    const candidates = [...clinicalCandidates, raw, corrected, stripped, ...synonymCandidates(corrected), ...synonymCandidates(stripped)];
+    const candidates = [...semantic.candidates, ...semantic.affirmedSegments, ...clinicalCandidates, raw, corrected, stripped, ...synonymCandidates(corrected), ...synonymCandidates(stripped)];
 
     const painMatch = corrected.match(/\b(?:me|le|les)?\s*(?:duele|duelen)\s+(?:el|la|los|las)?\s*(.+)$/);
     if (painMatch?.[1]) {
@@ -323,6 +527,7 @@
       raw,
       corrected,
       context,
+      semantic,
       medicalText: stripped || corrected,
       medicalCandidates: uniqueValues(candidates)
     };
@@ -473,7 +678,7 @@
     if (!readyPromise) {
       readyPromise = loadSearchSources({ indexUrl }).then((records) => {
         searchIndex = records;
-        return searchIndex;
+        return loadSearchDictionary().then(() => searchIndex);
       });
     }
 
@@ -515,8 +720,10 @@
   }
 
   function scoreRecord(record, query, intent = "") {
-    return createQueryVariants(query)
+    const semantic = analyzeSemanticQuery(query);
+    const baseScore = createQueryVariants(query)
       .reduce((bestScore, variant) => Math.max(bestScore, scoreRecordVariant(record, variant, intent)), 0);
+    return Math.max(0, baseScore + scoreSemanticRecord(record, semantic));
   }
 
   function isMedicationExplicitQuery(query) {
@@ -644,7 +851,11 @@
   function resolveSearchQuery(query, options = {}) {
     const limit = Number.isFinite(options.limit) ? options.limit : 8;
     const context = detectQueryContext(query);
-    const record = findRecord(searchIndex, query) || searchMedicalIndex(query, { limit })[0] || null;
+    const semantic = analyzeSemanticQuery(query);
+    const rankedRecord = searchMedicalIndex(query, { limit })[0] || null;
+    const exactRecord = findRecord(searchIndex, query);
+    const shouldTrustSemanticRanking = semantic.matches.length || semantic.negatedMatches.length || semantic.urgencyMatches.length || semantic.intentMatches.length;
+    const record = shouldTrustSemanticRanking ? (rankedRecord || exactRecord) : (exactRecord || rankedRecord);
     const slug = canonicalRecordSlug(record) || slugify(stripContextLanguage(applyQueryCorrections(query)));
     const contextParam = canonicalContextParam(context);
     return {
@@ -1094,11 +1305,13 @@
     iconForType: getTypeIcon,
     interpretQuery: interpretMedicalQuery,
     load: loadSearchIndex,
+    loadDictionary: loadSearchDictionary,
     medicalQueryCandidates,
     normalizeQueryIntent: applyQueryCorrections,
     normalize: normalizeText,
     resolve: resolveSearchQuery,
     saveSearch: saveSearchTerm,
+    semantic: analyzeSemanticQuery,
     search: searchMedicalIndex,
     vita: resolveVitaClinicalQuery
   };
