@@ -1,0 +1,101 @@
+{
+  "id": "otc-medicamento-bisacodilo",
+  "slug": "bisacodilo",
+  "nombre_comercial": "Bisacodilo",
+  "principio_activo": [
+    "bisacodilo"
+  ],
+  "categoria_otc": "digestivo",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales o grageas de liberacion intestinal segun el producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "otro",
+      "descripcion": "Presentaciones rectales en algunos mercados, como supositorios.",
+      "via": "rectal"
+    }
+  ],
+  "uso_orientativo": "Laxante estimulante usado de forma general para estrenimiento ocasional. No debe usarse como solucion repetida para cambios intestinales persistentes sin evaluacion profesional.",
+  "no_usar_si": [
+    "Hay dolor abdominal intenso, nauseas, vomitos o sospecha de obstruccion intestinal.",
+    "Existe sangrado rectal o cambio repentino y persistente del habito intestinal.",
+    "Hay deshidratacion importante o incapacidad para beber liquidos.",
+    "Se presenta alergia a bisacodilo o a componentes de la formulacion.",
+    "Hay indicacion medica de evitar laxantes estimulantes."
+  ],
+  "precauciones": [
+    "No usar de forma prolongada o repetida sin consultar, porque puede ocultar una causa que requiere evaluacion.",
+    "Evitar triturar o masticar tabletas con cubierta enterica si la etiqueta indica tragarlas enteras.",
+    "Separar de leche, antiacidos o medicamentos que alteren la acidez gastrica si la etiqueta lo advierte.",
+    "Mantener hidratacion adecuada y revisar otros medicamentos que puedan causar estrenimiento.",
+    "Suspender y consultar si aparece diarrea intensa, colicos severos o debilidad."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar solo segun la etiqueta del producto o indicacion profesional. La dosis y la via dependen de la presentacion, edad y contexto clinico, por lo que no debe personalizarse sin revision.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dolor abdominal fuerte, abdomen distendido, vomitos persistentes o imposibilidad de evacuar gases.",
+    "Sangrado rectal, heces negras o perdida de peso no explicada.",
+    "Diarrea intensa, mareo, signos de deshidratacion o debilidad marcada.",
+    "Estrenimiento que persiste o reaparece frecuentemente.",
+    "Reaccion alergica con ronchas, hinchazon de cara o dificultad para respirar."
+  ],
+  "interacciones_relevantes": [
+    "Leche, antiacidos o medicamentos que reducen acidez gastrica pueden interferir con algunas tabletas con cubierta enterica.",
+    "Otros laxantes o medicamentos que causan diarrea pueden aumentar perdida de liquidos.",
+    "Diureticos u otros tratamientos que alteran electrolitos requieren prudencia si hay diarrea.",
+    "Informar tratamientos cronicos antes de uso repetido."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar laxantes estimulantes, especialmente si el estrenimiento es persistente o hay dolor.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Priorizar medidas generales recomendadas por el profesional.",
+      "No usar si hay vomitos, dolor abdominal intenso o sangrado."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores conviene revisar hidratacion, fragilidad, polifarmacia, movilidad y causas nuevas de estrenimiento antes de usarlo.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Mayor riesgo de deshidratacion o alteraciones de electrolitos si aparece diarrea.",
+      "Consultar si el cambio intestinal es reciente."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos debe usarse solo con etiqueta pediatrica clara u orientacion profesional, porque el estrenimiento infantil requiere revisar hidratacion, dieta y signos de alarma.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar ante dolor abdominal intenso, vomitos o abdomen distendido.",
+      "Consultar si el estrenimiento es recurrente."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Bisacodilo",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a601027-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "bisacodilo",
+    "search_keywords": [
+      "bisacodilo",
+      "laxante",
+      "estrenimiento",
+      "constipacion",
+      "laxante estimulante"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

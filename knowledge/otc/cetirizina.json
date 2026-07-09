@@ -1,0 +1,120 @@
+{
+  "id": "otc-medicamento-cetirizina",
+  "slug": "cetirizina",
+  "nombre_comercial": "Cetirizina",
+  "principio_activo": [
+    "cetirizina"
+  ],
+  "categoria_otc": "antialergico",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales de antihistaminico para sintomas alergicos.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales disponibles en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "jarabe",
+      "descripcion": "Jarabe oral con concentracion variable segun producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "gotas",
+      "descripcion": "Gotas orales en presentaciones especificas segun mercado y edad autorizada.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Antihistaminico usado de forma general para sintomas de alergia como estornudos, picazon, lagrimeo o ronchas leves. Puede causar somnolencia en algunas personas y no sirve para una reaccion alergica grave.",
+  "no_usar_si": [
+    "Hay alergia a cetirizina, levocetirizina, hidroxicina o componentes del producto.",
+    "Existe enfermedad renal o hepatica significativa sin orientacion profesional.",
+    "La persona necesita estar alerta y ya ha presentado somnolencia importante con antihistaminicos.",
+    "Hay dificultad respiratoria, hinchazon de garganta, desmayo o sintomas de anafilaxia.",
+    "Se planea combinar con alcohol, sedantes u otros antihistaminicos sin revision profesional."
+  ],
+  "precauciones": [
+    "Observar somnolencia antes de conducir o usar maquinaria.",
+    "Evitar alcohol si produce sueno o mareo.",
+    "Consultar antes de usar de forma repetida si hay enfermedad renal, hepatica, embarazo, lactancia o edad avanzada.",
+    "No suspender tratamientos indicados para asma u otras alergias por usar cetirizina."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta o indicacion profesional. No duplicar con otros antihistaminicos y no cambiar frecuencia por cuenta propia.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dificultad para respirar o tragar, hinchazon de cara, lengua o garganta.",
+    "Somnolencia extrema, confusion, palpitaciones intensas o desmayo.",
+    "Ronchas extensas con malestar general o progresion rapida.",
+    "Sintomas alergicos con sibilancias, opresion en pecho o dolor abdominal intenso."
+  ],
+  "interacciones_relevantes": [
+    "Alcohol, sedantes, medicamentos para dormir y otros antihistaminicos pueden aumentar somnolencia.",
+    "Medicamentos que afectan rinon o higado requieren revision si el uso sera repetido.",
+    "Productos combinados para gripe, resfrio o alergia pueden duplicar antihistaminicos.",
+    "Informar medicamentos, vitaminas, suplementos y productos herbales antes de uso frecuente."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Consultar antes de usar durante embarazo o lactancia; la decision depende de sintomas, alternativas y exposicion del bebe.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar uso prolongado sin supervision.",
+      "Vigilar somnolencia o cambios en el lactante si un profesional autoriza uso."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores puede aumentar riesgo de somnolencia, mareos, caidas o confusion, especialmente con otros medicamentos.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Revisar funcion renal.",
+      "Evitar combinaciones sedantes sin indicacion."
+    ]
+  },
+  "pediatria": {
+    "resumen": "El uso en ninos requiere producto y edad autorizada segun etiqueta o indicacion pediatrica.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar presentaciones de adultos en ninos pequenos.",
+      "Consultar si hay dificultad respiratoria, fiebre, decaimiento o sintomas persistentes."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Inyeccion de cetirizina",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a698026-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2025-09-15",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "FDA",
+      "titulo": "FDA requires warning about rare but severe itching after stopping long-term use of cetirizine or levocetirizine",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requires-warning-about-rare-severe-itching-after-stopping-long-term-use-cetirizine-or-levocetirizine",
+      "tipo": "referencia-regulatoria",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2025-05-16",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "cetirizina",
+    "search_keywords": [
+      "cetirizina",
+      "antihistaminico",
+      "alergia",
+      "ronchas",
+      "picazon",
+      "rinitis alergica"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

@@ -1,0 +1,111 @@
+{
+  "id": "otc-medicamento-dextrometorfano",
+  "slug": "dextrometorfano",
+  "nombre_comercial": "Dextrometorfano",
+  "principio_activo": [
+    "dextrometorfano"
+  ],
+  "categoria_otc": "respiratorio",
+  "presentaciones": [
+    {
+      "forma": "jarabe",
+      "descripcion": "Jarabe antitusivo oral en concentraciones variables segun el producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion oral o gotas orales en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas, comprimidos o tabletas masticables segun el producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas o capsulas de liberacion prolongada en algunas presentaciones.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Antitusivo usado de forma general para aliviar tos seca o irritativa. No trata la causa de la tos y no debe usarse para tos con senales de alarma o tos cronica sin evaluacion.",
+  "no_usar_si": [
+    "La persona usa o uso recientemente inhibidores de la monoaminooxidasa u otros medicamentos contraindicados por la etiqueta.",
+    "Hay tos con mucha flema, tos cronica por tabaquismo, asma, enfisema o enfermedad respiratoria sin indicacion profesional.",
+    "Existe dificultad para respirar, dolor de pecho, fiebre alta o sintomas persistentes.",
+    "Hay alergia a dextrometorfano o a componentes de la formulacion.",
+    "Se considera administrar a ninos pequenos sin etiqueta pediatrica o sin indicacion profesional."
+  ],
+  "precauciones": [
+    "Revisar etiquetas de productos combinados para evitar duplicar dextrometorfano u otros principios activos.",
+    "Puede causar somnolencia o mareo; evitar alcohol y actividades que requieran alerta si ocurre.",
+    "Consultar antes si se usan antidepresivos, medicamentos serotoninergicos o tratamientos neurologicos.",
+    "No usar por mas tiempo que el indicado en la etiqueta si la tos persiste.",
+    "Mantener fuera del alcance de ninos por riesgo de intoxicacion."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun la etiqueta oficial del producto y la edad indicada. No combinar presentaciones ni ajustar dosis por cuenta propia; si la tos persiste o empeora, requiere revision profesional.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dificultad respiratoria, silbidos, labios morados o dolor de pecho.",
+    "Fiebre alta, decaimiento marcado o tos que dura varios dias sin mejora.",
+    "Tos con sangre, flema espesa abundante o perdida de peso.",
+    "Confusion, somnolencia intensa, agitacion, alucinaciones o palpitaciones.",
+    "Reaccion alergica con hinchazon, ronchas o dificultad para respirar."
+  ],
+  "interacciones_relevantes": [
+    "Inhibidores de la monoaminooxidasa pueden producir interacciones graves.",
+    "Antidepresivos serotoninergicos y otros medicamentos que aumentan serotonina pueden elevar riesgo de sindrome serotoninergico.",
+    "Alcohol, sedantes o medicamentos que causan somnolencia pueden aumentar efectos sobre el sistema nervioso.",
+    "Productos para resfrio o tos combinados pueden duplicar principios activos."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar antitusivos, sobre todo si hay fiebre, dificultad respiratoria o uso de productos combinados.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar automedicacion con combinaciones de resfrio.",
+      "Consultar si la tos afecta el descanso o se acompana de sintomas sistemicos."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe revisar somnolencia, riesgo de caidas, enfermedad respiratoria cronica y medicamentos concomitantes.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Mayor precaucion con sedantes, alcohol o antidepresivos.",
+      "La tos nueva o persistente requiere evaluacion."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En pediatria debe usarse solo cuando la etiqueta lo permita y con orientacion profesional si el nino es pequeno, tiene fiebre o dificultad respiratoria.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar productos de tos y resfrio en edades no autorizadas por etiqueta.",
+      "Consultar de inmediato si hay respiracion rapida, hundimiento de costillas o decaimiento."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Dextrometorfano",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a682492-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "dextrometorfano",
+    "search_keywords": [
+      "dextrometorfano",
+      "tos seca",
+      "antitusivo",
+      "jarabe para tos",
+      "resfrio"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "otc-medicamento-naproxeno-sodico",
+  "slug": "naproxeno-sodico",
+  "nombre_comercial": "Naproxeno sodico",
+  "principio_activo": [
+    "naproxeno sodico"
+  ],
+  "categoria_otc": "antiinflamatorio",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales de naproxeno o naproxeno sodico en presentaciones de venta libre o bajo receta segun concentracion y pais.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas o capsulas de gel para administracion oral.",
+      "via": "oral"
+    },
+    {
+      "forma": "suspension",
+      "descripcion": "Suspension oral disponible en algunas presentaciones bajo indicacion profesional.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "AINE usado de forma general para alivio temporal de fiebre y dolores leves como dolor muscular, dental, menstrual, de espalda o molestias asociadas a resfrio. Comparte riesgos importantes con otros AINE y requiere revisar antecedentes antes de usar.",
+  "no_usar_si": [
+    "Hay alergia a naproxeno, ibuprofeno, aspirina u otros AINE.",
+    "Existe antecedente de sangrado digestivo, ulcera, enfermedad renal, insuficiencia cardiaca, enfermedad hepatica importante o evento cardiovascular reciente sin orientacion profesional.",
+    "Se esta usando otro AINE, aspirina para dolor o anticoagulantes sin revision profesional.",
+    "Hay embarazo alrededor o despues de la mitad del embarazo, salvo indicacion profesional.",
+    "El dolor dura, empeora, se acompana de enrojecimiento o inflamacion importante, o la fiebre persiste."
+  ],
+  "precauciones": [
+    "No usar junto con ibuprofeno u otros antiinflamatorios salvo indicacion profesional.",
+    "Tomar decisiones de uso considerando riesgo gastrointestinal, cardiovascular y renal.",
+    "Consultar si hay hipertension, diabetes, colesterol alto, tabaquismo, asma, dieta baja en sodio o enfermedad renal.",
+    "Evitar alcohol en exceso por mayor riesgo de irritacion o sangrado digestivo."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Seguir exactamente la etiqueta o indicacion profesional. No prolongar uso ni combinar con otros AINE; consultar si dolor o fiebre no mejoran en el plazo indicado por el empaque.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dolor de pecho, dificultad para respirar, debilidad repentina o dificultad para hablar.",
+    "Dolor abdominal intenso, vomitos con sangre, heces negras o sangrado inusual.",
+    "Hinchazon de cara o garganta, ronchas, ampollas, sarpullido extenso o dificultad para tragar.",
+    "Disminucion de orina, hinchazon de piernas, confusion, color amarillo en piel u ojos."
+  ],
+  "interacciones_relevantes": [
+    "Anticoagulantes, aspirina, otros AINE, corticoides, ISRS o IRSN pueden aumentar riesgo de sangrado.",
+    "Medicamentos para presion arterial, diureticos y tratamientos renales requieren revision.",
+    "Alcohol aumenta riesgo gastrointestinal.",
+    "Litio, metotrexato y algunos medicamentos de margen estrecho requieren supervision."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "No debe usarse en embarazo alrededor o despues de las 20 semanas salvo indicacion profesional. En lactancia o busqueda de embarazo se debe consultar.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Puede afectar al feto y al parto si se usa en etapas avanzadas del embarazo.",
+      "Puede disminuir temporalmente la fertilidad en algunas mujeres."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "El adulto mayor tiene mayor probabilidad de efectos graves por AINE, especialmente sangrado digestivo, dano renal, retencion de liquidos y eventos cardiovasculares.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar uso frecuente sin supervision.",
+      "Revisar historia digestiva, renal, cardiaca y lista completa de medicamentos."
+    ]
+  },
+  "pediatria": {
+    "resumen": "El uso pediatrico debe seguir indicacion profesional o producto especificamente autorizado para la edad.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No extrapolar presentaciones de adultos.",
+      "Consultar si hay fiebre prolongada, deshidratacion, dolor intenso o enfermedad previa."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Naproxeno",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a681029-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2022-03-15",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "naproxeno",
+    "search_keywords": [
+      "naproxeno",
+      "naproxeno sodico",
+      "antiinflamatorio",
+      "aine",
+      "dolor",
+      "fiebre"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

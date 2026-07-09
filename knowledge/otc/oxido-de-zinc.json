@@ -1,0 +1,100 @@
+{
+  "id": "otc-medicamento-oxido-de-zinc",
+  "slug": "oxido-de-zinc",
+  "nombre_comercial": "Oxido de zinc",
+  "principio_activo": [
+    "oxido de zinc"
+  ],
+  "categoria_otc": "dermatologico",
+  "presentaciones": [
+    {
+      "forma": "crema",
+      "descripcion": "Crema barrera para proteccion de piel segun etiqueta.",
+      "via": "topica"
+    },
+    {
+      "forma": "unguento",
+      "descripcion": "Unguento o pasta protectora cutanea en algunas presentaciones.",
+      "via": "topica"
+    }
+  ],
+  "uso_orientativo": "Protector cutaneo usado de forma general como barrera para irritacion leve por humedad o roce, incluida dermatitis del panal leve. No trata infecciones profundas ni reemplaza evaluacion si hay signos de infeccion.",
+  "no_usar_si": [
+    "Hay alergia a oxido de zinc o a componentes de la formulacion.",
+    "La piel tiene heridas profundas, quemaduras extensas, pus, sangrado importante o dolor intenso.",
+    "La irritacion afecta ojos, boca, mucosas o zonas no indicadas por el producto.",
+    "Hay fiebre, expansion rapida del enrojecimiento o sospecha de infeccion.",
+    "La lesion no corresponde a irritacion leve o persiste pese a cuidados generales."
+  ],
+  "precauciones": [
+    "Aplicar solo sobre piel externa limpia y seca, segun etiqueta.",
+    "Evitar contacto con ojos y mucosas.",
+    "No usar como sustituto de limpieza, cambio frecuente de panal o control de humedad.",
+    "Consultar si aparece secrecion, mal olor, ampollas o empeoramiento.",
+    "Revisar ingredientes si hay sensibilidad a fragancias, lanolina u otros excipientes."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta del producto o indicacion profesional. La frecuencia depende del contexto y de la presentacion; no aplicar en heridas profundas ni zonas no indicadas.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Fiebre, pus, dolor intenso, calor local marcado o extension rapida del enrojecimiento.",
+    "Ampollas extensas, piel negra, sangrado o lesion abierta profunda.",
+    "Irritacion que no mejora o empeora pese a medidas basicas.",
+    "Reaccion alergica con ronchas, hinchazon o dificultad para respirar."
+  ],
+  "interacciones_relevantes": [
+    "Puede formar una barrera que reduzca contacto de otros productos topicos si se aplican encima.",
+    "No mezclar con antisepticos, corticoides o antimicoticos sin orientacion si la piel esta irritada.",
+    "Productos perfumados o irritantes pueden empeorar dermatitis.",
+    "Informar si se usan tratamientos topicos prescritos en la misma zona."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia suele usarse como barrera local, pero se debe consultar si la zona es extensa, mamaria o hay signos de infeccion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar aplicar en pezon o areola antes de lactar sin indicacion profesional.",
+      "No usar sobre heridas profundas."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe revisar fragilidad cutanea, incontinencia, ulceras por presion y signos de infeccion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No cubrir ulceras o lesiones profundas sin evaluacion.",
+      "Consultar si hay dolor, mal olor o secrecion."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos y lactantes puede usarse solo segun etiqueta para irritacion leve, pero requiere consulta si hay fiebre, lesiones extensas o sospecha de infeccion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Cambiar panales con frecuencia y mantener piel seca.",
+      "Consultar si la erupcion dura varios dias, sangra o tiene pus."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "DailyMed",
+      "titulo": "Zinc oxide ointment drug label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=zinc%20oxide%20ointment",
+      "tipo": "rotulado-oficial",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "oxido-de-zinc",
+    "search_keywords": [
+      "oxido de zinc",
+      "crema barrera",
+      "dermatitis del panal",
+      "irritacion",
+      "protector cutaneo"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

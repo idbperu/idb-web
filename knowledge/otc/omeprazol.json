@@ -1,0 +1,114 @@
+{
+  "id": "otc-medicamento-omeprazol",
+  "slug": "omeprazol",
+  "nombre_comercial": "Omeprazol",
+  "principio_activo": [
+    "omeprazol"
+  ],
+  "categoria_otc": "digestivo",
+  "presentaciones": [
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales, usualmente gastroresistentes o de liberacion retardada segun producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales, algunas disolubles o gastroresistentes segun presentacion.",
+      "via": "oral"
+    },
+    {
+      "forma": "suspension",
+      "descripcion": "Suspension oral o granulos para suspension en algunas presentaciones.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Inhibidor de bomba de protones que reduce la acidez gastrica. Puede usarse en algunos contextos de acidez frecuente o reflujo, pero no debe ocultar sintomas de alarma ni mantenerse sin evaluacion si el problema persiste.",
+  "no_usar_si": [
+    "Hay alergia a omeprazol u otro inhibidor de bomba de protones.",
+    "Existe dolor al tragar, dificultad para tragar, perdida de peso no explicada, vomitos persistentes, sangre en vomitos o heces negras.",
+    "Hay dolor de pecho, falta de aire, sudor frio o sintomas que podrian ser cardiacos.",
+    "Se usa nelfinavir, atazanavir, clopidogrel, warfarina, digoxina, diazepam, fenitoina u otros medicamentos relevantes sin revision profesional.",
+    "Se pretende usar por mas tiempo del indicado en etiqueta sin consulta."
+  ],
+  "precauciones": [
+    "No usar para molestias nuevas, intensas o recurrentes sin evaluar causa.",
+    "Consultar si hay enfermedad hepatica, renal, osteoporosis, deficit de vitamina B12 o uso prolongado previo.",
+    "Puede dificultar reconocer enfermedades serias del estomago si se usa sin evaluacion ante senales de alarma.",
+    "No triturar ni masticar presentaciones gastroresistentes salvo que el empaque indique otra forma de uso."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta o indicacion profesional. Si fue comprado sin receta, no prolongar el uso mas alla del periodo indicado por el producto y consultar si no mejora.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dolor de pecho, falta de aire, sudor frio, dolor que se irradia a brazo o mandibula.",
+    "Vomitos con sangre, heces negras, perdida de peso, dificultad para tragar o vomitos persistentes.",
+    "Reaccion alergica con hinchazon de garganta, sarpullido generalizado o dificultad respiratoria.",
+    "Diarrea intensa o persistente, debilidad marcada, calambres o sintomas neurologicos."
+  ],
+  "interacciones_relevantes": [
+    "Clopidogrel, warfarina, digoxina, diazepam, fenitoina y algunos medicamentos para VIH pueden requerir ajuste o evitar combinacion.",
+    "Hierba de San Juan puede interferir con el tratamiento.",
+    "Otros reductores de acidez no deben combinarse sin revisar necesidad y seguridad.",
+    "El uso prolongado puede relacionarse con deficit de vitamina B12 o mayor fragilidad osea en algunas personas."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia suele requerir consulta previa para confirmar que los sintomas corresponden y que no hay senales de alarma.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "La acidez en embarazo puede requerir medidas no farmacologicas o alternativas segun evaluacion.",
+      "No automedicar dolor abdominal intenso o vomitos persistentes."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe revisar polifarmacia, riesgo de fracturas, deficit nutricionales, funcion renal y sintomas de alarma digestiva.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar uso cronico sin seguimiento.",
+      "Consultar si hay perdida de peso, anemia, sangrado o dificultad para tragar."
+    ]
+  },
+  "pediatria": {
+    "resumen": "El uso pediatrico debe ser indicado por profesional; no extrapolar presentaciones OTC de adultos.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Reflujo, vomitos o dolor abdominal en ninos requieren evaluacion si persisten.",
+      "Buscar ayuda si hay deshidratacion, sangre, dolor intenso o baja de peso."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Omeprazol",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a693050-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "NHS",
+      "titulo": "Omeprazole",
+      "url": "https://www.nhs.uk/medicines/omeprazole/",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Reino Unido",
+      "fecha_publicacion": "2025-09-17",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "omeprazol",
+    "search_keywords": [
+      "omeprazol",
+      "acidez",
+      "reflujo",
+      "agruras",
+      "protector gastrico",
+      "inhibidor de bomba de protones"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

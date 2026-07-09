@@ -1,0 +1,107 @@
+{
+  "id": "otc-medicamento-solucion-salina-nasal",
+  "slug": "solucion-salina-nasal",
+  "nombre_comercial": "Solucion salina nasal",
+  "principio_activo": [
+    "cloruro de sodio"
+  ],
+  "categoria_otc": "respiratorio",
+  "presentaciones": [
+    {
+      "forma": "spray",
+      "descripcion": "Spray nasal salino para humectacion o limpieza nasal.",
+      "via": "nasal"
+    },
+    {
+      "forma": "gotas",
+      "descripcion": "Gotas nasales salinas, frecuentes en presentaciones pediatricas.",
+      "via": "nasal"
+    },
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion salina para lavado nasal o irrigacion segun dispositivo y etiqueta.",
+      "via": "nasal"
+    }
+  ],
+  "uso_orientativo": "Solucion salina usada de forma general para humectar fosas nasales, fluidificar secreciones o realizar lavados nasales segun instrucciones del producto. No reemplaza evaluacion si hay sintomas respiratorios severos o persistentes.",
+  "no_usar_si": [
+    "El envase, aplicador o solucion esta contaminado, vencido o fue compartido.",
+    "La solucion para irrigacion se preparo con agua no segura o no esteril cuando la etiqueta requiere preparacion.",
+    "Hay sangrado nasal importante, trauma nasal reciente o cirugia nasal sin indicacion profesional.",
+    "Existe dolor facial intenso, fiebre alta, dificultad respiratoria o secrecion persistente con mal estado general.",
+    "Hay indicacion medica de evitar irrigaciones nasales."
+  ],
+  "precauciones": [
+    "Usar agua destilada, esteril, previamente hervida y enfriada, o filtrada adecuadamente para lavados nasales cuando se prepare la solucion.",
+    "Limpiar y secar el dispositivo de irrigacion segun instrucciones para evitar contaminacion.",
+    "No compartir aplicadores nasales.",
+    "Evitar presion excesiva durante irrigacion, especialmente si hay dolor de oido o congestion intensa.",
+    "Consultar si los sintomas persisten, empeoran o se acompanan de fiebre."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun la etiqueta del producto o indicacion profesional. La frecuencia depende del objetivo, edad, dispositivo y tolerancia; no debe sustituir evaluacion si hay signos de alarma.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dificultad para respirar, respiracion ruidosa o labios azulados.",
+    "Fiebre alta, dolor facial severo, hinchazon alrededor de ojos o deterioro del estado general.",
+    "Sangrado nasal abundante o persistente.",
+    "Dolor de oido intenso, mareo importante o empeoramiento despues de irrigacion.",
+    "Sintomas nasales persistentes, unilaterales o con secrecion purulenta."
+  ],
+  "interacciones_relevantes": [
+    "No se esperan interacciones farmacologicas relevantes con solucion salina simple.",
+    "Puede usarse junto con medicamentos nasales solo si la etiqueta o profesional indica el orden adecuado.",
+    "Evitar mezclar medicamentos, aceites o sustancias no indicadas en dispositivos de irrigacion.",
+    "Consultar si se usan tratamientos nasales prescritos y hay irritacion persistente."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia suele considerarse una medida local no medicamentosa, pero se debe consultar si hay fiebre, dolor intenso o sintomas persistentes.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Usar agua segura para irrigacion si se prepara la solucion.",
+      "No reemplaza evaluacion de sinusitis, alergia severa u otra condicion."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe verificar tecnica segura, higiene del dispositivo, riesgo de aspiracion y presencia de sintomas que requieran evaluacion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar irrigacion si hay dificultad para coordinar respiracion o deglucion.",
+      "Consultar por congestion nueva, sangrado o dolor facial intenso."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos debe usarse con productos apropiados para la edad y tecnica suave; lactantes o ninos con dificultad respiratoria requieren evaluacion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No aplicar presion excesiva ni usar dispositivos de adulto en lactantes.",
+      "Consultar si hay fiebre, rechazo de alimentos, respiracion rapida o decaimiento."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "CDC",
+      "titulo": "How to Safely Rinse Sinuses",
+      "url": "https://www.cdc.gov/naegleria/prevention/sinus-rinsing.html",
+      "tipo": "guia-institucional",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2025-07-16",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "solucion-salina-nasal",
+    "search_keywords": [
+      "solucion salina nasal",
+      "suero nasal",
+      "lavado nasal",
+      "spray salino",
+      "congestion nasal"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

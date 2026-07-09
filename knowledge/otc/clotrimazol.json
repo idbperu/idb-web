@@ -1,0 +1,113 @@
+{
+  "id": "otc-medicamento-clotrimazol",
+  "slug": "clotrimazol",
+  "nombre_comercial": "Clotrimazol topico",
+  "principio_activo": [
+    "clotrimazol"
+  ],
+  "categoria_otc": "dermatologico",
+  "presentaciones": [
+    {
+      "forma": "crema",
+      "descripcion": "Crema topica para piel en infecciones fungicas superficiales segun etiqueta.",
+      "via": "topica"
+    },
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion topica para aplicacion externa en algunas presentaciones.",
+      "via": "topica"
+    },
+    {
+      "forma": "spray",
+      "descripcion": "Spray topico para aplicacion externa segun producto.",
+      "via": "topica"
+    }
+  ],
+  "uso_orientativo": "Antifungico topico usado de forma general para infecciones superficiales por hongos en piel, como pie de atleta o tina corporal, cuando el cuadro es leve y compatible. No debe usarse para infecciones profundas, heridas extensas, ojos, boca ni unas sin evaluacion.",
+  "no_usar_si": [
+    "Hay alergia a clotrimazol, imidazoles o componentes del producto.",
+    "La lesion esta cerca de ojos, dentro de boca, en mucosas no indicadas por el producto o sobre heridas profundas.",
+    "Hay pus, dolor intenso, fiebre, expansion rapida, piel negra, ampollas extensas o signos de infeccion bacteriana.",
+    "La persona tiene diabetes, inmunosupresion, mala circulacion o lesiones extensas sin evaluacion.",
+    "Se sospecha infeccion de unas o cuero cabelludo, que suele requerir otro enfoque."
+  ],
+  "precauciones": [
+    "Aplicar solo en la zona externa indicada por el producto y lavarse las manos despues.",
+    "Evitar contacto con ojos y mucosas salvo presentacion especificamente autorizada.",
+    "Consultar si no mejora, empeora o reaparece con frecuencia.",
+    "No cubrir de forma oclusiva ni combinar con corticoides topicos sin indicacion profesional."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta del producto o indicacion profesional. No aplicar con mayor frecuencia, en zonas no indicadas ni por mas tiempo sin consultar.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Hinchazon de cara o garganta, dificultad para respirar, ronchas extensas o reaccion alergica.",
+    "Dolor intenso, fiebre, pus, lineas rojas, aumento rapido de enrojecimiento o calor local.",
+    "Lesiones extensas, recurrentes, en personas con diabetes o defensas bajas.",
+    "Irritacion severa, ampollas, ardor intenso o empeoramiento despues de iniciar."
+  ],
+  "interacciones_relevantes": [
+    "No combinar con corticoides topicos u otros antimicoticos sin orientacion.",
+    "Productos irritantes, alcoholes o antisepticos fuertes pueden empeorar irritacion local.",
+    "En uso genital de presentaciones especificas, algunos productos pueden afectar barreras de latex; revisar etiqueta.",
+    "Informar si se usan medicamentos inmunosupresores o si hay diabetes."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar, especialmente si la zona es extensa, genital, mamaria o si se requiere uso repetido.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar aplicar en pezon o areola sin indicacion profesional durante lactancia.",
+      "No automedicar lesiones genitales nuevas sin evaluacion."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores conviene evaluar piel fragil, mala circulacion, diabetes, riesgo de heridas e infecciones extensas.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Revisar especialmente lesiones en pies.",
+      "Consultar si hay ulceras, dolor o cambios de color."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos se debe usar solo si la presentacion y edad estan autorizadas o si lo indica un profesional.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Consultar en lactantes, lesiones extensas, zona del panal o si hay fiebre.",
+      "Evitar aplicacion cerca de ojos o boca."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "NHS",
+      "titulo": "Clotrimazole cream, spray and solution",
+      "url": "https://www.nhs.uk/medicines/clotrimazole/",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Reino Unido",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Clotrimazol vaginal",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a682753-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "clotrimazol",
+    "search_keywords": [
+      "clotrimazol",
+      "clotrimazol topico",
+      "hongos en la piel",
+      "pie de atleta",
+      "tina",
+      "antimicotico"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

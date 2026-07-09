@@ -1,0 +1,104 @@
+{
+  "id": "otc-medicamento-psyllium",
+  "slug": "psyllium",
+  "nombre_comercial": "Psyllium",
+  "principio_activo": [
+    "psyllium"
+  ],
+  "categoria_otc": "digestivo",
+  "presentaciones": [
+    {
+      "forma": "polvo",
+      "descripcion": "Polvo de fibra formadora de volumen para mezclar segun instrucciones del producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales de fibra en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "sobre",
+      "descripcion": "Sobres individuales de polvo para preparacion oral.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Fibra formadora de volumen usada de forma general para estrenimiento ocasional o para aumentar fibra dietaria. Requiere suficiente liquido y no debe usarse si hay sospecha de obstruccion o dificultad para tragar.",
+  "no_usar_si": [
+    "Hay dificultad para tragar, estrechamiento del esofago o riesgo de atragantamiento.",
+    "Existe dolor abdominal intenso, vomitos, obstruccion intestinal sospechada o cambio intestinal repentino persistente.",
+    "Hay sangrado rectal o falta de evacuacion despues de usar laxante.",
+    "La persona no puede tomar suficiente liquido.",
+    "Hay alergia a psyllium o reaccion respiratoria previa al polvo."
+  ],
+  "precauciones": [
+    "Tomar con suficiente agua segun etiqueta para reducir riesgo de atragantamiento o bloqueo.",
+    "Separar de otros medicamentos si el profesional o etiqueta lo recomienda porque puede afectar absorcion.",
+    "Aumentar fibra gradualmente puede reducir gases o distension.",
+    "Consultar si el estrenimiento dura, se acompana de dolor o hay perdida de peso."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta o indicacion profesional, siempre con el volumen de liquido indicado. No usar como sustituto de evaluacion si hay sintomas de alarma.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dificultad para tragar, dolor en pecho, atragantamiento o dificultad respiratoria despues de tomarlo.",
+    "Dolor abdominal intenso, vomitos, abdomen distendido o ausencia de gases y evacuacion.",
+    "Sangrado rectal, heces negras o perdida de peso no explicada.",
+    "Reaccion alergica con ronchas, sibilancias o hinchazon de cara."
+  ],
+  "interacciones_relevantes": [
+    "Puede disminuir o retrasar absorcion de algunos medicamentos si se toman juntos.",
+    "Otros laxantes pueden aumentar molestias intestinales o diarrea.",
+    "Medicamentos para diabetes pueden requerir vigilancia si cambia la ingesta de fibra.",
+    "Informar tratamientos cronicos antes de uso diario."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar si el estrenimiento es persistente, doloroso o si se usan otros laxantes.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Priorizar hidratacion, fibra alimentaria y evaluacion si hay dolor.",
+      "No usar si hay vomitos persistentes o dificultad para beber."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe revisar hidratacion, movilidad, dificultad para tragar, medicamentos constipantes y riesgo de obstruccion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar si no puede beber suficiente liquido.",
+      "Consultar cambios intestinales nuevos o sangrado."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos debe usarse solo con orientacion pediatrica o etiqueta especifica, y siempre con liquido adecuado.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Dolor abdominal, vomitos o estrenimiento persistente requieren evaluacion.",
+      "No administrar a ninos con dificultad para tragar."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Psilio",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a601104-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "psyllium",
+    "search_keywords": [
+      "psyllium",
+      "psilio",
+      "fibra",
+      "estrenimiento",
+      "laxante formador de volumen"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

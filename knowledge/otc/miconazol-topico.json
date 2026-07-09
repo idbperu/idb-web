@@ -1,0 +1,114 @@
+{
+  "id": "otc-medicamento-miconazol-topico",
+  "slug": "miconazol-topico",
+  "nombre_comercial": "Miconazol topico",
+  "principio_activo": [
+    "miconazol"
+  ],
+  "categoria_otc": "dermatologico",
+  "presentaciones": [
+    {
+      "forma": "crema",
+      "descripcion": "Crema topica antimicotica para aplicacion externa segun etiqueta.",
+      "via": "topica"
+    },
+    {
+      "forma": "spray",
+      "descripcion": "Spray topico antimicotico en algunas presentaciones.",
+      "via": "topica"
+    },
+    {
+      "forma": "polvo",
+      "descripcion": "Polvo topico antimicotico para piel o pies segun producto.",
+      "via": "topica"
+    }
+  ],
+  "uso_orientativo": "Antimicotico topico usado de forma general para infecciones superficiales por hongos en piel, como pie de atleta, tina corporal o tina inguinal leve. No debe usarse para lesiones profundas, extensas, cerca de ojos o con signos de infeccion bacteriana.",
+  "no_usar_si": [
+    "Hay alergia a miconazol, imidazoles o componentes del producto.",
+    "La lesion esta cerca de ojos, boca, mucosas no indicadas o heridas profundas.",
+    "Hay pus, fiebre, dolor intenso, expansion rapida, ampollas extensas o lineas rojas.",
+    "La persona tiene diabetes, mala circulacion, inmunosupresion o lesiones extensas sin evaluacion.",
+    "Se sospecha infeccion de unas, cuero cabelludo o lesion genital nueva sin diagnostico."
+  ],
+  "precauciones": [
+    "Aplicar solo en piel externa indicada por el producto y lavarse las manos despues.",
+    "Evitar contacto con ojos, boca y mucosas salvo presentacion especifica autorizada.",
+    "No cubrir de forma oclusiva ni combinar con corticoides topicos sin orientacion.",
+    "Consultar si no mejora, empeora o reaparece con frecuencia.",
+    "Mantener la zona limpia y seca puede ayudar a reducir recurrencias."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta del producto o indicacion profesional. No aplicar con mayor frecuencia, en zonas no indicadas ni por mas tiempo sin consultar.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Hinchazon de cara o garganta, ronchas extensas o dificultad para respirar.",
+    "Dolor intenso, fiebre, pus, calor local marcado o aumento rapido del enrojecimiento.",
+    "Lesiones extensas, recurrentes o en personas con diabetes o defensas bajas.",
+    "Irritacion severa, ampollas, ardor intenso o empeoramiento despues de iniciar."
+  ],
+  "interacciones_relevantes": [
+    "No combinar con corticoides topicos u otros antimicoticos sin orientacion.",
+    "Productos irritantes, alcoholes o antisepticos fuertes pueden empeorar irritacion local.",
+    "En uso genital de presentaciones especificas, algunos productos pueden afectar barreras de latex; revisar etiqueta.",
+    "Informar si se usan anticoagulantes u otros tratamientos cronicos cuando el uso sea extenso o en mucosas."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar, especialmente si la zona es extensa, genital, mamaria o si se requiere uso repetido.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar aplicar en pezon o areola sin indicacion profesional durante lactancia.",
+      "No automedicar lesiones genitales nuevas sin evaluacion."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores conviene evaluar piel fragil, mala circulacion, diabetes, riesgo de heridas e infecciones extensas.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Revisar especialmente lesiones en pies.",
+      "Consultar si hay ulceras, dolor o cambios de color."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos se debe usar solo si la presentacion y edad estan autorizadas o si lo indica un profesional.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Consultar en lactantes, lesiones extensas, zona del panal o si hay fiebre.",
+      "Evitar aplicacion cerca de ojos o boca."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Miconazol vaginal",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a601203-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2024-07-20",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "NHS",
+      "titulo": "Miconazole for fungal skin infections",
+      "url": "https://www.nhs.uk/medicines/miconazole-for-fungal-skin-infections/",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Reino Unido",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "miconazol-topico",
+    "search_keywords": [
+      "miconazol",
+      "miconazol topico",
+      "hongos en la piel",
+      "pie de atleta",
+      "antimicotico"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

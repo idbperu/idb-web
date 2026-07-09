@@ -1,0 +1,109 @@
+{
+  "id": "otc-medicamento-sales-de-rehidratacion-oral",
+  "slug": "sales-de-rehidratacion-oral",
+  "nombre_comercial": "Sales de rehidratacion oral",
+  "principio_activo": [
+    "glucosa",
+    "cloruro de sodio",
+    "cloruro de potasio",
+    "citrato de sodio"
+  ],
+  "categoria_otc": "rehidratacion",
+  "presentaciones": [
+    {
+      "forma": "sobre",
+      "descripcion": "Sobres de sales para preparar solucion oral con agua segura segun instrucciones del producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "polvo",
+      "descripcion": "Polvo para reconstitucion oral segun rotulado.",
+      "via": "oral"
+    },
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion oral lista para beber en presentaciones comerciales.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Solucion de glucosa y electrolitos usada para prevenir o tratar deshidratacion leve a moderada por diarrea o vomitos, cuando la persona puede beber. No reemplaza atencion urgente ante deshidratacion severa, shock, somnolencia marcada o imposibilidad de tomar liquidos.",
+  "no_usar_si": [
+    "La persona esta inconsciente, muy somnolienta, no puede beber o vomita todo.",
+    "Hay signos de deshidratacion severa, shock, ojos hundidos marcados, extremidades frias o ausencia importante de orina.",
+    "Hay sangre en heces, dolor abdominal intenso, fiebre alta persistente o sospecha de sepsis.",
+    "El sobre no puede prepararse con la cantidad de agua indicada o se desconoce la instruccion exacta del producto.",
+    "Existe restriccion estricta de liquidos, enfermedad renal avanzada o condicion compleja sin orientacion profesional."
+  ],
+  "precauciones": [
+    "Preparar exactamente segun el rotulado; no concentrar ni diluir de forma improvisada.",
+    "Usar agua segura y recipiente limpio.",
+    "No reemplazar por bebidas deportivas, gaseosas o jugos cuando se requiere rehidratacion oral.",
+    "Consultar si diarrea o vomitos persisten, hay fiebre, sangre, decaimiento o signos de deshidratacion."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Administrar segun etiqueta, plan de rehidratacion o indicacion profesional. La cantidad depende de edad, peso, sed, perdidas y gravedad; no personalizar sin evaluacion.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Somnolencia marcada, confusion, desmayo, convulsiones o incapacidad para beber.",
+    "Orina muy escasa, boca muy seca, ojos hundidos, llanto sin lagrimas en ninos o sed intensa.",
+    "Vomitos persistentes, diarrea con sangre, fiebre alta o dolor abdominal intenso.",
+    "Diarrea en lactante pequeno, adulto mayor fragil, embarazo o persona con enfermedad cronica importante."
+  ],
+  "interacciones_relevantes": [
+    "En enfermedad renal, insuficiencia cardiaca o restriccion de electrolitos se requiere orientacion profesional.",
+    "Diureticos, medicamentos para presion, litio u otros tratamientos pueden requerir vigilancia si hay deshidratacion.",
+    "No mezclar con otros polvos o medicamentos en la misma solucion salvo indicacion.",
+    "La rehidratacion no sustituye antibioticos u otros tratamientos cuando una infeccion grave los requiere."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "En embarazo o lactancia puede ser util para perdidas digestivas leves, pero se debe consultar si hay fiebre, vomitos persistentes, diarrea intensa o signos de deshidratacion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No retrasar atencion si hay contracciones, mareo intenso o incapacidad de retener liquidos.",
+      "Mantener lactancia puede ser importante, segun tolerancia y orientacion."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "El adulto mayor puede deshidratarse rapido y tener enfermedades o medicamentos que alteren electrolitos.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Buscar ayuda temprana si hay confusion, caidas, orina escasa o debilidad.",
+      "Revisar insuficiencia cardiaca, renal y diureticos."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos es una herramienta central para diarrea o vomitos leves a moderados, pero debe seguir instrucciones y vigilancia de signos de alarma.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Lactantes pequenos, vomitos persistentes, sangre o pocos panales mojados requieren evaluacion.",
+      "No preparar sobres con menos agua de la indicada."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "OMS/UNICEF",
+      "titulo": "Oral rehydration salts: Production of the new ORS",
+      "url": "https://www.who.int/publications/i/item/WHO-FCH-CAH-06.1",
+      "tipo": "guia-institucional",
+      "pais_o_region": "Global",
+      "fecha_publicacion": "2006-01-01",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "sales-de-rehidratacion-oral",
+    "search_keywords": [
+      "sales de rehidratacion oral",
+      "sro",
+      "suero oral",
+      "diarrea",
+      "vomitos",
+      "deshidratacion"
+    ],
+    "rco_triage_maximo": "orange"
+  },
+  "version": "1.0"
+}

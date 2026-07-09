@@ -1,0 +1,111 @@
+{
+  "id": "otc-medicamento-guaifenesina",
+  "slug": "guaifenesina",
+  "nombre_comercial": "Guaifenesina",
+  "principio_activo": [
+    "guaifenesina"
+  ],
+  "categoria_otc": "respiratorio",
+  "presentaciones": [
+    {
+      "forma": "jarabe",
+      "descripcion": "Jarabe expectorante oral en concentraciones variables segun el producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion oral en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas o comprimidos, incluyendo presentaciones de liberacion prolongada segun etiqueta.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales en algunas presentaciones.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Expectorante usado de forma general para ayudar a aflojar moco en tos asociada a resfrio u otras irritaciones respiratorias leves. No reemplaza evaluacion si hay dificultad respiratoria, fiebre alta o sintomas persistentes.",
+  "no_usar_si": [
+    "Hay tos cronica por tabaquismo, asma, enfisema u otra enfermedad respiratoria sin orientacion profesional.",
+    "La tos se acompana de mucha dificultad para respirar, dolor de pecho o fiebre alta.",
+    "Hay alergia a guaifenesina o a componentes de la formulacion.",
+    "Se planea usar en ninos pequenos sin etiqueta pediatrica clara.",
+    "Se estan usando productos combinados con principios activos duplicados sin revision."
+  ],
+  "precauciones": [
+    "Beber liquidos puede ayudar a fluidificar secreciones si no hay restriccion medica de liquidos.",
+    "Revisar productos combinados para evitar duplicidad de medicamentos para tos o resfrio.",
+    "Consultar si la tos dura varios dias, empeora o aparece con fiebre, erupcion o dolor de cabeza persistente.",
+    "Evitar usar como unica medida si hay sintomas respiratorios importantes.",
+    "Mantener fuera del alcance de ninos."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun la etiqueta del producto, respetando edad, intervalo y tipo de presentacion. No combinar con otros productos para tos o resfrio sin revisar principios activos.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dificultad respiratoria, respiracion rapida, silbidos o labios azulados.",
+    "Dolor de pecho, fiebre alta o deterioro del estado general.",
+    "Tos con sangre, flema abundante purulenta o sintomas que persisten.",
+    "Somnolencia intensa, vomitos persistentes o signos de deshidratacion.",
+    "Reaccion alergica con ronchas, hinchazon o dificultad para respirar."
+  ],
+  "interacciones_relevantes": [
+    "Productos combinados para tos o resfrio pueden contener otros principios activos con interacciones propias.",
+    "Alcohol o sedantes pueden aumentar efectos de somnolencia si la formulacion combinada los favorece.",
+    "Consultar si se usan tratamientos cronicos respiratorios, anticoagulantes u otros medicamentos relevantes.",
+    "No duplicar expectorantes o antitusivos sin orientacion profesional."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar expectorantes o productos combinados para tos y resfrio.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar combinaciones con varios principios activos sin revision.",
+      "Consultar si hay fiebre, falta de aire o tos persistente."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe evaluar enfermedad respiratoria cronica, hidratacion, interacciones y riesgo de que la tos represente una condicion seria.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "La tos nueva con fiebre o falta de aire requiere evaluacion.",
+      "Revisar otros productos de resfrio para evitar duplicidad."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos debe usarse solo segun etiqueta pediatrica u orientacion profesional; la tos infantil con fiebre o dificultad respiratoria requiere evaluacion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar formulaciones de adulto en ninos.",
+      "Consultar si hay respiracion rapida, tiraje, decaimiento o mala alimentacion."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Guaifenesina",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a682494-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "guaifenesina",
+    "search_keywords": [
+      "guaifenesina",
+      "expectorante",
+      "flema",
+      "tos con moco",
+      "resfrio"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

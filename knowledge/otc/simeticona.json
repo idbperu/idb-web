@@ -1,0 +1,109 @@
+{
+  "id": "otc-medicamento-simeticona",
+  "slug": "simeticona",
+  "nombre_comercial": "Simeticona",
+  "principio_activo": [
+    "simeticona"
+  ],
+  "categoria_otc": "digestivo",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales o masticables para molestias por gas segun etiqueta.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales disponibles en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "gotas",
+      "descripcion": "Gotas orales en presentaciones familiares o pediatricas segun rotulado.",
+      "via": "oral"
+    },
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion o suspension oral con concentracion variable segun producto.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Antiflatulento usado de forma general para aliviar sensacion de gases, distension o aire atrapado. No trata causas graves de dolor abdominal ni debe usarse para retrasar consulta si hay sintomas de alarma.",
+  "no_usar_si": [
+    "Hay alergia a simeticona o componentes del producto.",
+    "Existe dolor abdominal intenso, abdomen duro o hinchado de forma progresiva, vomitos persistentes o fiebre.",
+    "Hay sangre en heces, heces negras, perdida de peso o cambio persistente del habito intestinal.",
+    "Se sospecha obstruccion intestinal o una urgencia abdominal.",
+    "Se usara en lactantes con llanto inconsolable, vomitos, fiebre o rechazo de alimento sin evaluacion."
+  ],
+  "precauciones": [
+    "Revisar si el producto viene combinado con antiacidos, laxantes u otros principios activos.",
+    "Consultar si las molestias son frecuentes, intensas o se asocian a perdida de peso, diarrea persistente o estrenimiento severo.",
+    "En bebes, no atribuir automaticamente el llanto a gases.",
+    "Mantener el producto fuera del alcance de ninos."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta o indicacion profesional. No aumentar cantidad ni combinar productos digestivos sin revisar ingredientes.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dolor abdominal fuerte o localizado, abdomen rigido, fiebre o vomitos persistentes.",
+    "Sangre en heces, heces negras, baja de peso o deshidratacion.",
+    "Llanto inconsolable, somnolencia, rechazo de alimento o fiebre en lactantes.",
+    "Dificultad para respirar, hinchazon de cara o ronchas extensas."
+  ],
+  "interacciones_relevantes": [
+    "Puede estar en productos combinados con antiacidos o laxantes; revisar principios activos.",
+    "Separar de otros medicamentos si la etiqueta del producto combinado lo indica.",
+    "Consultar si se usa levotiroxina u otros medicamentos cuya absorcion pueda alterarse por productos digestivos.",
+    "Informar suplementos y tratamientos cronicos si el uso sera frecuente."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar si los sintomas son persistentes, intensos o si se usan productos combinados.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Dolor abdominal intenso en embarazo requiere evaluacion.",
+      "Revisar ingredientes adicionales en productos combinados."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores, gases nuevos o persistentes pueden requerir evaluacion para descartar estrenimiento severo, obstruccion u otra causa.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Consultar si hay baja de peso, anemia, dolor o cambio intestinal.",
+      "Revisar productos combinados."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos y lactantes se debe usar solo presentacion apropiada y consultar si hay fiebre, vomitos, rechazo de alimento o dolor importante.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar para reemplazar evaluacion de llanto persistente.",
+      "Verificar edad autorizada en etiqueta."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "NHS",
+      "titulo": "Simeticone",
+      "url": "https://www.nhs.uk/medicines/simeticone/",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Reino Unido",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "simeticona",
+    "search_keywords": [
+      "simeticona",
+      "gases",
+      "flatulencia",
+      "distension abdominal",
+      "colicos"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

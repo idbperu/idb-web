@@ -1,0 +1,106 @@
+{
+  "id": "otc-medicamento-vitamina-c",
+  "slug": "vitamina-c",
+  "nombre_comercial": "Vitamina C",
+  "principio_activo": [
+    "acido ascorbico"
+  ],
+  "categoria_otc": "vitamina-suplemento",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales de vitamina C en concentraciones variables.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales de vitamina C en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "polvo",
+      "descripcion": "Polvo o sobres para preparacion oral segun producto.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Suplemento vitaminico usado de forma general para complementar ingesta de vitamina C cuando la dieta o contexto lo justifica. No debe presentarse como tratamiento de infecciones ni sustituir alimentacion equilibrada o evaluacion de deficiencias.",
+  "no_usar_si": [
+    "Hay alergia a acido ascorbico o componentes del producto.",
+    "Existe antecedente de calculos renales, enfermedad renal o trastornos de metabolismo de hierro sin consulta.",
+    "Se planea usar dosis altas o varios suplementos con vitamina C al mismo tiempo.",
+    "Hay sintomas que sugieren deficiencia, sangrado de encias persistente o enfermedad sin diagnostico.",
+    "Se usa en ninos pequenos sin producto apropiado para edad."
+  ],
+  "precauciones": [
+    "Revisar la cantidad total de vitamina C entre dieta, multivitaminicos y suplementos.",
+    "Dosis altas pueden causar molestias gastrointestinales o aumentar riesgo de calculos en personas susceptibles.",
+    "No usar como sustituto de vacunas, tratamiento medico o atencion ante infecciones.",
+    "Consultar si se tiene enfermedad renal, hemocromatosis o tratamientos cronicos.",
+    "Elegir presentaciones con rotulado claro y evitar duplicidad de suplementos."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta del suplemento y limites de ingesta establecidos por fuentes oficiales. La necesidad de suplementacion depende de dieta, edad, embarazo, enfermedades y medicamentos.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dolor intenso en costado, sangre en orina o sintomas compatibles con calculos renales.",
+    "Diarrea intensa, vomitos persistentes o dolor abdominal importante.",
+    "Sangrado de encias, moretones faciles, debilidad marcada o sospecha de deficiencia severa.",
+    "Reaccion alergica con ronchas, hinchazon o dificultad para respirar.",
+    "Uso accidental de grandes cantidades por un nino."
+  ],
+  "interacciones_relevantes": [
+    "Puede interferir con algunos analisis de laboratorio segun dosis y metodo.",
+    "Altas cantidades pueden ser relevantes en personas con sobrecarga de hierro.",
+    "Revisar con anticoagulantes, quimioterapia, estatinas/niacina u otros tratamientos cronicos.",
+    "Evitar duplicidad con multivitaminicos u otros suplementos que ya contienen vitamina C."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar suplementos adicionales, porque las necesidades y limites dependen del contexto clinico y de otros productos prenatales.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar dosis altas sin indicacion.",
+      "Revisar duplicidad con vitaminas prenatales."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe revisar dieta, funcion renal, riesgo de calculos, polifarmacia y duplicidad con otros suplementos.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Consultar si hay enfermedad renal o antecedente de litiasis.",
+      "Evitar megadosis sin beneficio claro."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos debe usarse solo con productos apropiados para la edad y evitando dosis altas o duplicidad con multivitaminicos.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Guardar suplementos fuera del alcance de ninos.",
+      "Consultar si hay sospecha de deficiencia o dieta muy restrictiva."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "NIH Office of Dietary Supplements",
+      "titulo": "Vitamin C - Consumer",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminC-Consumer/",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "vitamina-c",
+    "search_keywords": [
+      "vitamina c",
+      "acido ascorbico",
+      "suplemento",
+      "vitaminas",
+      "deficiencia"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

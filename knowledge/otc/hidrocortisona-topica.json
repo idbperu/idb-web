@@ -1,0 +1,106 @@
+{
+  "id": "otc-medicamento-hidrocortisona-topica",
+  "slug": "hidrocortisona-topica",
+  "nombre_comercial": "Hidrocortisona 1% topica",
+  "principio_activo": [
+    "hidrocortisona"
+  ],
+  "categoria_otc": "dermatologico",
+  "presentaciones": [
+    {
+      "forma": "crema",
+      "descripcion": "Crema topica de corticoide suave para inflamacion o picazon localizada segun etiqueta.",
+      "concentracion": "1%",
+      "via": "topica"
+    },
+    {
+      "forma": "unguento",
+      "descripcion": "Unguento topico disponible en algunas presentaciones.",
+      "concentracion": "1%",
+      "via": "topica"
+    },
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion o locion topica en presentaciones especificas segun mercado.",
+      "via": "topica"
+    }
+  ],
+  "uso_orientativo": "Corticoide topico suave usado de forma general para aliviar inflamacion, enrojecimiento o picazon leve de la piel. No debe usarse para infecciones, heridas profundas, lesiones extensas ni en zonas sensibles sin orientacion profesional.",
+  "no_usar_si": [
+    "Hay alergia a hidrocortisona o componentes del producto.",
+    "La lesion tiene pus, costras amarillas, fiebre, dolor intenso, ampollas extensas o signos de infeccion.",
+    "Se pretende aplicar cerca de ojos, dentro de boca, genitales, cara o pliegues por varios dias sin consulta.",
+    "Hay acne, rosacea, hongos, varicela, herpes o sarna sospechada sin diagnostico.",
+    "Se usara en bebes o en zona del panal sin indicacion profesional."
+  ],
+  "precauciones": [
+    "Usar solo en capa fina sobre area limitada y por el tiempo indicado en el rotulado.",
+    "No cubrir con vendaje oclusivo salvo indicacion profesional.",
+    "Evitar uso prolongado porque puede adelgazar o irritar la piel.",
+    "Consultar si no mejora, empeora o reaparece con frecuencia."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta o indicacion profesional. No aumentar frecuencia, zona de aplicacion ni duracion por cuenta propia.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Empeoramiento rapido, dolor intenso, pus, fiebre o lineas rojas en la piel.",
+    "Hinchazon de cara o garganta, ronchas generalizadas o dificultad para respirar.",
+    "Cambios visuales, aplicacion accidental en ojos o irritacion severa.",
+    "Lesiones extensas, recurrentes o en personas con defensas bajas."
+  ],
+  "interacciones_relevantes": [
+    "Otros corticoides topicos u orales pueden aumentar exposicion total.",
+    "Antifungicos, antibioticos o antisepticos topicos no deben combinarse sin saber la causa de la lesion.",
+    "Productos irritantes, exfoliantes o alcoholes pueden empeorar ardor local.",
+    "Inmunosupresores o diabetes requieren consulta si las lesiones son extensas o repetidas."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar en zonas extensas, por tiempo repetido o cerca del pecho.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar aplicacion en pezon o areola sin indicacion.",
+      "Preferir evaluacion si la lesion es nueva, extensa o infectada."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores la piel puede ser mas fragil y tener mayor riesgo de adelgazamiento, heridas o infecciones.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar uso prolongado en piel fina.",
+      "Consultar lesiones en piernas con mala circulacion o diabetes."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos se requiere especial cuidado por mayor absorcion relativa; usar solo productos autorizados o indicacion pediatrica.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar bajo panal como oclusion sin indicacion.",
+      "Consultar en lactantes, cara, genitales o lesiones extensas."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Hidrocortisona topica",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a682793-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "hidrocortisona",
+    "search_keywords": [
+      "hidrocortisona",
+      "hidrocortisona topica",
+      "crema para picazon",
+      "corticoide topico",
+      "dermatitis"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

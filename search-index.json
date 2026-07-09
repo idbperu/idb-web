@@ -865,7 +865,15 @@
       "acetaminofen",
       "dolor",
       "fiebre",
-      "analgesico"
+      "analgesico",
+      "acetaminofeno",
+      "acetaminophen",
+      "apap"
+    ],
+    "aliases": [
+      "acetaminofeno",
+      "acetaminophen",
+      "apap"
     ]
   },
   {
@@ -881,9 +889,14 @@
     "keywords": [
       "ibuprofeno",
       "antiinflamatorio",
+      "aine",
       "dolor",
       "fiebre",
-      "inflamacion"
+      "inflamacion",
+      "ibuprofen"
+    ],
+    "aliases": [
+      "ibuprofen"
     ]
   },
   {
@@ -901,7 +914,13 @@
       "acidez",
       "gastritis",
       "reflujo",
-      "protector gastrico"
+      "protector gastrico",
+      "omeprazole",
+      "inhibidor de bomba de protones"
+    ],
+    "aliases": [
+      "omeprazole",
+      "inhibidor de bomba de protones"
     ]
   },
   {
@@ -937,7 +956,11 @@
       "alergia",
       "antihistaminico",
       "rinitis",
-      "picazon"
+      "picazon",
+      "loratadine"
+    ],
+    "aliases": [
+      "loratadine"
     ]
   },
   {
@@ -955,7 +978,11 @@
       "alergia",
       "urticaria",
       "picazon",
-      "antihistaminico"
+      "antihistaminico",
+      "cetirizine"
+    ],
+    "aliases": [
+      "cetirizine"
     ]
   },
   {
@@ -1860,6 +1887,595 @@
       "orientacion",
       "recursos",
       "consulta"
+    ]
+  },
+  {
+    "titulo": "Naproxeno sodico",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso general, precauciones y señales de alarma de este antiinflamatorio.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=naproxeno-sodico",
+    "keywords": [
+      "naproxeno",
+      "naproxeno sodico",
+      "antiinflamatorio",
+      "aine",
+      "dolor",
+      "naproxen sodium"
+    ],
+    "aliases": [
+      "naproxen sodium",
+      "naproxeno"
+    ]
+  },
+  {
+    "titulo": "Carbonato de calcio",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso digestivo general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=carbonato-de-calcio",
+    "keywords": [
+      "carbonato de calcio",
+      "calcio",
+      "antiacido",
+      "acidez",
+      "suplemento",
+      "calcium carbonate"
+    ],
+    "aliases": [
+      "calcium carbonate"
+    ]
+  },
+  {
+    "titulo": "Loperamida",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso digestivo general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=loperamida",
+    "keywords": [
+      "loperamida",
+      "diarrea",
+      "antidiarreico",
+      "evacuaciones liquidas",
+      "loperamide"
+    ],
+    "aliases": [
+      "loperamide"
+    ]
+  },
+  {
+    "titulo": "Sales de rehidratacion oral",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre rehidratación, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=sales-de-rehidratacion-oral",
+    "keywords": [
+      "sales de rehidratacion oral",
+      "suero oral",
+      "sro",
+      "diarrea",
+      "vomitos",
+      "deshidratacion",
+      "ors",
+      "oral rehydration salts"
+    ],
+    "aliases": [
+      "sro",
+      "ors",
+      "oral rehydration salts",
+      "suero oral"
+    ]
+  },
+  {
+    "titulo": "Clotrimazol topico",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso tópico general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=clotrimazol",
+    "keywords": [
+      "clotrimazol",
+      "clotrimazol topico",
+      "hongos en la piel",
+      "pie de atleta",
+      "antimicotico",
+      "clotrimazole",
+      "antifungico topico"
+    ],
+    "aliases": [
+      "clotrimazole",
+      "antifungico topico"
+    ]
+  },
+  {
+    "titulo": "Diclofenaco gel",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso general, precauciones y señales de alarma de este antiinflamatorio.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=diclofenaco-gel",
+    "keywords": [
+      "diclofenaco",
+      "diclofenaco gel",
+      "aine topico",
+      "dolor muscular",
+      "dolor articular",
+      "diclofenac gel",
+      "diclofenaco topico"
+    ],
+    "aliases": [
+      "diclofenac gel",
+      "diclofenaco topico"
+    ]
+  },
+  {
+    "titulo": "Hidrocortisona 1% topica",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso tópico general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hidrocortisona-topica",
+    "keywords": [
+      "hidrocortisona",
+      "hidrocortisona topica",
+      "corticoide topico",
+      "picazon",
+      "irritacion",
+      "hydrocortisone",
+      "hidrocortisona 1%"
+    ],
+    "aliases": [
+      "hydrocortisone",
+      "hidrocortisona 1%"
+    ]
+  },
+  {
+    "titulo": "Dimenhidrinato",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso digestivo general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=dimenhidrinato",
+    "keywords": [
+      "dimenhidrinato",
+      "mareo",
+      "nauseas",
+      "vomitos",
+      "cinetosis",
+      "dimenhydrinate",
+      "mareo por viaje"
+    ],
+    "aliases": [
+      "dimenhydrinate",
+      "mareo por viaje"
+    ]
+  },
+  {
+    "titulo": "Simeticona",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso digestivo general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=simeticona",
+    "keywords": [
+      "simeticona",
+      "gases",
+      "flatulencia",
+      "distension abdominal",
+      "antiflatulento",
+      "simethicone"
+    ],
+    "aliases": [
+      "simethicone"
+    ]
+  },
+  {
+    "titulo": "Psyllium",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso digestivo general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=psyllium",
+    "keywords": [
+      "psyllium",
+      "psilio",
+      "fibra",
+      "estrenimiento",
+      "laxante formador de volumen",
+      "ispaghula"
+    ],
+    "aliases": [
+      "psilio",
+      "ispaghula"
+    ]
+  },
+  {
+    "titulo": "Bisacodilo",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso digestivo general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=bisacodilo",
+    "keywords": [
+      "bisacodilo",
+      "laxante",
+      "estrenimiento",
+      "constipacion",
+      "laxante estimulante",
+      "bisacodyl"
+    ],
+    "aliases": [
+      "bisacodyl"
+    ]
+  },
+  {
+    "titulo": "Dextrometorfano",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso respiratorio general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=dextrometorfano",
+    "keywords": [
+      "dextrometorfano",
+      "tos seca",
+      "antitusivo",
+      "jarabe para tos",
+      "resfrio",
+      "dextromethorphan",
+      "dxm"
+    ],
+    "aliases": [
+      "dextromethorphan",
+      "dxm"
+    ]
+  },
+  {
+    "titulo": "Guaifenesina",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso respiratorio general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=guaifenesina",
+    "keywords": [
+      "guaifenesina",
+      "expectorante",
+      "flema",
+      "tos con moco",
+      "resfrio",
+      "guaifenesin"
+    ],
+    "aliases": [
+      "guaifenesin"
+    ]
+  },
+  {
+    "titulo": "Xilometazolina nasal",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso respiratorio general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=xilometazolina-nasal",
+    "keywords": [
+      "xilometazolina",
+      "descongestivo nasal",
+      "spray nasal",
+      "congestion nasal",
+      "gotas nasales",
+      "xylometazoline",
+      "xilometazolina spray"
+    ],
+    "aliases": [
+      "xylometazoline",
+      "xilometazolina spray"
+    ]
+  },
+  {
+    "titulo": "Solucion salina nasal",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso respiratorio general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=solucion-salina-nasal",
+    "keywords": [
+      "solucion salina nasal",
+      "suero nasal",
+      "lavado nasal",
+      "spray salino",
+      "congestion nasal",
+      "saline nasal spray",
+      "suero fisiologico nasal"
+    ],
+    "aliases": [
+      "saline nasal spray",
+      "suero fisiologico nasal"
+    ]
+  },
+  {
+    "titulo": "Miconazol topico",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso tópico general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=miconazol-topico",
+    "keywords": [
+      "miconazol",
+      "miconazol topico",
+      "hongos en la piel",
+      "pie de atleta",
+      "antimicotico",
+      "miconazole",
+      "antifungico topico"
+    ],
+    "aliases": [
+      "miconazole",
+      "antifungico topico"
+    ]
+  },
+  {
+    "titulo": "Oxido de zinc",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso tópico general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=oxido-de-zinc",
+    "keywords": [
+      "oxido de zinc",
+      "crema barrera",
+      "dermatitis del panal",
+      "irritacion",
+      "protector cutaneo",
+      "zinc oxide",
+      "pasta de zinc"
+    ],
+    "aliases": [
+      "zinc oxide",
+      "pasta de zinc"
+    ]
+  },
+  {
+    "titulo": "Calamina",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso tópico general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=calamina",
+    "keywords": [
+      "calamina",
+      "locion de calamina",
+      "picazon",
+      "irritacion de piel",
+      "picaduras",
+      "calamine",
+      "calamine lotion"
+    ],
+    "aliases": [
+      "calamine",
+      "calamine lotion"
+    ]
+  },
+  {
+    "titulo": "Peroxido de hidrogeno 3%",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC de primeros auxilios, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=peroxido-de-hidrogeno",
+    "keywords": [
+      "peroxido de hidrogeno",
+      "agua oxigenada",
+      "antiseptico",
+      "primeros auxilios",
+      "heridas leves",
+      "hydrogen peroxide",
+      "agua oxigenada 3%"
+    ],
+    "aliases": [
+      "hydrogen peroxide",
+      "agua oxigenada 3%"
+    ]
+  },
+  {
+    "titulo": "Povidona yodada",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC de primeros auxilios, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=povidona-yodada",
+    "keywords": [
+      "povidona yodada",
+      "yodo povidona",
+      "antiseptico",
+      "primeros auxilios",
+      "desinfeccion de piel",
+      "povidone iodine",
+      "iodopovidona"
+    ],
+    "aliases": [
+      "povidone iodine",
+      "iodopovidona"
+    ]
+  },
+  {
+    "titulo": "Clorhexidina topica",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC de primeros auxilios, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=clorhexidina-topica",
+    "keywords": [
+      "clorhexidina",
+      "clorhexidina topica",
+      "antiseptico",
+      "desinfeccion de piel",
+      "primeros auxilios",
+      "chlorhexidine",
+      "chlorhexidine gluconate"
+    ],
+    "aliases": [
+      "chlorhexidine",
+      "chlorhexidine gluconate"
+    ]
+  },
+  {
+    "titulo": "Nicotina terapia de reemplazo",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC para pacientes, con precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=nicotina-reemplazo",
+    "keywords": [
+      "nicotina",
+      "terapia de reemplazo",
+      "dejar de fumar",
+      "parche de nicotina",
+      "goma de nicotina",
+      "nicotine replacement therapy",
+      "nrt"
+    ],
+    "aliases": [
+      "nicotine replacement therapy",
+      "nrt"
+    ]
+  },
+  {
+    "titulo": "Vitamina C",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre suplementación, precauciones e interacciones relevantes.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=vitamina-c",
+    "keywords": [
+      "vitamina c",
+      "acido ascorbico",
+      "suplemento",
+      "vitaminas",
+      "deficiencia",
+      "ascorbic acid"
+    ],
+    "aliases": [
+      "ascorbic acid",
+      "acido ascorbico"
+    ]
+  },
+  {
+    "titulo": "Multivitaminico adulto",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre suplementación, precauciones e interacciones relevantes.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=multivitaminico-adulto",
+    "keywords": [
+      "multivitaminico",
+      "multivitaminico adulto",
+      "vitaminas",
+      "minerales",
+      "suplemento",
+      "multivitamin",
+      "multivitamin mineral"
+    ],
+    "aliases": [
+      "multivitamin",
+      "multivitamin mineral"
+    ]
+  },
+  {
+    "titulo": "Lagrimas artificiales",
+    "tipo": "medicamento",
+    "categoria": "Medicamentos OTC",
+    "prioridad": 3,
+    "description": "Información orientativa OTC sobre uso oftálmico general, precauciones y señales de alarma.",
+    "fuente": "Base OTC Certificada IDB MEDIC",
+    "nivel": "Validado",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=lagrimas-artificiales",
+    "keywords": [
+      "lagrimas artificiales",
+      "lubricante ocular",
+      "ojo seco",
+      "gotas oftalmicas",
+      "irritacion ocular",
+      "artificial tears",
+      "lubricant eye drops"
+    ],
+    "aliases": [
+      "artificial tears",
+      "lubricant eye drops"
     ]
   }
 ]

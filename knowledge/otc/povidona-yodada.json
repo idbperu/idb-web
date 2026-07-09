@@ -1,0 +1,101 @@
+{
+  "id": "otc-medicamento-povidona-yodada",
+  "slug": "povidona-yodada",
+  "nombre_comercial": "Povidona yodada",
+  "principio_activo": [
+    "povidona yodada"
+  ],
+  "categoria_otc": "primeros-auxilios",
+  "presentaciones": [
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion antiseptica topica para piel segun rotulado.",
+      "via": "topica"
+    },
+    {
+      "forma": "unguento",
+      "descripcion": "Unguento antiseptico en algunas presentaciones.",
+      "via": "topica"
+    }
+  ],
+  "uso_orientativo": "Antiseptico topico usado de forma general para antisepsia de piel o pequenas lesiones superficiales segun etiqueta. No reemplaza atencion para heridas profundas, quemaduras extensas o infecciones establecidas.",
+  "no_usar_si": [
+    "Hay alergia a yodo, povidona yodada o componentes del producto.",
+    "La lesion es profunda, extensa, por mordedura, puncion, quemadura importante o tiene cuerpo extrano.",
+    "Se planea usar en ojos, oidos, boca, mucosas o cavidades no indicadas por el producto.",
+    "Hay enfermedad tiroidea, tratamiento con litio o exposicion extensa/repetida sin orientacion profesional.",
+    "Hay recien nacido, prematuro o lactante pequeno sin indicacion profesional."
+  ],
+  "precauciones": [
+    "Usar solo externamente y segun etiqueta.",
+    "Evitar uso prolongado, en areas extensas o bajo vendajes oclusivos sin supervision.",
+    "Puede manchar piel, ropa y materiales.",
+    "No mezclar con otros antisepticos o productos quimicos.",
+    "Consultar si aparece irritacion intensa, ampollas, dolor o signos de infeccion."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun rotulado o indicacion profesional. La necesidad, frecuencia y duracion dependen del tipo de lesion y no deben personalizarse sin evaluacion.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Herida profunda, sangrado importante, mordedura, puncion o quemadura extensa.",
+    "Fiebre, pus, dolor creciente, lineas rojas o calor local marcado.",
+    "Reaccion alergica, hinchazon, ronchas o dificultad respiratoria.",
+    "Irritacion severa, ampollas o empeoramiento tras aplicacion.",
+    "Uso accidental en ojos, ingestion o exposicion extensa en ninos."
+  ],
+  "interacciones_relevantes": [
+    "Litio y trastornos tiroideos requieren consulta por posible exposicion a yodo.",
+    "No mezclar con peroxido de hidrogeno, clorhexidina u otros antisepticos sin indicacion.",
+    "Puede interferir con algunos productos topicos o materiales de curacion.",
+    "Informar uso de tratamientos tiroideos o dermatologicos prescritos."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar, especialmente en areas extensas, uso repetido o cerca de mama por exposicion a yodo.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar aplicar en pezon o areola antes de lactar sin indicacion.",
+      "Consultar si hay enfermedad tiroidea."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe evaluar piel fragil, enfermedad tiroidea, heridas cronicas, diabetes y medicamentos concomitantes.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No aplicar en ulceras o heridas cronicas sin supervision.",
+      "Consultar lesiones en pies si hay diabetes o mala circulacion."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos debe usarse con prudencia y solo segun etiqueta; recien nacidos o uso extenso requieren indicacion profesional.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar ingestion accidental.",
+      "Consultar por heridas profundas, quemaduras o signos de infeccion."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "DailyMed",
+      "titulo": "Povidone iodine topical solution drug label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=povidone%20iodine%20topical",
+      "tipo": "rotulado-oficial",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "povidona-yodada",
+    "search_keywords": [
+      "povidona yodada",
+      "yodo povidona",
+      "antiseptico",
+      "primeros auxilios",
+      "desinfeccion de piel"
+    ],
+    "rco_triage_maximo": "orange"
+  },
+  "version": "1.0"
+}

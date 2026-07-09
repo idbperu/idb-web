@@ -1,0 +1,111 @@
+{
+  "id": "otc-medicamento-paracetamol",
+  "slug": "paracetamol",
+  "nombre_comercial": "Paracetamol",
+  "principio_activo": [
+    "paracetamol"
+  ],
+  "categoria_otc": "analgesico-antipiretico",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales de venta libre o bajo indicacion profesional segun concentracion y pais.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales disponibles en algunas presentaciones comerciales.",
+      "via": "oral"
+    },
+    {
+      "forma": "suspension",
+      "descripcion": "Suspension oral pediatrica o familiar, con concentracion variable segun producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "gotas",
+      "descripcion": "Gotas orales en presentaciones especificas, especialmente para uso pediatrico segun etiqueta.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Medicamento usado de forma general como analgesico y antipiretico para molestias leves o fiebre. Esta ficha no decide si corresponde usarlo en una persona concreta; la eleccion depende del sintoma, edad, antecedentes, otros medicamentos y de la etiqueta del producto.",
+  "no_usar_si": [
+    "Hay alergia conocida al paracetamol o a componentes del producto.",
+    "Existe enfermedad hepatica, consumo importante de alcohol o antecedente de dano hepatico sin orientacion profesional.",
+    "Ya se esta usando otro producto que contiene paracetamol o acetaminofeno y no se ha revisado la composicion total.",
+    "La persona sospecha sobredosis, uso accidental de multiples productos o ingesta mayor a la indicada en la etiqueta.",
+    "El dolor o la fiebre se acompanan de sintomas intensos, nuevos o persistentes que requieren evaluacion."
+  ],
+  "precauciones": [
+    "Revisar etiquetas de productos para gripe, resfrio, dolor o combinados, porque pueden repetir el mismo principio activo.",
+    "Consultar antes de usar si hay embarazo, lactancia, enfermedad hepatica, uso de anticoagulantes, uso frecuente de alcohol o tratamiento cronico.",
+    "No usar para ocultar sintomas que empeoran o que no tienen causa clara.",
+    "Mantener fuera del alcance de ninos y conservar en su envase original."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar solo segun la etiqueta del producto o la indicacion de un profesional. No combinar productos con paracetamol ni aumentar cantidad o frecuencia por cuenta propia.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dificultad para respirar, hinchazon de cara, labios, lengua o garganta, ronchas extensas o desmayo.",
+    "Color amarillo en piel u ojos, orina oscura, dolor en la parte alta derecha del abdomen, vomitos persistentes o somnolencia marcada.",
+    "Sospecha de sobredosis aunque no existan sintomas.",
+    "Fiebre que persiste o empeora, dolor intenso, rigidez de cuello, confusion, dolor de pecho o debilidad repentina."
+  ],
+  "interacciones_relevantes": [
+    "Otros productos que contengan paracetamol o acetaminofeno aumentan el riesgo de duplicidad.",
+    "El alcohol y la enfermedad hepatica pueden aumentar el riesgo de dano del higado.",
+    "Anticoagulantes y tratamientos cronicos requieren revision profesional antes de uso repetido.",
+    "Suplementos, productos herbales y medicamentos de venta libre deben informarse al farmaceutico o medico."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar, especialmente si el uso seria repetido, prolongado o combinado con otros productos.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "La decision debe considerar semana de embarazo, sintomas, alternativas y antecedentes.",
+      "No usar productos combinados para resfrio o gripe sin revision profesional."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores conviene revisar funcion hepatica, consumo de alcohol, fragilidad, otros medicamentos y riesgo de duplicidad.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "El uso repetido debe ser supervisado.",
+      "Una lista actualizada de medicamentos reduce riesgo de interacciones."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos se debe usar solo una presentacion apropiada para edad y peso segun etiqueta o pediatra.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar presentaciones de adultos en ninos.",
+      "Consultar si la fiebre dura, el nino esta decaido, hay dolor de garganta intenso, vomitos, sarpullido o signos de alarma."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Acetaminofeno",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a681004-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2025-11-15",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "paracetamol",
+    "search_keywords": [
+      "paracetamol",
+      "acetaminofeno",
+      "acetaminophen",
+      "apap",
+      "dolor",
+      "fiebre"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

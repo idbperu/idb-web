@@ -1,0 +1,110 @@
+{
+  "id": "otc-medicamento-xilometazolina-nasal",
+  "slug": "xilometazolina-nasal",
+  "nombre_comercial": "Xilometazolina nasal",
+  "principio_activo": [
+    "xilometazolina"
+  ],
+  "categoria_otc": "respiratorio",
+  "presentaciones": [
+    {
+      "forma": "spray",
+      "descripcion": "Spray nasal descongestivo en concentraciones variables segun edad y producto.",
+      "via": "nasal"
+    },
+    {
+      "forma": "gotas",
+      "descripcion": "Gotas nasales descongestivas en algunas presentaciones.",
+      "via": "nasal"
+    }
+  ],
+  "uso_orientativo": "Descongestivo nasal topico usado de forma general para alivio temporal de congestion nasal. Debe utilizarse por periodos cortos segun etiqueta para evitar congestion de rebote y efectos no deseados.",
+  "no_usar_si": [
+    "Hay alergia a xilometazolina, descongestivos nasales similares o componentes del producto.",
+    "Se considera uso en ninos pequenos sin presentacion pediatrica autorizada o sin orientacion profesional.",
+    "Existe hipertension no controlada, enfermedad cardiaca, hipertiroidismo, glaucoma u otra condicion donde la etiqueta indique consultar primero.",
+    "Se usan inhibidores de la monoaminooxidasa u otros medicamentos con advertencia para descongestivos.",
+    "La congestion es persistente, unilateral, con sangrado o se acompana de fiebre alta."
+  ],
+  "precauciones": [
+    "No usar por mas dias de los indicados en la etiqueta, porque puede causar congestion de rebote.",
+    "No compartir el aplicador nasal para reducir riesgo de contaminacion.",
+    "Evitar exceder la frecuencia indicada o combinar con otros descongestivos sin revision.",
+    "Mantener fuera del alcance de ninos por riesgo de eventos graves si se ingiere accidentalmente.",
+    "Consultar antes si hay hipertension, arritmias, enfermedad cardiovascular, diabetes, trastornos tiroideos o glaucoma."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar exclusivamente segun la etiqueta del spray o gotas nasales, respetando edad, concentracion y duracion maxima. No ajustar frecuencia ni prolongar el uso por cuenta propia.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dificultad para respirar, dolor de pecho, palpitaciones intensas o desmayo.",
+    "Somnolencia marcada, agitacion, confusion o debilidad despues de uso o ingestion accidental.",
+    "Congestion que empeora al suspender o necesidad de usarlo repetidamente.",
+    "Sangrado nasal persistente, dolor facial intenso, fiebre alta o secrecion purulenta.",
+    "Reaccion alergica con hinchazon, ronchas o dificultad para respirar."
+  ],
+  "interacciones_relevantes": [
+    "Inhibidores de la monoaminooxidasa y algunos antidepresivos pueden aumentar riesgos cardiovasculares de descongestivos.",
+    "Otros descongestivos orales o nasales pueden sumar efectos sobre presion arterial y frecuencia cardiaca.",
+    "Medicamentos para hipertension, arritmias o tiroides requieren revision profesional.",
+    "Evitar combinaciones de resfrio con multiples simpaticomimeticos sin orientacion."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar descongestivos nasales, incluso topicos, especialmente si hay hipertension o uso repetido.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Priorizar medidas no farmacologicas cuando sean apropiadas.",
+      "No prolongar el uso por congestion persistente sin evaluacion."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe revisar hipertension, enfermedad cardiovascular, glaucoma, medicamentos concomitantes y riesgo de efectos sistemicos.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Mayor prudencia si hay arritmias o enfermedad coronaria.",
+      "Consultar si la congestion es nueva, severa o persistente."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En pediatria debe usarse solo si la presentacion y etiqueta corresponden a la edad, con maxima precaucion por riesgo de intoxicacion accidental.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar presentaciones de adulto en ninos.",
+      "La ingestion accidental o somnolencia despues del uso requiere atencion inmediata."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "FDA",
+      "titulo": "FDA Drug Safety Communication: Serious adverse events from accidental ingestion by children of over-the-counter eye drops and nasal sprays",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-serious-adverse-events-accidental-ingestion-children-over-counter-eye",
+      "tipo": "referencia-regulatoria",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2016-02-11",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Aerosol nasal de oximetazolina",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a608026-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "xilometazolina-nasal",
+    "search_keywords": [
+      "xilometazolina",
+      "descongestivo nasal",
+      "spray nasal",
+      "congestion nasal",
+      "gotas nasales"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

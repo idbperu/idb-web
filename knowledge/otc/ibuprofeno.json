@@ -1,0 +1,105 @@
+{
+  "id": "otc-medicamento-ibuprofeno",
+  "slug": "ibuprofeno",
+  "nombre_comercial": "Ibuprofeno",
+  "principio_activo": [
+    "ibuprofeno"
+  ],
+  "categoria_otc": "antiinflamatorio",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales de liberacion inmediata en presentaciones de venta libre o bajo receta segun concentracion y pais.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas o capsulas blandas para administracion oral.",
+      "via": "oral"
+    },
+    {
+      "forma": "suspension",
+      "descripcion": "Suspension oral con concentracion variable segun producto.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "AINE usado de forma general para alivio temporal de dolor leve a moderado, fiebre o inflamacion leve. No es adecuado para todas las personas y requiere revisar riesgos gastrointestinales, cardiovasculares, renales, embarazo y otros medicamentos.",
+  "no_usar_si": [
+    "Hay alergia al ibuprofeno, aspirina u otros AINE, o antecedente de broncoespasmo, urticaria o reaccion grave con estos medicamentos.",
+    "Existe antecedente de ulcera, sangrado digestivo, enfermedad renal importante, insuficiencia cardiaca o evento cardiovascular reciente sin indicacion profesional.",
+    "La persona se sometera o se sometio recientemente a cirugia de bypass coronario.",
+    "Hay embarazo alrededor o despues de la mitad del embarazo, salvo indicacion profesional.",
+    "Se esta usando otro AINE o anticoagulante sin revision profesional."
+  ],
+  "precauciones": [
+    "Usar por el menor tiempo necesario segun etiqueta y consultar si los sintomas persisten.",
+    "Evitar combinar con otros AINE, aspirina para dolor, alcohol en exceso o corticoides sin orientacion.",
+    "Consultar si hay hipertension, diabetes, colesterol alto, tabaquismo, enfermedad renal, enfermedad hepatica, asma o antecedentes de sangrado.",
+    "Suspender y buscar evaluacion si aparecen dolor gastrico intenso, heces negras, vomitos con sangre, dolor de pecho o falta de aire."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Seguir la etiqueta del producto o la indicacion profesional. No aumentar cantidad, frecuencia ni duracion; no combinar con otros antiinflamatorios salvo indicacion expresa.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dolor de pecho, dificultad para respirar, debilidad en un lado del cuerpo o dificultad para hablar.",
+    "Vomitos con sangre, heces negras, dolor abdominal intenso o acidez severa.",
+    "Hinchazon de cara, labios, lengua o garganta, ronchas, ampollas o dificultad para tragar.",
+    "Disminucion marcada de orina, hinchazon de piernas, aumento de peso rapido o cansancio extremo."
+  ],
+  "interacciones_relevantes": [
+    "Anticoagulantes, antiagregantes, aspirina, otros AINE, corticoides, ISRS o IRSN pueden aumentar riesgo de sangrado.",
+    "Medicamentos para presion arterial, diureticos o enfermedad renal pueden requerir seguimiento.",
+    "Alcohol puede aumentar irritacion o sangrado gastrointestinal.",
+    "Litio, metotrexato u otros tratamientos de margen estrecho requieren supervision profesional."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo, especialmente desde alrededor de las 20 semanas, no debe usarse sin indicacion profesional. En lactancia conviene consultar antes de uso repetido.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "La decision debe considerar etapa del embarazo, dolor o fiebre y alternativas.",
+      "No automedicar fiebre o dolor persistente durante embarazo."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "Los adultos mayores tienen mayor riesgo de sangrado digestivo, dano renal, retencion de liquidos y eventos cardiovasculares con AINE.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar uso repetido sin seguimiento.",
+      "Revisar anticoagulantes, presion arterial, funcion renal y antecedentes digestivos."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos se debe usar solo presentacion pediatrica apropiada y con orientacion basada en etiqueta o pediatra.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar en lactantes pequenos sin indicacion profesional.",
+      "Consultar si hay deshidratacion, vomitos persistentes, enfermedad renal, fiebre prolongada o decaimiento."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Ibuprofeno",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a682159-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "ibuprofeno",
+    "search_keywords": [
+      "ibuprofeno",
+      "antiinflamatorio",
+      "aine",
+      "dolor",
+      "fiebre",
+      "inflamacion"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

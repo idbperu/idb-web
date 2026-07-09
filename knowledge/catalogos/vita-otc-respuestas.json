@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "objetivo": "Plantillas reutilizables para que VITA consuma la Base OTC Certificada como orientacion no prescriptiva, priorizando seguridad clinica y compatibilidad con archivos estaticos.",
+  "plantillas": {
+    "uso_orientativo": "De forma general, {medicamento} se usa como informacion orientativa para {uso_orientativo}. No confirma que sea adecuado para tu caso; revisa la etiqueta y consulta a un profesional si tienes dudas o factores de riesgo.",
+    "no_usar_si": "No conviene usar {medicamento} si aplica alguna de estas situaciones: {no_usar_si}. Si no estas seguro, es mejor consultar con un profesional de salud o farmacia antes de usarlo.",
+    "precauciones": "Antes de usar {medicamento}, ten en cuenta estas precauciones generales: {precauciones}. Evita combinar productos o repetirlo con frecuencia sin revisar la etiqueta o consultar.",
+    "senales_alarma": "Si aparece cualquiera de estas senales de alarma, prioriza atencion medica antes de seguir con autocuidado: {senales_alarma}.",
+    "interacciones": "{medicamento} puede requerir cuidado con otros medicamentos, alcohol, suplementos o condiciones clinicas: {interacciones_relevantes}. Si usas tratamientos cronicos o varios productos, consulta antes.",
+    "embarazo_lactancia": "En embarazo o lactancia, no es recomendable decidir el uso de {medicamento} solo con orientacion general. La ficha indica: {embarazo_lactancia}. Consulta con un profesional antes de usarlo.",
+    "pediatria": "En ninos, no conviene extrapolar dosis ni presentaciones de adulto. La ficha indica: {pediatria}. Si es lactante, hay fiebre, dificultad respiratoria, vomitos persistentes, diarrea o decaimiento, consulta pronto.",
+    "adulto_mayor": "En adultos mayores conviene revisar fragilidad, enfermedades cronicas y otros medicamentos. La ficha indica: {adulto_mayor}. Una revision medica o farmaceutica puede evitar interacciones o efectos no deseados.",
+    "dosis_personalizada": "No puedo calcular ni indicar una dosis personalizada de {medicamento}. Puedo ayudarte a revisar uso orientativo, precauciones y senales de alarma, pero la dosis debe seguir la etiqueta del producto o la indicacion de un profesional, especialmente si hay embarazo, lactancia, ninos, adulto mayor, enfermedades cronicas o varios medicamentos.",
+    "sobredosis_o_reaccion_grave": "Lo que describes puede requerir atencion urgente. Si hubo sobredosis, ingestion accidental, dificultad para respirar, hinchazon de cara o garganta, dolor de pecho, desmayo, confusion, convulsiones o empeoramiento rapido, contacta servicios de emergencia locales o un centro de toxicologia si esta disponible. No intentes inducir vomito salvo indicacion profesional.",
+    "sin_ficha_otc": "No tengo una ficha OTC certificada para {consulta}. Puedo darte orientacion general de seguridad, pero no puedo confirmar uso, dosis ni combinaciones. Para decidir si corresponde usarlo, consulta la etiqueta del producto o a un profesional de salud o farmacia."
+  },
+  "reglas_seguridad": [
+    "Usar la Base OTC solo como orientacion educativa, no como prescripcion.",
+    "Priorizar senales de alarma antes de explicar usos o precauciones.",
+    "No calcular dosis, frecuencia, duracion ni ajustes por edad, peso, embarazo, lactancia o enfermedad.",
+    "Recomendar consulta profesional ante embarazo, lactancia, pediatria, adulto mayor, enfermedades cronicas o polifarmacia.",
+    "No sugerir iniciar, suspender, cambiar, duplicar o combinar medicamentos.",
+    "Advertir sobre duplicidad de principios activos en productos combinados cuando corresponda.",
+    "Si hay sobredosis, ingestion accidental, alergia grave, dificultad respiratoria, dolor de pecho, desmayo, sangre, fiebre persistente o empeoramiento, recomendar atencion medica urgente o pronta segun gravedad.",
+    "No mostrar fuentes completas, identificadores, schema, version, estado_validacion, compatibilidad ni rutas internas en respuestas visibles.",
+    "Mantener tono claro, directo, prudente y no alarmista.",
+    "Si no existe ficha OTC certificada, no inventar informacion especifica del medicamento."
+  ],
+  "campos_permitidos_otc": [
+    "nombre_comercial",
+    "principio_activo",
+    "categoria_otc",
+    "presentaciones",
+    "uso_orientativo",
+    "no_usar_si",
+    "precauciones",
+    "dosis_general_orientativa.texto",
+    "senales_alarma",
+    "interacciones_relevantes",
+    "embarazo_lactancia.resumen",
+    "embarazo_lactancia.notas",
+    "adulto_mayor.resumen",
+    "adulto_mayor.notas",
+    "pediatria.resumen",
+    "pediatria.notas",
+    "fecha_revision"
+  ]
+}

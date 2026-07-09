@@ -1,0 +1,105 @@
+{
+  "id": "otc-medicamento-carbonato-de-calcio",
+  "slug": "carbonato-de-calcio",
+  "nombre_comercial": "Carbonato de calcio",
+  "principio_activo": [
+    "carbonato de calcio"
+  ],
+  "categoria_otc": "digestivo",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales, incluidas tabletas masticables en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales como suplemento de calcio en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "suspension",
+      "descripcion": "Liquido o suspension oral con concentracion variable segun producto.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Producto usado como antiacido para alivio temporal de acidez o como suplemento de calcio cuando la dieta no aporta suficiente, segun necesidad y etiqueta. No debe usarse de forma prolongada ni junto con otros suplementos sin revisar la cantidad total de calcio.",
+  "no_usar_si": [
+    "Hay alergia al producto o a sus componentes.",
+    "Existe enfermedad renal, calculos renales, hipercalcemia o indicacion de restringir calcio sin orientacion profesional.",
+    "La acidez o dolor estomacal dura mas del periodo indicado por la etiqueta, se repite con frecuencia o aparece con senales de alarma.",
+    "Se toman otros medicamentos y no se puede separar el uso para evitar interferencias.",
+    "Hay vomitos persistentes, dolor abdominal intenso, heces negras o perdida de peso."
+  ],
+  "precauciones": [
+    "Puede disminuir absorcion de otros medicamentos; revisar separacion horaria con farmaceutico o medico.",
+    "No combinar varios suplementos de calcio o antiacidos con calcio sin calcular ingesta total.",
+    "Consultar si hay enfermedad renal, antecedentes de calculos, estrenimiento importante o dieta especial.",
+    "No usar como antiacido por mas tiempo del indicado en la etiqueta sin evaluacion."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Seguir la etiqueta o indicacion profesional. Si se usa como antiacido, consultar si se necesita de forma frecuente o por mas tiempo del indicado.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dolor abdominal intenso, vomitos persistentes, sangre en vomitos o heces negras.",
+    "Confusion, debilidad marcada, sed excesiva, orinar mucho, arritmias o somnolencia inusual.",
+    "Dolor en costado, sangre en orina o sospecha de calculo renal.",
+    "Dolor de pecho, falta de aire o sintomas digestivos con perdida de peso."
+  ],
+  "interacciones_relevantes": [
+    "Puede reducir absorcion de algunos antibioticos, levotiroxina, hierro, bifosfonatos y otros medicamentos si se toman juntos.",
+    "Otros suplementos de calcio, vitamina D o antiacidos pueden aumentar carga total de calcio.",
+    "Enfermedad renal o medicamentos que alteran calcio requieren supervision.",
+    "Informar todos los medicamentos antes de uso regular."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia puede ser necesario calcio, pero conviene consultar para evitar exceso y elegir presentacion adecuada.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar dosis altas ni multiples suplementos sin indicacion.",
+      "La acidez persistente en embarazo requiere orientacion."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe revisar funcion renal, estrenimiento, riesgo de calculos, vitamina D y polifarmacia.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Separar de medicamentos que interactuan segun orientacion.",
+      "Evitar uso cronico como antiacido sin evaluar causa."
+    ]
+  },
+  "pediatria": {
+    "resumen": "El uso en ninos debe responder a indicacion profesional o etiqueta pediatrica especifica, especialmente si es suplemento.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar antiacidos de adultos en ninos sin consulta.",
+      "Dolor abdominal persistente, vomitos o baja de peso requieren evaluacion."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Carbonato de calcio",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a601032-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2024-06-20",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "calcio",
+    "search_keywords": [
+      "carbonato de calcio",
+      "calcio",
+      "antiacido",
+      "acidez",
+      "suplemento de calcio"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

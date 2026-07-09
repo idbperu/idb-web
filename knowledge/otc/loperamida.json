@@ -1,0 +1,103 @@
+{
+  "id": "otc-medicamento-loperamida",
+  "slug": "loperamida",
+  "nombre_comercial": "Loperamida",
+  "principio_activo": [
+    "loperamida"
+  ],
+  "categoria_otc": "digestivo",
+  "presentaciones": [
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales antidiarreicas en presentaciones de venta libre o bajo receta segun pais.",
+      "via": "oral"
+    },
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales, incluidas presentaciones de disolucion oral en algunos mercados.",
+      "via": "oral"
+    },
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion oral en presentaciones especificas segun mercado.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Antidiarreico que reduce el movimiento intestinal en diarrea no complicada. No reemplaza hidratacion ni debe usarse cuando la diarrea puede ser infecciosa grave, con sangre, fiebre alta o dolor abdominal importante.",
+  "no_usar_si": [
+    "Hay diarrea con sangre, heces negras, fiebre alta, dolor abdominal intenso o abdomen distendido.",
+    "Existe sospecha de intoxicacion alimentaria grave, colitis, brote de enfermedad inflamatoria intestinal o diarrea asociada a antibioticos.",
+    "La persona es un nino pequeno o hay deshidratacion sin evaluacion profesional.",
+    "Hay alergia a loperamida o componentes.",
+    "Se busca detener diarrea persistente sin conocer la causa."
+  ],
+  "precauciones": [
+    "Priorizar sales de rehidratacion oral y liquidos adecuados, especialmente en ninos, adultos mayores o personas fragiles.",
+    "No usar mas cantidad ni mas tiempo que lo indicado en la etiqueta.",
+    "Consultar si la diarrea dura, empeora, aparece fiebre, sangre, dolor fuerte o signos de deshidratacion.",
+    "Evitar si hay enfermedad hepatica significativa sin orientacion profesional."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar solo segun etiqueta o indicacion profesional. No exceder el maximo del producto; suspender y consultar si no mejora o aparecen signos de alarma.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Sangre en heces, fiebre alta, dolor abdominal intenso, abdomen hinchado o rigido.",
+    "Signos de deshidratacion: mucha sed, boca seca, orina escasa, somnolencia, mareo o decaimiento.",
+    "Palpitaciones, desmayo, latidos irregulares o somnolencia extrema.",
+    "Diarrea despues de antibioticos, en embarazo, en adulto mayor fragil o en nino pequeno."
+  ],
+  "interacciones_relevantes": [
+    "Medicamentos que afectan ritmo cardiaco o metabolismo de loperamida requieren revision profesional.",
+    "Otros medicamentos que disminuyen movimiento intestinal pueden aumentar estrenimiento o distension.",
+    "Alcohol o sedantes pueden empeorar somnolencia en algunas personas.",
+    "En enfermedad hepatica se requiere orientacion antes de uso."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar, porque la prioridad es identificar causa de diarrea y evitar deshidratacion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No retrasar atencion si hay fiebre, sangre o deshidratacion.",
+      "Usar sales de rehidratacion oral segun orientacion si hay perdidas digestivas."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "El adulto mayor tiene mayor riesgo de deshidratacion, complicaciones e interacciones; conviene consultar si la diarrea es intensa o persistente.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Vigilar signos de deshidratacion y confusion.",
+      "No usar para dolor abdominal intenso o distension."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos, especialmente pequenos, no debe usarse sin indicacion profesional. La hidratacion y evaluacion de alarma son prioritarias.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Buscar atencion si hay sangre, fiebre, vomitos persistentes o pocos panales mojados.",
+      "No reemplaza sales de rehidratacion oral."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Loperamide",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a682280-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "loperamida",
+    "search_keywords": [
+      "loperamida",
+      "diarrea",
+      "antidiarreico",
+      "evacuaciones liquidas"
+    ],
+    "rco_triage_maximo": "orange"
+  },
+  "version": "1.0"
+}

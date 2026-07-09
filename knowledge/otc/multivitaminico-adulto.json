@@ -1,0 +1,114 @@
+{
+  "id": "otc-medicamento-multivitaminico-adulto",
+  "slug": "multivitaminico-adulto",
+  "nombre_comercial": "Multivitaminico adulto",
+  "principio_activo": [
+    "vitaminas y minerales"
+  ],
+  "categoria_otc": "vitamina-suplemento",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales con combinacion de vitaminas y minerales para adultos.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales multivitaminicas en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "otro",
+      "descripcion": "Gomitas o formas masticables para adultos segun producto.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Suplemento dietario que combina vitaminas y minerales para complementar la ingesta en adultos cuando la alimentacion o contexto lo justifica. No previene ni trata enfermedades por si mismo y no sustituye una dieta adecuada.",
+  "no_usar_si": [
+    "Hay alergia a algun componente del producto.",
+    "Se usan otros suplementos con las mismas vitaminas o minerales sin revisar duplicidad.",
+    "Existe enfermedad renal, hepatica, sobrecarga de hierro, trastornos tiroideos o hipercalcemia sin consulta.",
+    "El producto contiene hierro y la persona no lo requiere o hay riesgo de intoxicacion accidental en ninos.",
+    "Se busca tratar cansancio, perdida de peso, anemia u otros sintomas sin evaluacion."
+  ],
+  "precauciones": [
+    "Revisar etiqueta completa porque las formulas varian ampliamente.",
+    "Evitar tomar varios suplementos que superen limites superiores de vitaminas o minerales.",
+    "Los productos con vitamina K pueden ser relevantes con warfarina.",
+    "Hierro, calcio, magnesio o zinc pueden interferir con absorcion de algunos medicamentos.",
+    "Mantener fuera del alcance de ninos, especialmente formulas con hierro."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta del suplemento. La necesidad de un multivitaminico depende de dieta, edad, enfermedades, embarazo, medicamentos y resultados clinicos.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Ingestion accidental por nino, especialmente si contiene hierro.",
+    "Vomitos persistentes, dolor abdominal intenso, somnolencia, confusion o debilidad marcada.",
+    "Sangrado, moretones faciles, palpitaciones o sintomas que motivaron automedicacion.",
+    "Reaccion alergica con ronchas, hinchazon o dificultad para respirar.",
+    "Uso de dosis altas o multiples suplementos con sintomas nuevos."
+  ],
+  "interacciones_relevantes": [
+    "Vitamina K puede interferir con anticoagulantes como warfarina.",
+    "Calcio, hierro, magnesio o zinc pueden reducir absorcion de levotiroxina, tetraciclinas, quinolonas y otros medicamentos.",
+    "Retinoides o suplementos con vitamina A pueden aumentar riesgo de exceso de vitamina A.",
+    "Otros suplementos pueden duplicar dosis de vitaminas liposolubles o minerales."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe usar solo con orientacion profesional, porque las formulas para adultos pueden no ser adecuadas y pueden duplicar vitaminas prenatales.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No sustituye vitamina prenatal indicada.",
+      "Evitar exceso de vitamina A preformada."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe revisar dieta, funcion renal, anticoagulantes, polifarmacia y riesgo de exceso de minerales.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Revisar formulas con hierro si no hay indicacion.",
+      "Consultar si hay perdida de peso, anemia o cansancio persistente."
+    ]
+  },
+  "pediatria": {
+    "resumen": "No usar multivitaminicos de adulto en ninos. La suplementacion pediatrica requiere producto y dosis apropiados para edad.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Riesgo de intoxicacion por hierro u otros componentes.",
+      "Guardar fuera del alcance de ninos."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "NIH Office of Dietary Supplements",
+      "titulo": "Multivitamin/mineral Supplements - Consumer",
+      "url": "https://ods.od.nih.gov/factsheets/MVMS-Consumer/",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "FDA",
+      "titulo": "FDA 101: Dietary Supplements",
+      "url": "https://www.fda.gov/food/information-consumers-using-dietary-supplements/fda-101-dietary-supplements",
+      "tipo": "referencia-regulatoria",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "multivitaminico-adulto",
+    "search_keywords": [
+      "multivitaminico",
+      "multivitaminico adulto",
+      "vitaminas",
+      "minerales",
+      "suplemento"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

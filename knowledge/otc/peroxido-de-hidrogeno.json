@@ -1,0 +1,105 @@
+{
+  "id": "otc-medicamento-peroxido-de-hidrogeno",
+  "slug": "peroxido-de-hidrogeno",
+  "nombre_comercial": "Peroxido de hidrogeno 3%",
+  "principio_activo": [
+    "peroxido de hidrogeno"
+  ],
+  "categoria_otc": "primeros-auxilios",
+  "presentaciones": [
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion topica al 3% para uso externo segun rotulado.",
+      "concentracion": "3%",
+      "via": "topica"
+    }
+  ],
+  "uso_orientativo": "Antiseptico topico de uso externo disponible en solucion al 3% en algunos mercados. Debe usarse solo segun etiqueta y con prudencia, porque puede irritar tejidos y no reemplaza limpieza adecuada ni evaluacion de heridas relevantes.",
+  "no_usar_si": [
+    "La herida es profunda, extensa, por mordedura, quemadura seria, puncion o contiene cuerpos extranos.",
+    "Se planea usar en ojos, oidos, boca, mucosas, cavidades corporales o ingerirlo.",
+    "Hay alergia o irritacion intensa previa con peroxido de hidrogeno.",
+    "Se trata de una herida que no cicatriza, sangra mucho o muestra signos de infeccion.",
+    "La concentracion no es 3% o el producto no esta rotulado para piel."
+  ],
+  "precauciones": [
+    "Usar solo externamente y no ingerir ni inhalar.",
+    "Evitar uso repetido o prolongado sobre heridas porque puede irritar tejido y retrasar cicatrizacion.",
+    "No mezclar con otros antisepticos o productos quimicos.",
+    "Mantener en envase original, protegido de luz y fuera del alcance de ninos.",
+    "Consultar si aparece ardor intenso, ampollas, blanqueamiento persistente o irritacion."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar solo segun el rotulado del producto y por tiempo limitado. La limpieza de heridas y la necesidad de antiseptico dependen del tipo de lesion, por lo que heridas relevantes requieren revision profesional.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Sangrado que no cede, herida profunda, mordedura, puncion o quemadura extensa.",
+    "Dolor creciente, pus, fiebre, calor local o lineas rojas desde la herida.",
+    "Contacto con ojos, ingestion, inhalacion importante o uso de concentraciones mayores.",
+    "Ampollas, irritacion severa o empeoramiento despues de aplicar.",
+    "Signos de reaccion alergica o dificultad para respirar."
+  ],
+  "interacciones_relevantes": [
+    "No mezclar con yodo, clorhexidina, alcohol u otros antisepticos sin indicacion.",
+    "Puede inactivar o alterar productos topicos aplicados en la misma zona.",
+    "Productos irritantes o astringentes pueden aumentar dano local.",
+    "Informar si se usan tratamientos topicos prescritos o si hay heridas cronicas."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar en zonas extensas, heridas relevantes o cerca de mama.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar contacto con pezon o areola antes de lactar.",
+      "No usar en heridas profundas sin evaluacion."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe evaluar piel fragil, heridas cronicas, diabetes, mala circulacion y riesgo de infeccion antes de usar antisepticos irritantes.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No aplicar sobre ulceras o heridas que no cicatrizan sin supervision.",
+      "Consultar lesiones en pies si hay diabetes o mala circulacion."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos debe usarse solo con supervision adulta y segun etiqueta; ingestion o contacto ocular requiere atencion inmediata.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Mantener fuera del alcance de ninos.",
+      "No usar en heridas extensas o profundas sin evaluacion."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "DailyMed",
+      "titulo": "Hydrogen peroxide topical solution 3% drug label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydrogen%20peroxide%203%25",
+      "tipo": "rotulado-oficial",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "ATSDR",
+      "titulo": "Hydrogen Peroxide Medical Management Guidelines",
+      "url": "https://wwwn.cdc.gov/TSP/MMG/MMGDetails.aspx?mmgid=304&toxid=55",
+      "tipo": "guia-institucional",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "peroxido-de-hidrogeno",
+    "search_keywords": [
+      "peroxido de hidrogeno",
+      "agua oxigenada",
+      "antiseptico",
+      "primeros auxilios",
+      "heridas leves"
+    ],
+    "rco_triage_maximo": "orange"
+  },
+  "version": "1.0"
+}

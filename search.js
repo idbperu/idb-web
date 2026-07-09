@@ -1,6 +1,7 @@
 (function () {
   const DEFAULT_INDEX_URL = "search-index.json";
   const DEFAULT_VITA_URL = "https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.";
+  const VITA_OTC_TEMPLATES_URL = "knowledge/catalogos/vita-otc-respuestas.json";
   const DEFAULT_SELECTORS = {
     input: "[data-medical-search-input]",
     results: "[data-medical-search-results]"
@@ -26,6 +27,7 @@
   };
   let searchIndex = [];
   let readyPromise = null;
+  let vitaTemplatesPromise = null;
 
   const searchSources = new Map();
 
@@ -657,6 +659,34 @@
     };
   }
 
+  async function loadVitaOtcTemplates(url = VITA_OTC_TEMPLATES_URL) {
+    if (!vitaTemplatesPromise) {
+      vitaTemplatesPromise = fetch(url)
+        .then((response) => response.ok ? response.json() : null)
+        .catch(() => null);
+    }
+    return vitaTemplatesPromise;
+  }
+
+  async function resolveVitaClinicalQuery(query, options = {}) {
+    await loadSearchIndex(options.indexUrl || DEFAULT_INDEX_URL);
+    const resolved = resolveSearchQuery(query, options);
+    const templates = options.includeTemplates === false ? null : await loadVitaOtcTemplates(options.templatesUrl || VITA_OTC_TEMPLATES_URL);
+
+    return {
+      query,
+      engine: "RCO",
+      mode: "conversational-layer",
+      resolved,
+      record: resolved.record || null,
+      url: resolved.url,
+      templates,
+      open() {
+        if (resolved.url) window.location.href = resolved.url;
+      }
+    };
+  }
+
   function getTypeIcon(type) {
     return TYPE_ICONS[normalizeText(type)] || "🔎";
   }
@@ -1069,6 +1099,18 @@
     normalize: normalizeText,
     resolve: resolveSearchQuery,
     saveSearch: saveSearchTerm,
-    search: searchMedicalIndex
+    search: searchMedicalIndex,
+    vita: resolveVitaClinicalQuery
+  };
+
+  window.IDBVita = {
+    resolve: resolveVitaClinicalQuery,
+    ask: resolveVitaClinicalQuery,
+    open(query, options = {}) {
+      return resolveVitaClinicalQuery(query, options).then((result) => {
+        if (result.url) window.location.href = result.url;
+        return result;
+      });
+    }
   };
 })();

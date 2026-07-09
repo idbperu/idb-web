@@ -1,0 +1,95 @@
+{
+  "id": "otc-medicamento-diclofenaco-gel",
+  "slug": "diclofenaco-gel",
+  "nombre_comercial": "Diclofenaco gel",
+  "principio_activo": [
+    "diclofenaco"
+  ],
+  "categoria_otc": "antiinflamatorio",
+  "presentaciones": [
+    {
+      "forma": "gel",
+      "descripcion": "Gel topico de diclofenaco para aplicacion sobre piel intacta, disponible como venta libre o bajo indicacion segun pais.",
+      "concentracion": "habitualmente 1% en presentaciones OTC, segun rotulado",
+      "via": "topica"
+    }
+  ],
+  "uso_orientativo": "AINE topico usado de forma general para alivio temporal de dolor localizado en articulaciones o tejidos superficiales. Aunque se aplique en piel, mantiene precauciones de los antiinflamatorios y no debe usarse para dolor intenso, lesiones abiertas o sintomas que requieren evaluacion.",
+  "no_usar_si": [
+    "Hay alergia a diclofenaco, aspirina, ibuprofeno, naproxeno u otros AINE.",
+    "La piel esta herida, infectada, con sarpullido, quemadura, descamacion importante o lesion abierta.",
+    "Existe antecedente de ataque cardiaco reciente, cirugia cardiaca tipo bypass, sangrado digestivo o reaccion grave a AINE sin orientacion profesional.",
+    "Hay embarazo alrededor o despues de la mitad del embarazo, salvo indicacion profesional.",
+    "Se usan otros AINE, anticoagulantes o corticoides sin revision profesional."
+  ],
+  "precauciones": [
+    "Aplicar solo en piel limpia, seca e intacta y evitar ojos, boca, nariz y mucosas.",
+    "No cubrir con vendajes o calor local salvo indicacion profesional.",
+    "Evitar exposicion solar intensa sobre el area tratada.",
+    "Consultar si el dolor no mejora, empeora o se acompana de hinchazon importante, deformidad, fiebre o dificultad para mover."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar solo segun etiqueta o indicacion profesional. No aplicar en mas zonas, con mayor frecuencia ni por mas tiempo del indicado; no combinar con otros AINE sin consulta.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dolor de pecho, falta de aire, debilidad en un lado del cuerpo o dificultad para hablar.",
+    "Heces negras, vomitos con sangre, dolor abdominal intenso o sangrado inusual.",
+    "Hinchazon de cara o garganta, ronchas, ampollas, sarpullido extenso o dificultad para respirar.",
+    "Irritacion severa de piel, quemazon intensa, infeccion local o empeoramiento del dolor."
+  ],
+  "interacciones_relevantes": [
+    "Aspirina, ibuprofeno, naproxeno u otros AINE aumentan riesgo de efectos adversos.",
+    "Anticoagulantes, antiagregantes, corticoides, ISRS o IRSN pueden aumentar riesgo de sangrado.",
+    "Otros productos topicos en la misma zona pueden alterar tolerancia o irritar la piel.",
+    "Medicamentos para presion arterial, rinon o corazon requieren revision si el uso sera repetido."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo no debe usarse alrededor o despues de las 20 semanas salvo indicacion profesional. En lactancia se debe consultar antes de uso repetido o en areas extensas.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No aplicar en pecho durante lactancia sin indicacion.",
+      "La decision debe considerar superficie de aplicacion, duracion y antecedentes."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores conviene revisar antecedentes cardiovasculares, digestivos, renales y medicamentos concomitantes aunque sea topico.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar uso extendido sin seguimiento.",
+      "Consultar ante hinchazon, falta de aire o sangrado."
+    ]
+  },
+  "pediatria": {
+    "resumen": "El uso en ninos debe seguir edad autorizada por etiqueta o indicacion profesional.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar para golpes importantes, deformidad o dolor intenso sin evaluacion.",
+      "Evitar aplicacion en piel irritada o extensa."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Diclofenaco topico (dolor de artritis)",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a611002-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "diclofenaco",
+    "search_keywords": [
+      "diclofenaco gel",
+      "diclofenaco topico",
+      "antiinflamatorio topico",
+      "dolor articular",
+      "dolor muscular"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

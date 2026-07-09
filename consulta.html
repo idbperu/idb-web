@@ -681,6 +681,50 @@
       color: #334b63;
       font-weight: 850;
     }
+    .otc-certified {
+      display: grid;
+      gap: 18px;
+      border-color: rgba(31, 143, 115, .2);
+      background: linear-gradient(180deg, #f7fcfa 0%, #fff 100%);
+    }
+    .otc-certified > p {
+      margin: 0;
+      color: #4c6176;
+    }
+    .otc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .otc-panel {
+      min-width: 0;
+      padding: 17px 18px;
+      border: 1px solid rgba(220,232,242,.95);
+      border-radius: 16px;
+      background: rgba(255,255,255,.94);
+    }
+    .otc-panel.full {
+      grid-column: 1 / -1;
+    }
+    .otc-panel .title-line {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+    .otc-panel p {
+      margin: 0;
+      color: #506477;
+    }
+    .otc-panel .section-list li {
+      color: #506477;
+      line-height: 1.55;
+    }
+    .otc-date {
+      margin-top: -4px;
+      color: #728292;
+      font-size: .82rem;
+      font-weight: 760;
+    }
     .mini-card p {
       margin: 0;
       color: #5c6e81;
@@ -1139,6 +1183,7 @@
         gap: 12px;
       }
       .info-grid,
+      .otc-grid,
       .sidebar { grid-template-columns: 1fr; }
       .sidebar .rail-card:not(.vita-card) { display: none; }
       .tabs {
@@ -1394,7 +1439,8 @@
         hipertension: "Hipertensión",
         losartan: "Losartán",
         neurologia: "Neurología",
-        "dolor y neurologia": "Dolor y neurología"
+        "dolor y neurologia": "Dolor y neurología",
+        "vitamina c": "Vitamina C"
       };
       const override = titleOverrides[slugify(raw)] || titleOverrides[normalizeText(raw)];
       if (override) return override;
@@ -1611,6 +1657,100 @@
         };
       }
 
+      return null;
+    }
+
+    function otcSlugCandidates(record, query = "") {
+      const candidates = [
+        record?._knowledge?.slug,
+        record?.slug,
+        record?.titulo,
+        query
+      ]
+        .map(slugify)
+        .filter(Boolean);
+      return [...new Set(candidates)];
+    }
+
+    async function loadOtcCertifiedTopic(record, query = "") {
+      if (normalizeText(record?.tipo) !== "medicamento") return null;
+      for (const slug of otcSlugCandidates(record, query)) {
+        const topic = await fetchJsonIfExists(`knowledge/otc/${slug}.json`);
+        if (topic) return topic;
+      }
+      return null;
+    }
+
+    function otcGroupItems(group) {
+      return [
+        ...normalizeSectionContent(group?.resumen),
+        ...normalizeSectionContent(group?.notas)
+      ];
+    }
+
+    function otcPresentationItems(otc) {
+      return (Array.isArray(otc?.presentaciones) ? otc.presentaciones : [])
+        .map((item) => [item.descripcion, item.concentracion, item.via ? `Via: ${item.via}` : ""].filter(Boolean).join(" · "))
+        .filter(Boolean);
+    }
+
+    function adaptOtcAsPrimaryRecord(otc, fallbackRecord) {
+      if (!otc || typeof otc !== "object") return null;
+      const sections = [
+        { titulo: "Respuesta rápida", contenido: [otc.uso_orientativo] },
+        { titulo: "Uso orientativo", contenido: [otc.uso_orientativo] },
+        { titulo: "Presentaciones habituales", contenido: otcPresentationItems(otc) },
+        { titulo: "No usar si", contenido: normalizeSectionContent(otc.no_usar_si) },
+        { titulo: "Precauciones", contenido: normalizeSectionContent(otc.precauciones) },
+        { titulo: "Señales de alarma", contenido: normalizeSectionContent(otc.senales_alarma) },
+        { titulo: "Interacciones relevantes", contenido: normalizeSectionContent(otc.interacciones_relevantes) },
+        { titulo: "Embarazo y lactancia", contenido: otcGroupItems(otc.embarazo_lactancia) },
+        { titulo: "Adulto mayor", contenido: otcGroupItems(otc.adulto_mayor) },
+        { titulo: "Pediatría", contenido: otcGroupItems(otc.pediatria) },
+        { titulo: "Fecha de revisión", contenido: otc.fecha_revision ? [`Fecha de revisión: ${otc.fecha_revision}`] : [] }
+      ].filter((section) => normalizeSectionContent(section.contenido).length);
+
+      return {
+        ...fallbackRecord,
+        titulo: otc.nombre_comercial || fallbackRecord?.titulo || humanTitle(otc.slug || "Medicamento OTC"),
+        slug: otc.slug || fallbackRecord?.slug || "",
+        tipo: "medicamento",
+        categoria: fallbackRecord?.categoria || "Medicamentos OTC",
+        description: otc.uso_orientativo || fallbackRecord?.description || "Información orientativa OTC certificada para pacientes.",
+        fuente: "Base OTC Certificada IDB MEDIC",
+        nivel: "Validado",
+        ultima_revision: otc.fecha_revision || fallbackRecord?.ultima_revision || "2026-07",
+        keywords: fallbackRecord?.keywords || otc.principio_activo || [],
+        plantilla_oficial: true,
+        secciones: sections,
+        informacion_importante: {
+          titulo: "Información importante",
+          texto: "Esta ficha entrega orientación general para pacientes. No reemplaza una evaluación médica ni una indicación personalizada."
+        },
+        _knowledge: {
+          titulo: otc.nombre_comercial,
+          slug: otc.slug,
+          tipo: "medicamento",
+          categoria: "Medicamentos OTC",
+          descripcion: otc.uso_orientativo,
+          ultima_revision: otc.fecha_revision
+        },
+        _otcPrimary: true
+      };
+    }
+
+    async function loadOtcPrimaryTopic(slug, fallbackRecord, query = "") {
+      const candidates = [
+        slug,
+        fallbackRecord?.slug,
+        fallbackRecord?.titulo,
+        query
+      ].map(slugify).filter(Boolean);
+
+      for (const candidate of [...new Set(candidates)]) {
+        const topic = await fetchJsonIfExists(`knowledge/otc/${candidate}.json`);
+        if (topic) return adaptOtcAsPrimaryRecord(topic, fallbackRecord);
+      }
       return null;
     }
 
@@ -2268,6 +2408,54 @@
       if (!flow.children.length) return null;
       card.append(flow);
       return card;
+    }
+
+    function appendOtcPanel(grid, title, content, iconName, full = false) {
+      const items = normalizeSectionContent(content);
+      if (!items.length) return;
+      const panel = document.createElement("article");
+      panel.className = `otc-panel${full ? " full" : ""}`;
+      panel.append(titleLine(title, iconName, "h3"));
+      renderSectionContent(panel, items);
+      grid.append(panel);
+    }
+
+    function appendOtcGroupPanel(grid, title, group, iconName) {
+      const items = [
+        ...normalizeSectionContent(group?.resumen),
+        ...normalizeSectionContent(group?.notas)
+      ];
+      if (!items.length) return;
+      const panel = document.createElement("article");
+      panel.className = "otc-panel";
+      panel.append(titleLine(title, iconName, "h3"));
+      renderSectionContent(panel, items);
+      grid.append(panel);
+    }
+
+    function renderOtcCertifiedInfo(otc) {
+      if (!otc || typeof otc !== "object") return null;
+      const section = document.createElement("section");
+      section.className = "card section-card otc-certified";
+      section.append(
+        titleLine("Información OTC Certificada", "pills"),
+        createText("p", "", "Contenido orientativo para pacientes. No reemplaza una evaluación médica ni una indicación personalizada.")
+      );
+      const grid = document.createElement("div");
+      grid.className = "otc-grid";
+      appendOtcPanel(grid, "Uso orientativo", otc.uso_orientativo, "pulse", true);
+      appendOtcPanel(grid, "No usar si", otc.no_usar_si, "alert");
+      appendOtcPanel(grid, "Precauciones", otc.precauciones, "shield");
+      appendOtcPanel(grid, "Señales de alarma", otc.senales_alarma, "alert");
+      appendOtcPanel(grid, "Interacciones relevantes", otc.interacciones_relevantes, "layers");
+      appendOtcGroupPanel(grid, "Embarazo y lactancia", otc.embarazo_lactancia, "shield");
+      appendOtcGroupPanel(grid, "Adulto mayor", otc.adulto_mayor, "activity");
+      appendOtcGroupPanel(grid, "Pediatría", otc.pediatria, "target");
+      if (grid.children.length) section.append(grid);
+      if (otc.fecha_revision) {
+        section.append(createText("p", "otc-date", `Fecha de revisión: ${otc.fecha_revision}`));
+      }
+      return section.children.length > 2 ? section : null;
     }
 
     function renderStructuredContent(record) {
@@ -3054,6 +3242,8 @@
       const rco = renderRco(record);
       if (rco) main.append(rco);
       if (content) main.append(content);
+      const otcCertified = record._otcPrimary ? null : renderOtcCertifiedInfo(await loadOtcCertifiedTopic(record, query));
+      if (otcCertified) main.append(otcCertified);
       if (!usesStructuredSections) main.append(alerts);
 
       const sidebar = document.createElement("aside");
@@ -3117,7 +3307,8 @@
         const category = getKnowledgeCategory(fallbackRecord);
         const slug = slugify(query) || slugify(fallbackRecord?.titulo);
         const knowledgeRecord = await loadKnowledgeTopic(slug, category, fallbackRecord);
-        const record = knowledgeRecord || fallbackRecord;
+        const otcPrimaryRecord = knowledgeRecord ? null : await loadOtcPrimaryTopic(slug, fallbackRecord, query);
+        const record = knowledgeRecord || otcPrimaryRecord || fallbackRecord;
 
         if (record) {
           const stats = await loadStatsForRecord(record, query);

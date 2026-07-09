@@ -1,0 +1,115 @@
+{
+  "id": "otc-medicamento-lagrimas-artificiales",
+  "slug": "lagrimas-artificiales",
+  "nombre_comercial": "Lagrimas artificiales",
+  "principio_activo": [
+    "lubricantes oftalmicos"
+  ],
+  "categoria_otc": "oftalmico",
+  "presentaciones": [
+    {
+      "forma": "gotas",
+      "descripcion": "Gotas oftalmicas lubricantes con o sin conservantes segun producto.",
+      "via": "oftalmica"
+    },
+    {
+      "forma": "gel",
+      "descripcion": "Gel oftalmico lubricante en algunas presentaciones.",
+      "via": "oftalmica"
+    },
+    {
+      "forma": "unguento",
+      "descripcion": "Unguento oftalmico lubricante para uso ocular segun etiqueta.",
+      "via": "oftalmica"
+    }
+  ],
+  "uso_orientativo": "Lubricantes oftalmicos usados de forma general para alivio temporal de sequedad o irritacion ocular leve. No deben usarse para dolor ocular, perdida visual, infeccion, trauma o sintomas persistentes sin evaluacion.",
+  "no_usar_si": [
+    "Hay dolor ocular intenso, perdida de vision, sensibilidad marcada a la luz o trauma ocular.",
+    "Hay secrecion purulenta, ojo muy rojo, hinchazon importante o sospecha de infeccion.",
+    "El envase esta vencido, contaminado, abierto fuera del tiempo recomendado o fue compartido.",
+    "Hay alergia a algun componente, conservante o lubricante del producto.",
+    "Se usan lentes de contacto y la etiqueta no permite aplicacion con lentes puestos."
+  ],
+  "precauciones": [
+    "No tocar la punta del envase con el ojo, dedos o superficies.",
+    "Usar productos esteriles y descartar unidosis segun instrucciones.",
+    "Separar de otros colirios si la etiqueta o profesional lo indica.",
+    "Las formulaciones en gel o unguento pueden causar vision borrosa temporal.",
+    "Consultar si se necesitan con mucha frecuencia, si los sintomas persisten o empeoran."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta del producto. La frecuencia depende de sintomas, tipo de lubricante, conservantes, lentes de contacto y enfermedades oculares previas.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dolor ocular, perdida o cambio de vision, halos, trauma o cuerpo extrano.",
+    "Ojo rojo intenso, secrecion, hinchazon, sensibilidad a la luz o fiebre.",
+    "Empeoramiento despues de aplicar gotas o reaccion alergica.",
+    "Uso de producto retirado, contaminado o compartido con sintomas oculares.",
+    "Sequedad persistente asociada a boca seca, dolor articular o enfermedad autoinmune."
+  ],
+  "interacciones_relevantes": [
+    "Otros colirios pueden diluirse si se aplican demasiado juntos.",
+    "Conservantes pueden irritar si se usan con frecuencia o junto con multiples gotas.",
+    "Algunas gotas no son compatibles con lentes de contacto puestos.",
+    "No combinar con gotas para enrojecimiento, antibioticos o corticoides sin orientacion."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia suelen ser productos locales, pero se debe consultar si hay dolor, enrojecimiento importante, infeccion o necesidad de uso frecuente.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Preferir evaluacion si hay sintomas persistentes.",
+      "Evitar productos no esteriles o no aprobados para uso ocular."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe evaluar ojo seco cronico, glaucoma, cirugias oculares, polifarmacia y riesgo de infeccion si los sintomas persisten.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Consultar cambios visuales o dolor.",
+      "Revisar tecnica para evitar contaminacion del envase."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos debe usarse solo con productos adecuados y supervision adulta; ojo rojo, dolor o secrecion requieren evaluacion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar envases compartidos.",
+      "Consultar ante trauma, cuerpo extrano o fotofobia."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "FDA",
+      "titulo": "FDA warns consumers not to purchase or use certain eye drops from several major brands due to risk of eye infection",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-warns-consumers-not-purchase-or-use-certain-eye-drops-several-major-brands-due-risk-eye",
+      "tipo": "referencia-regulatoria",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2023-10-27",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "National Eye Institute",
+      "titulo": "Dry Eye",
+      "url": "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/dry-eye",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "lagrimas-artificiales",
+    "search_keywords": [
+      "lagrimas artificiales",
+      "lubricante ocular",
+      "ojo seco",
+      "gotas oftalmicas",
+      "irritacion ocular"
+    ],
+    "rco_triage_maximo": "orange"
+  },
+  "version": "1.0"
+}

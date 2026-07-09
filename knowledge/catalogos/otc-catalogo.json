@@ -1,0 +1,896 @@
+{
+  "id": "catalogo-maestro-otc",
+  "nombre": "Catalogo Maestro OTC IDB MEDIC",
+  "descripcion": "Indice maestro estatico para organizar futuras fichas OTC certificadas. No contiene contenido clinico ni medicamentos reales publicados.",
+  "version": "1.0",
+  "version_schema": "1.0",
+  "schema_registro": "knowledge/schema/otc-medicamento.schema.json",
+  "documentacion": "knowledge/editorial/otc-catalogo.md",
+  "capacidad_inicial_prevista": 30,
+  "estado": "base-otc-completa-validada",
+  "registros": [
+    {
+      "id": "otc-medicamento-paracetamol",
+      "slug": "paracetamol",
+      "nombre": "Paracetamol",
+      "principio_activo_principal": "paracetamol",
+      "categoria_otc": "analgesico-antipiretico",
+      "subcategoria": "dolor-y-fiebre",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "suspension",
+        "gotas"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/paracetamol.json",
+      "prioridad_idb": 1,
+      "keywords": [
+        "paracetamol",
+        "acetaminofeno",
+        "dolor",
+        "fiebre"
+      ],
+      "aliases": [
+        "acetaminofeno",
+        "acetaminophen",
+        "apap"
+      ]
+    },
+    {
+      "id": "otc-medicamento-ibuprofeno",
+      "slug": "ibuprofeno",
+      "nombre": "Ibuprofeno",
+      "principio_activo_principal": "ibuprofeno",
+      "categoria_otc": "antiinflamatorio",
+      "subcategoria": "aine-dolor-fiebre-inflamacion",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "suspension"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/ibuprofeno.json",
+      "prioridad_idb": 2,
+      "keywords": [
+        "ibuprofeno",
+        "antiinflamatorio",
+        "aine",
+        "dolor",
+        "fiebre"
+      ],
+      "aliases": [
+        "ibuprofen"
+      ]
+    },
+    {
+      "id": "otc-medicamento-naproxeno-sodico",
+      "slug": "naproxeno-sodico",
+      "nombre": "Naproxeno sodico",
+      "principio_activo_principal": "naproxeno sodico",
+      "categoria_otc": "antiinflamatorio",
+      "subcategoria": "aine-dolor-prolongado",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "suspension"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/naproxeno-sodico.json",
+      "prioridad_idb": 3,
+      "keywords": [
+        "naproxeno",
+        "naproxeno sodico",
+        "antiinflamatorio",
+        "aine",
+        "dolor"
+      ],
+      "aliases": [
+        "naproxen sodium",
+        "naproxeno"
+      ]
+    },
+    {
+      "id": "otc-medicamento-loratadina",
+      "slug": "loratadina",
+      "nombre": "Loratadina",
+      "principio_activo_principal": "loratadina",
+      "categoria_otc": "antialergico",
+      "subcategoria": "antihistaminico-no-sedante",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "jarabe",
+        "solucion"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/loratadina.json",
+      "prioridad_idb": 4,
+      "keywords": [
+        "loratadina",
+        "alergia",
+        "rinitis alergica",
+        "ronchas",
+        "antihistaminico"
+      ],
+      "aliases": [
+        "loratadine"
+      ]
+    },
+    {
+      "id": "otc-medicamento-cetirizina",
+      "slug": "cetirizina",
+      "nombre": "Cetirizina",
+      "principio_activo_principal": "cetirizina",
+      "categoria_otc": "antialergico",
+      "subcategoria": "antihistaminico-segunda-generacion",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "jarabe",
+        "gotas"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/cetirizina.json",
+      "prioridad_idb": 5,
+      "keywords": [
+        "cetirizina",
+        "alergia",
+        "ronchas",
+        "picazon",
+        "antihistaminico"
+      ],
+      "aliases": [
+        "cetirizine"
+      ]
+    },
+    {
+      "id": "otc-medicamento-omeprazol",
+      "slug": "omeprazol",
+      "nombre": "Omeprazol",
+      "principio_activo_principal": "omeprazol",
+      "categoria_otc": "digestivo",
+      "subcategoria": "reductor-acidez-ibp",
+      "formas_farmaceuticas": [
+        "capsula",
+        "tableta",
+        "suspension"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/omeprazol.json",
+      "prioridad_idb": 6,
+      "keywords": [
+        "omeprazol",
+        "acidez",
+        "reflujo",
+        "agruras",
+        "protector gastrico"
+      ],
+      "aliases": [
+        "omeprazole",
+        "ibp",
+        "inhibidor de bomba de protones"
+      ]
+    },
+    {
+      "id": "otc-medicamento-carbonato-de-calcio",
+      "slug": "carbonato-de-calcio",
+      "nombre": "Carbonato de calcio",
+      "principio_activo_principal": "carbonato de calcio",
+      "categoria_otc": "digestivo",
+      "subcategoria": "antiacido-suplemento-calcio",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "suspension"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/carbonato-de-calcio.json",
+      "prioridad_idb": 7,
+      "keywords": [
+        "carbonato de calcio",
+        "calcio",
+        "antiacido",
+        "acidez",
+        "suplemento"
+      ],
+      "aliases": [
+        "calcium carbonate"
+      ]
+    },
+    {
+      "id": "otc-medicamento-loperamida",
+      "slug": "loperamida",
+      "nombre": "Loperamida",
+      "principio_activo_principal": "loperamida",
+      "categoria_otc": "digestivo",
+      "subcategoria": "antidiarreico",
+      "formas_farmaceuticas": [
+        "capsula",
+        "tableta",
+        "solucion"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/loperamida.json",
+      "prioridad_idb": 8,
+      "keywords": [
+        "loperamida",
+        "diarrea",
+        "antidiarreico",
+        "evacuaciones liquidas"
+      ],
+      "aliases": [
+        "loperamide"
+      ]
+    },
+    {
+      "id": "otc-medicamento-sales-de-rehidratacion-oral",
+      "slug": "sales-de-rehidratacion-oral",
+      "nombre": "Sales de rehidratacion oral",
+      "principio_activo_principal": "glucosa y electrolitos",
+      "categoria_otc": "rehidratacion",
+      "subcategoria": "rehidratacion-diarrea-vomitos",
+      "formas_farmaceuticas": [
+        "sobre",
+        "polvo",
+        "solucion"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/sales-de-rehidratacion-oral.json",
+      "prioridad_idb": 9,
+      "keywords": [
+        "sales de rehidratacion oral",
+        "suero oral",
+        "sro",
+        "diarrea",
+        "vomitos",
+        "deshidratacion"
+      ],
+      "aliases": [
+        "sro",
+        "ors",
+        "oral rehydration salts",
+        "suero oral"
+      ]
+    },
+    {
+      "id": "otc-medicamento-clotrimazol",
+      "slug": "clotrimazol",
+      "nombre": "Clotrimazol topico",
+      "principio_activo_principal": "clotrimazol",
+      "categoria_otc": "dermatologico",
+      "subcategoria": "antimicotico-topico",
+      "formas_farmaceuticas": [
+        "crema",
+        "solucion",
+        "spray"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/clotrimazol.json",
+      "prioridad_idb": 10,
+      "keywords": [
+        "clotrimazol",
+        "clotrimazol topico",
+        "hongos en la piel",
+        "pie de atleta",
+        "antimicotico"
+      ],
+      "aliases": [
+        "clotrimazole",
+        "antifungico topico"
+      ]
+    },
+    {
+      "id": "otc-medicamento-diclofenaco-gel",
+      "slug": "diclofenaco-gel",
+      "nombre": "Diclofenaco gel",
+      "principio_activo_principal": "diclofenaco",
+      "categoria_otc": "antiinflamatorio",
+      "subcategoria": "aine-topico-dolor-localizado",
+      "formas_farmaceuticas": [
+        "gel"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/diclofenaco-gel.json",
+      "prioridad_idb": 11,
+      "keywords": [
+        "diclofenaco",
+        "diclofenaco gel",
+        "aine topico",
+        "dolor muscular",
+        "dolor articular"
+      ],
+      "aliases": [
+        "diclofenac gel",
+        "diclofenaco topico"
+      ]
+    },
+    {
+      "id": "otc-medicamento-hidrocortisona-topica",
+      "slug": "hidrocortisona-topica",
+      "nombre": "Hidrocortisona 1% topica",
+      "principio_activo_principal": "hidrocortisona",
+      "categoria_otc": "dermatologico",
+      "subcategoria": "corticoide-topico-suave",
+      "formas_farmaceuticas": [
+        "crema",
+        "unguento",
+        "solucion"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/hidrocortisona-topica.json",
+      "prioridad_idb": 12,
+      "keywords": [
+        "hidrocortisona",
+        "hidrocortisona topica",
+        "corticoide topico",
+        "picazon",
+        "irritacion"
+      ],
+      "aliases": [
+        "hydrocortisone",
+        "hidrocortisona 1%"
+      ]
+    },
+    {
+      "id": "otc-medicamento-dimenhidrinato",
+      "slug": "dimenhidrinato",
+      "nombre": "Dimenhidrinato",
+      "principio_activo_principal": "dimenhidrinato",
+      "categoria_otc": "digestivo",
+      "subcategoria": "antiemetico-mareo-viaje",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "solucion"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/dimenhidrinato.json",
+      "prioridad_idb": 13,
+      "keywords": [
+        "dimenhidrinato",
+        "mareo",
+        "nauseas",
+        "vomitos",
+        "cinetosis"
+      ],
+      "aliases": [
+        "dimenhydrinate",
+        "mareo por viaje"
+      ]
+    },
+    {
+      "id": "otc-medicamento-simeticona",
+      "slug": "simeticona",
+      "nombre": "Simeticona",
+      "principio_activo_principal": "simeticona",
+      "categoria_otc": "digestivo",
+      "subcategoria": "antiflatulento",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "gotas",
+        "solucion"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/simeticona.json",
+      "prioridad_idb": 14,
+      "keywords": [
+        "simeticona",
+        "gases",
+        "flatulencia",
+        "distension abdominal",
+        "antiflatulento"
+      ],
+      "aliases": [
+        "simethicone"
+      ]
+    },
+    {
+      "id": "otc-medicamento-psyllium",
+      "slug": "psyllium",
+      "nombre": "Psyllium",
+      "principio_activo_principal": "psyllium",
+      "categoria_otc": "digestivo",
+      "subcategoria": "fibra-laxante-formador-volumen",
+      "formas_farmaceuticas": [
+        "polvo",
+        "capsula",
+        "sobre"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/psyllium.json",
+      "prioridad_idb": 15,
+      "keywords": [
+        "psyllium",
+        "psilio",
+        "fibra",
+        "estrenimiento",
+        "laxante formador de volumen"
+      ],
+      "aliases": [
+        "psilio",
+        "ispaghula"
+      ]
+    },
+    {
+      "id": "otc-medicamento-bisacodilo",
+      "slug": "bisacodilo",
+      "nombre": "Bisacodilo",
+      "principio_activo_principal": "bisacodilo",
+      "categoria_otc": "digestivo",
+      "subcategoria": "laxante-estimulante",
+      "formas_farmaceuticas": [
+        "tableta",
+        "otro"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/bisacodilo.json",
+      "prioridad_idb": 16,
+      "keywords": [
+        "bisacodilo",
+        "laxante",
+        "estrenimiento",
+        "constipacion",
+        "laxante estimulante"
+      ],
+      "aliases": [
+        "bisacodyl"
+      ]
+    },
+    {
+      "id": "otc-medicamento-dextrometorfano",
+      "slug": "dextrometorfano",
+      "nombre": "Dextrometorfano",
+      "principio_activo_principal": "dextrometorfano",
+      "categoria_otc": "respiratorio",
+      "subcategoria": "antitusivo",
+      "formas_farmaceuticas": [
+        "capsula",
+        "tableta",
+        "jarabe",
+        "solucion"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/dextrometorfano.json",
+      "prioridad_idb": 17,
+      "keywords": [
+        "dextrometorfano",
+        "tos seca",
+        "antitusivo",
+        "jarabe para tos",
+        "resfrio"
+      ],
+      "aliases": [
+        "dextromethorphan",
+        "dxm"
+      ]
+    },
+    {
+      "id": "otc-medicamento-guaifenesina",
+      "slug": "guaifenesina",
+      "nombre": "Guaifenesina",
+      "principio_activo_principal": "guaifenesina",
+      "categoria_otc": "respiratorio",
+      "subcategoria": "expectorante",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "jarabe",
+        "solucion"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/guaifenesina.json",
+      "prioridad_idb": 18,
+      "keywords": [
+        "guaifenesina",
+        "expectorante",
+        "flema",
+        "tos con moco",
+        "resfrio"
+      ],
+      "aliases": [
+        "guaifenesin"
+      ]
+    },
+    {
+      "id": "otc-medicamento-xilometazolina-nasal",
+      "slug": "xilometazolina-nasal",
+      "nombre": "Xilometazolina nasal",
+      "principio_activo_principal": "xilometazolina",
+      "categoria_otc": "respiratorio",
+      "subcategoria": "descongestivo-nasal-topico",
+      "formas_farmaceuticas": [
+        "spray",
+        "gotas"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/xilometazolina-nasal.json",
+      "prioridad_idb": 19,
+      "keywords": [
+        "xilometazolina",
+        "descongestivo nasal",
+        "spray nasal",
+        "congestion nasal",
+        "gotas nasales"
+      ],
+      "aliases": [
+        "xylometazoline",
+        "xilometazolina spray"
+      ]
+    },
+    {
+      "id": "otc-medicamento-solucion-salina-nasal",
+      "slug": "solucion-salina-nasal",
+      "nombre": "Solucion salina nasal",
+      "principio_activo_principal": "cloruro de sodio",
+      "categoria_otc": "respiratorio",
+      "subcategoria": "humectacion-lavado-nasal",
+      "formas_farmaceuticas": [
+        "spray",
+        "gotas",
+        "solucion"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/solucion-salina-nasal.json",
+      "prioridad_idb": 20,
+      "keywords": [
+        "solucion salina nasal",
+        "suero nasal",
+        "lavado nasal",
+        "spray salino",
+        "congestion nasal"
+      ],
+      "aliases": [
+        "saline nasal spray",
+        "suero fisiologico nasal"
+      ]
+    },
+    {
+      "id": "otc-medicamento-miconazol-topico",
+      "slug": "miconazol-topico",
+      "nombre": "Miconazol topico",
+      "principio_activo_principal": "miconazol",
+      "categoria_otc": "dermatologico",
+      "subcategoria": "antimicotico-topico",
+      "formas_farmaceuticas": [
+        "crema",
+        "spray",
+        "polvo"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/miconazol-topico.json",
+      "prioridad_idb": 21,
+      "keywords": [
+        "miconazol",
+        "miconazol topico",
+        "hongos en la piel",
+        "pie de atleta",
+        "antimicotico"
+      ],
+      "aliases": [
+        "miconazole",
+        "antifungico topico"
+      ]
+    },
+    {
+      "id": "otc-medicamento-oxido-de-zinc",
+      "slug": "oxido-de-zinc",
+      "nombre": "Oxido de zinc",
+      "principio_activo_principal": "oxido de zinc",
+      "categoria_otc": "dermatologico",
+      "subcategoria": "protector-cutaneo-barrera",
+      "formas_farmaceuticas": [
+        "crema",
+        "unguento"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/oxido-de-zinc.json",
+      "prioridad_idb": 22,
+      "keywords": [
+        "oxido de zinc",
+        "crema barrera",
+        "dermatitis del panal",
+        "irritacion",
+        "protector cutaneo"
+      ],
+      "aliases": [
+        "zinc oxide",
+        "pasta de zinc"
+      ]
+    },
+    {
+      "id": "otc-medicamento-calamina",
+      "slug": "calamina",
+      "nombre": "Calamina",
+      "principio_activo_principal": "calamina",
+      "categoria_otc": "dermatologico",
+      "subcategoria": "antipruriginoso-protector-cutaneo",
+      "formas_farmaceuticas": [
+        "solucion",
+        "crema"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/calamina.json",
+      "prioridad_idb": 23,
+      "keywords": [
+        "calamina",
+        "locion de calamina",
+        "picazon",
+        "irritacion de piel",
+        "picaduras"
+      ],
+      "aliases": [
+        "calamine",
+        "calamine lotion"
+      ]
+    },
+    {
+      "id": "otc-medicamento-peroxido-de-hidrogeno",
+      "slug": "peroxido-de-hidrogeno",
+      "nombre": "Peroxido de hidrogeno 3%",
+      "principio_activo_principal": "peroxido de hidrogeno",
+      "categoria_otc": "primeros-auxilios",
+      "subcategoria": "antiseptico-topico",
+      "formas_farmaceuticas": [
+        "solucion"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/peroxido-de-hidrogeno.json",
+      "prioridad_idb": 24,
+      "keywords": [
+        "peroxido de hidrogeno",
+        "agua oxigenada",
+        "antiseptico",
+        "primeros auxilios",
+        "heridas leves"
+      ],
+      "aliases": [
+        "hydrogen peroxide",
+        "agua oxigenada 3%"
+      ]
+    },
+    {
+      "id": "otc-medicamento-povidona-yodada",
+      "slug": "povidona-yodada",
+      "nombre": "Povidona yodada",
+      "principio_activo_principal": "povidona yodada",
+      "categoria_otc": "primeros-auxilios",
+      "subcategoria": "antiseptico-topico-yodado",
+      "formas_farmaceuticas": [
+        "solucion",
+        "unguento"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/povidona-yodada.json",
+      "prioridad_idb": 25,
+      "keywords": [
+        "povidona yodada",
+        "yodo povidona",
+        "antiseptico",
+        "primeros auxilios",
+        "desinfeccion de piel"
+      ],
+      "aliases": [
+        "povidone iodine",
+        "iodopovidona"
+      ]
+    },
+    {
+      "id": "otc-medicamento-clorhexidina-topica",
+      "slug": "clorhexidina-topica",
+      "nombre": "Clorhexidina topica",
+      "principio_activo_principal": "clorhexidina",
+      "categoria_otc": "primeros-auxilios",
+      "subcategoria": "antiseptico-topico",
+      "formas_farmaceuticas": [
+        "solucion",
+        "spray"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/clorhexidina-topica.json",
+      "prioridad_idb": 26,
+      "keywords": [
+        "clorhexidina",
+        "clorhexidina topica",
+        "antiseptico",
+        "desinfeccion de piel",
+        "primeros auxilios"
+      ],
+      "aliases": [
+        "chlorhexidine",
+        "chlorhexidine gluconate"
+      ]
+    },
+    {
+      "id": "otc-medicamento-nicotina-reemplazo",
+      "slug": "nicotina-reemplazo",
+      "nombre": "Nicotina terapia de reemplazo",
+      "principio_activo_principal": "nicotina",
+      "categoria_otc": "otro",
+      "subcategoria": "cesacion-tabaquica",
+      "formas_farmaceuticas": [
+        "parche",
+        "otro"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/nicotina-reemplazo.json",
+      "prioridad_idb": 27,
+      "keywords": [
+        "nicotina",
+        "terapia de reemplazo",
+        "dejar de fumar",
+        "parche de nicotina",
+        "goma de nicotina"
+      ],
+      "aliases": [
+        "nicotine replacement therapy",
+        "nrt"
+      ]
+    },
+    {
+      "id": "otc-medicamento-vitamina-c",
+      "slug": "vitamina-c",
+      "nombre": "Vitamina C",
+      "principio_activo_principal": "acido ascorbico",
+      "categoria_otc": "vitamina-suplemento",
+      "subcategoria": "suplemento-vitaminico",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "polvo"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/vitamina-c.json",
+      "prioridad_idb": 28,
+      "keywords": [
+        "vitamina c",
+        "acido ascorbico",
+        "suplemento",
+        "vitaminas",
+        "deficiencia"
+      ],
+      "aliases": [
+        "ascorbic acid",
+        "acido ascorbico"
+      ]
+    },
+    {
+      "id": "otc-medicamento-multivitaminico-adulto",
+      "slug": "multivitaminico-adulto",
+      "nombre": "Multivitaminico adulto",
+      "principio_activo_principal": "vitaminas y minerales",
+      "categoria_otc": "vitamina-suplemento",
+      "subcategoria": "suplemento-multivitaminico",
+      "formas_farmaceuticas": [
+        "tableta",
+        "capsula",
+        "otro"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/multivitaminico-adulto.json",
+      "prioridad_idb": 29,
+      "keywords": [
+        "multivitaminico",
+        "multivitaminico adulto",
+        "vitaminas",
+        "minerales",
+        "suplemento"
+      ],
+      "aliases": [
+        "multivitamin",
+        "multivitamin mineral"
+      ]
+    },
+    {
+      "id": "otc-medicamento-lagrimas-artificiales",
+      "slug": "lagrimas-artificiales",
+      "nombre": "Lagrimas artificiales",
+      "principio_activo_principal": "lubricantes oftalmicos",
+      "categoria_otc": "oftalmico",
+      "subcategoria": "lubricante-oftalmico",
+      "formas_farmaceuticas": [
+        "gotas",
+        "gel",
+        "unguento"
+      ],
+      "requiere_revision_clinica": false,
+      "estado": "validado",
+      "version_schema": "1.0",
+      "archivo_json": "knowledge/otc/lagrimas-artificiales.json",
+      "prioridad_idb": 30,
+      "keywords": [
+        "lagrimas artificiales",
+        "lubricante ocular",
+        "ojo seco",
+        "gotas oftalmicas",
+        "irritacion ocular"
+      ],
+      "aliases": [
+        "artificial tears",
+        "lubricant eye drops"
+      ]
+    }
+  ],
+  "_ejemplo_tecnico_no_publicar": {
+    "id": "otc-catalogo-ejemplo-tecnico",
+    "slug": "medicamento-ejemplo-tecnico",
+    "nombre": "Medicamento ejemplo tecnico",
+    "principio_activo_principal": "principio activo ejemplo",
+    "categoria_otc": "otro",
+    "subcategoria": "subcategoria ejemplo",
+    "formas_farmaceuticas": [
+      "forma ejemplo"
+    ],
+    "requiere_revision_clinica": true,
+    "estado": "ejemplo-tecnico",
+    "version_schema": "1.0",
+    "archivo_json": "knowledge/otc/medicamento-ejemplo-tecnico.json",
+    "prioridad_idb": 99,
+    "keywords": [
+      "ejemplo tecnico",
+      "no publicar"
+    ],
+    "aliases": [
+      "placeholder otc"
+    ]
+  }
+}

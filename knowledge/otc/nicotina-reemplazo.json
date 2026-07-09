@@ -1,0 +1,115 @@
+{
+  "id": "otc-medicamento-nicotina-reemplazo",
+  "slug": "nicotina-reemplazo",
+  "nombre_comercial": "Nicotina terapia de reemplazo",
+  "principio_activo": [
+    "nicotina"
+  ],
+  "categoria_otc": "otro",
+  "presentaciones": [
+    {
+      "forma": "parche",
+      "descripcion": "Parche transdermico de nicotina para terapia de reemplazo segun etiqueta.",
+      "via": "transdermica"
+    },
+    {
+      "forma": "otro",
+      "descripcion": "Goma de mascar medicada de nicotina en algunas presentaciones.",
+      "via": "bucal"
+    },
+    {
+      "forma": "otro",
+      "descripcion": "Pastillas o comprimidos para disolver en boca segun producto.",
+      "via": "bucal"
+    }
+  ],
+  "uso_orientativo": "Ayuda farmacologica para dejar de fumar o reducir sintomas de abstinencia por nicotina dentro de un plan de cesacion. No debe combinarse con cigarrillos u otros productos de nicotina sin orientacion por riesgo de sobredosis.",
+  "no_usar_si": [
+    "La persona continua fumando o usando otros productos de nicotina sin plan profesional.",
+    "Hay infarto reciente, arritmia, dolor de pecho, enfermedad cardiaca importante o presion alta no controlada sin consulta.",
+    "La persona es menor de 18 anos sin indicacion profesional.",
+    "Hay embarazo, lactancia o plan de embarazo sin evaluacion.",
+    "Existe alergia a nicotina o reaccion severa a la presentacion."
+  ],
+  "precauciones": [
+    "Usar junto con apoyo conductual o plan para dejar de fumar.",
+    "No exceder la etiqueta ni combinar varias formas de nicotina sin orientacion.",
+    "Evitar fumar durante el uso por riesgo de exceso de nicotina.",
+    "Mantener fuera del alcance de ninos y mascotas; incluso productos usados pueden contener nicotina.",
+    "Consultar si hay diabetes, ulcera, hipertension, enfermedad cardiaca o problemas de mandibula para goma."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar estrictamente segun etiqueta o programa profesional de cesacion. La seleccion de forma, concentracion y duracion depende del patron de consumo y riesgos clinicos.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dolor de pecho, palpitaciones intensas, desmayo o dificultad para respirar.",
+    "Nauseas intensas, vomitos, diarrea, mareo, debilidad o confusion sugerentes de exceso de nicotina.",
+    "Convulsion, imposibilidad de despertar o ingestion accidental por nino o mascota.",
+    "Erupcion extensa, hinchazon o dificultad respiratoria.",
+    "Irritacion severa de piel por parche o lesiones importantes en boca con goma o pastilla."
+  ],
+  "interacciones_relevantes": [
+    "No combinar con cigarrillos, vapeadores, tabaco sin humo u otros productos de nicotina sin orientacion.",
+    "Dejar de fumar puede modificar necesidades de algunos medicamentos metabolizados por humo de tabaco.",
+    "Cafeina, teofilina, clozapina, olanzapina, insulina y anticoagulantes pueden requerir revision al cambiar consumo de tabaco.",
+    "Medicamentos para hipertension o arritmias requieren prudencia si hay sintomas cardiovasculares."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar terapia de reemplazo con nicotina; dejar de fumar es prioritario, pero la forma de apoyo debe individualizarse profesionalmente.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No combinar con tabaco durante embarazo.",
+      "Mantener productos fuera del alcance de ninos."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe revisar enfermedad cardiovascular, presion arterial, polifarmacia y riesgos de interacciones al suspender tabaco.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Consultar si hay arritmias, angina o infarto reciente.",
+      "Vigilar mareos, palpitaciones o insomnio."
+    ]
+  },
+  "pediatria": {
+    "resumen": "No debe usarse en ninos o adolescentes sin indicacion profesional. La ingestion accidental de nicotina puede ser grave.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Guardar parches, goma y pastillas fuera del alcance de ninos.",
+      "Buscar atencion urgente ante ingestion accidental."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Goma de mascar de nicotina",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a684056-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2017-10-15",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "FDA",
+      "titulo": "Want to Quit Smoking? FDA-Approved Products Can Help",
+      "url": "https://www.fda.gov/consumers/consumer-updates/want-quit-smoking-fda-approved-products-can-help",
+      "tipo": "referencia-regulatoria",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "nicotina-reemplazo",
+    "search_keywords": [
+      "nicotina",
+      "terapia de reemplazo",
+      "dejar de fumar",
+      "parche de nicotina",
+      "goma de nicotina"
+    ],
+    "rco_triage_maximo": "orange"
+  },
+  "version": "1.0"
+}

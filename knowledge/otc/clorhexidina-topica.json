@@ -1,0 +1,110 @@
+{
+  "id": "otc-medicamento-clorhexidina-topica",
+  "slug": "clorhexidina-topica",
+  "nombre_comercial": "Clorhexidina topica",
+  "principio_activo": [
+    "clorhexidina"
+  ],
+  "categoria_otc": "primeros-auxilios",
+  "presentaciones": [
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion antiseptica topica para piel segun rotulado.",
+      "via": "topica"
+    },
+    {
+      "forma": "spray",
+      "descripcion": "Spray antiseptico cutaneo en algunas presentaciones.",
+      "via": "topica"
+    }
+  ],
+  "uso_orientativo": "Antiseptico topico usado de forma general para limpieza antiseptica de piel intacta o pequenas lesiones superficiales segun etiqueta. No debe usarse en ojos, oido medio, meninges, heridas profundas o quemaduras extensas sin supervision.",
+  "no_usar_si": [
+    "Hay alergia a clorhexidina o reaccion previa a antisepticos similares.",
+    "Se planea aplicar en ojos, oidos, boca, mucosas profundas o cavidades no indicadas.",
+    "La herida es profunda, extensa, por mordedura, puncion, quemadura importante o tiene cuerpo extrano.",
+    "Hay signos de infeccion establecida como pus, fiebre, dolor creciente o lineas rojas.",
+    "Se trata de lactantes pequenos o piel extensa sin indicacion profesional."
+  ],
+  "precauciones": [
+    "Usar solo externamente y segun etiqueta.",
+    "Evitar contacto con ojos y oidos; puede causar dano serio si entra en zonas no indicadas.",
+    "No mezclar con jabones incompatibles, yodo, peroxido u otros antisepticos sin indicacion.",
+    "Suspender si aparece irritacion intensa, urticaria, hinchazon o dificultad respiratoria.",
+    "Mantener fuera del alcance de ninos y evitar ingestion."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun el rotulado del producto o indicacion profesional. La frecuencia y duracion dependen de la indicacion y de la integridad de la piel.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dificultad para respirar, hinchazon de cara o garganta, ronchas extensas o desmayo.",
+    "Contacto accidental con ojos u oidos, ingestion o exposicion extensa en ninos.",
+    "Herida profunda, sangrado importante, quemadura extensa, mordedura o puncion.",
+    "Fiebre, pus, dolor creciente, calor local o lineas rojas.",
+    "Irritacion severa, ampollas o empeoramiento despues de aplicar."
+  ],
+  "interacciones_relevantes": [
+    "Jabones y detergentes pueden disminuir actividad de algunas formulaciones de clorhexidina.",
+    "No combinar con povidona yodada, peroxido de hidrogeno u otros antisepticos sin orientacion.",
+    "Productos alcoholados pueden aumentar irritacion en piel lesionada.",
+    "Informar si se usan tratamientos topicos prescritos en la misma zona."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar en areas extensas, heridas relevantes o cerca de mama.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar aplicar en pezon o areola antes de lactar sin indicacion.",
+      "No usar en mucosas o heridas profundas sin supervision."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe evaluar piel fragil, heridas cronicas, diabetes, mala circulacion y riesgo de reaccion alergica.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No aplicar en ulceras o lesiones profundas sin supervision.",
+      "Consultar lesiones infectadas o de evolucion lenta."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos debe usarse con supervision adulta y solo si la etiqueta lo permite; lactantes pequenos requieren orientacion profesional.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar contacto con ojos, boca y oidos.",
+      "Consultar por heridas extensas, quemaduras o ingestion accidental."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "FDA",
+      "titulo": "FDA Drug Safety Communication: rare but serious allergic reactions with chlorhexidine gluconate",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-warns-about-rare-serious-allergic-reactions-skin-antiseptic-chlorhexidine-gluconate",
+      "tipo": "referencia-regulatoria",
+      "pais_o_region": "Estados Unidos",
+      "fecha_publicacion": "2017-02-02",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "DailyMed",
+      "titulo": "Chlorhexidine gluconate topical drug label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorhexidine%20gluconate%20topical",
+      "tipo": "rotulado-oficial",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "clorhexidina-topica",
+    "search_keywords": [
+      "clorhexidina",
+      "clorhexidina topica",
+      "antiseptico",
+      "desinfeccion de piel",
+      "primeros auxilios"
+    ],
+    "rco_triage_maximo": "orange"
+  },
+  "version": "1.0"
+}

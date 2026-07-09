@@ -1,0 +1,118 @@
+{
+  "id": "otc-medicamento-loratadina",
+  "slug": "loratadina",
+  "nombre_comercial": "Loratadina",
+  "principio_activo": [
+    "loratadina"
+  ],
+  "categoria_otc": "antialergico",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales de antihistaminico no sedante o poco sedante segun producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales disponibles en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "jarabe",
+      "descripcion": "Jarabe oral con concentracion variable segun producto.",
+      "via": "oral"
+    },
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion oral en presentaciones pediatricas o familiares segun etiqueta.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Antihistaminico usado de forma general para sintomas de alergia como estornudos, secrecion nasal, picazon ocular o ronchas leves. No trata reacciones alergicas graves ni reemplaza atencion si hay dificultad respiratoria o hinchazon importante.",
+  "no_usar_si": [
+    "Hay alergia conocida a loratadina o componentes del producto.",
+    "Los sintomas sugieren anafilaxia, dificultad para respirar, hinchazon de lengua o garganta, desmayo o empeoramiento rapido.",
+    "Hay enfermedad hepatica o renal significativa sin orientacion profesional.",
+    "Se usaran productos combinados para gripe o resfrio sin revisar otros principios activos.",
+    "El cuadro es nuevo, intenso, persistente o se acompana de fiebre u otros sintomas no habituales."
+  ],
+  "precauciones": [
+    "Aunque suele causar menos sueno que otros antihistaminicos, observar respuesta individual antes de conducir o usar maquinaria.",
+    "Consultar si se toman otros medicamentos, suplementos o productos para alergia, gripe o sueno.",
+    "No usar para tratar asma, dificultad respiratoria ni reacciones alergicas graves.",
+    "Revisar la edad minima y presentacion adecuada en ninos."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta del producto o indicacion profesional. No duplicar con otros antihistaminicos ni combinar productos para alergia o resfrio sin revisar ingredientes.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dificultad para respirar, opresion en el pecho, hinchazon de labios, lengua, cara o garganta.",
+    "Desmayo, confusion, ronchas extensas o reaccion que progresa rapidamente.",
+    "Somnolencia intensa, palpitaciones, mareo importante o reaccion inusual.",
+    "Fiebre alta, dolor facial intenso, secrecion purulenta persistente o sintomas que no mejoran."
+  ],
+  "interacciones_relevantes": [
+    "Otros antihistaminicos o productos combinados pueden aumentar efectos adversos o duplicidad.",
+    "Alcohol y sedantes pueden aumentar somnolencia en algunas personas.",
+    "Medicamentos que afectan higado o rinon requieren consulta si el uso sera repetido.",
+    "Informar siempre uso de suplementos y productos herbales."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar antes de usar, sobre todo si el uso sera repetido o si hay otros medicamentos.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "La eleccion de antihistaminico debe considerar etapa del embarazo y severidad de sintomas.",
+      "Vigilar somnolencia o irritabilidad en lactante si un profesional autoriza uso."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores conviene revisar somnolencia, caidas, funcion hepatica o renal y uso de multiples medicamentos.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar combinaciones con sedantes sin indicacion.",
+      "Consultar si hay confusion, mareos o fragilidad."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos se requiere presentacion adecuada a la edad y revision de etiqueta o indicacion pediatrica.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar productos de adultos en ninos pequenos.",
+      "Consultar si hay dificultad respiratoria, sibilancias, fiebre o decaimiento."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Loratadina",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a697038-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "NHS",
+      "titulo": "Loratadine (Clarityn)",
+      "url": "https://www.nhs.uk/medicines/loratadine/",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Reino Unido",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "loratadina",
+    "search_keywords": [
+      "loratadina",
+      "antihistaminico",
+      "alergia",
+      "rinitis alergica",
+      "ronchas",
+      "picazon"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

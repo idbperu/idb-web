@@ -1,0 +1,104 @@
+{
+  "id": "otc-medicamento-dimenhidrinato",
+  "slug": "dimenhidrinato",
+  "nombre_comercial": "Dimenhidrinato",
+  "principio_activo": [
+    "dimenhidrinato"
+  ],
+  "categoria_otc": "digestivo",
+  "presentaciones": [
+    {
+      "forma": "tableta",
+      "descripcion": "Tabletas orales para mareo por movimiento, nauseas o vomitos segun etiqueta.",
+      "via": "oral"
+    },
+    {
+      "forma": "capsula",
+      "descripcion": "Capsulas orales disponibles en algunas presentaciones.",
+      "via": "oral"
+    },
+    {
+      "forma": "solucion",
+      "descripcion": "Solucion oral con concentracion variable segun producto.",
+      "via": "oral"
+    }
+  ],
+  "uso_orientativo": "Antihistaminico con efecto antiemetico usado de forma general para prevenir o aliviar mareo por movimiento, nauseas o vomitos leves. Puede causar somnolencia y no debe retrasar evaluacion si los vomitos son persistentes o hay deshidratacion.",
+  "no_usar_si": [
+    "Hay alergia a dimenhidrinato, difenhidramina u otros antihistaminicos similares.",
+    "La persona debe conducir, operar maquinaria o mantenerse alerta y no conoce su respuesta al medicamento.",
+    "Hay glaucoma de angulo cerrado, retencion urinaria, crecimiento prostatico sintomatico, enfermedad respiratoria importante o uso de sedantes sin consulta.",
+    "Los vomitos son persistentes, con sangre, dolor abdominal intenso, fiebre alta, rigidez de cuello o signos neurologicos.",
+    "Se usa en ninos pequenos sin indicacion profesional."
+  ],
+  "precauciones": [
+    "Puede causar sueno, mareo, boca seca, vision borrosa o confusion.",
+    "Evitar alcohol y otros sedantes.",
+    "Consultar si hay embarazo, lactancia, adulto mayor, enfermedad hepatica, convulsiones o enfermedades respiratorias.",
+    "No usar para cubrir vomitos persistentes o sintomas de intoxicacion, apendicitis, meningitis u otra urgencia."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta o indicacion profesional. No duplicar con otros antihistaminicos ni aumentar frecuencia por cuenta propia.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Somnolencia extrema, confusion, alucinaciones, convulsiones o desmayo.",
+    "Vomitos persistentes, sangre en vomito, dolor abdominal fuerte o signos de deshidratacion.",
+    "Dificultad para respirar, hinchazon de cara o garganta, ronchas extensas.",
+    "Dolor de cabeza intenso, rigidez de cuello, fiebre alta o sintomas neurologicos."
+  ],
+  "interacciones_relevantes": [
+    "Alcohol, sedantes, medicamentos para dormir, opioides y otros antihistaminicos aumentan somnolencia.",
+    "Antidepresivos, antipsicoticos o medicamentos con efecto anticolinergico pueden aumentar confusion, sequedad o retencion urinaria.",
+    "Productos combinados para gripe, alergia o sueno pueden duplicar antihistaminicos.",
+    "Informar medicamentos cronicos antes de usar de forma repetida."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia debe consultarse antes de usar, especialmente si los vomitos son persistentes o hay deshidratacion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No automedicar vomitos intensos en embarazo.",
+      "Vigilar somnolencia en lactante si un profesional autoriza uso."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores aumenta riesgo de somnolencia, caidas, confusion, retencion urinaria y sequedad por efecto anticolinergico.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar combinaciones sedantes.",
+      "Consultar si hay deterioro cognitivo, glaucoma o problemas urinarios."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos se requiere producto adecuado para la edad y orientacion pediatrica, especialmente si hay vomitos o riesgo de deshidratacion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "No usar productos de adultos.",
+      "Buscar atencion si hay somnolencia, pocos panales mojados, fiebre o vomitos persistentes."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "MedlinePlus",
+      "titulo": "Dimenhidrinato",
+      "url": "https://medlineplus.gov/spanish/druginfo/meds/a607046-es.html",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "dimenhidrinato",
+    "search_keywords": [
+      "dimenhidrinato",
+      "mareo",
+      "nauseas",
+      "vomitos",
+      "mareo por viaje"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}

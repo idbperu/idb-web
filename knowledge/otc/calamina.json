@@ -1,0 +1,109 @@
+{
+  "id": "otc-medicamento-calamina",
+  "slug": "calamina",
+  "nombre_comercial": "Calamina",
+  "principio_activo": [
+    "calamina"
+  ],
+  "categoria_otc": "dermatologico",
+  "presentaciones": [
+    {
+      "forma": "solucion",
+      "descripcion": "Locion topica de calamina para aplicacion externa segun etiqueta.",
+      "via": "topica"
+    },
+    {
+      "forma": "crema",
+      "descripcion": "Crema topica calmante en algunas presentaciones.",
+      "via": "topica"
+    }
+  ],
+  "uso_orientativo": "Protector y calmante cutaneo usado de forma general para picazon o irritacion leve por picaduras, plantas irritantes o erupciones superficiales leves. No debe usarse en heridas profundas, ojos ni cuadros con infeccion.",
+  "no_usar_si": [
+    "Hay alergia a calamina, oxido de zinc, oxidos ferricos o componentes del producto.",
+    "La lesion esta en ojos, boca, mucosas o heridas profundas.",
+    "Hay fiebre, pus, dolor intenso, ampollas extensas o extension rapida del enrojecimiento.",
+    "La erupcion es generalizada, con dificultad respiratoria o hinchazon de cara.",
+    "La irritacion corresponde a quemadura extensa o exposicion quimica importante."
+  ],
+  "precauciones": [
+    "Agitar si la etiqueta lo indica y aplicar solo en piel externa.",
+    "Evitar inhalar polvo seco o aplicar cerca de ojos.",
+    "Suspender si aumenta irritacion, ardor o resequedad intensa.",
+    "Consultar si la picazon persiste, empeora o se acompana de signos de infeccion.",
+    "No usar como unico manejo de reacciones alergicas severas."
+  ],
+  "dosis_general_orientativa": {
+    "texto": "Usar segun etiqueta del producto o indicacion profesional. No aplicar en zonas extensas, mucosas ni heridas profundas sin evaluacion.",
+    "requiere_revision_profesional": true
+  },
+  "senales_alarma": [
+    "Dificultad para respirar, hinchazon de labios, lengua o cara, o ronchas extensas.",
+    "Fiebre, pus, dolor intenso, calor local o expansion rapida del enrojecimiento.",
+    "Lesiones en ojos, boca, genitales o piel ampliamente afectada.",
+    "Quemadura extensa, ampollas grandes o exposicion a sustancias quimicas.",
+    "Empeoramiento despues de aplicar el producto."
+  ],
+  "interacciones_relevantes": [
+    "Puede interferir con la aplicacion de otros productos topicos si forma una capa sobre la piel.",
+    "No combinar con corticoides, anestesicos topicos o antisepticos sin orientacion si hay irritacion importante.",
+    "Productos perfumados o alcoholados pueden aumentar ardor.",
+    "Informar si se usan tratamientos dermatologicos prescritos en la misma zona."
+  ],
+  "embarazo_lactancia": {
+    "resumen": "Durante embarazo o lactancia se debe consultar si la zona es extensa, mamaria o si la picazon se acompana de erupcion generalizada.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar aplicar en pezon o areola antes de lactar sin orientacion.",
+      "Consultar por prurito intenso o generalizado durante embarazo."
+    ]
+  },
+  "adulto_mayor": {
+    "resumen": "En adultos mayores se debe revisar fragilidad cutanea, resequedad, medicamentos y riesgo de infeccion secundaria por rascado.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar uso excesivo si reseca la piel.",
+      "Consultar lesiones dolorosas, extensas o recurrentes."
+    ]
+  },
+  "pediatria": {
+    "resumen": "En ninos debe usarse solo en piel externa y segun etiqueta; lactantes o erupciones extensas requieren evaluacion.",
+    "consultar_antes_de_usar": true,
+    "notas": [
+      "Evitar aplicacion cerca de ojos, boca o manos que puedan llevarse a la boca.",
+      "Consultar si hay fiebre, decaimiento o ampollas."
+    ]
+  },
+  "fuente_oficial": [
+    {
+      "organizacion": "FDA",
+      "titulo": "Outsmarting Poison Ivy and Other Poisonous Plants",
+      "url": "https://www.fda.gov/consumers/consumer-updates/outsmarting-poison-ivy-and-other-poisonous-plants",
+      "tipo": "referencia-educativa",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    },
+    {
+      "organizacion": "DailyMed",
+      "titulo": "Calamine lotion drug label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=calamine%20lotion",
+      "tipo": "rotulado-oficial",
+      "pais_o_region": "Estados Unidos",
+      "fecha_consulta": "2026-07-08"
+    }
+  ],
+  "fecha_revision": "2026-07-08",
+  "estado_validacion": "validado",
+  "compatibilidad": {
+    "knowledge_slug_relacionado": "calamina",
+    "search_keywords": [
+      "calamina",
+      "locion de calamina",
+      "picazon",
+      "irritacion de piel",
+      "picaduras"
+    ],
+    "rco_triage_maximo": "yellow"
+  },
+  "version": "1.0"
+}
