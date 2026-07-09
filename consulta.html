@@ -1299,6 +1299,7 @@
     </div>
   </footer>
 
+  <script src="search.js"></script>
   <script>
     const VITA_URL = "https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.";
     const KNOWLEDGE_CATEGORY_MAP = {
@@ -1327,6 +1328,7 @@
       "salud-mental",
       "adulto-mayor"
     ];
+    let resolvedContextOverride = "";
     const KNOWLEDGE_SLUG_ALIASES = {
       "dificultad-para-respirar": "falta-de-aire"
     };
@@ -1456,7 +1458,7 @@
     }
 
     function getContext() {
-      const value = normalizeText(new URLSearchParams(window.location.search).get("context") || "");
+      const value = normalizeText(resolvedContextOverride || new URLSearchParams(window.location.search).get("context") || "");
       const allowed = {
         pediatrico: "pediatrico",
         infantil: "pediatrico",
@@ -1467,6 +1469,35 @@
         adulto: ""
       };
       return allowed[value] || "";
+    }
+
+    async function resolveWithUnifiedSearch(query) {
+      const engine = window.IDBMedicalSearch;
+      if (!engine?.resolve) return null;
+
+      try {
+        if (typeof engine.load === "function") {
+          await engine.load();
+        }
+        return engine.resolve(query);
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function canonicalQueryFromResolved(resolved, fallbackQuery = "") {
+      const url = String(resolved?.url || "");
+      const queryString = url.includes("?") ? url.split("?")[1] : "";
+      const params = new URLSearchParams(queryString);
+      return {
+        slug: params.get("q") || resolved?.slug || slugify(fallbackQuery),
+        context: params.get("context") || ""
+      };
+    }
+
+    function consultationUrlWithContext(slug, context = "") {
+      const url = `consulta.html?q=${encodeURIComponent(slug)}`;
+      return context ? `${url}&context=${encodeURIComponent(context)}` : url;
     }
 
     function normalizeQueryIntent(query) {
@@ -3301,18 +3332,22 @@
       }
 
       try {
+        const unifiedResolved = await resolveWithUnifiedSearch(query);
+        const canonical = canonicalQueryFromResolved(unifiedResolved, query);
+        resolvedContextOverride = canonical.context || "";
+        const effectiveQuery = canonical.slug || query;
         const response = await fetch("search-index.json");
         const records = await response.json();
-        const fallbackRecord = Array.isArray(records) ? findRecord(records, query) : null;
+        const fallbackRecord = unifiedResolved?.record || (Array.isArray(records) ? findRecord(records, effectiveQuery) : null);
         const category = getKnowledgeCategory(fallbackRecord);
-        const slug = slugify(query) || slugify(fallbackRecord?.titulo);
+        const slug = canonical.slug || slugify(effectiveQuery) || slugify(fallbackRecord?.titulo);
         const knowledgeRecord = await loadKnowledgeTopic(slug, category, fallbackRecord);
-        const otcPrimaryRecord = knowledgeRecord ? null : await loadOtcPrimaryTopic(slug, fallbackRecord, query);
+        const otcPrimaryRecord = knowledgeRecord ? null : await loadOtcPrimaryTopic(slug, fallbackRecord, effectiveQuery);
         const record = knowledgeRecord || otcPrimaryRecord || fallbackRecord;
 
         if (record) {
-          const stats = await loadStatsForRecord(record, query);
-          await renderRecord(record, query, records, stats);
+          const stats = await loadStatsForRecord(record, effectiveQuery);
+          await renderRecord(record, effectiveQuery, records, stats);
         } else {
           renderEmpty(query);
         }
@@ -3321,10 +3356,19 @@
       }
     }
 
-    document.querySelector(".top-search")?.addEventListener("submit", (event) => {
+    document.querySelector(".top-search")?.addEventListener("submit", async (event) => {
       event.preventDefault();
       const input = event.currentTarget.querySelector("input");
-      const next = slugify(input.value);
+      const value = input?.value?.trim() || "";
+      if (!value) return;
+
+      const unifiedResolved = await resolveWithUnifiedSearch(value);
+      if (unifiedResolved?.url) {
+        window.location.href = unifiedResolved.url;
+        return;
+      }
+
+      const next = slugify(value);
       if (next) window.location.href = consultationUrl(next);
     });
 
