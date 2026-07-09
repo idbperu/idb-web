@@ -145,11 +145,11 @@
     .hero {
       color: #fff;
       background:
-      linear-gradient(rgba(16,43,38,.65),rgba(16,43,38,.65)),
-      url('./imagenes/prevencion-idb.jpg');
-      background-size:cover;
-      background-position:center;
-      background-repeat:no-repeat;
+        linear-gradient(rgba(16,43,38,.65),rgba(16,43,38,.65)),
+        url('./imagenes/prevencion-idb.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     .hero-inner {
       width: min(var(--max), calc(100% - 40px));
@@ -449,6 +449,88 @@
       box-shadow: 0 18px 32px rgba(0, 0, 0, 0.16);
     }
 
+    .official-related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .official-link-card {
+      display: grid;
+      min-height: 138px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+    .official-link-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(31, 143, 115, 0.36);
+      box-shadow: 0 18px 36px rgba(22, 49, 45, 0.12);
+    }
+    .official-link-card span {
+      color: var(--green-dark);
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .official-link-card strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 1.08rem;
+      line-height: 1.22;
+    }
+    .official-vita {
+      padding: 0 0 68px;
+      background: var(--mist);
+    }
+    .official-vita-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 20px;
+      padding: 22px 24px;
+      border: 1px solid rgba(31, 143, 115, .22);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .official-vita-card h2 {
+      margin: 0 0 6px;
+      font-size: 1.22rem;
+      line-height: 1.2;
+    }
+    .official-vita-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .official-vita-card .button {
+      min-height: 42px;
+      padding: 0 18px;
+      border: 1px solid rgba(31, 143, 115, .26);
+      color: var(--green-dark);
+      background: var(--green-soft);
+      box-shadow: none;
+      white-space: nowrap;
+    }
+    .official-trust {
+      padding: 26px 0 34px;
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+    .official-trust p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .official-trust a {
+      color: var(--green-dark);
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     .site-footer {
       color: rgba(255, 255, 255, 0.82);
       background: #102b26;
@@ -512,7 +594,11 @@
       .nav a::after { bottom: 4px; }
       .hero-inner, .two-col, .cta-inner { grid-template-columns: 1fr; }
       .hero-panel { max-width: 460px; }
-      .cards-grid, .habits-grid, .footer-main { grid-template-columns: repeat(2, 1fr); }
+      .cards-grid, .habits-grid, .official-related-grid, .footer-main { grid-template-columns: repeat(2, 1fr); }
+      .official-vita-card { grid-template-columns: 1fr; padding: 18px; gap: 12px; }
+      .official-vita-card h2 { font-size: 1.08rem; }
+      .official-vita-card p { font-size: .9rem; line-height: 1.45; }
+      .official-vita-card .button { width: fit-content; min-height: 38px; }
       .cta-inner { padding: 58px 0; }
     }
 
@@ -532,7 +618,7 @@
         padding: 62px 0;
       }
       .section { padding: 68px 0; }
-      .cards-grid, .check-list, .habits-grid, .footer-main { grid-template-columns: 1fr; }
+      .cards-grid, .check-list, .habits-grid, .official-related-grid, .footer-main { grid-template-columns: 1fr; }
       .card, .habit { min-height: auto; }
       .footer-bottom-inner {
         align-items: flex-start;
@@ -703,8 +789,8 @@
     <section class="section section-soft" aria-labelledby="habitos-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Autocuidado</p>
-          <h2 id="habitos-title">Hábitos protectores para la salud</h2>
+          <p class="eyebrow">Consejos prácticos en casa</p>
+          <h2 id="habitos-title">Hábitos saludables para la prevención</h2>
           <p>Los hábitos protectores son prácticas cotidianas que ayudan a fortalecer el bienestar general. No reemplazan la atención profesional, pero sí construyen una base de cuidado sostenible.</p>
         </div>
         <div class="habits-grid">
@@ -768,13 +854,39 @@
       </div>
     </section>
 
-    <section class="cta">
-      <div class="cta-inner">
-        <div>
-          <h2>Continúa explorando la biblioteca IDB</h2>
-          <p>Consulta otros recursos educativos sobre nutrición, actividad física, sueño, bienestar emocional y envejecimiento saludable.</p>
+        <section class="section section-soft" aria-labelledby="interes-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">También te puede interesar</p>
+          <h2 id="interes-title">Rutas relacionadas dentro de IDB MEDIC</h2>
+          <p>Explora síntomas, enfermedades, medicamentos y recursos educativos conectados con este tema.</p>
         </div>
-        <a class="button button-light" href="recursos.html">Volver a Recursos</a>
+        <div class="official-related-grid">
+          <a class="official-link-card" href="consulta.html?q=fatiga"><span>Síntoma relacionado</span><strong>Fatiga</strong></a>
+          <a class="official-link-card" href="consulta.html?q=dolor-de-pecho"><span>Síntoma relacionado</span><strong>Dolor de pecho</strong></a>
+          <a class="official-link-card" href="consulta.html?q=diabetes"><span>Enfermedad relacionada</span><strong>Diabetes</strong></a>
+          <a class="official-link-card" href="consulta.html?q=hipertension"><span>Enfermedad relacionada</span><strong>Hipertensión</strong></a>
+          <a class="official-link-card" href="temas.html"><span>Recurso educativo</span><strong>Temas de salud</strong></a>
+          <a class="official-link-card" href="recursos.html"><span>Recurso educativo</span><strong>Recursos IDB</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="official-vita" aria-labelledby="vita-mini-title">
+      <div class="wrap">
+        <div class="official-vita-card">
+          <div>
+            <h2 id="vita-mini-title">Hablar con VITA</h2>
+            <p>Si observas cambios persistentes o no sabes por dónde empezar, VITA puede ayudarte a elegir el recurso IDB más adecuado.</p>
+          </div>
+          <a class="button" href="index.html#vita">Abrir VITA</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="official-trust" aria-label="Confianza y fuentes">
+      <div class="wrap">
+        <p>Contenido preventivo general. Las señales de alerta no son diagnóstico, pero pueden indicar que conviene consultar. Revisa el criterio editorial y las referencias generales en <a href="fuentes.html">Fuentes IDB</a>.</p>
       </div>
     </section>
   </main>

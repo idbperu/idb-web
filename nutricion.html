@@ -131,11 +131,11 @@
     .hero {
       color: #fff;
       background:
-      linear-gradient(rgba(16,43,38,.65),rgba(16,43,38,.65)),
-      url('./imagenes/nutricion-idb.jpg');
-      background-size:cover;
-      background-position:center;
-      background-repeat:no-repeat;
+        linear-gradient(rgba(16,43,38,.65),rgba(16,43,38,.65)),
+        url('./imagenes/nutricion-idb.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     .hero-inner {
       width: min(var(--max), calc(100% - 40px));
@@ -459,6 +459,94 @@
       font-weight: 750;
     }
 
+    .official-related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .official-link-card {
+      display: grid;
+      min-height: 138px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, 0.06);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+    .official-link-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(31, 143, 115, 0.36);
+      box-shadow: 0 18px 36px rgba(22, 49, 45, 0.12);
+    }
+    .official-link-card span {
+      color: var(--green-dark);
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .official-link-card strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 1.08rem;
+      line-height: 1.22;
+    }
+    .official-vita {
+      padding: 0 0 68px;
+      background: var(--mist);
+    }
+    .official-vita-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 20px;
+      padding: 22px 24px;
+      border: 1px solid rgba(31, 143, 115, .22);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .official-vita-card h2 {
+      margin: 0 0 6px;
+      font-size: 1.22rem;
+      line-height: 1.2;
+    }
+    .official-vita-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .official-vita-card .button {
+      min-height: 42px;
+      padding: 0 18px;
+      border: 1px solid rgba(31, 143, 115, .26);
+      color: var(--green-dark);
+      background: var(--green-soft);
+      box-shadow: none;
+      white-space: nowrap;
+    }
+    .official-trust {
+      padding: 26px 0 34px;
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+    .official-trust p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .official-trust a {
+      color: var(--green-dark);
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .article-card { position: relative; }
+    .article-card .article-link::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+
     @media (max-width: 1080px) {
       .articles-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
@@ -487,6 +575,7 @@
       .hero-media { max-width: 520px; }
       .topics-grid, .recommendations-grid, .footer-main { grid-template-columns: repeat(2, 1fr); }
       .articles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .official-related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .cta-inner { padding: 58px 0; }
     }
 
@@ -507,7 +596,11 @@
       }
       .hero-media, .hero-media img { min-height: 300px; }
       .section { padding: 68px 0; }
-      .topics-grid, .articles-grid, .recommendations-grid, .footer-main { grid-template-columns: 1fr; }
+      .topics-grid, .articles-grid, .recommendations-grid, .official-related-grid, .footer-main { grid-template-columns: 1fr; }
+      .official-vita-card { grid-template-columns: 1fr; padding: 18px; gap: 12px; }
+      .official-vita-card h2 { font-size: 1.08rem; }
+      .official-vita-card p { font-size: .9rem; line-height: 1.45; }
+      .official-vita-card .button { width: fit-content; min-height: 38px; }
       .topic-card, .article-card, .recommendation { min-height: auto; }
       .footer-bottom-inner {
         align-items: flex-start;
@@ -701,8 +794,8 @@
     <section class="section" aria-labelledby="recomendaciones-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Recomendaciones generales</p>
-          <h2 id="recomendaciones-title">Orientaciones educativas para empezar</h2>
+          <p class="eyebrow">Consejos prácticos en casa</p>
+          <h2 id="recomendaciones-title">Acciones simples para aplicar en casa</h2>
           <p>Estas recomendaciones son generales y no sustituyen una evaluación personalizada. Pueden servir como punto de partida para revisar hábitos y preparar consultas.</p>
         </div>
         <div class="recommendations-grid">
@@ -732,13 +825,39 @@
       </div>
     </section>
 
-    <section class="cta">
-      <div class="cta-inner">
-        <div>
-          <h2>Consulta más recursos en Biblioteca IDB</h2>
-          <p>Explora contenidos educativos sobre prevención, actividad física, sueño, bienestar emocional y envejecimiento saludable.</p>
+        <section class="section section-soft" aria-labelledby="interes-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">También te puede interesar</p>
+          <h2 id="interes-title">Rutas relacionadas dentro de IDB MEDIC</h2>
+          <p>Explora síntomas, enfermedades, medicamentos y recursos educativos conectados con este tema.</p>
         </div>
-        <a class="button button-light" href="recursos.html">Ir a Recursos IDB</a>
+        <div class="official-related-grid">
+          <a class="official-link-card" href="consulta.html?q=acidez"><span>Síntoma relacionado</span><strong>Acidez</strong></a>
+          <a class="official-link-card" href="consulta.html?q=estrenimiento"><span>Síntoma relacionado</span><strong>Estreñimiento</strong></a>
+          <a class="official-link-card" href="consulta.html?q=diabetes"><span>Enfermedad relacionada</span><strong>Diabetes</strong></a>
+          <a class="official-link-card" href="consulta.html?q=colesterol-alto"><span>Enfermedad relacionada</span><strong>Colesterol alto</strong></a>
+          <a class="official-link-card" href="actividad-fisica.html"><span>Recurso educativo</span><strong>Actividad física</strong></a>
+          <a class="official-link-card" href="prevencion.html"><span>Recurso educativo</span><strong>Prevención</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="official-vita" aria-labelledby="vita-mini-title">
+      <div class="wrap">
+        <div class="official-vita-card">
+          <div>
+            <h2 id="vita-mini-title">Hablar con VITA</h2>
+            <p>Si tienes dudas sobre alimentación, síntomas digestivos o cambios de peso, VITA puede ayudarte a encontrar una ruta educativa dentro de IDB.</p>
+          </div>
+          <a class="button" href="index.html#vita">Abrir VITA</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="official-trust" aria-label="Confianza y fuentes">
+      <div class="wrap">
+        <p>Contenido educativo revisado para pacientes. No reemplaza una evaluación nutricional o médica individual. Revisa el criterio editorial y las referencias generales en <a href="fuentes.html">Fuentes IDB</a>.</p>
       </div>
     </section>
   </main>
