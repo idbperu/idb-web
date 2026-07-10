@@ -1229,8 +1229,8 @@ height:16px;
     }
     .trust-system-visual {
       position: relative;
-      width: 300px;
-      height: 349px;
+      width: 140px;
+      height: 155px;
       isolation: isolate;
     }
     .trust-cell {
@@ -1238,29 +1238,62 @@ height:16px;
       z-index: 2;
       left: 50%;
       top: 0;
-      width: 280px;
+      width: 120px;
       height: auto;
       display: block;
       transform: translate(-50%, 0);
       transform-origin: center;
+      scale: 1;
+      opacity: 0.99;
       filter: drop-shadow(0 12px 18px rgba(22, 49, 45, 0.08));
-      animation: trust-cell-drift 17s cubic-bezier(0.45, 0.05, 0.35, 1) infinite;
+      transition:
+        scale 500ms cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 500ms cubic-bezier(0.22, 1, 0.36, 1);
+      animation:
+        trust-cell-drift 14.6s cubic-bezier(0.42, 0.08, 0.32, 1) infinite,
+        trust-cell-depth 9.8s cubic-bezier(0.37, 0.02, 0.28, 1) infinite alternate;
     }
+    .trust-system-card:hover .trust-cell { scale: 1.01; opacity: 1; }
     @keyframes trust-cell-drift {
-      0%, 100% { transform: translate(-50%, 0) rotate(-1.6deg); }
-      18% { transform: translate(calc(-50% + 2px), -6px) rotate(0.7deg); }
-      37% { transform: translate(calc(-50% + 3px), -8px) rotate(2.4deg); }
-      57% { transform: translate(calc(-50% - 2px), -5px) rotate(0.2deg); }
-      76% { transform: translate(calc(-50% - 3px), -2px) rotate(-2.5deg); }
-      91% { transform: translate(calc(-50% + 1px), -4px) rotate(-0.6deg); }
+      0%, 100% {
+        transform: translate(-50%, 0) rotate(-1.2deg) scale(0.998);
+      }
+      11% {
+        transform: translate(calc(-50% + 2px), -3px) rotate(-0.1deg) scale(1.004);
+      }
+      24% {
+        transform: translate(calc(-50% + 3px), -7px) rotate(1.8deg) scale(1.012);
+      }
+      39% {
+        transform: translate(calc(-50% + 1px), -5px) rotate(0.9deg) scale(1.006);
+      }
+      53% {
+        transform: translate(calc(-50% - 2px), -2px) rotate(-0.8deg) scale(0.995);
+      }
+      68% {
+        transform: translate(calc(-50% - 3px), -6px) rotate(-2deg) scale(1.003);
+      }
+      84% {
+        transform: translate(calc(-50% + 1px), -7px) rotate(0.5deg) scale(1.011);
+      }
+      94% {
+        transform: translate(calc(-50% + 2px), -3px) rotate(1.4deg) scale(1.001);
+      }
+    }
+    @keyframes trust-cell-depth {
+      0%, 100% { filter: drop-shadow(0 9px 15px rgba(22, 49, 45, 0.06)); }
+      19% { filter: drop-shadow(-1px 12px 18px rgba(22, 49, 45, 0.075)); }
+      43% { filter: drop-shadow(1px 15px 21px rgba(22, 49, 45, 0.09)); }
+      67% { filter: drop-shadow(0 11px 17px rgba(22, 49, 45, 0.07)); }
+      86% { filter: drop-shadow(-1px 14px 20px rgba(22, 49, 45, 0.085)); }
     }
     .trust-seal {
       position: absolute;
       z-index: 3;
       left: 50%;
-      bottom: 0;
-      width: 76px;
-      height: 76px;
+      top: 105px;
+      width: 50px;
+      height: 50px;
       transform: translateX(-50%);
       border: 1px solid rgba(31, 143, 115, 0.28);
       border-radius: 50%;
@@ -1271,36 +1304,26 @@ height:16px;
     .trust-seal-ring {
       position: absolute;
       inset: 3px;
-      width: 70px;
-      height: 70px;
+      width: 44px;
+      height: 44px;
     }
     .trust-seal-ring text {
       fill: currentColor;
-      font-size: 5.6px;
-      font-weight: 780;
-      letter-spacing: 0.55px;
+      font-size: 7px;
+      font-weight: 850;
+      letter-spacing: 0.3px;
     }
     .trust-seal strong {
       position: absolute;
       inset: 0;
       display: grid;
       place-items: center;
-      padding: 0 14px 6px;
+      padding: 0 10px 4px;
       color: var(--ink);
-      font-size: 0.51rem;
+      font-size: 0.4rem;
       line-height: 1.05;
       letter-spacing: 0.05em;
       text-align: center;
-    }
-    .trust-seal-check {
-      position: absolute;
-      left: 50%;
-      bottom: 14px;
-      transform: translateX(-50%);
-      color: var(--green);
-      font-size: 0.76rem;
-      font-weight: 900;
-      line-height: 1;
     }
     .trust-system-copy {
       display: grid;
@@ -1329,12 +1352,11 @@ height:16px;
     .trust-system-card:hover .trust-system-cta { color: var(--teal); }
 
     @media (max-width: 980px) {
-      .trust-system-visual { width: 270px; height: 313px; }
-      .trust-cell { width: 250px; }
-      .trust-seal { width: 70px; height: 70px; }
-      .trust-seal-ring { width: 64px; height: 64px; }
-      .trust-seal strong { padding: 0 13px 6px; font-size: 0.48rem; }
-      .trust-seal-check { bottom: 13px; font-size: 0.7rem; }
+      .trust-system-visual { width: 130px; height: 145px; }
+      .trust-cell { width: 110px; }
+      .trust-seal { top: 97px; width: 48px; height: 48px; }
+      .trust-seal-ring { width: 42px; height: 42px; }
+      .trust-seal strong { padding: 0 9px; font-size: 0.38rem; }
     }
 
     .trust-center {
@@ -1609,12 +1631,11 @@ height:16px;
         width: 100%;
       }
       .trust-system-eyebrow { margin-bottom: 14px; }
-      .trust-system-visual { width: 220px; height: 256px; }
-      .trust-cell { width: 200px; }
-      .trust-seal { width: 64px; height: 64px; }
-      .trust-seal-ring { width: 58px; height: 58px; }
-      .trust-seal strong { padding: 0 12px 5px; font-size: 0.43rem; }
-      .trust-seal-check { bottom: 12px; font-size: 0.64rem; }
+      .trust-system-visual { width: 120px; height: 132px; }
+      .trust-cell { width: 100px; }
+      .trust-seal { top: 88px; width: 44px; height: 44px; }
+      .trust-seal-ring { width: 38px; height: 38px; }
+      .trust-seal strong { padding: 0 8px; font-size: 0.35rem; }
       .trust-center {
         padding: 48px 20px;
       }
@@ -1726,7 +1747,11 @@ height:16px;
         scroll-behavior: auto !important;
         transition: none !important;
       }
-      .trust-cell { animation: none !important; }
+      .trust-cell {
+        animation: none !important;
+        scale: 1 !important;
+        opacity: 0.99 !important;
+      }
     }
   </style>
   <script type="application/ld+json">
@@ -1864,7 +1889,6 @@ height:16px;
               <text><textPath href="#trust-seal-bottom" startOffset="50%" text-anchor="middle">DE BIENESTAR</textPath></text>
             </svg>
             <strong>IDB<br>VERIFIED</strong>
-            <span class="trust-seal-check" aria-hidden="true">✓</span>
           </div>
         </div>
         <div class="trust-system-copy">
