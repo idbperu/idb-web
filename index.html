@@ -1208,6 +1208,209 @@ height:16px;
     .resource-tile:hover img{
       transform:scale(1.045);
     }
+
+    .trust-system {
+      padding: 30px 20px 42px;
+      background: var(--paper);
+    }
+    .trust-system-card {
+      width: min(760px, 100%);
+      height: 148px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      align-items: center;
+      gap: 12px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) * 2);
+      background: var(--paper);
+      box-shadow: 0 12px 34px rgba(22, 49, 45, 0.06);
+      transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+    }
+    .trust-system-card:hover {
+      border-color: rgba(31, 143, 115, 0.34);
+      box-shadow: var(--shadow);
+      transform: translateY(-2px);
+    }
+    .trust-system-card:focus-visible {
+      outline: 3px solid rgba(29, 167, 178, 0.35);
+      outline-offset: 4px;
+    }
+    .trust-system-visual {
+      position: relative;
+      width: 100%;
+      height: 122px;
+      isolation: isolate;
+    }
+    .trust-cell {
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      top: 50%;
+      width: 140px;
+      height: 90px;
+      color: var(--green);
+      transform: translate(-50%, -57%);
+      transform-origin: center;
+      filter: drop-shadow(0 10px 18px rgba(31, 143, 115, 0.12));
+      animation: trust-cell-drift 22s ease-in-out infinite;
+    }
+    @keyframes trust-cell-drift {
+      0%, 100% { transform: translate(-50%, -57%) rotate(-1deg); }
+      28% { transform: translate(-49%, -60%) rotate(1.4deg); }
+      58% { transform: translate(-51%, -55%) rotate(-0.6deg); }
+      82% { transform: translate(-50%, -58%) rotate(0.8deg); }
+    }
+    .trust-seal {
+      position: absolute;
+      z-index: 3;
+      left: 50%;
+      top: 50%;
+      width: 62px;
+      height: 62px;
+      transform: translate(-50%, -20%);
+      border: 1px solid rgba(31, 143, 115, 0.28);
+      border-radius: 50%;
+      color: var(--green-dark);
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: 0 7px 18px rgba(22, 49, 45, 0.12);
+    }
+    .trust-seal-ring {
+      position: absolute;
+      inset: 3px;
+      width: 56px;
+      height: 56px;
+    }
+    .trust-seal strong {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 0 12px;
+      color: var(--ink);
+      font-size: 0.48rem;
+      line-height: 1.05;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+    .trust-pillars {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .trust-pillar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: max-content;
+      max-width: 112px;
+      min-height: 22px;
+      padding: 3px 7px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid rgba(31, 143, 115, 0.14);
+      border-radius: 999px;
+      color: #42645d;
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 4px 12px rgba(22, 49, 45, 0.05);
+      font-size: 0.58rem;
+      font-weight: 720;
+      line-height: 1.1;
+      white-space: nowrap;
+      offset-path: ellipse(158px 60px at 50% 50%);
+      offset-rotate: 0deg;
+      animation: trust-pillar-orbit 108s linear infinite;
+    }
+    .trust-pillar:nth-child(1) { offset-distance: 0%; }
+    .trust-pillar:nth-child(2) { offset-distance: 16.666%; }
+    .trust-pillar:nth-child(3) { offset-distance: 33.333%; }
+    .trust-pillar:nth-child(4) { offset-distance: 50%; }
+    .trust-pillar:nth-child(5) { offset-distance: 66.666%; }
+    .trust-pillar:nth-child(6) { offset-distance: 83.333%; }
+    @keyframes trust-pillar-orbit {
+      to { offset-distance: calc(var(--pillar-start, 0%) + 100%); }
+    }
+    .trust-pillar:nth-child(1) { --pillar-start: 0%; }
+    .trust-pillar:nth-child(2) { --pillar-start: 16.666%; }
+    .trust-pillar:nth-child(3) { --pillar-start: 33.333%; }
+    .trust-pillar:nth-child(4) { --pillar-start: 50%; }
+    .trust-pillar:nth-child(5) { --pillar-start: 66.666%; }
+    .trust-pillar:nth-child(6) { --pillar-start: 83.333%; }
+    .trust-pillar-icon {
+      width: 11px;
+      height: 11px;
+      flex: 0 0 auto;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .trust-system-copy {
+      min-width: 0;
+    }
+    .trust-system-eyebrow {
+      margin: 0 0 8px;
+      color: var(--green-dark);
+      font-size: 0.72rem;
+      font-weight: 850;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .trust-system-copy p:last-child {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .trust-center {
+      padding: 62px 20px;
+      border-bottom: 1px solid var(--line);
+      background: var(--mist);
+    }
+    .trust-center-inner {
+      width: min(760px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 40px;
+    }
+    .trust-center h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.65rem, 3vw, 2.2rem);
+      line-height: 1.12;
+    }
+    .trust-center p {
+      margin: 0;
+      max-width: 600px;
+      color: var(--muted);
+    }
+    .trust-center-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--green-dark);
+      font-size: 0.9rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .trust-center-link::after {
+      content: "\2192";
+      transition: transform 180ms ease;
+    }
+    .trust-center-link:hover::after { transform: translateX(3px); }
+    .trust-center-link:focus-visible {
+      outline: 3px solid rgba(29, 167, 178, 0.35);
+      outline-offset: 5px;
+      border-radius: 2px;
+    }
     
     .tile-large{
       grid-row:span 2;
@@ -1431,6 +1634,49 @@ height:16px;
         padding: 7px 11px;
         font-size: .8rem;
       }
+      .trust-system {
+        padding: 24px 20px 36px;
+      }
+      .trust-system-card {
+        height: 250px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 4px;
+        padding: 15px 12px 13px;
+        text-align: center;
+      }
+      .trust-system-copy p:last-child { margin-top: 3px; }
+      .trust-system-visual {
+        width: min(100%, 336px);
+        height: 164px;
+      }
+      .trust-cell {
+        width: 126px;
+        height: 81px;
+      }
+      .trust-seal {
+        width: 58px;
+        height: 58px;
+      }
+      .trust-seal-ring {
+        inset: 2px;
+        width: 54px;
+        height: 54px;
+      }
+      .trust-pillar {
+        max-width: 98px;
+        font-size: 0.54rem;
+        offset-path: ellipse(104px 70px at 50% 50%);
+      }
+      .trust-center {
+        padding: 48px 20px;
+      }
+      .trust-center-inner {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        text-align: center;
+      }
+      .trust-center-link { justify-self: center; }
       .trust-band {
         margin-top: -24px;
         padding: 22px;
@@ -1533,6 +1779,8 @@ height:16px;
         scroll-behavior: auto !important;
         transition: none !important;
       }
+      .trust-cell,
+      .trust-pillar { animation: none !important; }
     }
   </style>
   <script type="application/ld+json">
@@ -1652,6 +1900,51 @@ height:16px;
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="trust-system" aria-label="IDB Trust System">
+      <a class="trust-system-card" href="trust-center.html" aria-label="Conocer IDB Trust System y visitar el Trust Center">
+        <div class="trust-system-copy">
+          <p class="trust-system-eyebrow">IDB TRUST SYSTEM</p>
+          <p>Información médica basada en evidencia científica.</p>
+        </div>
+        <div class="trust-system-visual" aria-hidden="true">
+          <svg class="trust-cell" viewBox="0 0 156 100">
+            <defs>
+              <linearGradient id="trust-cell-fill" x1="24" y1="12" x2="132" y2="90" gradientUnits="userSpaceOnUse">
+                <stop stop-color="var(--green-soft)"/>
+                <stop offset=".55" stop-color="#dff4ef"/>
+                <stop offset="1" stop-color="#e5f6f8"/>
+              </linearGradient>
+              <linearGradient id="trust-cell-line" x1="22" y1="18" x2="136" y2="84" gradientUnits="userSpaceOnUse">
+                <stop stop-color="var(--green)"/>
+                <stop offset="1" stop-color="var(--teal)"/>
+              </linearGradient>
+            </defs>
+            <path d="M30 20C47 5 72 10 91 12c23 3 43 7 50 25 7 19-4 39-20 51-17 12-39 7-58 5-20-2-43-2-50-20-8-20 2-39 17-53Z" fill="url(#trust-cell-fill)" stroke="url(#trust-cell-line)" stroke-width="1.25"/>
+            <path d="M36 34c17-13 36-12 56-9 16 2 30 6 37 18M25 64c14 12 33 13 51 14 20 2 37 0 51-11" fill="none" stroke="url(#trust-cell-line)" stroke-width=".8" opacity=".38" stroke-linecap="round"/>
+            <circle cx="44" cy="45" r="2.4" fill="var(--green)" opacity=".55"/>
+            <circle cx="111" cy="39" r="2" fill="var(--teal)" opacity=".55"/>
+          </svg>
+
+          <div class="trust-seal">
+            <svg class="trust-seal-ring" viewBox="0 0 60 60">
+              <defs><path id="trust-seal-path" d="M30,30 m-23,0 a23,23 0 1,1 46,0 a23,23 0 1,1 -46,0"/></defs>
+              <text fill="currentColor" font-size="5.4" font-weight="750" letter-spacing="1.05"><textPath href="#trust-seal-path" startOffset="2%">INSTITUTO DIGITAL DE BIENESTAR</textPath></text>
+            </svg>
+            <strong>IDB<br>VERIFIED</strong>
+          </div>
+
+          <ul class="trust-pillars">
+            <li class="trust-pillar"><svg class="trust-pillar-icon" viewBox="0 0 24 24"><path d="M5 20v-2a4 4 0 0 1 4-4h3"/><circle cx="9" cy="7" r="3"/><path d="M16 11v6m-3-3h6"/></svg>Orientación médica</li>
+            <li class="trust-pillar"><svg class="trust-pillar-icon" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5c0 4.7 3.1 8 7.5 10 4.4-2 7.5-5.3 7.5-10V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>Contenido confiable</li>
+            <li class="trust-pillar"><svg class="trust-pillar-icon" viewBox="0 0 24 24"><path d="M5 19h14M8 16l3-3 2 2 4-5"/><path d="M17 10h-4V6"/></svg>Basado en evidencia</li>
+            <li class="trust-pillar"><svg class="trust-pillar-icon" viewBox="0 0 24 24"><path d="M12 21s7-3.4 7-10V5l-7-2-7 2v6c0 6.6 7 10 7 10Z"/><path d="M12 8v6m-3-3h6"/></svg>Prevención</li>
+            <li class="trust-pillar"><svg class="trust-pillar-icon" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="5"/><path d="M12 7v10"/></svg>Medicamentos OTC</li>
+            <li class="trust-pillar"><svg class="trust-pillar-icon" viewBox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3"/><circle cx="12" cy="12" r="6"/><path d="M12 9v3l2 1"/></svg>Disponible 24/7</li>
+          </ul>
+        </div>
+      </a>
     </section>
 
     <section class="section" id="bienestar" aria-labelledby="bienestar-title">
@@ -1801,6 +2094,16 @@ height:16px;
     </figure>
   </div>
 </section>
+
+    <section class="trust-center" aria-labelledby="trust-center-title">
+      <div class="trust-center-inner">
+        <div>
+          <h2 id="trust-center-title">IDB Trust Center</h2>
+          <p>Conoce los estándares editoriales, fuentes científicas, versiones y metodología de revisión de IDB MEDIC.</p>
+        </div>
+        <a class="trust-center-link" href="trust-center.html">Ver Trust Center</a>
+      </div>
+    </section>
 
     <!-- Arquitectura preparada para futuras áreas temáticas.
          Estas páginas no se publican todavía; el template permite incorporarlas

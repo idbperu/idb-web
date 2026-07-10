@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDB Trust Center | Instituto Digital de Bienestar</title>
+  <meta name="description" content="Conoce los estándares editoriales, fuentes científicas, versiones y metodología de revisión de IDB MEDIC.">
+  <link rel="canonical" href="https://idb.org.pe/trust-center.html">
+  <meta property="og:title" content="IDB Trust Center | Instituto Digital de Bienestar">
+  <meta property="og:description" content="Transparencia sobre los estándares, fuentes y procesos de revisión de la información de IDB MEDIC.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://idb.org.pe/trust-center.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IDB Trust Center | Instituto Digital de Bienestar">
+  <meta name="twitter:description" content="Estándares editoriales, fuentes científicas y metodología de revisión de IDB MEDIC.">
+
+  <style>
+    :root {
+      --green: #1f8f73;
+      --green-dark: #176c59;
+      --green-soft: #e8f5f0;
+      --teal: #1da7b2;
+      --blue: #206f9f;
+      --ink: #16312d;
+      --muted: #65756f;
+      --line: #dfe8e4;
+      --paper: #ffffff;
+      --mist: #f6faf8;
+      --shadow: 0 18px 45px rgba(22, 49, 45, 0.13);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
+    section[id] { scroll-margin-top: 100px; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: 72px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(223, 232, 228, 0.7);
+    }
+    .header-inner {
+      width: min(var(--max), calc(100% - 40px));
+      height: 72px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(96px, 1fr) auto;
+      align-items: center;
+      gap: 22px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      justify-self: start;
+    }
+    .brand-logo { width: 110px; height: auto; }
+    .nav {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #263a36;
+      font-size: 0.89rem;
+      font-weight: 560;
+    }
+    .nav a { position: relative; padding: 28px 0; }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 21px;
+      height: 1px;
+      background: var(--green);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+    .nav a:hover::after,
+    .nav a:focus-visible::after { transform: scaleX(1); }
+    .menu-toggle {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+    .menu-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin: 5px auto;
+      border-radius: 999px;
+      background: var(--ink);
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .trust-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 94px 0 86px;
+      background:
+        radial-gradient(circle at 82% 22%, rgba(29, 167, 178, 0.1), transparent 28%),
+        radial-gradient(circle at 15% 86%, rgba(31, 143, 115, 0.08), transparent 30%),
+        var(--paper);
+    }
+    .trust-hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      align-items: center;
+      gap: 72px;
+    }
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--green-dark);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .trust-hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(2.65rem, 5.2vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
+    .trust-hero-copy > p:last-child {
+      max-width: 680px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.4vw, 1.18rem);
+    }
+    .orbital-panel {
+      min-height: 310px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) * 3);
+      background: rgba(255, 255, 255, 0.74);
+      box-shadow: var(--shadow);
+    }
+    .trust-orbital {
+      width: 270px;
+      color: var(--green);
+    }
+    .orbit {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: orbit 16s linear infinite;
+    }
+    .orbit-reverse { animation-direction: reverse; animation-duration: 20s; }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+
+    .intro-strip {
+      padding: 28px 0;
+      color: #fff;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+    }
+    .intro-strip .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      text-align: center;
+      font-weight: 760;
+    }
+    .verified-mark {
+      display: inline-grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      flex: 0 0 auto;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      border-radius: 50%;
+    }
+
+    .section { padding: 92px 0; }
+    .section-mist { background: var(--mist); }
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(2rem, 3.5vw, 3.25rem);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+    .section-head p {
+      margin: 16px 0 0;
+      color: var(--muted);
+    }
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .principle-card {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) * 2);
+      background: var(--paper);
+    }
+    .principle-number {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 32px;
+      border-radius: 50%;
+      color: var(--green-dark);
+      background: var(--green-soft);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+    .principle-card h3 { margin: 0 0 10px; font-size: 1.16rem; }
+    .principle-card p { margin: 0; color: var(--muted); font-size: 0.93rem; }
+
+    .process-layout {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
+      gap: 70px;
+      align-items: start;
+    }
+    .process-layout .section-head { position: sticky; top: 112px; margin: 0; }
+    .process-list { margin: 0; padding: 0; list-style: none; }
+    .process-list li {
+      position: relative;
+      padding: 4px 0 34px 54px;
+    }
+    .process-list li:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      left: 17px;
+      top: 38px;
+      bottom: 2px;
+      width: 1px;
+      background: var(--line);
+    }
+    .process-step {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(31, 143, 115, 0.25);
+      border-radius: 50%;
+      color: var(--green-dark);
+      background: var(--paper);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+    .process-list h3 { margin: 0 0 7px; font-size: 1.08rem; }
+    .process-list p { margin: 0; color: var(--muted); font-size: 0.93rem; }
+
+    .transparency-card {
+      padding: 46px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 0.72fr);
+      gap: 54px;
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) * 3);
+      background: var(--paper);
+      box-shadow: 0 16px 40px rgba(22, 49, 45, 0.07);
+    }
+    .transparency-card h2 { margin: 0; font-size: clamp(1.8rem, 3vw, 2.65rem); line-height: 1.08; }
+    .transparency-card p { margin: 16px 0 0; color: var(--muted); }
+    .metadata-list { margin: 0; padding: 0; list-style: none; }
+    .metadata-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .metadata-list li:first-child { padding-top: 0; }
+    .metadata-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .metadata-list strong { display: block; color: var(--ink); }
+
+    .notice {
+      padding: 26px 30px;
+      border-left: 3px solid var(--teal);
+      background: var(--green-soft);
+      color: #294b45;
+      font-size: 0.93rem;
+    }
+    .notice strong { color: var(--ink); }
+
+    .site-footer {
+      color: #2b3a37;
+      background: linear-gradient(180deg, #eef6f2 0%, #e4f0ea 55%, #d8eae1 100%);
+      border-top: 1px solid #d9ede4;
+    }
+    .footer-main {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 50px 0 32px;
+      display: grid;
+      grid-template-columns: minmax(320px, 1.45fr) repeat(2, minmax(150px, 0.55fr));
+      gap: 48px;
+      align-items: start;
+    }
+    .footer-brand { display: grid; gap: 16px; max-width: 460px; }
+    .footer-brand img { width: 72px; height: auto; }
+    .footer-brand p { margin: 0; color: #5e726c; font-size: 0.92rem; line-height: 1.65; }
+    .footer-col h3 {
+      margin: 0 0 18px;
+      color: #163c35;
+      font-size: 0.86rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .footer-col a,
+    .footer-col span { display: block; margin: 7px 0; color: #61756e; font-size: 0.9rem; }
+    .footer-col a:hover { color: var(--green); }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.35); }
+    .footer-bottom-inner {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      color: #6f827c;
+      font-size: 0.86rem;
+    }
+    .socials { display: flex; gap: 18px; font-weight: 750; }
+
+    @media (max-width: 980px) {
+      .site-header, .header-inner { height: auto; }
+      .header-inner { min-height: 78px; grid-template-columns: auto auto; padding: 10px 0; }
+      .menu-toggle { display: block; justify-self: end; }
+      .nav { display: none; grid-column: 1 / -1; width: 100%; padding: 14px 0 8px; }
+      .nav.active { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+      .nav a { padding: 8px 0 12px; }
+      .nav a::after { bottom: 4px; }
+      .trust-hero-grid { grid-template-columns: minmax(0, 1fr) 300px; gap: 40px; }
+      .orbital-panel { min-height: 270px; }
+      .trust-orbital { width: 230px; }
+      .principles-grid { grid-template-columns: repeat(2, 1fr); }
+      .process-layout { gap: 42px; }
+    }
+
+    @media (max-width: 700px) {
+      .trust-hero { padding: 58px 0 52px; }
+      .trust-hero-grid { grid-template-columns: 1fr; gap: 34px; text-align: center; }
+      .trust-hero-copy > p:last-child { margin-left: auto; margin-right: auto; }
+      .orbital-panel { width: min(100%, 340px); min-height: 240px; margin: 0 auto; }
+      .trust-orbital { width: 210px; }
+      .intro-strip .wrap { align-items: flex-start; }
+      .section { padding: 68px 0; }
+      .section-head { margin-bottom: 30px; }
+      .principles-grid { grid-template-columns: 1fr; }
+      .principle-card { padding: 25px; }
+      .principle-number { margin-bottom: 22px; }
+      .process-layout { grid-template-columns: 1fr; gap: 34px; }
+      .process-layout .section-head { position: static; }
+      .transparency-card { grid-template-columns: 1fr; gap: 34px; padding: 28px; }
+      .notice { padding: 22px; }
+      .footer-main { grid-template-columns: 1fr; padding: 36px 0 26px; gap: 28px; }
+      .footer-bottom-inner { align-items: flex-start; flex-direction: column; min-height: auto; padding: 18px 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+      .orbit { animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" class="brand-logo" loading="eager" decoding="async">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="trust-hero" aria-labelledby="trust-title">
+      <div class="wrap trust-hero-grid">
+        <div class="trust-hero-copy">
+          <p class="eyebrow">IDB TRUST SYSTEM</p>
+          <h1 id="trust-title">Confianza construida con evidencia y transparencia</h1>
+          <p>El IDB Trust Center explica cómo seleccionamos, revisamos y presentamos la información médica de IDB MEDIC.</p>
+        </div>
+        <div class="orbital-panel" aria-label="IDB Verified">
+          <svg class="trust-orbital" viewBox="0 0 280 250" aria-hidden="true">
+            <defs>
+              <linearGradient id="orbit-gradient" x1="40" y1="36" x2="240" y2="214" gradientUnits="userSpaceOnUse">
+                <stop stop-color="currentColor"/>
+                <stop offset="1" stop-color="var(--teal)"/>
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#orbit-gradient)">
+              <ellipse cx="140" cy="125" rx="99" ry="42" opacity=".4"/>
+              <g class="orbit">
+                <ellipse cx="140" cy="125" rx="99" ry="42" transform="rotate(58 140 125)" opacity=".65"/>
+                <circle cx="184" cy="51" r="5" fill="var(--teal)" stroke="none"/>
+              </g>
+              <g class="orbit orbit-reverse">
+                <ellipse cx="140" cy="125" rx="99" ry="42" transform="rotate(-58 140 125)" opacity=".65"/>
+                <circle cx="66" cy="82" r="5" fill="var(--green)" stroke="none"/>
+              </g>
+            </g>
+            <circle cx="140" cy="125" r="30" fill="var(--paper)" stroke="var(--green)" stroke-width="2"/>
+            <path d="m127 125 9 9 19-20" fill="none" stroke="var(--green-dark)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="140" y="203" text-anchor="middle" fill="var(--ink)" font-size="13" font-weight="800" letter-spacing="2">IDB VERIFIED</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="intro-strip" aria-label="Compromiso editorial IDB Verified">
+      <div class="wrap">
+        <span class="verified-mark" aria-hidden="true">✓</span>
+        <span>IDB VERIFIED · Información médica basada en evidencia científica</span>
+      </div>
+    </div>
+
+    <section class="section section-mist" id="estandares" aria-labelledby="standards-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Estándares editoriales</p>
+          <h2 id="standards-title">Principios para informar con claridad y responsabilidad</h2>
+          <p>Nuestro sistema editorial busca que cada contenido sea comprensible, trazable y útil para tomar decisiones informadas.</p>
+        </div>
+        <div class="principles-grid">
+          <article class="principle-card">
+            <span class="principle-number">01</span>
+            <h3>Evidencia primero</h3>
+            <p>Priorizamos guías clínicas, organismos sanitarios y literatura científica pertinente.</p>
+          </article>
+          <article class="principle-card">
+            <span class="principle-number">02</span>
+            <h3>Claridad editorial</h3>
+            <p>Traducimos información compleja a un lenguaje directo, sin perder precisión ni contexto.</p>
+          </article>
+          <article class="principle-card">
+            <span class="principle-number">03</span>
+            <h3>Transparencia</h3>
+            <p>Identificamos las fuentes, fechas de revisión y cambios relevantes cuando corresponda.</p>
+          </article>
+          <article class="principle-card">
+            <span class="principle-number">04</span>
+            <h3>Independencia</h3>
+            <p>La selección y presentación del contenido responde a criterios editoriales y científicos.</p>
+          </article>
+          <article class="principle-card">
+            <span class="principle-number">05</span>
+            <h3>Seguridad</h3>
+            <p>Distinguimos educación general de la evaluación individual que requiere un profesional.</p>
+          </article>
+          <article class="principle-card">
+            <span class="principle-number">06</span>
+            <h3>Actualización</h3>
+            <p>Revisamos los contenidos cuando surgen cambios relevantes en la evidencia o las guías.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="metodologia" aria-labelledby="method-title">
+      <div class="wrap process-layout">
+        <div class="section-head">
+          <p class="eyebrow">Metodología de revisión</p>
+          <h2 id="method-title">Del conocimiento científico a una explicación útil</h2>
+          <p>Cada etapa aporta contexto, consistencia y trazabilidad al contenido.</p>
+        </div>
+        <ol class="process-list">
+          <li>
+            <span class="process-step">1</span>
+            <h3>Definición del alcance</h3>
+            <p>Delimitamos la pregunta, la audiencia y el propósito educativo del contenido.</p>
+          </li>
+          <li>
+            <span class="process-step">2</span>
+            <h3>Selección de fuentes</h3>
+            <p>Buscamos evidencia relevante y priorizamos fuentes primarias, guías y organismos reconocidos.</p>
+          </li>
+          <li>
+            <span class="process-step">3</span>
+            <h3>Síntesis editorial</h3>
+            <p>Organizamos los hallazgos, señalamos límites y adaptamos el lenguaje para facilitar la comprensión.</p>
+          </li>
+          <li>
+            <span class="process-step">4</span>
+            <h3>Control de calidad</h3>
+            <p>Verificamos coherencia, precisión, legibilidad y alineación con los estándares editoriales.</p>
+          </li>
+          <li>
+            <span class="process-step">5</span>
+            <h3>Publicación y seguimiento</h3>
+            <p>Registramos la versión y revisamos el contenido cuando nueva evidencia puede modificarlo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-mist" id="transparencia" aria-labelledby="transparency-title">
+      <div class="wrap">
+        <div class="transparency-card">
+          <div>
+            <p class="eyebrow">Versiones y trazabilidad</p>
+            <h2 id="transparency-title">Información que permite entender el origen y vigencia del contenido</h2>
+            <p>La información editorial puede incorporar datos de versión, revisión y fuentes para facilitar su evaluación.</p>
+          </div>
+          <ul class="metadata-list" aria-label="Datos de transparencia editorial">
+            <li><strong>Fuentes consultadas</strong>Referencias que sustentan el contenido.</li>
+            <li><strong>Fecha de revisión</strong>Momento del último control editorial.</li>
+            <li><strong>Versión</strong>Identificador de cambios relevantes.</li>
+            <li><strong>Alcance</strong>Propósito y límites de la información.</li>
+          </ul>
+        </div>
+        <p class="notice"><strong>Importante:</strong> IDB MEDIC ofrece información educativa y orientación general. No reemplaza una consulta, diagnóstico ni tratamiento indicado por un profesional de salud.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="./imagenes/logo-idb.png" alt="Instituto Digital de Bienestar" loading="lazy" decoding="async">
+        <p>Orientación digital, recursos prácticos y contenidos claros para acompañar decisiones de bienestar.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navegación</h3>
+        <a href="index.html">Inicio</a>
+        <a href="temas.html">Temas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h3>Trust Center</h3>
+        <a href="#estandares">Estándares editoriales</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#transparencia">Versiones y fuentes</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          <strong>Instituto Digital de Bienestar</strong><br>
+          www.idb.org.pe · © 2026
+        </div>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+          <a href="https://x.com/" aria-label="X">X</a>
+          <a href="https://www.youtube.com/" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    menuToggle?.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+    });
+  </script>
+</body>
+</html>
