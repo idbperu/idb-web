@@ -15,6 +15,9 @@
   <meta name="twitter:title" content="Instituto Digital de Bienestar | Educación, prevención y calidad de vida">
   <meta name="twitter:description" content="Orientación, educación y recursos prácticos para construir hábitos que contribuyan a una mejor calidad de vida.">
   <meta name="twitter:image" content="https://idb.org.pe/imagenes/hero-idb.jpg">
+  <link rel="preload" as="image" href="./imagenes/vita/vita-hero-welcome.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="./imagenes/vita/vita-hero-patient.webp" type="image/webp">
+  <link rel="preload" as="image" href="./imagenes/vita/vita-hero-work.webp" type="image/webp">
 
   <style>
     :root {
@@ -130,6 +133,7 @@
     .hero-media {
     position: relative;
     width: min(100%, 920px);
+    aspect-ratio: 16 / 8;
     margin: 0 auto 14px;
     overflow: hidden;
     border-radius: 28px;
@@ -152,11 +156,73 @@
     pointer-events:none;
     }
   
-  .hero-media img {
+  .hero-cinematic {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .hero-cinematic img {
+    position: absolute;
+    inset: 0;
     width: 100%;
+    height: 100%;
     aspect-ratio: 16 / 8;
     object-fit: cover;
     object-position: center 68%;
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 2.5s cubic-bezier(.4, 0, .2, 1);
+    will-change: opacity;
+  }
+
+  .hero-cinematic img.is-active {
+    opacity: 1;
+    z-index: 2;
+    animation: hero-cinematic-drift 9s cubic-bezier(.2, .55, .25, 1) 1 both;
+  }
+
+  .hero-cinematic img.is-leaving {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  @keyframes hero-cinematic-drift {
+    from { transform: scale(1); }
+    to { transform: scale(1.03); }
+  }
+
+  .hero-refresh {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    z-index: 3;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(15, 23, 42, .12);
+    border-radius: 50%;
+    color: #26352f;
+    background: rgba(255, 255, 255, .94);
+    box-shadow: 0 5px 18px rgba(15, 23, 42, .12);
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .hero-refresh:hover { background: #fff; }
+  .hero-refresh:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+  .hero-refresh svg { width: 17px; height: 17px; }
+  .hero-refresh.is-spinning svg { animation: hero-refresh-spin .65s cubic-bezier(.4, 0, .2, 1); }
+
+  @keyframes hero-refresh-spin { to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-cinematic img { transition-duration: .01ms; }
+    .hero-cinematic img.is-active,
+    .hero-refresh.is-spinning svg { animation: none; }
   }
   
   .hero-photo-content {
@@ -379,10 +445,10 @@
       box-shadow: 0 10px 22px rgba(23, 143, 130, 0.18);
     }
     .hero .button-green {
-      width: 100%;
+      width: auto;
       max-width: 100%;
       min-height: 42px;
-      padding: 0 18px;
+      padding: 0 26px;
       gap: 9px;
       font-size: 0.90rem;
     }
@@ -656,6 +722,131 @@
       margin-top: 17px;
       color: #fff;
       font-weight: 800;
+    }
+
+    .wellness-carousel {
+      position: relative;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+    }
+    .wellness-carousel-viewport {
+      overflow: hidden;
+      padding: 8px 0 12px;
+      touch-action: pan-y;
+    }
+    .wellness-carousel .area-grid {
+      display: flex;
+      gap: 8px;
+      transition: transform 760ms cubic-bezier(.4, 0, .2, 1);
+      will-change: transform;
+    }
+    .wellness-carousel .area-grid.is-resetting,
+    .wellness-carousel .area-grid.is-resetting .area-card {
+      transition: none;
+    }
+    .wellness-carousel .area-card {
+      flex: 0 0 84%;
+      min-height: 430px;
+      transform: scale(.965);
+      filter: brightness(.82);
+      opacity: .88;
+      box-shadow: 0 10px 28px rgba(22, 49, 45, .08);
+      transition: transform 760ms cubic-bezier(.4, 0, .2, 1), filter 760ms ease, opacity 760ms ease, box-shadow 760ms ease;
+    }
+    .wellness-carousel .area-card.is-active {
+      transform: scale(1);
+      filter: brightness(1);
+      opacity: 1;
+      box-shadow: 0 18px 46px rgba(22, 49, 45, .13);
+    }
+    .wellness-carousel-controls {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 48px;
+      margin: 16px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .wellness-carousel-nav {
+      display: flex;
+      gap: 10px;
+    }
+    .wellness-carousel-button {
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(31, 143, 115, .2);
+      border-radius: 50%;
+      color: var(--green-dark);
+      background: rgba(232, 245, 240, .82);
+      box-shadow: 0 7px 18px rgba(22, 49, 45, .07);
+      cursor: pointer;
+      transition: background 180ms ease, transform 180ms ease, border-color 180ms ease;
+    }
+    .wellness-carousel-button:hover {
+      transform: translateY(-1px);
+      border-color: rgba(31, 143, 115, .38);
+      background: #fff;
+    }
+    .wellness-carousel-button:focus-visible {
+      outline: 2px solid var(--green);
+      outline-offset: 3px;
+    }
+    .wellness-carousel-button svg {
+      width: 18px;
+      height: 18px;
+    }
+    .wellness-carousel-play .icon-play,
+    .wellness-carousel-play.is-paused .icon-pause { display: none; }
+    .wellness-carousel-play.is-paused .icon-play { display: block; }
+    .wellness-carousel--resources .area-card {
+      align-items: center;
+    }
+    .wellness-carousel--resources .area-card::after {
+      background:
+        linear-gradient(90deg, rgba(8, 31, 27, .9) 0%, rgba(8, 31, 27, .6) 42%, rgba(8, 31, 27, .08) 76%),
+        linear-gradient(180deg, rgba(8, 31, 27, .08), rgba(8, 31, 27, .32));
+    }
+    .wellness-carousel--resources .area-card-content {
+      width: min(52%, 520px);
+      padding: 42px;
+    }
+    .resource-rail-link {
+      position: absolute;
+      top: 28px;
+      right: calc(8% + 28px);
+      z-index: 4;
+      min-height: 34px;
+      padding: 0 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, .62);
+      border-radius: 999px;
+      color: #fff;
+      background: rgba(16, 43, 38, .42);
+      box-shadow: none;
+      font-size: .74rem;
+      font-weight: 650;
+      line-height: 1;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: background 180ms ease, border-color 180ms ease;
+    }
+    .resource-rail-link:hover {
+      border-color: rgba(255, 255, 255, .82);
+      background: rgba(16, 43, 38, .58);
+    }
+    .resource-rail-link:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .wellness-carousel .area-grid,
+      .wellness-carousel .area-card { transition-duration: .01ms; }
     }
 
     .library-layout {
@@ -955,6 +1146,81 @@
   height:20px;
 }
 
+.vita-grid{
+  grid-template-columns:.86fr 1.14fr;
+  gap:64px;
+}
+
+.vita-content{
+  gap:0;
+}
+
+.vita-subtitle{
+  margin:22px 0 0;
+  max-width:570px;
+  color:rgba(255,255,255,.86);
+  font-size:1.04rem;
+  line-height:1.62;
+}
+
+.vita-benefits{
+  margin:32px 0 0;
+  padding:0;
+  display:grid;
+  gap:16px;
+  list-style:none;
+}
+
+.vita-benefits li{
+  position:relative;
+  padding-left:27px;
+  color:rgba(255,255,255,.94);
+  font-size:.96rem;
+  font-weight:560;
+  line-height:1.45;
+}
+
+.vita-benefits li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:0;
+  color:#A9D76E;
+  font-weight:800;
+}
+
+.vita-institutional{
+  margin:32px 0 0;
+  max-width:570px;
+  color:rgba(255,255,255,.82);
+  font-size:.86rem;
+  font-weight:550;
+  line-height:1.5;
+}
+
+.vita-content-button{
+  position:static;
+  width:max-content;
+  margin-top:20px;
+  box-shadow:0 10px 24px rgba(0,0,0,.14);
+}
+
+.vita-photo{
+  min-height:480px;
+  border-radius:30px;
+  box-shadow:0 18px 44px rgba(0,0,0,.16);
+}
+
+.vita-main-img{
+  min-height:480px;
+  object-position:center 48%;
+}
+
+.vita-photo::after{
+  height:22%;
+  opacity:.42;
+}
+
 @media (max-width:980px){
 
 .vita-grid{
@@ -984,6 +1250,26 @@ font-size:2rem;
 gap:30px;
 }
 
+.vita-subtitle{
+margin-top:18px;
+font-size:.96rem;
+line-height:1.55;
+}
+
+.vita-benefits{
+margin-top:26px;
+gap:14px;
+}
+
+.vita-benefits li{
+font-size:.9rem;
+}
+
+.vita-institutional{
+margin-top:26px;
+font-size:.81rem;
+}
+
 .vita-chat-card{
 max-width:100%;
 }
@@ -993,12 +1279,13 @@ max-width:92%;
 }
 
 .vita-photo{
-min-height:290px;
+min-height:320px;
 border-radius:22px;
 }
 
 .vita-main-img{
-min-height:290px;
+min-height:320px;
+object-position:58% center;
 }
 
 .vita-photo-button{
@@ -1472,6 +1759,7 @@ height:16px;
       .hero-media {
         margin-bottom: 12px;
         border-radius: 22px;
+        aspect-ratio: 5 / 3;
       }
       .hero-media::before {
         width: 72%;
@@ -1482,9 +1770,30 @@ height:16px;
           rgba(255,255,255,0) 100%
         );
       }
-      .hero-media img {
+      .hero-cinematic img {
         aspect-ratio: 5 / 3;
-        object-position: 62% center;
+      }
+      .hero-cinematic img:nth-child(1) {
+        object-position: 64% 42%;
+      }
+      .hero-cinematic img:nth-child(2) {
+        object-position: 56% 44%;
+      }
+      .hero-cinematic img:nth-child(3) {
+        object-position: 58% 34%;
+      }
+      .hero-cinematic img.is-active {
+        animation-name: hero-cinematic-drift-mobile;
+      }
+      @keyframes hero-cinematic-drift-mobile {
+        from { transform: scale(1); }
+        to { transform: scale(1.015); }
+      }
+      .hero-refresh {
+        right: 12px;
+        bottom: 12px;
+        width: 44px;
+        height: 44px;
       }
       .hero-photo-content {
         left: 14px;
@@ -1498,16 +1807,17 @@ height:16px;
       .hero-photo-content p {
         margin: 10px 0 14px;
         max-width: 100%;
-        font-size: .5rem;
+        font-size: .525rem;
         font-weight: 500;
         line-height: 1.36;
       }
       .hero-photo-content .button-green {
+        width: auto;
         min-width: 0;
-        max-width: 170px;
+        max-width: 100%;
         height: 36px;
         margin-top: 8px;
-        padding: 0 14px;
+        padding: 0 24px;
         font-size: .74rem;
       }
       h1 {
@@ -1525,7 +1835,7 @@ height:16px;
         margin-top: 24px;
       }
       .button { width: 100%; }
-      .hero .button-green { width: 100%; }
+      .hero .button-green { width: auto; }
       .hero-search {
         position: relative;
         display: flex;
@@ -1646,6 +1956,33 @@ height:16px;
       .editorial-image img { min-height: 360px; }
       .area-card { min-height: 245px; }
       .area-card-content { padding: 22px; }
+      .wellness-carousel-viewport {
+        padding: 6px 0 10px;
+      }
+      .wellness-carousel .area-grid {
+        gap: 8px;
+      }
+      .wellness-carousel .area-card {
+        flex-basis: 82%;
+        min-height: 326px;
+        transform: scale(.97);
+      }
+      .wellness-carousel .area-card.is-active { transform: scale(1); }
+      .wellness-carousel-controls {
+        width: calc(100% - 28px);
+        margin-top: 16px;
+      }
+      .wellness-carousel--resources .area-card-content {
+        width: 72%;
+        padding: 26px;
+      }
+      .resource-rail-link {
+        top: 20px;
+        right: calc(9% + 18px);
+        min-height: 32px;
+        padding: 0 14px;
+        font-size: .7rem;
+      }
       .resources-strip { padding: 34px 24px; }
       .resource-mosaic {
         grid-template-columns: 1fr;
@@ -1689,7 +2026,7 @@ height:16px;
         padding: 72px 0;
       }
       .vita-photo,
-      .vita-main-img { min-height: 290px; }
+      .vita-main-img { min-height: 320px; }
       .footer-main {
         padding: 16px 0 22px;
         gap: 24px;
@@ -1811,7 +2148,11 @@ height:16px;
       <div class="hero-inner">
         <div class="hero-copy">
           <figure class="hero-media" aria-label="VITA, orientación digital de bienestar">
-      <img src="./imagenes/vita-portada.png" alt="VITA acompañando una consulta de bienestar" loading="eager" decoding="async">
+      <div class="hero-cinematic" aria-hidden="true">
+        <img class="is-active" src="./imagenes/vita/vita-hero-welcome.webp" alt="" loading="eager" decoding="async" fetchpriority="high">
+        <img src="./imagenes/vita/vita-hero-patient.webp" alt="" loading="eager" decoding="async">
+        <img src="./imagenes/vita/vita-hero-work.webp" alt="" loading="eager" decoding="async">
+      </div>
       <div class="hero-photo-content">
         <h1>Consulta síntomas, enfermedades y medicamentos de forma clara</h1>
         <p>Describe lo que sientes y VITA te orientará</p>
@@ -1822,6 +2163,12 @@ height:16px;
           Hablar con VITA
         </a>
       </div>
+      <button class="hero-refresh" type="button" aria-label="Mostrar la siguiente imagen">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6v5h-5"></path>
+          <path d="M18.1 15a7 7 0 1 1-.7-7.8L20 11"></path>
+        </svg>
+      </button>
     </figure>
           </div>
           <div class="hero-search-shell" id="medical-search">
@@ -1872,7 +2219,9 @@ height:16px;
           </div>
           <p>Accede a información clara y práctica sobre los temas que más interesan a las personas.</p>
         </div>
-        <div class="area-grid">
+        <div class="wellness-carousel" aria-roledescription="carrusel" aria-label="Temas de bienestar">
+          <div class="wellness-carousel-viewport">
+        <div class="area-grid" role="group" aria-live="polite">
           <a class="area-card" href="nutricion.html">
             <img src="./imagenes/nutricion-idb.jpg" alt="Preparación de una comida equilibrada" loading="lazy" decoding="async">
             <div class="area-card-content">
@@ -1916,53 +2265,83 @@ height:16px;
             </div>
           </a>
         </div>
+          </div>
+          <div class="wellness-carousel-controls">
+            <button class="wellness-carousel-button wellness-carousel-play" type="button" aria-label="Pausar reproducción automática" aria-pressed="false">
+              <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M7 5h4v14H7zm6 0h4v14h-4z"></path></svg>
+              <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m8 5 11 7-11 7z"></path></svg>
+            </button>
+            <div class="wellness-carousel-nav">
+              <button class="wellness-carousel-button wellness-carousel-prev" type="button" aria-label="Tema anterior">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+              </button>
+              <button class="wellness-carousel-button wellness-carousel-next" type="button" aria-label="Tema siguiente">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section section-mist" id="recursos" aria-labelledby="recursos-title">
-      <div class="wrap library-layout">
+      <div class="wrap">
         <div class="library-intro">
           <p class="section-kicker">Recursos prácticos</p>
           <h2 id="recursos-title">Herramientas para tu bienestar</h2>
           <p>Guías prácticas, respuestas frecuentes y materiales seleccionados para ayudarte a tomar decisiones con mayor confianza.</p>
-          <a class="button button-green" href="recursos.html">Ver recursos</a>
         </div>
-       <div class="resource-mosaic">
-  <a class="resource-tile tile-large" href="recursos.html">
+      </div>
+      <div class="wellness-carousel wellness-carousel--resources" aria-roledescription="carrusel" aria-label="Herramientas para tu bienestar">
+        <div class="wellness-carousel-viewport">
+          <div class="area-grid" role="group" aria-live="polite">
+  <a class="area-card" href="recursos.html">
     <img src="./imagenes/medicamentos-idb.jpg" alt="Persona revisando medicamentos de forma ordenada" loading="lazy" decoding="async">
-    <div>
+    <div class="area-card-content">
       <span>Medicamentos</span>
       <h3>Entiende mejor tus medicamentos</h3>
       <p>Información clara sobre uso, cuidados y preguntas frecuentes.</p>
     </div>
   </a>
 
-  <a class="resource-tile" href="recursos.html">
+  <a class="area-card" href="recursos.html">
     <img src="./imagenes/examenes-medicos-idb.jpg" alt="Profesional revisando una radiografía médica" loading="lazy" decoding="async">
-    <div>
+    <div class="area-card-content">
       <span>Exámenes médicos</span>
       <h3>Radiografías y resultados</h3>
       <p>Orientación para comprender mejor tus informes.</p>
     </div>
   </a>
 
-  <a class="resource-tile" href="recursos.html">
+  <a class="area-card" href="recursos.html">
     <img src="./imagenes/guias-salud-idb.jpg" alt="Persona leyendo una guía de salud en una tablet" loading="lazy" decoding="async">
-    <div>
+    <div class="area-card-content">
       <span>Guías prácticas</span>
       <h3>Cuida tu salud con mejores decisiones</h3>
       <p>Material simple para el día a día.</p>
     </div>
   </a>
-    <a class="resource-tile" href="recursos.html">
+    <a class="area-card" href="recursos.html">
     <img src="./imagenes/sintomas-enfermedades-idb.jpg" alt="Persona consultando síntomas y enfermedades" loading="lazy" decoding="async">
-    <div>
+    <div class="area-card-content">
         <span>Síntomas y enfermedades</span>
         <h3>Comprende tus síntomas</h3>
         <p>Información confiable sobre enfermedades y molestias frecuentes.</p>
     </div>
 </a>
-</div>
+          </div>
+          <a class="resource-rail-link" href="recursos.html">Ver recursos</a>
+        </div>
+        <div class="wellness-carousel-controls">
+          <button class="wellness-carousel-button wellness-carousel-play" type="button" aria-label="Pausar reproducción automática" aria-pressed="false">
+            <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M7 5h4v14H7zm6 0h4v14h-4z"></path></svg>
+            <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m8 5 11 7-11 7z"></path></svg>
+          </button>
+          <div class="wellness-carousel-nav">
+            <button class="wellness-carousel-button wellness-carousel-prev" type="button" aria-label="Tema anterior"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg></button>
+            <button class="wellness-carousel-button wellness-carousel-next" type="button" aria-label="Tema siguiente"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1970,44 +2349,22 @@ height:16px;
   <div class="vita-grid">
     <div class="vita-content">
       <h2 class="vita-title" id="vita-title">Orientación confiable,<br>cuando la necesites</h2>
-
-      <div class="vita-chat-card" aria-label="Vista previa de conversación con VITA por WhatsApp">
-        <div class="vita-chat-header">
-          <img class="wa-icon" src="./imagenes/whatsapp.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">
-          <div class="vita-chat-headline">
-            <strong>WhatsApp</strong>
-            <span>Respuesta inmediata</span>
-          </div>
-          <span class="vita-menu-dots" aria-hidden="true">•••</span>
-        </div>
-
-        <div class="vita-chat-body">
-          <div class="vita-message vita-message-in">
-            Hola, soy VITA.<br>
-            ¿En qué puedo ayudarte?
-            <span>10:30</span>
-          </div>
-
-          <div class="vita-message vita-message-out">
-            Me entregaron unos análisis médicos y no entiendo qué significan.
-            <span>10:32</span>
-          </div>
-        </div>
-
-        <a class="vita-chat-button" href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">
-          <img class="wa-icon" src="./imagenes/whatsapp.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">
-          Continuar en WhatsApp
-          <span class="vita-arrow" aria-hidden="true">›</span>
-        </a>
-      </div>
-    </div>
-
-    <figure class="vita-photo">
-      <img class="vita-main-img" src="./imagenes/vita-institucional-idb.png" alt="VITA acompañando una consulta de bienestar" loading="lazy" decoding="async">
-      <a class="vita-photo-button" href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">
+      <p class="vita-subtitle">Información médica clara y basada en evidencia para ayudarte a comprender síntomas, enfermedades, medicamentos y resultados de salud.</p>
+      <ul class="vita-benefits">
+        <li>Información basada en evidencia científica.</li>
+        <li>Explicación clara de síntomas y medicamentos.</li>
+        <li>Orientación disponible desde cualquier dispositivo.</li>
+        <li>Respuesta inmediata con VITA.</li>
+      </ul>
+      <p class="vita-institutional">Más de 1,000 contenidos médicos basados en evidencia científica, en constante crecimiento.</p>
+      <a class="vita-photo-button vita-content-button" href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.">
         <img class="wa-icon" src="./imagenes/whatsapp.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">
         Hablar con VITA
       </a>
+    </div>
+
+    <figure class="vita-photo">
+      <img class="vita-main-img" src="./imagenes/vita/vita-hero-patient.webp" alt="VITA junto a una paciente durante una orientación médica" loading="lazy" decoding="async">
     </figure>
   </div>
 </section>
@@ -2083,6 +2440,260 @@ const nav = document.querySelector('.nav');
 menuToggle?.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
+
+const heroSlides = Array.from(document.querySelectorAll('.hero-cinematic img'));
+const heroRefresh = document.querySelector('.hero-refresh');
+const reducedHeroMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let heroSlideIndex = 0;
+let heroRotationTimer;
+let heroTransitionTimer;
+let heroTransitionResolve;
+let heroSequenceGeneration = 0;
+let heroSequenceStep = 0;
+const heroSequence = [0, 1, 2, 0];
+const heroVisibleDuration = 6500;
+const heroDissolveDuration = 2500;
+const heroSlideReady = heroSlides.map((slide) => {
+  if (slide.complete && slide.naturalWidth > 0) return Promise.resolve();
+  return new Promise((resolve) => {
+    slide.addEventListener('load', resolve, { once: true });
+    slide.addEventListener('error', resolve, { once: true });
+  });
+});
+
+function clearHeroTimers() {
+  window.clearTimeout(heroRotationTimer);
+  window.clearTimeout(heroTransitionTimer);
+  heroTransitionResolve?.(false);
+  heroTransitionResolve = null;
+}
+
+function waitForHeroDissolve(generation) {
+  return new Promise((resolve) => {
+    heroTransitionResolve = resolve;
+    heroTransitionTimer = window.setTimeout(() => {
+      heroTransitionResolve = null;
+      resolve(generation === heroSequenceGeneration);
+    }, heroDissolveDuration);
+  });
+}
+
+async function showHeroSlide(nextIndex, generation, animate = true) {
+  await heroSlideReady[nextIndex];
+  if (generation !== heroSequenceGeneration) return false;
+
+  const currentSlide = heroSlides[heroSlideIndex];
+  const nextSlide = heroSlides[nextIndex];
+  if (currentSlide === nextSlide) {
+    nextSlide.classList.remove('is-leaving');
+    nextSlide.classList.add('is-active');
+    return true;
+  }
+
+  heroSlides.forEach((slide) => slide.classList.remove('is-leaving'));
+  const heldTransform = window.getComputedStyle(currentSlide).transform;
+  currentSlide.style.transform = heldTransform;
+  currentSlide.style.animation = 'none';
+  currentSlide.classList.add('is-leaving');
+  currentSlide.classList.remove('is-active');
+  nextSlide.classList.remove('is-active', 'is-leaving');
+  void nextSlide.offsetWidth;
+  if (!animate) nextSlide.style.transitionDuration = '0s';
+  nextSlide.classList.add('is-active');
+  heroSlideIndex = nextIndex;
+
+  const completed = animate ? await waitForHeroDissolve(generation) : true;
+  currentSlide.classList.remove('is-leaving');
+  currentSlide.style.removeProperty('animation');
+  currentSlide.style.removeProperty('transform');
+  if (!animate) nextSlide.style.removeProperty('transition-duration');
+  return completed && generation === heroSequenceGeneration;
+}
+
+function scheduleHeroStep(generation) {
+  clearHeroTimers();
+  if (reducedHeroMotion.matches || heroSequenceStep >= heroSequence.length - 1) return;
+  heroRotationTimer = window.setTimeout(async () => {
+    const nextStep = heroSequenceStep + 1;
+    const completed = await showHeroSlide(heroSequence[nextStep], generation);
+    if (completed) {
+      heroSequenceStep = nextStep;
+      scheduleHeroStep(generation);
+    }
+  }, heroVisibleDuration);
+}
+
+function startHeroSequence() {
+  clearHeroTimers();
+  heroSequenceGeneration += 1;
+  heroSequenceStep = 0;
+  const generation = heroSequenceGeneration;
+  if (!reducedHeroMotion.matches) scheduleHeroStep(generation);
+}
+
+if (heroSlides.length > 1) startHeroSequence();
+
+heroRefresh?.addEventListener('click', async () => {
+  heroRefresh.classList.remove('is-spinning');
+  void heroRefresh.offsetWidth;
+  heroRefresh.classList.add('is-spinning');
+  clearHeroTimers();
+  heroSequenceGeneration += 1;
+  heroSequenceStep = 0;
+  const generation = heroSequenceGeneration;
+
+  if (reducedHeroMotion.matches) {
+    const nextIndex = (heroSlideIndex + 1) % heroSlides.length;
+    await showHeroSlide(nextIndex, generation, false);
+    return;
+  }
+
+  await showHeroSlide(0, generation);
+  if (generation === heroSequenceGeneration) scheduleHeroStep(generation);
+});
+
+heroRefresh?.addEventListener('animationend', () => {
+  heroRefresh.classList.remove('is-spinning');
+});
+
+reducedHeroMotion.addEventListener?.('change', () => {
+  clearHeroTimers();
+  heroSequenceGeneration += 1;
+  heroSequenceStep = 0;
+  const generation = heroSequenceGeneration;
+  if (reducedHeroMotion.matches) {
+    showHeroSlide(0, generation, false);
+  } else {
+    showHeroSlide(0, generation).then((completed) => {
+      if (completed) scheduleHeroStep(generation);
+    });
+  }
+});
+
+const reducedMediaRailMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+function initIDBMediaRail(rail) {
+  const track = rail.querySelector('.area-grid');
+  const viewport = rail.querySelector('.wellness-carousel-viewport');
+  const originalCards = Array.from(track?.querySelectorAll('.area-card') || []);
+  if (!track || !viewport || originalCards.length < 2) return;
+
+  originalCards.slice(0, 3).forEach((card) => {
+    const clone = card.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    clone.setAttribute('tabindex', '-1');
+    clone.classList.add('is-continuity-clone');
+    track.appendChild(clone);
+  });
+
+  const cards = Array.from(track.querySelectorAll('.area-card'));
+  const play = rail.querySelector('.wellness-carousel-play');
+  const prev = rail.querySelector('.wellness-carousel-prev');
+  const next = rail.querySelector('.wellness-carousel-next');
+  const startIndex = 1;
+  const autoplayEndIndex = originalCards.length + 1;
+  let index = startIndex;
+  let timer;
+  let isPlaying = false;
+  let touchStartX = 0;
+  let didSwipe = false;
+
+  function setPlaybackState(playing) {
+    isPlaying = playing;
+    play?.classList.toggle('is-paused', !playing);
+    play?.setAttribute('aria-pressed', String(!playing));
+    play?.setAttribute('aria-label', playing ? 'Pausar reproducción automática' : 'Reproducir desde el primer tema');
+  }
+
+  function update(nextIndex, announce = true) {
+    index = Math.max(0, Math.min(nextIndex, cards.length - 1));
+    const active = cards[index];
+    track.style.transform = `translate3d(${viewport.clientWidth / 2 - (active.offsetLeft + active.offsetWidth / 2)}px, 0, 0)`;
+    cards.forEach((card, cardIndex) => {
+      const activeCard = cardIndex === index;
+      card.classList.toggle('is-active', activeCard);
+      card.setAttribute('aria-current', activeCard ? 'true' : 'false');
+    });
+    if (announce) {
+      const logicalIndex = index % originalCards.length;
+      track.setAttribute('aria-label', `${logicalIndex + 1} de ${originalCards.length}: ${active.querySelector('h3')?.textContent || ''}`);
+    }
+  }
+
+  function stop() {
+    window.clearTimeout(timer);
+    setPlaybackState(false);
+  }
+
+  function enableMotion() {
+    if (!track.classList.contains('is-resetting')) return;
+    track.classList.remove('is-resetting');
+    track.style.removeProperty('transition');
+    void track.offsetWidth;
+  }
+
+  function resetInvisible() {
+    track.getAnimations?.({ subtree: true })?.forEach((animation) => animation.cancel());
+    track.classList.add('is-resetting');
+    track.style.transition = 'none';
+    update(startIndex, false);
+    void track.offsetWidth;
+  }
+
+  function schedule() {
+    window.clearTimeout(timer);
+    if (!isPlaying || index >= autoplayEndIndex) {
+      if (index >= autoplayEndIndex) setPlaybackState(false);
+      return;
+    }
+    timer = window.setTimeout(() => {
+      enableMotion();
+      update(index + 1);
+      schedule();
+    }, 7500);
+  }
+
+  function playForward() {
+    window.clearTimeout(timer);
+    if (index >= autoplayEndIndex) resetInvisible();
+    if (reducedMediaRailMotion.matches) return setPlaybackState(false);
+    setPlaybackState(true);
+    schedule();
+  }
+
+  play?.addEventListener('click', () => isPlaying ? stop() : playForward());
+  prev?.addEventListener('click', () => { stop(); enableMotion(); update(index - 1); });
+  next?.addEventListener('click', () => { stop(); enableMotion(); update(index + 1); });
+  viewport.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0].clientX; didSwipe = false; }, { passive: true });
+  viewport.addEventListener('touchend', (event) => {
+    const distance = event.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(distance) < 45) return;
+    didSwipe = true;
+    stop();
+    enableMotion();
+    update(index + (distance < 0 ? 1 : -1));
+  }, { passive: true });
+  viewport.addEventListener('click', (event) => { if (didSwipe) { event.preventDefault(); didSwipe = false; } }, true);
+  rail.addEventListener('keydown', (event) => {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    event.preventDefault();
+    stop();
+    enableMotion();
+    update(index + (event.key === 'ArrowRight' ? 1 : -1));
+  });
+  window.addEventListener('resize', () => update(index, false));
+  reducedMediaRailMotion.addEventListener?.('change', () => { stop(); update(index, false); });
+
+  update(startIndex, false);
+  if (!reducedMediaRailMotion.matches) {
+    setPlaybackState(true);
+    schedule();
+  } else {
+    setPlaybackState(false);
+  }
+}
+
+document.querySelectorAll('.wellness-carousel').forEach(initIDBMediaRail);
 </script>
 </body>
 </html>
