@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="idb-editable-title idb-editable-desc" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <title id="idb-editable-title">IDB VERIFIED</title>
+  <desc id="idb-editable-desc">Sello institucional editable del Instituto Digital de Bienestar basado en D3 Premium Equilibrado.</desc>
+
+  <defs id="idb-seal-guides">
+    <path id="idb-seal-top-arc-path" d="M39 160 A121 121 0 0 1 281 160"/>
+    <path id="idb-seal-bottom-arc-path" d="M39 160 A121 121 0 0 0 281 160"/>
+    <linearGradient id="idb-seal-silver-gradient" gradientUnits="userSpaceOnUse" x1="112" y1="0" x2="208" y2="0">
+      <stop offset="0" stop-color="#666b6f"/>
+      <stop offset="0.24" stop-color="#c4c7c9"/>
+      <stop offset="0.5" stop-color="#858a8e"/>
+      <stop offset="0.74" stop-color="#d0d2d3"/>
+      <stop offset="1" stop-color="#6f7478"/>
+    </linearGradient>
+  </defs>
+
+  <g id="idb-seal-rings" fill="none" stroke="#176c59">
+    <circle id="idb-seal-outer-ring" cx="160" cy="160" r="143" stroke-width="2.6"/>
+    <circle id="idb-seal-inner-ring" cx="160" cy="160" r="133" stroke-width="1.4"/>
+  </g>
+
+  <g id="idb-seal-circular-text" fill="#176c59" font-family="Arial, Helvetica, sans-serif" font-size="12.4" font-weight="700" letter-spacing="1.95">
+    <text id="idb-seal-top-arc-text">
+      <textPath href="#idb-seal-top-arc-path" startOffset="50%" text-anchor="middle" textLength="160" lengthAdjust="spacing">INSTITUTO DIGITAL</textPath>
+    </text>
+    <text id="idb-seal-bottom-arc-text">
+      <textPath href="#idb-seal-bottom-arc-path" startOffset="50%" text-anchor="middle" textLength="124" lengthAdjust="spacing">DE BIENESTAR</textPath>
+    </text>
+  </g>
+
+  <g id="idb-seal-center" fill="url(#idb-seal-silver-gradient)" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" transform="translate(2 0)">
+    <text id="idb-seal-center-idb" x="160" y="158" font-size="41" font-weight="600" letter-spacing="1.1">IDB</text>
+    <text id="idb-seal-center-verified" x="160" y="185" font-size="13.8" font-weight="500" letter-spacing="2.9">VERIFIED</text>
+  </g>
+</svg>

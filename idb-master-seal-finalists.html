@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDB Master Seal — Comparación de radio tipográfico</title>
+  <style>
+    :root {
+      --idb-green: #176c59;
+      --ink: #16312d;
+      --muted: #65756f;
+      --paper: #ffffff;
+      --line: #dfe8e4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 48px 24px;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+    }
+    header {
+      max-width: 760px;
+      margin: 0 auto 44px;
+      text-align: center;
+    }
+    h1 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.05; }
+    header p { margin: 14px 0 0; color: var(--muted); }
+    .comparison {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 42px;
+    }
+    article { min-width: 0; text-align: center; }
+    h2 { margin: 0 0 20px; font-size: 1rem; letter-spacing: .04em; }
+    .seal {
+      display: block;
+      width: min(100%, 300px);
+      height: auto;
+      margin: 0 auto;
+      color: var(--idb-green);
+    }
+    .seal text {
+      fill: #176c59;
+      font-family: Arial, Helvetica, sans-serif;
+      text-anchor: middle;
+    }
+    .arc { font-weight: 700; }
+    .idb { font-weight: 600; }
+    .verified { font-weight: 500; }
+    .spec {
+      max-width: 280px;
+      margin: 22px auto 0;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.5;
+    }
+    .spec strong { color: var(--ink); }
+    @media (max-width: 760px) {
+      body { padding: 36px 20px; }
+      .comparison { grid-template-columns: 1fr; gap: 54px; }
+      .seal { width: min(100%, 280px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>D3 · Radio del texto circular</h1>
+    <p>Anillos, centro, color, tipografía y tracking permanecen idénticos.</p>
+  </header>
+
+  <main class="comparison">
+    <article>
+      <h2>D3 original</h2>
+      <svg class="seal" viewBox="0 0 320 320" role="img" aria-label="D3 original con radio tipográfico 119">
+        <defs>
+          <path id="d3-original-top" d="M41 160 A119 119 0 0 1 279 160"/>
+          <path id="d3-original-bottom" d="M41 160 A119 119 0 0 0 279 160"/>
+        </defs>
+        <circle cx="160" cy="160" r="143" fill="none" stroke="#176c59" stroke-width="2.6"/>
+        <circle cx="160" cy="160" r="133" fill="none" stroke="#176c59" stroke-width="1.4"/>
+        <text class="arc" font-size="12.4" letter-spacing="1.95"><textPath href="#d3-original-top" startOffset="50%" text-anchor="middle">INSTITUTO DIGITAL</textPath></text>
+        <text class="arc" font-size="12.4" letter-spacing="1.95"><textPath href="#d3-original-bottom" startOffset="50%" text-anchor="middle">DE BIENESTAR</textPath></text>
+        <text class="idb" x="160" y="158" font-size="41" letter-spacing="1.1">IDB</text>
+        <text class="verified" x="160" y="185" font-size="13.8" letter-spacing="2.9">VERIFIED</text>
+      </svg>
+      <p class="spec"><strong>Radio: 119 px</strong><br>Referencia aprobada sin modificaciones.</p>
+    </article>
+
+    <article>
+      <h2>D3 · Texto +6 px</h2>
+      <svg class="seal" viewBox="0 0 320 320" role="img" aria-label="D3 con texto circular desplazado 6 píxeles hacia el borde">
+        <defs>
+          <path id="d3-plus6-top" d="M35 160 A125 125 0 0 1 285 160"/>
+          <path id="d3-plus6-bottom" d="M35 160 A125 125 0 0 0 285 160"/>
+        </defs>
+        <circle cx="160" cy="160" r="143" fill="none" stroke="#176c59" stroke-width="2.6"/>
+        <circle cx="160" cy="160" r="133" fill="none" stroke="#176c59" stroke-width="1.4"/>
+        <text class="arc" font-size="12.4" letter-spacing="1.95"><textPath href="#d3-plus6-top" startOffset="50%" text-anchor="middle">INSTITUTO DIGITAL</textPath></text>
+        <text class="arc" font-size="12.4" letter-spacing="1.95"><textPath href="#d3-plus6-bottom" startOffset="50%" text-anchor="middle">DE BIENESTAR</textPath></text>
+        <text class="idb" x="160" y="158" font-size="41" letter-spacing="1.1">IDB</text>
+        <text class="verified" x="160" y="185" font-size="13.8" letter-spacing="2.9">VERIFIED</text>
+      </svg>
+      <p class="spec"><strong>Radio: 125 px</strong><br>Texto desplazado exactamente 6 px hacia el anillo interior.</p>
+    </article>
+
+    <article>
+      <h2>D3 · Texto +8 px</h2>
+      <svg class="seal" viewBox="0 0 320 320" role="img" aria-label="D3 con texto circular desplazado 8 píxeles hacia el borde">
+        <defs>
+          <path id="d3-plus8-top" d="M33 160 A127 127 0 0 1 287 160"/>
+          <path id="d3-plus8-bottom" d="M33 160 A127 127 0 0 0 287 160"/>
+        </defs>
+        <circle cx="160" cy="160" r="143" fill="none" stroke="#176c59" stroke-width="2.6"/>
+        <circle cx="160" cy="160" r="133" fill="none" stroke="#176c59" stroke-width="1.4"/>
+        <text class="arc" font-size="12.4" letter-spacing="1.95"><textPath href="#d3-plus8-top" startOffset="50%" text-anchor="middle">INSTITUTO DIGITAL</textPath></text>
+        <text class="arc" font-size="12.4" letter-spacing="1.95"><textPath href="#d3-plus8-bottom" startOffset="50%" text-anchor="middle">DE BIENESTAR</textPath></text>
+        <text class="idb" x="160" y="158" font-size="41" letter-spacing="1.1">IDB</text>
+        <text class="verified" x="160" y="185" font-size="13.8" letter-spacing="2.9">VERIFIED</text>
+      </svg>
+      <p class="spec"><strong>Radio: 127 px</strong><br>Texto desplazado exactamente 8 px hacia el anillo interior.</p>
+    </article>
+  </main>
+</body>
+</html>

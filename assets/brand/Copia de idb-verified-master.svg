@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="idb-verified-master-title idb-verified-master-desc" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <title id="idb-verified-master-title">IDB VERIFIED</title>
+  <desc id="idb-verified-master-desc">Sello institucional del Instituto Digital de Bienestar que identifica contenido verificado bajo sus estándares editoriales.</desc>
+  <defs>
+    <path id="idb-verified-master-top-arc" d="M38.5 160 A121.5 121.5 0 0 1 281.5 160"/>
+    <path id="idb-verified-master-bottom-arc" d="M38.5 160 A121.5 121.5 0 0 0 281.5 160"/>
+  </defs>
+  <g fill="#176c59" stroke="#176c59" font-family="Arial, Helvetica, sans-serif">
+    <circle cx="160" cy="160" r="143" fill="none" stroke-width="2.6"/>
+    <circle cx="160" cy="160" r="133" fill="none" stroke-width="1.33"/>
+    <text stroke="none" font-size="12.4" font-weight="700" letter-spacing="1.85">
+      <textPath href="#idb-verified-master-top-arc" startOffset="50%" text-anchor="middle">INSTITUTO DIGITAL</textPath>
+    </text>
+    <text stroke="none" font-size="12.4" font-weight="700" letter-spacing="1.85">
+      <textPath href="#idb-verified-master-bottom-arc" startOffset="50%" text-anchor="middle">DE BIENESTAR</textPath>
+    </text>
+    <text x="160" y="158" stroke="none" font-size="41" font-weight="600" letter-spacing="1.1" text-anchor="middle">IDB</text>
+    <text x="160" y="184" stroke="none" font-size="13.8" font-weight="500" letter-spacing="2.9" text-anchor="middle">VERIFIED</text>
+  </g>
+</svg>

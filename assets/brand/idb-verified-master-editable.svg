@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="idb-master-seal-title idb-master-seal-desc" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <title id="idb-master-seal-title">IDB VERIFIED</title>
+  <desc id="idb-master-seal-desc">Sello institucional del Instituto Digital de Bienestar para contenido oficialmente verificado.</desc>
+
+  <defs id="idb-master-seal-definitions">
+    <path id="idb-master-seal-top-path" d="M41 160 A119 119 0 0 1 279 160"/>
+    <path id="idb-master-seal-bottom-path" d="M41 160 A119 119 0 0 0 279 160"/>
+  </defs>
+
+  <g id="idb-master-seal-field">
+    <circle id="idb-master-seal-background" cx="160" cy="160" r="146.5" fill="#ffffff"/>
+  </g>
+
+  <g id="idb-master-seal-rings" fill="none" stroke="#0F6B5A">
+    <circle id="idb-master-seal-outer-ring" cx="160" cy="160" r="145" stroke-width="3.2"/>
+    <circle id="idb-master-seal-inner-ring" cx="160" cy="160" r="136" stroke-width="1.4"/>
+  </g>
+
+  <g id="idb-master-seal-perimeter" fill="#0F6B5A" font-family="Inter, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="2.4">
+    <text id="idb-master-seal-top-text">
+      <textPath href="#idb-master-seal-top-path" startOffset="50%" text-anchor="middle">INSTITUTO DIGITAL</textPath>
+    </text>
+    <text id="idb-master-seal-bottom-text">
+      <textPath href="#idb-master-seal-bottom-path" startOffset="50%" text-anchor="middle">DE BIENESTAR</textPath>
+    </text>
+  </g>
+
+  <g id="idb-master-seal-center" fill="#0F6B5A" font-family="Inter, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" text-anchor="middle">
+    <text id="idb-master-seal-idb" x="160" y="161" font-size="59.4" font-weight="700" letter-spacing="2.2">IDB</text>
+    <line id="idb-master-seal-divider" x1="111" y1="174" x2="209" y2="174" stroke="#0F6B5A" stroke-width="1.25"/>
+    <text id="idb-master-seal-verified" x="160" y="196" font-size="14" font-weight="500" letter-spacing="4">VERIFIED</text>
+  </g>
+</svg>

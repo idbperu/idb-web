@@ -1210,11 +1210,11 @@ height:16px;
     }
 
     .trust-system {
-      padding: 32px 20px 40px;
+      padding: 30px 20px 42px;
       background: var(--paper);
     }
     .trust-system-card {
-      width: min(560px, 100%);
+      width: min(520px, 100%);
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -1222,16 +1222,12 @@ height:16px;
       gap: 0;
       text-align: center;
     }
-    .trust-system-card:focus-visible {
-      outline: 3px solid rgba(29, 167, 178, 0.35);
-      outline-offset: 10px;
-      border-radius: var(--radius);
-    }
     .trust-system-visual {
       position: relative;
       width: 140px;
-      height: 155px;
+      height: 151px;
       isolation: isolate;
+      touch-action: manipulation;
     }
     .trust-cell {
       position: absolute;
@@ -1247,13 +1243,24 @@ height:16px;
       opacity: 0.99;
       filter: drop-shadow(0 12px 18px rgba(22, 49, 45, 0.08));
       transition:
-        scale 500ms cubic-bezier(0.22, 1, 0.36, 1),
-        opacity 500ms cubic-bezier(0.22, 1, 0.36, 1);
+        scale 540ms cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 540ms cubic-bezier(0.22, 1, 0.36, 1),
+        filter 540ms cubic-bezier(0.22, 1, 0.36, 1);
       animation:
         trust-cell-drift 14.6s cubic-bezier(0.42, 0.08, 0.32, 1) infinite,
         trust-cell-depth 9.8s cubic-bezier(0.37, 0.02, 0.28, 1) infinite alternate;
     }
-    .trust-system-card:hover .trust-cell { scale: 1.01; opacity: 1; }
+    .trust-system-visual:hover .trust-cell {
+      scale: 1.01;
+      opacity: 1;
+      filter: drop-shadow(0 14px 21px rgba(22, 49, 45, 0.095));
+    }
+    .trust-system-visual:active .trust-cell {
+      scale: 1.018;
+      opacity: 1;
+      filter: drop-shadow(0 13px 20px rgba(22, 49, 45, 0.09));
+      transition-duration: 180ms;
+    }
     @keyframes trust-cell-drift {
       0%, 100% {
         transform: translate(-50%, 0) rotate(-1.2deg) scale(0.998);
@@ -1291,72 +1298,41 @@ height:16px;
       position: absolute;
       z-index: 3;
       left: 50%;
-      top: 105px;
+      top: 102px;
       width: 50px;
       height: 50px;
       transform: translateX(-50%);
-      border: 1px solid rgba(31, 143, 115, 0.28);
-      border-radius: 50%;
-      color: var(--green-dark);
-      background: rgba(255, 255, 255, 0.97);
-      box-shadow: 0 8px 22px rgba(22, 49, 45, 0.09);
+      pointer-events: none;
     }
-    .trust-seal-ring {
-      position: absolute;
-      inset: 3px;
-      width: 44px;
-      height: 44px;
-    }
-    .trust-seal-ring text {
-      fill: currentColor;
-      font-size: 7px;
-      font-weight: 850;
-      letter-spacing: 0.3px;
-    }
-    .trust-seal strong {
-      position: absolute;
-      inset: 0;
-      display: grid;
-      place-items: center;
-      padding: 0 10px 4px;
-      color: var(--ink);
-      font-size: 0.4rem;
-      line-height: 1.05;
-      letter-spacing: 0.05em;
-      text-align: center;
+    .trust-seal img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
     }
     .trust-system-copy {
       display: grid;
       justify-items: center;
     }
     .trust-system-eyebrow {
-      margin: 0 0 16px;
+      margin: 17px 0 10px;
       color: var(--green-dark);
       font-size: 0.72rem;
-      font-weight: 850;
-      letter-spacing: 0.16em;
+      font-weight: 700;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
     }
     .trust-system-description {
       margin: 0;
       color: var(--muted);
       font-size: 0.94rem;
+      line-height: 1.55;
     }
-    .trust-system-cta {
-      margin-top: 15px;
-      color: var(--green-dark);
-      font-size: 0.86rem;
-      font-weight: 800;
-      transition: color 180ms ease;
-    }
-    .trust-system-card:hover .trust-system-cta { color: var(--teal); }
 
     @media (max-width: 980px) {
-      .trust-system-visual { width: 130px; height: 145px; }
+      .trust-system-visual { width: 130px; height: 140px; }
       .trust-cell { width: 110px; }
-      .trust-seal { top: 97px; width: 48px; height: 48px; }
-      .trust-seal-ring { width: 42px; height: 42px; }
-      .trust-seal strong { padding: 0 9px; font-size: 0.38rem; }
+      .trust-seal { top: 94px; width: 48px; height: 48px; }
     }
 
     .trust-center {
@@ -1630,12 +1606,10 @@ height:16px;
       .trust-system-card {
         width: 100%;
       }
-      .trust-system-eyebrow { margin-bottom: 14px; }
-      .trust-system-visual { width: 120px; height: 132px; }
+      .trust-system-eyebrow { margin: 15px 0 9px; }
+      .trust-system-visual { width: 120px; height: 128px; }
       .trust-cell { width: 100px; }
-      .trust-seal { top: 88px; width: 44px; height: 44px; }
-      .trust-seal-ring { width: 38px; height: 38px; }
-      .trust-seal strong { padding: 0 8px; font-size: 0.35rem; }
+      .trust-seal { top: 85px; width: 44px; height: 44px; }
       .trust-center {
         padding: 48px 20px;
       }
@@ -1873,29 +1847,20 @@ height:16px;
       </div>
     </section>
 
-    <section class="trust-system" aria-label="IDB Trust System">
-      <a class="trust-system-card" href="trust-center.html" aria-label="Conocer IDB Trust System y visitar el Trust Center">
-        <p class="trust-system-eyebrow">IDB TRUST SYSTEM</p>
-        <div class="trust-system-visual">
-          <img class="trust-cell" src="./imagenes/idb-trust-cell.webp" alt="" loading="lazy" decoding="async">
+    <section class="trust-system" aria-labelledby="trust-system-title">
+      <div class="trust-system-card">
+        <div class="trust-system-visual" aria-hidden="true">
+          <img class="trust-cell" src="./imagenes/idb-trust-cell.webp" alt="" width="120" height="120" loading="lazy" decoding="async" draggable="false">
 
           <div class="trust-seal">
-            <svg class="trust-seal-ring" viewBox="0 0 60 60" aria-hidden="true">
-              <defs>
-                <path id="trust-seal-top" d="M7 30 A23 23 0 0 1 53 30"/>
-                <path id="trust-seal-bottom" d="M8 34 A22 22 0 0 0 52 34"/>
-              </defs>
-              <text><textPath href="#trust-seal-top" startOffset="50%" text-anchor="middle">INSTITUTO DIGITAL</textPath></text>
-              <text><textPath href="#trust-seal-bottom" startOffset="50%" text-anchor="middle">DE BIENESTAR</textPath></text>
-            </svg>
-            <strong>IDB<br>VERIFIED</strong>
+            <img src="./assets/brand/idb-verified-master-editable.svg" alt="" width="50" height="50" loading="lazy" decoding="async" draggable="false">
           </div>
         </div>
         <div class="trust-system-copy">
+          <h2 class="trust-system-eyebrow" id="trust-system-title">IDB TRUST SYSTEM</h2>
           <p class="trust-system-description">Información médica basada en evidencia científica.</p>
-          <span class="trust-system-cta">Conocer nuestro estándar →</span>
         </div>
-      </a>
+      </div>
     </section>
 
     <section class="section" id="bienestar" aria-labelledby="bienestar-title">
