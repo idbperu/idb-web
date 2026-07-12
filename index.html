@@ -172,14 +172,14 @@
     object-position: center 68%;
     opacity: 0;
     transform: scale(1);
-    transition: opacity 2.5s cubic-bezier(.4, 0, .2, 1);
+    transition: opacity 1.35s cubic-bezier(.4, 0, .2, 1);
     will-change: opacity;
   }
 
   .hero-cinematic img.is-active {
     opacity: 1;
     z-index: 2;
-    animation: hero-cinematic-drift 9s cubic-bezier(.2, .55, .25, 1) 1 both;
+    animation: hero-cinematic-drift 5.15s cubic-bezier(.2, .55, .25, 1) 1 both;
   }
 
   .hero-cinematic img.is-leaving {
@@ -228,7 +228,7 @@
   .hero-photo-content {
     position: absolute;
     left: 24px;
-    top: 41%;
+    top: 48%;
     transform: translateY(-50%);
     z-index: 2;
     max-width: 370px;
@@ -241,6 +241,37 @@
     font-size: clamp(1.72rem,2.35vw,2.45rem);
     font-weight: 850;
     line-height: 1.04;
+  }
+
+  .hero-title-fixed {
+    display:block;
+    font-size:.62em;
+    font-weight:780;
+    line-height:1.05;
+  }
+
+  .hero-dynamic-word {
+    position:relative;
+    display:block;
+    width:100%;
+    height:1.08em;
+    margin-top:2px;
+    font-size:1.28em;
+    font-weight:880;
+    line-height:1.08;
+  }
+
+  .hero-dynamic-word span {
+    position:absolute;
+    inset:0 auto auto 0;
+    opacity:0;
+    transform:translateY(6px);
+    transition:opacity .62s cubic-bezier(.4,0,.2,1), transform .62s cubic-bezier(.4,0,.2,1);
+  }
+
+  .hero-dynamic-word span.is-active {
+    opacity:1;
+    transform:translateY(0);
   }
   
   .hero-photo-content p {
@@ -737,7 +768,7 @@
     .wellness-carousel .area-grid {
       display: flex;
       gap: 8px;
-      transition: transform 760ms cubic-bezier(.4, 0, .2, 1);
+      transition: transform 620ms cubic-bezier(.4, 0, .2, 1);
       will-change: transform;
     }
     .wellness-carousel .area-grid.is-resetting,
@@ -751,7 +782,7 @@
       filter: brightness(.82);
       opacity: .88;
       box-shadow: 0 10px 28px rgba(22, 49, 45, .08);
-      transition: transform 760ms cubic-bezier(.4, 0, .2, 1), filter 760ms ease, opacity 760ms ease, box-shadow 760ms ease;
+      transition: transform 620ms cubic-bezier(.4, 0, .2, 1), filter 620ms ease, opacity 620ms ease, box-shadow 620ms ease;
     }
     .wellness-carousel .area-card.is-active {
       transform: scale(1);
@@ -813,11 +844,18 @@
       width: min(52%, 520px);
       padding: 42px;
     }
+    .resources-heading {
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:28px;
+      margin-bottom:34px;
+    }
+    .resources-heading .library-intro {
+      max-width:760px;
+    }
     .resource-rail-link {
-      position: absolute;
-      top: 28px;
-      right: calc(8% + 28px);
-      z-index: 4;
+      flex:0 0 auto;
       min-height: 34px;
       padding: 0 16px;
       display: inline-flex;
@@ -825,22 +863,21 @@
       justify-content: center;
       border: 1px solid rgba(255, 255, 255, .62);
       border-radius: 999px;
-      color: #fff;
-      background: rgba(16, 43, 38, .42);
+      color:var(--green-dark);
+      background:rgba(255,255,255,.72);
+      border-color:rgba(31,143,115,.24);
       box-shadow: none;
       font-size: .74rem;
       font-weight: 650;
       line-height: 1;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
       transition: background 180ms ease, border-color 180ms ease;
     }
     .resource-rail-link:hover {
-      border-color: rgba(255, 255, 255, .82);
-      background: rgba(16, 43, 38, .58);
+      border-color:rgba(31,143,115,.42);
+      background:#fff;
     }
     .resource-rail-link:focus-visible {
-      outline: 2px solid #fff;
+      outline:2px solid var(--green);
       outline-offset: 3px;
     }
 
@@ -1628,6 +1665,9 @@ height:16px;
       border-bottom: 1px solid var(--line);
       background: var(--mist);
     }
+    .trust-center.is-temporarily-hidden {
+      display: none;
+    }
     .trust-center-inner {
       width: min(760px, 100%);
       margin: 0 auto;
@@ -1759,19 +1799,21 @@ height:16px;
       .hero-media {
         margin-bottom: 12px;
         border-radius: 22px;
-        aspect-ratio: 5 / 3;
+        aspect-ratio: 4 / 5;
       }
       .hero-media::before {
-        width: 72%;
+        inset:auto 0 0;
+        width:100%;
+        height:62%;
         background: linear-gradient(
-          90deg,
-          rgba(255,255,255,.88) 0%,
-          rgba(255,255,255,.64) 58%,
-          rgba(255,255,255,0) 100%
+          180deg,
+          rgba(255,255,255,0) 0%,
+          rgba(255,255,255,.58) 48%,
+          rgba(255,255,255,.9) 100%
         );
       }
       .hero-cinematic img {
-        aspect-ratio: 5 / 3;
+        aspect-ratio: 4 / 5;
       }
       .hero-cinematic img:nth-child(1) {
         object-position: 64% 42%;
@@ -1796,18 +1838,23 @@ height:16px;
         height: 44px;
       }
       .hero-photo-content {
-        left: 14px;
-        top: 49%;
-        max-width: 49%;
+        left: 50%;
+        top:auto;
+        bottom:24px;
+        width:78%;
+        max-width:78%;
+        transform:translateX(-50%);
+        text-align:center;
       }
       .hero-photo-content h1 {
-        font-size: clamp(.72rem, 3.15vw, .86rem);
-        line-height: 1.06;
+        max-width:none;
+        font-size: clamp(1.28rem, 6vw, 1.62rem);
+        line-height: 1.02;
       }
       .hero-photo-content p {
         margin: 10px 0 14px;
         max-width: 100%;
-        font-size: .525rem;
+        font-size: .76rem;
         font-weight: 500;
         line-height: 1.36;
       }
@@ -1816,9 +1863,9 @@ height:16px;
         min-width: 0;
         max-width: 100%;
         height: 36px;
-        margin-top: 8px;
-        padding: 0 24px;
-        font-size: .74rem;
+        margin-top: 4px;
+        padding: 0 22px;
+        font-size: .72rem;
       }
       h1 {
         font-size: clamp(1.75rem, 8vw, 2.4rem);
@@ -1977,11 +2024,14 @@ height:16px;
         padding: 26px;
       }
       .resource-rail-link {
-        top: 20px;
-        right: calc(9% + 18px);
         min-height: 32px;
         padding: 0 14px;
         font-size: .7rem;
+      }
+      .resources-heading {
+        align-items:flex-start;
+        gap:16px;
+        margin-bottom:28px;
       }
       .resources-strip { padding: 34px 24px; }
       .resource-mosaic {
@@ -2154,7 +2204,7 @@ height:16px;
         <img src="./imagenes/vita/vita-hero-work.webp" alt="" loading="eager" decoding="async">
       </div>
       <div class="hero-photo-content">
-        <h1>Consulta síntomas, enfermedades y medicamentos de forma clara</h1>
+        <h1><span class="hero-title-fixed">Comprende</span><span class="hero-dynamic-word" aria-live="polite"><span class="is-active">síntomas</span><span></span></span></h1>
         <p>Describe lo que sientes y VITA te orientará</p>
         <a class="button button-green" href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar." aria-label="Hablar con VITA por WhatsApp">
           <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true">
@@ -2219,7 +2269,7 @@ height:16px;
           </div>
           <p>Accede a información clara y práctica sobre los temas que más interesan a las personas.</p>
         </div>
-        <div class="wellness-carousel" aria-roledescription="carrusel" aria-label="Temas de bienestar">
+        <div class="wellness-carousel" data-media-rail="v2" data-autoplay-delay="2900" aria-roledescription="carrusel" aria-label="Temas de bienestar">
           <div class="wellness-carousel-viewport">
         <div class="area-grid" role="group" aria-live="polite">
           <a class="area-card" href="nutricion.html">
@@ -2285,14 +2335,15 @@ height:16px;
     </section>
 
     <section class="section section-mist" id="recursos" aria-labelledby="recursos-title">
-      <div class="wrap">
+      <div class="wrap resources-heading">
         <div class="library-intro">
           <p class="section-kicker">Recursos prácticos</p>
           <h2 id="recursos-title">Herramientas para tu bienestar</h2>
           <p>Guías prácticas, respuestas frecuentes y materiales seleccionados para ayudarte a tomar decisiones con mayor confianza.</p>
         </div>
+        <a class="resource-rail-link" href="recursos.html">Ver recursos</a>
       </div>
-      <div class="wellness-carousel wellness-carousel--resources" aria-roledescription="carrusel" aria-label="Herramientas para tu bienestar">
+      <div class="wellness-carousel wellness-carousel--resources" data-media-rail="v2" data-autoplay-delay="3350" aria-roledescription="carrusel" aria-label="Herramientas para tu bienestar">
         <div class="wellness-carousel-viewport">
           <div class="area-grid" role="group" aria-live="polite">
   <a class="area-card" href="recursos.html">
@@ -2330,7 +2381,6 @@ height:16px;
     </div>
 </a>
           </div>
-          <a class="resource-rail-link" href="recursos.html">Ver recursos</a>
         </div>
         <div class="wellness-carousel-controls">
           <button class="wellness-carousel-button wellness-carousel-play" type="button" aria-label="Pausar reproducción automática" aria-pressed="false">
@@ -2348,7 +2398,7 @@ height:16px;
     <section class="vita-section" id="vita" aria-labelledby="vita-title">
   <div class="vita-grid">
     <div class="vita-content">
-      <h2 class="vita-title" id="vita-title">Orientación confiable,<br>cuando la necesites</h2>
+      <h2 class="vita-title" id="vita-title">Orientación confiable,<br>cuando la necesites.</h2>
       <p class="vita-subtitle">Información médica clara y basada en evidencia para ayudarte a comprender síntomas, enfermedades, medicamentos y resultados de salud.</p>
       <ul class="vita-benefits">
         <li>Información basada en evidencia científica.</li>
@@ -2369,7 +2419,8 @@ height:16px;
   </div>
 </section>
 
-    <section class="trust-center" aria-labelledby="trust-center-title">
+    <!-- IDB Trust Center oculto temporalmente hasta completar su desarrollo. -->
+    <section class="trust-center is-temporarily-hidden" aria-labelledby="trust-center-title">
       <div class="trust-center-inner">
         <div>
           <h2 id="trust-center-title">IDB Trust Center</h2>
@@ -2443,6 +2494,8 @@ menuToggle?.addEventListener('click', () => {
 
 const heroSlides = Array.from(document.querySelectorAll('.hero-cinematic img'));
 const heroRefresh = document.querySelector('.hero-refresh');
+const heroWordLayers = Array.from(document.querySelectorAll('.hero-dynamic-word span'));
+const heroWords = ['síntomas', 'enfermedades', 'medicamentos'];
 const reducedHeroMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let heroSlideIndex = 0;
 let heroRotationTimer;
@@ -2451,8 +2504,8 @@ let heroTransitionResolve;
 let heroSequenceGeneration = 0;
 let heroSequenceStep = 0;
 const heroSequence = [0, 1, 2, 0];
-const heroVisibleDuration = 6500;
-const heroDissolveDuration = 2500;
+const heroVisibleDuration = 3800;
+const heroDissolveDuration = 1350;
 const heroSlideReady = heroSlides.map((slide) => {
   if (slide.complete && slide.naturalWidth > 0) return Promise.resolve();
   return new Promise((resolve) => {
@@ -2478,6 +2531,23 @@ function waitForHeroDissolve(generation) {
   });
 }
 
+function showHeroWord(wordIndex, animate = true) {
+  if (!heroWordLayers.length) return;
+  const currentWord = heroWordLayers.find((layer) => layer.classList.contains('is-active')) || heroWordLayers[0];
+  if (currentWord.textContent === heroWords[wordIndex]) return;
+  const incomingWord = heroWordLayers.find((layer) => layer !== currentWord) || currentWord;
+  if (!animate) heroWordLayers.forEach((layer) => { layer.style.transitionDuration = '0s'; });
+  incomingWord.textContent = heroWords[wordIndex];
+  incomingWord.classList.remove('is-active');
+  void incomingWord.offsetWidth;
+  currentWord.classList.remove('is-active');
+  incomingWord.classList.add('is-active');
+  if (!animate) {
+    void incomingWord.offsetWidth;
+    heroWordLayers.forEach((layer) => { layer.style.removeProperty('transition-duration'); });
+  }
+}
+
 async function showHeroSlide(nextIndex, generation, animate = true) {
   await heroSlideReady[nextIndex];
   if (generation !== heroSequenceGeneration) return false;
@@ -2485,12 +2555,14 @@ async function showHeroSlide(nextIndex, generation, animate = true) {
   const currentSlide = heroSlides[heroSlideIndex];
   const nextSlide = heroSlides[nextIndex];
   if (currentSlide === nextSlide) {
+    showHeroWord(nextIndex, animate);
     nextSlide.classList.remove('is-leaving');
     nextSlide.classList.add('is-active');
     return true;
   }
 
   heroSlides.forEach((slide) => slide.classList.remove('is-leaving'));
+  showHeroWord(nextIndex, animate);
   const heldTransform = window.getComputedStyle(currentSlide).transform;
   currentSlide.style.transform = heldTransform;
   currentSlide.style.animation = 'none';
@@ -2572,7 +2644,7 @@ reducedHeroMotion.addEventListener?.('change', () => {
 
 const reducedMediaRailMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-function initIDBMediaRail(rail) {
+function initIDBMediaRailV2(rail) {
   const track = rail.querySelector('.area-grid');
   const viewport = rail.querySelector('.wellness-carousel-viewport');
   const originalCards = Array.from(track?.querySelectorAll('.area-card') || []);
@@ -2592,6 +2664,7 @@ function initIDBMediaRail(rail) {
   const next = rail.querySelector('.wellness-carousel-next');
   const startIndex = 1;
   const autoplayEndIndex = originalCards.length + 1;
+  const autoplayDelay = Number(rail.dataset.autoplayDelay) || 3000;
   let index = startIndex;
   let timer;
   let isPlaying = false;
@@ -2650,7 +2723,7 @@ function initIDBMediaRail(rail) {
       enableMotion();
       update(index + 1);
       schedule();
-    }, 7500);
+    }, autoplayDelay);
   }
 
   function playForward() {
@@ -2664,7 +2737,11 @@ function initIDBMediaRail(rail) {
   play?.addEventListener('click', () => isPlaying ? stop() : playForward());
   prev?.addEventListener('click', () => { stop(); enableMotion(); update(index - 1); });
   next?.addEventListener('click', () => { stop(); enableMotion(); update(index + 1); });
-  viewport.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0].clientX; didSwipe = false; }, { passive: true });
+  viewport.addEventListener('touchstart', (event) => {
+    stop();
+    touchStartX = event.changedTouches[0].clientX;
+    didSwipe = false;
+  }, { passive: true });
   viewport.addEventListener('touchend', (event) => {
     const distance = event.changedTouches[0].clientX - touchStartX;
     if (Math.abs(distance) < 45) return;
@@ -2674,6 +2751,12 @@ function initIDBMediaRail(rail) {
     update(index + (distance < 0 ? 1 : -1));
   }, { passive: true });
   viewport.addEventListener('click', (event) => { if (didSwipe) { event.preventDefault(); didSwipe = false; } }, true);
+  track.addEventListener('pointerover', (event) => {
+    if (event.target.closest?.('.area-card.is-active')) stop();
+  });
+  track.addEventListener('focusin', (event) => {
+    if (event.target.closest?.('.area-card')) stop();
+  });
   rail.addEventListener('keydown', (event) => {
     if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
     event.preventDefault();
@@ -2693,7 +2776,7 @@ function initIDBMediaRail(rail) {
   }
 }
 
-document.querySelectorAll('.wellness-carousel').forEach(initIDBMediaRail);
+document.querySelectorAll('[data-media-rail="v2"]').forEach(initIDBMediaRailV2);
 </script>
 </body>
 </html>
