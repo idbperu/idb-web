@@ -245,6 +245,7 @@
 
   .hero-title-fixed {
     display:block;
+    color:#0f172a;
     font-size:.62em;
     font-weight:780;
     line-height:1.05;
@@ -254,9 +255,10 @@
     position:relative;
     display:block;
     width:100%;
-    height:1.08em;
+    height:1em;
     margin-top:2px;
-    font-size:1.28em;
+    color:var(--blue);
+    font-size:1.395em;
     font-weight:880;
     line-height:1.08;
   }
@@ -346,8 +348,13 @@
     border:1px solid #dce6ef;
     border-radius:999px;
     background:#fff;
-    box-shadow:0 22px 50px rgba(15,23,42,.09);
+    box-shadow:0 18px 42px rgba(15,23,42,.09),0 2px 8px rgba(32,111,159,.04);
+    transition:border-color 180ms ease,box-shadow 180ms ease;
 }
+    .hero-search:focus-within{
+      border-color:rgba(32,111,159,.46);
+      box-shadow:0 20px 46px rgba(15,23,42,.11),0 0 0 4px rgba(32,111,159,.09);
+    }
     .hero-search input {
       min-width: 0;
       height: 44px;
@@ -1797,8 +1804,11 @@ height:16px;
         padding: 14px 0 38px;
       }
       .hero-media {
+        width:100vw;
+        max-width:none;
+        margin-left:calc(50% - 50vw);
         margin-bottom: 12px;
-        border-radius: 22px;
+        border-radius:0;
         aspect-ratio: 4 / 5;
       }
       .hero-media::before {
@@ -1854,7 +1864,7 @@ height:16px;
       .hero-photo-content p {
         margin: 10px 0 14px;
         max-width: 100%;
-        font-size: .76rem;
+        font-size: .81rem;
         font-weight: 500;
         line-height: 1.36;
       }
@@ -2204,7 +2214,7 @@ height:16px;
         <img src="./imagenes/vita/vita-hero-work.webp" alt="" loading="eager" decoding="async">
       </div>
       <div class="hero-photo-content">
-        <h1><span class="hero-title-fixed">Comprende</span><span class="hero-dynamic-word" aria-live="polite"><span class="is-active">síntomas</span><span></span></span></h1>
+        <h1><span class="hero-title-fixed">Consulta</span><span class="hero-dynamic-word" aria-live="polite"><span class="is-active">síntomas</span><span></span></span></h1>
         <p>Describe lo que sientes y VITA te orientará</p>
         <a class="button button-green" href="https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar." aria-label="Hablar con VITA por WhatsApp">
           <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true">
