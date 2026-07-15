@@ -1456,33 +1456,39 @@ height:16px;
     }
 
     .wellbeing-editorial {
-      padding:132px 20px 104px;
-      background:var(--paper);
-      text-align:center;
+      padding:clamp(112px, 13vw, 176px) 24px clamp(104px, 11vw, 152px);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(32, 111, 159, .055), transparent 34%),
+        var(--paper);
     }
     .wellbeing-editorial-inner {
-      width:min(760px,100%);
+      width:min(880px,100%);
       margin:0 auto;
     }
     .wellbeing-editorial h2 {
       margin:0;
+      max-width:860px;
+      scroll-margin-top:120px;
       color:var(--ink);
-      font-size:clamp(2.35rem,4.4vw,4rem);
-      font-weight:820;
-      line-height:1.04;
-      letter-spacing:-.025em;
+      font-size:clamp(3.25rem,6.2vw,5.65rem);
+      font-weight:760;
+      line-height:.98;
+      letter-spacing:-.055em;
       text-wrap:balance;
     }
     .wellbeing-editorial-copy {
-      margin:38px 0 0;
+      width:min(720px,100%);
+      margin:56px 0 0;
       display:grid;
-      gap:24px;
+      gap:26px;
     }
     .wellbeing-editorial p {
       margin:0;
-      color:#52645f;
-      font-size:1.06rem;
-      line-height:1.78;
+      max-width:68ch;
+      color:#50615d;
+      font-size:clamp(1.08rem,1.45vw,1.2rem);
+      line-height:1.72;
+      letter-spacing:-.008em;
       text-wrap:pretty;
     }
 
@@ -1879,15 +1885,22 @@ height:16px;
       .trust-cell { width: 100px; }
       .trust-seal { top: 82px; width: 38px; height: 38px; }
       .wellbeing-editorial {
-        padding:88px 20px 72px;
+        padding:82px 22px 76px;
+      }
+      .wellbeing-editorial h2 {
+        max-width:10ch;
+        font-size:clamp(2.65rem,12vw,3.65rem);
+        line-height:1;
+        letter-spacing:-.048em;
       }
       .wellbeing-editorial-copy {
-        margin-top:28px;
-        gap:20px;
+        margin-top:38px;
+        gap:22px;
       }
       .wellbeing-editorial p {
-        font-size:.98rem;
-        line-height:1.7;
+        max-width:36rem;
+        font-size:1rem;
+        line-height:1.72;
       }
       .trust-center {
         padding: 48px 20px;
@@ -2174,6 +2187,17 @@ height:16px;
       </div>
     </section>
 
+    <section class="wellbeing-editorial" aria-labelledby="wellbeing-editorial-title">
+      <div class="wellbeing-editorial-inner">
+        <h2 id="wellbeing-editorial-title">Tu bienestar, dondequiera que estés</h2>
+        <div class="wellbeing-editorial-copy">
+          <p>No importa si estás en casa, en el trabajo o de viaje. Con IDB MEDIC puedes acceder a orientación médica clara y basada en evidencia científica desde cualquier lugar.</p>
+          <p>VITA te acompaña para comprender síntomas, enfermedades, medicamentos y cuidados recomendados, ayudándote a tomar decisiones informadas y favoreciendo el autocuidado y el bienestar en tu día a día.</p>
+          <p>Cuando una situación requiera atención presencial, también te orientará para buscar asistencia médica de manera oportuna.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="bienestar" aria-labelledby="bienestar-title">
       <div class="wrap">
         <div class="section-head">
@@ -2331,17 +2355,6 @@ height:16px;
     </figure>
   </div>
 </section>
-
-    <section class="wellbeing-editorial" aria-labelledby="wellbeing-editorial-title">
-      <div class="wellbeing-editorial-inner">
-        <h2 id="wellbeing-editorial-title">Tu bienestar, dondequiera que estés</h2>
-        <div class="wellbeing-editorial-copy">
-          <p>No importa si estás en casa, en el trabajo o de viaje. Con IDB MEDIC puedes acceder a orientación médica clara y basada en evidencia científica desde cualquier lugar.</p>
-          <p>VITA te acompaña para comprender síntomas, enfermedades, medicamentos y cuidados recomendados, ayudándote a tomar decisiones informadas y favoreciendo el autocuidado y el bienestar en tu día a día.</p>
-          <p>Cuando una situación requiera atención presencial, también te orientará para buscar asistencia médica de manera oportuna.</p>
-        </div>
-      </div>
-    </section>
 
     <section class="trust-system" aria-labelledby="trust-system-title">
       <div class="trust-system-card">
