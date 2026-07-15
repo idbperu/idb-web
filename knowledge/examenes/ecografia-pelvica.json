@@ -1,0 +1,90 @@
+{
+  "id": "examen-ecografia-pelvica",
+  "slug": "ecografia-pelvica",
+  "titulo": "Ecografía pélvica",
+  "tipo": "examen",
+  "categoria": "Diagnóstico por imágenes",
+  "descripcion": "¿Qué es? Emplea ultrasonido para visualizar útero, ovarios, vejiga y otras estructuras pélvicas; puede ser transabdominal o transvaginal. ¿Cómo se realiza? Se desliza un transductor sobre el abdomen o se introduce suavemente una sonda cubierta en la vagina, con consentimiento. Duración y molestias: 20 a 30 minutos. Puede causar presión o molestia leve, pero no debería producir dolor intenso.",
+  "respuesta_rapida": "Emplea ultrasonido para visualizar útero, ovarios, vejiga y otras estructuras pélvicas; puede ser transabdominal o transvaginal. Evaluar dolor, sangrado anormal, masas, quistes, miomas, fertilidad y otros problemas pélvicos.",
+  "para_que_sirve": "¿Para qué sirve? Evaluar dolor, sangrado anormal, masas, quistes, miomas, fertilidad y otros problemas pélvicos. ¿Cuándo se solicita? Dolor pélvico, sangrado uterino anormal, distensión, masa o seguimiento de hallazgos.",
+  "causas": "Interpretación general (orientativa): El informe describe órganos, medidas y lesiones; los hallazgos varían con edad, ciclo y antecedentes. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: Las medidas dependen de edad y etapa reproductiva; no hay un rango único. Enfermedades relacionadas: Quistes ováricos, miomas uterinos, endometriosis y masas pélvicas. Especialidad relacionada: Radiología, ginecología o urología. Exámenes relacionados: Ecografía obstétrica y tomografía de abdomen y pelvis.",
+  "sintomas": [
+    "dolor pelvico",
+    "sangrado vaginal anormal",
+    "distension abdominal"
+  ],
+  "factores_riesgo": [
+    "No usa radiación y no tiene riesgos conocidos relevantes; la vía transvaginal puede causar molestia o sangrado mínimo infrecuente."
+  ],
+  "prevencion": [
+    "Para vía abdominal puede requerirse vejiga llena; para vía transvaginal suele vaciarse. Informa embarazo y sigue instrucciones."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor pélvico, sangrado uterino anormal, distensión, masa o seguimiento de hallazgos.",
+  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Para vía abdominal puede requerirse vejiga llena; para vía transvaginal suele vaciarse. Informa embarazo y sigue instrucciones.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: No usa radiación y no tiene riesgos conocidos relevantes; la vía transvaginal puede causar molestia o sangrado mínimo infrecuente."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Ecografía pélvica?",
+      "respuesta": "Emplea ultrasonido para visualizar útero, ovarios, vejiga y otras estructuras pélvicas; puede ser transabdominal o transvaginal."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Para vía abdominal puede requerirse vejiga llena; para vía transvaginal suele vaciarse. Informa embarazo y sigue instrucciones."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se desliza un transductor sobre el abdomen o se introduce suavemente una sonda cubierta en la vagina, con consentimiento. 20 a 30 minutos. Puede causar presión o molestia leve, pero no debería producir dolor intenso."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "No usa radiación y no tiene riesgos conocidos relevantes; la vía transvaginal puede causar molestia o sangrado mínimo infrecuente."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El informe describe órganos, medidas y lesiones; los hallazgos varían con edad, ciclo y antecedentes. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-dolor-pelvico",
+      "slug": "dolor-pelvico",
+      "categoria": "Relacionados",
+      "titulo": "Dolor pelvico"
+    },
+    {
+      "id": "rel-sangrado-vaginal-anormal",
+      "slug": "sangrado-vaginal-anormal",
+      "categoria": "Relacionados",
+      "titulo": "Sangrado vaginal anormal"
+    },
+    {
+      "id": "rel-distension-abdominal",
+      "slug": "distension-abdominal",
+      "categoria": "Relacionados",
+      "titulo": "Distension abdominal"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "acr-pelvic-us",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Pelvis Ultrasound",
+      "url": "https://www.radiologyinfo.org/en/info/pelvus",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "acr-ultrasound",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Ultrasound Procedures",
+      "url": "https://www.radiologyinfo.org/en/ultrasound",
+      "tipo": "Información radiológica para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

@@ -32,7 +32,7 @@
       "id": "examenes",
       "tipo": "examen",
       "ruta": "knowledge/examenes/",
-      "registros": 80
+      "registros": 100
     },
     {
       "id": "procedimientos",

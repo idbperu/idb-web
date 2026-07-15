@@ -1,0 +1,90 @@
+{
+  "id": "examen-holter-de-24-horas",
+  "slug": "holter-de-24-horas",
+  "titulo": "Holter de 24 horas",
+  "tipo": "examen",
+  "categoria": "Cardiología",
+  "descripcion": "¿Qué es? Registra continuamente la actividad eléctrica del corazón mediante electrodos portátiles durante 24 horas o más. ¿Cómo se realiza? Se colocan electrodos conectados a una grabadora. Llevas un diario de síntomas y actividades y devuelves el dispositivo al finalizar. Duración y molestias: Colocación de 10 a 20 minutos y registro habitual de 24 a 48 horas. No duele; adhesivos pueden irritar la piel.",
+  "respuesta_rapida": "Registra continuamente la actividad eléctrica del corazón mediante electrodos portátiles durante 24 horas o más. Detectar arritmias intermitentes, relacionar síntomas con ritmo y evaluar respuesta a tratamiento o dispositivos.",
+  "para_que_sirve": "¿Para qué sirve? Detectar arritmias intermitentes, relacionar síntomas con ritmo y evaluar respuesta a tratamiento o dispositivos. ¿Cuándo se solicita? Palpitaciones, desmayos, mareos, episodios de ritmo irregular o evaluación de una arritmia conocida.",
+  "causas": "Interpretación general (orientativa): El especialista analiza ritmo, frecuencia, pausas y eventos y los compara con el diario; un registro normal no excluye episodios fuera del periodo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No existe un único rango diagnóstico; la frecuencia y el ritmo se interpretan según actividad, edad y síntomas. Enfermedades relacionadas: Fibrilación auricular, taquicardia, bradicardia y extrasístoles. Especialidad relacionada: Cardiología. Exámenes relacionados: Electrocardiograma, ecocardiograma y prueba de esfuerzo.",
+  "sintomas": [
+    "palpitaciones",
+    "desmayo",
+    "mareos"
+  ],
+  "factores_riesgo": [
+    "No hay riesgos importantes; puede haber irritación cutánea y limitación para bañarse."
+  ],
+  "prevencion": [
+    "Báñate antes porque el equipo no suele mojarse. Informa medicamentos y sigue tu rutina; no uses crema en el tórax."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Palpitaciones, desmayos, mareos, episodios de ritmo irregular o evaluación de una arritmia conocida.",
+  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Báñate antes porque el equipo no suele mojarse. Informa medicamentos y sigue tu rutina; no uses crema en el tórax.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: No hay riesgos importantes; puede haber irritación cutánea y limitación para bañarse."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Holter de 24 horas?",
+      "respuesta": "Registra continuamente la actividad eléctrica del corazón mediante electrodos portátiles durante 24 horas o más."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Báñate antes porque el equipo no suele mojarse. Informa medicamentos y sigue tu rutina; no uses crema en el tórax."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se colocan electrodos conectados a una grabadora. Llevas un diario de síntomas y actividades y devuelves el dispositivo al finalizar. Colocación de 10 a 20 minutos y registro habitual de 24 a 48 horas. No duele; adhesivos pueden irritar la piel."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "No hay riesgos importantes; puede haber irritación cutánea y limitación para bañarse."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El especialista analiza ritmo, frecuencia, pausas y eventos y los compara con el diario; un registro normal no excluye episodios fuera del periodo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-palpitaciones",
+      "slug": "palpitaciones",
+      "categoria": "Relacionados",
+      "titulo": "Palpitaciones"
+    },
+    {
+      "id": "rel-desmayo",
+      "slug": "desmayo",
+      "categoria": "Relacionados",
+      "titulo": "Desmayo"
+    },
+    {
+      "id": "rel-mareos",
+      "slug": "mareos",
+      "categoria": "Relacionados",
+      "titulo": "Mareos"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "nih-holter",
+      "organizacion": "MedlinePlus (NIH/NLM)",
+      "titulo": "Holter Monitor (24h)",
+      "url": "https://medlineplus.gov/ency/article/003877.htm",
+      "tipo": "Información médica oficial para pacientes"
+    },
+    {
+      "id": "nih-ecg",
+      "organizacion": "MedlinePlus (NIH/NLM)",
+      "titulo": "Electrocardiogram",
+      "url": "https://medlineplus.gov/lab-tests/electrocardiogram/",
+      "tipo": "Información médica oficial para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

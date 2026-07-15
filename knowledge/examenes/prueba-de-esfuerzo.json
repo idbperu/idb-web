@@ -1,0 +1,90 @@
+{
+  "id": "examen-prueba-de-esfuerzo",
+  "slug": "prueba-de-esfuerzo",
+  "titulo": "Prueba de esfuerzo",
+  "tipo": "examen",
+  "categoria": "Cardiología",
+  "descripcion": "¿Qué es? Registra electrocardiograma, frecuencia, presión y síntomas mientras aumenta gradualmente el ejercicio en caminadora o bicicleta. ¿Cómo se realiza? Se colocan electrodos y un manguito; haces ejercicio por etapas hasta alcanzar un objetivo o aparecer un criterio de detención. Duración y molestias: 30 a 60 minutos en total; el ejercicio suele durar 10 a 15 minutos. Produce cansancio normal.",
+  "respuesta_rapida": "Registra electrocardiograma, frecuencia, presión y síntomas mientras aumenta gradualmente el ejercicio en caminadora o bicicleta. Evaluar respuesta cardiovascular al esfuerzo, síntomas compatibles con isquemia, capacidad funcional y algunas arritmias.",
+  "para_que_sirve": "¿Para qué sirve? Evaluar respuesta cardiovascular al esfuerzo, síntomas compatibles con isquemia, capacidad funcional y algunas arritmias. ¿Cuándo se solicita? Dolor torácico o falta de aire con esfuerzo, valoración de enfermedad coronaria o capacidad funcional, según indicación médica.",
+  "causas": "Interpretación general (orientativa): Se analizan síntomas, cambios eléctricos, presión, frecuencia y capacidad alcanzada. Un resultado normal o anormal no es concluyente por sí solo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No aplica un único rango; depende de edad, sexo, protocolo, frecuencia objetivo y capacidad funcional. Enfermedades relacionadas: Enfermedad coronaria, arritmias e insuficiencia cardíaca. Especialidad relacionada: Cardiología. Exámenes relacionados: Electrocardiograma, ecocardiograma y Holter de 24 horas.",
+  "sintomas": [
+    "dolor en el pecho al esfuerzo",
+    "falta de aire al esfuerzo",
+    "palpitaciones"
+  ],
+  "factores_riesgo": [
+    "Puede provocar dolor torácico, arritmia, caída de presión o, muy raramente, infarto; se realiza con vigilancia y equipo de emergencia."
+  ],
+  "prevencion": [
+    "Usa ropa y calzado cómodos. Evita comidas pesadas, cafeína o tabaco según instrucciones. No suspendas medicamentos sin indicación."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor torácico o falta de aire con esfuerzo, valoración de enfermedad coronaria o capacidad funcional, según indicación médica.",
+  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Usa ropa y calzado cómodos. Evita comidas pesadas, cafeína o tabaco según instrucciones. No suspendas medicamentos sin indicación.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Puede provocar dolor torácico, arritmia, caída de presión o, muy raramente, infarto; se realiza con vigilancia y equipo de emergencia."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Prueba de esfuerzo?",
+      "respuesta": "Registra electrocardiograma, frecuencia, presión y síntomas mientras aumenta gradualmente el ejercicio en caminadora o bicicleta."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Usa ropa y calzado cómodos. Evita comidas pesadas, cafeína o tabaco según instrucciones. No suspendas medicamentos sin indicación."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se colocan electrodos y un manguito; haces ejercicio por etapas hasta alcanzar un objetivo o aparecer un criterio de detención. 30 a 60 minutos en total; el ejercicio suele durar 10 a 15 minutos. Produce cansancio normal."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "Puede provocar dolor torácico, arritmia, caída de presión o, muy raramente, infarto; se realiza con vigilancia y equipo de emergencia."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "Se analizan síntomas, cambios eléctricos, presión, frecuencia y capacidad alcanzada. Un resultado normal o anormal no es concluyente por sí solo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-dolor-en-el-pecho-al-esfuerzo",
+      "slug": "dolor-en-el-pecho-al-esfuerzo",
+      "categoria": "Relacionados",
+      "titulo": "Dolor en el pecho al esfuerzo"
+    },
+    {
+      "id": "rel-falta-de-aire-al-esfuerzo",
+      "slug": "falta-de-aire-al-esfuerzo",
+      "categoria": "Relacionados",
+      "titulo": "Falta de aire al esfuerzo"
+    },
+    {
+      "id": "rel-palpitaciones",
+      "slug": "palpitaciones",
+      "categoria": "Relacionados",
+      "titulo": "Palpitaciones"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "nih-stress-test",
+      "organizacion": "MedlinePlus (NIH/NLM)",
+      "titulo": "Exercise Stress Test",
+      "url": "https://medlineplus.gov/ency/article/003878.htm",
+      "tipo": "Información médica oficial para pacientes"
+    },
+    {
+      "id": "aha-stress-test",
+      "organizacion": "American Heart Association",
+      "titulo": "Exercise Stress Test",
+      "url": "https://www.heart.org/en/health-topics/heart-attack/diagnosing-a-heart-attack/exercise-stress-test",
+      "tipo": "Información cardiovascular para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

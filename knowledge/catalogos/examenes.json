@@ -1,9 +1,9 @@
 {
   "id": "catalogo-examenes",
   "titulo": "Catálogo de exámenes médicos",
-  "version": "1.3",
+  "version": "1.4",
   "ultima_revision": "2026-07",
-  "total_registros": 80,
+  "total_registros": 100,
   "registros": [
     {
       "id": "examen-hemograma-completo",
@@ -644,6 +644,166 @@
       "tipo": "examen",
       "categoria": "Banco de sangre",
       "ruta": "knowledge/examenes/prueba-de-coombs-directa.json"
+    },
+    {
+      "id": "examen-tomografia-computarizada-de-torax",
+      "slug": "tomografia-computarizada-de-torax",
+      "titulo": "Tomografía computarizada de tórax",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/tomografia-computarizada-de-torax.json"
+    },
+    {
+      "id": "examen-tomografia-computarizada-de-abdomen-y-pelvis",
+      "slug": "tomografia-computarizada-de-abdomen-y-pelvis",
+      "titulo": "Tomografía computarizada de abdomen y pelvis",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/tomografia-computarizada-de-abdomen-y-pelvis.json"
+    },
+    {
+      "id": "examen-tomografia-computarizada-cerebral",
+      "slug": "tomografia-computarizada-cerebral",
+      "titulo": "Tomografía computarizada cerebral",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/tomografia-computarizada-cerebral.json"
+    },
+    {
+      "id": "examen-resonancia-magnetica-de-columna-lumbar",
+      "slug": "resonancia-magnetica-de-columna-lumbar",
+      "titulo": "Resonancia magnética de columna lumbar",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/resonancia-magnetica-de-columna-lumbar.json"
+    },
+    {
+      "id": "examen-resonancia-magnetica-de-rodilla",
+      "slug": "resonancia-magnetica-de-rodilla",
+      "titulo": "Resonancia magnética de rodilla",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/resonancia-magnetica-de-rodilla.json"
+    },
+    {
+      "id": "examen-resonancia-magnetica-de-hombro",
+      "slug": "resonancia-magnetica-de-hombro",
+      "titulo": "Resonancia magnética de hombro",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/resonancia-magnetica-de-hombro.json"
+    },
+    {
+      "id": "examen-ecografia-renal-y-de-vias-urinarias",
+      "slug": "ecografia-renal-y-de-vias-urinarias",
+      "titulo": "Ecografía renal y de vías urinarias",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/ecografia-renal-y-de-vias-urinarias.json"
+    },
+    {
+      "id": "examen-ecografia-pelvica",
+      "slug": "ecografia-pelvica",
+      "titulo": "Ecografía pélvica",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/ecografia-pelvica.json"
+    },
+    {
+      "id": "examen-ecografia-obstetrica",
+      "slug": "ecografia-obstetrica",
+      "titulo": "Ecografía obstétrica",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/ecografia-obstetrica.json"
+    },
+    {
+      "id": "examen-mamografia",
+      "slug": "mamografia",
+      "titulo": "Mamografía",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/mamografia.json"
+    },
+    {
+      "id": "examen-densitometria-osea",
+      "slug": "densitometria-osea",
+      "titulo": "Densitometría ósea",
+      "tipo": "examen",
+      "categoria": "Densitometría y medicina nuclear",
+      "ruta": "knowledge/examenes/densitometria-osea.json"
+    },
+    {
+      "id": "examen-gammagrafia-osea",
+      "slug": "gammagrafia-osea",
+      "titulo": "Gammagrafía ósea",
+      "tipo": "examen",
+      "categoria": "Densitometría y medicina nuclear",
+      "ruta": "knowledge/examenes/gammagrafia-osea.json"
+    },
+    {
+      "id": "examen-gammagrafia-tiroidea",
+      "slug": "gammagrafia-tiroidea",
+      "titulo": "Gammagrafía tiroidea",
+      "tipo": "examen",
+      "categoria": "Densitometría y medicina nuclear",
+      "ruta": "knowledge/examenes/gammagrafia-tiroidea.json"
+    },
+    {
+      "id": "examen-holter-de-24-horas",
+      "slug": "holter-de-24-horas",
+      "titulo": "Holter de 24 horas",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/holter-de-24-horas.json"
+    },
+    {
+      "id": "examen-monitoreo-ambulatorio-de-presion-arterial-mapa",
+      "slug": "monitoreo-ambulatorio-de-presion-arterial-mapa",
+      "titulo": "Monitoreo ambulatorio de presión arterial (MAPA)",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/monitoreo-ambulatorio-de-presion-arterial-mapa.json"
+    },
+    {
+      "id": "examen-prueba-de-esfuerzo",
+      "slug": "prueba-de-esfuerzo",
+      "titulo": "Prueba de esfuerzo",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/prueba-de-esfuerzo.json"
+    },
+    {
+      "id": "examen-ecografia-hepatobiliar",
+      "slug": "ecografia-hepatobiliar",
+      "titulo": "Ecografía hepatobiliar",
+      "tipo": "examen",
+      "categoria": "Gastroenterología",
+      "ruta": "knowledge/examenes/ecografia-hepatobiliar.json"
+    },
+    {
+      "id": "examen-colangiopancreatografia-por-resonancia-magnetica",
+      "slug": "colangiopancreatografia-por-resonancia-magnetica",
+      "titulo": "Colangiopancreatografía por resonancia magnética",
+      "tipo": "examen",
+      "categoria": "Gastroenterología",
+      "ruta": "knowledge/examenes/colangiopancreatografia-por-resonancia-magnetica.json"
+    },
+    {
+      "id": "examen-electromiografia",
+      "slug": "electromiografia",
+      "titulo": "Electromiografía",
+      "tipo": "examen",
+      "categoria": "Neurología",
+      "ruta": "knowledge/examenes/electromiografia.json"
+    },
+    {
+      "id": "examen-ecografia-doppler-venosa-de-miembros-inferiores",
+      "slug": "ecografia-doppler-venosa-de-miembros-inferiores",
+      "titulo": "Ecografía Doppler venosa de miembros inferiores",
+      "tipo": "examen",
+      "categoria": "Neurología y vascular",
+      "ruta": "knowledge/examenes/ecografia-doppler-venosa-de-miembros-inferiores.json"
     }
   ]
 }

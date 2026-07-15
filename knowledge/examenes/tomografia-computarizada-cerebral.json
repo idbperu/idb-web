@@ -1,0 +1,90 @@
+{
+  "id": "examen-tomografia-computarizada-cerebral",
+  "slug": "tomografia-computarizada-cerebral",
+  "titulo": "Tomografía computarizada cerebral",
+  "tipo": "examen",
+  "categoria": "Diagnóstico por imágenes",
+  "descripcion": "¿Qué es? Usa rayos X y procesamiento computarizado para obtener cortes rápidos del cerebro y el cráneo. ¿Cómo se realiza? Te acuestas con la cabeza inmovilizada mientras la mesa pasa por el aro. En algunos protocolos se inyecta contraste. Duración y molestias: 5 a 15 minutos. No duele; permanecer inmóvil puede incomodar.",
+  "respuesta_rapida": "Usa rayos X y procesamiento computarizado para obtener cortes rápidos del cerebro y el cráneo. Detectar hemorragia, fracturas, accidente cerebrovascular, hidrocefalia, masas y complicaciones de traumatismos.",
+  "para_que_sirve": "¿Para qué sirve? Detectar hemorragia, fracturas, accidente cerebrovascular, hidrocefalia, masas y complicaciones de traumatismos. ¿Cuándo se solicita? Traumatismo craneal, déficit neurológico súbito, cefalea con alarma, confusión, convulsiones o pérdida de conciencia.",
+  "causas": "Interpretación general (orientativa): El radiólogo busca sangrado, edema, efecto de masa, fracturas u otras alteraciones; una TC normal no excluye todas las causas neurológicas. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No hay valores numéricos de referencia; el informe describe hallazgos. Enfermedades relacionadas: Accidente cerebrovascular, hemorragia intracraneal, traumatismo craneal y tumores cerebrales. Especialidad relacionada: Radiología, neurología o neurocirugía. Exámenes relacionados: Resonancia magnética cerebral y electroencefalograma.",
+  "sintomas": [
+    "dolor de cabeza fuerte",
+    "confusion",
+    "debilidad en un lado del cuerpo"
+  ],
+  "factores_riesgo": [
+    "Implica una dosis de radiación; el contraste, cuando se usa, tiene riesgos poco frecuentes de reacción o lesión renal en personas susceptibles."
+  ],
+  "prevencion": [
+    "Generalmente requiere poca preparación. Informa embarazo, alergias y enfermedad renal si se considera contraste; retira metal de cabeza y cuello."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Traumatismo craneal, déficit neurológico súbito, cefalea con alarma, confusión, convulsiones o pérdida de conciencia.",
+  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Generalmente requiere poca preparación. Informa embarazo, alergias y enfermedad renal si se considera contraste; retira metal de cabeza y cuello.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Implica una dosis de radiación; el contraste, cuando se usa, tiene riesgos poco frecuentes de reacción o lesión renal en personas susceptibles."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Tomografía computarizada cerebral?",
+      "respuesta": "Usa rayos X y procesamiento computarizado para obtener cortes rápidos del cerebro y el cráneo."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Generalmente requiere poca preparación. Informa embarazo, alergias y enfermedad renal si se considera contraste; retira metal de cabeza y cuello."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Te acuestas con la cabeza inmovilizada mientras la mesa pasa por el aro. En algunos protocolos se inyecta contraste. 5 a 15 minutos. No duele; permanecer inmóvil puede incomodar."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "Implica una dosis de radiación; el contraste, cuando se usa, tiene riesgos poco frecuentes de reacción o lesión renal en personas susceptibles."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El radiólogo busca sangrado, edema, efecto de masa, fracturas u otras alteraciones; una TC normal no excluye todas las causas neurológicas. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-dolor-de-cabeza-fuerte",
+      "slug": "dolor-de-cabeza-fuerte",
+      "categoria": "Relacionados",
+      "titulo": "Dolor de cabeza fuerte"
+    },
+    {
+      "id": "rel-confusion",
+      "slug": "confusion",
+      "categoria": "Relacionados",
+      "titulo": "Confusion"
+    },
+    {
+      "id": "rel-debilidad-en-un-lado-del-cuerpo",
+      "slug": "debilidad-en-un-lado-del-cuerpo",
+      "categoria": "Relacionados",
+      "titulo": "Debilidad en un lado del cuerpo"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "acr-head-ct",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Head CT",
+      "url": "https://www.radiologyinfo.org/en/info/headct",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "acr-xray-dose",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Radiation Dose from X-Ray and CT Exams",
+      "url": "https://www.radiologyinfo.org/en/info/safety-xray",
+      "tipo": "Información radiológica para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "examen-ecografia-doppler-venosa-de-miembros-inferiores",
+  "slug": "ecografia-doppler-venosa-de-miembros-inferiores",
+  "titulo": "Ecografía Doppler venosa de miembros inferiores",
+  "tipo": "examen",
+  "categoria": "Neurología y vascular",
+  "descripcion": "¿Qué es? Usa ultrasonido y Doppler para observar venas de las piernas y evaluar el flujo sanguíneo sin radiación. ¿Cómo se realiza? Se aplica gel y el transductor recorre las venas mientras realiza compresión suave y mediciones de flujo; pueden pedir cambios de posición. Duración y molestias: 30 a 60 minutos. Puede molestar la presión sobre una zona dolorosa, pero no suele doler.",
+  "respuesta_rapida": "Usa ultrasonido y Doppler para observar venas de las piernas y evaluar el flujo sanguíneo sin radiación. Detectar trombosis venosa profunda, valorar insuficiencia venosa y estudiar hinchazón o dolor.",
+  "para_que_sirve": "¿Para qué sirve? Detectar trombosis venosa profunda, valorar insuficiencia venosa y estudiar hinchazón o dolor. ¿Cuándo se solicita? Hinchazón unilateral, dolor, enrojecimiento, factores de riesgo de trombosis o seguimiento vascular.",
+  "causas": "Interpretación general (orientativa): Se informa compresibilidad, flujo y presencia o ausencia de trombo; si la sospecha clínica persiste puede requerirse repetición o pruebas adicionales. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No aplica un rango numérico único; se interpretan flujo, compresibilidad y anatomía. Enfermedades relacionadas: Trombosis venosa profunda, insuficiencia venosa y tromboflebitis superficial. Especialidad relacionada: Radiología vascular, angiología o cirugía vascular. Exámenes relacionados: Dímero D y tomografía de tórax si se sospecha embolia pulmonar.",
+  "sintomas": [
+    "hinchazon de una pierna",
+    "dolor en la pantorrilla",
+    "enrojecimiento de la pierna"
+  ],
+  "factores_riesgo": [
+    "No se conocen riesgos relevantes del ultrasonido diagnóstico; la compresión puede causar molestia transitoria."
+  ],
+  "prevencion": [
+    "Generalmente no requiere preparación. Usa ropa que permita descubrir las piernas e informa cirugías o antecedentes de trombosis."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Hinchazón unilateral, dolor, enrojecimiento, factores de riesgo de trombosis o seguimiento vascular.",
+  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Generalmente no requiere preparación. Usa ropa que permita descubrir las piernas e informa cirugías o antecedentes de trombosis.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: No se conocen riesgos relevantes del ultrasonido diagnóstico; la compresión puede causar molestia transitoria."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Ecografía Doppler venosa de miembros inferiores?",
+      "respuesta": "Usa ultrasonido y Doppler para observar venas de las piernas y evaluar el flujo sanguíneo sin radiación."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Generalmente no requiere preparación. Usa ropa que permita descubrir las piernas e informa cirugías o antecedentes de trombosis."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se aplica gel y el transductor recorre las venas mientras realiza compresión suave y mediciones de flujo; pueden pedir cambios de posición. 30 a 60 minutos. Puede molestar la presión sobre una zona dolorosa, pero no suele doler."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "No se conocen riesgos relevantes del ultrasonido diagnóstico; la compresión puede causar molestia transitoria."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "Se informa compresibilidad, flujo y presencia o ausencia de trombo; si la sospecha clínica persiste puede requerirse repetición o pruebas adicionales. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-hinchazon-de-una-pierna",
+      "slug": "hinchazon-de-una-pierna",
+      "categoria": "Relacionados",
+      "titulo": "Hinchazon de una pierna"
+    },
+    {
+      "id": "rel-dolor-en-la-pantorrilla",
+      "slug": "dolor-en-la-pantorrilla",
+      "categoria": "Relacionados",
+      "titulo": "Dolor en la pantorrilla"
+    },
+    {
+      "id": "rel-enrojecimiento-de-la-pierna",
+      "slug": "enrojecimiento-de-la-pierna",
+      "categoria": "Relacionados",
+      "titulo": "Enrojecimiento de la pierna"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "acr-venous-us",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Venous Ultrasound",
+      "url": "https://www.radiologyinfo.org/en/info/venousus",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "cdc-vte",
+      "organizacion": "CDC",
+      "titulo": "About Venous Thromboembolism",
+      "url": "https://www.cdc.gov/blood-clots/about/",
+      "tipo": "Información de salud pública"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "examen-tomografia-computarizada-de-torax",
+  "slug": "tomografia-computarizada-de-torax",
+  "titulo": "Tomografía computarizada de tórax",
+  "tipo": "examen",
+  "categoria": "Diagnóstico por imágenes",
+  "descripcion": "¿Qué es? Obtiene imágenes transversales detalladas de pulmones, mediastino, pleura, corazón y pared torácica mediante rayos X. ¿Cómo se realiza? Acostado en una mesa que atraviesa un aro; debes permanecer quieto y contener brevemente la respiración. El contraste, si se indica, se administra por una vena. Duración y molestias: 10 a 30 minutos. Es indolora; el contraste puede causar calor pasajero o sabor metálico.",
+  "respuesta_rapida": "Obtiene imágenes transversales detalladas de pulmones, mediastino, pleura, corazón y pared torácica mediante rayos X. Evaluar nódulos, infecciones, traumatismos, enfermedad pulmonar, vasos y extensión de tumores.",
+  "para_que_sirve": "¿Para qué sirve? Evaluar nódulos, infecciones, traumatismos, enfermedad pulmonar, vasos y extensión de tumores. ¿Cuándo se solicita? Tos persistente, dificultad respiratoria, dolor torácico, traumatismo o hallazgos anormales en radiografía.",
+  "causas": "Interpretación general (orientativa): El radiólogo describe tamaño, ubicación y características de hallazgos y los compara con estudios previos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No existe un rango numérico normal; el informe describe presencia o ausencia de alteraciones. Enfermedades relacionadas: Neumonía, nódulo pulmonar, embolia pulmonar, cáncer de pulmón y enfermedad intersticial. Especialidad relacionada: Radiología, neumología u oncología. Exámenes relacionados: Radiografía de tórax, oximetría de pulso y espirometría.",
+  "sintomas": [
+    "tos persistente",
+    "dificultad para respirar",
+    "dolor en el pecho"
+  ],
+  "factores_riesgo": [
+    "Usa radiación ionizante. El contraste yodado puede causar reacciones y requiere precaución en enfermedad renal; la extravasación es infrecuente."
+  ],
+  "prevencion": [
+    "Puede requerir ayuno si se usará contraste. Informa embarazo, alergias, asma, enfermedad renal, diabetes y medicamentos. Retira objetos metálicos."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Tos persistente, dificultad respiratoria, dolor torácico, traumatismo o hallazgos anormales en radiografía.",
+  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Puede requerir ayuno si se usará contraste. Informa embarazo, alergias, asma, enfermedad renal, diabetes y medicamentos. Retira objetos metálicos.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Usa radiación ionizante. El contraste yodado puede causar reacciones y requiere precaución en enfermedad renal; la extravasación es infrecuente."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Tomografía computarizada de tórax?",
+      "respuesta": "Obtiene imágenes transversales detalladas de pulmones, mediastino, pleura, corazón y pared torácica mediante rayos X."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Puede requerir ayuno si se usará contraste. Informa embarazo, alergias, asma, enfermedad renal, diabetes y medicamentos. Retira objetos metálicos."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Acostado en una mesa que atraviesa un aro; debes permanecer quieto y contener brevemente la respiración. El contraste, si se indica, se administra por una vena. 10 a 30 minutos. Es indolora; el contraste puede causar calor pasajero o sabor metálico."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "Usa radiación ionizante. El contraste yodado puede causar reacciones y requiere precaución en enfermedad renal; la extravasación es infrecuente."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El radiólogo describe tamaño, ubicación y características de hallazgos y los compara con estudios previos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-tos-persistente",
+      "slug": "tos-persistente",
+      "categoria": "Relacionados",
+      "titulo": "Tos persistente"
+    },
+    {
+      "id": "rel-dificultad-para-respirar",
+      "slug": "dificultad-para-respirar",
+      "categoria": "Relacionados",
+      "titulo": "Dificultad para respirar"
+    },
+    {
+      "id": "rel-dolor-en-el-pecho",
+      "slug": "dolor-en-el-pecho",
+      "categoria": "Relacionados",
+      "titulo": "Dolor en el pecho"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "acr-chest-ct",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Chest CT",
+      "url": "https://www.radiologyinfo.org/en/info/chestct",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "acr-xray-dose",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Radiation Dose from X-Ray and CT Exams",
+      "url": "https://www.radiologyinfo.org/en/info/safety-xray",
+      "tipo": "Información radiológica para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

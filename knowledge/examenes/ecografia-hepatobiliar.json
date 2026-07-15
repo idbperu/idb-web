@@ -1,0 +1,90 @@
+{
+  "id": "examen-ecografia-hepatobiliar",
+  "slug": "ecografia-hepatobiliar",
+  "titulo": "Ecografía hepatobiliar",
+  "tipo": "examen",
+  "categoria": "Gastroenterología",
+  "descripcion": "¿Qué es? Usa ondas sonoras para observar hígado, vesícula y vías biliares sin radiación ionizante. ¿Cómo se realiza? Se aplica gel y el transductor recorre el abdomen; pueden pedir cambios de posición o contener la respiración. Duración y molestias: 20 a 30 minutos. Es indolora, aunque la presión puede molestar sobre una zona sensible.",
+  "respuesta_rapida": "Usa ondas sonoras para observar hígado, vesícula y vías biliares sin radiación ionizante. Buscar cálculos, inflamación, dilatación biliar, lesiones hepáticas y causas de dolor o pruebas hepáticas alteradas.",
+  "para_que_sirve": "¿Para qué sirve? Buscar cálculos, inflamación, dilatación biliar, lesiones hepáticas y causas de dolor o pruebas hepáticas alteradas. ¿Cuándo se solicita? Dolor en cuadrante superior derecho, ictericia, náuseas después de comidas, fiebre o pruebas hepáticas alteradas.",
+  "causas": "Interpretación general (orientativa): El informe describe hígado, vesícula, conductos, cálculos, engrosamiento o dilatación; el gas o la constitución pueden limitar la visualización. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No hay un rango único; medidas como el calibre biliar dependen de edad, cirugía previa y contexto. Enfermedades relacionadas: Cálculos biliares, colecistitis, hígado graso y obstrucción biliar. Especialidad relacionada: Radiología, gastroenterología o cirugía. Exámenes relacionados: Prueba de función hepática, bilirrubina y colangiopancreatografía por resonancia.",
+  "sintomas": [
+    "dolor en la parte superior derecha del abdomen",
+    "ictericia",
+    "nauseas"
+  ],
+  "factores_riesgo": [
+    "No se conocen riesgos relevantes del ultrasonido diagnóstico estándar."
+  ],
+  "prevencion": [
+    "Suele requerir ayuno de 6 a 8 horas para reducir gas y mantener la vesícula distendida; sigue instrucciones del centro."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor en cuadrante superior derecho, ictericia, náuseas después de comidas, fiebre o pruebas hepáticas alteradas.",
+  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Suele requerir ayuno de 6 a 8 horas para reducir gas y mantener la vesícula distendida; sigue instrucciones del centro.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: No se conocen riesgos relevantes del ultrasonido diagnóstico estándar."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Ecografía hepatobiliar?",
+      "respuesta": "Usa ondas sonoras para observar hígado, vesícula y vías biliares sin radiación ionizante."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Suele requerir ayuno de 6 a 8 horas para reducir gas y mantener la vesícula distendida; sigue instrucciones del centro."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se aplica gel y el transductor recorre el abdomen; pueden pedir cambios de posición o contener la respiración. 20 a 30 minutos. Es indolora, aunque la presión puede molestar sobre una zona sensible."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "No se conocen riesgos relevantes del ultrasonido diagnóstico estándar."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El informe describe hígado, vesícula, conductos, cálculos, engrosamiento o dilatación; el gas o la constitución pueden limitar la visualización. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-dolor-en-la-parte-superior-derecha-del-abdomen",
+      "slug": "dolor-en-la-parte-superior-derecha-del-abdomen",
+      "categoria": "Relacionados",
+      "titulo": "Dolor en la parte superior derecha del abdomen"
+    },
+    {
+      "id": "rel-ictericia",
+      "slug": "ictericia",
+      "categoria": "Relacionados",
+      "titulo": "Ictericia"
+    },
+    {
+      "id": "rel-nauseas",
+      "slug": "nauseas",
+      "categoria": "Relacionados",
+      "titulo": "Nauseas"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "acr-abdominal-us",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Abdominal Ultrasound",
+      "url": "https://www.radiologyinfo.org/en/info/abdominus",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "nih-abdominal-us",
+      "organizacion": "MedlinePlus (NIH/NLM)",
+      "titulo": "Abdominal Ultrasound",
+      "url": "https://medlineplus.gov/ency/article/003777.htm",
+      "tipo": "Información médica oficial para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

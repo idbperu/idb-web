@@ -4120,5 +4120,425 @@
       "dat",
       "coombs directo"
     ]
+  },
+  {
+    "titulo": "Tomografía computarizada de tórax",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Obtiene imágenes transversales detalladas de pulmones, mediastino, pleura, corazón y pared torácica mediante rayos X. Evaluar nódulos, infecciones, traumatismos, enfermedad pulmonar, vasos y extensión de tumores.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tomografia-computarizada-de-torax",
+    "keywords": [
+      "tomografía computarizada de tórax",
+      "tc de tórax",
+      "tos persistente",
+      "dificultad para respirar",
+      "dolor en el pecho"
+    ],
+    "aliases": [
+      "tc de tórax"
+    ]
+  },
+  {
+    "titulo": "Tomografía computarizada de abdomen y pelvis",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Produce imágenes detalladas de órganos, vasos, intestino, vías urinarias y estructuras pélvicas mediante rayos X. Buscar inflamación, cálculos, traumatismos, sangrado, obstrucción, infecciones o tumores y planificar procedimientos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tomografia-computarizada-de-abdomen-y-pelvis",
+    "keywords": [
+      "tomografía computarizada de abdomen y pelvis",
+      "tc abdominopélvica",
+      "dolor abdominal",
+      "dolor pelvico",
+      "fiebre"
+    ],
+    "aliases": [
+      "tc abdominopélvica"
+    ]
+  },
+  {
+    "titulo": "Tomografía computarizada cerebral",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Usa rayos X y procesamiento computarizado para obtener cortes rápidos del cerebro y el cráneo. Detectar hemorragia, fracturas, accidente cerebrovascular, hidrocefalia, masas y complicaciones de traumatismos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tomografia-computarizada-cerebral",
+    "keywords": [
+      "tomografía computarizada cerebral",
+      "tc cerebral",
+      "dolor de cabeza fuerte",
+      "confusion",
+      "debilidad en un lado del cuerpo"
+    ],
+    "aliases": [
+      "tc cerebral"
+    ]
+  },
+  {
+    "titulo": "Resonancia magnética de columna lumbar",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Usa campo magnético y radiofrecuencia para mostrar vértebras, discos, canal, médula distal y raíces nerviosas sin radiación ionizante. Evaluar hernias discales, compresión nerviosa, estenosis, infección, tumor o cambios después de cirugía.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=resonancia-magnetica-de-columna-lumbar",
+    "keywords": [
+      "resonancia magnética de columna lumbar",
+      "rm lumbar",
+      "dolor lumbar",
+      "hormigueo en piernas",
+      "debilidad en piernas"
+    ],
+    "aliases": [
+      "rm lumbar"
+    ]
+  },
+  {
+    "titulo": "Resonancia magnética de rodilla",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Crea imágenes detalladas de meniscos, ligamentos, cartílago, tendones, huesos y tejidos blandos sin radiación ionizante. Evaluar lesiones deportivas, dolor persistente, bloqueo, inestabilidad, inflamación o planificación quirúrgica.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=resonancia-magnetica-de-rodilla",
+    "keywords": [
+      "resonancia magnética de rodilla",
+      "rm de rodilla",
+      "dolor de rodilla",
+      "hinchazon de rodilla",
+      "inestabilidad de rodilla"
+    ],
+    "aliases": [
+      "rm de rodilla"
+    ]
+  },
+  {
+    "titulo": "Resonancia magnética de hombro",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Obtiene imágenes de tendones, músculos, labrum, cartílago y huesos del hombro sin radiación ionizante. Detectar lesiones del manguito rotador, labrum, tendones, articulaciones y causas de dolor o debilidad.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=resonancia-magnetica-de-hombro",
+    "keywords": [
+      "resonancia magnética de hombro",
+      "rm de hombro",
+      "dolor de hombro",
+      "debilidad del brazo",
+      "limitacion de movimiento"
+    ],
+    "aliases": [
+      "rm de hombro"
+    ]
+  },
+  {
+    "titulo": "Ecografía renal y de vías urinarias",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Usa ondas sonoras para observar riñones y vejiga, sin radiación ionizante. Evaluar tamaño renal, dilatación de vías urinarias, quistes, masas, cálculos y residuo de orina en vejiga.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-renal-y-de-vias-urinarias",
+    "keywords": [
+      "ecografía renal y de vías urinarias",
+      "ecografía renal",
+      "dolor en los riñones",
+      "sangre en la orina",
+      "dificultad para orinar"
+    ],
+    "aliases": [
+      "ecografía renal"
+    ]
+  },
+  {
+    "titulo": "Ecografía pélvica",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Emplea ultrasonido para visualizar útero, ovarios, vejiga y otras estructuras pélvicas; puede ser transabdominal o transvaginal. Evaluar dolor, sangrado anormal, masas, quistes, miomas, fertilidad y otros problemas pélvicos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-pelvica",
+    "keywords": [
+      "ecografía pélvica",
+      "ecografía pélvica",
+      "dolor pelvico",
+      "sangrado vaginal anormal",
+      "distension abdominal"
+    ],
+    "aliases": [
+      "ecografía pélvica"
+    ]
+  },
+  {
+    "titulo": "Ecografía obstétrica",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Usa ondas sonoras para evaluar embarazo, embrión o feto, placenta, líquido amniótico y estructuras maternas, sin radiación ionizante. Confirmar ubicación y edad gestacional, evaluar crecimiento y anatomía fetal, placenta, líquido y bienestar según etapa.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-obstetrica",
+    "keywords": [
+      "ecografía obstétrica",
+      "ultrasonido obstétrico",
+      "sangrado durante el embarazo",
+      "dolor pelvico en embarazo",
+      "disminucion de movimientos fetales"
+    ],
+    "aliases": [
+      "ultrasonido obstétrico"
+    ]
+  },
+  {
+    "titulo": "Mamografía",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Obtiene radiografías de baja dosis de cada mama para tamizaje o evaluación diagnóstica. Detectar cáncer de mama antes de síntomas y estudiar bultos, secreción, cambios cutáneos o hallazgos previos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=mamografia",
+    "keywords": [
+      "mamografía",
+      "mamografía",
+      "bulto en la mama",
+      "secrecion por el pezon",
+      "cambios en la piel de la mama"
+    ],
+    "aliases": [
+      "mamografía"
+    ]
+  },
+  {
+    "titulo": "Densitometría ósea",
+    "tipo": "examen",
+    "categoria": "Densitometría y medicina nuclear",
+    "prioridad": 3,
+    "description": "Mide la densidad mineral ósea, usualmente en cadera y columna, mediante rayos X de dosis muy baja. Diagnosticar osteoporosis, estimar riesgo de fractura y seguir cambios de densidad ósea.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=densitometria-osea",
+    "keywords": [
+      "densitometría ósea",
+      "dxa o dexa",
+      "fractura con golpe leve",
+      "perdida de estatura",
+      "dolor de espalda"
+    ],
+    "aliases": [
+      "dxa o dexa"
+    ]
+  },
+  {
+    "titulo": "Gammagrafía ósea",
+    "tipo": "examen",
+    "categoria": "Densitometría y medicina nuclear",
+    "prioridad": 3,
+    "description": "Usa una pequeña cantidad de radiotrazador y una cámara gamma para mostrar actividad metabólica en el esqueleto. Buscar metástasis, fracturas ocultas, infección, alteraciones protésicas o causas de dolor óseo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=gammagrafia-osea",
+    "keywords": [
+      "gammagrafía ósea",
+      "exploración ósea nuclear",
+      "dolor oseo",
+      "fractura sospechada",
+      "dolor localizado persistente"
+    ],
+    "aliases": [
+      "exploración ósea nuclear"
+    ]
+  },
+  {
+    "titulo": "Gammagrafía tiroidea",
+    "tipo": "examen",
+    "categoria": "Densitometría y medicina nuclear",
+    "prioridad": 3,
+    "description": "Administra un radioisótopo para mostrar distribución de actividad en la glándula tiroides y, según protocolo, medir captación. Evaluar función y anatomía tiroidea, nódulos hiperfuncionantes o hipofuncionantes y causas de hipertiroidismo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=gammagrafia-tiroidea",
+    "keywords": [
+      "gammagrafía tiroidea",
+      "exploración y captación tiroidea",
+      "palpitaciones",
+      "perdida de peso involuntaria",
+      "bulto en el cuello"
+    ],
+    "aliases": [
+      "exploración y captación tiroidea"
+    ]
+  },
+  {
+    "titulo": "Holter de 24 horas",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Registra continuamente la actividad eléctrica del corazón mediante electrodos portátiles durante 24 horas o más. Detectar arritmias intermitentes, relacionar síntomas con ritmo y evaluar respuesta a tratamiento o dispositivos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=holter-de-24-horas",
+    "keywords": [
+      "holter de 24 horas",
+      "monitor holter",
+      "palpitaciones",
+      "desmayo",
+      "mareos"
+    ],
+    "aliases": [
+      "monitor holter"
+    ]
+  },
+  {
+    "titulo": "Monitoreo ambulatorio de presión arterial (MAPA)",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Mide automáticamente la presión arterial a intervalos durante 24 horas mientras realizas actividades habituales y duermes. Confirmar hipertensión, identificar efecto de bata blanca o hipertensión enmascarada y valorar patrones diurnos y nocturnos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=monitoreo-ambulatorio-de-presion-arterial-mapa",
+    "keywords": [
+      "monitoreo ambulatorio de presión arterial (mapa)",
+      "mapa",
+      "dolor de cabeza",
+      "mareos",
+      "presion arterial elevada"
+    ],
+    "aliases": [
+      "mapa"
+    ]
+  },
+  {
+    "titulo": "Prueba de esfuerzo",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Registra electrocardiograma, frecuencia, presión y síntomas mientras aumenta gradualmente el ejercicio en caminadora o bicicleta. Evaluar respuesta cardiovascular al esfuerzo, síntomas compatibles con isquemia, capacidad funcional y algunas arritmias.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=prueba-de-esfuerzo",
+    "keywords": [
+      "prueba de esfuerzo",
+      "ergometría",
+      "dolor en el pecho al esfuerzo",
+      "falta de aire al esfuerzo",
+      "palpitaciones"
+    ],
+    "aliases": [
+      "ergometría"
+    ]
+  },
+  {
+    "titulo": "Ecografía hepatobiliar",
+    "tipo": "examen",
+    "categoria": "Gastroenterología",
+    "prioridad": 3,
+    "description": "Usa ondas sonoras para observar hígado, vesícula y vías biliares sin radiación ionizante. Buscar cálculos, inflamación, dilatación biliar, lesiones hepáticas y causas de dolor o pruebas hepáticas alteradas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-hepatobiliar",
+    "keywords": [
+      "ecografía hepatobiliar",
+      "ultrasonido hepatobiliar",
+      "dolor en la parte superior derecha del abdomen",
+      "ictericia",
+      "nauseas"
+    ],
+    "aliases": [
+      "ultrasonido hepatobiliar"
+    ]
+  },
+  {
+    "titulo": "Colangiopancreatografía por resonancia magnética",
+    "tipo": "examen",
+    "categoria": "Gastroenterología",
+    "prioridad": 3,
+    "description": "Es una resonancia especializada que muestra vías biliares, vesícula y conducto pancreático, generalmente sin instrumentos dentro del cuerpo. Detectar cálculos, estrecheces, obstrucción, anomalías, inflamación o masas pancreatobiliares.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=colangiopancreatografia-por-resonancia-magnetica",
+    "keywords": [
+      "colangiopancreatografía por resonancia magnética",
+      "cprm o mrcp",
+      "ictericia",
+      "dolor abdominal superior",
+      "orina oscura"
+    ],
+    "aliases": [
+      "cprm o mrcp"
+    ]
+  },
+  {
+    "titulo": "Electromiografía",
+    "tipo": "examen",
+    "categoria": "Neurología",
+    "prioridad": 3,
+    "description": "Evalúa la actividad eléctrica muscular y, con frecuencia, la velocidad con que los nervios conducen señales. Distinguir trastornos de nervios, raíces, unión neuromuscular y músculos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=electromiografia",
+    "keywords": [
+      "electromiografía",
+      "emg y estudios de conducción nerviosa",
+      "hormigueo",
+      "debilidad muscular",
+      "adormecimiento"
+    ],
+    "aliases": [
+      "emg y estudios de conducción nerviosa"
+    ]
+  },
+  {
+    "titulo": "Ecografía Doppler venosa de miembros inferiores",
+    "tipo": "examen",
+    "categoria": "Neurología y vascular",
+    "prioridad": 3,
+    "description": "Usa ultrasonido y Doppler para observar venas de las piernas y evaluar el flujo sanguíneo sin radiación. Detectar trombosis venosa profunda, valorar insuficiencia venosa y estudiar hinchazón o dolor.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-doppler-venosa-de-miembros-inferiores",
+    "keywords": [
+      "ecografía doppler venosa de miembros inferiores",
+      "doppler venoso de piernas",
+      "hinchazon de una pierna",
+      "dolor en la pantorrilla",
+      "enrojecimiento de la pierna"
+    ],
+    "aliases": [
+      "doppler venoso de piernas"
+    ]
   }
 ]

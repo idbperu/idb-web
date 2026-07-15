@@ -1,0 +1,90 @@
+{
+  "id": "examen-gammagrafia-tiroidea",
+  "slug": "gammagrafia-tiroidea",
+  "titulo": "Gammagrafía tiroidea",
+  "tipo": "examen",
+  "categoria": "Densitometría y medicina nuclear",
+  "descripcion": "¿Qué es? Administra un radioisótopo para mostrar distribución de actividad en la glándula tiroides y, según protocolo, medir captación. ¿Cómo se realiza? Se ingiere o inyecta el trazador y después una cámara obtiene imágenes del cuello; la captación puede medirse horas más tarde. Duración y molestias: La imagen dura 20 a 30 minutos; el proceso completo puede extenderse varias horas o hasta el día siguiente.",
+  "respuesta_rapida": "Administra un radioisótopo para mostrar distribución de actividad en la glándula tiroides y, según protocolo, medir captación. Evaluar función y anatomía tiroidea, nódulos hiperfuncionantes o hipofuncionantes y causas de hipertiroidismo.",
+  "para_que_sirve": "¿Para qué sirve? Evaluar función y anatomía tiroidea, nódulos hiperfuncionantes o hipofuncionantes y causas de hipertiroidismo. ¿Cuándo se solicita? TSH alterada, hipertiroidismo, nódulo tiroideo seleccionado o seguimiento indicado por especialista.",
+  "causas": "Interpretación general (orientativa): El patrón y porcentaje de captación se interpretan con TSH, T4, síntomas y ecografía; un nódulo frío no equivale automáticamente a cáncer. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: La captación normal varía por trazador, dieta y laboratorio; debe usarse el rango del centro. Enfermedades relacionadas: Hipertiroidismo, enfermedad de Graves, tiroiditis y nódulos tiroideos. Especialidad relacionada: Medicina nuclear o endocrinología. Exámenes relacionados: TSH, T4 libre, T3 libre y ecografía tiroidea.",
+  "sintomas": [
+    "palpitaciones",
+    "perdida de peso involuntaria",
+    "bulto en el cuello"
+  ],
+  "factores_riesgo": [
+    "Radiación baja; evitar en embarazo y aplicar indicaciones especiales en lactancia. Reacciones al trazador son raras."
+  ],
+  "prevencion": [
+    "Informa embarazo, lactancia, alergias, medicamentos tiroideos, yodo o contraste reciente. El centro indicará si debes suspender algo; no lo hagas por tu cuenta."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: TSH alterada, hipertiroidismo, nódulo tiroideo seleccionado o seguimiento indicado por especialista.",
+  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Informa embarazo, lactancia, alergias, medicamentos tiroideos, yodo o contraste reciente. El centro indicará si debes suspender algo; no lo hagas por tu cuenta.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Radiación baja; evitar en embarazo y aplicar indicaciones especiales en lactancia. Reacciones al trazador son raras."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Gammagrafía tiroidea?",
+      "respuesta": "Administra un radioisótopo para mostrar distribución de actividad en la glándula tiroides y, según protocolo, medir captación."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Informa embarazo, lactancia, alergias, medicamentos tiroideos, yodo o contraste reciente. El centro indicará si debes suspender algo; no lo hagas por tu cuenta."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se ingiere o inyecta el trazador y después una cámara obtiene imágenes del cuello; la captación puede medirse horas más tarde. La imagen dura 20 a 30 minutos; el proceso completo puede extenderse varias horas o hasta el día siguiente."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "Radiación baja; evitar en embarazo y aplicar indicaciones especiales en lactancia. Reacciones al trazador son raras."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El patrón y porcentaje de captación se interpretan con TSH, T4, síntomas y ecografía; un nódulo frío no equivale automáticamente a cáncer. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-palpitaciones",
+      "slug": "palpitaciones",
+      "categoria": "Relacionados",
+      "titulo": "Palpitaciones"
+    },
+    {
+      "id": "rel-perdida-de-peso-involuntaria",
+      "slug": "perdida-de-peso-involuntaria",
+      "categoria": "Relacionados",
+      "titulo": "Perdida de peso involuntaria"
+    },
+    {
+      "id": "rel-bulto-en-el-cuello",
+      "slug": "bulto-en-el-cuello",
+      "categoria": "Relacionados",
+      "titulo": "Bulto en el cuello"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "acr-thyroid-scan",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Thyroid Scan and Uptake",
+      "url": "https://www.radiologyinfo.org/en/info/thyroiduptake",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "nih-thyroid-scan",
+      "organizacion": "MedlinePlus (NIH/NLM)",
+      "titulo": "Thyroid Scan",
+      "url": "https://medlineplus.gov/ency/article/003829.htm",
+      "tipo": "Información médica oficial para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}
