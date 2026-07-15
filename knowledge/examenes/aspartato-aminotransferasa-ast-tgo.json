@@ -1,0 +1,97 @@
+{
+  "id": "examen-aspartato-aminotransferasa-ast-tgo",
+  "slug": "aspartato-aminotransferasa-ast-tgo",
+  "titulo": "Aspartato aminotransferasa (AST/TGO)",
+  "tipo": "examen",
+  "categoria": "Laboratorio y metabolismo",
+  "descripcion": "¿Qué es? Mide AST o TGO, enzima presente en hígado, corazón, músculo y otros tejidos. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Mide AST o TGO, enzima presente en hígado, corazón, músculo y otros tejidos. Apoya la evaluación de lesión hepática o muscular.",
+  "para_que_sirve": "¿Para qué sirve? Apoya la evaluación de lesión hepática o muscular. ¿Cuándo se solicita? Se solicita con ALT ante síntomas, controles hepáticos o posible lesión muscular.",
+  "causas": "Interpretación orientativa: Una AST alta no es específica del hígado; la relación con ALT, CK, síntomas y antecedentes orienta el origen. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Varía por método, edad, sexo y laboratorio. Enfermedades relacionadas: Higado graso, Cirrosis, Hepatitis A, Enfermedad coronaria. Especialidad relacionada: Laboratorio y metabolismo. Exámenes relacionados: ALT, CK, GGT, bilirrubina y fosfatasa alcalina.",
+  "sintomas": [
+    "fatiga",
+    "dolor muscular",
+    "piel amarilla"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita con ALT ante síntomas, controles hepáticos o posible lesión muscular.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Aspartato aminotransferasa (AST/TGO)?",
+      "respuesta": "Mide AST o TGO, enzima presente en hígado, corazón, músculo y otros tejidos."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Apoya la evaluación de lesión hepática o muscular."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Una AST alta no es específica del hígado; la relación con ALT, CK, síntomas y antecedentes orienta el origen. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-higado-graso",
+      "slug": "higado-graso",
+      "categoria": "Relacionados",
+      "titulo": "Higado graso"
+    },
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-hepatitis-a",
+      "slug": "hepatitis-a",
+      "categoria": "Relacionados",
+      "titulo": "Hepatitis A"
+    },
+    {
+      "id": "rel-enfermedad-coronaria",
+      "slug": "enfermedad-coronaria",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad coronaria"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-ast-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "AST Test",
+      "url": "https://medlineplus.gov/lab-tests/ast-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medline-liver-function-tests",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Liver Function Tests",
+      "url": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

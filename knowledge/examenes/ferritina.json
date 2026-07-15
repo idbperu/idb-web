@@ -1,0 +1,91 @@
+{
+  "id": "examen-ferritina",
+  "slug": "ferritina",
+  "titulo": "Ferritina",
+  "tipo": "examen",
+  "categoria": "Laboratorio y metabolismo",
+  "descripcion": "¿Qué es? Mide ferritina, proteína que almacena hierro y también aumenta con inflamación. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Mide ferritina, proteína que almacena hierro y también aumenta con inflamación. Estima reservas de hierro y apoya la evaluación de deficiencia o sobrecarga.",
+  "para_que_sirve": "¿Para qué sirve? Estima reservas de hierro y apoya la evaluación de deficiencia o sobrecarga. ¿Cuándo se solicita? Se solicita ante anemia, fatiga, pérdidas de sangre, embarazo o sospecha de exceso de hierro.",
+  "causas": "Interpretación orientativa: Ferritina baja suele apoyar deficiencia; una normal o alta no la excluye si existe inflamación, infección o enfermedad hepática. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Varía por edad, sexo, inflamación, método y laboratorio. Enfermedades relacionadas: Anemia, Anemia en embarazo, Higado graso. Especialidad relacionada: Laboratorio y metabolismo. Exámenes relacionados: Hierro, transferrina, saturación, PCR y hemograma.",
+  "sintomas": [
+    "fatiga",
+    "debilidad",
+    "unas fragiles"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante anemia, fatiga, pérdidas de sangre, embarazo o sospecha de exceso de hierro.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Ferritina?",
+      "respuesta": "Mide ferritina, proteína que almacena hierro y también aumenta con inflamación."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Estima reservas de hierro y apoya la evaluación de deficiencia o sobrecarga."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Ferritina baja suele apoyar deficiencia; una normal o alta no la excluye si existe inflamación, infección o enfermedad hepática. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-anemia",
+      "slug": "anemia",
+      "categoria": "Relacionados",
+      "titulo": "Anemia"
+    },
+    {
+      "id": "rel-anemia-en-embarazo",
+      "slug": "anemia-en-embarazo",
+      "categoria": "Relacionados",
+      "titulo": "Anemia en embarazo"
+    },
+    {
+      "id": "rel-higado-graso",
+      "slug": "higado-graso",
+      "categoria": "Relacionados",
+      "titulo": "Higado graso"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-ferritin-blood-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Ferritin Blood Test",
+      "url": "https://medlineplus.gov/lab-tests/ferritin-blood-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medline-iron-tests",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Iron Tests",
+      "url": "https://medlineplus.gov/lab-tests/iron-tests/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

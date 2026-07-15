@@ -1,0 +1,91 @@
+{
+  "id": "examen-lactato-deshidrogenasa-ldh",
+  "slug": "lactato-deshidrogenasa-ldh",
+  "titulo": "Lactato deshidrogenasa (LDH)",
+  "tipo": "examen",
+  "categoria": "Laboratorio y metabolismo",
+  "descripcion": "¿Qué es? Mide LDH, enzima presente en muchos tejidos que se libera con daño celular. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Mide LDH, enzima presente en muchos tejidos que se libera con daño celular. Es un marcador inespecífico que apoya la evaluación de hemólisis, lesión tisular y algunas enfermedades.",
+  "para_que_sirve": "¿Para qué sirve? Es un marcador inespecífico que apoya la evaluación de hemólisis, lesión tisular y algunas enfermedades. ¿Cuándo se solicita? Se solicita según síntomas o para seguimiento de trastornos hematológicos, hepáticos, musculares u oncológicos.",
+  "causas": "Interpretación orientativa: Una LDH alta indica daño celular posible pero no localiza su origen; la hemólisis de la muestra puede elevarla falsamente. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Depende del método, edad y laboratorio. Enfermedades relacionadas: Anemia, Leucemia, Cirrosis. Especialidad relacionada: Laboratorio y metabolismo. Exámenes relacionados: Hemograma, reticulocitos, bilirrubina, haptoglobina y pruebas dirigidas.",
+  "sintomas": [
+    "fatiga",
+    "debilidad",
+    "piel amarilla"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita según síntomas o para seguimiento de trastornos hematológicos, hepáticos, musculares u oncológicos.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Lactato deshidrogenasa (LDH)?",
+      "respuesta": "Mide LDH, enzima presente en muchos tejidos que se libera con daño celular."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Es un marcador inespecífico que apoya la evaluación de hemólisis, lesión tisular y algunas enfermedades."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Una LDH alta indica daño celular posible pero no localiza su origen; la hemólisis de la muestra puede elevarla falsamente. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-anemia",
+      "slug": "anemia",
+      "categoria": "Relacionados",
+      "titulo": "Anemia"
+    },
+    {
+      "id": "rel-leucemia",
+      "slug": "leucemia",
+      "categoria": "Relacionados",
+      "titulo": "Leucemia"
+    },
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-lactate-dehydrogenase-ldh-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Lactate Dehydrogenase Test",
+      "url": "https://medlineplus.gov/lab-tests/lactate-dehydrogenase-ldh-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "nhlbi-blood",
+      "organizacion": "NHLBI / NIH",
+      "titulo": "Blood Tests",
+      "url": "https://www.nhlbi.nih.gov/health/blood-tests",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

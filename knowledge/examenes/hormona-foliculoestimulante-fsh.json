@@ -1,0 +1,79 @@
+{
+  "id": "examen-hormona-foliculoestimulante-fsh",
+  "slug": "hormona-foliculoestimulante-fsh",
+  "titulo": "Hormona foliculoestimulante (FSH)",
+  "tipo": "examen",
+  "categoria": "Endocrinología y salud reproductiva",
+  "descripcion": "¿Qué es? Mide FSH, hormona hipofisaria que regula ovarios, testículos, ciclo menstrual y producción de espermatozoides. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Mide FSH, hormona hipofisaria que regula ovarios, testículos, ciclo menstrual y producción de espermatozoides. Ayuda a evaluar función gonadal, fertilidad, menopausia y pubertad.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar función gonadal, fertilidad, menopausia y pubertad. ¿Cuándo se solicita? Se solicita ante ciclos irregulares, infertilidad, síntomas menopáusicos, pubertad alterada o baja función gonadal.",
+  "causas": "Interpretación orientativa: Depende de edad, sexo, fase del ciclo, embarazo y tratamientos hormonales; suele interpretarse con LH y hormonas sexuales. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Los rangos cambian ampliamente por fase menstrual, menopausia, edad y laboratorio. Enfermedades relacionadas: Menstruacion irregular, infertilidad, hipogonadismo. Especialidad relacionada: Endocrinología y salud reproductiva. Exámenes relacionados: LH, estradiol, testosterona, prolactina, TSH y reserva ovárica.",
+  "sintomas": [
+    "menstruación irregular",
+    "sofocos",
+    "dificultad para concebir"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante ciclos irregulares, infertilidad, síntomas menopáusicos, pubertad alterada o baja función gonadal.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Hormona foliculoestimulante (FSH)?",
+      "respuesta": "Mide FSH, hormona hipofisaria que regula ovarios, testículos, ciclo menstrual y producción de espermatozoides."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Ayuda a evaluar función gonadal, fertilidad, menopausia y pubertad."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Depende de edad, sexo, fase del ciclo, embarazo y tratamientos hormonales; suele interpretarse con LH y hormonas sexuales. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-menstruacion-irregular",
+      "slug": "menstruacion-irregular",
+      "categoria": "Relacionados",
+      "titulo": "Menstruacion irregular"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-follicle-stimulating-hormone-fsh-levels-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "FSH Levels Test",
+      "url": "https://medlineplus.gov/lab-tests/follicle-stimulating-hormone-fsh-levels-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "nichd-infertility",
+      "organizacion": "NICHD / NIH",
+      "titulo": "Infertility Diagnosis",
+      "url": "https://www.nichd.nih.gov/health/topics/infertility/conditioninfo/diagnosed",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

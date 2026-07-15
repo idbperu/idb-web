@@ -3261,5 +3261,433 @@
       "uacr",
       "albumina creatinina en orina"
     ]
+  },
+  {
+    "titulo": "Fosfatasa alcalina",
+    "tipo": "examen",
+    "categoria": "Laboratorio y metabolismo",
+    "prioridad": 3,
+    "description": "Mide fosfatasa alcalina (ALP), enzima presente sobre todo en hígado, vías biliares y huesos. Ayuda a investigar alteraciones hepatobiliares u óseas y a vigilar su evolución.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=fosfatasa-alcalina",
+    "keywords": [
+      "fosfatasa alcalina",
+      "alp",
+      "piel amarilla",
+      "dolor abdominal",
+      "dolor de huesos"
+    ],
+    "aliases": [
+      "alp"
+    ]
+  },
+  {
+    "titulo": "Gamma-glutamil transferasa (GGT)",
+    "tipo": "examen",
+    "categoria": "Laboratorio y metabolismo",
+    "prioridad": 3,
+    "description": "Mide GGT, enzima concentrada principalmente en hígado y vías biliares. Apoya la evaluación de lesión hepatobiliar y ayuda a interpretar una fosfatasa alcalina elevada.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=gamma-glutamil-transferasa-ggt",
+    "keywords": [
+      "gamma-glutamil transferasa (ggt)",
+      "ggt",
+      "piel amarilla",
+      "orina oscura",
+      "dolor abdominal"
+    ],
+    "aliases": [
+      "ggt"
+    ]
+  },
+  {
+    "titulo": "Alanina aminotransferasa (ALT/TGP)",
+    "tipo": "examen",
+    "categoria": "Laboratorio y metabolismo",
+    "prioridad": 3,
+    "description": "Mide ALT o TGP, enzima localizada principalmente dentro de células del hígado. Ayuda a detectar y vigilar lesión hepatocelular.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=alanina-aminotransferasa-alt-tgp",
+    "keywords": [
+      "alanina aminotransferasa (alt/tgp)",
+      "alt",
+      "tgp",
+      "fatiga",
+      "piel amarilla",
+      "orina oscura"
+    ],
+    "aliases": [
+      "alt",
+      "tgp"
+    ]
+  },
+  {
+    "titulo": "Aspartato aminotransferasa (AST/TGO)",
+    "tipo": "examen",
+    "categoria": "Laboratorio y metabolismo",
+    "prioridad": 3,
+    "description": "Mide AST o TGO, enzima presente en hígado, corazón, músculo y otros tejidos. Apoya la evaluación de lesión hepática o muscular.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=aspartato-aminotransferasa-ast-tgo",
+    "keywords": [
+      "aspartato aminotransferasa (ast/tgo)",
+      "ast",
+      "tgo",
+      "fatiga",
+      "dolor muscular",
+      "piel amarilla"
+    ],
+    "aliases": [
+      "ast",
+      "tgo"
+    ]
+  },
+  {
+    "titulo": "Lactato deshidrogenasa (LDH)",
+    "tipo": "examen",
+    "categoria": "Laboratorio y metabolismo",
+    "prioridad": 3,
+    "description": "Mide LDH, enzima presente en muchos tejidos que se libera con daño celular. Es un marcador inespecífico que apoya la evaluación de hemólisis, lesión tisular y algunas enfermedades.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=lactato-deshidrogenasa-ldh",
+    "keywords": [
+      "lactato deshidrogenasa (ldh)",
+      "ldh",
+      "fatiga",
+      "debilidad",
+      "piel amarilla"
+    ],
+    "aliases": [
+      "ldh"
+    ]
+  },
+  {
+    "titulo": "Fósforo sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio y metabolismo",
+    "prioridad": 3,
+    "description": "Mide fosfato en sangre, mineral esencial para huesos, energía celular y equilibrio ácido-base. Ayuda a evaluar riñones, huesos, paratiroides y metabolismo mineral.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=fosforo-serico",
+    "keywords": [
+      "fósforo sérico",
+      "fosfato",
+      "debilidad",
+      "dolor de huesos",
+      "confusión"
+    ],
+    "aliases": [
+      "fosfato"
+    ]
+  },
+  {
+    "titulo": "Hierro sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio y metabolismo",
+    "prioridad": 3,
+    "description": "Mide hierro circulante unido principalmente a transferrina. Contribuye a evaluar deficiencia o sobrecarga de hierro, siempre junto con otras pruebas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hierro-serico",
+    "keywords": [
+      "hierro sérico",
+      "hierro en sangre",
+      "fatiga",
+      "debilidad",
+      "piel palida"
+    ],
+    "aliases": [
+      "hierro en sangre"
+    ]
+  },
+  {
+    "titulo": "Ferritina",
+    "tipo": "examen",
+    "categoria": "Laboratorio y metabolismo",
+    "prioridad": 3,
+    "description": "Mide ferritina, proteína que almacena hierro y también aumenta con inflamación. Estima reservas de hierro y apoya la evaluación de deficiencia o sobrecarga.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ferritina",
+    "keywords": [
+      "ferritina",
+      "reservas de hierro",
+      "fatiga",
+      "debilidad",
+      "unas fragiles"
+    ],
+    "aliases": [
+      "reservas de hierro"
+    ]
+  },
+  {
+    "titulo": "Transferrina",
+    "tipo": "examen",
+    "categoria": "Laboratorio y metabolismo",
+    "prioridad": 3,
+    "description": "Mide transferrina, proteína producida por el hígado que transporta hierro. Ayuda a caracterizar deficiencia, sobrecarga y cambios por inflamación, hígado o nutrición.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=transferrina",
+    "keywords": [
+      "transferrina",
+      "transportador de hierro",
+      "fatiga",
+      "debilidad",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "transportador de hierro"
+    ]
+  },
+  {
+    "titulo": "Saturación de transferrina",
+    "tipo": "examen",
+    "categoria": "Laboratorio y metabolismo",
+    "prioridad": 3,
+    "description": "Calcula qué porcentaje de la transferrina está ocupado por hierro, usando hierro y capacidad de unión. Ayuda a diferenciar deficiencia y sobrecarga de hierro.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=saturacion-de-transferrina",
+    "keywords": [
+      "saturación de transferrina",
+      "indice de saturacion",
+      "fatiga",
+      "debilidad",
+      "dolor articular"
+    ],
+    "aliases": [
+      "indice de saturacion"
+    ]
+  },
+  {
+    "titulo": "Recuento de reticulocitos",
+    "tipo": "examen",
+    "categoria": "Hematología e inmunología",
+    "prioridad": 3,
+    "description": "Cuenta glóbulos rojos jóvenes producidos por la médula ósea. Muestra cómo responde la médula ante anemia, sangrado o destrucción de glóbulos rojos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=recuento-de-reticulocitos",
+    "keywords": [
+      "recuento de reticulocitos",
+      "reticulocitos",
+      "fatiga",
+      "debilidad",
+      "piel amarilla"
+    ],
+    "aliases": [
+      "reticulocitos"
+    ]
+  },
+  {
+    "titulo": "Frotis de sangre periférica",
+    "tipo": "examen",
+    "categoria": "Hematología e inmunología",
+    "prioridad": 3,
+    "description": "Examina al microscopio tamaño, forma y aspecto de células sanguíneas extendidas en una lámina. Complementa el hemograma para investigar anemias, infecciones y trastornos hematológicos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=frotis-de-sangre-periferica",
+    "keywords": [
+      "frotis de sangre periférica",
+      "lamina periferica",
+      "fatiga",
+      "fiebre",
+      "moretones faciles"
+    ],
+    "aliases": [
+      "lamina periferica"
+    ]
+  },
+  {
+    "titulo": "Dímero D",
+    "tipo": "examen",
+    "categoria": "Hematología e inmunología",
+    "prioridad": 3,
+    "description": "Mide fragmentos producidos cuando el organismo degrada fibrina de un coágulo. En pacientes con probabilidad clínica baja o intermedia ayuda a descartar trombosis; no confirma por sí solo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=dimero-d",
+    "keywords": [
+      "dímero d",
+      "d dimer",
+      "hinchazón de piernas",
+      "dolor de pecho",
+      "falta de aire"
+    ],
+    "aliases": [
+      "d dimer"
+    ]
+  },
+  {
+    "titulo": "Fibrinógeno",
+    "tipo": "examen",
+    "categoria": "Hematología e inmunología",
+    "prioridad": 3,
+    "description": "Mide fibrinógeno o factor I, proteína hepática necesaria para formar coágulos. Ayuda a investigar sangrado, trombosis, inflamación y coagulación intravascular diseminada.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=fibrinogeno",
+    "keywords": [
+      "fibrinógeno",
+      "factor i",
+      "sangrado abundante",
+      "moretones faciles",
+      "fiebre"
+    ],
+    "aliases": [
+      "factor i"
+    ]
+  },
+  {
+    "titulo": "Anticuerpos antinucleares (ANA)",
+    "tipo": "examen",
+    "categoria": "Hematología e inmunología",
+    "prioridad": 3,
+    "description": "Detecta autoanticuerpos dirigidos contra componentes del núcleo celular. Apoya la evaluación de enfermedades autoinmunes sistémicas, especialmente lupus.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=anticuerpos-antinucleares-ana",
+    "keywords": [
+      "anticuerpos antinucleares (ana)",
+      "ana",
+      "dolor articular",
+      "erupción en la piel",
+      "fatiga"
+    ],
+    "aliases": [
+      "ana"
+    ]
+  },
+  {
+    "titulo": "Prueba rápida de VIH",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Busca anticuerpos contra VIH y, según el dispositivo, también antígeno, usando sangre capilar u otra muestra. Ofrece tamizaje en minutos para facilitar diagnóstico oportuno; un resultado reactivo necesita confirmación.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=prueba-rapida-de-vih",
+    "keywords": [
+      "prueba rápida de vih",
+      "test rapido vih",
+      "fiebre",
+      "ganglios inflamados",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "test rapido vih"
+    ]
+  },
+  {
+    "titulo": "Serología para hepatitis B",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Conjunto de pruebas como HBsAg, anti-HBs y anti-HBc que detectan infección, inmunidad o exposición al virus B. Distingue patrones de infección actual, pasada, vacunación o susceptibilidad.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=serologia-para-hepatitis-b",
+    "keywords": [
+      "serología para hepatitis b",
+      "hbsag",
+      "anti hbs",
+      "anti hbc",
+      "piel amarilla",
+      "fatiga",
+      "orina oscura"
+    ],
+    "aliases": [
+      "hbsag",
+      "anti hbs",
+      "anti hbc"
+    ]
+  },
+  {
+    "titulo": "Serología para hepatitis C",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Detecta anticuerpos contra el virus de hepatitis C como prueba inicial de exposición. Identifica personas que necesitan una prueba de ARN para confirmar infección activa.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=serologia-para-hepatitis-c",
+    "keywords": [
+      "serología para hepatitis c",
+      "anti hcv",
+      "fatiga",
+      "piel amarilla",
+      "orina oscura"
+    ],
+    "aliases": [
+      "anti hcv"
+    ]
+  },
+  {
+    "titulo": "Hormona foliculoestimulante (FSH)",
+    "tipo": "examen",
+    "categoria": "Endocrinología y salud reproductiva",
+    "prioridad": 3,
+    "description": "Mide FSH, hormona hipofisaria que regula ovarios, testículos, ciclo menstrual y producción de espermatozoides. Ayuda a evaluar función gonadal, fertilidad, menopausia y pubertad.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hormona-foliculoestimulante-fsh",
+    "keywords": [
+      "hormona foliculoestimulante (fsh)",
+      "fsh",
+      "menstruación irregular",
+      "sofocos",
+      "dificultad para concebir"
+    ],
+    "aliases": [
+      "fsh"
+    ]
+  },
+  {
+    "titulo": "Hormona luteinizante (LH)",
+    "tipo": "examen",
+    "categoria": "Endocrinología y salud reproductiva",
+    "prioridad": 3,
+    "description": "Mide LH, hormona hipofisaria que participa en ovulación y función testicular. Ayuda a evaluar fertilidad, función gonadal, menopausia y pubertad.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hormona-luteinizante-lh",
+    "keywords": [
+      "hormona luteinizante (lh)",
+      "lh",
+      "menstruación irregular",
+      "sofocos",
+      "dificultad para concebir"
+    ],
+    "aliases": [
+      "lh"
+    ]
   }
 ]

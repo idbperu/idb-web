@@ -1,0 +1,97 @@
+{
+  "id": "examen-fosfatasa-alcalina",
+  "slug": "fosfatasa-alcalina",
+  "titulo": "Fosfatasa alcalina",
+  "tipo": "examen",
+  "categoria": "Laboratorio y metabolismo",
+  "descripcion": "¿Qué es? Mide fosfatasa alcalina (ALP), enzima presente sobre todo en hígado, vías biliares y huesos. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Mide fosfatasa alcalina (ALP), enzima presente sobre todo en hígado, vías biliares y huesos. Ayuda a investigar alteraciones hepatobiliares u óseas y a vigilar su evolución.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a investigar alteraciones hepatobiliares u óseas y a vigilar su evolución. ¿Cuándo se solicita? Se solicita ante ictericia, dolor abdominal, dolor óseo o resultados hepáticos anormales.",
+  "causas": "Interpretación orientativa: Una ALP alta puede provenir de hígado o hueso; GGT, otras enzimas e imágenes ayudan a localizar el origen. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Varía con edad, crecimiento, embarazo, método y laboratorio. Enfermedades relacionadas: Higado graso, Cirrosis, Osteoporosis, Piel amarilla. Especialidad relacionada: Laboratorio y metabolismo. Exámenes relacionados: GGT, ALT, AST, bilirrubina, calcio e imágenes.",
+  "sintomas": [
+    "piel amarilla",
+    "dolor abdominal",
+    "dolor de huesos"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante ictericia, dolor abdominal, dolor óseo o resultados hepáticos anormales.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Fosfatasa alcalina?",
+      "respuesta": "Mide fosfatasa alcalina (ALP), enzima presente sobre todo en hígado, vías biliares y huesos."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Ayuda a investigar alteraciones hepatobiliares u óseas y a vigilar su evolución."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Una ALP alta puede provenir de hígado o hueso; GGT, otras enzimas e imágenes ayudan a localizar el origen. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-higado-graso",
+      "slug": "higado-graso",
+      "categoria": "Relacionados",
+      "titulo": "Higado graso"
+    },
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-osteoporosis",
+      "slug": "osteoporosis",
+      "categoria": "Relacionados",
+      "titulo": "Osteoporosis"
+    },
+    {
+      "id": "rel-piel-amarilla",
+      "slug": "piel-amarilla",
+      "categoria": "Relacionados",
+      "titulo": "Piel amarilla"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-alkaline-phosphatase",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Alkaline Phosphatase",
+      "url": "https://medlineplus.gov/lab-tests/alkaline-phosphatase/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medline-liver-function-tests",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Liver Function Tests",
+      "url": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

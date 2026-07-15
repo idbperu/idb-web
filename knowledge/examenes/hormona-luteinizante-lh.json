@@ -1,0 +1,79 @@
+{
+  "id": "examen-hormona-luteinizante-lh",
+  "slug": "hormona-luteinizante-lh",
+  "titulo": "Hormona luteinizante (LH)",
+  "tipo": "examen",
+  "categoria": "Endocrinología y salud reproductiva",
+  "descripcion": "¿Qué es? Mide LH, hormona hipofisaria que participa en ovulación y función testicular. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Mide LH, hormona hipofisaria que participa en ovulación y función testicular. Ayuda a evaluar fertilidad, función gonadal, menopausia y pubertad.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar fertilidad, función gonadal, menopausia y pubertad. ¿Cuándo se solicita? Se solicita ante infertilidad, ciclos irregulares, sospecha de alteración ovulatoria o pubertad anormal.",
+  "causas": "Interpretación orientativa: Un resultado aislado depende mucho del momento del ciclo y de tratamientos; se interpreta con FSH, estradiol o testosterona. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Varía por sexo, edad, fase menstrual, pulsatilidad y laboratorio. Enfermedades relacionadas: Menstruacion irregular, hipogonadismo, infertilidad. Especialidad relacionada: Endocrinología y salud reproductiva. Exámenes relacionados: FSH, estradiol, progesterona, testosterona, prolactina y TSH.",
+  "sintomas": [
+    "menstruación irregular",
+    "sofocos",
+    "dificultad para concebir"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante infertilidad, ciclos irregulares, sospecha de alteración ovulatoria o pubertad anormal.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Hormona luteinizante (LH)?",
+      "respuesta": "Mide LH, hormona hipofisaria que participa en ovulación y función testicular."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Ayuda a evaluar fertilidad, función gonadal, menopausia y pubertad."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un resultado aislado depende mucho del momento del ciclo y de tratamientos; se interpreta con FSH, estradiol o testosterona. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-menstruacion-irregular",
+      "slug": "menstruacion-irregular",
+      "categoria": "Relacionados",
+      "titulo": "Menstruacion irregular"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-luteinizing-hormone-lh-levels-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "LH Levels Test",
+      "url": "https://medlineplus.gov/lab-tests/luteinizing-hormone-lh-levels-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "nichd-ovulation",
+      "organizacion": "NICHD / NIH",
+      "titulo": "How do health care providers diagnose infertility?",
+      "url": "https://www.nichd.nih.gov/health/topics/infertility/conditioninfo/diagnosed",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

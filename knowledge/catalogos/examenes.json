@@ -1,9 +1,9 @@
 {
   "id": "catalogo-examenes",
   "titulo": "Catálogo de exámenes médicos",
-  "version": "1.1",
+  "version": "1.2",
   "ultima_revision": "2026-07",
-  "total_registros": 40,
+  "total_registros": 60,
   "registros": [
     {
       "id": "examen-hemograma-completo",
@@ -324,6 +324,166 @@
       "tipo": "examen",
       "categoria": "Nefrología",
       "ruta": "knowledge/examenes/microalbuminuria.json"
+    },
+    {
+      "id": "examen-fosfatasa-alcalina",
+      "slug": "fosfatasa-alcalina",
+      "titulo": "Fosfatasa alcalina",
+      "tipo": "examen",
+      "categoria": "Laboratorio y metabolismo",
+      "ruta": "knowledge/examenes/fosfatasa-alcalina.json"
+    },
+    {
+      "id": "examen-gamma-glutamil-transferasa-ggt",
+      "slug": "gamma-glutamil-transferasa-ggt",
+      "titulo": "Gamma-glutamil transferasa (GGT)",
+      "tipo": "examen",
+      "categoria": "Laboratorio y metabolismo",
+      "ruta": "knowledge/examenes/gamma-glutamil-transferasa-ggt.json"
+    },
+    {
+      "id": "examen-alanina-aminotransferasa-alt-tgp",
+      "slug": "alanina-aminotransferasa-alt-tgp",
+      "titulo": "Alanina aminotransferasa (ALT/TGP)",
+      "tipo": "examen",
+      "categoria": "Laboratorio y metabolismo",
+      "ruta": "knowledge/examenes/alanina-aminotransferasa-alt-tgp.json"
+    },
+    {
+      "id": "examen-aspartato-aminotransferasa-ast-tgo",
+      "slug": "aspartato-aminotransferasa-ast-tgo",
+      "titulo": "Aspartato aminotransferasa (AST/TGO)",
+      "tipo": "examen",
+      "categoria": "Laboratorio y metabolismo",
+      "ruta": "knowledge/examenes/aspartato-aminotransferasa-ast-tgo.json"
+    },
+    {
+      "id": "examen-lactato-deshidrogenasa-ldh",
+      "slug": "lactato-deshidrogenasa-ldh",
+      "titulo": "Lactato deshidrogenasa (LDH)",
+      "tipo": "examen",
+      "categoria": "Laboratorio y metabolismo",
+      "ruta": "knowledge/examenes/lactato-deshidrogenasa-ldh.json"
+    },
+    {
+      "id": "examen-fosforo-serico",
+      "slug": "fosforo-serico",
+      "titulo": "Fósforo sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio y metabolismo",
+      "ruta": "knowledge/examenes/fosforo-serico.json"
+    },
+    {
+      "id": "examen-hierro-serico",
+      "slug": "hierro-serico",
+      "titulo": "Hierro sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio y metabolismo",
+      "ruta": "knowledge/examenes/hierro-serico.json"
+    },
+    {
+      "id": "examen-ferritina",
+      "slug": "ferritina",
+      "titulo": "Ferritina",
+      "tipo": "examen",
+      "categoria": "Laboratorio y metabolismo",
+      "ruta": "knowledge/examenes/ferritina.json"
+    },
+    {
+      "id": "examen-transferrina",
+      "slug": "transferrina",
+      "titulo": "Transferrina",
+      "tipo": "examen",
+      "categoria": "Laboratorio y metabolismo",
+      "ruta": "knowledge/examenes/transferrina.json"
+    },
+    {
+      "id": "examen-saturacion-de-transferrina",
+      "slug": "saturacion-de-transferrina",
+      "titulo": "Saturación de transferrina",
+      "tipo": "examen",
+      "categoria": "Laboratorio y metabolismo",
+      "ruta": "knowledge/examenes/saturacion-de-transferrina.json"
+    },
+    {
+      "id": "examen-recuento-de-reticulocitos",
+      "slug": "recuento-de-reticulocitos",
+      "titulo": "Recuento de reticulocitos",
+      "tipo": "examen",
+      "categoria": "Hematología e inmunología",
+      "ruta": "knowledge/examenes/recuento-de-reticulocitos.json"
+    },
+    {
+      "id": "examen-frotis-de-sangre-periferica",
+      "slug": "frotis-de-sangre-periferica",
+      "titulo": "Frotis de sangre periférica",
+      "tipo": "examen",
+      "categoria": "Hematología e inmunología",
+      "ruta": "knowledge/examenes/frotis-de-sangre-periferica.json"
+    },
+    {
+      "id": "examen-dimero-d",
+      "slug": "dimero-d",
+      "titulo": "Dímero D",
+      "tipo": "examen",
+      "categoria": "Hematología e inmunología",
+      "ruta": "knowledge/examenes/dimero-d.json"
+    },
+    {
+      "id": "examen-fibrinogeno",
+      "slug": "fibrinogeno",
+      "titulo": "Fibrinógeno",
+      "tipo": "examen",
+      "categoria": "Hematología e inmunología",
+      "ruta": "knowledge/examenes/fibrinogeno.json"
+    },
+    {
+      "id": "examen-anticuerpos-antinucleares-ana",
+      "slug": "anticuerpos-antinucleares-ana",
+      "titulo": "Anticuerpos antinucleares (ANA)",
+      "tipo": "examen",
+      "categoria": "Hematología e inmunología",
+      "ruta": "knowledge/examenes/anticuerpos-antinucleares-ana.json"
+    },
+    {
+      "id": "examen-prueba-rapida-de-vih",
+      "slug": "prueba-rapida-de-vih",
+      "titulo": "Prueba rápida de VIH",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/prueba-rapida-de-vih.json"
+    },
+    {
+      "id": "examen-serologia-para-hepatitis-b",
+      "slug": "serologia-para-hepatitis-b",
+      "titulo": "Serología para hepatitis B",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/serologia-para-hepatitis-b.json"
+    },
+    {
+      "id": "examen-serologia-para-hepatitis-c",
+      "slug": "serologia-para-hepatitis-c",
+      "titulo": "Serología para hepatitis C",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/serologia-para-hepatitis-c.json"
+    },
+    {
+      "id": "examen-hormona-foliculoestimulante-fsh",
+      "slug": "hormona-foliculoestimulante-fsh",
+      "titulo": "Hormona foliculoestimulante (FSH)",
+      "tipo": "examen",
+      "categoria": "Endocrinología y salud reproductiva",
+      "ruta": "knowledge/examenes/hormona-foliculoestimulante-fsh.json"
+    },
+    {
+      "id": "examen-hormona-luteinizante-lh",
+      "slug": "hormona-luteinizante-lh",
+      "titulo": "Hormona luteinizante (LH)",
+      "tipo": "examen",
+      "categoria": "Endocrinología y salud reproductiva",
+      "ruta": "knowledge/examenes/hormona-luteinizante-lh.json"
     }
   ]
 }
