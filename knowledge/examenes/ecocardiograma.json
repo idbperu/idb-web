@@ -1,0 +1,98 @@
+{
+  "id": "examen-ecocardiograma",
+  "slug": "ecocardiograma",
+  "titulo": "Ecocardiograma",
+  "tipo": "examen",
+  "categoria": "Cardiología",
+  "descripcion": "¿Qué es? El ecocardiograma transtorácico usa un transductor sobre el pecho; existen variantes de esfuerzo o transesofágicas para indicaciones específicas. ¿Cómo se realiza? Se aplica gel y se mueve un transductor en distintos puntos del pecho mientras cambias de posición o contienes brevemente la respiración. Duración: El transtorácico suele durar 30 a 60 minutos. ¿Produce dolor o molestias? Puede sentirse presión leve del transductor; el estudio estándar no suele doler.",
+  "respuesta_rapida": "Ecografía del corazón que crea imágenes en movimiento para evaluar cavidades, válvulas, bombeo y flujo sanguíneo.",
+  "para_que_sirve": "¿Para qué sirve? Permite valorar estructura y función cardíaca sin radiación. ¿Cuándo se solicita? Se solicita ante soplo, falta de aire, hinchazón, dolor de pecho, cambios en ECG o seguimiento de enfermedad cardíaca.",
+  "causas": "Interpretación general (orientativa): El informe integra medidas, movimiento de paredes, válvulas, presión estimada y flujo. Los hallazgos requieren contexto clínico. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Las medidas normales dependen de edad, tamaño corporal, sexo y técnica; no deben interpretarse de forma aislada. Enfermedades relacionadas: Insuficiencia cardíaca, valvulopatías, cardiopatías congénitas y derrame pericárdico. Especialidad relacionada: Cardiología. Exámenes relacionados: Electrocardiograma, Holter, prueba de esfuerzo y resonancia cardíaca.",
+  "sintomas": [
+    "falta de aire",
+    "hinchazón",
+    "palpitaciones",
+    "dolor de pecho"
+  ],
+  "factores_riesgo": [
+    "El ecocardiograma transtorácico tiene riesgo mínimo; otras modalidades tienen riesgos específicos que deben explicarse antes."
+  ],
+  "prevencion": [
+    "El ecocardiograma transtorácico usualmente no requiere preparación.",
+    "Si es transesofágico o de esfuerzo, sigue las instrucciones específicas de ayuno y medicamentos."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante soplo, falta de aire, hinchazón, dolor de pecho, cambios en ECG o seguimiento de enfermedad cardíaca.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: El ecocardiograma transtorácico tiene riesgo mínimo; otras modalidades tienen riesgos específicos que deben explicarse antes."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Ecocardiograma?",
+      "respuesta": "El ecocardiograma transtorácico usa un transductor sobre el pecho; existen variantes de esfuerzo o transesofágicas para indicaciones específicas."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "El ecocardiograma transtorácico usualmente no requiere preparación. Si es transesofágico o de esfuerzo, sigue las instrucciones específicas de ayuno y medicamentos."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "Puede sentirse presión leve del transductor; el estudio estándar no suele doler. El ecocardiograma transtorácico tiene riesgo mínimo; otras modalidades tienen riesgos específicos que deben explicarse antes."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El informe integra medidas, movimiento de paredes, válvulas, presión estimada y flujo. Los hallazgos requieren contexto clínico. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-insuficiencia-cardiaca",
+      "slug": "insuficiencia-cardiaca",
+      "categoria": "Relacionados",
+      "titulo": "Insuficiencia cardiaca"
+    },
+    {
+      "id": "rel-enfermedad-coronaria",
+      "slug": "enfermedad-coronaria",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad coronaria"
+    },
+    {
+      "id": "rel-falta-de-aire",
+      "slug": "falta-de-aire",
+      "categoria": "Relacionados",
+      "titulo": "Falta de aire"
+    },
+    {
+      "id": "rel-palpitaciones",
+      "slug": "palpitaciones",
+      "categoria": "Relacionados",
+      "titulo": "Palpitaciones"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "nhlbi-echo",
+      "organizacion": "NHLBI / NIH",
+      "titulo": "Echocardiography",
+      "url": "https://www.nhlbi.nih.gov/node/4894",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "medline-echo",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Echocardiography",
+      "url": "https://medlineplus.gov/ency/article/003869.htm",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

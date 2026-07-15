@@ -1,0 +1,169 @@
+{
+  "id": "catalogo-examenes",
+  "titulo": "Catálogo de exámenes médicos",
+  "version": "1.0",
+  "ultima_revision": "2026-07",
+  "total_registros": 20,
+  "registros": [
+    {
+      "id": "examen-hemograma-completo",
+      "slug": "hemograma-completo",
+      "titulo": "Hemograma completo",
+      "tipo": "examen",
+      "categoria": "Hematología",
+      "ruta": "knowledge/examenes/hemograma-completo.json"
+    },
+    {
+      "id": "examen-glucosa-en-sangre",
+      "slug": "glucosa-en-sangre",
+      "titulo": "Glucosa en sangre",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/glucosa-en-sangre.json"
+    },
+    {
+      "id": "examen-hemoglobina-glicosilada-hba1c",
+      "slug": "hemoglobina-glicosilada-hba1c",
+      "titulo": "Hemoglobina glicosilada (HbA1c)",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/hemoglobina-glicosilada-hba1c.json"
+    },
+    {
+      "id": "examen-perfil-lipidico",
+      "slug": "perfil-lipidico",
+      "titulo": "Perfil lipídico",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/perfil-lipidico.json"
+    },
+    {
+      "id": "examen-creatinina-serica",
+      "slug": "creatinina-serica",
+      "titulo": "Creatinina sérica",
+      "tipo": "examen",
+      "categoria": "Nefrología",
+      "ruta": "knowledge/examenes/creatinina-serica.json"
+    },
+    {
+      "id": "examen-urea",
+      "slug": "urea",
+      "titulo": "Urea",
+      "tipo": "examen",
+      "categoria": "Nefrología",
+      "ruta": "knowledge/examenes/urea.json"
+    },
+    {
+      "id": "examen-examen-completo-de-orina",
+      "slug": "examen-completo-de-orina",
+      "titulo": "Examen completo de orina",
+      "tipo": "examen",
+      "categoria": "Urología y nefrología",
+      "ruta": "knowledge/examenes/examen-completo-de-orina.json"
+    },
+    {
+      "id": "examen-prueba-de-funcion-hepatica",
+      "slug": "prueba-de-funcion-hepatica",
+      "titulo": "Prueba de función hepática",
+      "tipo": "examen",
+      "categoria": "Gastroenterología y hepatología",
+      "ruta": "knowledge/examenes/prueba-de-funcion-hepatica.json"
+    },
+    {
+      "id": "examen-radiografia-de-torax",
+      "slug": "radiografia-de-torax",
+      "titulo": "Radiografía de tórax",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/radiografia-de-torax.json"
+    },
+    {
+      "id": "examen-radiografia-de-columna",
+      "slug": "radiografia-de-columna",
+      "titulo": "Radiografía de columna",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/radiografia-de-columna.json"
+    },
+    {
+      "id": "examen-ecografia-abdominal",
+      "slug": "ecografia-abdominal",
+      "titulo": "Ecografía abdominal",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/ecografia-abdominal.json"
+    },
+    {
+      "id": "examen-resonancia-magnetica-cerebral",
+      "slug": "resonancia-magnetica-cerebral",
+      "titulo": "Resonancia magnética cerebral",
+      "tipo": "examen",
+      "categoria": "Diagnóstico por imágenes",
+      "ruta": "knowledge/examenes/resonancia-magnetica-cerebral.json"
+    },
+    {
+      "id": "examen-electrocardiograma",
+      "slug": "electrocardiograma",
+      "titulo": "Electrocardiograma",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/electrocardiograma.json"
+    },
+    {
+      "id": "examen-ecocardiograma",
+      "slug": "ecocardiograma",
+      "titulo": "Ecocardiograma",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/ecocardiograma.json"
+    },
+    {
+      "id": "examen-espirometria",
+      "slug": "espirometria",
+      "titulo": "Espirometría",
+      "tipo": "examen",
+      "categoria": "Neumología",
+      "ruta": "knowledge/examenes/espirometria.json"
+    },
+    {
+      "id": "examen-oximetria-de-pulso",
+      "slug": "oximetria-de-pulso",
+      "titulo": "Oximetría de pulso",
+      "tipo": "examen",
+      "categoria": "Neumología",
+      "ruta": "knowledge/examenes/oximetria-de-pulso.json"
+    },
+    {
+      "id": "examen-endoscopia-digestiva-alta",
+      "slug": "endoscopia-digestiva-alta",
+      "titulo": "Endoscopia digestiva alta",
+      "tipo": "examen",
+      "categoria": "Gastroenterología",
+      "ruta": "knowledge/examenes/endoscopia-digestiva-alta.json"
+    },
+    {
+      "id": "examen-colonoscopia",
+      "slug": "colonoscopia",
+      "titulo": "Colonoscopia",
+      "tipo": "examen",
+      "categoria": "Gastroenterología",
+      "ruta": "knowledge/examenes/colonoscopia.json"
+    },
+    {
+      "id": "examen-electroencefalograma",
+      "slug": "electroencefalograma",
+      "titulo": "Electroencefalograma",
+      "tipo": "examen",
+      "categoria": "Neurología",
+      "ruta": "knowledge/examenes/electroencefalograma.json"
+    },
+    {
+      "id": "examen-fondo-de-ojo",
+      "slug": "fondo-de-ojo",
+      "titulo": "Fondo de ojo",
+      "tipo": "examen",
+      "categoria": "Oftalmología",
+      "ruta": "knowledge/examenes/fondo-de-ojo.json"
+    }
+  ]
+}

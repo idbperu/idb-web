@@ -1,0 +1,98 @@
+{
+  "id": "examen-endoscopia-digestiva-alta",
+  "slug": "endoscopia-digestiva-alta",
+  "titulo": "Endoscopia digestiva alta",
+  "tipo": "examen",
+  "categoria": "Gastroenterología",
+  "descripcion": "¿Qué es? También se llama endoscopia gastrointestinal alta o esofagogastroduodenoscopia; permite tomar biopsias y realizar ciertos tratamientos. ¿Cómo se realiza? Tras anestesia local de garganta y frecuentemente sedación, el endoscopio avanza suavemente por la boca mientras se inspecciona el tracto superior. Duración: El procedimiento suele durar 15 a 30 minutos, más recuperación si hay sedación. ¿Produce dolor o molestias? Puede provocar arcadas, presión, distensión o dolor de garganta leve; la sedación reduce la molestia.",
+  "respuesta_rapida": "Procedimiento que permite observar esófago, estómago y duodeno con una cámara flexible introducida por la boca.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a investigar dolor, acidez persistente, dificultad para tragar, anemia, sangrado, náuseas o vómitos. ¿Cuándo se solicita? Se solicita ante síntomas persistentes o de alarma, seguimiento de lesiones o necesidad de biopsia o tratamiento endoscópico.",
+  "causas": "Interpretación general (orientativa): El informe describe la mucosa y procedimientos realizados. Las biopsias requieren análisis de patología y resultados posteriores. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: No aplica un rango numérico; se informa la apariencia y los hallazgos endoscópicos e histológicos. Enfermedades relacionadas: Úlcera gástrica, reflujo, gastritis, enfermedad celíaca y tumores digestivos. Especialidad relacionada: Gastroenterología. Exámenes relacionados: Prueba de Helicobacter pylori, hemograma, biopsia y estudios con contraste.",
+  "sintomas": [
+    "dolor de estomago",
+    "dificultad para tragar",
+    "heces negras",
+    "vomitos"
+  ],
+  "factores_riesgo": [
+    "Las complicaciones son poco frecuentes e incluyen reacción a sedación, sangrado, infección o perforación, con mayor riesgo si se realiza tratamiento."
+  ],
+  "prevencion": [
+    "No comas ni bebas durante el periodo indicado, habitualmente varias horas.",
+    "Informa anticoagulantes, diabetes, alergias, embarazo, apnea del sueño y enfermedades cardíacas o pulmonares; organiza acompañante si habrá sedación."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante síntomas persistentes o de alarma, seguimiento de lesiones o necesidad de biopsia o tratamiento endoscópico.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Las complicaciones son poco frecuentes e incluyen reacción a sedación, sangrado, infección o perforación, con mayor riesgo si se realiza tratamiento."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Endoscopia digestiva alta?",
+      "respuesta": "También se llama endoscopia gastrointestinal alta o esofagogastroduodenoscopia; permite tomar biopsias y realizar ciertos tratamientos."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "No comas ni bebas durante el periodo indicado, habitualmente varias horas. Informa anticoagulantes, diabetes, alergias, embarazo, apnea del sueño y enfermedades cardíacas o pulmonares; organiza acompañante si habrá sedación."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "Puede provocar arcadas, presión, distensión o dolor de garganta leve; la sedación reduce la molestia. Las complicaciones son poco frecuentes e incluyen reacción a sedación, sangrado, infección o perforación, con mayor riesgo si se realiza tratamiento."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El informe describe la mucosa y procedimientos realizados. Las biopsias requieren análisis de patología y resultados posteriores. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-ulcera-gastrica",
+      "slug": "ulcera-gastrica",
+      "categoria": "Relacionados",
+      "titulo": "Ulcera gastrica"
+    },
+    {
+      "id": "rel-dificultad-para-tragar",
+      "slug": "dificultad-para-tragar",
+      "categoria": "Relacionados",
+      "titulo": "Dificultad para tragar"
+    },
+    {
+      "id": "rel-heces-negras",
+      "slug": "heces-negras",
+      "categoria": "Relacionados",
+      "titulo": "Heces negras"
+    },
+    {
+      "id": "rel-dolor-de-estomago",
+      "slug": "dolor-de-estomago",
+      "categoria": "Relacionados",
+      "titulo": "Dolor de estomago"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-endoscopy",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Endoscopy",
+      "url": "https://medlineplus.gov/endoscopy.html",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "niddk-upper-gi",
+      "organizacion": "NIDDK / NIH",
+      "titulo": "Upper GI Endoscopy",
+      "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/upper-gi-endoscopy",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "examen-urea",
+  "slug": "urea",
+  "titulo": "Urea",
+  "tipo": "examen",
+  "categoria": "Nefrología",
+  "descripcion": "¿Qué es? En muchos informes aparece como BUN o nitrógeno ureico en sangre. ¿Cómo se realiza? Un profesional obtiene una pequeña muestra de una vena del brazo y la envía al laboratorio. Duración: La toma suele durar menos de cinco minutos. ¿Produce dolor o molestias? Puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Análisis de sangre que mide nitrógeno ureico, un desecho producido al metabolizar proteínas y eliminado por los riñones.",
+  "para_que_sirve": "¿Para qué sirve? Contribuye a evaluar la función renal y el estado de hidratación, habitualmente junto con creatinina. ¿Cuándo se solicita? Se solicita en controles metabólicos, riesgo renal, enfermedad renal conocida o síntomas como cambios en la orina, fatiga, picazón o hinchazón.",
+  "causas": "Interpretación general (orientativa): Puede elevarse por menor función renal, deshidratación, dieta alta en proteínas, sangrado digestivo o ciertos medicamentos; un valor bajo también tiene varias causas. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: El rango depende del método, edad y laboratorio. Debe leerse junto con creatinina, filtración glomerular e hidratación. Enfermedades relacionadas: Enfermedad renal crónica, deshidratación e insuficiencia cardíaca. Especialidad relacionada: Medicina interna o nefrología. Exámenes relacionados: Creatinina, filtración glomerular estimada, electrolitos y examen de orina.",
+  "sintomas": [
+    "fatiga",
+    "picazón",
+    "orinar frecuente",
+    "hinchazón"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Por lo general no requiere preparación especial; confirma si otros análisis exigen ayuno.",
+    "Informa medicamentos y suplementos."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita en controles metabólicos, riesgo renal, enfermedad renal conocida o síntomas como cambios en la orina, fatiga, picazón o hinchazón.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Urea?",
+      "respuesta": "En muchos informes aparece como BUN o nitrógeno ureico en sangre."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Por lo general no requiere preparación especial; confirma si otros análisis exigen ayuno. Informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "Puede sentirse un pinchazo breve. La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Puede elevarse por menor función renal, deshidratación, dieta alta en proteínas, sangrado digestivo o ciertos medicamentos; un valor bajo también tiene varias causas. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-deshidratacion",
+      "slug": "deshidratacion",
+      "categoria": "Relacionados",
+      "titulo": "Deshidratacion"
+    },
+    {
+      "id": "rel-insuficiencia-cardiaca",
+      "slug": "insuficiencia-cardiaca",
+      "categoria": "Relacionados",
+      "titulo": "Insuficiencia cardiaca"
+    },
+    {
+      "id": "rel-fatiga",
+      "slug": "fatiga",
+      "categoria": "Relacionados",
+      "titulo": "Fatiga"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-bun-blood-urea-nitrogen",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "BUN (Blood Urea Nitrogen)",
+      "url": "https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "niddk-kidney-disease",
+      "organizacion": "NIDDK / NIH",
+      "titulo": "Kidney Disease",
+      "url": "https://www.niddk.nih.gov/health-information/kidney-disease",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

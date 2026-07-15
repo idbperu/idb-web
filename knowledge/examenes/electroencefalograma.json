@@ -1,0 +1,98 @@
+{
+  "id": "examen-electroencefalograma",
+  "slug": "electroencefalograma",
+  "titulo": "Electroencefalograma",
+  "tipo": "examen",
+  "categoria": "Neurología",
+  "descripcion": "¿Qué es? Produce un trazado de ondas cerebrales en reposo y, según el protocolo, durante sueño, respiración profunda o luces intermitentes. ¿Cómo se realiza? Se adhieren pequeños electrodos al cuero cabelludo y se registra en reposo; pueden pedir abrir y cerrar ojos, respirar profundo o mirar luces. Duración: Un EEG rutinario suele durar 20 a 40 minutos; estudios de sueño o monitorización pueden durar más. ¿Produce dolor o molestias? No duele y no introduce electricidad; retirar el adhesivo puede ser molesto.",
+  "respuesta_rapida": "Prueba que registra la actividad eléctrica cerebral mediante electrodos colocados sobre el cuero cabelludo.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar epilepsia, episodios de pérdida de conciencia, alteraciones del sueño y algunas encefalopatías. ¿Cuándo se solicita? Puede solicitarse después de una convulsión, episodios de desconexión, movimientos anormales, confusión no explicada o para seguimiento de epilepsia.",
+  "causas": "Interpretación general (orientativa): Un EEG normal no descarta epilepsia y una anomalía no siempre equivale a convulsiones; debe correlacionarse con la historia clínica. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: No aplica un rango numérico simple; un especialista analiza frecuencia, simetría, reactividad y descargas anormales. Enfermedades relacionadas: Epilepsia, trastornos del sueño y encefalopatías. Especialidad relacionada: Neurología o neurofisiología clínica. Exámenes relacionados: Resonancia cerebral, tomografía cerebral, video-EEG y análisis de sangre según el caso.",
+  "sintomas": [
+    "desmayo",
+    "confusion",
+    "temblores",
+    "dificultad para concentrarse"
+  ],
+  "factores_riesgo": [
+    "Es muy seguro. Las maniobras de activación rara vez provocan una convulsión en personas susceptibles y se realizan con supervisión."
+  ],
+  "prevencion": [
+    "Lava el cabello y no uses gel, aceites ni laca.",
+    "Informa medicamentos; no los suspendas sin indicación. Puede pedirse dormir menos o evitar cafeína."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse después de una convulsión, episodios de desconexión, movimientos anormales, confusión no explicada o para seguimiento de epilepsia.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Es muy seguro. Las maniobras de activación rara vez provocan una convulsión en personas susceptibles y se realizan con supervisión."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Electroencefalograma?",
+      "respuesta": "Produce un trazado de ondas cerebrales en reposo y, según el protocolo, durante sueño, respiración profunda o luces intermitentes."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Lava el cabello y no uses gel, aceites ni laca. Informa medicamentos; no los suspendas sin indicación. Puede pedirse dormir menos o evitar cafeína."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "No duele y no introduce electricidad; retirar el adhesivo puede ser molesto. Es muy seguro. Las maniobras de activación rara vez provocan una convulsión en personas susceptibles y se realizan con supervisión."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un EEG normal no descarta epilepsia y una anomalía no siempre equivale a convulsiones; debe correlacionarse con la historia clínica. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-desmayo",
+      "slug": "desmayo",
+      "categoria": "Relacionados",
+      "titulo": "Desmayo"
+    },
+    {
+      "id": "rel-confusion",
+      "slug": "confusion",
+      "categoria": "Relacionados",
+      "titulo": "Confusion"
+    },
+    {
+      "id": "rel-temblores",
+      "slug": "temblores",
+      "categoria": "Relacionados",
+      "titulo": "Temblores"
+    },
+    {
+      "id": "rel-dificultad-para-concentrarse",
+      "slug": "dificultad-para-concentrarse",
+      "categoria": "Relacionados",
+      "titulo": "Dificultad para concentrarse"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-eeg",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Electroencephalogram",
+      "url": "https://medlineplus.gov/ency/article/003931.htm",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "nhs-eeg",
+      "organizacion": "NHS",
+      "titulo": "Electroencephalogram (EEG)",
+      "url": "https://www.nhs.uk/tests-and-treatments/electroencephalogram/",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

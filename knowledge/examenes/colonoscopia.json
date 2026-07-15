@@ -1,0 +1,98 @@
+{
+  "id": "examen-colonoscopia",
+  "slug": "colonoscopia",
+  "titulo": "Colonoscopia",
+  "tipo": "examen",
+  "categoria": "Gastroenterología",
+  "descripcion": "¿Qué es? Permite visualizar directamente el revestimiento del intestino grueso. ¿Cómo se realiza? Con sedación frecuente, el colonoscopio se introduce por el ano y avanza por el colon mientras se insufla gas para observar la pared. Duración: Suele durar 30 a 60 minutos, más el tiempo de preparación y recuperación. ¿Produce dolor o molestias? Puede haber cólicos, presión o distensión; después es común expulsar gases.",
+  "respuesta_rapida": "Procedimiento que examina el recto y el colon con una cámara flexible; puede detectar y retirar pólipos y tomar biopsias.",
+  "para_que_sirve": "¿Para qué sirve? Se usa para tamizaje de cáncer colorrectal, investigar sangrado o cambios intestinales y vigilar antecedentes o enfermedades del colon. ¿Cuándo se solicita? Puede indicarse por edad y riesgo de tamizaje, sangre en heces, anemia, cambios persistentes del hábito intestinal o seguimiento de pólipos.",
+  "causas": "Interpretación general (orientativa): El informe indica calidad de preparación, extensión examinada, pólipos o lesiones. Las biopsias se interpretan por separado. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: No aplica un rango numérico; el resultado depende de hallazgos visuales, patología y calidad de preparación. Enfermedades relacionadas: Pólipos, cáncer colorrectal, colitis y enfermedad diverticular. Especialidad relacionada: Gastroenterología o cirugía colorrectal. Exámenes relacionados: Sangre oculta en heces, biopsia, hemograma y tomografía abdominal.",
+  "sintomas": [
+    "sangre en heces",
+    "estrenimiento",
+    "diarrea",
+    "dolor abdominal"
+  ],
+  "factores_riesgo": [
+    "Las complicaciones son poco frecuentes e incluyen reacción a sedación, sangrado y perforación, sobre todo tras retirar pólipos."
+  ],
+  "prevencion": [
+    "Sigue exactamente la dieta, laxante y horario indicados; una limpieza insuficiente reduce la calidad.",
+    "Informa anticoagulantes, diabetes, embarazo y enfermedades relevantes; organiza acompañante si habrá sedación."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede indicarse por edad y riesgo de tamizaje, sangre en heces, anemia, cambios persistentes del hábito intestinal o seguimiento de pólipos.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Las complicaciones son poco frecuentes e incluyen reacción a sedación, sangrado y perforación, sobre todo tras retirar pólipos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Colonoscopia?",
+      "respuesta": "Permite visualizar directamente el revestimiento del intestino grueso."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Sigue exactamente la dieta, laxante y horario indicados; una limpieza insuficiente reduce la calidad. Informa anticoagulantes, diabetes, embarazo y enfermedades relevantes; organiza acompañante si habrá sedación."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "Puede haber cólicos, presión o distensión; después es común expulsar gases. Las complicaciones son poco frecuentes e incluyen reacción a sedación, sangrado y perforación, sobre todo tras retirar pólipos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El informe indica calidad de preparación, extensión examinada, pólipos o lesiones. Las biopsias se interpretan por separado. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-sangre-en-heces",
+      "slug": "sangre-en-heces",
+      "categoria": "Relacionados",
+      "titulo": "Sangre en heces"
+    },
+    {
+      "id": "rel-estrenimiento",
+      "slug": "estrenimiento",
+      "categoria": "Relacionados",
+      "titulo": "Estreñimiento"
+    },
+    {
+      "id": "rel-diarrea",
+      "slug": "diarrea",
+      "categoria": "Relacionados",
+      "titulo": "Diarrea"
+    },
+    {
+      "id": "rel-dolor-abdominal",
+      "slug": "dolor-abdominal",
+      "categoria": "Relacionados",
+      "titulo": "Dolor abdominal"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-colonoscopy",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Colonoscopy",
+      "url": "https://medlineplus.gov/colonoscopy.html",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "niddk-colonoscopy",
+      "organizacion": "NIDDK / NIH",
+      "titulo": "Colonoscopy",
+      "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/colonoscopy",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

@@ -1152,78 +1152,6 @@
     ]
   },
   {
-    "titulo": "Hemograma",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Examen de sangre que evalúa glóbulos rojos, blancos y plaquetas. Conoce para qué sirve.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=hemograma",
-    "keywords": [
-      "hemograma",
-      "sangre",
-      "globulos rojos",
-      "globulos blancos",
-      "plaquetas"
-    ]
-  },
-  {
-    "titulo": "Glucosa",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Prueba que mide azúcar en sangre. Ayuda a detectar o controlar alteraciones metabólicas.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=glucosa",
-    "keywords": [
-      "glucosa",
-      "azucar",
-      "diabetes",
-      "glicemia",
-      "sangre"
-    ]
-  },
-  {
-    "titulo": "Colesterol total",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Examen que mide colesterol en sangre y orienta el riesgo cardiovascular junto con otros datos.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=colesterol-total",
-    "keywords": [
-      "colesterol",
-      "colesterol total",
-      "ldl",
-      "hdl",
-      "perfil lipidico"
-    ]
-  },
-  {
-    "titulo": "Radiografía",
-    "tipo": "examen",
-    "categoria": "Imagenes",
-    "prioridad": 3,
-    "description": "Estudio de imagen para evaluar huesos, tórax u otras zonas según indicación médica.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=radiografia",
-    "keywords": [
-      "radiografia",
-      "rayos x",
-      "placa",
-      "imagen",
-      "huesos"
-    ]
-  },
-  {
     "titulo": "Tomografía",
     "tipo": "examen",
     "categoria": "Imagenes",
@@ -1239,150 +1167,6 @@
       "scanner",
       "imagen",
       "corte"
-    ]
-  },
-  {
-    "titulo": "Resonancia magnética",
-    "tipo": "examen",
-    "categoria": "Imagenes",
-    "prioridad": 3,
-    "description": "Estudio de imagen sin rayos X que permite evaluar tejidos, articulaciones y órganos con detalle.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=resonancia-magnetica",
-    "keywords": [
-      "resonancia",
-      "resonancia magnetica",
-      "rm",
-      "imagen",
-      "tejidos"
-    ]
-  },
-  {
-    "titulo": "Examen de orina",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Examen de orina, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=examen-de-orina",
-    "keywords": [
-      "examen de orina",
-      "orina",
-      "infeccion urinaria",
-      "uroanalisis",
-      "sedimento"
-    ]
-  },
-  {
-    "titulo": "Creatinina",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Creatinina, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=creatinina",
-    "keywords": [
-      "creatinina",
-      "riñon",
-      "rinon",
-      "funcion renal",
-      "sangre"
-    ]
-  },
-  {
-    "titulo": "Urea",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Urea, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=urea",
-    "keywords": [
-      "urea",
-      "riñon",
-      "rinon",
-      "funcion renal",
-      "sangre"
-    ]
-  },
-  {
-    "titulo": "Triglicéridos",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Triglicéridos, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=trigliceridos",
-    "keywords": [
-      "trigliceridos",
-      "grasas",
-      "colesterol",
-      "perfil lipidico",
-      "sangre"
-    ]
-  },
-  {
-    "titulo": "Electrocardiograma",
-    "tipo": "examen",
-    "categoria": "Cardiologia",
-    "prioridad": 3,
-    "description": "Qué evalúa Electrocardiograma, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=electrocardiograma",
-    "keywords": [
-      "electrocardiograma",
-      "ecg",
-      "corazon",
-      "ritmo cardiaco",
-      "cardiologia"
-    ]
-  },
-  {
-    "titulo": "Ecografía abdominal",
-    "tipo": "examen",
-    "categoria": "Imagenes",
-    "prioridad": 3,
-    "description": "Qué evalúa Ecografía abdominal, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=ecografia-abdominal",
-    "keywords": [
-      "ecografia abdominal",
-      "ultrasonido",
-      "abdomen",
-      "higado",
-      "vesicula"
-    ]
-  },
-  {
-    "titulo": "Perfil hepático",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Perfil hepático, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=perfil-hepatico",
-    "keywords": [
-      "perfil hepatico",
-      "higado",
-      "transaminasas",
-      "bilirrubina",
-      "enzimas hepaticas"
     ]
   },
   {
@@ -2476,6 +2260,538 @@
     "aliases": [
       "artificial tears",
       "lubricant eye drops"
+    ]
+  },
+  {
+    "titulo": "Colonoscopia",
+    "tipo": "examen",
+    "categoria": "Gastroenterología",
+    "prioridad": 3,
+    "description": "Procedimiento que examina el recto y el colon con una cámara flexible; puede detectar y retirar pólipos y tomar biopsias.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=colonoscopia",
+    "keywords": [
+      "colonoscopia",
+      "endoscopia de colon",
+      "examen del colon",
+      "camara del colon",
+      "sangre en heces",
+      "estrenimiento",
+      "diarrea",
+      "dolor abdominal"
+    ],
+    "aliases": [
+      "endoscopia de colon",
+      "examen del colon",
+      "camara del colon"
+    ]
+  },
+  {
+    "titulo": "Creatinina sérica",
+    "tipo": "examen",
+    "categoria": "Nefrología",
+    "prioridad": 3,
+    "description": "Análisis de sangre que mide creatinina, un desecho muscular eliminado principalmente por los riñones. Ayuda a estimar la función renal.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=creatinina-serica",
+    "keywords": [
+      "creatinina sérica",
+      "creatinina",
+      "funcion renal",
+      "filtracion renal",
+      "hinchazón",
+      "orinar frecuente",
+      "dolor en los riñones",
+      "fatiga"
+    ],
+    "aliases": [
+      "creatinina",
+      "funcion renal",
+      "filtracion renal"
+    ]
+  },
+  {
+    "titulo": "Ecocardiograma",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Ecografía del corazón que crea imágenes en movimiento para evaluar cavidades, válvulas, bombeo y flujo sanguíneo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecocardiograma",
+    "keywords": [
+      "ecocardiograma",
+      "eco cardiaco",
+      "ecografia del corazon",
+      "ultrasonido cardiaco",
+      "falta de aire",
+      "hinchazón",
+      "palpitaciones",
+      "dolor de pecho"
+    ],
+    "aliases": [
+      "eco cardiaco",
+      "ecografia del corazon",
+      "ultrasonido cardiaco"
+    ]
+  },
+  {
+    "titulo": "Ecografía abdominal",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Examen sin radiación que usa ondas de sonido para observar órganos y vasos del abdomen.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-abdominal",
+    "keywords": [
+      "ecografía abdominal",
+      "ultrasonido abdominal",
+      "eco abdominal",
+      "ecografia de abdomen",
+      "dolor abdominal",
+      "hinchazon abdominal",
+      "piel amarilla",
+      "dolor de costado"
+    ],
+    "aliases": [
+      "ultrasonido abdominal",
+      "eco abdominal",
+      "ecografia de abdomen"
+    ]
+  },
+  {
+    "titulo": "Electrocardiograma",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Prueba rápida e indolora que registra la actividad eléctrica del corazón mediante electrodos colocados sobre la piel.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=electrocardiograma",
+    "keywords": [
+      "electrocardiograma",
+      "ecg",
+      "ekg",
+      "electro del corazon",
+      "dolor de pecho",
+      "palpitaciones",
+      "desmayo",
+      "falta de aire"
+    ],
+    "aliases": [
+      "ecg",
+      "ekg",
+      "electro del corazon"
+    ]
+  },
+  {
+    "titulo": "Electroencefalograma",
+    "tipo": "examen",
+    "categoria": "Neurología",
+    "prioridad": 3,
+    "description": "Prueba que registra la actividad eléctrica cerebral mediante electrodos colocados sobre el cuero cabelludo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=electroencefalograma",
+    "keywords": [
+      "electroencefalograma",
+      "eeg",
+      "electro cerebral",
+      "ondas cerebrales",
+      "desmayo",
+      "confusion",
+      "temblores",
+      "dificultad para concentrarse"
+    ],
+    "aliases": [
+      "eeg",
+      "electro cerebral",
+      "ondas cerebrales"
+    ]
+  },
+  {
+    "titulo": "Endoscopia digestiva alta",
+    "tipo": "examen",
+    "categoria": "Gastroenterología",
+    "prioridad": 3,
+    "description": "Procedimiento que permite observar esófago, estómago y duodeno con una cámara flexible introducida por la boca.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=endoscopia-digestiva-alta",
+    "keywords": [
+      "endoscopia digestiva alta",
+      "endoscopia alta",
+      "gastroscopia",
+      "egd",
+      "dolor de estomago",
+      "dificultad para tragar",
+      "heces negras",
+      "vomitos"
+    ],
+    "aliases": [
+      "endoscopia alta",
+      "gastroscopia",
+      "egd"
+    ]
+  },
+  {
+    "titulo": "Espirometría",
+    "tipo": "examen",
+    "categoria": "Neumología",
+    "prioridad": 3,
+    "description": "Prueba de función pulmonar que mide cuánto aire puedes expulsar y con qué rapidez.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=espirometria",
+    "keywords": [
+      "espirometría",
+      "prueba pulmonar",
+      "funcion pulmonar",
+      "soplar pulmones",
+      "falta de aire",
+      "tos",
+      "silbido en el pecho",
+      "cansancio al caminar"
+    ],
+    "aliases": [
+      "prueba pulmonar",
+      "funcion pulmonar",
+      "soplar pulmones"
+    ]
+  },
+  {
+    "titulo": "Examen completo de orina",
+    "tipo": "examen",
+    "categoria": "Urología y nefrología",
+    "prioridad": 3,
+    "description": "Analiza características físicas, químicas y microscópicas de la orina para buscar señales de infección urinaria, enfermedad renal, diabetes y otras alteraciones.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=examen-completo-de-orina",
+    "keywords": [
+      "examen completo de orina",
+      "analisis de orina",
+      "urinalisis",
+      "orina completa",
+      "examen de orina",
+      "sangre en la orina",
+      "urgencia para orinar",
+      "orina con mal olor",
+      "dolor en los riñones"
+    ],
+    "aliases": [
+      "analisis de orina",
+      "urinalisis",
+      "orina completa",
+      "examen de orina"
+    ]
+  },
+  {
+    "titulo": "Fondo de ojo",
+    "tipo": "examen",
+    "categoria": "Oftalmología",
+    "prioridad": 3,
+    "description": "Examen que permite observar retina, mácula, vasos sanguíneos y nervio óptico en la parte posterior del ojo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=fondo-de-ojo",
+    "keywords": [
+      "fondo de ojo",
+      "oftalmoscopia",
+      "examen de retina",
+      "retina",
+      "pupila dilatada",
+      "vision borrosa",
+      "perdida de vision",
+      "dolor de ojos",
+      "manchas en la vision"
+    ],
+    "aliases": [
+      "oftalmoscopia",
+      "examen de retina",
+      "retina",
+      "pupila dilatada"
+    ]
+  },
+  {
+    "titulo": "Glucosa en sangre",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide la cantidad de glucosa en la sangre y se utiliza para detectar o controlar alteraciones como prediabetes, diabetes e hipoglucemia.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=glucosa-en-sangre",
+    "keywords": [
+      "glucosa en sangre",
+      "glucosa",
+      "azucar en sangre",
+      "glicemia",
+      "glucemia",
+      "sed excesiva",
+      "orinar frecuente",
+      "debilidad",
+      "sudor frío"
+    ],
+    "aliases": [
+      "glucosa",
+      "azucar en sangre",
+      "glicemia",
+      "glucemia"
+    ]
+  },
+  {
+    "titulo": "Hemoglobina glicosilada (HbA1c)",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Análisis que estima el promedio de glucosa de los últimos dos a tres meses. Se usa para detectar prediabetes o diabetes y para seguimiento.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hemoglobina-glicosilada-hba1c",
+    "keywords": [
+      "hemoglobina glicosilada (hba1c)",
+      "hba1c",
+      "a1c",
+      "hemoglobina glucosilada",
+      "promedio de glucosa",
+      "sed excesiva",
+      "orinar frecuente",
+      "fatiga",
+      "vision borrosa"
+    ],
+    "aliases": [
+      "hba1c",
+      "a1c",
+      "hemoglobina glucosilada",
+      "promedio de glucosa"
+    ]
+  },
+  {
+    "titulo": "Hemograma completo",
+    "tipo": "examen",
+    "categoria": "Hematología",
+    "prioridad": 3,
+    "description": "Análisis de sangre que cuenta y describe glóbulos rojos, glóbulos blancos y plaquetas. Ayuda a evaluar anemia, infecciones, inflamación y trastornos de la sangre.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hemograma-completo",
+    "keywords": [
+      "hemograma completo",
+      "hemograma",
+      "conteo sanguineo",
+      "cbc",
+      "analisis de sangre",
+      "fatiga",
+      "debilidad",
+      "fiebre",
+      "moretones fáciles"
+    ],
+    "aliases": [
+      "hemograma",
+      "conteo sanguineo",
+      "cbc",
+      "analisis de sangre"
+    ]
+  },
+  {
+    "titulo": "Oximetría de pulso",
+    "tipo": "examen",
+    "categoria": "Neumología",
+    "prioridad": 3,
+    "description": "Medición rápida y no invasiva de la saturación estimada de oxígeno y el pulso mediante un sensor, generalmente colocado en un dedo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=oximetria-de-pulso",
+    "keywords": [
+      "oximetría de pulso",
+      "oximetro",
+      "saturacion de oxigeno",
+      "spo2",
+      "falta de aire",
+      "labios morados",
+      "respiracion rapida",
+      "dolor de pecho"
+    ],
+    "aliases": [
+      "oximetro",
+      "saturacion de oxigeno",
+      "spo2"
+    ]
+  },
+  {
+    "titulo": "Perfil lipídico",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Grupo de análisis que mide colesterol total, LDL, HDL y triglicéridos para estimar el riesgo cardiovascular.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=perfil-lipidico",
+    "keywords": [
+      "perfil lipídico",
+      "colesterol",
+      "trigliceridos",
+      "ldl",
+      "hdl",
+      "dolor de pecho",
+      "cansancio al caminar"
+    ],
+    "aliases": [
+      "colesterol",
+      "trigliceridos",
+      "ldl",
+      "hdl"
+    ]
+  },
+  {
+    "titulo": "Prueba de función hepática",
+    "tipo": "examen",
+    "categoria": "Gastroenterología y hepatología",
+    "prioridad": 3,
+    "description": "Panel de sangre que mide enzimas, proteínas y bilirrubina para buscar lesión hepática y valorar algunas funciones del hígado.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=prueba-de-funcion-hepatica",
+    "keywords": [
+      "prueba de función hepática",
+      "perfil hepatico",
+      "pruebas hepaticas",
+      "enzimas hepaticas",
+      "funcion del higado",
+      "piel amarilla",
+      "ojos amarillos",
+      "orina oscura",
+      "dolor en el lado derecho del abdomen"
+    ],
+    "aliases": [
+      "perfil hepatico",
+      "pruebas hepaticas",
+      "enzimas hepaticas",
+      "funcion del higado"
+    ]
+  },
+  {
+    "titulo": "Radiografía de columna",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Estudio con rayos X que muestra principalmente huesos, alineación y curvaturas de la columna.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=radiografia-de-columna",
+    "keywords": [
+      "radiografía de columna",
+      "rayos x de columna",
+      "placa de columna",
+      "rx columna",
+      "dolor de espalda",
+      "dolor lumbar",
+      "dolor de cuello",
+      "hormigueo"
+    ],
+    "aliases": [
+      "rayos x de columna",
+      "placa de columna",
+      "rx columna"
+    ]
+  },
+  {
+    "titulo": "Radiografía de tórax",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Estudio rápido que usa una dosis pequeña de rayos X para obtener imágenes del corazón, pulmones, vías respiratorias, vasos y huesos del tórax.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=radiografia-de-torax",
+    "keywords": [
+      "radiografía de tórax",
+      "rayos x de torax",
+      "placa de torax",
+      "rx torax",
+      "tos",
+      "falta de aire",
+      "dolor de pecho",
+      "fiebre"
+    ],
+    "aliases": [
+      "rayos x de torax",
+      "placa de torax",
+      "rx torax"
+    ]
+  },
+  {
+    "titulo": "Resonancia magnética cerebral",
+    "tipo": "examen",
+    "categoria": "Diagnóstico por imágenes",
+    "prioridad": 3,
+    "description": "Estudio que usa un campo magnético y ondas de radio para crear imágenes detalladas del cerebro sin radiación ionizante.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=resonancia-magnetica-cerebral",
+    "keywords": [
+      "resonancia magnética cerebral",
+      "resonancia cerebral",
+      "rm cerebral",
+      "mri cerebral",
+      "dolor de cabeza fuerte",
+      "convulsiones",
+      "debilidad en un lado del cuerpo",
+      "confusion"
+    ],
+    "aliases": [
+      "resonancia cerebral",
+      "rm cerebral",
+      "mri cerebral"
+    ]
+  },
+  {
+    "titulo": "Urea",
+    "tipo": "examen",
+    "categoria": "Nefrología",
+    "prioridad": 3,
+    "description": "Análisis de sangre que mide nitrógeno ureico, un desecho producido al metabolizar proteínas y eliminado por los riñones.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=urea",
+    "keywords": [
+      "urea",
+      "bun",
+      "nitrogeno ureico",
+      "urea en sangre",
+      "fatiga",
+      "picazon",
+      "orinar frecuente",
+      "hinchazón"
+    ],
+    "aliases": [
+      "bun",
+      "nitrogeno ureico",
+      "urea en sangre"
     ]
   }
 ]

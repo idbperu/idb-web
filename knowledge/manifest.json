@@ -1,7 +1,7 @@
 {
   "nombre": "Base de Conocimiento Oficial IDB",
   "version": "1.0",
-  "ultima_revision": "2026-06",
+  "ultima_revision": "2026-07",
   "schema": "knowledge/schema/tema.schema.json",
   "fuente_de_verdad": "knowledge/schema/tema.schema.json",
   "modelo": "knowledge/schema/modelo-tema.json",
@@ -32,7 +32,7 @@
       "id": "examenes",
       "tipo": "examen",
       "ruta": "knowledge/examenes/",
-      "registros": 0
+      "registros": 20
     },
     {
       "id": "procedimientos",

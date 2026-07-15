@@ -1,0 +1,98 @@
+{
+  "id": "examen-hemoglobina-glicosilada-hba1c",
+  "slug": "hemoglobina-glicosilada-hba1c",
+  "titulo": "Hemoglobina glicosilada (HbA1c)",
+  "tipo": "examen",
+  "categoria": "Endocrinología",
+  "descripcion": "¿Qué es? Mide el porcentaje de hemoglobina unida a glucosa en los glóbulos rojos. ¿Cómo se realiza? Un profesional obtiene una pequeña muestra de una vena del brazo y la envía al laboratorio. Duración: La toma suele durar menos de cinco minutos. ¿Produce dolor o molestias? Puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Análisis que estima el promedio de glucosa de los últimos dos a tres meses. Se usa para detectar prediabetes o diabetes y para seguimiento.",
+  "para_que_sirve": "¿Para qué sirve? Permite observar una tendencia de glucosa más prolongada que una medición puntual. ¿Cuándo se solicita? Se solicita si existen factores de riesgo o síntomas de diabetes y periódicamente en personas con diagnóstico previo.",
+  "causas": "Interpretación general (orientativa): Debe interpretarse con el contexto clínico; ciertas condiciones que cambian la vida de los glóbulos rojos pueden volverla menos fiable. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: En adultos no embarazados, menos de 5.7% suele ser normal; 5.7%–6.4% corresponde a rango de prediabetes; 6.5% o más es compatible con diabetes y suele requerir confirmación si no hay síntomas claros. Enfermedades relacionadas: Diabetes, prediabetes y diabetes gestacional. Especialidad relacionada: Medicina familiar, medicina interna o endocrinología. Exámenes relacionados: Glucosa en ayunas y prueba de tolerancia oral a la glucosa.",
+  "sintomas": [
+    "sed excesiva",
+    "orinar frecuente",
+    "fatiga",
+    "visión borrosa"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Normalmente no requiere ayuno.",
+    "Informa anemia, embarazo, hemoglobinopatías, enfermedad renal o hepática, sangrado o transfusión reciente porque pueden alterar la lectura."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita si existen factores de riesgo o síntomas de diabetes y periódicamente en personas con diagnóstico previo.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Hemoglobina glicosilada (HbA1c)?",
+      "respuesta": "Mide el porcentaje de hemoglobina unida a glucosa en los glóbulos rojos."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Normalmente no requiere ayuno. Informa anemia, embarazo, hemoglobinopatías, enfermedad renal o hepática, sangrado o transfusión reciente porque pueden alterar la lectura."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "Puede sentirse un pinchazo breve. La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Debe interpretarse con el contexto clínico; ciertas condiciones que cambian la vida de los glóbulos rojos pueden volverla menos fiable. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-diabetes",
+      "slug": "diabetes",
+      "categoria": "Relacionados",
+      "titulo": "Diabetes"
+    },
+    {
+      "id": "rel-prediabetes",
+      "slug": "prediabetes",
+      "categoria": "Relacionados",
+      "titulo": "Prediabetes"
+    },
+    {
+      "id": "rel-diabetes-gestacional",
+      "slug": "diabetes-gestacional",
+      "categoria": "Relacionados",
+      "titulo": "Diabetes gestacional"
+    },
+    {
+      "id": "rel-vision-borrosa",
+      "slug": "vision-borrosa",
+      "categoria": "Relacionados",
+      "titulo": "Vision borrosa"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-hemoglobin-a1c-hba1c-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Hemoglobin A1C (HbA1c) Test",
+      "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "cdc-a1c",
+      "organizacion": "CDC",
+      "titulo": "A1C Test for Diabetes and Prediabetes",
+      "url": "https://www.cdc.gov/diabetes/diabetes-testing/prediabetes-a1c-test.html",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

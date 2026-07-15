@@ -1,0 +1,98 @@
+{
+  "id": "examen-creatinina-serica",
+  "slug": "creatinina-serica",
+  "titulo": "Creatinina sérica",
+  "tipo": "examen",
+  "categoria": "Nefrología",
+  "descripcion": "¿Qué es? Mide la concentración de creatinina en sangre y suele utilizarse para calcular la tasa de filtración glomerular estimada. ¿Cómo se realiza? Un profesional obtiene una pequeña muestra de una vena del brazo y la envía al laboratorio. Duración: La toma suele durar menos de cinco minutos. ¿Produce dolor o molestias? Puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Análisis de sangre que mide creatinina, un desecho muscular eliminado principalmente por los riñones. Ayuda a estimar la función renal.",
+  "para_que_sirve": "¿Para qué sirve? Sirve para detectar o vigilar alteraciones renales y ajustar algunos medicamentos o estudios con contraste. ¿Cuándo se solicita? Puede pedirse en controles, diabetes, hipertensión, enfermedad renal, deshidratación o síntomas urinarios e hinchazón.",
+  "causas": "Interpretación general (orientativa): Una creatinina alta puede sugerir menor filtración, pero también variar con masa muscular, ejercicio, hidratación, dieta y medicamentos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: No existe un único rango aplicable a todos. Interpreta el valor junto con el rango del laboratorio y la filtración glomerular estimada. Enfermedades relacionadas: Enfermedad renal crónica, lesión renal aguda, diabetes e hipertensión. Especialidad relacionada: Medicina interna o nefrología. Exámenes relacionados: Urea, filtración glomerular estimada, electrolitos y relación albúmina/creatinina en orina.",
+  "sintomas": [
+    "hinchazón",
+    "orinar frecuente",
+    "dolor en los riñones",
+    "fatiga"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Sigue las indicaciones del laboratorio; algunos profesionales piden evitar carne cocida antes del análisis.",
+    "Informa suplementos de creatina y medicamentos."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede pedirse en controles, diabetes, hipertensión, enfermedad renal, deshidratación o síntomas urinarios e hinchazón.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Creatinina sérica?",
+      "respuesta": "Mide la concentración de creatinina en sangre y suele utilizarse para calcular la tasa de filtración glomerular estimada."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Sigue las indicaciones del laboratorio; algunos profesionales piden evitar carne cocida antes del análisis. Informa suplementos de creatina y medicamentos."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "Puede sentirse un pinchazo breve. La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Una creatinina alta puede sugerir menor filtración, pero también variar con masa muscular, ejercicio, hidratación, dieta y medicamentos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-diabetes",
+      "slug": "diabetes",
+      "categoria": "Relacionados",
+      "titulo": "Diabetes"
+    },
+    {
+      "id": "rel-orinar-frecuente",
+      "slug": "orinar-frecuente",
+      "categoria": "Relacionados",
+      "titulo": "Orinar frecuente"
+    },
+    {
+      "id": "rel-dolor-en-los-rinones",
+      "slug": "dolor-en-los-rinones",
+      "categoria": "Relacionados",
+      "titulo": "Dolor en los riñones"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-creatinine-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Creatinine Test",
+      "url": "https://medlineplus.gov/lab-tests/creatinine-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "niddk-kidney-tests",
+      "organizacion": "NIDDK / NIH",
+      "titulo": "Identify & Evaluate Patients with Chronic Kidney Disease",
+      "url": "https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/identify-manage-patients/evaluate-ckd",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "examen-radiografia-de-torax",
+  "slug": "radiografia-de-torax",
+  "titulo": "Radiografía de tórax",
+  "tipo": "examen",
+  "categoria": "Diagnóstico por imágenes",
+  "descripcion": "¿Qué es? Produce habitualmente proyecciones frontal y lateral del pecho. ¿Cómo se realiza? De pie o sentado, se apoya el tórax en el detector y se contiene la respiración unos segundos mientras se toman las imágenes. Duración: Suele completarse en unos 10 a 15 minutos; la exposición dura una fracción de segundo. ¿Produce dolor o molestias? No duele; mantener la posición puede resultar incómodo.",
+  "respuesta_rapida": "Estudio rápido que usa una dosis pequeña de rayos X para obtener imágenes del corazón, pulmones, vías respiratorias, vasos y huesos del tórax.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a investigar síntomas respiratorios, infecciones, lesiones, líquido, tamaño cardíaco y posición de dispositivos. ¿Cuándo se solicita? Puede solicitarse ante tos persistente, fiebre, falta de aire, dolor torácico, traumatismo o antes de ciertos procedimientos.",
+  "causas": "Interpretación general (orientativa): Un radiólogo describe los hallazgos y los compara con estudios previos. Una radiografía normal no descarta todas las enfermedades. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: No aplica un rango numérico; se informa la apariencia y presencia o ausencia de hallazgos. Enfermedades relacionadas: Neumonía, tuberculosis, insuficiencia cardíaca, EPOC y fracturas costales. Especialidad relacionada: Radiología, neumología, medicina interna o urgencias. Exámenes relacionados: Tomografía de tórax, oximetría, espirometría y análisis de esputo.",
+  "sintomas": [
+    "tos",
+    "falta de aire",
+    "dolor de pecho",
+    "fiebre"
+  ],
+  "factores_riesgo": [
+    "Usa radiación ionizante en dosis baja. El beneficio clínico suele superar el riesgo pequeño; en embarazo se individualizan indicación y protección."
+  ],
+  "prevencion": [
+    "Retira joyas y objetos metálicos del tórax y usa la bata indicada.",
+    "Informa si existe posibilidad de embarazo."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse ante tos persistente, fiebre, falta de aire, dolor torácico, traumatismo o antes de ciertos procedimientos.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Usa radiación ionizante en dosis baja. El beneficio clínico suele superar el riesgo pequeño; en embarazo se individualizan indicación y protección."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Radiografía de tórax?",
+      "respuesta": "Produce habitualmente proyecciones frontal y lateral del pecho."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Retira joyas y objetos metálicos del tórax y usa la bata indicada. Informa si existe posibilidad de embarazo."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "No duele; mantener la posición puede resultar incómodo. Usa radiación ionizante en dosis baja. El beneficio clínico suele superar el riesgo pequeño; en embarazo se individualizan indicación y protección."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un radiólogo describe los hallazgos y los compara con estudios previos. Una radiografía normal no descarta todas las enfermedades. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-tuberculosis",
+      "slug": "tuberculosis",
+      "categoria": "Relacionados",
+      "titulo": "Tuberculosis"
+    },
+    {
+      "id": "rel-insuficiencia-cardiaca",
+      "slug": "insuficiencia-cardiaca",
+      "categoria": "Relacionados",
+      "titulo": "Insuficiencia cardiaca"
+    },
+    {
+      "id": "rel-epoc",
+      "slug": "epoc",
+      "categoria": "Relacionados",
+      "titulo": "EPOC"
+    },
+    {
+      "id": "rel-falta-de-aire",
+      "slug": "falta-de-aire",
+      "categoria": "Relacionados",
+      "titulo": "Falta de aire"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "radiologyinfo-chestrad",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Chest X-ray",
+      "url": "https://www.radiologyinfo.org/en/info/chestrad",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "radiologyinfo-safety-xray",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Radiation Dose from X-Ray and CT Exams",
+      "url": "https://www.radiologyinfo.org/en/info/safety-xray",
+      "tipo": "Información radiológica para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

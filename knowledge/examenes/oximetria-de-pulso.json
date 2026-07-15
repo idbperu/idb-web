@@ -1,0 +1,98 @@
+{
+  "id": "examen-oximetria-de-pulso",
+  "slug": "oximetria-de-pulso",
+  "titulo": "Oximetría de pulso",
+  "tipo": "examen",
+  "categoria": "Neumología",
+  "descripcion": "¿Qué es? El oxímetro usa luz para estimar qué porcentaje de hemoglobina transporta oxígeno. ¿Cómo se realiza? Se coloca un sensor en el dedo, oreja o pie y se espera una lectura estable. Duración: Toma segundos o pocos minutos; también puede usarse de forma continua. ¿Produce dolor o molestias? No duele; el sensor puede ejercer presión leve.",
+  "respuesta_rapida": "Medición rápida y no invasiva de la saturación estimada de oxígeno y el pulso mediante un sensor, generalmente colocado en un dedo.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a detectar o vigilar niveles bajos de oxígeno en enfermedades respiratorias, cardíacas, durante procedimientos o con oxígeno suplementario. ¿Cuándo se solicita? Puede medirse ante falta de aire, enfermedad pulmonar o cardíaca, infecciones respiratorias, anestesia o seguimiento domiciliario indicado.",
+  "causas": "Interpretación general (orientativa): La lectura puede alterarse por movimiento, manos frías, mala circulación, esmalte, luz intensa, pigmentación de piel y algunos tipos de hemoglobina. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: En muchas personas sanas, 95%–100% es habitual. Algunas enfermedades crónicas tienen metas distintas. Una lectura de 92% o menos requiere contacto clínico y 88% o menos atención inmediata, salvo un plan individual diferente. Enfermedades relacionadas: EPOC, asma, neumonía, COVID-19 e insuficiencia cardíaca. Especialidad relacionada: Medicina familiar, neumología, cardiología o urgencias. Exámenes relacionados: Gasometría arterial, espirometría y radiografía de tórax.",
+  "sintomas": [
+    "falta de aire",
+    "labios morados",
+    "respiración rápida",
+    "dolor de pecho"
+  ],
+  "factores_riesgo": [
+    "No tiene riesgos relevantes en uso breve; una pinza prolongada puede irritar la piel."
+  ],
+  "prevencion": [
+    "Retira esmalte oscuro o uñas artificiales si interfieren.",
+    "Descansa, calienta la mano y mantenla quieta; sigue el plan indicado si usas oxígeno."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede medirse ante falta de aire, enfermedad pulmonar o cardíaca, infecciones respiratorias, anestesia o seguimiento domiciliario indicado.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: No tiene riesgos relevantes en uso breve; una pinza prolongada puede irritar la piel."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Oximetría de pulso?",
+      "respuesta": "El oxímetro usa luz para estimar qué porcentaje de hemoglobina transporta oxígeno."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Retira esmalte oscuro o uñas artificiales si interfieren. Descansa, calienta la mano y mantenla quieta; sigue el plan indicado si usas oxígeno."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "No duele; el sensor puede ejercer presión leve. No tiene riesgos relevantes en uso breve; una pinza prolongada puede irritar la piel."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "La lectura puede alterarse por movimiento, manos frías, mala circulación, esmalte, luz intensa, pigmentación de piel y algunos tipos de hemoglobina. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-epoc",
+      "slug": "epoc",
+      "categoria": "Relacionados",
+      "titulo": "EPOC"
+    },
+    {
+      "id": "rel-asma",
+      "slug": "asma",
+      "categoria": "Relacionados",
+      "titulo": "Asma"
+    },
+    {
+      "id": "rel-covid-19",
+      "slug": "covid-19",
+      "categoria": "Relacionados",
+      "titulo": "COVID-19"
+    },
+    {
+      "id": "rel-labios-morados",
+      "slug": "labios-morados",
+      "categoria": "Relacionados",
+      "titulo": "Labios morados"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-pulse-oximetry",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Pulse Oximetry",
+      "url": "https://medlineplus.gov/lab-tests/pulse-oximetry/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "fda-pulseox",
+      "organizacion": "FDA",
+      "titulo": "Pulse Oximeter Accuracy and Limitations",
+      "url": "https://www.fda.gov/medical-devices/products-and-medical-procedures/pulse-oximeters",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

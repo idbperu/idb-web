@@ -1,0 +1,98 @@
+{
+  "id": "examen-resonancia-magnetica-cerebral",
+  "slug": "resonancia-magnetica-cerebral",
+  "titulo": "Resonancia magnética cerebral",
+  "tipo": "examen",
+  "categoria": "Diagnóstico por imágenes",
+  "descripcion": "¿Qué es? Genera múltiples secuencias y planos; en algunos casos se administra contraste con gadolinio. ¿Cómo se realiza? Acostado dentro del equipo, debes permanecer inmóvil mientras se obtienen secuencias ruidosas; se proporciona protección auditiva. Duración: Suele durar entre 30 y 60 minutos, según el protocolo. ¿Produce dolor o molestias? No duele, pero el ruido, la inmovilidad y el espacio cerrado pueden incomodar.",
+  "respuesta_rapida": "Estudio que usa un campo magnético y ondas de radio para crear imágenes detalladas del cerebro sin radiación ionizante.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar accidente cerebrovascular, tumores, inflamación, epilepsia, esclerosis múltiple, vasos y otras alteraciones neurológicas. ¿Cuándo se solicita? Puede solicitarse ante déficit neurológico, convulsiones, cefalea con signos de alarma, cambios cognitivos o hallazgos previos.",
+  "causas": "Interpretación general (orientativa): Un radiólogo analiza las imágenes junto con la indicación y comparaciones previas; algunos hallazgos son incidentales. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: No aplica un rango numérico; se informa la presencia, localización y características de hallazgos. Enfermedades relacionadas: Accidente cerebrovascular, tumores, epilepsia y enfermedades desmielinizantes. Especialidad relacionada: Radiología, neurología o neurocirugía. Exámenes relacionados: Tomografía cerebral, electroencefalograma y angiografía por resonancia.",
+  "sintomas": [
+    "dolor de cabeza fuerte",
+    "convulsiones",
+    "debilidad en un lado del cuerpo",
+    "confusion"
+  ],
+  "factores_riesgo": [
+    "El campo magnético puede afectar objetos o implantes no compatibles. El contraste rara vez causa reacciones y requiere precaución en enfermedad renal grave."
+  ],
+  "prevencion": [
+    "Informa marcapasos, implantes, fragmentos metálicos, embarazo, enfermedad renal, alergias y claustrofobia.",
+    "Retira todo metal; sigue indicaciones sobre ayuno o contraste."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse ante déficit neurológico, convulsiones, cefalea con signos de alarma, cambios cognitivos o hallazgos previos.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: El campo magnético puede afectar objetos o implantes no compatibles. El contraste rara vez causa reacciones y requiere precaución en enfermedad renal grave."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Resonancia magnética cerebral?",
+      "respuesta": "Genera múltiples secuencias y planos; en algunos casos se administra contraste con gadolinio."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Informa marcapasos, implantes, fragmentos metálicos, embarazo, enfermedad renal, alergias y claustrofobia. Retira todo metal; sigue indicaciones sobre ayuno o contraste."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "No duele, pero el ruido, la inmovilidad y el espacio cerrado pueden incomodar. El campo magnético puede afectar objetos o implantes no compatibles. El contraste rara vez causa reacciones y requiere precaución en enfermedad renal grave."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un radiólogo analiza las imágenes junto con la indicación y comparaciones previas; algunos hallazgos son incidentales. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-dolor-de-cabeza-fuerte",
+      "slug": "dolor-de-cabeza-fuerte",
+      "categoria": "Relacionados",
+      "titulo": "Dolor de cabeza fuerte"
+    },
+    {
+      "id": "rel-debilidad-en-un-lado-del-cuerpo",
+      "slug": "debilidad-en-un-lado-del-cuerpo",
+      "categoria": "Relacionados",
+      "titulo": "Debilidad en un lado del cuerpo"
+    },
+    {
+      "id": "rel-confusion",
+      "slug": "confusion",
+      "categoria": "Relacionados",
+      "titulo": "Confusion"
+    },
+    {
+      "id": "rel-dificultad-para-hablar",
+      "slug": "dificultad-para-hablar",
+      "categoria": "Relacionados",
+      "titulo": "Dificultad para hablar"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "radiologyinfo-mri-brain",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "MRI of the Head",
+      "url": "https://www.radiologyinfo.org/en/info/mri-brain",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "radiologyinfo-safety-mr",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "MR Safety",
+      "url": "https://www.radiologyinfo.org/en/info/safety-mr",
+      "tipo": "Información radiológica para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

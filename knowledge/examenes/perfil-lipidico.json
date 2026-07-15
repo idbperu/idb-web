@@ -1,0 +1,96 @@
+{
+  "id": "examen-perfil-lipidico",
+  "slug": "perfil-lipidico",
+  "titulo": "Perfil lipídico",
+  "tipo": "examen",
+  "categoria": "Cardiología",
+  "descripcion": "¿Qué es? Evalúa distintos tipos de grasas transportadas en la sangre. ¿Cómo se realiza? Un profesional obtiene una pequeña muestra de una vena del brazo y la envía al laboratorio. Duración: La toma suele durar menos de cinco minutos. ¿Produce dolor o molestias? Puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Grupo de análisis que mide colesterol total, LDL, HDL y triglicéridos para estimar el riesgo cardiovascular.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a valorar riesgo de aterosclerosis, orientar prevención y vigilar cambios de hábitos o tratamientos. ¿Cuándo se solicita? Se solicita en controles preventivos y con mayor frecuencia si hay diabetes, hipertensión, tabaquismo, obesidad o antecedentes cardiovasculares.",
+  "causas": "Interpretación general (orientativa): El riesgo se valora de forma global; un mismo LDL puede implicar metas distintas según antecedentes y riesgo personal. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Referencias generales en adultos: colesterol total menor de 200 mg/dL y triglicéridos menores de 150 mg/dL suelen considerarse deseables; LDL menor de 100 mg/dL suele ser óptimo y HDL más alto suele ser protector. Las metas individuales pueden ser diferentes. Enfermedades relacionadas: Colesterol alto, síndrome metabólico, diabetes y enfermedad coronaria. Especialidad relacionada: Medicina familiar, medicina interna, cardiología o endocrinología. Exámenes relacionados: Glucosa, HbA1c, presión arterial y evaluación de riesgo cardiovascular.",
+  "sintomas": [
+    "dolor de pecho",
+    "cansancio al caminar"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Pregunta si necesitas ayuno; no siempre es necesario, pero algunos perfiles requieren 9 a 12 horas.",
+    "Informa medicamentos, embarazo, enfermedad reciente y consumo de alcohol."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita en controles preventivos y con mayor frecuencia si hay diabetes, hipertensión, tabaquismo, obesidad o antecedentes cardiovasculares.",
+  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Perfil lipídico?",
+      "respuesta": "Evalúa distintos tipos de grasas transportadas en la sangre."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Pregunta si necesitas ayuno; no siempre es necesario, pero algunos perfiles requieren 9 a 12 horas. Informa medicamentos, embarazo, enfermedad reciente y consumo de alcohol."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "Puede sentirse un pinchazo breve. La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El riesgo se valora de forma global; un mismo LDL puede implicar metas distintas según antecedentes y riesgo personal. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-colesterol-alto",
+      "slug": "colesterol-alto",
+      "categoria": "Relacionados",
+      "titulo": "Colesterol alto"
+    },
+    {
+      "id": "rel-sindrome-metabolico",
+      "slug": "sindrome-metabolico",
+      "categoria": "Relacionados",
+      "titulo": "Sindrome metabolico"
+    },
+    {
+      "id": "rel-enfermedad-coronaria",
+      "slug": "enfermedad-coronaria",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad coronaria"
+    },
+    {
+      "id": "rel-diabetes",
+      "slug": "diabetes",
+      "categoria": "Relacionados",
+      "titulo": "Diabetes"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-cholesterol-levels",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Cholesterol Levels",
+      "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-triglycerides-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Triglycerides Test",
+      "url": "https://medlineplus.gov/lab-tests/triglycerides-test/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}
