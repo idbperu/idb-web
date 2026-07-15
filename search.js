@@ -1,8 +1,8 @@
 (function () {
   const DEFAULT_INDEX_URL = "search-index.json";
   const SEARCH_DICTIONARY_URL = "knowledge/catalogos/search-dictionary.json";
-  const CLINICAL_DICTIONARY_URL = "knowledge/catalogos/clinical-search-dictionary.json";
-  const CLINICAL_ENGINE_MODULE_URL = "./clinical-search-engine.mjs";
+  const CLINICAL_DICTIONARY_URL = "knowledge/catalogos/clinical-search-dictionary.json?v=1.0.0";
+  const CLINICAL_ENGINE_MODULE_URL = "./clinical-search-engine.mjs?v=2.0.1";
   const DEFAULT_VITA_URL = "https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.";
   const VITA_OTC_TEMPLATES_URL = "knowledge/catalogos/vita-otc-respuestas.json";
   const DEFAULT_SELECTORS = {
@@ -35,6 +35,8 @@
   let clinicalEnginePromise = null;
   let clinicalEngine = null;
   let clinicalEngineLoadMs = 0;
+  let clinicalEngineState = { status: "pending", error: "" };
+  let lastSearchDiagnostic = { engine: "legacy", query: "", result: "" };
   let vitaTemplatesPromise = null;
 
   const searchSources = new Map();
@@ -303,10 +305,12 @@
             loadMs: performance.now() - startedAt
           });
           clinicalEngineLoadMs = performance.now() - startedAt;
+          clinicalEngineState = { status: "ready", error: "" };
           return clinicalEngine;
         })
-        .catch(() => {
+        .catch((error) => {
           clinicalEngine = null;
+          clinicalEngineState = { status: "fallback", error: String(error?.message || error || "unknown") };
           return null;
         });
     }
@@ -874,11 +878,24 @@
 
   function searchMedicalIndex(query, options = {}) {
     const fallbackResults = searchLegacyMedicalIndex(query, options);
-    if (!clinicalEngine) return fallbackResults;
-    return clinicalEngine.search(query, {
+    if (!clinicalEngine) {
+      lastSearchDiagnostic = {
+        engine: clinicalEngineState.status === "fallback" ? "fallback" : "legacy",
+        query,
+        result: canonicalRecordSlug(fallbackResults[0])
+      };
+      return fallbackResults;
+    }
+    const resolution = clinicalEngine.resolve(query, {
       limit: Number.isFinite(options.limit) ? options.limit : 8,
       fallbackResults
     });
+    lastSearchDiagnostic = {
+      engine: "rco-2.0",
+      query,
+      result: canonicalRecordSlug(resolution.primaryResult)
+    };
+    return resolution.results;
   }
 
   function canonicalContextParam(context) {
@@ -1238,7 +1255,9 @@
 
     const limit = Number.isFinite(options.limit) ? options.limit : 8;
     const vitaUrl = options.vitaUrl || DEFAULT_VITA_URL;
-    renderResults(resultsElement, searchMedicalIndex(query, { limit }), vitaUrl, {
+    const results = searchMedicalIndex(query, { limit });
+    resultsElement.dataset.searchEngine = lastSearchDiagnostic.engine;
+    renderResults(resultsElement, results, vitaUrl, {
       input,
       resultsElement,
       limit,
@@ -1387,6 +1406,8 @@
     metrics() {
       return {
         dictionaryLoadMs: clinicalEngineLoadMs,
+        state: { ...clinicalEngineState },
+        lastResolution: { ...lastSearchDiagnostic },
         ...(clinicalEngine?.metrics?.() || {})
       };
     },
