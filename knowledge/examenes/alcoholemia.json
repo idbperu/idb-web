@@ -1,0 +1,85 @@
+{
+  "id": "examen-alcoholemia",
+  "slug": "alcoholemia",
+  "titulo": "Alcoholemia",
+  "tipo": "examen",
+  "categoria": "Toxicología",
+  "descripcion": "Qué es: Mide etanol en sangre y estima la concentración de alcohol circulante. Procedimiento: No requiere ayuno; documenta hora de toma, consumo y cadena de custodia cuando corresponda. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Mide etanol en sangre y estima la concentración de alcohol circulante. Apoya evaluación clínica de intoxicación y, con requisitos específicos, fines legales.",
+  "para_que_sirve": "Para qué sirve: Apoya evaluación clínica de intoxicación y, con requisitos específicos, fines legales. Indicaciones: Alteración de conciencia, accidente, sospecha de intoxicación o procedimiento legal.",
+  "causas": "Interpretación orientativa: La concentración se relaciona con exposición reciente, pero tolerancia y clínica varían; otros tóxicos o enfermedades pueden coexistir. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Se expresa en mg/dL, g/L o porcentaje; límites legales dependen de jurisdicción y no equivalen a seguridad clínica. Enfermedades relacionadas: Deshidratacion, Depresion. Especialidad relacionada: Toxicología. Exámenes relacionados: Glucosa, gases, electrolitos y tamizaje toxicológico según el caso.",
+  "sintomas": [
+    "confusión",
+    "vomitos",
+    "desmayo"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Alteración de conciencia, accidente, sospecha de intoxicación o procedimiento legal.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Alcoholemia?",
+      "respuesta": "Mide etanol en sangre y estima la concentración de alcohol circulante."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Apoya evaluación clínica de intoxicación y, con requisitos específicos, fines legales."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "No requiere ayuno; documenta hora de toma, consumo y cadena de custodia cuando corresponda."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "La concentración se relaciona con exposición reciente, pero tolerancia y clínica varían; otros tóxicos o enfermedades pueden coexistir. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-deshidratacion",
+      "slug": "deshidratacion",
+      "categoria": "Relacionados",
+      "titulo": "Deshidratacion"
+    },
+    {
+      "id": "rel-depresion",
+      "slug": "depresion",
+      "categoria": "Relacionados",
+      "titulo": "Depresion"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-blood-alcohol-level",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Blood Alcohol Level",
+      "url": "https://medlineplus.gov/lab-tests/blood-alcohol-level/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "niaaa-alcohol",
+      "organizacion": "NIAAA / NIH",
+      "titulo": "Alcohol Overdose",
+      "url": "https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/understanding-dangers-of-alcohol-overdose",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

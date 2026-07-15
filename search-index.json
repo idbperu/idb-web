@@ -3689,5 +3689,436 @@
     "aliases": [
       "lh"
     ]
+  },
+  {
+    "titulo": "Hemocultivo",
+    "tipo": "examen",
+    "categoria": "Microbiología",
+    "prioridad": 3,
+    "description": "Cultiva una o más muestras de sangre para detectar bacterias u hongos circulantes. Ayuda a diagnosticar bacteriemia, fungemia y sepsis e identificar sensibilidad antimicrobiana.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hemocultivo",
+    "keywords": [
+      "hemocultivo",
+      "cultivo de sangre",
+      "fiebre",
+      "escalofríos",
+      "confusión"
+    ],
+    "aliases": [
+      "cultivo de sangre"
+    ]
+  },
+  {
+    "titulo": "Urocultivo",
+    "tipo": "examen",
+    "categoria": "Microbiología",
+    "prioridad": 3,
+    "description": "Cultiva orina para identificar microorganismos y, cuando corresponde, su sensibilidad. Confirma infección urinaria y orienta selección de antimicrobianos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=urocultivo",
+    "keywords": [
+      "urocultivo",
+      "cultivo de orina",
+      "urgencia para orinar",
+      "orina con mal olor",
+      "dolor en los riñones"
+    ],
+    "aliases": [
+      "cultivo de orina"
+    ]
+  },
+  {
+    "titulo": "Coprocultivo",
+    "tipo": "examen",
+    "categoria": "Microbiología",
+    "prioridad": 3,
+    "description": "Cultiva una muestra de heces para buscar bacterias que causan infección intestinal. Identifica patógenos bacterianos y puede incluir pruebas de sensibilidad.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=coprocultivo",
+    "keywords": [
+      "coprocultivo",
+      "cultivo de heces",
+      "diarrea",
+      "sangre en heces",
+      "dolor abdominal"
+    ],
+    "aliases": [
+      "cultivo de heces"
+    ]
+  },
+  {
+    "titulo": "Cultivo de secreción faríngea",
+    "tipo": "examen",
+    "categoria": "Microbiología",
+    "prioridad": 3,
+    "description": "Cultiva una muestra tomada de amígdalas y pared posterior de la garganta. Detecta principalmente estreptococo del grupo A y otras bacterias según solicitud.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=cultivo-de-secrecion-faringea",
+    "keywords": [
+      "cultivo de secreción faríngea",
+      "cultivo de garganta",
+      "dolor al tragar",
+      "fiebre",
+      "dolor de garganta"
+    ],
+    "aliases": [
+      "cultivo de garganta"
+    ]
+  },
+  {
+    "titulo": "Cultivo de heridas",
+    "tipo": "examen",
+    "categoria": "Microbiología",
+    "prioridad": 3,
+    "description": "Analiza exudado, pus o tejido de una herida para identificar microorganismos. Ayuda a confirmar infección y orientar antibióticos, sobre todo en heridas profundas o complejas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=cultivo-de-heridas",
+    "keywords": [
+      "cultivo de heridas",
+      "cultivo de herida",
+      "herida",
+      "enrojecimiento de piel",
+      "fiebre"
+    ],
+    "aliases": [
+      "cultivo de herida"
+    ]
+  },
+  {
+    "titulo": "PCR para COVID-19",
+    "tipo": "examen",
+    "categoria": "Virología",
+    "prioridad": 3,
+    "description": "Detecta material genético de SARS-CoV-2 mediante amplificación molecular en muestra respiratoria. Confirma infección actual con alta sensibilidad cuando la muestra y el momento son adecuados.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=pcr-para-covid-19",
+    "keywords": [
+      "pcr para covid-19",
+      "pcr covid",
+      "sars cov 2",
+      "fiebre",
+      "tos",
+      "falta de aire"
+    ],
+    "aliases": [
+      "pcr covid",
+      "sars cov 2"
+    ]
+  },
+  {
+    "titulo": "Prueba rápida de antígeno para COVID-19",
+    "tipo": "examen",
+    "categoria": "Virología",
+    "prioridad": 3,
+    "description": "Detecta proteínas de SARS-CoV-2 en una muestra respiratoria y ofrece resultado rápido. Ayuda a identificar infección actual, especialmente con alta carga viral.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=prueba-rapida-de-antigeno-para-covid-19",
+    "keywords": [
+      "prueba rápida de antígeno para covid-19",
+      "antigeno covid",
+      "fiebre",
+      "tos",
+      "falta de aire"
+    ],
+    "aliases": [
+      "antigeno covid"
+    ]
+  },
+  {
+    "titulo": "PCR para influenza",
+    "tipo": "examen",
+    "categoria": "Virología",
+    "prioridad": 3,
+    "description": "Detecta material genético de influenza A y B en una muestra respiratoria. Confirma influenza con mayor sensibilidad que pruebas rápidas de antígeno y puede diferenciar tipos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=pcr-para-influenza",
+    "keywords": [
+      "pcr para influenza",
+      "pcr gripe",
+      "fiebre",
+      "tos",
+      "dolor de cuerpo"
+    ],
+    "aliases": [
+      "pcr gripe"
+    ]
+  },
+  {
+    "titulo": "Carga viral VIH",
+    "tipo": "examen",
+    "categoria": "Virología",
+    "prioridad": 3,
+    "description": "Cuantifica ARN del VIH en sangre. Evalúa respuesta al tratamiento y detecta replicación viral; no reemplaza el algoritmo diagnóstico habitual.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=carga-viral-vih",
+    "keywords": [
+      "carga viral vih",
+      "rna vih",
+      "fatiga",
+      "fiebre",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "rna vih"
+    ]
+  },
+  {
+    "titulo": "Carga viral hepatitis B",
+    "tipo": "examen",
+    "categoria": "Virología",
+    "prioridad": 3,
+    "description": "Cuantifica ADN del virus de hepatitis B en sangre. Mide replicación viral, orienta seguimiento y respuesta al tratamiento.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=carga-viral-hepatitis-b",
+    "keywords": [
+      "carga viral hepatitis b",
+      "adn vhb",
+      "hbv dna",
+      "fatiga",
+      "piel amarilla",
+      "orina oscura"
+    ],
+    "aliases": [
+      "adn vhb",
+      "hbv dna"
+    ]
+  },
+  {
+    "titulo": "Examen parasitológico seriado",
+    "tipo": "examen",
+    "categoria": "Parasitología",
+    "prioridad": 3,
+    "description": "Examina varias muestras de heces en días distintos para buscar parásitos, quistes y huevos. Aumenta la posibilidad de detectar parásitos intestinales que se eliminan intermitentemente.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=examen-parasitologico-seriado",
+    "keywords": [
+      "examen parasitológico seriado",
+      "parasitos en heces",
+      "diarrea",
+      "dolor abdominal",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "parasitos en heces"
+    ]
+  },
+  {
+    "titulo": "Test de Graham",
+    "tipo": "examen",
+    "categoria": "Parasitología",
+    "prioridad": 3,
+    "description": "Usa cinta adhesiva transparente en pliegues perianales para recoger huevos de Enterobius vermicularis. Es la prueba preferida para sospecha de oxiuros.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=test-de-graham",
+    "keywords": [
+      "test de graham",
+      "test cinta adhesiva",
+      "oxiuros",
+      "picazón anal",
+      "irritabilidad",
+      "insomnio"
+    ],
+    "aliases": [
+      "test cinta adhesiva",
+      "oxiuros"
+    ]
+  },
+  {
+    "titulo": "Factor reumatoide",
+    "tipo": "examen",
+    "categoria": "Inmunología",
+    "prioridad": 3,
+    "description": "Mide autoanticuerpos llamados factor reumatoide en sangre. Apoya el diagnóstico de artritis reumatoide y otras condiciones junto con clínica y anti-CCP.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=factor-reumatoide",
+    "keywords": [
+      "factor reumatoide",
+      "rf",
+      "dolor articular",
+      "inflamación de articulaciones",
+      "fatiga"
+    ],
+    "aliases": [
+      "rf"
+    ]
+  },
+  {
+    "titulo": "Anti-CCP",
+    "tipo": "examen",
+    "categoria": "Inmunología",
+    "prioridad": 3,
+    "description": "Detecta anticuerpos contra péptidos citrulinados cíclicos. Apoya el diagnóstico y pronóstico de artritis reumatoide, con mayor especificidad que factor reumatoide.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=anti-ccp",
+    "keywords": [
+      "anti-ccp",
+      "anticuerpos ccp",
+      "dolor articular",
+      "inflamación de articulaciones",
+      "rigidez"
+    ],
+    "aliases": [
+      "anticuerpos ccp"
+    ]
+  },
+  {
+    "titulo": "Complemento C3",
+    "tipo": "examen",
+    "categoria": "Inmunología",
+    "prioridad": 3,
+    "description": "Mide la proteína C3 del sistema del complemento. Apoya diagnóstico y seguimiento de lupus, enfermedad renal inmunológica e infecciones seleccionadas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=complemento-c3",
+    "keywords": [
+      "complemento c3",
+      "c3",
+      "dolor articular",
+      "fatiga",
+      "hinchazón"
+    ],
+    "aliases": [
+      "c3"
+    ]
+  },
+  {
+    "titulo": "Complemento C4",
+    "tipo": "examen",
+    "categoria": "Inmunología",
+    "prioridad": 3,
+    "description": "Mide la proteína C4 del sistema del complemento. Ayuda a evaluar consumo de complemento en autoinmunidad y algunas deficiencias.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=complemento-c4",
+    "keywords": [
+      "complemento c4",
+      "c4",
+      "dolor articular",
+      "hinchazón de cara",
+      "fatiga"
+    ],
+    "aliases": [
+      "c4"
+    ]
+  },
+  {
+    "titulo": "Tamizaje toxicológico en orina",
+    "tipo": "examen",
+    "categoria": "Toxicología",
+    "prioridad": 3,
+    "description": "Busca metabolitos de grupos de drogas o medicamentos en orina mediante pruebas de tamizaje. Detecta exposición reciente dentro de ventanas variables; no mide necesariamente intoxicación o deterioro actual.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tamizaje-toxicologico-en-orina",
+    "keywords": [
+      "tamizaje toxicológico en orina",
+      "toxicologico",
+      "drogas en orina",
+      "confusión",
+      "somnolencia",
+      "agitación"
+    ],
+    "aliases": [
+      "toxicologico",
+      "drogas en orina"
+    ]
+  },
+  {
+    "titulo": "Alcoholemia",
+    "tipo": "examen",
+    "categoria": "Toxicología",
+    "prioridad": 3,
+    "description": "Mide etanol en sangre y estima la concentración de alcohol circulante. Apoya evaluación clínica de intoxicación y, con requisitos específicos, fines legales.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=alcoholemia",
+    "keywords": [
+      "alcoholemia",
+      "alcohol en sangre",
+      "confusión",
+      "vomitos",
+      "desmayo"
+    ],
+    "aliases": [
+      "alcohol en sangre"
+    ]
+  },
+  {
+    "titulo": "Grupo sanguíneo y factor Rh",
+    "tipo": "examen",
+    "categoria": "Banco de sangre",
+    "prioridad": 3,
+    "description": "Determina antígenos ABO y RhD presentes en glóbulos rojos. Garantiza compatibilidad transfusional y orienta atención obstétrica y neonatal.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=grupo-sanguineo-y-factor-rh",
+    "keywords": [
+      "grupo sanguíneo y factor rh",
+      "abo rh",
+      "tipo de sangre",
+      "sangrado abundante",
+      "debilidad"
+    ],
+    "aliases": [
+      "abo rh",
+      "tipo de sangre"
+    ]
+  },
+  {
+    "titulo": "Prueba de Coombs directa",
+    "tipo": "examen",
+    "categoria": "Banco de sangre",
+    "prioridad": 3,
+    "description": "Detecta anticuerpos o complemento adheridos a los glóbulos rojos del paciente. Apoya la evaluación de hemólisis inmune, reacciones transfusionales y enfermedad hemolítica neonatal.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=prueba-de-coombs-directa",
+    "keywords": [
+      "prueba de coombs directa",
+      "dat",
+      "coombs directo",
+      "piel amarilla",
+      "fatiga",
+      "orina oscura"
+    ],
+    "aliases": [
+      "dat",
+      "coombs directo"
+    ]
   }
 ]

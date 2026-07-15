@@ -1,0 +1,91 @@
+{
+  "id": "examen-cultivo-de-heridas",
+  "slug": "cultivo-de-heridas",
+  "titulo": "Cultivo de heridas",
+  "tipo": "examen",
+  "categoria": "Microbiología",
+  "descripcion": "Qué es: Analiza exudado, pus o tejido de una herida para identificar microorganismos. Procedimiento: No apliques antisépticos o antibióticos tópicos antes salvo indicación; informa tratamientos. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Analiza exudado, pus o tejido de una herida para identificar microorganismos. Ayuda a confirmar infección y orientar antibióticos, sobre todo en heridas profundas o complejas.",
+  "para_que_sirve": "Para qué sirve: Ayuda a confirmar infección y orientar antibióticos, sobre todo en heridas profundas o complejas. Indicaciones: Herida con pus, dolor creciente, enrojecimiento, mal olor, fiebre o mala cicatrización.",
+  "causas": "Interpretación orientativa: Debe distinguirse colonización de infección; una muestra profunda suele ser más representativa que un hisopado superficial. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Se informa microorganismo, cantidad orientativa y sensibilidad cuando procede. Enfermedades relacionadas: Celulitis infecciosa, Pie diabetico, Sepsis. Especialidad relacionada: Microbiología. Exámenes relacionados: Tinción de Gram, antibiograma, hemograma e imágenes si hay compromiso profundo.",
+  "sintomas": [
+    "herida",
+    "enrojecimiento de piel",
+    "fiebre"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Herida con pus, dolor creciente, enrojecimiento, mal olor, fiebre o mala cicatrización.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Cultivo de heridas?",
+      "respuesta": "Analiza exudado, pus o tejido de una herida para identificar microorganismos."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Ayuda a confirmar infección y orientar antibióticos, sobre todo en heridas profundas o complejas."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "No apliques antisépticos o antibióticos tópicos antes salvo indicación; informa tratamientos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Debe distinguirse colonización de infección; una muestra profunda suele ser más representativa que un hisopado superficial. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-celulitis-infecciosa",
+      "slug": "celulitis-infecciosa",
+      "categoria": "Relacionados",
+      "titulo": "Celulitis infecciosa"
+    },
+    {
+      "id": "rel-pie-diabetico",
+      "slug": "pie-diabetico",
+      "categoria": "Relacionados",
+      "titulo": "Pie diabetico"
+    },
+    {
+      "id": "rel-sepsis",
+      "slug": "sepsis",
+      "categoria": "Relacionados",
+      "titulo": "Sepsis"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-bacteria-culture-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Bacteria Culture Test",
+      "url": "https://medlineplus.gov/lab-tests/bacteria-culture-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "idsa-ssti",
+      "organizacion": "IDSA",
+      "titulo": "Skin and Soft Tissue Infections Guideline",
+      "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

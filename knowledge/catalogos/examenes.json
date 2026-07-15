@@ -1,9 +1,9 @@
 {
   "id": "catalogo-examenes",
   "titulo": "Catálogo de exámenes médicos",
-  "version": "1.2",
+  "version": "1.3",
   "ultima_revision": "2026-07",
-  "total_registros": 60,
+  "total_registros": 80,
   "registros": [
     {
       "id": "examen-hemograma-completo",
@@ -484,6 +484,166 @@
       "tipo": "examen",
       "categoria": "Endocrinología y salud reproductiva",
       "ruta": "knowledge/examenes/hormona-luteinizante-lh.json"
+    },
+    {
+      "id": "examen-hemocultivo",
+      "slug": "hemocultivo",
+      "titulo": "Hemocultivo",
+      "tipo": "examen",
+      "categoria": "Microbiología",
+      "ruta": "knowledge/examenes/hemocultivo.json"
+    },
+    {
+      "id": "examen-urocultivo",
+      "slug": "urocultivo",
+      "titulo": "Urocultivo",
+      "tipo": "examen",
+      "categoria": "Microbiología",
+      "ruta": "knowledge/examenes/urocultivo.json"
+    },
+    {
+      "id": "examen-coprocultivo",
+      "slug": "coprocultivo",
+      "titulo": "Coprocultivo",
+      "tipo": "examen",
+      "categoria": "Microbiología",
+      "ruta": "knowledge/examenes/coprocultivo.json"
+    },
+    {
+      "id": "examen-cultivo-de-secrecion-faringea",
+      "slug": "cultivo-de-secrecion-faringea",
+      "titulo": "Cultivo de secreción faríngea",
+      "tipo": "examen",
+      "categoria": "Microbiología",
+      "ruta": "knowledge/examenes/cultivo-de-secrecion-faringea.json"
+    },
+    {
+      "id": "examen-cultivo-de-heridas",
+      "slug": "cultivo-de-heridas",
+      "titulo": "Cultivo de heridas",
+      "tipo": "examen",
+      "categoria": "Microbiología",
+      "ruta": "knowledge/examenes/cultivo-de-heridas.json"
+    },
+    {
+      "id": "examen-pcr-para-covid-19",
+      "slug": "pcr-para-covid-19",
+      "titulo": "PCR para COVID-19",
+      "tipo": "examen",
+      "categoria": "Virología",
+      "ruta": "knowledge/examenes/pcr-para-covid-19.json"
+    },
+    {
+      "id": "examen-prueba-rapida-de-antigeno-para-covid-19",
+      "slug": "prueba-rapida-de-antigeno-para-covid-19",
+      "titulo": "Prueba rápida de antígeno para COVID-19",
+      "tipo": "examen",
+      "categoria": "Virología",
+      "ruta": "knowledge/examenes/prueba-rapida-de-antigeno-para-covid-19.json"
+    },
+    {
+      "id": "examen-pcr-para-influenza",
+      "slug": "pcr-para-influenza",
+      "titulo": "PCR para influenza",
+      "tipo": "examen",
+      "categoria": "Virología",
+      "ruta": "knowledge/examenes/pcr-para-influenza.json"
+    },
+    {
+      "id": "examen-carga-viral-vih",
+      "slug": "carga-viral-vih",
+      "titulo": "Carga viral VIH",
+      "tipo": "examen",
+      "categoria": "Virología",
+      "ruta": "knowledge/examenes/carga-viral-vih.json"
+    },
+    {
+      "id": "examen-carga-viral-hepatitis-b",
+      "slug": "carga-viral-hepatitis-b",
+      "titulo": "Carga viral hepatitis B",
+      "tipo": "examen",
+      "categoria": "Virología",
+      "ruta": "knowledge/examenes/carga-viral-hepatitis-b.json"
+    },
+    {
+      "id": "examen-examen-parasitologico-seriado",
+      "slug": "examen-parasitologico-seriado",
+      "titulo": "Examen parasitológico seriado",
+      "tipo": "examen",
+      "categoria": "Parasitología",
+      "ruta": "knowledge/examenes/examen-parasitologico-seriado.json"
+    },
+    {
+      "id": "examen-test-de-graham",
+      "slug": "test-de-graham",
+      "titulo": "Test de Graham",
+      "tipo": "examen",
+      "categoria": "Parasitología",
+      "ruta": "knowledge/examenes/test-de-graham.json"
+    },
+    {
+      "id": "examen-factor-reumatoide",
+      "slug": "factor-reumatoide",
+      "titulo": "Factor reumatoide",
+      "tipo": "examen",
+      "categoria": "Inmunología",
+      "ruta": "knowledge/examenes/factor-reumatoide.json"
+    },
+    {
+      "id": "examen-anti-ccp",
+      "slug": "anti-ccp",
+      "titulo": "Anti-CCP",
+      "tipo": "examen",
+      "categoria": "Inmunología",
+      "ruta": "knowledge/examenes/anti-ccp.json"
+    },
+    {
+      "id": "examen-complemento-c3",
+      "slug": "complemento-c3",
+      "titulo": "Complemento C3",
+      "tipo": "examen",
+      "categoria": "Inmunología",
+      "ruta": "knowledge/examenes/complemento-c3.json"
+    },
+    {
+      "id": "examen-complemento-c4",
+      "slug": "complemento-c4",
+      "titulo": "Complemento C4",
+      "tipo": "examen",
+      "categoria": "Inmunología",
+      "ruta": "knowledge/examenes/complemento-c4.json"
+    },
+    {
+      "id": "examen-tamizaje-toxicologico-en-orina",
+      "slug": "tamizaje-toxicologico-en-orina",
+      "titulo": "Tamizaje toxicológico en orina",
+      "tipo": "examen",
+      "categoria": "Toxicología",
+      "ruta": "knowledge/examenes/tamizaje-toxicologico-en-orina.json"
+    },
+    {
+      "id": "examen-alcoholemia",
+      "slug": "alcoholemia",
+      "titulo": "Alcoholemia",
+      "tipo": "examen",
+      "categoria": "Toxicología",
+      "ruta": "knowledge/examenes/alcoholemia.json"
+    },
+    {
+      "id": "examen-grupo-sanguineo-y-factor-rh",
+      "slug": "grupo-sanguineo-y-factor-rh",
+      "titulo": "Grupo sanguíneo y factor Rh",
+      "tipo": "examen",
+      "categoria": "Banco de sangre",
+      "ruta": "knowledge/examenes/grupo-sanguineo-y-factor-rh.json"
+    },
+    {
+      "id": "examen-prueba-de-coombs-directa",
+      "slug": "prueba-de-coombs-directa",
+      "titulo": "Prueba de Coombs directa",
+      "tipo": "examen",
+      "categoria": "Banco de sangre",
+      "ruta": "knowledge/examenes/prueba-de-coombs-directa.json"
     }
   ]
 }

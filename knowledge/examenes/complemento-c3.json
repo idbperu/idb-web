@@ -1,0 +1,91 @@
+{
+  "id": "examen-complemento-c3",
+  "slug": "complemento-c3",
+  "titulo": "Complemento C3",
+  "tipo": "examen",
+  "categoria": "Inmunología",
+  "descripcion": "Qué es: Mide la proteína C3 del sistema del complemento. Procedimiento: No requiere preparación especial. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Mide la proteína C3 del sistema del complemento. Apoya diagnóstico y seguimiento de lupus, enfermedad renal inmunológica e infecciones seleccionadas.",
+  "para_que_sirve": "Para qué sirve: Apoya diagnóstico y seguimiento de lupus, enfermedad renal inmunológica e infecciones seleccionadas. Indicaciones: Enfermedad autoinmune sospechada o conocida, inflamación o infecciones recurrentes.",
+  "causas": "Interpretación orientativa: C3 bajo puede reflejar consumo o deficiencia; alto puede acompañar inflamación. Debe compararse con C4, CH50 y actividad clínica. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Depende del método, edad y laboratorio. Enfermedades relacionadas: Lupus, Enfermedad renal cronica, Cirrosis. Especialidad relacionada: Inmunología. Exámenes relacionados: C4, CH50, ANA, anti-dsDNA, orina y función renal.",
+  "sintomas": [
+    "dolor articular",
+    "fatiga",
+    "hinchazón"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Enfermedad autoinmune sospechada o conocida, inflamación o infecciones recurrentes.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Complemento C3?",
+      "respuesta": "Mide la proteína C3 del sistema del complemento."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Apoya diagnóstico y seguimiento de lupus, enfermedad renal inmunológica e infecciones seleccionadas."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "No requiere preparación especial."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "C3 bajo puede reflejar consumo o deficiencia; alto puede acompañar inflamación. Debe compararse con C4, CH50 y actividad clínica. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-lupus",
+      "slug": "lupus",
+      "categoria": "Relacionados",
+      "titulo": "Lupus"
+    },
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-complement-blood-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Complement Blood Test",
+      "url": "https://medlineplus.gov/lab-tests/complement-blood-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "cleveland-c3",
+      "organizacion": "Cleveland Clinic",
+      "titulo": "C3 Complement Blood Test",
+      "url": "https://my.clevelandclinic.org/health/diagnostics/22138-c3-complement-blood-test",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

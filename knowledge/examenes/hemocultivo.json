@@ -1,0 +1,91 @@
+{
+  "id": "examen-hemocultivo",
+  "slug": "hemocultivo",
+  "titulo": "Hemocultivo",
+  "tipo": "examen",
+  "categoria": "Microbiología",
+  "descripcion": "Qué es: Cultiva una o más muestras de sangre para detectar bacterias u hongos circulantes. Procedimiento: Sangre venosa de sitios separados con antisepsia estricta, idealmente antes de antibióticos sin retrasar atención. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Cultiva una o más muestras de sangre para detectar bacterias u hongos circulantes. Ayuda a diagnosticar bacteriemia, fungemia y sepsis e identificar sensibilidad antimicrobiana.",
+  "para_que_sirve": "Para qué sirve: Ayuda a diagnosticar bacteriemia, fungemia y sepsis e identificar sensibilidad antimicrobiana. Indicaciones: Fiebre con escalofríos, sepsis, infección grave o sospecha de infección asociada a catéter.",
+  "causas": "Interpretación orientativa: Un cultivo positivo puede indicar infección real o contaminación; el microorganismo, número de frascos, tiempo y clínica determinan su importancia. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Negativo significa sin crecimiento durante el periodo del laboratorio, pero no excluye infección. Enfermedades relacionadas: Sepsis, Fiebre, Escalofrios. Especialidad relacionada: Microbiología. Exámenes relacionados: Hemograma, procalcitonina, lactato y cultivos del foco.",
+  "sintomas": [
+    "fiebre",
+    "escalofríos",
+    "confusión"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Fiebre con escalofríos, sepsis, infección grave o sospecha de infección asociada a catéter.",
+  "senales_alarma": "Dificultad respiratoria, confusión, desmayo, labios morados, dolor de pecho o deterioro rápido requieren atención urgente; no esperes el resultado.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Hemocultivo?",
+      "respuesta": "Cultiva una o más muestras de sangre para detectar bacterias u hongos circulantes."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Ayuda a diagnosticar bacteriemia, fungemia y sepsis e identificar sensibilidad antimicrobiana."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "Sangre venosa de sitios separados con antisepsia estricta, idealmente antes de antibióticos sin retrasar atención."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un cultivo positivo puede indicar infección real o contaminación; el microorganismo, número de frascos, tiempo y clínica determinan su importancia. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-sepsis",
+      "slug": "sepsis",
+      "categoria": "Relacionados",
+      "titulo": "Sepsis"
+    },
+    {
+      "id": "rel-fiebre",
+      "slug": "fiebre",
+      "categoria": "Relacionados",
+      "titulo": "Fiebre"
+    },
+    {
+      "id": "rel-escalofrios",
+      "slug": "escalofrios",
+      "categoria": "Relacionados",
+      "titulo": "Escalofrios"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-bacteria-culture-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Bacteria Culture Test",
+      "url": "https://medlineplus.gov/lab-tests/bacteria-culture-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "idsa-blood-culture",
+      "organizacion": "IDSA",
+      "titulo": "Clinical Practice Guidelines and Guidance",
+      "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

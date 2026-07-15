@@ -1,0 +1,85 @@
+{
+  "id": "examen-carga-viral-vih",
+  "slug": "carga-viral-vih",
+  "titulo": "Carga viral VIH",
+  "tipo": "examen",
+  "categoria": "Virología",
+  "descripcion": "Qué es: Cuantifica ARN del VIH en sangre. Procedimiento: No suele requerir ayuno; informa adherencia, tratamientos e infecciones recientes. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Cuantifica ARN del VIH en sangre. Evalúa respuesta al tratamiento y detecta replicación viral; no reemplaza el algoritmo diagnóstico habitual.",
+  "para_que_sirve": "Para qué sirve: Evalúa respuesta al tratamiento y detecta replicación viral; no reemplaza el algoritmo diagnóstico habitual. Indicaciones: Al diagnóstico confirmado, antes y durante terapia antirretroviral o ante sospecha de falla.",
+  "causas": "Interpretación orientativa: Indetectable significa por debajo del límite del ensayo, no eliminación del virus; tendencias son más útiles que un valor aislado. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Se informa copias/mL y log; límites dependen del ensayo. Enfermedades relacionadas: Infecciones de transmision sexual, Tuberculosis. Especialidad relacionada: Virología. Exámenes relacionados: Prueba VIH confirmatoria, CD4, resistencia y controles de seguridad.",
+  "sintomas": [
+    "fatiga",
+    "fiebre",
+    "bajada de peso"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Al diagnóstico confirmado, antes y durante terapia antirretroviral o ante sospecha de falla.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Carga viral VIH?",
+      "respuesta": "Cuantifica ARN del VIH en sangre."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Evalúa respuesta al tratamiento y detecta replicación viral; no reemplaza el algoritmo diagnóstico habitual."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "No suele requerir ayuno; informa adherencia, tratamientos e infecciones recientes."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Indetectable significa por debajo del límite del ensayo, no eliminación del virus; tendencias son más útiles que un valor aislado. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-infecciones-de-transmision-sexual",
+      "slug": "infecciones-de-transmision-sexual",
+      "categoria": "Relacionados",
+      "titulo": "Infecciones de transmision sexual"
+    },
+    {
+      "id": "rel-tuberculosis",
+      "slug": "tuberculosis",
+      "categoria": "Relacionados",
+      "titulo": "Tuberculosis"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-hiv-viral-load",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "HIV Viral Load",
+      "url": "https://medlineplus.gov/lab-tests/hiv-viral-load/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "cdc-hiv-care",
+      "organizacion": "CDC",
+      "titulo": "Treating HIV",
+      "url": "https://www.cdc.gov/hiv/treatment/index.html",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

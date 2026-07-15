@@ -1,0 +1,91 @@
+{
+  "id": "examen-examen-parasitologico-seriado",
+  "slug": "examen-parasitologico-seriado",
+  "titulo": "Examen parasitológico seriado",
+  "tipo": "examen",
+  "categoria": "Parasitología",
+  "descripcion": "Qué es: Examina varias muestras de heces en días distintos para buscar parásitos, quistes y huevos. Procedimiento: Recolecta cada muestra en recipiente indicado sin orina ni agua y respeta conservante y horario. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Examina varias muestras de heces en días distintos para buscar parásitos, quistes y huevos. Aumenta la posibilidad de detectar parásitos intestinales que se eliminan intermitentemente.",
+  "para_que_sirve": "Para qué sirve: Aumenta la posibilidad de detectar parásitos intestinales que se eliminan intermitentemente. Indicaciones: Diarrea persistente, dolor, pérdida de peso, exposición a agua/alimentos o viaje.",
+  "causas": "Interpretación orientativa: Positivo identifica estructuras compatibles; negativo no excluye infección y puede requerir antígenos o PCR. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Cualitativo; número de muestras y reporte dependen del protocolo. Enfermedades relacionadas: Diarrea, Deshidratacion, Malaria. Especialidad relacionada: Parasitología. Exámenes relacionados: Antígenos fecales, PCR, coprocultivo y hemograma.",
+  "sintomas": [
+    "diarrea",
+    "dolor abdominal",
+    "bajada de peso"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Diarrea persistente, dolor, pérdida de peso, exposición a agua/alimentos o viaje.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Examen parasitológico seriado?",
+      "respuesta": "Examina varias muestras de heces en días distintos para buscar parásitos, quistes y huevos."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Aumenta la posibilidad de detectar parásitos intestinales que se eliminan intermitentemente."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "Recolecta cada muestra en recipiente indicado sin orina ni agua y respeta conservante y horario."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Positivo identifica estructuras compatibles; negativo no excluye infección y puede requerir antígenos o PCR. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-diarrea",
+      "slug": "diarrea",
+      "categoria": "Relacionados",
+      "titulo": "Diarrea"
+    },
+    {
+      "id": "rel-deshidratacion",
+      "slug": "deshidratacion",
+      "categoria": "Relacionados",
+      "titulo": "Deshidratacion"
+    },
+    {
+      "id": "rel-malaria",
+      "slug": "malaria",
+      "categoria": "Relacionados",
+      "titulo": "Malaria"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-ova-and-parasite-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Ova and Parasite Test",
+      "url": "https://medlineplus.gov/lab-tests/ova-and-parasite-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "cdc-parasites",
+      "organizacion": "CDC",
+      "titulo": "About Parasites",
+      "url": "https://www.cdc.gov/parasites/about/index.html",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "examen-test-de-graham",
+  "slug": "test-de-graham",
+  "titulo": "Test de Graham",
+  "tipo": "examen",
+  "categoria": "Parasitología",
+  "descripcion": "Qué es: Usa cinta adhesiva transparente en pliegues perianales para recoger huevos de Enterobius vermicularis. Procedimiento: Realiza por la mañana antes de bañarse, ir al baño o vestirse; pueden requerirse tres días. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Usa cinta adhesiva transparente en pliegues perianales para recoger huevos de Enterobius vermicularis. Es la prueba preferida para sospecha de oxiuros.",
+  "para_que_sirve": "Para qué sirve: Es la prueba preferida para sospecha de oxiuros. Indicaciones: Picazón anal nocturna, sueño inquieto o casos en convivientes.",
+  "causas": "Interpretación orientativa: Huevos observados confirman infección; negativo único no la excluye por eliminación intermitente. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Cualitativo: huevos presentes o no observados. Enfermedades relacionadas: Picazon anal, Insomnio. Especialidad relacionada: Parasitología. Exámenes relacionados: Evaluación microscópica y examen de convivientes según indicación.",
+  "sintomas": [
+    "picazón anal",
+    "irritabilidad",
+    "insomnio"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Picazón anal nocturna, sueño inquieto o casos en convivientes.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Test de Graham?",
+      "respuesta": "Usa cinta adhesiva transparente en pliegues perianales para recoger huevos de Enterobius vermicularis."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Es la prueba preferida para sospecha de oxiuros."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "Realiza por la mañana antes de bañarse, ir al baño o vestirse; pueden requerirse tres días."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Huevos observados confirman infección; negativo único no la excluye por eliminación intermitente. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-picazon-anal",
+      "slug": "picazon-anal",
+      "categoria": "Relacionados",
+      "titulo": "Picazon anal"
+    },
+    {
+      "id": "rel-insomnio",
+      "slug": "insomnio",
+      "categoria": "Relacionados",
+      "titulo": "Insomnio"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "cdc-pinworm",
+      "organizacion": "CDC",
+      "titulo": "Diagnosing Pinworms",
+      "url": "https://www.cdc.gov/pinworm/diagnosing/index.html",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "medline-ova-and-parasite-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Ova and Parasite Test",
+      "url": "https://medlineplus.gov/lab-tests/ova-and-parasite-test/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

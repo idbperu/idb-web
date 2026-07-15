@@ -1,0 +1,91 @@
+{
+  "id": "examen-complemento-c4",
+  "slug": "complemento-c4",
+  "titulo": "Complemento C4",
+  "tipo": "examen",
+  "categoria": "Inmunología",
+  "descripcion": "Qué es: Mide la proteína C4 del sistema del complemento. Procedimiento: No requiere preparación especial. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Mide la proteína C4 del sistema del complemento. Ayuda a evaluar consumo de complemento en autoinmunidad y algunas deficiencias.",
+  "para_que_sirve": "Para qué sirve: Ayuda a evaluar consumo de complemento en autoinmunidad y algunas deficiencias. Indicaciones: Sospecha o seguimiento de lupus, angioedema hereditario u otros trastornos inmunes.",
+  "causas": "Interpretación orientativa: C4 bajo puede verse en actividad autoinmune o deficiencias; se interpreta con C3, CH50 y síntomas. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Depende del método, edad y laboratorio. Enfermedades relacionadas: Lupus, Cirrosis, Enfermedad renal cronica. Especialidad relacionada: Inmunología. Exámenes relacionados: C3, CH50, C1 inhibidor, ANA y anti-dsDNA.",
+  "sintomas": [
+    "dolor articular",
+    "hinchazón de cara",
+    "fatiga"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Sospecha o seguimiento de lupus, angioedema hereditario u otros trastornos inmunes.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Complemento C4?",
+      "respuesta": "Mide la proteína C4 del sistema del complemento."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Ayuda a evaluar consumo de complemento en autoinmunidad y algunas deficiencias."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "No requiere preparación especial."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "C4 bajo puede verse en actividad autoinmune o deficiencias; se interpreta con C3, CH50 y síntomas. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-lupus",
+      "slug": "lupus",
+      "categoria": "Relacionados",
+      "titulo": "Lupus"
+    },
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-complement-blood-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Complement Blood Test",
+      "url": "https://medlineplus.gov/lab-tests/complement-blood-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "niams-lupus",
+      "organizacion": "NIAMS / NIH",
+      "titulo": "Lupus Diagnosis",
+      "url": "https://www.niams.nih.gov/health-topics/lupus/diagnosis-treatment-and-steps-to-take",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "examen-coprocultivo",
+  "slug": "coprocultivo",
+  "titulo": "Coprocultivo",
+  "tipo": "examen",
+  "categoria": "Microbiología",
+  "descripcion": "Qué es: Cultiva una muestra de heces para buscar bacterias que causan infección intestinal. Procedimiento: Recolecta heces sin mezclarlas con orina, agua o papel y entrégalas según instrucciones. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Cultiva una muestra de heces para buscar bacterias que causan infección intestinal. Identifica patógenos bacterianos y puede incluir pruebas de sensibilidad.",
+  "para_que_sirve": "Para qué sirve: Identifica patógenos bacterianos y puede incluir pruebas de sensibilidad. Indicaciones: Diarrea intensa, con sangre, fiebre, brote, viaje, inmunosupresión o enfermedad prolongada.",
+  "causas": "Interpretación orientativa: Un patógeno detectado puede explicar el cuadro; un resultado negativo no excluye virus, parásitos o bacterias no incluidas. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Se informa crecimiento o no crecimiento de patógenos buscados. Enfermedades relacionadas: Diarrea, Deshidratacion, Sepsis. Especialidad relacionada: Microbiología. Exámenes relacionados: Panel molecular gastrointestinal, examen parasitológico y sangre oculta.",
+  "sintomas": [
+    "diarrea",
+    "sangre en heces",
+    "dolor abdominal"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Diarrea intensa, con sangre, fiebre, brote, viaje, inmunosupresión o enfermedad prolongada.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Coprocultivo?",
+      "respuesta": "Cultiva una muestra de heces para buscar bacterias que causan infección intestinal."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Identifica patógenos bacterianos y puede incluir pruebas de sensibilidad."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "Recolecta heces sin mezclarlas con orina, agua o papel y entrégalas según instrucciones."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un patógeno detectado puede explicar el cuadro; un resultado negativo no excluye virus, parásitos o bacterias no incluidas. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-diarrea",
+      "slug": "diarrea",
+      "categoria": "Relacionados",
+      "titulo": "Diarrea"
+    },
+    {
+      "id": "rel-deshidratacion",
+      "slug": "deshidratacion",
+      "categoria": "Relacionados",
+      "titulo": "Deshidratacion"
+    },
+    {
+      "id": "rel-sepsis",
+      "slug": "sepsis",
+      "categoria": "Relacionados",
+      "titulo": "Sepsis"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-bacteria-culture-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Bacteria Culture Test",
+      "url": "https://medlineplus.gov/lab-tests/bacteria-culture-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "cdc-food",
+      "organizacion": "CDC",
+      "titulo": "Signs and Symptoms of Food Poisoning",
+      "url": "https://www.cdc.gov/food-safety/signs-symptoms/index.html",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}
