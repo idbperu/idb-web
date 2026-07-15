@@ -22,7 +22,7 @@
     "Informa medicamentos y si la solicitud corresponde a PCR convencional o ultrasensible."
   ],
   "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita ante sospecha de infección o enfermedad inflamatoria y para seguimiento de evolución.",
-  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "senales_alarma": "Después de la toma de muestra para Proteína C reactiva (PCR), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

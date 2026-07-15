@@ -5,7 +5,7 @@
   "tipo": "examen",
   "categoria": "Gastroenterología",
   "descripcion": "¿Qué es? Es una resonancia especializada que muestra vías biliares, vesícula y conducto pancreático, generalmente sin instrumentos dentro del cuerpo. ¿Cómo se realiza? Permaneces inmóvil dentro del imán mientras se obtienen secuencias del abdomen; puede administrarse gadolinio. Duración y molestias: 30 a 60 minutos. No duele; el ruido, la inmovilidad y el espacio cerrado pueden incomodar.",
-  "respuesta_rapida": "Es una resonancia especializada que muestra vías biliares, vesícula y conducto pancreático, generalmente sin instrumentos dentro del cuerpo. Detectar cálculos, estrecheces, obstrucción, anomalías, inflamación o masas pancreatobiliares.",
+  "respuesta_rapida": "Es una resonancia especializada que muestra vías biliares, vesícula y conducto pancreático, generalmente sin instrumentos dentro del cuerpo. Sirve para detectar cálculos, estrecheces, obstrucción, anomalías, inflamación o masas pancreatobiliares.",
   "para_que_sirve": "¿Para qué sirve? Detectar cálculos, estrecheces, obstrucción, anomalías, inflamación o masas pancreatobiliares. ¿Cuándo se solicita? Ictericia, dolor, pancreatitis, pruebas hepáticas alteradas o dilatación biliar observada en ecografía.",
   "causas": "Interpretación general (orientativa): El radiólogo describe conductos, cálculos, estrecheces y masas; los hallazgos se integran con laboratorio y clínica. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No aplica rango numérico; se informa anatomía y presencia de alteraciones. Enfermedades relacionadas: Coledocolitiasis, obstrucción biliar, pancreatitis y tumores pancreatobiliares. Especialidad relacionada: Radiología, gastroenterología o cirugía. Exámenes relacionados: Ecografía hepatobiliar, bilirrubina y pruebas de función hepática.",
   "sintomas": [
@@ -20,7 +20,7 @@
     "Puede requerir ayuno. Informa implantes, metal, embarazo, enfermedad renal, alergias y claustrofobia; retira objetos metálicos."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Ictericia, dolor, pancreatitis, pruebas hepáticas alteradas o dilatación biliar observada en ecografía.",
-  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "senales_alarma": "Durante o después de Colangiopancreatografía por resonancia magnética, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
     "Puede requerir ayuno. Informa implantes, metal, embarazo, enfermedad renal, alergias y claustrofobia; retira objetos metálicos.",
@@ -51,18 +51,6 @@
   ],
   "temas_relacionados": [
     {
-      "id": "rel-ictericia",
-      "slug": "ictericia",
-      "categoria": "Relacionados",
-      "titulo": "Ictericia"
-    },
-    {
-      "id": "rel-dolor-abdominal-superior",
-      "slug": "dolor-abdominal-superior",
-      "categoria": "Relacionados",
-      "titulo": "Dolor abdominal superior"
-    },
-    {
       "id": "rel-orina-oscura",
       "slug": "orina-oscura",
       "categoria": "Relacionados",
@@ -86,5 +74,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

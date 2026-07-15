@@ -5,7 +5,7 @@
   "tipo": "examen",
   "categoria": "Cardiología",
   "descripcion": "¿Qué es? Mide automáticamente la presión arterial a intervalos durante 24 horas mientras realizas actividades habituales y duermes. ¿Cómo se realiza? Un manguito conectado a una grabadora se infla periódicamente de día y noche; después se descarga el registro. Duración y molestias: Colocación de 15 a 20 minutos y registro habitual de 24 horas. Las inflaciones pueden incomodar y alterar el sueño.",
-  "respuesta_rapida": "Mide automáticamente la presión arterial a intervalos durante 24 horas mientras realizas actividades habituales y duermes. Confirmar hipertensión, identificar efecto de bata blanca o hipertensión enmascarada y valorar patrones diurnos y nocturnos.",
+  "respuesta_rapida": "Mide automáticamente la presión arterial a intervalos durante 24 horas mientras realizas actividades habituales y duermes. Sirve para confirmar hipertensión, identificar efecto de bata blanca o hipertensión enmascarada y valorar patrones diurnos y nocturnos.",
   "para_que_sirve": "¿Para qué sirve? Confirmar hipertensión, identificar efecto de bata blanca o hipertensión enmascarada y valorar patrones diurnos y nocturnos. ¿Cuándo se solicita? Lecturas variables, sospecha de hipertensión, síntomas con medicación o necesidad de evaluar control durante todo el día.",
   "causas": "Interpretación general (orientativa): Se promedian valores diurnos, nocturnos y de 24 horas; los umbrales difieren de la medición en consultorio y dependen de la guía usada. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No hay un valor universal aislado; el profesional aplica umbrales ambulatorios validados y contexto clínico. Enfermedades relacionadas: Hipertensión arterial, hipertensión de bata blanca e hipertensión enmascarada. Especialidad relacionada: Cardiología o medicina interna. Exámenes relacionados: Electrocardiograma, creatinina sérica y examen completo de orina.",
   "sintomas": [
@@ -20,7 +20,7 @@
     "Usa ropa holgada, toma medicamentos solo según indicación y anota sueño, actividad, síntomas y dosis. Mantén el brazo quieto durante cada medición."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Lecturas variables, sospecha de hipertensión, síntomas con medicación o necesidad de evaluar control durante todo el día.",
-  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "senales_alarma": "Monitoreo ambulatorio de presión arterial (MAPA) no suele causar complicaciones. Busca atención urgente si presentas dolor de pecho, falta de aire intensa, desmayo, debilidad súbita o palpitaciones persistentes, aunque el registro haya finalizado o parezca normal.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
     "Usa ropa holgada, toma medicamentos solo según indicación y anota sueño, actividad, síntomas y dosis. Mantén el brazo quieto durante cada medición.",
@@ -61,12 +61,6 @@
       "slug": "mareos",
       "categoria": "Relacionados",
       "titulo": "Mareos"
-    },
-    {
-      "id": "rel-presion-arterial-elevada",
-      "slug": "presion-arterial-elevada",
-      "categoria": "Relacionados",
-      "titulo": "Presion arterial elevada"
     }
   ],
   "fuentes": [
@@ -86,5 +80,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

@@ -22,7 +22,7 @@
     "Descansa, calienta la mano y mantenla quieta; sigue el plan indicado si usas oxígeno."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede medirse ante falta de aire, enfermedad pulmonar o cardíaca, infecciones respiratorias, anestesia o seguimiento domiciliario indicado.",
-  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "senales_alarma": "Busca atención urgente si la lectura baja se acompaña de dificultad para respirar, labios o rostro azulados, dolor de pecho, confusión o deterioro rápido. Repite una lectura dudosa correctamente, pero no retrases la atención por confiar solo en el dispositivo.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

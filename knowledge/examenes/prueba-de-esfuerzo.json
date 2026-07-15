@@ -5,7 +5,7 @@
   "tipo": "examen",
   "categoria": "Cardiología",
   "descripcion": "¿Qué es? Registra electrocardiograma, frecuencia, presión y síntomas mientras aumenta gradualmente el ejercicio en caminadora o bicicleta. ¿Cómo se realiza? Se colocan electrodos y un manguito; haces ejercicio por etapas hasta alcanzar un objetivo o aparecer un criterio de detención. Duración y molestias: 30 a 60 minutos en total; el ejercicio suele durar 10 a 15 minutos. Produce cansancio normal.",
-  "respuesta_rapida": "Registra electrocardiograma, frecuencia, presión y síntomas mientras aumenta gradualmente el ejercicio en caminadora o bicicleta. Evaluar respuesta cardiovascular al esfuerzo, síntomas compatibles con isquemia, capacidad funcional y algunas arritmias.",
+  "respuesta_rapida": "Registra electrocardiograma, frecuencia, presión y síntomas mientras aumenta gradualmente el ejercicio en caminadora o bicicleta. Sirve para evaluar respuesta cardiovascular al esfuerzo, síntomas compatibles con isquemia, capacidad funcional y algunas arritmias.",
   "para_que_sirve": "¿Para qué sirve? Evaluar respuesta cardiovascular al esfuerzo, síntomas compatibles con isquemia, capacidad funcional y algunas arritmias. ¿Cuándo se solicita? Dolor torácico o falta de aire con esfuerzo, valoración de enfermedad coronaria o capacidad funcional, según indicación médica.",
   "causas": "Interpretación general (orientativa): Se analizan síntomas, cambios eléctricos, presión, frecuencia y capacidad alcanzada. Un resultado normal o anormal no es concluyente por sí solo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No aplica un único rango; depende de edad, sexo, protocolo, frecuencia objetivo y capacidad funcional. Enfermedades relacionadas: Enfermedad coronaria, arritmias e insuficiencia cardíaca. Especialidad relacionada: Cardiología. Exámenes relacionados: Electrocardiograma, ecocardiograma y Holter de 24 horas.",
   "sintomas": [
@@ -20,7 +20,7 @@
     "Usa ropa y calzado cómodos. Evita comidas pesadas, cafeína o tabaco según instrucciones. No suspendas medicamentos sin indicación."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor torácico o falta de aire con esfuerzo, valoración de enfermedad coronaria o capacidad funcional, según indicación médica.",
-  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "senales_alarma": "Durante o después de la prueba de esfuerzo, avisa de inmediato si aparece dolor de pecho, falta de aire intensa, desmayo, mareo marcado o palpitaciones persistentes. Si estos síntomas aparecen tras salir del centro, busca atención urgente.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
     "Usa ropa y calzado cómodos. Evita comidas pesadas, cafeína o tabaco según instrucciones. No suspendas medicamentos sin indicación.",
@@ -51,18 +51,6 @@
   ],
   "temas_relacionados": [
     {
-      "id": "rel-dolor-en-el-pecho-al-esfuerzo",
-      "slug": "dolor-en-el-pecho-al-esfuerzo",
-      "categoria": "Relacionados",
-      "titulo": "Dolor en el pecho al esfuerzo"
-    },
-    {
-      "id": "rel-falta-de-aire-al-esfuerzo",
-      "slug": "falta-de-aire-al-esfuerzo",
-      "categoria": "Relacionados",
-      "titulo": "Falta de aire al esfuerzo"
-    },
-    {
       "id": "rel-palpitaciones",
       "slug": "palpitaciones",
       "categoria": "Relacionados",
@@ -86,5 +74,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

@@ -3,7 +3,7 @@
   "slug": "lactato-deshidrogenasa-ldh",
   "titulo": "Lactato deshidrogenasa (LDH)",
   "tipo": "examen",
-  "categoria": "Laboratorio y metabolismo",
+  "categoria": "Laboratorio",
   "descripcion": "¿Qué es? Mide LDH, enzima presente en muchos tejidos que se libera con daño celular. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
   "respuesta_rapida": "Mide LDH, enzima presente en muchos tejidos que se libera con daño celular. Es un marcador inespecífico que apoya la evaluación de hemólisis, lesión tisular y algunas enfermedades.",
   "para_que_sirve": "¿Para qué sirve? Es un marcador inespecífico que apoya la evaluación de hemólisis, lesión tisular y algunas enfermedades. ¿Cuándo se solicita? Se solicita según síntomas o para seguimiento de trastornos hematológicos, hepáticos, musculares u oncológicos.",
@@ -21,7 +21,7 @@
     "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
   ],
   "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita según síntomas o para seguimiento de trastornos hematológicos, hepáticos, musculares u oncológicos.",
-  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "senales_alarma": "Después de la toma de muestra para Lactato deshidrogenasa (LDH), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
     "La preparación, unidades y rangos pueden variar entre laboratorios.",
@@ -87,5 +87,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

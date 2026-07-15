@@ -3,7 +3,7 @@
   "slug": "recuento-de-reticulocitos",
   "titulo": "Recuento de reticulocitos",
   "tipo": "examen",
-  "categoria": "Hematología e inmunología",
+  "categoria": "Hematología",
   "descripcion": "¿Qué es? Cuenta glóbulos rojos jóvenes producidos por la médula ósea. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
   "respuesta_rapida": "Cuenta glóbulos rojos jóvenes producidos por la médula ósea. Muestra cómo responde la médula ante anemia, sangrado o destrucción de glóbulos rojos.",
   "para_que_sirve": "¿Para qué sirve? Muestra cómo responde la médula ante anemia, sangrado o destrucción de glóbulos rojos. ¿Cuándo se solicita? Se solicita para clasificar anemia y vigilar recuperación o tratamientos.",
@@ -21,7 +21,7 @@
     "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
   ],
   "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita para clasificar anemia y vigilar recuperación o tratamientos.",
-  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "senales_alarma": "Después de la toma de muestra para Recuento de reticulocitos, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
     "La preparación, unidades y rangos pueden variar entre laboratorios.",
@@ -87,5 +87,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

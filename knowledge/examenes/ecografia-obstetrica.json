@@ -3,9 +3,9 @@
   "slug": "ecografia-obstetrica",
   "titulo": "Ecografía obstétrica",
   "tipo": "examen",
-  "categoria": "Diagnóstico por imágenes",
+  "categoria": "Imagenología",
   "descripcion": "¿Qué es? Usa ondas sonoras para evaluar embarazo, embrión o feto, placenta, líquido amniótico y estructuras maternas, sin radiación ionizante. ¿Cómo se realiza? Se aplica gel sobre el abdomen; al inicio del embarazo puede proponerse vía transvaginal con consentimiento. Duración y molestias: 20 a 45 minutos según el objetivo. Generalmente es indolora, con presión leve.",
-  "respuesta_rapida": "Usa ondas sonoras para evaluar embarazo, embrión o feto, placenta, líquido amniótico y estructuras maternas, sin radiación ionizante. Confirmar ubicación y edad gestacional, evaluar crecimiento y anatomía fetal, placenta, líquido y bienestar según etapa.",
+  "respuesta_rapida": "Usa ondas sonoras para evaluar embarazo, embrión o feto, placenta, líquido amniótico y estructuras maternas, sin radiación ionizante. Sirve para confirmar ubicación y edad gestacional, evaluar crecimiento y anatomía fetal, placenta, líquido y bienestar según etapa.",
   "para_que_sirve": "¿Para qué sirve? Confirmar ubicación y edad gestacional, evaluar crecimiento y anatomía fetal, placenta, líquido y bienestar según etapa. ¿Cuándo se solicita? Control prenatal, sangrado, dolor, discrepancia de crecimiento o evaluación dirigida por riesgo materno-fetal.",
   "causas": "Interpretación general (orientativa): El profesional integra biometría, anatomía, frecuencia cardíaca, placenta y líquido según edad gestacional; un estudio normal no detecta todas las alteraciones. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: Las medidas se comparan con curvas por edad gestacional, no con un valor único. Enfermedades relacionadas: Embarazo ectópico, restricción del crecimiento fetal, placenta previa y embarazo múltiple. Especialidad relacionada: Radiología, obstetricia o medicina materno-fetal. Exámenes relacionados: Ecografía pélvica y análisis prenatales.",
   "sintomas": [
@@ -20,7 +20,7 @@
     "Según la etapa puede pedirse vejiga llena. Lleva antecedentes y estudios previos; sigue instrucciones del centro."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Control prenatal, sangrado, dolor, discrepancia de crecimiento o evaluación dirigida por riesgo materno-fetal.",
-  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "senales_alarma": "La ecografía no suele causar complicaciones. Durante el embarazo, busca atención urgente ante sangrado abundante, dolor intenso, pérdida de líquido, desmayo, convulsiones o disminución marcada de movimientos fetales según la etapa gestacional.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
     "Según la etapa puede pedirse vejiga llena. Lleva antecedentes y estudios previos; sigue instrucciones del centro.",
@@ -49,26 +49,7 @@
       "respuesta": "El profesional integra biometría, anatomía, frecuencia cardíaca, placenta y líquido según edad gestacional; un estudio normal no detecta todas las alteraciones. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
     }
   ],
-  "temas_relacionados": [
-    {
-      "id": "rel-sangrado-durante-el-embarazo",
-      "slug": "sangrado-durante-el-embarazo",
-      "categoria": "Relacionados",
-      "titulo": "Sangrado durante el embarazo"
-    },
-    {
-      "id": "rel-dolor-pelvico-en-embarazo",
-      "slug": "dolor-pelvico-en-embarazo",
-      "categoria": "Relacionados",
-      "titulo": "Dolor pelvico en embarazo"
-    },
-    {
-      "id": "rel-disminucion-de-movimientos-fetales",
-      "slug": "disminucion-de-movimientos-fetales",
-      "categoria": "Relacionados",
-      "titulo": "Disminucion de movimientos fetales"
-    }
-  ],
+  "temas_relacionados": [],
   "fuentes": [
     {
       "id": "acr-obstetric-us",
@@ -86,5 +67,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

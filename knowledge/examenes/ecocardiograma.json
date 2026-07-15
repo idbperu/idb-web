@@ -22,7 +22,7 @@
     "Si es transesofágico o de esfuerzo, sigue las instrucciones específicas de ayuno y medicamentos."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante soplo, falta de aire, hinchazón, dolor de pecho, cambios en ECG o seguimiento de enfermedad cardíaca.",
-  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "senales_alarma": "Ecocardiograma no suele producir complicaciones. Busca atención urgente si el dolor, sangrado, dificultad respiratoria, desmayo u otro síntoma que motivó el examen se vuelve intenso o empeora rápidamente; no esperes el informe para pedir ayuda.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

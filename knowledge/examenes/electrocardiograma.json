@@ -22,7 +22,7 @@
     "Informa medicamentos y síntomas; puede ser necesario rasurar pequeñas zonas."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse ante dolor de pecho, palpitaciones, falta de aire, mareo, desmayo, factores de riesgo o control de medicamentos y dispositivos.",
-  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "senales_alarma": "Electrocardiograma no suele causar complicaciones. Busca atención urgente si presentas dolor de pecho, falta de aire intensa, desmayo, debilidad súbita o palpitaciones persistentes, aunque el registro haya finalizado o parezca normal.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

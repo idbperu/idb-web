@@ -3,7 +3,7 @@
   "slug": "hierro-serico",
   "titulo": "Hierro sérico",
   "tipo": "examen",
-  "categoria": "Laboratorio y metabolismo",
+  "categoria": "Laboratorio",
   "descripcion": "¿Qué es? Mide hierro circulante unido principalmente a transferrina. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
   "respuesta_rapida": "Mide hierro circulante unido principalmente a transferrina. Contribuye a evaluar deficiencia o sobrecarga de hierro, siempre junto con otras pruebas.",
   "para_que_sirve": "¿Para qué sirve? Contribuye a evaluar deficiencia o sobrecarga de hierro, siempre junto con otras pruebas. ¿Cuándo se solicita? Se solicita ante anemia, fatiga, sangrado, sospecha de sobrecarga o seguimiento.",
@@ -21,7 +21,7 @@
     "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
   ],
   "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante anemia, fatiga, sangrado, sospecha de sobrecarga o seguimiento.",
-  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "senales_alarma": "Después de la toma de muestra para Hierro sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
     "La preparación, unidades y rangos pueden variar entre laboratorios.",
@@ -87,5 +87,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

@@ -21,7 +21,7 @@
     "Informa fiebre, infección urinaria, menstruación y medicamentos porque pueden alterar temporalmente el resultado."
   ],
   "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita especialmente en diabetes, hipertensión, enfermedad renal o riesgo cardiovascular.",
-  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "senales_alarma": "La obtención de la muestra para Microalbuminuria suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
@@ -93,5 +93,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

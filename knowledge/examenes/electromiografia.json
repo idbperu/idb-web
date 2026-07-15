@@ -5,7 +5,7 @@
   "tipo": "examen",
   "categoria": "Neurología",
   "descripcion": "¿Qué es? Evalúa la actividad eléctrica muscular y, con frecuencia, la velocidad con que los nervios conducen señales. ¿Cómo se realiza? Se aplican pequeños estímulos eléctricos sobre nervios y se introduce una aguja fina en músculos seleccionados para registrar actividad. Duración y molestias: 30 a 90 minutos. Los estímulos y agujas producen molestias breves y puede quedar dolor muscular leve.",
-  "respuesta_rapida": "Evalúa la actividad eléctrica muscular y, con frecuencia, la velocidad con que los nervios conducen señales. Distinguir trastornos de nervios, raíces, unión neuromuscular y músculos.",
+  "respuesta_rapida": "Evalúa la actividad eléctrica muscular y, con frecuencia, la velocidad con que los nervios conducen señales. Sirve para distinguir trastornos de nervios, raíces, unión neuromuscular y músculos.",
   "para_que_sirve": "¿Para qué sirve? Distinguir trastornos de nervios, raíces, unión neuromuscular y músculos. ¿Cuándo se solicita? Debilidad, hormigueo, adormecimiento, calambres o dolor con sospecha neuromuscular.",
   "causas": "Interpretación general (orientativa): El especialista analiza amplitud, velocidad y patrones musculares para localizar y caracterizar la alteración; se integra con examen neurológico. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: Los valores dependen de nervio, músculo, edad, temperatura, equipo y laboratorio; se usan rangos del centro. Enfermedades relacionadas: Neuropatía periférica, síndrome del túnel carpiano, radiculopatía y miopatía. Especialidad relacionada: Neurología, medicina física y rehabilitación. Exámenes relacionados: Resonancia magnética de columna lumbar y análisis de glucosa.",
   "sintomas": [
@@ -20,7 +20,7 @@
     "Informa anticoagulantes, marcapasos o desfibrilador y trastornos de sangrado. Evita cremas en la piel y usa ropa cómoda."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Debilidad, hormigueo, adormecimiento, calambres o dolor con sospecha neuromuscular.",
-  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "senales_alarma": "Después de la electromiografía, consulta con urgencia si el sangrado en una zona de punción no cede, aumenta rápidamente un hematoma, aparece dolor intenso, debilidad nueva, enrojecimiento progresivo, secreción o fiebre.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
     "Informa anticoagulantes, marcapasos o desfibrilador y trastornos de sangrado. Evita cremas en la piel y usa ropa cómoda.",
@@ -57,12 +57,6 @@
       "titulo": "Hormigueo"
     },
     {
-      "id": "rel-debilidad-muscular",
-      "slug": "debilidad-muscular",
-      "categoria": "Relacionados",
-      "titulo": "Debilidad muscular"
-    },
-    {
       "id": "rel-adormecimiento",
       "slug": "adormecimiento",
       "categoria": "Relacionados",
@@ -86,5 +80,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

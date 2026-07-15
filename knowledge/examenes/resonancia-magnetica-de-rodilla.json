@@ -3,9 +3,9 @@
   "slug": "resonancia-magnetica-de-rodilla",
   "titulo": "Resonancia magnética de rodilla",
   "tipo": "examen",
-  "categoria": "Diagnóstico por imágenes",
+  "categoria": "Imagenología",
   "descripcion": "¿Qué es? Crea imágenes detalladas de meniscos, ligamentos, cartílago, tendones, huesos y tejidos blandos sin radiación ionizante. ¿Cómo se realiza? La rodilla se coloca en una bobina y debes permanecer inmóvil dentro del equipo durante varias secuencias. Duración y molestias: 30 a 45 minutos. Es indolora; la inmovilidad y el ruido pueden incomodar.",
-  "respuesta_rapida": "Crea imágenes detalladas de meniscos, ligamentos, cartílago, tendones, huesos y tejidos blandos sin radiación ionizante. Evaluar lesiones deportivas, dolor persistente, bloqueo, inestabilidad, inflamación o planificación quirúrgica.",
+  "respuesta_rapida": "Crea imágenes detalladas de meniscos, ligamentos, cartílago, tendones, huesos y tejidos blandos sin radiación ionizante. Sirve para evaluar lesiones deportivas, dolor persistente, bloqueo, inestabilidad, inflamación o planificación quirúrgica.",
   "para_que_sirve": "¿Para qué sirve? Evaluar lesiones deportivas, dolor persistente, bloqueo, inestabilidad, inflamación o planificación quirúrgica. ¿Cuándo se solicita? Traumatismo, dolor o hinchazón persistente, chasquido con bloqueo o sospecha de lesión ligamentaria o meniscal.",
   "causas": "Interpretación general (orientativa): El informe describe meniscos, ligamentos, cartílago y hueso; algunos cambios pueden no explicar el dolor. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No existe rango numérico; se informan hallazgos anatómicos. Enfermedades relacionadas: Lesión meniscal, rotura del ligamento cruzado, artrosis y lesión del cartílago. Especialidad relacionada: Radiología, traumatología o medicina deportiva. Exámenes relacionados: Radiografía de rodilla y ecografía musculoesquelética.",
   "sintomas": [
@@ -20,7 +20,7 @@
     "Informa implantes, metal, embarazo, enfermedad renal y claustrofobia; retira objetos metálicos."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Traumatismo, dolor o hinchazón persistente, chasquido con bloqueo o sospecha de lesión ligamentaria o meniscal.",
-  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "senales_alarma": "Durante o después de Resonancia magnética de rodilla, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
     "Informa implantes, metal, embarazo, enfermedad renal y claustrofobia; retira objetos metálicos.",
@@ -55,18 +55,6 @@
       "slug": "dolor-de-rodilla",
       "categoria": "Relacionados",
       "titulo": "Dolor de rodilla"
-    },
-    {
-      "id": "rel-hinchazon-de-rodilla",
-      "slug": "hinchazon-de-rodilla",
-      "categoria": "Relacionados",
-      "titulo": "Hinchazon de rodilla"
-    },
-    {
-      "id": "rel-inestabilidad-de-rodilla",
-      "slug": "inestabilidad-de-rodilla",
-      "categoria": "Relacionados",
-      "titulo": "Inestabilidad de rodilla"
     }
   ],
   "fuentes": [
@@ -86,5 +74,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

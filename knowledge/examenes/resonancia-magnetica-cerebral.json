@@ -3,7 +3,7 @@
   "slug": "resonancia-magnetica-cerebral",
   "titulo": "Resonancia magnética cerebral",
   "tipo": "examen",
-  "categoria": "Diagnóstico por imágenes",
+  "categoria": "Imagenología",
   "descripcion": "¿Qué es? Genera múltiples secuencias y planos; en algunos casos se administra contraste con gadolinio. ¿Cómo se realiza? Acostado dentro del equipo, debes permanecer inmóvil mientras se obtienen secuencias ruidosas; se proporciona protección auditiva. Duración: Suele durar entre 30 y 60 minutos, según el protocolo. ¿Produce dolor o molestias? No duele, pero el ruido, la inmovilidad y el espacio cerrado pueden incomodar.",
   "respuesta_rapida": "Estudio que usa un campo magnético y ondas de radio para crear imágenes detalladas del cerebro sin radiación ionizante.",
   "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar accidente cerebrovascular, tumores, inflamación, epilepsia, esclerosis múltiple, vasos y otras alteraciones neurológicas. ¿Cuándo se solicita? Puede solicitarse ante déficit neurológico, convulsiones, cefalea con signos de alarma, cambios cognitivos o hallazgos previos.",
@@ -22,7 +22,7 @@
     "Retira todo metal; sigue indicaciones sobre ayuno o contraste."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse ante déficit neurológico, convulsiones, cefalea con signos de alarma, cambios cognitivos o hallazgos previos.",
-  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "senales_alarma": "Durante o después de Resonancia magnética cerebral, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

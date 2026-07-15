@@ -3,7 +3,7 @@
   "slug": "hormona-luteinizante-lh",
   "titulo": "Hormona luteinizante (LH)",
   "tipo": "examen",
-  "categoria": "Endocrinología y salud reproductiva",
+  "categoria": "Endocrinología",
   "descripcion": "¿Qué es? Mide LH, hormona hipofisaria que participa en ovulación y función testicular. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
   "respuesta_rapida": "Mide LH, hormona hipofisaria que participa en ovulación y función testicular. Ayuda a evaluar fertilidad, función gonadal, menopausia y pubertad.",
   "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar fertilidad, función gonadal, menopausia y pubertad. ¿Cuándo se solicita? Se solicita ante infertilidad, ciclos irregulares, sospecha de alteración ovulatoria o pubertad anormal.",
@@ -21,7 +21,7 @@
     "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
   ],
   "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante infertilidad, ciclos irregulares, sospecha de alteración ovulatoria o pubertad anormal.",
-  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, confusión intensa o empeoramiento rápido.",
+  "senales_alarma": "Después de la toma de muestra para Hormona luteinizante (LH), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
     "La preparación, unidades y rangos pueden variar entre laboratorios.",
@@ -75,5 +75,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

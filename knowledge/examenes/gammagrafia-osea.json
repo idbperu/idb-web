@@ -3,9 +3,9 @@
   "slug": "gammagrafia-osea",
   "titulo": "Gammagrafía ósea",
   "tipo": "examen",
-  "categoria": "Densitometría y medicina nuclear",
+  "categoria": "Medicina Nuclear",
   "descripcion": "¿Qué es? Usa una pequeña cantidad de radiotrazador y una cámara gamma para mostrar actividad metabólica en el esqueleto. ¿Cómo se realiza? Se inyecta radiotrazador; tras una espera de varias horas, la cámara obtiene imágenes mientras permaneces quieto. Duración y molestias: La adquisición suele durar 30 a 60 minutos, además de 2 a 4 horas de espera. La inyección causa una molestia breve.",
-  "respuesta_rapida": "Usa una pequeña cantidad de radiotrazador y una cámara gamma para mostrar actividad metabólica en el esqueleto. Buscar metástasis, fracturas ocultas, infección, alteraciones protésicas o causas de dolor óseo.",
+  "respuesta_rapida": "Usa una pequeña cantidad de radiotrazador y una cámara gamma para mostrar actividad metabólica en el esqueleto. Sirve para buscar metástasis, fracturas ocultas, infección, alteraciones protésicas o causas de dolor óseo.",
   "para_que_sirve": "¿Para qué sirve? Buscar metástasis, fracturas ocultas, infección, alteraciones protésicas o causas de dolor óseo. ¿Cuándo se solicita? Dolor óseo inexplicado, sospecha de metástasis o infección, fractura oculta o evaluación de prótesis.",
   "causas": "Interpretación general (orientativa): Las áreas de captación aumentada o disminuida son inespecíficas y se correlacionan con radiografías, TC, RM y antecedentes. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No aplica rango numérico; se describe distribución del radiotrazador. Enfermedades relacionadas: Metástasis óseas, osteomielitis, fracturas ocultas y enfermedad de Paget. Especialidad relacionada: Medicina nuclear, oncología, traumatología o reumatología. Exámenes relacionados: Radiografía, resonancia magnética y densitometría ósea.",
   "sintomas": [
@@ -20,7 +20,7 @@
     "Informa embarazo, lactancia, medicamentos y estudios recientes. Hidrátate según indicación y retira metal."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor óseo inexplicado, sospecha de metástasis o infección, fractura oculta o evaluación de prótesis.",
-  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "senales_alarma": "Tras Gammagrafía ósea, las reacciones al radiotrazador son muy raras. Busca atención urgente si presentas dificultad para respirar, hinchazón del rostro, ronchas generalizadas o desmayo; consulta si aumenta el dolor, enrojecimiento o hinchazón en la zona de inyección.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
     "Informa embarazo, lactancia, medicamentos y estudios recientes. Hidrátate según indicación y retira metal.",
@@ -49,26 +49,7 @@
       "respuesta": "Las áreas de captación aumentada o disminuida son inespecíficas y se correlacionan con radiografías, TC, RM y antecedentes. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
     }
   ],
-  "temas_relacionados": [
-    {
-      "id": "rel-dolor-oseo",
-      "slug": "dolor-oseo",
-      "categoria": "Relacionados",
-      "titulo": "Dolor oseo"
-    },
-    {
-      "id": "rel-fractura-sospechada",
-      "slug": "fractura-sospechada",
-      "categoria": "Relacionados",
-      "titulo": "Fractura sospechada"
-    },
-    {
-      "id": "rel-dolor-localizado-persistente",
-      "slug": "dolor-localizado-persistente",
-      "categoria": "Relacionados",
-      "titulo": "Dolor localizado persistente"
-    }
-  ],
+  "temas_relacionados": [],
   "fuentes": [
     {
       "id": "acr-bone-scan",
@@ -86,5 +67,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

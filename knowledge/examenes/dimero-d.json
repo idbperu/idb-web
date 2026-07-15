@@ -3,7 +3,7 @@
   "slug": "dimero-d",
   "titulo": "Dímero D",
   "tipo": "examen",
-  "categoria": "Hematología e inmunología",
+  "categoria": "Hematología",
   "descripcion": "¿Qué es? Mide fragmentos producidos cuando el organismo degrada fibrina de un coágulo. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
   "respuesta_rapida": "Mide fragmentos producidos cuando el organismo degrada fibrina de un coágulo. En pacientes con probabilidad clínica baja o intermedia ayuda a descartar trombosis; no confirma por sí solo.",
   "para_que_sirve": "¿Para qué sirve? En pacientes con probabilidad clínica baja o intermedia ayuda a descartar trombosis; no confirma por sí solo. ¿Cuándo se solicita? Se solicita ante sospecha de trombosis venosa, embolia pulmonar o coagulación intravascular diseminada.",
@@ -21,7 +21,7 @@
     "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
   ],
   "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante sospecha de trombosis venosa, embolia pulmonar o coagulación intravascular diseminada.",
-  "senales_alarma": "Falta de aire repentina, dolor de pecho, tos con sangre, desmayo o hinchazón dolorosa de una pierna requieren atención urgente.",
+  "senales_alarma": "Después de la toma de muestra para Dímero D, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
     "La preparación, unidades y rangos pueden variar entre laboratorios.",
@@ -87,5 +87,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

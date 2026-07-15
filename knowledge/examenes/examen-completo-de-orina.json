@@ -3,7 +3,7 @@
   "slug": "examen-completo-de-orina",
   "titulo": "Examen completo de orina",
   "tipo": "examen",
-  "categoria": "Urología y nefrología",
+  "categoria": "Nefrología",
   "descripcion": "¿Qué es? Evalúa aspecto, concentración, pH y sustancias o células como proteínas, glucosa, sangre, leucocitos, bacterias, cristales y cilindros. ¿Cómo se realiza? Se limpia la zona genital, se desecha el primer chorro y se recoge la porción media sin tocar el interior del recipiente. Duración: La recolección toma pocos minutos; el procesamiento depende del laboratorio. ¿Produce dolor o molestias? No suele causar dolor.",
   "respuesta_rapida": "Analiza características físicas, químicas y microscópicas de la orina para buscar señales de infección urinaria, enfermedad renal, diabetes y otras alteraciones.",
   "para_que_sirve": "¿Para qué sirve? Sirve como control general y apoyo para investigar síntomas urinarios o vigilar ciertas enfermedades. ¿Cuándo se solicita? Puede pedirse en controles, embarazo, hospitalización, antes de cirugía o ante ardor, urgencia, sangre en orina, dolor de costado o fiebre.",
@@ -22,7 +22,7 @@
     "Si es posible, evita contaminar la muestra con menstruación, heces o papel; informa medicamentos y suplementos."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede pedirse en controles, embarazo, hospitalización, antes de cirugía o ante ardor, urgencia, sangre en orina, dolor de costado o fiebre.",
-  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "senales_alarma": "La obtención de la muestra para Examen completo de orina suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

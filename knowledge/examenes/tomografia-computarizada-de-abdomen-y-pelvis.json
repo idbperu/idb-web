@@ -3,9 +3,9 @@
   "slug": "tomografia-computarizada-de-abdomen-y-pelvis",
   "titulo": "Tomografía computarizada de abdomen y pelvis",
   "tipo": "examen",
-  "categoria": "Diagnóstico por imágenes",
+  "categoria": "Imagenología",
   "descripcion": "¿Qué es? Produce imágenes detalladas de órganos, vasos, intestino, vías urinarias y estructuras pélvicas mediante rayos X. ¿Cómo se realiza? Permaneces acostado mientras la mesa atraviesa el escáner; pueden administrarse contraste oral o intravenoso y pedirse breves apneas. Duración y molestias: 10 a 30 minutos; la preparación con contraste oral puede prolongar la permanencia. No suele doler.",
-  "respuesta_rapida": "Produce imágenes detalladas de órganos, vasos, intestino, vías urinarias y estructuras pélvicas mediante rayos X. Buscar inflamación, cálculos, traumatismos, sangrado, obstrucción, infecciones o tumores y planificar procedimientos.",
+  "respuesta_rapida": "Produce imágenes detalladas de órganos, vasos, intestino, vías urinarias y estructuras pélvicas mediante rayos X. Sirve para buscar inflamación, cálculos, traumatismos, sangrado, obstrucción, infecciones o tumores y planificar procedimientos.",
   "para_que_sirve": "¿Para qué sirve? Buscar inflamación, cálculos, traumatismos, sangrado, obstrucción, infecciones o tumores y planificar procedimientos. ¿Cuándo se solicita? Dolor abdominal o pélvico persistente, fiebre sin causa clara, masa, traumatismo o alteraciones previas.",
   "causas": "Interpretación general (orientativa): El informe localiza hallazgos y evalúa órganos y tejidos; la relevancia depende del contexto clínico. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No aplica un rango numérico; se describen estructuras y hallazgos. Enfermedades relacionadas: Apendicitis, cálculos renales, diverticulitis, obstrucción intestinal y tumores abdominales. Especialidad relacionada: Radiología, gastroenterología, cirugía o urología. Exámenes relacionados: Ecografía abdominal, ecografía pélvica y creatinina sérica.",
   "sintomas": [
@@ -20,7 +20,7 @@
     "Sigue instrucciones sobre ayuno y contraste oral o intravenoso. Informa embarazo, alergias, enfermedad renal, diabetes y medicamentos."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor abdominal o pélvico persistente, fiebre sin causa clara, masa, traumatismo o alteraciones previas.",
-  "senales_alarma": "Busca atención urgente ante dificultad intensa para respirar, dolor de pecho, desmayo, debilidad súbita, confusión, sangrado importante, reacción alérgica o empeoramiento rápido. Un informe aislado no sustituye una evaluación clínica.",
+  "senales_alarma": "Durante o después de Tomografía computarizada de abdomen y pelvis, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
     "Sigue instrucciones sobre ayuno y contraste oral o intravenoso. Informa embarazo, alergias, enfermedad renal, diabetes y medicamentos.",
@@ -86,5 +86,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

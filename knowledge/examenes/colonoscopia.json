@@ -22,7 +22,7 @@
     "Informa anticoagulantes, diabetes, embarazo y enfermedades relevantes; organiza acompañante si habrá sedación."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede indicarse por edad y riesgo de tamizaje, sangre en heces, anemia, cambios persistentes del hábito intestinal o seguimiento de pólipos.",
-  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "senales_alarma": "Después de la colonoscopia, busca atención urgente si presentas dolor abdominal intenso o creciente, abdomen muy distendido, fiebre, vómitos persistentes, mareo intenso, desmayo o sangrado rectal abundante o que no se detiene.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

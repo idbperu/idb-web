@@ -3,7 +3,7 @@
   "slug": "radiografia-de-torax",
   "titulo": "Radiografía de tórax",
   "tipo": "examen",
-  "categoria": "Diagnóstico por imágenes",
+  "categoria": "Imagenología",
   "descripcion": "¿Qué es? Produce habitualmente proyecciones frontal y lateral del pecho. ¿Cómo se realiza? De pie o sentado, se apoya el tórax en el detector y se contiene la respiración unos segundos mientras se toman las imágenes. Duración: Suele completarse en unos 10 a 15 minutos; la exposición dura una fracción de segundo. ¿Produce dolor o molestias? No duele; mantener la posición puede resultar incómodo.",
   "respuesta_rapida": "Estudio rápido que usa una dosis pequeña de rayos X para obtener imágenes del corazón, pulmones, vías respiratorias, vasos y huesos del tórax.",
   "para_que_sirve": "¿Para qué sirve? Ayuda a investigar síntomas respiratorios, infecciones, lesiones, líquido, tamaño cardíaco y posición de dispositivos. ¿Cuándo se solicita? Puede solicitarse ante tos persistente, fiebre, falta de aire, dolor torácico, traumatismo o antes de ciertos procedimientos.",
@@ -22,7 +22,7 @@
     "Informa si existe posibilidad de embarazo."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse ante tos persistente, fiebre, falta de aire, dolor torácico, traumatismo o antes de ciertos procedimientos.",
-  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "senales_alarma": "Radiografía de tórax suele ser seguro. Busca atención urgente si el síntoma que motivó el estudio se acompaña de dificultad respiratoria, dolor intenso, desmayo, debilidad súbita, confusión, sangrado importante o empeoramiento rápido; no esperes el informe.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

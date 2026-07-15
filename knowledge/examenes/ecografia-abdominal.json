@@ -3,7 +3,7 @@
   "slug": "ecografia-abdominal",
   "titulo": "Ecografía abdominal",
   "tipo": "examen",
-  "categoria": "Diagnóstico por imágenes",
+  "categoria": "Imagenología",
   "descripcion": "¿Qué es? Permite examinar hígado, vesícula, vías biliares, páncreas, bazo, riñones, aorta y otras estructuras según la indicación. ¿Cómo se realiza? Se aplica gel sobre el abdomen y se desplaza un transductor sobre la piel para obtener imágenes en tiempo real. Duración: Suele durar alrededor de 20 a 30 minutos. ¿Produce dolor o molestias? Generalmente es indolora; la presión del transductor puede molestar en una zona sensible.",
   "respuesta_rapida": "Examen sin radiación que usa ondas de sonido para observar órganos y vasos del abdomen.",
   "para_que_sirve": "¿Para qué sirve? Ayuda a investigar dolor, hinchazón, alteraciones de laboratorio, cálculos, masas o cambios de órganos. ¿Cuándo se solicita? Se solicita ante dolor abdominal, ictericia, hallazgos en análisis, sospecha de cálculos o seguimiento de enfermedades abdominales.",
@@ -22,7 +22,7 @@
     "Usa ropa cómoda y confirma instrucciones específicas."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante dolor abdominal, ictericia, hallazgos en análisis, sospecha de cálculos o seguimiento de enfermedades abdominales.",
-  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "senales_alarma": "Ecografía abdominal no suele producir complicaciones. Busca atención urgente si el dolor, sangrado, dificultad respiratoria, desmayo u otro síntoma que motivó el examen se vuelve intenso o empeora rápidamente; no esperes el informe para pedir ayuda.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

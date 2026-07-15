@@ -22,7 +22,7 @@
     "Informa ejercicio intenso, traumatismos, inyecciones intramusculares y medicamentos."
   ],
   "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se utiliza en situaciones seleccionadas, como sospecha de reinfarto o cuando la troponina no está disponible, según protocolo.",
-  "senales_alarma": "Dolor de pecho, falta de aire, sudor frío, desmayo o deterioro súbito requieren atención de emergencia; no esperes el resultado para buscar ayuda.",
+  "senales_alarma": "Después de la toma de muestra para CK-MB, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }

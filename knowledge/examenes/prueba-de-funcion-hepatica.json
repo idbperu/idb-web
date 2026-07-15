@@ -3,7 +3,7 @@
   "slug": "prueba-de-funcion-hepatica",
   "titulo": "Prueba de función hepática",
   "tipo": "examen",
-  "categoria": "Gastroenterología y hepatología",
+  "categoria": "Gastroenterología",
   "descripcion": "¿Qué es? Puede incluir ALT, AST, fosfatasa alcalina, GGT, bilirrubina, albúmina y proteínas totales. ¿Cómo se realiza? Un profesional obtiene una pequeña muestra de una vena del brazo y la envía al laboratorio. Duración: La toma suele durar menos de cinco minutos. ¿Produce dolor o molestias? Puede sentirse un pinchazo breve.",
   "respuesta_rapida": "Panel de sangre que mide enzimas, proteínas y bilirrubina para buscar lesión hepática y valorar algunas funciones del hígado.",
   "para_que_sirve": "¿Para qué sirve? Ayuda a detectar, diferenciar o vigilar enfermedades del hígado y efectos de medicamentos. ¿Cuándo se solicita? Se solicita ante ictericia, orina oscura, dolor abdominal, náuseas, exposición a hepatitis, consumo de alcohol o tratamientos que pueden afectar el hígado.",
@@ -22,7 +22,7 @@
     "Informa alcohol, medicamentos, hierbas y suplementos; no los suspendas sin indicación."
   ],
   "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante ictericia, orina oscura, dolor abdominal, náuseas, exposición a hepatitis, consumo de alcohol o tratamientos que pueden afectar el hígado.",
-  "senales_alarma": "Busca atención urgente si presentas dificultad intensa para respirar, dolor de pecho, pérdida de conciencia, sangrado importante, debilidad súbita, confusión, reacción alérgica o empeoramiento rápido. Un resultado aislado sin síntomas no sustituye una evaluación clínica.",
+  "senales_alarma": "Después de la toma de muestra para Prueba de función hepática, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
   "precauciones": [
     "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
     "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
@@ -94,5 +94,5 @@
     }
   ],
   "ultima_revision": "2026-07",
-  "version": "1.0"
+  "version": "1.1"
 }
