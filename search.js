@@ -724,6 +724,11 @@
     return readyPromise;
   }
 
+  async function getSearchIndexRecords(indexUrl = DEFAULT_INDEX_URL) {
+    await loadSearchIndex(indexUrl);
+    return searchIndex;
+  }
+
   function getKnowledgeSources() {
     return {
       root: KNOWLEDGE_BASE_ROOT,
@@ -989,22 +994,15 @@
     return TYPE_ICONS[normalizeText(type)] || "🔎";
   }
 
-  function applyResultDetailStyles(element, styles) {
-    Object.entries(styles).forEach(([property, value]) => {
-      element.style[property] = value;
-    });
-  }
-
-  function applyResultsPanelStyles(resultsElement) {
-    if (!resultsElement) {
-      return;
-    }
-
-    applyResultDetailStyles(resultsElement, {
-      maxHeight: "min(430px, 58vh)",
-      overflowY: "auto",
-      overscrollBehavior: "contain"
-    });
+  function formatSearchType(type) {
+    const normalized = normalizeText(type);
+    const labels = {
+      sintoma: "Síntoma",
+      enfermedad: "Enfermedad",
+      examen: "Examen",
+      medicamento: "Medicamento"
+    };
+    return labels[normalized] || "Información clínica";
   }
 
   function readSearchHistory() {
@@ -1057,6 +1055,9 @@
   function selectSearchResult(record, context = {}) {
     const title = record?.titulo || "";
     saveSearchTerm(title, record);
+    if (context.input && context.resultsElement) {
+      closeResultsPanel(context.input, context.resultsElement);
+    }
 
     if (context.preserveQuery && context.input?.value?.trim()) {
       const resolved = resolveSearchQuery(context.input.value.trim(), { limit: context.limit || 8 });
@@ -1097,46 +1098,21 @@
         selectSearchResult(record, context);
       }
     });
-    applyResultDetailStyles(item, {
-      cursor: "pointer",
-      gap: "5px",
-      minHeight: "82px"
-    });
-
     const title = document.createElement("strong");
     title.className = "medical-search-result__title";
     title.textContent = record.titulo || "Resultado";
 
-    item.append(title);
+    const meta = document.createElement("span");
+    meta.className = "medical-search-result__meta";
+    meta.textContent = formatSearchType(record.tipo);
+
+    item.append(title, meta);
 
     if (record.description) {
       const description = document.createElement("span");
       description.className = "medical-search-result__description";
       description.textContent = record.description;
-      applyResultDetailStyles(description, {
-        color: "#5f6f68",
-        display: "-webkit-box",
-        fontSize: ".78rem",
-        lineHeight: "1.35",
-        overflow: "hidden",
-        WebkitBoxOrient: "vertical",
-        WebkitLineClamp: "2"
-      });
       item.append(description);
-    }
-
-    if (record.fuente) {
-      const source = document.createElement("span");
-      source.className = "medical-search-result__source";
-      source.textContent = `Fuente: ${record.fuente}`;
-      applyResultDetailStyles(source, {
-        color: "#7a8781",
-        fontSize: ".68rem",
-        fontWeight: "700",
-        lineHeight: "1.25",
-        marginTop: "1px"
-      });
-      item.append(source);
     }
 
     return item;
@@ -1162,7 +1138,7 @@
 
   function renderResults(resultsElement, results, vitaUrl = DEFAULT_VITA_URL, context = {}) {
     resultsElement.innerHTML = "";
-    applyResultsPanelStyles(resultsElement);
+    resultsElement.dataset.resultCount = String(results.length);
 
     if (!results.length) {
       renderEmptyState(resultsElement, vitaUrl);
@@ -1190,61 +1166,6 @@
     input.setAttribute("aria-expanded", "false");
   }
 
-  function enhanceClearButton(input, resultsElement) {
-    if (!input || !resultsElement || input.dataset.medicalClearEnhanced === "true") {
-      return;
-    }
-
-    const parent = input.parentElement;
-    if (!parent) return;
-
-    input.dataset.medicalClearEnhanced = "true";
-    if (getComputedStyle(parent).position === "static") {
-      parent.style.position = "relative";
-    }
-
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "medical-search-clear";
-    button.setAttribute("aria-label", "Limpiar búsqueda");
-    button.textContent = "×";
-    applyResultDetailStyles(button, {
-      alignItems: "center",
-      background: "rgba(255, 255, 255, .94)",
-      border: "1px solid rgba(42, 64, 55, .16)",
-      borderRadius: "999px",
-      color: "#53645c",
-      cursor: "pointer",
-      display: "none",
-      fontSize: "1.1rem",
-      fontWeight: "800",
-      height: "28px",
-      justifyContent: "center",
-      lineHeight: "1",
-      position: "absolute",
-      right: "96px",
-      top: "50%",
-      transform: "translateY(-50%)",
-      width: "28px",
-      zIndex: "4"
-    });
-
-    const syncVisibility = () => {
-      button.style.display = normalizeText(input.value) ? "flex" : "none";
-    };
-
-    button.addEventListener("click", () => {
-      input.value = "";
-      closeResultsPanel(input, resultsElement);
-      syncVisibility();
-      input.focus();
-    });
-    input.addEventListener("input", syncVisibility);
-    input.addEventListener("search", syncVisibility);
-    parent.append(button);
-    syncVisibility();
-  }
-
   function renderInteractiveSearch(input, resultsElement, options = {}) {
     const query = input.value.trim();
 
@@ -1253,7 +1174,7 @@
       return;
     }
 
-    const limit = Number.isFinite(options.limit) ? options.limit : 8;
+    const limit = Number.isFinite(options.limit) ? options.limit : 12;
     const vitaUrl = options.vitaUrl || DEFAULT_VITA_URL;
     const results = searchMedicalIndex(query, { limit });
     resultsElement.dataset.searchEngine = lastSearchDiagnostic.engine;
@@ -1266,107 +1187,90 @@
     activateResultsPanel(input, resultsElement);
   }
 
-  function enhanceHomeMedicalSearch() {
-    const input = document.querySelector("#medical-search-input");
-    const resultsElement = document.querySelector("#medical-search-results");
-    const form = input?.closest("form");
-
-    if (!input || !resultsElement || input.dataset.medicalSearchEnhanced === "true") {
-      return;
-    }
-
-    input.dataset.medicalSearchEnhanced = "true";
-    enhanceClearButton(input, resultsElement);
-
-    const scheduleRender = () => {
-      window.setTimeout(() => {
-        renderInteractiveSearch(input, resultsElement);
-      }, 0);
-    };
-
-    loadSearchIndex().then(() => {
-      const submitFirstResult = () => {
-        const query = input.value.trim();
-        const results = searchMedicalIndex(query, { limit: 8 });
-
-        if (!normalizeText(query)) {
-          closeResultsPanel(input, resultsElement);
-          return;
-        }
-
-        if (results.length) {
-          selectSearchResult(results[0], {
-            input,
-            preserveQuery: true,
-            resultsElement,
-            limit: 8,
-            vitaUrl: DEFAULT_VITA_URL
-          });
-          return;
-        }
-
-        renderResults(resultsElement, [], DEFAULT_VITA_URL, {
-          input,
-          resultsElement,
-          limit: 8,
-          vitaUrl: DEFAULT_VITA_URL
-        });
-        activateResultsPanel(input, resultsElement);
-      };
-
-      ["input", "search", "keyup", "change"].forEach((eventName) => {
-        input.addEventListener(eventName, scheduleRender);
-      });
-
-      form?.addEventListener("submit", (event) => {
-        event.preventDefault();
-        submitFirstResult();
-      });
-
-      input.addEventListener("keydown", (event) => {
-        if (event.key !== "Enter") {
-          return;
-        }
-
-        event.preventDefault();
-        submitFirstResult();
-      });
-    });
-  }
-
   function attachMedicalSearch(options = {}) {
+    const root = options.root || document.querySelector("[data-medical-search]");
     const inputSelector = options.inputSelector || DEFAULT_SELECTORS.input;
     const resultsSelector = options.resultsSelector || DEFAULT_SELECTORS.results;
-    const input = options.input || document.querySelector(inputSelector);
-    const resultsElement = options.resultsElement || document.querySelector(resultsSelector);
+    const input = options.input || root?.querySelector(inputSelector) || document.querySelector(inputSelector);
+    const resultsElement = options.resultsElement || root?.querySelector(resultsSelector) || document.querySelector(resultsSelector);
+    const form = options.form || input?.closest("form");
 
     if (!input || !resultsElement) {
       return null;
     }
 
-    const limit = Number.isFinite(options.limit) ? options.limit : 8;
+    if (input.dataset.medicalSearchEnhanced === "true") {
+      return { input, resultsElement, search: (query) => searchMedicalIndex(query, { limit: options.limit || 12 }) };
+    }
+
+    input.dataset.medicalSearchEnhanced = "true";
+    const limit = Number.isFinite(options.limit) ? options.limit : 12;
     const vitaUrl = options.vitaUrl || DEFAULT_VITA_URL;
+    const debounceMs = Number.isFinite(options.debounceMs) ? options.debounceMs : 120;
+    let debounceTimer = 0;
 
-    loadSearchIndex(options.indexUrl || DEFAULT_INDEX_URL).then(() => {
-      const updateResults = () => {
-        const query = input.value;
-        const results = searchMedicalIndex(query, { limit });
+    const updateResults = () => {
+      debounceTimer = 0;
+      renderInteractiveSearch(input, resultsElement, { limit, vitaUrl });
+    };
 
-        if (!normalizeText(query)) {
-          resultsElement.innerHTML = "";
-          return;
-        }
+    const scheduleResults = () => {
+      window.clearTimeout(debounceTimer);
+      if (!normalizeText(input.value)) {
+        closeResultsPanel(input, resultsElement);
+        return;
+      }
+      debounceTimer = window.setTimeout(updateResults, debounceMs);
+    };
 
-        renderResults(resultsElement, results, vitaUrl, {
+    const submitFirstResult = () => {
+      window.clearTimeout(debounceTimer);
+      const query = input.value.trim();
+      if (!normalizeText(query)) {
+        closeResultsPanel(input, resultsElement);
+        return;
+      }
+
+      const results = searchMedicalIndex(query, { limit });
+      if (results.length) {
+        selectSearchResult(results[0], {
           input,
+          preserveQuery: true,
           resultsElement,
           limit,
           vitaUrl
         });
-      };
+        return;
+      }
 
-      input.addEventListener("input", updateResults);
-      updateResults();
+      renderResults(resultsElement, [], vitaUrl, { input, resultsElement, limit, vitaUrl });
+      activateResultsPanel(input, resultsElement);
+    };
+
+    loadSearchIndex(options.indexUrl || DEFAULT_INDEX_URL).then(() => {
+      input.addEventListener("input", scheduleResults);
+      input.addEventListener("search", scheduleResults);
+      input.addEventListener("focus", () => {
+        if (normalizeText(input.value)) updateResults();
+      });
+      input.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          window.clearTimeout(debounceTimer);
+          closeResultsPanel(input, resultsElement);
+          return;
+        }
+        if (event.key === "Enter") {
+          event.preventDefault();
+          submitFirstResult();
+        }
+      });
+      form?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        submitFirstResult();
+      });
+      document.addEventListener("pointerdown", (event) => {
+        if (!root?.contains(event.target)) closeResultsPanel(input, resultsElement);
+      });
     });
 
     return {
@@ -1379,8 +1283,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    attachMedicalSearch();
-    enhanceHomeMedicalSearch();
+    document.querySelectorAll("[data-medical-search]").forEach((root) => attachMedicalSearch({ root }));
   });
 
   registerDefaultSearchSources();
@@ -1399,6 +1302,7 @@
     medicalQueryCandidates,
     normalizeQueryIntent: applyQueryCorrections,
     normalize: normalizeText,
+    records: getSearchIndexRecords,
     resolve: resolveSearchQuery,
     saveSearch: saveSearchTerm,
     semantic: analyzeSemanticQuery,

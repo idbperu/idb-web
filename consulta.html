@@ -61,35 +61,7 @@
     }
     .brand { display: inline-flex; align-items: center; }
     .brand-logo { width: 112px; height: auto; }
-    .top-search {
-      position: relative;
-      display: flex;
-      align-items: center;
-      min-height: 44px;
-      padding: 0 8px 0 18px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: #fff;
-      box-shadow: 0 8px 24px rgba(16, 35, 63, .04);
-    }
-    .top-search input {
-      width: 100%;
-      min-width: 0;
-      border: 0;
-      outline: 0;
-      color: var(--ink);
-      background: transparent;
-    }
-    .top-search button {
-      min-width: 78px;
-      height: 34px;
-      border: 0;
-      border-radius: 999px;
-      color: #fff;
-      background: var(--blue);
-      font-weight: 800;
-      cursor: pointer;
-    }
+    .header-search-slot { min-width: 0; }
     .nav {
       display: flex;
       align-items: center;
@@ -1115,7 +1087,7 @@
 
     @media (max-width: 980px) {
       .header-inner { grid-template-columns: auto 1fr; }
-      .top-search { grid-column: 1 / -1; order: 3; margin-bottom: 12px; }
+      .header-search-slot { grid-column: 1 / -1; order: 3; margin-bottom: 12px; }
       .nav { justify-self: end; gap: 14px; }
       .medical-hero { grid-template-columns: 1fr; }
       .medical-image,
@@ -1154,7 +1126,7 @@
         overflow-x: auto;
         padding-bottom: 2px;
       }
-      .top-search { min-height: 42px; margin-bottom: 10px; }
+      .header-search-slot { margin-bottom: 10px; }
       .breadcrumb { padding-top: 18px; }
       .medical-hero { gap: 16px; padding-bottom: 20px; }
       h1 { font-size: clamp(2rem, 12vw, 3rem); }
@@ -1228,6 +1200,7 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="medical-search.css?v=20260715-2">
   <link rel="icon" type="image/svg+xml" href="assets/brand/idb-verified-master.svg?v=20260715">
 </head>
 <body>
@@ -1236,10 +1209,20 @@
       <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
         <img src="./imagenes/logo-idb.webp?v=20260715" alt="Instituto Digital de Bienestar" class="brand-logo" loading="lazy" decoding="async">
       </a>
-      <form class="top-search" role="search" aria-label="Buscar en IDB">
-        <input type="search" name="q" placeholder="Buscar síntomas, medicamentos o enfermedades" aria-label="Buscar tema de salud">
-        <button type="submit">Buscar</button>
-      </form>
+      <div class="header-search-slot">
+        <div class="idb-medical-search" data-medical-search>
+          <form class="idb-medical-search__form" role="search" aria-label="Búsqueda clínica IDB">
+            <input class="idb-medical-search__input" id="medical-search-input" data-medical-search-input type="search" name="q" aria-label="Buscar temas de bienestar" placeholder="Describe tu duda, síntoma o medicamento..." autocomplete="off" autocorrect="off" autocapitalize="sentences" spellcheck="true" inputmode="search" enterkeyhint="search" aria-controls="medical-search-results" aria-expanded="false">
+            <button class="idb-medical-search__submit" type="submit" aria-label="Buscar">
+              <svg class="idb-medical-search__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m20 20-3.5-3.5"></path>
+              </svg>
+            </button>
+          </form>
+          <div class="idb-medical-search__panel" id="medical-search-results" data-medical-search-results role="listbox" aria-label="Sugerencias clínicas" aria-live="polite"></div>
+        </div>
+      </div>
       <nav class="nav" aria-label="Navegación principal">
         <a href="index.html">Inicio</a>
         <a href="temas.html">Temas</a>
@@ -1300,7 +1283,7 @@
     </div>
   </footer>
 
-  <script src="search.js?v=20260715"></script>
+  <script src="search.js?v=20260715-2"></script>
   <script>
     const VITA_URL = "https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.";
     const KNOWLEDGE_CATEGORY_MAP = {
@@ -3185,7 +3168,7 @@
       const related = calculateRelated(records, record);
       const displayTitle = displayRecordTitle(record, query || "Consulta");
       document.title = `${displayTitle} | Instituto Digital de Bienestar`;
-      document.querySelector(".top-search input").value = displayTitle || "";
+      document.querySelector("[data-medical-search-input]").value = displayTitle || "";
 
       app.innerHTML = "";
 
@@ -3306,7 +3289,7 @@
 
     function renderEmpty(query) {
       const app = document.querySelector("#consulta-app");
-      document.querySelector(".top-search input").value = query ? humanTitle(query) : "";
+      document.querySelector("[data-medical-search-input]").value = query ? humanTitle(query) : "";
       app.innerHTML = "";
       const wrap = document.createElement("section");
       wrap.className = "wrap empty-state";
@@ -3337,8 +3320,9 @@
         const canonical = canonicalQueryFromResolved(unifiedResolved, query);
         resolvedContextOverride = canonical.context || "";
         const effectiveQuery = canonical.slug || query;
-        const response = await fetch("search-index.json");
-        const records = await response.json();
+        const records = typeof window.IDBMedicalSearch?.records === "function"
+          ? await window.IDBMedicalSearch.records()
+          : [];
         const fallbackRecord = unifiedResolved?.record || (Array.isArray(records) ? findRecord(records, effectiveQuery) : null);
         const category = getKnowledgeCategory(fallbackRecord);
         const slug = canonical.slug || slugify(effectiveQuery) || slugify(fallbackRecord?.titulo);
@@ -3356,22 +3340,6 @@
         renderEmpty(query);
       }
     }
-
-    document.querySelector(".top-search")?.addEventListener("submit", async (event) => {
-      event.preventDefault();
-      const input = event.currentTarget.querySelector("input");
-      const value = input?.value?.trim() || "";
-      if (!value) return;
-
-      const unifiedResolved = await resolveWithUnifiedSearch(value);
-      if (unifiedResolved?.url) {
-        window.location.href = unifiedResolved.url;
-        return;
-      }
-
-      const next = slugify(value);
-      if (next) window.location.href = consultationUrl(next);
-    });
 
     loadConsultation();
   </script>
