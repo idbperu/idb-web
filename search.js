@@ -1,6 +1,8 @@
 (function () {
   const DEFAULT_INDEX_URL = "search-index.json";
   const SEARCH_DICTIONARY_URL = "knowledge/catalogos/search-dictionary.json";
+  const CLINICAL_DICTIONARY_URL = "knowledge/catalogos/clinical-search-dictionary.json";
+  const CLINICAL_ENGINE_MODULE_URL = "./clinical-search-engine.mjs";
   const DEFAULT_VITA_URL = "https://wa.me/?text=Hola%20VITA%2C%20necesito%20orientaci%C3%B3n%20sobre%20bienestar.";
   const VITA_OTC_TEMPLATES_URL = "knowledge/catalogos/vita-otc-respuestas.json";
   const DEFAULT_SELECTORS = {
@@ -30,6 +32,9 @@
   let readyPromise = null;
   let searchDictionaryPromise = null;
   let searchDictionary = null;
+  let clinicalEnginePromise = null;
+  let clinicalEngine = null;
+  let clinicalEngineLoadMs = 0;
   let vitaTemplatesPromise = null;
 
   const searchSources = new Map();
@@ -279,6 +284,33 @@
         });
     }
     return searchDictionaryPromise;
+  }
+
+  async function loadClinicalEngine(records = searchIndex, options = {}) {
+    if (!clinicalEnginePromise) {
+      const startedAt = performance.now();
+      const dictionaryUrl = options.dictionaryUrl || CLINICAL_DICTIONARY_URL;
+      const moduleUrl = options.moduleUrl || CLINICAL_ENGINE_MODULE_URL;
+      clinicalEnginePromise = Promise.all([
+        fetch(dictionaryUrl).then((response) => {
+          if (!response.ok) throw new Error(`Clinical dictionary unavailable: ${response.status}`);
+          return response.json();
+        }),
+        import(moduleUrl)
+      ])
+        .then(([dictionary, module]) => {
+          clinicalEngine = module.createClinicalSearchEngine(dictionary, records, {
+            loadMs: performance.now() - startedAt
+          });
+          clinicalEngineLoadMs = performance.now() - startedAt;
+          return clinicalEngine;
+        })
+        .catch(() => {
+          clinicalEngine = null;
+          return null;
+        });
+    }
+    return clinicalEnginePromise;
   }
 
   function getSearchDictionaryEntries() {
@@ -678,7 +710,10 @@
     if (!readyPromise) {
       readyPromise = loadSearchSources({ indexUrl }).then((records) => {
         searchIndex = records;
-        return loadSearchDictionary().then(() => searchIndex);
+        return Promise.all([
+          loadSearchDictionary(),
+          loadClinicalEngine(searchIndex)
+        ]).then(() => searchIndex);
       });
     }
 
@@ -796,7 +831,7 @@
     return partial ? partial.record : null;
   }
 
-  function searchMedicalIndex(query, options = {}) {
+  function searchLegacyMedicalIndex(query, options = {}) {
     const normalizedQuery = normalizeQueryText(query);
     const limit = Number.isFinite(options.limit) ? options.limit : 8;
     const intent = detectQueryIntent(normalizedQuery);
@@ -837,6 +872,15 @@
       .map((entry) => entry.record);
   }
 
+  function searchMedicalIndex(query, options = {}) {
+    const fallbackResults = searchLegacyMedicalIndex(query, options);
+    if (!clinicalEngine) return fallbackResults;
+    return clinicalEngine.search(query, {
+      limit: Number.isFinite(options.limit) ? options.limit : 8,
+      fallbackResults
+    });
+  }
+
   function canonicalContextParam(context) {
     return context?.canonical && context.canonical !== "general" ? context.canonical : "";
   }
@@ -852,12 +896,18 @@
     const limit = Number.isFinite(options.limit) ? options.limit : 8;
     const context = detectQueryContext(query);
     const semantic = analyzeSemanticQuery(query);
-    const rankedRecord = searchMedicalIndex(query, { limit })[0] || null;
+    const rankedResults = searchMedicalIndex(query, { limit });
+    const rankedRecord = rankedResults[0] || null;
     const exactRecord = findRecord(searchIndex, query);
     const shouldTrustSemanticRanking = semantic.matches.length || semantic.negatedMatches.length || semantic.urgencyMatches.length || semantic.intentMatches.length;
-    const record = shouldTrustSemanticRanking ? (rankedRecord || exactRecord) : (exactRecord || rankedRecord);
+    const legacyRecord = shouldTrustSemanticRanking ? (rankedRecord || exactRecord) : (exactRecord || rankedRecord);
+    const enhanced = clinicalEngine
+      ? clinicalEngine.resolve(query, { limit, fallbackResults: rankedResults })
+      : null;
+    const record = enhanced?.primaryResult || legacyRecord;
     const slug = canonicalRecordSlug(record) || slugify(stripContextLanguage(applyQueryCorrections(query)));
     const contextParam = canonicalContextParam(context);
+    const relatedResults = enhanced?.relatedResults || rankedResults.filter((item) => item !== record).slice(0, Math.max(0, limit - 1));
     return {
       query,
       record,
@@ -866,7 +916,17 @@
       visualCategory: "",
       prioridad: record?.prioridad || 4,
       context: contextParam || "general",
-      url: slug ? `consulta.html?q=${encodeURIComponent(slug)}${contextParam ? `&context=${encodeURIComponent(contextParam)}` : ""}` : ""
+      url: slug ? `consulta.html?q=${encodeURIComponent(slug)}${contextParam ? `&context=${encodeURIComponent(contextParam)}` : ""}` : "",
+      intent: enhanced?.intent || { primary: detectQueryIntent(query) || "consulta_general", secondary: [] },
+      concepts: enhanced?.concepts || [],
+      primaryResult: record,
+      relatedResults,
+      exams: enhanced?.exams || relatedResults.filter((item) => normalizeText(item?.tipo) === "examen"),
+      medications: enhanced?.medications || relatedResults.filter((item) => normalizeText(item?.tipo) === "medicamento"),
+      rco: enhanced?.rco || { version: "1.0", fallback: true, urgency: [] },
+      suggestions: enhanced?.suggestions || relatedResults.slice(0, 3),
+      explanation: enhanced?.explanation || ["Se utilizó el motor de búsqueda compatible existente."],
+      confidence: enhanced?.confidence || { score: record ? 0.5 : 0, level: record ? "media" : "baja", meaning: "Puntuación de recuperación, no probabilidad médica ni diagnóstica." }
     };
   }
 
@@ -886,12 +946,22 @@
 
     return {
       query,
-      engine: "RCO",
+      engine: resolved.rco?.version === "2.0" ? "RCO 2.0" : "RCO",
       mode: "conversational-layer",
       resolved,
       record: resolved.record || null,
       url: resolved.url,
       templates,
+      intent: resolved.intent,
+      concepts: resolved.concepts,
+      primaryResult: resolved.primaryResult,
+      relatedResults: resolved.relatedResults,
+      exams: resolved.exams,
+      medications: resolved.medications,
+      rco: resolved.rco,
+      suggestions: resolved.suggestions,
+      explanation: resolved.explanation,
+      confidence: resolved.confidence,
       open() {
         if (resolved.url) window.location.href = resolved.url;
       }
@@ -1306,6 +1376,7 @@
     interpretQuery: interpretMedicalQuery,
     load: loadSearchIndex,
     loadDictionary: loadSearchDictionary,
+    loadClinicalEngine,
     medicalQueryCandidates,
     normalizeQueryIntent: applyQueryCorrections,
     normalize: normalizeText,
@@ -1313,6 +1384,12 @@
     saveSearch: saveSearchTerm,
     semantic: analyzeSemanticQuery,
     search: searchMedicalIndex,
+    metrics() {
+      return {
+        dictionaryLoadMs: clinicalEngineLoadMs,
+        ...(clinicalEngine?.metrics?.() || {})
+      };
+    },
     vita: resolveVitaClinicalQuery
   };
 
