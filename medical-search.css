@@ -77,8 +77,9 @@
   top: calc(100% + 10px);
   left: 0;
   right: 0;
+  z-index: 1000;
   display: none;
-  max-height: min(536px, 58dvh);
+  max-height: min(404px, calc(100dvh - 96px));
   overflow: hidden auto;
   overscroll-behavior: contain;
   border: 1px solid #dce6ef;
@@ -91,6 +92,10 @@
 
 .idb-medical-search__panel.active {
   display: block;
+}
+
+.hero:has(.idb-medical-search__panel.active) {
+  overflow: visible;
 }
 
 .medical-search-results-list {
@@ -189,7 +194,7 @@
 
   .idb-medical-search__panel {
     top: calc(100% + 8px);
-    max-height: min(406px, 52dvh);
+    max-height: min(386px, calc(100dvh - 88px));
     border-radius: 18px;
   }
 
