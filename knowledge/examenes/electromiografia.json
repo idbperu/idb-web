@@ -1,0 +1,84 @@
+{
+  "id": "examen-electromiografia",
+  "slug": "electromiografia",
+  "titulo": "Electromiografía",
+  "tipo": "examen",
+  "categoria": "Neurología",
+  "descripcion": "¿Qué es? Evalúa la actividad eléctrica muscular y, con frecuencia, la velocidad con que los nervios conducen señales. ¿Cómo se realiza? Se aplican pequeños estímulos eléctricos sobre nervios y se introduce una aguja fina en músculos seleccionados para registrar actividad. Duración y molestias: 30 a 90 minutos. Los estímulos y agujas producen molestias breves y puede quedar dolor muscular leve.",
+  "respuesta_rapida": "Evalúa la actividad eléctrica muscular y, con frecuencia, la velocidad con que los nervios conducen señales. Sirve para distinguir trastornos de nervios, raíces, unión neuromuscular y músculos.",
+  "para_que_sirve": "¿Para qué sirve? Distinguir trastornos de nervios, raíces, unión neuromuscular y músculos. ¿Cuándo se solicita? Debilidad, hormigueo, adormecimiento, calambres o dolor con sospecha neuromuscular.",
+  "causas": "Interpretación general (orientativa): El especialista analiza amplitud, velocidad y patrones musculares para localizar y caracterizar la alteración; se integra con examen neurológico. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: Los valores dependen de nervio, músculo, edad, temperatura, equipo y laboratorio; se usan rangos del centro. Enfermedades relacionadas: Neuropatía periférica, síndrome del túnel carpiano, radiculopatía y miopatía. Especialidad relacionada: Neurología, medicina física y rehabilitación. Exámenes relacionados: Resonancia magnética de columna lumbar y análisis de glucosa.",
+  "sintomas": [
+    "hormigueo",
+    "debilidad muscular",
+    "adormecimiento"
+  ],
+  "factores_riesgo": [
+    "Pequeños moretones, sangrado, dolor o infección son infrecuentes; existe precaución especial con anticoagulación y ciertos dispositivos."
+  ],
+  "prevencion": [
+    "Informa anticoagulantes, marcapasos o desfibrilador y trastornos de sangrado. Evita cremas en la piel y usa ropa cómoda."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Debilidad, hormigueo, adormecimiento, calambres o dolor con sospecha neuromuscular.",
+  "senales_alarma": "Después de la electromiografía, consulta con urgencia si el sangrado en una zona de punción no cede, aumenta rápidamente un hematoma, aparece dolor intenso, debilidad nueva, enrojecimiento progresivo, secreción o fiebre.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Informa anticoagulantes, marcapasos o desfibrilador y trastornos de sangrado. Evita cremas en la piel y usa ropa cómoda.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Pequeños moretones, sangrado, dolor o infección son infrecuentes; existe precaución especial con anticoagulación y ciertos dispositivos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Electromiografía?",
+      "respuesta": "Evalúa la actividad eléctrica muscular y, con frecuencia, la velocidad con que los nervios conducen señales."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Informa anticoagulantes, marcapasos o desfibrilador y trastornos de sangrado. Evita cremas en la piel y usa ropa cómoda."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se aplican pequeños estímulos eléctricos sobre nervios y se introduce una aguja fina en músculos seleccionados para registrar actividad. 30 a 90 minutos. Los estímulos y agujas producen molestias breves y puede quedar dolor muscular leve."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "Pequeños moretones, sangrado, dolor o infección son infrecuentes; existe precaución especial con anticoagulación y ciertos dispositivos."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El especialista analiza amplitud, velocidad y patrones musculares para localizar y caracterizar la alteración; se integra con examen neurológico. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-hormigueo",
+      "slug": "hormigueo",
+      "categoria": "Relacionados",
+      "titulo": "Hormigueo"
+    },
+    {
+      "id": "rel-adormecimiento",
+      "slug": "adormecimiento",
+      "categoria": "Relacionados",
+      "titulo": "Adormecimiento"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "nih-emg",
+      "organizacion": "MedlinePlus (NIH/NLM)",
+      "titulo": "Electromyography (EMG) and Nerve Conduction Studies",
+      "url": "https://medlineplus.gov/lab-tests/electromyography-emg-and-nerve-conduction-studies/",
+      "tipo": "Información médica oficial para pacientes"
+    },
+    {
+      "id": "ninds-neuropathy",
+      "organizacion": "NIH/NINDS",
+      "titulo": "Peripheral Neuropathy",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/peripheral-neuropathy",
+      "tipo": "Información neurológica oficial"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

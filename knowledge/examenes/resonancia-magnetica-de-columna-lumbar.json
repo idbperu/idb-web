@@ -1,0 +1,78 @@
+{
+  "id": "examen-resonancia-magnetica-de-columna-lumbar",
+  "slug": "resonancia-magnetica-de-columna-lumbar",
+  "titulo": "Resonancia magnética de columna lumbar",
+  "tipo": "examen",
+  "categoria": "Imagenología",
+  "descripcion": "¿Qué es? Usa campo magnético y radiofrecuencia para mostrar vértebras, discos, canal, médula distal y raíces nerviosas sin radiación ionizante. ¿Cómo se realiza? Acostado dentro del imán, permaneces inmóvil durante varias secuencias ruidosas; a veces se administra gadolinio. Duración y molestias: 30 a 60 minutos. No duele, aunque el ruido, la inmovilidad y el espacio cerrado pueden molestar.",
+  "respuesta_rapida": "Usa campo magnético y radiofrecuencia para mostrar vértebras, discos, canal, médula distal y raíces nerviosas sin radiación ionizante. Sirve para evaluar hernias discales, compresión nerviosa, estenosis, infección, tumor o cambios después de cirugía.",
+  "para_que_sirve": "¿Para qué sirve? Evaluar hernias discales, compresión nerviosa, estenosis, infección, tumor o cambios después de cirugía. ¿Cuándo se solicita? Dolor lumbar persistente con síntomas neurológicos, debilidad, alteración de esfínteres o hallazgos previos.",
+  "causas": "Interpretación general (orientativa): Se describen alineación, discos, canal y raíces; los cambios degenerativos pueden existir sin causar síntomas. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No aplica rango numérico; los hallazgos deben correlacionarse con examen neurológico. Enfermedades relacionadas: Hernia de disco lumbar, estenosis espinal, infección vertebral y compresión nerviosa. Especialidad relacionada: Radiología, traumatología, neurología o neurocirugía. Exámenes relacionados: Radiografía de columna y electromiografía.",
+  "sintomas": [
+    "dolor lumbar",
+    "hormigueo en piernas",
+    "debilidad en piernas"
+  ],
+  "factores_riesgo": [
+    "El campo magnético es peligroso para ciertos implantes u objetos. El gadolinio rara vez causa reacciones y requiere precaución renal."
+  ],
+  "prevencion": [
+    "Informa implantes, metal, embarazo, enfermedad renal y claustrofobia. Retira metal y sigue instrucciones sobre contraste o ayuno."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor lumbar persistente con síntomas neurológicos, debilidad, alteración de esfínteres o hallazgos previos.",
+  "senales_alarma": "Durante o después de Resonancia magnética de columna lumbar, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Informa implantes, metal, embarazo, enfermedad renal y claustrofobia. Retira metal y sigue instrucciones sobre contraste o ayuno.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: El campo magnético es peligroso para ciertos implantes u objetos. El gadolinio rara vez causa reacciones y requiere precaución renal."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Resonancia magnética de columna lumbar?",
+      "respuesta": "Usa campo magnético y radiofrecuencia para mostrar vértebras, discos, canal, médula distal y raíces nerviosas sin radiación ionizante."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Informa implantes, metal, embarazo, enfermedad renal y claustrofobia. Retira metal y sigue instrucciones sobre contraste o ayuno."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Acostado dentro del imán, permaneces inmóvil durante varias secuencias ruidosas; a veces se administra gadolinio. 30 a 60 minutos. No duele, aunque el ruido, la inmovilidad y el espacio cerrado pueden molestar."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "El campo magnético es peligroso para ciertos implantes u objetos. El gadolinio rara vez causa reacciones y requiere precaución renal."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "Se describen alineación, discos, canal y raíces; los cambios degenerativos pueden existir sin causar síntomas. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-dolor-lumbar",
+      "slug": "dolor-lumbar",
+      "categoria": "Relacionados",
+      "titulo": "Dolor lumbar"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "acr-spine-mri",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Spine MRI",
+      "url": "https://www.radiologyinfo.org/en/info/spinemr",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "acr-mri-safety",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "MRI Safety",
+      "url": "https://www.radiologyinfo.org/en/info/safety-mr",
+      "tipo": "Información radiológica para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

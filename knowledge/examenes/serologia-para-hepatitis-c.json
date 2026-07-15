@@ -1,0 +1,91 @@
+{
+  "id": "examen-serologia-para-hepatitis-c",
+  "slug": "serologia-para-hepatitis-c",
+  "titulo": "Serología para hepatitis C",
+  "tipo": "examen",
+  "categoria": "Infectología",
+  "descripcion": "¿Qué es? Detecta anticuerpos contra el virus de hepatitis C como prueba inicial de exposición. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Detecta anticuerpos contra el virus de hepatitis C como prueba inicial de exposición. Identifica personas que necesitan una prueba de ARN para confirmar infección activa.",
+  "para_que_sirve": "¿Para qué sirve? Identifica personas que necesitan una prueba de ARN para confirmar infección activa. ¿Cuándo se solicita? Se solicita en tamizaje de adultos y embarazo, exposición sanguínea, riesgo o alteraciones hepáticas.",
+  "causas": "Interpretación orientativa: Un anticuerpo reactivo indica exposición pasada o actual, no confirma infección activa; un ARN negativo puede significar infección resuelta o falso positivo. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Es cualitativa; la ventana y necesidad de ARN dependen del momento de exposición. Enfermedades relacionadas: Cirrosis, Higado graso, Hepatitis A. Especialidad relacionada: Infectología. Exámenes relacionados: Anticuerpos HCV, HCV RNA, pruebas hepáticas y evaluación de fibrosis.",
+  "sintomas": [
+    "fatiga",
+    "piel amarilla",
+    "orina oscura"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita en tamizaje de adultos y embarazo, exposición sanguínea, riesgo o alteraciones hepáticas.",
+  "senales_alarma": "Después de la toma de muestra para Serología para hepatitis C, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Serología para hepatitis C?",
+      "respuesta": "Detecta anticuerpos contra el virus de hepatitis C como prueba inicial de exposición."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Identifica personas que necesitan una prueba de ARN para confirmar infección activa."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un anticuerpo reactivo indica exposición pasada o actual, no confirma infección activa; un ARN negativo puede significar infección resuelta o falso positivo. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-higado-graso",
+      "slug": "higado-graso",
+      "categoria": "Relacionados",
+      "titulo": "Higado graso"
+    },
+    {
+      "id": "rel-hepatitis-a",
+      "slug": "hepatitis-a",
+      "categoria": "Relacionados",
+      "titulo": "Hepatitis A"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-hepatitis-testing",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Hepatitis Testing",
+      "url": "https://medlineplus.gov/lab-tests/hepatitis-testing/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "cdc-hcv-testing",
+      "organizacion": "CDC",
+      "titulo": "Clinical Screening and Diagnosis for Hepatitis C",
+      "url": "https://www.cdc.gov/hepatitis-c/hcp/diagnosis-testing/index.html",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

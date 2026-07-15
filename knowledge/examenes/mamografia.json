@@ -1,0 +1,71 @@
+{
+  "id": "examen-mamografia",
+  "slug": "mamografia",
+  "titulo": "Mamografía",
+  "tipo": "examen",
+  "categoria": "Imagenología",
+  "descripcion": "¿Qué es? Obtiene radiografías de baja dosis de cada mama para tamizaje o evaluación diagnóstica. ¿Cómo se realiza? Cada mama se coloca y comprime brevemente entre placas para obtener varias proyecciones. Duración y molestias: Unos 20 minutos. La compresión puede ser incómoda o dolorosa por segundos.",
+  "respuesta_rapida": "Obtiene radiografías de baja dosis de cada mama para tamizaje o evaluación diagnóstica. Sirve para detectar cáncer de mama antes de síntomas y estudiar bultos, secreción, cambios cutáneos o hallazgos previos.",
+  "para_que_sirve": "¿Para qué sirve? Detectar cáncer de mama antes de síntomas y estudiar bultos, secreción, cambios cutáneos o hallazgos previos. ¿Cuándo se solicita? Tamizaje según edad y riesgo individual, o evaluación de un síntoma mamario.",
+  "causas": "Interpretación general (orientativa): El informe usa categorías estandarizadas como BI-RADS para indicar hallazgos y recomendaciones; una llamada adicional no significa necesariamente cáncer. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No hay rango numérico; BI-RADS orienta conducta y seguimiento. Enfermedades relacionadas: Cáncer de mama, quistes, fibroadenoma y calcificaciones mamarias. Especialidad relacionada: Radiología mamaria, ginecología u oncología. Exámenes relacionados: Ecografía mamaria y resonancia magnética de mama.",
+  "sintomas": [
+    "bulto en la mama",
+    "secrecion por el pezon",
+    "cambios en la piel de la mama"
+  ],
+  "factores_riesgo": [
+    "Usa una dosis baja de radiación. Puede requerir imágenes adicionales; existen falsos positivos y falsos negativos."
+  ],
+  "prevencion": [
+    "No uses desodorante, talco o loción en mamas y axilas el día del examen. Informa embarazo, implantes, síntomas y estudios previos."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Tamizaje según edad y riesgo individual, o evaluación de un síntoma mamario.",
+  "senales_alarma": "La mamografía no suele causar complicaciones graves. Consulta si aparece dolor mamario intenso y persistente, lesión de la piel o un hematoma importante; busca atención urgente si el síntoma que motivó el estudio empeora rápidamente.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "No uses desodorante, talco o loción en mamas y axilas el día del examen. Informa embarazo, implantes, síntomas y estudios previos.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Usa una dosis baja de radiación. Puede requerir imágenes adicionales; existen falsos positivos y falsos negativos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Mamografía?",
+      "respuesta": "Obtiene radiografías de baja dosis de cada mama para tamizaje o evaluación diagnóstica."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "No uses desodorante, talco o loción en mamas y axilas el día del examen. Informa embarazo, implantes, síntomas y estudios previos."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Cada mama se coloca y comprime brevemente entre placas para obtener varias proyecciones. Unos 20 minutos. La compresión puede ser incómoda o dolorosa por segundos."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "Usa una dosis baja de radiación. Puede requerir imágenes adicionales; existen falsos positivos y falsos negativos."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El informe usa categorías estandarizadas como BI-RADS para indicar hallazgos y recomendaciones; una llamada adicional no significa necesariamente cáncer. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [],
+  "fuentes": [
+    {
+      "id": "acr-mammography",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Mammography",
+      "url": "https://www.radiologyinfo.org/en/info/mammo",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "nih-mammography",
+      "organizacion": "MedlinePlus (NIH/NLM)",
+      "titulo": "Mammography",
+      "url": "https://medlineplus.gov/mammography.html",
+      "tipo": "Información médica oficial para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

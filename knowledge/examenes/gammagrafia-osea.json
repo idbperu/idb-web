@@ -1,0 +1,71 @@
+{
+  "id": "examen-gammagrafia-osea",
+  "slug": "gammagrafia-osea",
+  "titulo": "Gammagrafía ósea",
+  "tipo": "examen",
+  "categoria": "Medicina Nuclear",
+  "descripcion": "¿Qué es? Usa una pequeña cantidad de radiotrazador y una cámara gamma para mostrar actividad metabólica en el esqueleto. ¿Cómo se realiza? Se inyecta radiotrazador; tras una espera de varias horas, la cámara obtiene imágenes mientras permaneces quieto. Duración y molestias: La adquisición suele durar 30 a 60 minutos, además de 2 a 4 horas de espera. La inyección causa una molestia breve.",
+  "respuesta_rapida": "Usa una pequeña cantidad de radiotrazador y una cámara gamma para mostrar actividad metabólica en el esqueleto. Sirve para buscar metástasis, fracturas ocultas, infección, alteraciones protésicas o causas de dolor óseo.",
+  "para_que_sirve": "¿Para qué sirve? Buscar metástasis, fracturas ocultas, infección, alteraciones protésicas o causas de dolor óseo. ¿Cuándo se solicita? Dolor óseo inexplicado, sospecha de metástasis o infección, fractura oculta o evaluación de prótesis.",
+  "causas": "Interpretación general (orientativa): Las áreas de captación aumentada o disminuida son inespecíficas y se correlacionan con radiografías, TC, RM y antecedentes. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No aplica rango numérico; se describe distribución del radiotrazador. Enfermedades relacionadas: Metástasis óseas, osteomielitis, fracturas ocultas y enfermedad de Paget. Especialidad relacionada: Medicina nuclear, oncología, traumatología o reumatología. Exámenes relacionados: Radiografía, resonancia magnética y densitometría ósea.",
+  "sintomas": [
+    "dolor oseo",
+    "fractura sospechada",
+    "dolor localizado persistente"
+  ],
+  "factores_riesgo": [
+    "Exposición baja a radiación y reacciones al trazador muy infrecuentes; se requieren precauciones en embarazo y lactancia."
+  ],
+  "prevencion": [
+    "Informa embarazo, lactancia, medicamentos y estudios recientes. Hidrátate según indicación y retira metal."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor óseo inexplicado, sospecha de metástasis o infección, fractura oculta o evaluación de prótesis.",
+  "senales_alarma": "Tras Gammagrafía ósea, las reacciones al radiotrazador son muy raras. Busca atención urgente si presentas dificultad para respirar, hinchazón del rostro, ronchas generalizadas o desmayo; consulta si aumenta el dolor, enrojecimiento o hinchazón en la zona de inyección.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Informa embarazo, lactancia, medicamentos y estudios recientes. Hidrátate según indicación y retira metal.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Exposición baja a radiación y reacciones al trazador muy infrecuentes; se requieren precauciones en embarazo y lactancia."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Gammagrafía ósea?",
+      "respuesta": "Usa una pequeña cantidad de radiotrazador y una cámara gamma para mostrar actividad metabólica en el esqueleto."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Informa embarazo, lactancia, medicamentos y estudios recientes. Hidrátate según indicación y retira metal."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se inyecta radiotrazador; tras una espera de varias horas, la cámara obtiene imágenes mientras permaneces quieto. La adquisición suele durar 30 a 60 minutos, además de 2 a 4 horas de espera. La inyección causa una molestia breve."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "Exposición baja a radiación y reacciones al trazador muy infrecuentes; se requieren precauciones en embarazo y lactancia."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "Las áreas de captación aumentada o disminuida son inespecíficas y se correlacionan con radiografías, TC, RM y antecedentes. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [],
+  "fuentes": [
+    {
+      "id": "acr-bone-scan",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Bone Scan",
+      "url": "https://www.radiologyinfo.org/en/info/bone-scan",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "acr-nuclear-prep",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "How to Prepare for Your Nuclear Medicine Exam",
+      "url": "https://www.radiologyinfo.org/en/info/nuclear-medicine-prep",
+      "tipo": "Información radiológica para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

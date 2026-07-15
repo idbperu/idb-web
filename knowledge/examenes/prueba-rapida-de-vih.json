@@ -1,0 +1,85 @@
+{
+  "id": "examen-prueba-rapida-de-vih",
+  "slug": "prueba-rapida-de-vih",
+  "titulo": "Prueba rápida de VIH",
+  "tipo": "examen",
+  "categoria": "Infectología",
+  "descripcion": "¿Qué es? Busca anticuerpos contra VIH y, según el dispositivo, también antígeno, usando sangre capilar u otra muestra. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Busca anticuerpos contra VIH y, según el dispositivo, también antígeno, usando sangre capilar u otra muestra. Ofrece tamizaje en minutos para facilitar diagnóstico oportuno; un resultado reactivo necesita confirmación.",
+  "para_que_sirve": "¿Para qué sirve? Ofrece tamizaje en minutos para facilitar diagnóstico oportuno; un resultado reactivo necesita confirmación. ¿Cuándo se solicita? Se recomienda en tamizaje, embarazo, exposición, nuevas parejas o solicitud personal informada.",
+  "causas": "Interpretación orientativa: No reactivo puede ser demasiado temprano durante el periodo ventana; reactivo es preliminar y debe seguir el algoritmo confirmatorio. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Es cualitativa; la ventana depende del tipo de prueba y momento de exposición. Enfermedades relacionadas: Infecciones de transmision sexual, Tuberculosis. Especialidad relacionada: Infectología. Exámenes relacionados: Prueba confirmatoria VIH-1/2, antígeno/anticuerpo y NAT según algoritmo.",
+  "sintomas": [
+    "fiebre",
+    "ganglios inflamados",
+    "bajada de peso"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se recomienda en tamizaje, embarazo, exposición, nuevas parejas o solicitud personal informada.",
+  "senales_alarma": "Después de la toma de muestra para Prueba rápida de VIH, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Prueba rápida de VIH?",
+      "respuesta": "Busca anticuerpos contra VIH y, según el dispositivo, también antígeno, usando sangre capilar u otra muestra."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Ofrece tamizaje en minutos para facilitar diagnóstico oportuno; un resultado reactivo necesita confirmación."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "No reactivo puede ser demasiado temprano durante el periodo ventana; reactivo es preliminar y debe seguir el algoritmo confirmatorio. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-infecciones-de-transmision-sexual",
+      "slug": "infecciones-de-transmision-sexual",
+      "categoria": "Relacionados",
+      "titulo": "Infecciones de transmision sexual"
+    },
+    {
+      "id": "rel-tuberculosis",
+      "slug": "tuberculosis",
+      "categoria": "Relacionados",
+      "titulo": "Tuberculosis"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-hiv-screening-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "HIV Screening Test",
+      "url": "https://medlineplus.gov/lab-tests/hiv-screening-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "cdc-hiv-testing",
+      "organizacion": "CDC",
+      "titulo": "Getting Tested for HIV",
+      "url": "https://www.cdc.gov/hiv/testing/index.html",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

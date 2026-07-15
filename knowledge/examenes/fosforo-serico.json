@@ -1,0 +1,91 @@
+{
+  "id": "examen-fosforo-serico",
+  "slug": "fosforo-serico",
+  "titulo": "Fósforo sérico",
+  "tipo": "examen",
+  "categoria": "Laboratorio",
+  "descripcion": "¿Qué es? Mide fosfato en sangre, mineral esencial para huesos, energía celular y equilibrio ácido-base. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Mide fosfato en sangre, mineral esencial para huesos, energía celular y equilibrio ácido-base. Ayuda a evaluar riñones, huesos, paratiroides y metabolismo mineral.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar riñones, huesos, paratiroides y metabolismo mineral. ¿Cuándo se solicita? Se solicita ante enfermedad renal, alteraciones de calcio, debilidad ósea o trastornos nutricionales.",
+  "causas": "Interpretación orientativa: Los cambios pueden deberse a función renal, hormona paratiroidea, vitamina D, nutrición o desplazamientos celulares. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Varía por edad, hora, dieta y laboratorio; suele ser mayor en niños. Enfermedades relacionadas: Enfermedad renal cronica, Osteoporosis, Deshidratacion. Especialidad relacionada: Laboratorio y metabolismo. Exámenes relacionados: Calcio, magnesio, creatinina, vitamina D y PTH.",
+  "sintomas": [
+    "debilidad",
+    "dolor de huesos",
+    "confusión"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante enfermedad renal, alteraciones de calcio, debilidad ósea o trastornos nutricionales.",
+  "senales_alarma": "Después de la toma de muestra para Fósforo sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Fósforo sérico?",
+      "respuesta": "Mide fosfato en sangre, mineral esencial para huesos, energía celular y equilibrio ácido-base."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Ayuda a evaluar riñones, huesos, paratiroides y metabolismo mineral."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Los cambios pueden deberse a función renal, hormona paratiroidea, vitamina D, nutrición o desplazamientos celulares. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-osteoporosis",
+      "slug": "osteoporosis",
+      "categoria": "Relacionados",
+      "titulo": "Osteoporosis"
+    },
+    {
+      "id": "rel-deshidratacion",
+      "slug": "deshidratacion",
+      "categoria": "Relacionados",
+      "titulo": "Deshidratacion"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-phosphate-in-blood",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Phosphate in Blood",
+      "url": "https://medlineplus.gov/lab-tests/phosphate-in-blood/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "nhlbi-blood",
+      "organizacion": "NHLBI / NIH",
+      "titulo": "Blood Tests",
+      "url": "https://www.nhlbi.nih.gov/health/blood-tests",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

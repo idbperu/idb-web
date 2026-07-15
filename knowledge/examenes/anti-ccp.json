@@ -1,0 +1,85 @@
+{
+  "id": "examen-anti-ccp",
+  "slug": "anti-ccp",
+  "titulo": "Anti-CCP",
+  "tipo": "examen",
+  "categoria": "Inmunología",
+  "descripcion": "Qué es: Detecta anticuerpos contra péptidos citrulinados cíclicos. Procedimiento: No suele requerir preparación especial. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Detecta anticuerpos contra péptidos citrulinados cíclicos. Apoya el diagnóstico y pronóstico de artritis reumatoide, con mayor especificidad que factor reumatoide.",
+  "para_que_sirve": "Para qué sirve: Apoya el diagnóstico y pronóstico de artritis reumatoide, con mayor especificidad que factor reumatoide. Indicaciones: Artritis inflamatoria sospechada o factor reumatoide difícil de interpretar.",
+  "causas": "Interpretación orientativa: Positivo con síntomas compatibles aumenta la probabilidad, pero no confirma por sí solo; negativo no excluye artritis. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Se informa negativo/positivo o unidades; puntos de corte dependen del ensayo. Enfermedades relacionadas: Lupus, Dolor articular. Especialidad relacionada: Inmunología. Exámenes relacionados: Factor reumatoide, PCR, VSG y radiografía/ecografía articular.",
+  "sintomas": [
+    "dolor articular",
+    "inflamación de articulaciones",
+    "rigidez"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Artritis inflamatoria sospechada o factor reumatoide difícil de interpretar.",
+  "senales_alarma": "Después de la toma de muestra para Anti-CCP, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Anti-CCP?",
+      "respuesta": "Detecta anticuerpos contra péptidos citrulinados cíclicos."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Apoya el diagnóstico y pronóstico de artritis reumatoide, con mayor especificidad que factor reumatoide."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "No suele requerir preparación especial."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Positivo con síntomas compatibles aumenta la probabilidad, pero no confirma por sí solo; negativo no excluye artritis. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-lupus",
+      "slug": "lupus",
+      "categoria": "Relacionados",
+      "titulo": "Lupus"
+    },
+    {
+      "id": "rel-dolor-articular",
+      "slug": "dolor-articular",
+      "categoria": "Relacionados",
+      "titulo": "Dolor articular"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-ccp-antibody-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "CCP Antibody Test",
+      "url": "https://medlineplus.gov/lab-tests/ccp-antibody-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medline-rheumatoid-factor-rf-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Rheumatoid Factor Test",
+      "url": "https://medlineplus.gov/lab-tests/rheumatoid-factor-rf-test/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

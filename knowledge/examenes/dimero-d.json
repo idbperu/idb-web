@@ -1,0 +1,91 @@
+{
+  "id": "examen-dimero-d",
+  "slug": "dimero-d",
+  "titulo": "Dímero D",
+  "tipo": "examen",
+  "categoria": "Hematología",
+  "descripcion": "¿Qué es? Mide fragmentos producidos cuando el organismo degrada fibrina de un coágulo. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Mide fragmentos producidos cuando el organismo degrada fibrina de un coágulo. En pacientes con probabilidad clínica baja o intermedia ayuda a descartar trombosis; no confirma por sí solo.",
+  "para_que_sirve": "¿Para qué sirve? En pacientes con probabilidad clínica baja o intermedia ayuda a descartar trombosis; no confirma por sí solo. ¿Cuándo se solicita? Se solicita ante sospecha de trombosis venosa, embolia pulmonar o coagulación intravascular diseminada.",
+  "causas": "Interpretación orientativa: Un resultado bajo puede hacer improbable un coágulo en contextos validados; uno alto es inespecífico y requiere evaluación o imágenes. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: El punto de corte depende del ensayo y puede ajustarse por edad según protocolo. Enfermedades relacionadas: Sepsis, Enfermedad coronaria, Cancer de mama. Especialidad relacionada: Hematología e inmunología. Exámenes relacionados: Ecografía Doppler, angiotomografía, TP, TTPa y fibrinógeno.",
+  "sintomas": [
+    "hinchazón de piernas",
+    "dolor de pecho",
+    "falta de aire"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante sospecha de trombosis venosa, embolia pulmonar o coagulación intravascular diseminada.",
+  "senales_alarma": "Después de la toma de muestra para Dímero D, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Dímero D?",
+      "respuesta": "Mide fragmentos producidos cuando el organismo degrada fibrina de un coágulo."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "En pacientes con probabilidad clínica baja o intermedia ayuda a descartar trombosis; no confirma por sí solo."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un resultado bajo puede hacer improbable un coágulo en contextos validados; uno alto es inespecífico y requiere evaluación o imágenes. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-sepsis",
+      "slug": "sepsis",
+      "categoria": "Relacionados",
+      "titulo": "Sepsis"
+    },
+    {
+      "id": "rel-enfermedad-coronaria",
+      "slug": "enfermedad-coronaria",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad coronaria"
+    },
+    {
+      "id": "rel-cancer-de-mama",
+      "slug": "cancer-de-mama",
+      "categoria": "Relacionados",
+      "titulo": "Cancer de mama"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-d-dimer-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "D-Dimer Test",
+      "url": "https://medlineplus.gov/lab-tests/d-dimer-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "nhlbi-vte",
+      "organizacion": "NHLBI / NIH",
+      "titulo": "Venous Thromboembolism",
+      "url": "https://www.nhlbi.nih.gov/health/venous-thromboembolism",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

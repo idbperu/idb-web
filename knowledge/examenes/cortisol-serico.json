@@ -1,0 +1,98 @@
+{
+  "id": "examen-cortisol-serico",
+  "slug": "cortisol-serico",
+  "titulo": "Cortisol sérico",
+  "tipo": "examen",
+  "categoria": "Endocrinología",
+  "descripcion": "¿Qué es? Mide cortisol en sangre, hormona suprarrenal que varía durante el día y responde al estrés. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide cortisol en sangre, hormona suprarrenal que varía durante el día y responde al estrés. Apoya la evaluación de exceso o insuficiencia de cortisol y el seguimiento endocrino.",
+  "para_que_sirve": "¿Para qué sirve? Apoya la evaluación de exceso o insuficiencia de cortisol y el seguimiento endocrino. Indicaciones: Puede solicitarse ante sospecha de síndrome de Cushing, insuficiencia suprarrenal o alteraciones hipofisarias.",
+  "causas": "Interpretación general: Un valor aislado no suele confirmar la causa; puede requerir pruebas dinámicas, saliva, orina o ACTH. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Dependen marcadamente de hora, método y laboratorio. Enfermedades relacionadas: Síndrome de Cushing, enfermedad de Addison y trastornos hipofisarios. Especialidad relacionada: Endocrinología. Exámenes relacionados: ACTH, cortisol salival nocturno, cortisol urinario y pruebas de estimulación o supresión.",
+  "sintomas": [
+    "debilidad",
+    "fatiga",
+    "aumento de peso",
+    "sintomas de presion baja"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Respeta el horario indicado porque el cortisol cambia durante el día.",
+    "Informa estrés, ejercicio, embarazo, anticonceptivos y cualquier corticoide; no lo suspendas bruscamente."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Puede solicitarse ante sospecha de síndrome de Cushing, insuficiencia suprarrenal o alteraciones hipofisarias.",
+  "senales_alarma": "Después de la toma de muestra para Cortisol sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Cortisol sérico?",
+      "respuesta": "Mide cortisol en sangre, hormona suprarrenal que varía durante el día y responde al estrés."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Apoya la evaluación de exceso o insuficiencia de cortisol y el seguimiento endocrino."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Respeta el horario indicado porque el cortisol cambia durante el día. Informa estrés, ejercicio, embarazo, anticonceptivos y cualquier corticoide; no lo suspendas bruscamente."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un valor aislado no suele confirmar la causa; puede requerir pruebas dinámicas, saliva, orina o ACTH. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-debilidad",
+      "slug": "debilidad",
+      "categoria": "Relacionados",
+      "titulo": "Debilidad"
+    },
+    {
+      "id": "rel-fatiga",
+      "slug": "fatiga",
+      "categoria": "Relacionados",
+      "titulo": "Fatiga"
+    },
+    {
+      "id": "rel-aumento-de-peso",
+      "slug": "aumento-de-peso",
+      "categoria": "Relacionados",
+      "titulo": "Aumento de peso"
+    },
+    {
+      "id": "rel-sintomas-de-presion-baja",
+      "slug": "sintomas-de-presion-baja",
+      "categoria": "Relacionados",
+      "titulo": "Sintomas de presion baja"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-cortisol-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Cortisol Test",
+      "url": "https://medlineplus.gov/lab-tests/cortisol-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "niddk-adrenal",
+      "organizacion": "NIDDK / NIH",
+      "titulo": "Adrenal Insufficiency and Addison’s Disease",
+      "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/adrenal-insufficiency-addisons-disease",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

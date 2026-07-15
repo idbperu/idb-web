@@ -1,0 +1,97 @@
+{
+  "id": "examen-bilirrubina-total-y-fraccionada",
+  "slug": "bilirrubina-total-y-fraccionada",
+  "titulo": "Bilirrubina total y fraccionada",
+  "tipo": "examen",
+  "categoria": "Laboratorio",
+  "descripcion": "¿Qué es? Mide bilirrubina total y sus fracciones directa e indirecta, pigmento generado al degradar glóbulos rojos. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide bilirrubina total y sus fracciones directa e indirecta, pigmento generado al degradar glóbulos rojos. Ayuda a evaluar hígado, vías biliares y causas de ictericia o destrucción de glóbulos rojos.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar hígado, vías biliares y causas de ictericia o destrucción de glóbulos rojos. Indicaciones: Se solicita ante piel u ojos amarillos, orina oscura, dolor abdominal, anemia o alteraciones hepáticas.",
+  "causas": "Interpretación general: El patrón entre bilirrubina directa e indirecta orienta hacia producción aumentada, procesamiento hepático alterado u obstrucción biliar, pero no establece la causa por sí solo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Los rangos varían con edad, método y laboratorio; en recién nacidos requieren interpretación específica. Enfermedades relacionadas: Hepatitis, cirrosis, obstrucción biliar y anemias hemolíticas. Especialidad relacionada: Laboratorio. Exámenes relacionados: Pruebas de función hepática, hemograma, reticulocitos y ecografía abdominal.",
+  "sintomas": [
+    "piel amarilla",
+    "ojos amarillos",
+    "orina oscura"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Puede requerir ayuno según el laboratorio y el panel solicitado.",
+    "Informa medicamentos, suplementos y consumo de alcohol."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita ante piel u ojos amarillos, orina oscura, dolor abdominal, anemia o alteraciones hepáticas.",
+  "senales_alarma": "Después de la toma de muestra para Bilirrubina total y fraccionada, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Bilirrubina total y fraccionada?",
+      "respuesta": "Mide bilirrubina total y sus fracciones directa e indirecta, pigmento generado al degradar glóbulos rojos."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Ayuda a evaluar hígado, vías biliares y causas de ictericia o destrucción de glóbulos rojos."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Puede requerir ayuno según el laboratorio y el panel solicitado. Informa medicamentos, suplementos y consumo de alcohol."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El patrón entre bilirrubina directa e indirecta orienta hacia producción aumentada, procesamiento hepático alterado u obstrucción biliar, pero no establece la causa por sí solo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-hepatitis-a",
+      "slug": "hepatitis-a",
+      "categoria": "Relacionados",
+      "titulo": "Hepatitis A"
+    },
+    {
+      "id": "rel-anemia",
+      "slug": "anemia",
+      "categoria": "Relacionados",
+      "titulo": "Anemia"
+    },
+    {
+      "id": "rel-piel-amarilla",
+      "slug": "piel-amarilla",
+      "categoria": "Relacionados",
+      "titulo": "Piel amarilla"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-bilirubin-blood-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Bilirubin Blood Test",
+      "url": "https://medlineplus.gov/lab-tests/bilirubin-blood-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-liver-function-tests",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Liver Function Tests",
+      "url": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

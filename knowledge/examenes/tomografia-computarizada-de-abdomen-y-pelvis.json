@@ -1,0 +1,90 @@
+{
+  "id": "examen-tomografia-computarizada-de-abdomen-y-pelvis",
+  "slug": "tomografia-computarizada-de-abdomen-y-pelvis",
+  "titulo": "Tomografía computarizada de abdomen y pelvis",
+  "tipo": "examen",
+  "categoria": "Imagenología",
+  "descripcion": "¿Qué es? Produce imágenes detalladas de órganos, vasos, intestino, vías urinarias y estructuras pélvicas mediante rayos X. ¿Cómo se realiza? Permaneces acostado mientras la mesa atraviesa el escáner; pueden administrarse contraste oral o intravenoso y pedirse breves apneas. Duración y molestias: 10 a 30 minutos; la preparación con contraste oral puede prolongar la permanencia. No suele doler.",
+  "respuesta_rapida": "Produce imágenes detalladas de órganos, vasos, intestino, vías urinarias y estructuras pélvicas mediante rayos X. Sirve para buscar inflamación, cálculos, traumatismos, sangrado, obstrucción, infecciones o tumores y planificar procedimientos.",
+  "para_que_sirve": "¿Para qué sirve? Buscar inflamación, cálculos, traumatismos, sangrado, obstrucción, infecciones o tumores y planificar procedimientos. ¿Cuándo se solicita? Dolor abdominal o pélvico persistente, fiebre sin causa clara, masa, traumatismo o alteraciones previas.",
+  "causas": "Interpretación general (orientativa): El informe localiza hallazgos y evalúa órganos y tejidos; la relevancia depende del contexto clínico. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No aplica un rango numérico; se describen estructuras y hallazgos. Enfermedades relacionadas: Apendicitis, cálculos renales, diverticulitis, obstrucción intestinal y tumores abdominales. Especialidad relacionada: Radiología, gastroenterología, cirugía o urología. Exámenes relacionados: Ecografía abdominal, ecografía pélvica y creatinina sérica.",
+  "sintomas": [
+    "dolor abdominal",
+    "dolor pelvico",
+    "fiebre"
+  ],
+  "factores_riesgo": [
+    "Radiación ionizante y riesgos poco frecuentes del contraste yodado, como reacción alérgica, extravasación o lesión renal en personas susceptibles."
+  ],
+  "prevencion": [
+    "Sigue instrucciones sobre ayuno y contraste oral o intravenoso. Informa embarazo, alergias, enfermedad renal, diabetes y medicamentos."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor abdominal o pélvico persistente, fiebre sin causa clara, masa, traumatismo o alteraciones previas.",
+  "senales_alarma": "Durante o después de Tomografía computarizada de abdomen y pelvis, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Sigue instrucciones sobre ayuno y contraste oral o intravenoso. Informa embarazo, alergias, enfermedad renal, diabetes y medicamentos.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Radiación ionizante y riesgos poco frecuentes del contraste yodado, como reacción alérgica, extravasación o lesión renal en personas susceptibles."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Tomografía computarizada de abdomen y pelvis?",
+      "respuesta": "Produce imágenes detalladas de órganos, vasos, intestino, vías urinarias y estructuras pélvicas mediante rayos X."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Sigue instrucciones sobre ayuno y contraste oral o intravenoso. Informa embarazo, alergias, enfermedad renal, diabetes y medicamentos."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Permaneces acostado mientras la mesa atraviesa el escáner; pueden administrarse contraste oral o intravenoso y pedirse breves apneas. 10 a 30 minutos; la preparación con contraste oral puede prolongar la permanencia. No suele doler."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "Radiación ionizante y riesgos poco frecuentes del contraste yodado, como reacción alérgica, extravasación o lesión renal en personas susceptibles."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El informe localiza hallazgos y evalúa órganos y tejidos; la relevancia depende del contexto clínico. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-dolor-abdominal",
+      "slug": "dolor-abdominal",
+      "categoria": "Relacionados",
+      "titulo": "Dolor abdominal"
+    },
+    {
+      "id": "rel-dolor-pelvico",
+      "slug": "dolor-pelvico",
+      "categoria": "Relacionados",
+      "titulo": "Dolor pelvico"
+    },
+    {
+      "id": "rel-fiebre",
+      "slug": "fiebre",
+      "categoria": "Relacionados",
+      "titulo": "Fiebre"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "acr-abd-pelvis-ct",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Abdominal and Pelvic CT",
+      "url": "https://www.radiologyinfo.org/en/info/abdominct",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "acr-ct-prep",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "How to Prepare for Your CT Exam",
+      "url": "https://www.radiologyinfo.org/en/info/ctscan-prep",
+      "tipo": "Información radiológica para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

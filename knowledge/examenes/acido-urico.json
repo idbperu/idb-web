@@ -1,0 +1,91 @@
+{
+  "id": "examen-acido-urico",
+  "slug": "acido-urico",
+  "titulo": "Ácido úrico",
+  "tipo": "examen",
+  "categoria": "Laboratorio",
+  "descripcion": "¿Qué es? Mide ácido úrico, un desecho producido al degradar purinas, en una muestra de sangre. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide ácido úrico, un desecho producido al degradar purinas, en una muestra de sangre. Ayuda a evaluar gota, cálculos urinarios y control durante ciertos tratamientos.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar gota, cálculos urinarios y control durante ciertos tratamientos. Indicaciones: Puede solicitarse ante dolor e inflamación articular, cálculos renales, enfermedad renal o tratamientos oncológicos.",
+  "causas": "Interpretación general: Un valor alto no confirma gota y puede reflejar menor eliminación renal, dieta, medicamentos o recambio celular; un valor bajo también tiene diversas causas. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Los intervalos dependen de sexo, edad, método y laboratorio; usa el rango del informe. Enfermedades relacionadas: Gota, cálculos renales y enfermedad renal. Especialidad relacionada: Laboratorio. Exámenes relacionados: Creatinina, examen de orina y análisis del líquido articular.",
+  "sintomas": [
+    "dolor articular",
+    "hinchazón",
+    "dolor en los riñones"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si debes ayunar y comunica medicamentos, alcohol, dieta y suplementos.",
+    "No suspendas tratamientos sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Puede solicitarse ante dolor e inflamación articular, cálculos renales, enfermedad renal o tratamientos oncológicos.",
+  "senales_alarma": "Después de la toma de muestra para Ácido úrico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Ácido úrico?",
+      "respuesta": "Mide ácido úrico, un desecho producido al degradar purinas, en una muestra de sangre."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Ayuda a evaluar gota, cálculos urinarios y control durante ciertos tratamientos."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma si debes ayunar y comunica medicamentos, alcohol, dieta y suplementos. No suspendas tratamientos sin indicación."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un valor alto no confirma gota y puede reflejar menor eliminación renal, dieta, medicamentos o recambio celular; un valor bajo también tiene diversas causas. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-gota",
+      "slug": "gota",
+      "categoria": "Relacionados",
+      "titulo": "Gota"
+    },
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-dolor-articular",
+      "slug": "dolor-articular",
+      "categoria": "Relacionados",
+      "titulo": "Dolor articular"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-uric-acid-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Uric Acid Test",
+      "url": "https://medlineplus.gov/lab-tests/uric-acid-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "nhlbi-blood-tests",
+      "organizacion": "NHLBI / NIH",
+      "titulo": "Blood Tests",
+      "url": "https://www.nhlbi.nih.gov/health/blood-tests",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

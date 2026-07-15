@@ -1,0 +1,84 @@
+{
+  "id": "examen-monitoreo-ambulatorio-de-presion-arterial-mapa",
+  "slug": "monitoreo-ambulatorio-de-presion-arterial-mapa",
+  "titulo": "Monitoreo ambulatorio de presión arterial (MAPA)",
+  "tipo": "examen",
+  "categoria": "Cardiología",
+  "descripcion": "¿Qué es? Mide automáticamente la presión arterial a intervalos durante 24 horas mientras realizas actividades habituales y duermes. ¿Cómo se realiza? Un manguito conectado a una grabadora se infla periódicamente de día y noche; después se descarga el registro. Duración y molestias: Colocación de 15 a 20 minutos y registro habitual de 24 horas. Las inflaciones pueden incomodar y alterar el sueño.",
+  "respuesta_rapida": "Mide automáticamente la presión arterial a intervalos durante 24 horas mientras realizas actividades habituales y duermes. Sirve para confirmar hipertensión, identificar efecto de bata blanca o hipertensión enmascarada y valorar patrones diurnos y nocturnos.",
+  "para_que_sirve": "¿Para qué sirve? Confirmar hipertensión, identificar efecto de bata blanca o hipertensión enmascarada y valorar patrones diurnos y nocturnos. ¿Cuándo se solicita? Lecturas variables, sospecha de hipertensión, síntomas con medicación o necesidad de evaluar control durante todo el día.",
+  "causas": "Interpretación general (orientativa): Se promedian valores diurnos, nocturnos y de 24 horas; los umbrales difieren de la medición en consultorio y dependen de la guía usada. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No hay un valor universal aislado; el profesional aplica umbrales ambulatorios validados y contexto clínico. Enfermedades relacionadas: Hipertensión arterial, hipertensión de bata blanca e hipertensión enmascarada. Especialidad relacionada: Cardiología o medicina interna. Exámenes relacionados: Electrocardiograma, creatinina sérica y examen completo de orina.",
+  "sintomas": [
+    "dolor de cabeza",
+    "mareos",
+    "presion arterial elevada"
+  ],
+  "factores_riesgo": [
+    "Puede causar presión, hormigueo, irritación o pequeños moretones; las complicaciones son infrecuentes."
+  ],
+  "prevencion": [
+    "Usa ropa holgada, toma medicamentos solo según indicación y anota sueño, actividad, síntomas y dosis. Mantén el brazo quieto durante cada medición."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Lecturas variables, sospecha de hipertensión, síntomas con medicación o necesidad de evaluar control durante todo el día.",
+  "senales_alarma": "Monitoreo ambulatorio de presión arterial (MAPA) no suele causar complicaciones. Busca atención urgente si presentas dolor de pecho, falta de aire intensa, desmayo, debilidad súbita o palpitaciones persistentes, aunque el registro haya finalizado o parezca normal.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Usa ropa holgada, toma medicamentos solo según indicación y anota sueño, actividad, síntomas y dosis. Mantén el brazo quieto durante cada medición.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Puede causar presión, hormigueo, irritación o pequeños moretones; las complicaciones son infrecuentes."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Monitoreo ambulatorio de presión arterial (MAPA)?",
+      "respuesta": "Mide automáticamente la presión arterial a intervalos durante 24 horas mientras realizas actividades habituales y duermes."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Usa ropa holgada, toma medicamentos solo según indicación y anota sueño, actividad, síntomas y dosis. Mantén el brazo quieto durante cada medición."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Un manguito conectado a una grabadora se infla periódicamente de día y noche; después se descarga el registro. Colocación de 15 a 20 minutos y registro habitual de 24 horas. Las inflaciones pueden incomodar y alterar el sueño."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "Puede causar presión, hormigueo, irritación o pequeños moretones; las complicaciones son infrecuentes."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "Se promedian valores diurnos, nocturnos y de 24 horas; los umbrales difieren de la medición en consultorio y dependen de la guía usada. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-dolor-de-cabeza",
+      "slug": "dolor-de-cabeza",
+      "categoria": "Relacionados",
+      "titulo": "Dolor de cabeza"
+    },
+    {
+      "id": "rel-mareos",
+      "slug": "mareos",
+      "categoria": "Relacionados",
+      "titulo": "Mareos"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "nih-abpm",
+      "organizacion": "MedlinePlus (NIH/NLM)",
+      "titulo": "Ambulatory Blood Pressure Monitoring",
+      "url": "https://medlineplus.gov/highbloodpressure.html",
+      "tipo": "Información médica oficial para pacientes"
+    },
+    {
+      "id": "nice-hypertension",
+      "organizacion": "NICE",
+      "titulo": "Hypertension in adults: diagnosis and management",
+      "url": "https://www.nice.org.uk/guidance/ng136",
+      "tipo": "Guía clínica oficial"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

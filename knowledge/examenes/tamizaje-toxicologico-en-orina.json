@@ -1,0 +1,85 @@
+{
+  "id": "examen-tamizaje-toxicologico-en-orina",
+  "slug": "tamizaje-toxicologico-en-orina",
+  "titulo": "Tamizaje toxicológico en orina",
+  "tipo": "examen",
+  "categoria": "Toxicología",
+  "descripcion": "Qué es: Busca metabolitos de grupos de drogas o medicamentos en orina mediante pruebas de tamizaje. Procedimiento: Informa medicamentos, suplementos y hora de última dosis; sigue cadena de custodia si aplica. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Busca metabolitos de grupos de drogas o medicamentos en orina mediante pruebas de tamizaje. Detecta exposición reciente dentro de ventanas variables; no mide necesariamente intoxicación o deterioro actual.",
+  "para_que_sirve": "Para qué sirve: Detecta exposición reciente dentro de ventanas variables; no mide necesariamente intoxicación o deterioro actual. Indicaciones: Urgencias, seguimiento terapéutico, salud ocupacional o contexto legal con consentimiento y cadena de custodia.",
+  "causas": "Interpretación orientativa: Un resultado presuntivo positivo requiere confirmación específica cuando tenga consecuencias; falsos positivos y negativos son posibles. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Cualitativo con puntos de corte propios del panel y finalidad. Enfermedades relacionadas: Trastorno de ansiedad, Depresion. Especialidad relacionada: Toxicología. Exámenes relacionados: Confirmación por cromatografía/espectrometría y pruebas dirigidas.",
+  "sintomas": [
+    "confusión",
+    "somnolencia",
+    "agitación"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Urgencias, seguimiento terapéutico, salud ocupacional o contexto legal con consentimiento y cadena de custodia.",
+  "senales_alarma": "La obtención de la muestra para Tamizaje toxicológico en orina suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Tamizaje toxicológico en orina?",
+      "respuesta": "Busca metabolitos de grupos de drogas o medicamentos en orina mediante pruebas de tamizaje."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Detecta exposición reciente dentro de ventanas variables; no mide necesariamente intoxicación o deterioro actual."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "Informa medicamentos, suplementos y hora de última dosis; sigue cadena de custodia si aplica."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un resultado presuntivo positivo requiere confirmación específica cuando tenga consecuencias; falsos positivos y negativos son posibles. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-trastorno-de-ansiedad",
+      "slug": "trastorno-de-ansiedad",
+      "categoria": "Relacionados",
+      "titulo": "Trastorno de ansiedad"
+    },
+    {
+      "id": "rel-depresion",
+      "slug": "depresion",
+      "categoria": "Relacionados",
+      "titulo": "Depresion"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-drug-testing",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Drug Testing",
+      "url": "https://medlineplus.gov/lab-tests/drug-testing/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "nida-drug-testing",
+      "organizacion": "NIDA / NIH",
+      "titulo": "Drug Testing",
+      "url": "https://nida.nih.gov/research-topics/drug-testing",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

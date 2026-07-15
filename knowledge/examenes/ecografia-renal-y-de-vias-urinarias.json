@@ -1,0 +1,90 @@
+{
+  "id": "examen-ecografia-renal-y-de-vias-urinarias",
+  "slug": "ecografia-renal-y-de-vias-urinarias",
+  "titulo": "Ecografía renal y de vías urinarias",
+  "tipo": "examen",
+  "categoria": "Imagenología",
+  "descripcion": "¿Qué es? Usa ondas sonoras para observar riñones y vejiga, sin radiación ionizante. ¿Cómo se realiza? Se aplica gel y se desplaza un transductor por abdomen y espalda; pueden medirse imágenes antes y después de orinar. Duración y molestias: 20 a 30 minutos. Es indolora, salvo presión leve sobre una zona sensible o la molestia de la vejiga llena.",
+  "respuesta_rapida": "Usa ondas sonoras para observar riñones y vejiga, sin radiación ionizante. Sirve para evaluar tamaño renal, dilatación de vías urinarias, quistes, masas, cálculos y residuo de orina en vejiga.",
+  "para_que_sirve": "¿Para qué sirve? Evaluar tamaño renal, dilatación de vías urinarias, quistes, masas, cálculos y residuo de orina en vejiga. ¿Cuándo se solicita? Dolor lumbar, sangre en orina, infecciones repetidas, alteración renal o sospecha de obstrucción.",
+  "causas": "Interpretación general (orientativa): Se informan tamaño, contornos, ecogenicidad, dilatación, lesiones y residuo vesical; un estudio normal no excluye todos los trastornos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: No existe un único rango aplicable; medidas dependen de edad, cuerpo y contexto. Enfermedades relacionadas: Cálculos renales, hidronefrosis, quistes renales e infección urinaria. Especialidad relacionada: Radiología, nefrología o urología. Exámenes relacionados: Examen completo de orina, urocultivo y creatinina sérica.",
+  "sintomas": [
+    "dolor en los riñones",
+    "sangre en la orina",
+    "dificultad para orinar"
+  ],
+  "factores_riesgo": [
+    "No se conocen riesgos relevantes del ultrasonido diagnóstico estándar."
+  ],
+  "prevencion": [
+    "Puede pedirse vejiga llena y evitar orinar antes. Sigue las instrucciones del centro; normalmente no requiere ayuno."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor lumbar, sangre en orina, infecciones repetidas, alteración renal o sospecha de obstrucción.",
+  "senales_alarma": "Ecografía renal y de vías urinarias no suele producir complicaciones. Busca atención urgente si el dolor, sangrado, dificultad respiratoria, desmayo u otro síntoma que motivó el examen se vuelve intenso o empeora rápidamente; no esperes el informe para pedir ayuda.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Puede pedirse vejiga llena y evitar orinar antes. Sigue las instrucciones del centro; normalmente no requiere ayuno.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: No se conocen riesgos relevantes del ultrasonido diagnóstico estándar."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Ecografía renal y de vías urinarias?",
+      "respuesta": "Usa ondas sonoras para observar riñones y vejiga, sin radiación ionizante."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Puede pedirse vejiga llena y evitar orinar antes. Sigue las instrucciones del centro; normalmente no requiere ayuno."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se aplica gel y se desplaza un transductor por abdomen y espalda; pueden medirse imágenes antes y después de orinar. 20 a 30 minutos. Es indolora, salvo presión leve sobre una zona sensible o la molestia de la vejiga llena."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "No se conocen riesgos relevantes del ultrasonido diagnóstico estándar."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "Se informan tamaño, contornos, ecogenicidad, dilatación, lesiones y residuo vesical; un estudio normal no excluye todos los trastornos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-dolor-en-los-rinones",
+      "slug": "dolor-en-los-rinones",
+      "categoria": "Relacionados",
+      "titulo": "Dolor en los riñones"
+    },
+    {
+      "id": "rel-sangre-en-la-orina",
+      "slug": "sangre-en-la-orina",
+      "categoria": "Relacionados",
+      "titulo": "Sangre en la orina"
+    },
+    {
+      "id": "rel-dificultad-para-orinar",
+      "slug": "dificultad-para-orinar",
+      "categoria": "Relacionados",
+      "titulo": "Dificultad para orinar"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "acr-renal-us",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Renal Ultrasound",
+      "url": "https://www.radiologyinfo.org/en/info/ultrasound-renal",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "acr-ultrasound",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Ultrasound Procedures",
+      "url": "https://www.radiologyinfo.org/en/ultrasound",
+      "tipo": "Información radiológica para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "examen-examen-completo-de-orina",
+  "slug": "examen-completo-de-orina",
+  "titulo": "Examen completo de orina",
+  "tipo": "examen",
+  "categoria": "Nefrología",
+  "descripcion": "¿Qué es? Evalúa aspecto, concentración, pH y sustancias o células como proteínas, glucosa, sangre, leucocitos, bacterias, cristales y cilindros. ¿Cómo se realiza? Se limpia la zona genital, se desecha el primer chorro y se recoge la porción media sin tocar el interior del recipiente. Duración: La recolección toma pocos minutos; el procesamiento depende del laboratorio. ¿Produce dolor o molestias? No suele causar dolor.",
+  "respuesta_rapida": "Analiza características físicas, químicas y microscópicas de la orina para buscar señales de infección urinaria, enfermedad renal, diabetes y otras alteraciones.",
+  "para_que_sirve": "¿Para qué sirve? Sirve como control general y apoyo para investigar síntomas urinarios o vigilar ciertas enfermedades. ¿Cuándo se solicita? Puede pedirse en controles, embarazo, hospitalización, antes de cirugía o ante ardor, urgencia, sangre en orina, dolor de costado o fiebre.",
+  "causas": "Interpretación general (orientativa): Hallazgos aislados pueden deberse a contaminación, ejercicio, dieta o medicamentos; a veces se requiere repetir la muestra o hacer un cultivo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: En condiciones habituales se espera ausencia o cantidades mínimas de sangre, proteínas, glucosa, cetonas, nitritos y bacterias. Los rangos de pH, densidad y células varían por laboratorio. Enfermedades relacionadas: Cistitis, enfermedad renal crónica, diabetes y cálculos urinarios. Especialidad relacionada: Medicina familiar, urología o nefrología. Exámenes relacionados: Urocultivo, relación albúmina/creatinina, creatinina y ecografía renal.",
+  "sintomas": [
+    "sangre en la orina",
+    "urgencia para orinar",
+    "orina con mal olor",
+    "dolor en los riñones"
+  ],
+  "factores_riesgo": [
+    "No tiene riesgos relevantes cuando se recoge de forma espontánea."
+  ],
+  "prevencion": [
+    "Usa el recipiente estéril y sigue la técnica de chorro medio limpio.",
+    "Si es posible, evita contaminar la muestra con menstruación, heces o papel; informa medicamentos y suplementos."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede pedirse en controles, embarazo, hospitalización, antes de cirugía o ante ardor, urgencia, sangre en orina, dolor de costado o fiebre.",
+  "senales_alarma": "La obtención de la muestra para Examen completo de orina suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: No tiene riesgos relevantes cuando se recoge de forma espontánea."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Examen completo de orina?",
+      "respuesta": "Evalúa aspecto, concentración, pH y sustancias o células como proteínas, glucosa, sangre, leucocitos, bacterias, cristales y cilindros."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Usa el recipiente estéril y sigue la técnica de chorro medio limpio. Si es posible, evita contaminar la muestra con menstruación, heces o papel; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "No suele causar dolor. No tiene riesgos relevantes cuando se recoge de forma espontánea."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Hallazgos aislados pueden deberse a contaminación, ejercicio, dieta o medicamentos; a veces se requiere repetir la muestra o hacer un cultivo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-cistitis",
+      "slug": "cistitis",
+      "categoria": "Relacionados",
+      "titulo": "Cistitis"
+    },
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-sangre-en-la-orina",
+      "slug": "sangre-en-la-orina",
+      "categoria": "Relacionados",
+      "titulo": "Sangre en la orina"
+    },
+    {
+      "id": "rel-orina-con-mal-olor",
+      "slug": "orina-con-mal-olor",
+      "categoria": "Relacionados",
+      "titulo": "Orina con mal olor"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-urinalysis",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Urinalysis",
+      "url": "https://medlineplus.gov/urinalysis.html",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "medline-urinalysis-ency",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Urinalysis: Medical Encyclopedia",
+      "url": "https://medlineplus.gov/ency/article/003579.htm",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

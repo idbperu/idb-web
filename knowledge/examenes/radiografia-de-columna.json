@@ -1,0 +1,98 @@
+{
+  "id": "examen-radiografia-de-columna",
+  "slug": "radiografia-de-columna",
+  "titulo": "Radiografía de columna",
+  "tipo": "examen",
+  "categoria": "Imagenología",
+  "descripcion": "¿Qué es? Obtiene imágenes de uno o más segmentos: cervical, torácico, lumbar o sacro. ¿Cómo se realiza? Se realizan una o varias proyecciones acostado, de pie o sentado, procurando permanecer inmóvil. Duración: Habitualmente toma 10 a 20 minutos. ¿Produce dolor o molestias? La radiografía no duele, pero la posición puede molestar si existe dolor.",
+  "respuesta_rapida": "Estudio con rayos X que muestra principalmente huesos, alineación y curvaturas de la columna.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a valorar fracturas, cambios degenerativos, deformidades y alineación; muestra menos detalle de discos, médula y nervios. ¿Cuándo se solicita? Puede solicitarse tras un traumatismo, dolor persistente, deformidad o seguimiento de una condición ósea.",
+  "causas": "Interpretación general (orientativa): El informe describe alineación, alturas vertebrales y otros hallazgos. Los cambios visibles no siempre explican el dolor. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: No aplica un rango numérico; se interpreta mediante hallazgos de imagen y contexto clínico. Enfermedades relacionadas: Fracturas, osteoporosis, escoliosis y cambios degenerativos. Especialidad relacionada: Radiología, traumatología, rehabilitación o neurocirugía. Exámenes relacionados: Resonancia de columna, tomografía y densitometría ósea.",
+  "sintomas": [
+    "dolor de espalda",
+    "dolor lumbar",
+    "dolor de cuello",
+    "hormigueo"
+  ],
+  "factores_riesgo": [
+    "Implica una dosis baja de radiación ionizante; debe justificarse especialmente en embarazo y evitar repeticiones innecesarias."
+  ],
+  "prevencion": [
+    "Retira objetos metálicos y comunica embarazo posible.",
+    "Sigue instrucciones especiales si el centro las proporciona."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse tras un traumatismo, dolor persistente, deformidad o seguimiento de una condición ósea.",
+  "senales_alarma": "Radiografía de columna suele ser seguro. Busca atención urgente si el síntoma que motivó el estudio se acompaña de dificultad respiratoria, dolor intenso, desmayo, debilidad súbita, confusión, sangrado importante o empeoramiento rápido; no esperes el informe.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Implica una dosis baja de radiación ionizante; debe justificarse especialmente en embarazo y evitar repeticiones innecesarias."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Radiografía de columna?",
+      "respuesta": "Obtiene imágenes de uno o más segmentos: cervical, torácico, lumbar o sacro."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Retira objetos metálicos y comunica embarazo posible. Sigue instrucciones especiales si el centro las proporciona."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "La radiografía no duele, pero la posición puede molestar si existe dolor. Implica una dosis baja de radiación ionizante; debe justificarse especialmente en embarazo y evitar repeticiones innecesarias."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El informe describe alineación, alturas vertebrales y otros hallazgos. Los cambios visibles no siempre explican el dolor. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-fractura",
+      "slug": "fractura",
+      "categoria": "Relacionados",
+      "titulo": "Fractura"
+    },
+    {
+      "id": "rel-osteoporosis",
+      "slug": "osteoporosis",
+      "categoria": "Relacionados",
+      "titulo": "Osteoporosis"
+    },
+    {
+      "id": "rel-dolor-de-espalda",
+      "slug": "dolor-de-espalda",
+      "categoria": "Relacionados",
+      "titulo": "Dolor de espalda"
+    },
+    {
+      "id": "rel-dolor-lumbar",
+      "slug": "dolor-lumbar",
+      "categoria": "Relacionados",
+      "titulo": "Dolor lumbar"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "radiologyinfo-bonerad",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Bone X-ray",
+      "url": "https://www.radiologyinfo.org/en/info/bonerad",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "radiologyinfo-safety-xray",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Radiation Dose from X-Ray and CT Exams",
+      "url": "https://www.radiologyinfo.org/en/info/safety-xray",
+      "tipo": "Información radiológica para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "examen-carga-viral-hepatitis-b",
+  "slug": "carga-viral-hepatitis-b",
+  "titulo": "Carga viral hepatitis B",
+  "tipo": "examen",
+  "categoria": "Virología",
+  "descripcion": "Qué es: Cuantifica ADN del virus de hepatitis B en sangre. Procedimiento: No suele requerir ayuno; informa antivirales y fecha de pruebas previas. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Cuantifica ADN del virus de hepatitis B en sangre. Mide replicación viral, orienta seguimiento y respuesta al tratamiento.",
+  "para_que_sirve": "Para qué sirve: Mide replicación viral, orienta seguimiento y respuesta al tratamiento. Indicaciones: Infección por HBV confirmada, evaluación inicial, embarazo con HBV o seguimiento terapéutico.",
+  "causas": "Interpretación orientativa: Un valor detectable indica replicación; su relevancia depende de ALT, HBeAg, fibrosis y contexto. Indetectable no equivale a curación. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Se informa UI/mL y log con límites específicos del ensayo. Enfermedades relacionadas: Cirrosis, Higado graso, Hepatitis A. Especialidad relacionada: Virología. Exámenes relacionados: Serología HBV, ALT, HBeAg, fibrosis y ecografía.",
+  "sintomas": [
+    "fatiga",
+    "piel amarilla",
+    "orina oscura"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Infección por HBV confirmada, evaluación inicial, embarazo con HBV o seguimiento terapéutico.",
+  "senales_alarma": "Después de la toma de muestra para Carga viral hepatitis B, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Carga viral hepatitis B?",
+      "respuesta": "Cuantifica ADN del virus de hepatitis B en sangre."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Mide replicación viral, orienta seguimiento y respuesta al tratamiento."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "No suele requerir ayuno; informa antivirales y fecha de pruebas previas."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un valor detectable indica replicación; su relevancia depende de ALT, HBeAg, fibrosis y contexto. Indetectable no equivale a curación. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-higado-graso",
+      "slug": "higado-graso",
+      "categoria": "Relacionados",
+      "titulo": "Higado graso"
+    },
+    {
+      "id": "rel-hepatitis-a",
+      "slug": "hepatitis-a",
+      "categoria": "Relacionados",
+      "titulo": "Hepatitis A"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-hepatitis-testing",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Hepatitis Testing",
+      "url": "https://medlineplus.gov/lab-tests/hepatitis-testing/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "cdc-hbv",
+      "organizacion": "CDC",
+      "titulo": "Clinical Care of Hepatitis B",
+      "url": "https://www.cdc.gov/hepatitis-b/hcp/clinical-care/index.html",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

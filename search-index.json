@@ -1152,276 +1152,6 @@
     ]
   },
   {
-    "titulo": "Hemograma",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Examen de sangre que evalúa glóbulos rojos, blancos y plaquetas. Conoce para qué sirve.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=hemograma",
-    "keywords": [
-      "hemograma",
-      "sangre",
-      "globulos rojos",
-      "globulos blancos",
-      "plaquetas"
-    ]
-  },
-  {
-    "titulo": "Glucosa",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Prueba que mide azúcar en sangre. Ayuda a detectar o controlar alteraciones metabólicas.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=glucosa",
-    "keywords": [
-      "glucosa",
-      "azucar",
-      "diabetes",
-      "glicemia",
-      "sangre"
-    ]
-  },
-  {
-    "titulo": "Colesterol total",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Examen que mide colesterol en sangre y orienta el riesgo cardiovascular junto con otros datos.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=colesterol-total",
-    "keywords": [
-      "colesterol",
-      "colesterol total",
-      "ldl",
-      "hdl",
-      "perfil lipidico"
-    ]
-  },
-  {
-    "titulo": "Radiografía",
-    "tipo": "examen",
-    "categoria": "Imagenes",
-    "prioridad": 3,
-    "description": "Estudio de imagen para evaluar huesos, tórax u otras zonas según indicación médica.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=radiografia",
-    "keywords": [
-      "radiografia",
-      "rayos x",
-      "placa",
-      "imagen",
-      "huesos"
-    ]
-  },
-  {
-    "titulo": "Tomografía",
-    "tipo": "examen",
-    "categoria": "Imagenes",
-    "prioridad": 3,
-    "description": "Imagen médica detallada que ayuda a evaluar órganos, lesiones o emergencias según indicación.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=tomografia",
-    "keywords": [
-      "tomografia",
-      "tac",
-      "scanner",
-      "imagen",
-      "corte"
-    ]
-  },
-  {
-    "titulo": "Resonancia magnética",
-    "tipo": "examen",
-    "categoria": "Imagenes",
-    "prioridad": 3,
-    "description": "Estudio de imagen sin rayos X que permite evaluar tejidos, articulaciones y órganos con detalle.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=resonancia-magnetica",
-    "keywords": [
-      "resonancia",
-      "resonancia magnetica",
-      "rm",
-      "imagen",
-      "tejidos"
-    ]
-  },
-  {
-    "titulo": "Examen de orina",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Examen de orina, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=examen-de-orina",
-    "keywords": [
-      "examen de orina",
-      "orina",
-      "infeccion urinaria",
-      "uroanalisis",
-      "sedimento"
-    ]
-  },
-  {
-    "titulo": "Creatinina",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Creatinina, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=creatinina",
-    "keywords": [
-      "creatinina",
-      "riñon",
-      "rinon",
-      "funcion renal",
-      "sangre"
-    ]
-  },
-  {
-    "titulo": "Urea",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Urea, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=urea",
-    "keywords": [
-      "urea",
-      "riñon",
-      "rinon",
-      "funcion renal",
-      "sangre"
-    ]
-  },
-  {
-    "titulo": "Triglicéridos",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Triglicéridos, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=trigliceridos",
-    "keywords": [
-      "trigliceridos",
-      "grasas",
-      "colesterol",
-      "perfil lipidico",
-      "sangre"
-    ]
-  },
-  {
-    "titulo": "Electrocardiograma",
-    "tipo": "examen",
-    "categoria": "Cardiologia",
-    "prioridad": 3,
-    "description": "Qué evalúa Electrocardiograma, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=electrocardiograma",
-    "keywords": [
-      "electrocardiograma",
-      "ecg",
-      "corazon",
-      "ritmo cardiaco",
-      "cardiologia"
-    ]
-  },
-  {
-    "titulo": "Ecografía abdominal",
-    "tipo": "examen",
-    "categoria": "Imagenes",
-    "prioridad": 3,
-    "description": "Qué evalúa Ecografía abdominal, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=ecografia-abdominal",
-    "keywords": [
-      "ecografia abdominal",
-      "ultrasonido",
-      "abdomen",
-      "higado",
-      "vesicula"
-    ]
-  },
-  {
-    "titulo": "Perfil hepático",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Perfil hepático, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=perfil-hepatico",
-    "keywords": [
-      "perfil hepatico",
-      "higado",
-      "transaminasas",
-      "bilirrubina",
-      "enzimas hepaticas"
-    ]
-  },
-  {
-    "titulo": "Perfil tiroideo",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Perfil tiroideo, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=perfil-tiroideo",
-    "keywords": [
-      "perfil tiroideo",
-      "tiroides",
-      "tsh",
-      "t4",
-      "hormonas"
-    ]
-  },
-  {
-    "titulo": "Prueba de embarazo",
-    "tipo": "examen",
-    "categoria": "Laboratorio",
-    "prioridad": 3,
-    "description": "Qué evalúa Prueba de embarazo, cuándo puede indicarse y cómo entender sus resultados de forma general.",
-    "fuente": "MedlinePlus",
-    "nivel": "Científico",
-    "ultima_revision": "2026-06",
-    "url": "consulta.html?q=prueba-de-embarazo",
-    "keywords": [
-      "prueba de embarazo",
-      "embarazo",
-      "hcg",
-      "gestacion",
-      "test"
-    ]
-  },
-  {
     "titulo": "Sueño",
     "tipo": "bienestar",
     "categoria": "Descanso",
@@ -2477,5 +2207,3687 @@
       "artificial tears",
       "lubricant eye drops"
     ]
+  },
+  {
+    "titulo": "Hemograma completo",
+    "tipo": "examen",
+    "categoria": "Hematología",
+    "prioridad": 3,
+    "description": "Análisis de sangre que cuenta y describe glóbulos rojos, glóbulos blancos y plaquetas. Ayuda a evaluar anemia, infecciones, inflamación y trastornos de la sangre.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hemograma-completo",
+    "keywords": [
+      "hemograma completo",
+      "hemograma",
+      "conteo sanguineo",
+      "cbc",
+      "analisis de sangre",
+      "fatiga",
+      "debilidad",
+      "fiebre",
+      "moretones fáciles"
+    ],
+    "aliases": [
+      "hemograma",
+      "conteo sanguineo",
+      "cbc",
+      "analisis de sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Hemograma completo, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse en controles, embarazo, antes de procedimientos o ante fatiga, fiebre, infecciones frecuentes, sangrado o moretones."
+      ]
+    }
+  },
+  {
+    "titulo": "Glucosa en sangre",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide la cantidad de glucosa en la sangre y se utiliza para detectar o controlar alteraciones como prediabetes, diabetes e hipoglucemia.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=glucosa-en-sangre",
+    "keywords": [
+      "glucosa en sangre",
+      "glucosa",
+      "azucar en sangre",
+      "glicemia",
+      "glucemia",
+      "sed excesiva",
+      "orinar frecuente",
+      "debilidad",
+      "sudor frío"
+    ],
+    "aliases": [
+      "glucosa",
+      "azucar en sangre",
+      "glicemia",
+      "glucemia"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Glucosa en sangre, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita en controles, embarazo, factores de riesgo de diabetes o síntomas como sed, micción frecuente, debilidad, sudoración o confusión."
+      ]
+    }
+  },
+  {
+    "titulo": "Hemoglobina glicosilada (HbA1c)",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Análisis que estima el promedio de glucosa de los últimos dos a tres meses. Se usa para detectar prediabetes o diabetes y para seguimiento.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hemoglobina-glicosilada-hba1c",
+    "keywords": [
+      "hemoglobina glicosilada (hba1c)",
+      "hba1c",
+      "a1c",
+      "hemoglobina glucosilada",
+      "promedio de glucosa",
+      "sed excesiva",
+      "orinar frecuente",
+      "fatiga",
+      "visión borrosa"
+    ],
+    "aliases": [
+      "hba1c",
+      "a1c",
+      "hemoglobina glucosilada",
+      "promedio de glucosa"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Hemoglobina glicosilada (HbA1c), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita si existen factores de riesgo o síntomas de diabetes y periódicamente en personas con diagnóstico previo."
+      ]
+    }
+  },
+  {
+    "titulo": "Perfil lipídico",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Grupo de análisis que mide colesterol total, LDL, HDL y triglicéridos para estimar el riesgo cardiovascular.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=perfil-lipidico",
+    "keywords": [
+      "perfil lipídico",
+      "colesterol",
+      "trigliceridos",
+      "ldl",
+      "hdl",
+      "dolor de pecho",
+      "cansancio al caminar"
+    ],
+    "aliases": [
+      "colesterol",
+      "trigliceridos",
+      "ldl",
+      "hdl"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Perfil lipídico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita en controles preventivos y con mayor frecuencia si hay diabetes, hipertensión, tabaquismo, obesidad o antecedentes cardiovasculares."
+      ]
+    }
+  },
+  {
+    "titulo": "Creatinina sérica",
+    "tipo": "examen",
+    "categoria": "Nefrología",
+    "prioridad": 3,
+    "description": "Análisis de sangre que mide creatinina, un desecho muscular eliminado principalmente por los riñones. Ayuda a estimar la función renal.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=creatinina-serica",
+    "keywords": [
+      "creatinina sérica",
+      "creatinina",
+      "funcion renal",
+      "filtracion renal",
+      "hinchazón",
+      "orinar frecuente",
+      "dolor en los riñones",
+      "fatiga"
+    ],
+    "aliases": [
+      "creatinina",
+      "funcion renal",
+      "filtracion renal"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Creatinina sérica, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede pedirse en controles, diabetes, hipertensión, enfermedad renal, deshidratación o síntomas urinarios e hinchazón."
+      ]
+    }
+  },
+  {
+    "titulo": "Urea",
+    "tipo": "examen",
+    "categoria": "Nefrología",
+    "prioridad": 3,
+    "description": "Mide urea sérica, un producto del metabolismo de proteínas eliminado principalmente por los riñones. En Perú suele informarse como urea en mg/dL; el BUN es una magnitud relacionada, pero expresa solo el nitrógeno ureico.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=urea",
+    "keywords": [
+      "urea",
+      "bun",
+      "nitrogeno ureico",
+      "urea en sangre",
+      "fatiga",
+      "picazón",
+      "orinar frecuente",
+      "hinchazón"
+    ],
+    "aliases": [
+      "bun",
+      "nitrogeno ureico",
+      "urea en sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Urea, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para confirmar si el informe expresa urea completa o BUN, revisar sus unidades y compararlo con creatinina, filtración glomerular, hidratación y contexto clínico."
+      ]
+    }
+  },
+  {
+    "titulo": "Examen completo de orina",
+    "tipo": "examen",
+    "categoria": "Nefrología",
+    "prioridad": 3,
+    "description": "Analiza características físicas, químicas y microscópicas de la orina para buscar señales de infección urinaria, enfermedad renal, diabetes y otras alteraciones.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=examen-completo-de-orina",
+    "keywords": [
+      "examen completo de orina",
+      "analisis de orina",
+      "urinalisis",
+      "orina completa",
+      "examen de orina",
+      "sangre en la orina",
+      "urgencia para orinar",
+      "orina con mal olor",
+      "dolor en los riñones"
+    ],
+    "aliases": [
+      "analisis de orina",
+      "urinalisis",
+      "orina completa",
+      "examen de orina"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para Examen completo de orina suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede pedirse en controles, embarazo, hospitalización, antes de cirugía o ante ardor, urgencia, sangre en orina, dolor de costado o fiebre."
+      ]
+    }
+  },
+  {
+    "titulo": "Prueba de función hepática",
+    "tipo": "examen",
+    "categoria": "Gastroenterología",
+    "prioridad": 3,
+    "description": "Panel de sangre que mide enzimas, proteínas y bilirrubina para buscar lesión hepática y valorar algunas funciones del hígado.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=prueba-de-funcion-hepatica",
+    "keywords": [
+      "prueba de función hepática",
+      "perfil hepatico",
+      "pruebas hepaticas",
+      "enzimas hepaticas",
+      "funcion del higado",
+      "piel amarilla",
+      "ojos amarillos",
+      "orina oscura",
+      "dolor en el lado derecho del abdomen"
+    ],
+    "aliases": [
+      "perfil hepatico",
+      "pruebas hepaticas",
+      "enzimas hepaticas",
+      "funcion del higado"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Prueba de función hepática, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante ictericia, orina oscura, dolor abdominal, náuseas, exposición a hepatitis, consumo de alcohol o tratamientos que pueden afectar el hígado."
+      ]
+    }
+  },
+  {
+    "titulo": "Radiografía de tórax",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Estudio rápido que usa una dosis pequeña de rayos X para obtener imágenes del corazón, pulmones, vías respiratorias, vasos y huesos del tórax.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=radiografia-de-torax",
+    "keywords": [
+      "radiografía de tórax",
+      "rayos x de torax",
+      "placa de torax",
+      "rx torax",
+      "tos",
+      "falta de aire",
+      "dolor de pecho",
+      "fiebre"
+    ],
+    "aliases": [
+      "rayos x de torax",
+      "placa de torax",
+      "rx torax"
+    ],
+    "rco": {
+      "urgencias": [
+        "Radiografía de tórax suele ser seguro. Busca atención urgente si el síntoma que motivó el estudio se acompaña de dificultad respiratoria, dolor intenso, desmayo, debilidad súbita, confusión, sangrado importante o empeoramiento rápido; no esperes el informe."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse ante tos persistente, fiebre, falta de aire, dolor torácico, traumatismo o antes de ciertos procedimientos."
+      ]
+    }
+  },
+  {
+    "titulo": "Radiografía de columna",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Estudio con rayos X que muestra principalmente huesos, alineación y curvaturas de la columna.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=radiografia-de-columna",
+    "keywords": [
+      "radiografía de columna",
+      "rayos x de columna",
+      "placa de columna",
+      "rx columna",
+      "dolor de espalda",
+      "dolor lumbar",
+      "dolor de cuello",
+      "hormigueo"
+    ],
+    "aliases": [
+      "rayos x de columna",
+      "placa de columna",
+      "rx columna"
+    ],
+    "rco": {
+      "urgencias": [
+        "Radiografía de columna suele ser seguro. Busca atención urgente si el síntoma que motivó el estudio se acompaña de dificultad respiratoria, dolor intenso, desmayo, debilidad súbita, confusión, sangrado importante o empeoramiento rápido; no esperes el informe."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse tras un traumatismo, dolor persistente, deformidad o seguimiento de una condición ósea."
+      ]
+    }
+  },
+  {
+    "titulo": "Ecografía abdominal",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Examen sin radiación que usa ondas de sonido para observar órganos y vasos del abdomen.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-abdominal",
+    "keywords": [
+      "ecografía abdominal",
+      "ultrasonido abdominal",
+      "eco abdominal",
+      "ecografia de abdomen",
+      "dolor abdominal",
+      "hinchazon abdominal",
+      "piel amarilla",
+      "dolor de costado"
+    ],
+    "aliases": [
+      "ultrasonido abdominal",
+      "eco abdominal",
+      "ecografia de abdomen"
+    ],
+    "rco": {
+      "urgencias": [
+        "Ecografía abdominal no suele producir complicaciones. Busca atención urgente si el dolor, sangrado, dificultad respiratoria, desmayo u otro síntoma que motivó el examen se vuelve intenso o empeora rápidamente; no esperes el informe para pedir ayuda."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante dolor abdominal, ictericia, hallazgos en análisis, sospecha de cálculos o seguimiento de enfermedades abdominales."
+      ]
+    }
+  },
+  {
+    "titulo": "Resonancia magnética cerebral",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Estudio que usa un campo magnético y ondas de radio para crear imágenes detalladas del cerebro sin radiación ionizante.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=resonancia-magnetica-cerebral",
+    "keywords": [
+      "resonancia magnética cerebral",
+      "resonancia cerebral",
+      "rm cerebral",
+      "mri cerebral",
+      "dolor de cabeza fuerte",
+      "convulsiones",
+      "debilidad en un lado del cuerpo",
+      "confusion"
+    ],
+    "aliases": [
+      "resonancia cerebral",
+      "rm cerebral",
+      "mri cerebral"
+    ],
+    "rco": {
+      "urgencias": [
+        "Durante o después de Resonancia magnética cerebral, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse ante déficit neurológico, convulsiones, cefalea con signos de alarma, cambios cognitivos o hallazgos previos."
+      ]
+    }
+  },
+  {
+    "titulo": "Electrocardiograma",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Prueba rápida e indolora que registra la actividad eléctrica del corazón mediante electrodos colocados sobre la piel.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=electrocardiograma",
+    "keywords": [
+      "electrocardiograma",
+      "ecg",
+      "ekg",
+      "electro del corazon",
+      "dolor de pecho",
+      "palpitaciones",
+      "desmayo",
+      "falta de aire"
+    ],
+    "aliases": [
+      "ecg",
+      "ekg",
+      "electro del corazon"
+    ],
+    "rco": {
+      "urgencias": [
+        "Electrocardiograma no suele causar complicaciones. Busca atención urgente si presentas dolor de pecho, falta de aire intensa, desmayo, debilidad súbita o palpitaciones persistentes, aunque el registro haya finalizado o parezca normal."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse ante dolor de pecho, palpitaciones, falta de aire, mareo, desmayo, factores de riesgo o control de medicamentos y dispositivos."
+      ]
+    }
+  },
+  {
+    "titulo": "Ecocardiograma",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Ecografía del corazón que crea imágenes en movimiento para evaluar cavidades, válvulas, bombeo y flujo sanguíneo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecocardiograma",
+    "keywords": [
+      "ecocardiograma",
+      "eco cardiaco",
+      "ecografia del corazon",
+      "ultrasonido cardiaco",
+      "falta de aire",
+      "hinchazón",
+      "palpitaciones",
+      "dolor de pecho"
+    ],
+    "aliases": [
+      "eco cardiaco",
+      "ecografia del corazon",
+      "ultrasonido cardiaco"
+    ],
+    "rco": {
+      "urgencias": [
+        "Ecocardiograma no suele producir complicaciones. Busca atención urgente si el dolor, sangrado, dificultad respiratoria, desmayo u otro síntoma que motivó el examen se vuelve intenso o empeora rápidamente; no esperes el informe para pedir ayuda."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante soplo, falta de aire, hinchazón, dolor de pecho, cambios en ECG o seguimiento de enfermedad cardíaca."
+      ]
+    }
+  },
+  {
+    "titulo": "Espirometría",
+    "tipo": "examen",
+    "categoria": "Neumología",
+    "prioridad": 3,
+    "description": "Prueba de función pulmonar que mide cuánto aire puedes expulsar y con qué rapidez.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=espirometria",
+    "keywords": [
+      "espirometría",
+      "prueba pulmonar",
+      "funcion pulmonar",
+      "soplar pulmones",
+      "falta de aire",
+      "tos",
+      "silbido en el pecho",
+      "cansancio al caminar"
+    ],
+    "aliases": [
+      "prueba pulmonar",
+      "funcion pulmonar",
+      "soplar pulmones"
+    ],
+    "rco": {
+      "urgencias": [
+        "Detén la espirometría y avisa al personal si presentas dolor de pecho, falta de aire intensa, mareo marcado o desmayo. Si los síntomas persisten después del examen, busca atención urgente."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante tos persistente, silbidos, falta de aire, exposición laboral o seguimiento de asma y EPOC."
+      ]
+    }
+  },
+  {
+    "titulo": "Oximetría de pulso",
+    "tipo": "examen",
+    "categoria": "Neumología",
+    "prioridad": 3,
+    "description": "Medición rápida y no invasiva de la saturación estimada de oxígeno y el pulso mediante un sensor, generalmente colocado en un dedo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=oximetria-de-pulso",
+    "keywords": [
+      "oximetría de pulso",
+      "oximetro",
+      "saturacion de oxigeno",
+      "spo2",
+      "falta de aire",
+      "labios morados",
+      "respiración rápida",
+      "dolor de pecho"
+    ],
+    "aliases": [
+      "oximetro",
+      "saturacion de oxigeno",
+      "spo2"
+    ],
+    "rco": {
+      "urgencias": [
+        "Busca atención urgente si la lectura baja se acompaña de dificultad para respirar, labios o rostro azulados, dolor de pecho, confusión o deterioro rápido. Repite una lectura dudosa correctamente, pero no retrases la atención por confiar solo en el dispositivo."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede medirse ante falta de aire, enfermedad pulmonar o cardíaca, infecciones respiratorias, anestesia o seguimiento domiciliario indicado."
+      ]
+    }
+  },
+  {
+    "titulo": "Endoscopia digestiva alta",
+    "tipo": "examen",
+    "categoria": "Gastroenterología",
+    "prioridad": 3,
+    "description": "Procedimiento que permite observar esófago, estómago y duodeno con una cámara flexible introducida por la boca.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=endoscopia-digestiva-alta",
+    "keywords": [
+      "endoscopia digestiva alta",
+      "endoscopia alta",
+      "gastroscopia",
+      "egd",
+      "dolor de estomago",
+      "dificultad para tragar",
+      "heces negras",
+      "vomitos"
+    ],
+    "aliases": [
+      "endoscopia alta",
+      "gastroscopia",
+      "egd"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la endoscopia, busca atención urgente si presentas dificultad para respirar o tragar, dolor intenso de pecho o abdomen, fiebre, vómitos persistentes, vómito con sangre, heces negras, mareo intenso o desmayo."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante síntomas persistentes o de alarma, seguimiento de lesiones o necesidad de biopsia o tratamiento endoscópico."
+      ]
+    }
+  },
+  {
+    "titulo": "Colonoscopia",
+    "tipo": "examen",
+    "categoria": "Gastroenterología",
+    "prioridad": 3,
+    "description": "Procedimiento que examina el recto y el colon con una cámara flexible; puede detectar y retirar pólipos y tomar biopsias.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=colonoscopia",
+    "keywords": [
+      "colonoscopia",
+      "endoscopia de colon",
+      "examen del colon",
+      "camara del colon",
+      "sangre en heces",
+      "estrenimiento",
+      "diarrea",
+      "dolor abdominal"
+    ],
+    "aliases": [
+      "endoscopia de colon",
+      "examen del colon",
+      "camara del colon"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la colonoscopia, busca atención urgente si presentas dolor abdominal intenso o creciente, abdomen muy distendido, fiebre, vómitos persistentes, mareo intenso, desmayo o sangrado rectal abundante o que no se detiene."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede indicarse por edad y riesgo de tamizaje, sangre en heces, anemia, cambios persistentes del hábito intestinal o seguimiento de pólipos."
+      ]
+    }
+  },
+  {
+    "titulo": "Electroencefalograma",
+    "tipo": "examen",
+    "categoria": "Neurología",
+    "prioridad": 3,
+    "description": "Prueba que registra la actividad eléctrica cerebral mediante electrodos colocados sobre el cuero cabelludo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=electroencefalograma",
+    "keywords": [
+      "electroencefalograma",
+      "eeg",
+      "electro cerebral",
+      "ondas cerebrales",
+      "desmayo",
+      "confusion",
+      "temblores",
+      "dificultad para concentrarse"
+    ],
+    "aliases": [
+      "eeg",
+      "electro cerebral",
+      "ondas cerebrales"
+    ],
+    "rco": {
+      "urgencias": [
+        "Electroencefalograma no suele causar complicaciones. Busca atención urgente si presentas dolor de pecho, falta de aire intensa, desmayo, debilidad súbita o palpitaciones persistentes, aunque el registro haya finalizado o parezca normal."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Puede solicitarse después de una convulsión, episodios de desconexión, movimientos anormales, confusión no explicada o para seguimiento de epilepsia."
+      ]
+    }
+  },
+  {
+    "titulo": "Fondo de ojo",
+    "tipo": "examen",
+    "categoria": "Oftalmología",
+    "prioridad": 3,
+    "description": "Examen que permite observar retina, mácula, vasos sanguíneos y nervio óptico en la parte posterior del ojo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=fondo-de-ojo",
+    "keywords": [
+      "fondo de ojo",
+      "oftalmoscopia",
+      "examen de retina",
+      "retina",
+      "pupila dilatada",
+      "visión borrosa",
+      "pérdida de visión",
+      "dolor de ojos",
+      "manchas en la visión"
+    ],
+    "aliases": [
+      "oftalmoscopia",
+      "examen de retina",
+      "retina",
+      "pupila dilatada"
+    ],
+    "rco": {
+      "urgencias": [
+        "Si se usaron gotas para dilatar la pupila, busca atención urgente ante dolor ocular intenso, ojo muy rojo, náuseas, vómitos o pérdida súbita de visión. La visión borrosa y sensibilidad a la luz leves suelen ser transitorias."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita en controles visuales, diabetes, hipertensión, síntomas visuales, cefalea seleccionada o seguimiento de enfermedades oculares."
+      ]
+    }
+  },
+  {
+    "titulo": "Ácido úrico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide ácido úrico, un desecho producido al degradar purinas, en una muestra de sangre. Ayuda a evaluar gota, cálculos urinarios y control durante ciertos tratamientos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=acido-urico",
+    "keywords": [
+      "ácido úrico",
+      "uricemia",
+      "urato",
+      "dolor articular",
+      "hinchazón",
+      "dolor en los riñones"
+    ],
+    "aliases": [
+      "uricemia",
+      "urato"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Ácido úrico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Puede solicitarse ante dolor e inflamación articular, cálculos renales, enfermedad renal o tratamientos oncológicos."
+      ]
+    }
+  },
+  {
+    "titulo": "Albúmina sérica",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide albúmina, la principal proteína de la sangre producida por el hígado. Apoya la evaluación del estado general, hígado, riñones y nutrición clínica.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=albumina-serica",
+    "keywords": [
+      "albúmina sérica",
+      "albumina en sangre",
+      "hinchazón de piernas",
+      "fatiga",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "albumina en sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Albúmina sérica, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Puede pedirse en controles o ante edema, enfermedad hepática o renal, pérdida de peso o enfermedad prolongada."
+      ]
+    }
+  },
+  {
+    "titulo": "Bilirrubina total y fraccionada",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide bilirrubina total y sus fracciones directa e indirecta, pigmento generado al degradar glóbulos rojos. Ayuda a evaluar hígado, vías biliares y causas de ictericia o destrucción de glóbulos rojos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=bilirrubina-total-y-fraccionada",
+    "keywords": [
+      "bilirrubina total y fraccionada",
+      "bilirrubina directa",
+      "bilirrubina indirecta",
+      "piel amarilla",
+      "ojos amarillos",
+      "orina oscura"
+    ],
+    "aliases": [
+      "bilirrubina directa",
+      "bilirrubina indirecta"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Bilirrubina total y fraccionada, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita ante piel u ojos amarillos, orina oscura, dolor abdominal, anemia o alteraciones hepáticas."
+      ]
+    }
+  },
+  {
+    "titulo": "Calcio sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide calcio total o ionizado en la sangre, mineral esencial para huesos, músculos, nervios y corazón. Ayuda a evaluar paratiroides, huesos, riñones y alteraciones metabólicas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=calcio-serico",
+    "keywords": [
+      "calcio sérico",
+      "calcio en sangre",
+      "calambres",
+      "hormigueo",
+      "debilidad",
+      "palpitaciones"
+    ],
+    "aliases": [
+      "calcio en sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Calcio sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Puede pedirse en paneles rutinarios o ante calambres, debilidad, hormigueo, arritmias, cálculos o enfermedad renal."
+      ]
+    }
+  },
+  {
+    "titulo": "Sodio sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide sodio en sangre, electrolito clave para el equilibrio de líquidos y la función nerviosa y muscular. Detecta y vigila alteraciones de agua y sodio.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=sodio-serico",
+    "keywords": [
+      "sodio sérico",
+      "sodio en sangre",
+      "na",
+      "confusión",
+      "debilidad",
+      "calambres",
+      "nauseas"
+    ],
+    "aliases": [
+      "sodio en sangre",
+      "na"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Sodio sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita en paneles metabólicos o ante vómitos, diarrea, confusión, convulsiones, edema o uso de diuréticos."
+      ]
+    }
+  },
+  {
+    "titulo": "Potasio sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide potasio en sangre, electrolito esencial para células, músculos y ritmo cardíaco. Detecta alteraciones que pueden afectar músculos y corazón.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=potasio-serico",
+    "keywords": [
+      "potasio sérico",
+      "potasio en sangre",
+      "k",
+      "palpitaciones",
+      "debilidad",
+      "calambres",
+      "hormigueo"
+    ],
+    "aliases": [
+      "potasio en sangre",
+      "k"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Potasio sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita en controles, enfermedad renal, diabetes, trastornos suprarrenales, arritmias o uso de medicamentos que alteran potasio."
+      ]
+    }
+  },
+  {
+    "titulo": "Cloro sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide cloro en sangre, electrolito que contribuye al equilibrio de líquidos y ácido-base. Ayuda a evaluar hidratación y trastornos metabólicos, renales o respiratorios.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=cloro-serico",
+    "keywords": [
+      "cloro sérico",
+      "cloruro en sangre",
+      "debilidad",
+      "fatiga",
+      "respiración rápida",
+      "vomitos"
+    ],
+    "aliases": [
+      "cloruro en sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Cloro sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita habitualmente dentro de un panel de electrolitos o ante vómitos, diarrea, debilidad o cambios respiratorios."
+      ]
+    }
+  },
+  {
+    "titulo": "Magnesio sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide magnesio en sangre, mineral importante para músculos, nervios, huesos y ritmo cardíaco. Detecta deficiencia o exceso y apoya la evaluación de arritmias y otros desequilibrios.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=magnesio-serico",
+    "keywords": [
+      "magnesio sérico",
+      "magnesio en sangre",
+      "calambres",
+      "debilidad",
+      "palpitaciones",
+      "temblores"
+    ],
+    "aliases": [
+      "magnesio en sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Magnesio sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Puede solicitarse ante calambres, debilidad, convulsiones, arritmias, diarrea prolongada, alcoholismo o enfermedad renal."
+      ]
+    }
+  },
+  {
+    "titulo": "TSH",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide la hormona estimulante de la tiroides producida por la hipófisis. Es la prueba inicial más utilizada para evaluar función tiroidea y vigilar tratamiento.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tsh",
+    "keywords": [
+      "tsh",
+      "tirotropina",
+      "hormona estimulante de tiroides",
+      "fatiga",
+      "aumento de peso",
+      "bajada de peso",
+      "palpitaciones",
+      "perfil tiroideo"
+    ],
+    "aliases": [
+      "tirotropina",
+      "hormona estimulante de tiroides"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para TSH, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita ante cambios de peso, fatiga, intolerancia al frío o calor, palpitaciones, alteraciones menstruales o control tiroideo."
+      ]
+    }
+  },
+  {
+    "titulo": "T4 libre",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide la fracción libre y activa de tiroxina, principal hormona producida por la tiroides. Complementa la TSH para identificar y clasificar alteraciones tiroideas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=t4-libre",
+    "keywords": [
+      "t4 libre",
+      "tiroxina libre",
+      "ft4",
+      "fatiga",
+      "intolerancia al calor",
+      "piel seca",
+      "palpitaciones",
+      "perfil tiroideo"
+    ],
+    "aliases": [
+      "tiroxina libre",
+      "ft4"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para T4 libre, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita ante TSH anormal, síntomas tiroideos, embarazo seleccionado o seguimiento de tratamiento."
+      ]
+    }
+  },
+  {
+    "titulo": "T3 libre",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide la fracción libre de triyodotironina, hormona tiroidea activa. Ayuda especialmente a evaluar sospecha de hipertiroidismo cuando TSH está baja y T4 no explica el cuadro.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=t3-libre",
+    "keywords": [
+      "t3 libre",
+      "triyodotironina libre",
+      "ft3",
+      "palpitaciones",
+      "bajada de peso",
+      "intolerancia al calor",
+      "temblores",
+      "perfil tiroideo"
+    ],
+    "aliases": [
+      "triyodotironina libre",
+      "ft3"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para T3 libre, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita ante síntomas de exceso tiroideo, TSH anormal o seguimiento seleccionado."
+      ]
+    }
+  },
+  {
+    "titulo": "Cortisol sérico",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide cortisol en sangre, hormona suprarrenal que varía durante el día y responde al estrés. Apoya la evaluación de exceso o insuficiencia de cortisol y el seguimiento endocrino.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=cortisol-serico",
+    "keywords": [
+      "cortisol sérico",
+      "cortisol en sangre",
+      "debilidad",
+      "fatiga",
+      "aumento de peso",
+      "sintomas de presion baja"
+    ],
+    "aliases": [
+      "cortisol en sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Cortisol sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Puede solicitarse ante sospecha de síndrome de Cushing, insuficiencia suprarrenal o alteraciones hipofisarias."
+      ]
+    }
+  },
+  {
+    "titulo": "Proteína C reactiva (PCR)",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Mide proteína C reactiva producida por el hígado en respuesta a inflamación. Detecta y vigila inflamación, pero no identifica por sí sola su causa o ubicación.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=proteina-c-reactiva-pcr",
+    "keywords": [
+      "proteína c reactiva (pcr)",
+      "pcr inflamacion",
+      "crp",
+      "fiebre",
+      "dolor articular",
+      "fatiga",
+      "malestar general"
+    ],
+    "aliases": [
+      "pcr inflamacion",
+      "crp"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Proteína C reactiva (PCR), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita ante sospecha de infección o enfermedad inflamatoria y para seguimiento de evolución."
+      ]
+    }
+  },
+  {
+    "titulo": "Procalcitonina",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Mide procalcitonina en sangre, biomarcador que puede aumentar en infecciones bacterianas sistémicas. Apoya la evaluación de sepsis y, en contextos definidos, decisiones de seguimiento antibiótico junto con la clínica.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=procalcitonina",
+    "keywords": [
+      "procalcitonina",
+      "pct",
+      "fiebre",
+      "escalofrios",
+      "respiración rápida",
+      "confusión"
+    ],
+    "aliases": [
+      "pct"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Procalcitonina, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita principalmente en pacientes con sospecha de infección bacteriana grave o sepsis."
+      ]
+    }
+  },
+  {
+    "titulo": "Velocidad de sedimentación globular (VSG)",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Mide cuán rápido sedimentan los glóbulos rojos en una hora; es un marcador indirecto de inflamación. Apoya la evaluación y seguimiento de procesos inflamatorios, infecciosos o autoinmunes.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=velocidad-de-sedimentacion-globular-vsg",
+    "keywords": [
+      "velocidad de sedimentación globular (vsg)",
+      "vsg",
+      "eritrosedimentacion",
+      "esr",
+      "fiebre",
+      "dolor articular",
+      "fatiga",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "vsg",
+      "eritrosedimentacion",
+      "esr"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Velocidad de sedimentación globular (VSG), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Puede solicitarse ante fiebre, pérdida de peso, dolor o rigidez articular, cefalea seleccionada o enfermedad inflamatoria conocida."
+      ]
+    }
+  },
+  {
+    "titulo": "Tiempo de Protrombina (TP/INR)",
+    "tipo": "examen",
+    "categoria": "Hematología",
+    "prioridad": 3,
+    "description": "Mide cuánto tarda en coagular una muestra y estandariza el resultado mediante INR. Evalúa ciertas vías de coagulación y vigila tratamiento con warfarina.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tiempo-de-protrombina-tp-inr",
+    "keywords": [
+      "tiempo de protrombina (tp/inr)",
+      "tp",
+      "inr",
+      "tiempo de protrombina",
+      "sangrado abundante",
+      "moretones faciles",
+      "sangrado menstrual abundante"
+    ],
+    "aliases": [
+      "tp",
+      "inr",
+      "tiempo de protrombina"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Tiempo de Protrombina (TP/INR), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita ante sangrado o trombosis, enfermedad hepática, antes de procedimientos seleccionados o para control de warfarina."
+      ]
+    }
+  },
+  {
+    "titulo": "Tiempo de Tromboplastina Parcial Activada (TTPa)",
+    "tipo": "examen",
+    "categoria": "Hematología",
+    "prioridad": 3,
+    "description": "Mide el tiempo de coagulación relacionado con un grupo de factores de la vía intrínseca y común. Ayuda a investigar sangrado o trombosis y a monitorizar heparina no fraccionada.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tiempo-de-tromboplastina-parcial-activada-ttpa",
+    "keywords": [
+      "tiempo de tromboplastina parcial activada (ttpa)",
+      "ttpa",
+      "aptt",
+      "ptt",
+      "sangrado abundante",
+      "moretones faciles",
+      "sangrado menstrual abundante"
+    ],
+    "aliases": [
+      "ttpa",
+      "aptt",
+      "ptt"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Tiempo de Tromboplastina Parcial Activada (TTPa), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita ante sangrado inexplicado, sospecha de hemofilia o anticoagulante lúpico, y en determinados controles o procedimientos."
+      ]
+    }
+  },
+  {
+    "titulo": "Troponina cardíaca",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Mide troponina I o T liberada a la sangre cuando existe lesión del músculo cardíaco. Es el biomarcador principal para apoyar el diagnóstico de infarto junto con síntomas y electrocardiograma.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=troponina-cardiaca",
+    "keywords": [
+      "troponina cardíaca",
+      "troponina i",
+      "troponina t",
+      "dolor de pecho",
+      "falta de aire",
+      "sudor frio",
+      "nauseas"
+    ],
+    "aliases": [
+      "troponina i",
+      "troponina t"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Troponina cardíaca, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita de urgencia ante dolor torácico, falta de aire u otros síntomas compatibles con lesión cardíaca."
+      ]
+    }
+  },
+  {
+    "titulo": "CK-MB",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Mide la isoenzima MB de creatina quinasa, presente principalmente en músculo cardíaco. Puede apoyar la evaluación de lesión cardíaca, aunque la troponina es más específica y preferida para infarto.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ck-mb",
+    "keywords": [
+      "ck-mb",
+      "creatina quinasa mb",
+      "cpk mb",
+      "dolor de pecho",
+      "falta de aire",
+      "debilidad",
+      "sudor frio"
+    ],
+    "aliases": [
+      "creatina quinasa mb",
+      "cpk mb"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para CK-MB, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se utiliza en situaciones seleccionadas, como sospecha de reinfarto o cuando la troponina no está disponible, según protocolo."
+      ]
+    }
+  },
+  {
+    "titulo": "Microalbuminuria",
+    "tipo": "examen",
+    "categoria": "Nefrología",
+    "prioridad": 3,
+    "description": "Detecta pequeñas cantidades de albúmina en orina, preferentemente mediante relación albúmina/creatinina (UACR). Identifica daño renal temprano y estima riesgo renal y cardiovascular.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=microalbuminuria",
+    "keywords": [
+      "microalbuminuria",
+      "uacr",
+      "albumina creatinina en orina",
+      "orinar frecuente",
+      "hinchazón de piernas",
+      "fatiga"
+    ],
+    "aliases": [
+      "uacr",
+      "albumina creatinina en orina"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para Microalbuminuria suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que lo solicitó. Se solicita especialmente en diabetes, hipertensión, enfermedad renal o riesgo cardiovascular."
+      ]
+    }
+  },
+  {
+    "titulo": "Fosfatasa alcalina",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide fosfatasa alcalina (ALP), enzima presente sobre todo en hígado, vías biliares y huesos. Ayuda a investigar alteraciones hepatobiliares u óseas y a vigilar su evolución.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=fosfatasa-alcalina",
+    "keywords": [
+      "fosfatasa alcalina",
+      "alp",
+      "piel amarilla",
+      "dolor abdominal",
+      "dolor de huesos"
+    ],
+    "aliases": [
+      "alp"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Fosfatasa alcalina, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante ictericia, dolor abdominal, dolor óseo o resultados hepáticos anormales."
+      ]
+    }
+  },
+  {
+    "titulo": "Gamma-glutamil transferasa (GGT)",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide GGT, enzima concentrada principalmente en hígado y vías biliares. Apoya la evaluación de lesión hepatobiliar y ayuda a interpretar una fosfatasa alcalina elevada.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=gamma-glutamil-transferasa-ggt",
+    "keywords": [
+      "gamma-glutamil transferasa (ggt)",
+      "ggt",
+      "piel amarilla",
+      "orina oscura",
+      "dolor abdominal"
+    ],
+    "aliases": [
+      "ggt"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Gamma-glutamil transferasa (GGT), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante alteraciones hepáticas, ictericia o sospecha de efecto de alcohol o medicamentos."
+      ]
+    }
+  },
+  {
+    "titulo": "Alanina aminotransferasa (ALT/TGP)",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide ALT o TGP, enzima localizada principalmente dentro de células del hígado. Ayuda a detectar y vigilar lesión hepatocelular.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=alanina-aminotransferasa-alt-tgp",
+    "keywords": [
+      "alanina aminotransferasa (alt/tgp)",
+      "alt",
+      "tgp",
+      "fatiga",
+      "piel amarilla",
+      "orina oscura"
+    ],
+    "aliases": [
+      "alt",
+      "tgp"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Alanina aminotransferasa (ALT/TGP), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita en paneles hepáticos, exposición a hepatitis, síntomas o medicamentos con posible efecto hepático."
+      ]
+    }
+  },
+  {
+    "titulo": "Aspartato aminotransferasa (AST/TGO)",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide AST o TGO, enzima presente en hígado, corazón, músculo y otros tejidos. Apoya la evaluación de lesión hepática o muscular.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=aspartato-aminotransferasa-ast-tgo",
+    "keywords": [
+      "aspartato aminotransferasa (ast/tgo)",
+      "ast",
+      "tgo",
+      "fatiga",
+      "dolor muscular",
+      "piel amarilla"
+    ],
+    "aliases": [
+      "ast",
+      "tgo"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Aspartato aminotransferasa (AST/TGO), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita con ALT ante síntomas, controles hepáticos o posible lesión muscular."
+      ]
+    }
+  },
+  {
+    "titulo": "Lactato deshidrogenasa (LDH)",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide LDH, enzima presente en muchos tejidos que se libera con daño celular. Es un marcador inespecífico que apoya la evaluación de hemólisis, lesión tisular y algunas enfermedades.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=lactato-deshidrogenasa-ldh",
+    "keywords": [
+      "lactato deshidrogenasa (ldh)",
+      "ldh",
+      "fatiga",
+      "debilidad",
+      "piel amarilla"
+    ],
+    "aliases": [
+      "ldh"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Lactato deshidrogenasa (LDH), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita según síntomas o para seguimiento de trastornos hematológicos, hepáticos, musculares u oncológicos."
+      ]
+    }
+  },
+  {
+    "titulo": "Fósforo sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide fosfato en sangre, mineral esencial para huesos, energía celular y equilibrio ácido-base. Ayuda a evaluar riñones, huesos, paratiroides y metabolismo mineral.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=fosforo-serico",
+    "keywords": [
+      "fósforo sérico",
+      "fosfato",
+      "debilidad",
+      "dolor de huesos",
+      "confusión"
+    ],
+    "aliases": [
+      "fosfato"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Fósforo sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante enfermedad renal, alteraciones de calcio, debilidad ósea o trastornos nutricionales."
+      ]
+    }
+  },
+  {
+    "titulo": "Hierro sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide hierro circulante unido principalmente a transferrina. Contribuye a evaluar deficiencia o sobrecarga de hierro, siempre junto con otras pruebas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hierro-serico",
+    "keywords": [
+      "hierro sérico",
+      "hierro en sangre",
+      "fatiga",
+      "debilidad",
+      "piel palida"
+    ],
+    "aliases": [
+      "hierro en sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Hierro sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante anemia, fatiga, sangrado, sospecha de sobrecarga o seguimiento."
+      ]
+    }
+  },
+  {
+    "titulo": "Ferritina",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide ferritina, proteína que almacena hierro y también aumenta con inflamación. Estima reservas de hierro y apoya la evaluación de deficiencia o sobrecarga.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ferritina",
+    "keywords": [
+      "ferritina",
+      "reservas de hierro",
+      "fatiga",
+      "debilidad",
+      "unas fragiles"
+    ],
+    "aliases": [
+      "reservas de hierro"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Ferritina, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante anemia, fatiga, pérdidas de sangre, embarazo o sospecha de exceso de hierro."
+      ]
+    }
+  },
+  {
+    "titulo": "Transferrina",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide transferrina, proteína producida por el hígado que transporta hierro. Ayuda a caracterizar deficiencia, sobrecarga y cambios por inflamación, hígado o nutrición.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=transferrina",
+    "keywords": [
+      "transferrina",
+      "transportador de hierro",
+      "fatiga",
+      "debilidad",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "transportador de hierro"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Transferrina, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita como parte del estudio de anemia o metabolismo del hierro."
+      ]
+    }
+  },
+  {
+    "titulo": "Saturación de transferrina",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Calcula qué porcentaje de la transferrina está ocupado por hierro, usando hierro y capacidad de unión. Ayuda a diferenciar deficiencia y sobrecarga de hierro.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=saturacion-de-transferrina",
+    "keywords": [
+      "saturación de transferrina",
+      "indice de saturacion",
+      "fatiga",
+      "debilidad",
+      "dolor articular"
+    ],
+    "aliases": [
+      "indice de saturacion"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Saturación de transferrina, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita junto con ferritina y transferrina ante anemia o sospecha de exceso de hierro."
+      ]
+    }
+  },
+  {
+    "titulo": "Recuento de reticulocitos",
+    "tipo": "examen",
+    "categoria": "Hematología",
+    "prioridad": 3,
+    "description": "Cuenta glóbulos rojos jóvenes producidos por la médula ósea. Muestra cómo responde la médula ante anemia, sangrado o destrucción de glóbulos rojos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=recuento-de-reticulocitos",
+    "keywords": [
+      "recuento de reticulocitos",
+      "reticulocitos",
+      "fatiga",
+      "debilidad",
+      "piel amarilla"
+    ],
+    "aliases": [
+      "reticulocitos"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Recuento de reticulocitos, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita para clasificar anemia y vigilar recuperación o tratamientos."
+      ]
+    }
+  },
+  {
+    "titulo": "Frotis de sangre periférica",
+    "tipo": "examen",
+    "categoria": "Hematología",
+    "prioridad": 3,
+    "description": "Examina al microscopio tamaño, forma y aspecto de células sanguíneas extendidas en una lámina. Complementa el hemograma para investigar anemias, infecciones y trastornos hematológicos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=frotis-de-sangre-periferica",
+    "keywords": [
+      "frotis de sangre periférica",
+      "lamina periferica",
+      "fatiga",
+      "fiebre",
+      "moretones faciles"
+    ],
+    "aliases": [
+      "lamina periferica"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Frotis de sangre periférica, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita cuando el hemograma es anormal o hay sospecha clínica específica."
+      ]
+    }
+  },
+  {
+    "titulo": "Dímero D",
+    "tipo": "examen",
+    "categoria": "Hematología",
+    "prioridad": 3,
+    "description": "Mide fragmentos producidos cuando el organismo degrada fibrina de un coágulo. En pacientes con probabilidad clínica baja o intermedia ayuda a descartar trombosis; no confirma por sí solo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=dimero-d",
+    "keywords": [
+      "dímero d",
+      "d dimer",
+      "hinchazón de piernas",
+      "dolor de pecho",
+      "falta de aire"
+    ],
+    "aliases": [
+      "d dimer"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Dímero D, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante sospecha de trombosis venosa, embolia pulmonar o coagulación intravascular diseminada."
+      ]
+    }
+  },
+  {
+    "titulo": "Fibrinógeno",
+    "tipo": "examen",
+    "categoria": "Hematología",
+    "prioridad": 3,
+    "description": "Mide fibrinógeno o factor I, proteína hepática necesaria para formar coágulos. Ayuda a investigar sangrado, trombosis, inflamación y coagulación intravascular diseminada.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=fibrinogeno",
+    "keywords": [
+      "fibrinógeno",
+      "factor i",
+      "sangrado abundante",
+      "moretones faciles",
+      "fiebre"
+    ],
+    "aliases": [
+      "factor i"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Fibrinógeno, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante sangrado inexplicado, alteraciones de coagulación o sospecha de consumo de factores."
+      ]
+    }
+  },
+  {
+    "titulo": "Anticuerpos antinucleares (ANA)",
+    "tipo": "examen",
+    "categoria": "Inmunología",
+    "prioridad": 3,
+    "description": "Detecta autoanticuerpos dirigidos contra componentes del núcleo celular. Apoya la evaluación de enfermedades autoinmunes sistémicas, especialmente lupus.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=anticuerpos-antinucleares-ana",
+    "keywords": [
+      "anticuerpos antinucleares (ana)",
+      "ana",
+      "dolor articular",
+      "erupción en la piel",
+      "fatiga"
+    ],
+    "aliases": [
+      "ana"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Anticuerpos antinucleares (ANA), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante síntomas compatibles como dolor articular, erupción, fotosensibilidad o inflamación persistente."
+      ]
+    }
+  },
+  {
+    "titulo": "Prueba rápida de VIH",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Busca anticuerpos contra VIH y, según el dispositivo, también antígeno, usando sangre capilar u otra muestra. Ofrece tamizaje en minutos para facilitar diagnóstico oportuno; un resultado reactivo necesita confirmación.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=prueba-rapida-de-vih",
+    "keywords": [
+      "prueba rápida de vih",
+      "test rapido vih",
+      "fiebre",
+      "ganglios inflamados",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "test rapido vih"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Prueba rápida de VIH, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se recomienda en tamizaje, embarazo, exposición, nuevas parejas o solicitud personal informada."
+      ]
+    }
+  },
+  {
+    "titulo": "Serología para hepatitis B",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Conjunto de pruebas como HBsAg, anti-HBs y anti-HBc que detectan infección, inmunidad o exposición al virus B. Distingue patrones de infección actual, pasada, vacunación o susceptibilidad.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=serologia-para-hepatitis-b",
+    "keywords": [
+      "serología para hepatitis b",
+      "hbsag",
+      "anti hbs",
+      "anti hbc",
+      "piel amarilla",
+      "fatiga",
+      "orina oscura"
+    ],
+    "aliases": [
+      "hbsag",
+      "anti hbs",
+      "anti hbc"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Serología para hepatitis B, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita en tamizaje de adultos y embarazo, exposición, riesgo, enfermedad hepática o antes de inmunosupresión."
+      ]
+    }
+  },
+  {
+    "titulo": "Serología para hepatitis C",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Detecta anticuerpos contra el virus de hepatitis C como prueba inicial de exposición. Identifica personas que necesitan una prueba de ARN para confirmar infección activa.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=serologia-para-hepatitis-c",
+    "keywords": [
+      "serología para hepatitis c",
+      "anti hcv",
+      "fatiga",
+      "piel amarilla",
+      "orina oscura"
+    ],
+    "aliases": [
+      "anti hcv"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Serología para hepatitis C, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita en tamizaje de adultos y embarazo, exposición sanguínea, riesgo o alteraciones hepáticas."
+      ]
+    }
+  },
+  {
+    "titulo": "Hormona foliculoestimulante (FSH)",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide FSH, hormona hipofisaria que regula ovarios, testículos, ciclo menstrual y producción de espermatozoides. Ayuda a evaluar función gonadal, fertilidad, menopausia y pubertad.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hormona-foliculoestimulante-fsh",
+    "keywords": [
+      "hormona foliculoestimulante (fsh)",
+      "fsh",
+      "menstruación irregular",
+      "sofocos",
+      "dificultad para concebir"
+    ],
+    "aliases": [
+      "fsh"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Hormona foliculoestimulante (FSH), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante ciclos irregulares, infertilidad, síntomas menopáusicos, pubertad alterada o baja función gonadal."
+      ]
+    }
+  },
+  {
+    "titulo": "Hormona luteinizante (LH)",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide LH, hormona hipofisaria que participa en ovulación y función testicular. Ayuda a evaluar fertilidad, función gonadal, menopausia y pubertad.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hormona-luteinizante-lh",
+    "keywords": [
+      "hormona luteinizante (lh)",
+      "lh",
+      "menstruación irregular",
+      "sofocos",
+      "dificultad para concebir"
+    ],
+    "aliases": [
+      "lh"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Hormona luteinizante (LH), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante infertilidad, ciclos irregulares, sospecha de alteración ovulatoria o pubertad anormal."
+      ]
+    }
+  },
+  {
+    "titulo": "Hemocultivo",
+    "tipo": "examen",
+    "categoria": "Microbiología",
+    "prioridad": 3,
+    "description": "Cultiva una o más muestras de sangre para detectar bacterias u hongos circulantes. Ayuda a diagnosticar bacteriemia, fungemia y sepsis e identificar sensibilidad antimicrobiana.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=hemocultivo",
+    "keywords": [
+      "hemocultivo",
+      "cultivo de sangre",
+      "fiebre",
+      "escalofríos",
+      "confusión"
+    ],
+    "aliases": [
+      "cultivo de sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Hemocultivo, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Fiebre con escalofríos, sepsis, infección grave o sospecha de infección asociada a catéter."
+      ]
+    }
+  },
+  {
+    "titulo": "Urocultivo",
+    "tipo": "examen",
+    "categoria": "Microbiología",
+    "prioridad": 3,
+    "description": "Cultiva orina para identificar microorganismos y, cuando corresponde, su sensibilidad. Confirma infección urinaria y orienta selección de antimicrobianos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=urocultivo",
+    "keywords": [
+      "urocultivo",
+      "cultivo de orina",
+      "urgencia para orinar",
+      "orina con mal olor",
+      "dolor en los riñones"
+    ],
+    "aliases": [
+      "cultivo de orina"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para Urocultivo suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Síntomas urinarios, fiebre con sospecha renal, embarazo seleccionado o infección complicada/recurrente."
+      ]
+    }
+  },
+  {
+    "titulo": "Coprocultivo",
+    "tipo": "examen",
+    "categoria": "Microbiología",
+    "prioridad": 3,
+    "description": "Cultiva una muestra de heces para buscar bacterias que causan infección intestinal. Identifica patógenos bacterianos y puede incluir pruebas de sensibilidad.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=coprocultivo",
+    "keywords": [
+      "coprocultivo",
+      "cultivo de heces",
+      "diarrea",
+      "sangre en heces",
+      "dolor abdominal"
+    ],
+    "aliases": [
+      "cultivo de heces"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para Coprocultivo suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Diarrea intensa, con sangre, fiebre, brote, viaje, inmunosupresión o enfermedad prolongada."
+      ]
+    }
+  },
+  {
+    "titulo": "Cultivo de secreción faríngea",
+    "tipo": "examen",
+    "categoria": "Microbiología",
+    "prioridad": 3,
+    "description": "Cultiva una muestra tomada de amígdalas y pared posterior de la garganta. Detecta principalmente estreptococo del grupo A y otras bacterias según solicitud.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=cultivo-de-secrecion-faringea",
+    "keywords": [
+      "cultivo de secreción faríngea",
+      "cultivo de garganta",
+      "dolor al tragar",
+      "fiebre",
+      "dolor de garganta"
+    ],
+    "aliases": [
+      "cultivo de garganta"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para Cultivo de secreción faríngea suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Dolor de garganta con sospecha bacteriana o prueba rápida negativa cuando requiere confirmación."
+      ]
+    }
+  },
+  {
+    "titulo": "Cultivo de heridas",
+    "tipo": "examen",
+    "categoria": "Microbiología",
+    "prioridad": 3,
+    "description": "Analiza exudado, pus o tejido de una herida para identificar microorganismos. Ayuda a confirmar infección y orientar antibióticos, sobre todo en heridas profundas o complejas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=cultivo-de-heridas",
+    "keywords": [
+      "cultivo de heridas",
+      "cultivo de herida",
+      "herida",
+      "enrojecimiento de piel",
+      "fiebre"
+    ],
+    "aliases": [
+      "cultivo de herida"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para Cultivo de heridas suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Herida con pus, dolor creciente, enrojecimiento, mal olor, fiebre o mala cicatrización."
+      ]
+    }
+  },
+  {
+    "titulo": "PCR para COVID-19",
+    "tipo": "examen",
+    "categoria": "Virología",
+    "prioridad": 3,
+    "description": "Detecta material genético de SARS-CoV-2 mediante amplificación molecular en muestra respiratoria. Confirma infección actual con alta sensibilidad cuando la muestra y el momento son adecuados.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=pcr-para-covid-19",
+    "keywords": [
+      "pcr para covid-19",
+      "pcr covid",
+      "sars cov 2",
+      "fiebre",
+      "tos",
+      "falta de aire"
+    ],
+    "aliases": [
+      "pcr covid",
+      "sars cov 2"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para PCR para COVID-19 suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Síntomas, exposición, brote, hospitalización o indicación epidemiológica/clínica."
+      ]
+    }
+  },
+  {
+    "titulo": "Prueba rápida de antígeno para COVID-19",
+    "tipo": "examen",
+    "categoria": "Virología",
+    "prioridad": 3,
+    "description": "Detecta proteínas de SARS-CoV-2 en una muestra respiratoria y ofrece resultado rápido. Ayuda a identificar infección actual, especialmente con alta carga viral.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=prueba-rapida-de-antigeno-para-covid-19",
+    "keywords": [
+      "prueba rápida de antígeno para covid-19",
+      "antigeno covid",
+      "fiebre",
+      "tos",
+      "falta de aire"
+    ],
+    "aliases": [
+      "antigeno covid"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para Prueba rápida de antígeno para COVID-19 suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Síntomas, exposición o tamizaje según recomendaciones vigentes."
+      ]
+    }
+  },
+  {
+    "titulo": "PCR para influenza",
+    "tipo": "examen",
+    "categoria": "Virología",
+    "prioridad": 3,
+    "description": "Detecta material genético de influenza A y B en una muestra respiratoria. Confirma influenza con mayor sensibilidad que pruebas rápidas de antígeno y puede diferenciar tipos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=pcr-para-influenza",
+    "keywords": [
+      "pcr para influenza",
+      "pcr gripe",
+      "fiebre",
+      "tos",
+      "dolor de cuerpo"
+    ],
+    "aliases": [
+      "pcr gripe"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para PCR para influenza suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Enfermedad respiratoria cuando el resultado cambia manejo, hospitalización o vigilancia."
+      ]
+    }
+  },
+  {
+    "titulo": "Carga viral VIH",
+    "tipo": "examen",
+    "categoria": "Virología",
+    "prioridad": 3,
+    "description": "Cuantifica ARN del VIH en sangre. Evalúa respuesta al tratamiento y detecta replicación viral; no reemplaza el algoritmo diagnóstico habitual.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=carga-viral-vih",
+    "keywords": [
+      "carga viral vih",
+      "rna vih",
+      "fatiga",
+      "fiebre",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "rna vih"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Carga viral VIH, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Al diagnóstico confirmado, antes y durante terapia antirretroviral o ante sospecha de falla."
+      ]
+    }
+  },
+  {
+    "titulo": "Carga viral hepatitis B",
+    "tipo": "examen",
+    "categoria": "Virología",
+    "prioridad": 3,
+    "description": "Cuantifica ADN del virus de hepatitis B en sangre. Mide replicación viral, orienta seguimiento y respuesta al tratamiento.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=carga-viral-hepatitis-b",
+    "keywords": [
+      "carga viral hepatitis b",
+      "adn vhb",
+      "hbv dna",
+      "fatiga",
+      "piel amarilla",
+      "orina oscura"
+    ],
+    "aliases": [
+      "adn vhb",
+      "hbv dna"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Carga viral hepatitis B, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Infección por HBV confirmada, evaluación inicial, embarazo con HBV o seguimiento terapéutico."
+      ]
+    }
+  },
+  {
+    "titulo": "Examen parasitológico seriado",
+    "tipo": "examen",
+    "categoria": "Parasitología",
+    "prioridad": 3,
+    "description": "Examina varias muestras de heces en días distintos para buscar parásitos, quistes y huevos. Aumenta la posibilidad de detectar parásitos intestinales que se eliminan intermitentemente.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=examen-parasitologico-seriado",
+    "keywords": [
+      "examen parasitológico seriado",
+      "parasitos en heces",
+      "diarrea",
+      "dolor abdominal",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "parasitos en heces"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para Examen parasitológico seriado suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Diarrea persistente, dolor, pérdida de peso, exposición a agua/alimentos o viaje."
+      ]
+    }
+  },
+  {
+    "titulo": "Test de Graham",
+    "tipo": "examen",
+    "categoria": "Parasitología",
+    "prioridad": 3,
+    "description": "Usa cinta adhesiva transparente en pliegues perianales para recoger huevos de Enterobius vermicularis. Es la prueba preferida para sospecha de oxiuros.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=test-de-graham",
+    "keywords": [
+      "test de graham",
+      "test cinta adhesiva",
+      "oxiuros",
+      "picazón anal",
+      "irritabilidad",
+      "insomnio"
+    ],
+    "aliases": [
+      "test cinta adhesiva",
+      "oxiuros"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para Test de Graham suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Picazón anal nocturna, sueño inquieto o casos en convivientes."
+      ]
+    }
+  },
+  {
+    "titulo": "Factor reumatoide",
+    "tipo": "examen",
+    "categoria": "Inmunología",
+    "prioridad": 3,
+    "description": "Mide autoanticuerpos llamados factor reumatoide en sangre. Apoya el diagnóstico de artritis reumatoide y otras condiciones junto con clínica y anti-CCP.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=factor-reumatoide",
+    "keywords": [
+      "factor reumatoide",
+      "rf",
+      "dolor articular",
+      "inflamación de articulaciones",
+      "fatiga"
+    ],
+    "aliases": [
+      "rf"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Factor reumatoide, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Dolor, rigidez o hinchazón articular persistente."
+      ]
+    }
+  },
+  {
+    "titulo": "Anti-CCP",
+    "tipo": "examen",
+    "categoria": "Inmunología",
+    "prioridad": 3,
+    "description": "Detecta anticuerpos contra péptidos citrulinados cíclicos. Apoya el diagnóstico y pronóstico de artritis reumatoide, con mayor especificidad que factor reumatoide.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=anti-ccp",
+    "keywords": [
+      "anti-ccp",
+      "anticuerpos ccp",
+      "dolor articular",
+      "inflamación de articulaciones",
+      "rigidez"
+    ],
+    "aliases": [
+      "anticuerpos ccp"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Anti-CCP, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Artritis inflamatoria sospechada o factor reumatoide difícil de interpretar."
+      ]
+    }
+  },
+  {
+    "titulo": "Complemento C3",
+    "tipo": "examen",
+    "categoria": "Inmunología",
+    "prioridad": 3,
+    "description": "Mide la proteína C3 del sistema del complemento. Apoya diagnóstico y seguimiento de lupus, enfermedad renal inmunológica e infecciones seleccionadas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=complemento-c3",
+    "keywords": [
+      "complemento c3",
+      "c3",
+      "dolor articular",
+      "fatiga",
+      "hinchazón"
+    ],
+    "aliases": [
+      "c3"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Complemento C3, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Enfermedad autoinmune sospechada o conocida, inflamación o infecciones recurrentes."
+      ]
+    }
+  },
+  {
+    "titulo": "Complemento C4",
+    "tipo": "examen",
+    "categoria": "Inmunología",
+    "prioridad": 3,
+    "description": "Mide la proteína C4 del sistema del complemento. Ayuda a evaluar consumo de complemento en autoinmunidad y algunas deficiencias.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=complemento-c4",
+    "keywords": [
+      "complemento c4",
+      "c4",
+      "dolor articular",
+      "hinchazón de cara",
+      "fatiga"
+    ],
+    "aliases": [
+      "c4"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Complemento C4, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Sospecha o seguimiento de lupus, angioedema hereditario u otros trastornos inmunes."
+      ]
+    }
+  },
+  {
+    "titulo": "Tamizaje toxicológico en orina",
+    "tipo": "examen",
+    "categoria": "Toxicología",
+    "prioridad": 3,
+    "description": "Busca metabolitos de grupos de drogas o medicamentos en orina mediante pruebas de tamizaje. Detecta exposición reciente dentro de ventanas variables; no mide necesariamente intoxicación o deterioro actual.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tamizaje-toxicologico-en-orina",
+    "keywords": [
+      "tamizaje toxicológico en orina",
+      "toxicologico",
+      "drogas en orina",
+      "confusión",
+      "somnolencia",
+      "agitación"
+    ],
+    "aliases": [
+      "toxicologico",
+      "drogas en orina"
+    ],
+    "rco": {
+      "urgencias": [
+        "La obtención de la muestra para Tamizaje toxicológico en orina suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Urgencias, seguimiento terapéutico, salud ocupacional o contexto legal con consentimiento y cadena de custodia."
+      ]
+    }
+  },
+  {
+    "titulo": "Alcoholemia",
+    "tipo": "examen",
+    "categoria": "Toxicología",
+    "prioridad": 3,
+    "description": "Mide etanol en sangre y estima la concentración de alcohol circulante. Apoya evaluación clínica de intoxicación y, con requisitos específicos, fines legales.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=alcoholemia",
+    "keywords": [
+      "alcoholemia",
+      "alcohol en sangre",
+      "confusión",
+      "vomitos",
+      "desmayo"
+    ],
+    "aliases": [
+      "alcohol en sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "La toma de sangre tiene riesgos mínimos, pero una persona con somnolencia extrema, respiración lenta o irregular, convulsiones, vómitos repetidos, piel azulada, confusión intensa o pérdida de conciencia necesita atención urgente por posible intoxicación alcohólica."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Alteración de conciencia, accidente, sospecha de intoxicación o procedimiento legal."
+      ]
+    }
+  },
+  {
+    "titulo": "Grupo sanguíneo y factor Rh",
+    "tipo": "examen",
+    "categoria": "Banco de Sangre",
+    "prioridad": 3,
+    "description": "Determina antígenos ABO y RhD presentes en glóbulos rojos. Garantiza compatibilidad transfusional y orienta atención obstétrica y neonatal.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=grupo-sanguineo-y-factor-rh",
+    "keywords": [
+      "grupo sanguíneo y factor rh",
+      "abo rh",
+      "tipo de sangre",
+      "sangrado abundante",
+      "debilidad"
+    ],
+    "aliases": [
+      "abo rh",
+      "tipo de sangre"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Grupo sanguíneo y factor Rh, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Antes de transfusión, embarazo, donación, cirugía o evaluación neonatal."
+      ]
+    }
+  },
+  {
+    "titulo": "Prueba de Coombs directa",
+    "tipo": "examen",
+    "categoria": "Banco de Sangre",
+    "prioridad": 3,
+    "description": "Detecta anticuerpos o complemento adheridos a los glóbulos rojos del paciente. Apoya la evaluación de hemólisis inmune, reacciones transfusionales y enfermedad hemolítica neonatal.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=prueba-de-coombs-directa",
+    "keywords": [
+      "prueba de coombs directa",
+      "dat",
+      "coombs directo",
+      "piel amarilla",
+      "fatiga",
+      "orina oscura"
+    ],
+    "aliases": [
+      "dat",
+      "coombs directo"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la toma de muestra para Prueba de Coombs directa, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Revisa el resultado con el profesional que indicó la prueba. Anemia hemolítica sospechada, ictericia, caída de hemoglobina o reacción después de transfusión."
+      ]
+    }
+  },
+  {
+    "titulo": "Tomografía computarizada de tórax",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Obtiene imágenes transversales detalladas de pulmones, mediastino, pleura, corazón y pared torácica mediante rayos X. Sirve para evaluar nódulos, infecciones, traumatismos, enfermedad pulmonar, vasos y extensión de tumores.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tomografia-computarizada-de-torax",
+    "keywords": [
+      "tomografía computarizada de tórax",
+      "tc de tórax",
+      "tos persistente",
+      "dificultad para respirar",
+      "dolor en el pecho"
+    ],
+    "aliases": [
+      "tc de tórax"
+    ],
+    "rco": {
+      "urgencias": [
+        "Durante o después de Tomografía computarizada de tórax, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Tos persistente, dificultad respiratoria, dolor torácico, traumatismo o hallazgos anormales en radiografía."
+      ]
+    }
+  },
+  {
+    "titulo": "Tomografía computarizada de abdomen y pelvis",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Produce imágenes detalladas de órganos, vasos, intestino, vías urinarias y estructuras pélvicas mediante rayos X. Sirve para buscar inflamación, cálculos, traumatismos, sangrado, obstrucción, infecciones o tumores y planificar procedimientos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tomografia-computarizada-de-abdomen-y-pelvis",
+    "keywords": [
+      "tomografía computarizada de abdomen y pelvis",
+      "tc abdominopélvica",
+      "dolor abdominal",
+      "dolor pelvico",
+      "fiebre"
+    ],
+    "aliases": [
+      "tc abdominopélvica"
+    ],
+    "rco": {
+      "urgencias": [
+        "Durante o después de Tomografía computarizada de abdomen y pelvis, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor abdominal o pélvico persistente, fiebre sin causa clara, masa, traumatismo o alteraciones previas."
+      ]
+    }
+  },
+  {
+    "titulo": "Tomografía computarizada cerebral",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Usa rayos X y procesamiento computarizado para obtener cortes rápidos del cerebro y el cráneo. Sirve para detectar hemorragia, fracturas, accidente cerebrovascular, hidrocefalia, masas y complicaciones de traumatismos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tomografia-computarizada-cerebral",
+    "keywords": [
+      "tomografía computarizada cerebral",
+      "tc cerebral",
+      "dolor de cabeza fuerte",
+      "confusion",
+      "debilidad en un lado del cuerpo"
+    ],
+    "aliases": [
+      "tc cerebral"
+    ],
+    "rco": {
+      "urgencias": [
+        "Durante o después de Tomografía computarizada cerebral, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Traumatismo craneal, déficit neurológico súbito, cefalea con alarma, confusión, convulsiones o pérdida de conciencia."
+      ]
+    }
+  },
+  {
+    "titulo": "Resonancia magnética de columna lumbar",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Usa campo magnético y radiofrecuencia para mostrar vértebras, discos, canal, médula distal y raíces nerviosas sin radiación ionizante. Sirve para evaluar hernias discales, compresión nerviosa, estenosis, infección, tumor o cambios después de cirugía.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=resonancia-magnetica-de-columna-lumbar",
+    "keywords": [
+      "resonancia magnética de columna lumbar",
+      "rm lumbar",
+      "dolor lumbar",
+      "hormigueo en piernas",
+      "debilidad en piernas"
+    ],
+    "aliases": [
+      "rm lumbar"
+    ],
+    "rco": {
+      "urgencias": [
+        "Durante o después de Resonancia magnética de columna lumbar, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor lumbar persistente con síntomas neurológicos, debilidad, alteración de esfínteres o hallazgos previos."
+      ]
+    }
+  },
+  {
+    "titulo": "Resonancia magnética de rodilla",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Crea imágenes detalladas de meniscos, ligamentos, cartílago, tendones, huesos y tejidos blandos sin radiación ionizante. Sirve para evaluar lesiones deportivas, dolor persistente, bloqueo, inestabilidad, inflamación o planificación quirúrgica.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=resonancia-magnetica-de-rodilla",
+    "keywords": [
+      "resonancia magnética de rodilla",
+      "rm de rodilla",
+      "dolor de rodilla",
+      "hinchazon de rodilla",
+      "inestabilidad de rodilla"
+    ],
+    "aliases": [
+      "rm de rodilla"
+    ],
+    "rco": {
+      "urgencias": [
+        "Durante o después de Resonancia magnética de rodilla, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Traumatismo, dolor o hinchazón persistente, chasquido con bloqueo o sospecha de lesión ligamentaria o meniscal."
+      ]
+    }
+  },
+  {
+    "titulo": "Resonancia magnética de hombro",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Obtiene imágenes de tendones, músculos, labrum, cartílago y huesos del hombro sin radiación ionizante. Sirve para detectar lesiones del manguito rotador, labrum, tendones, articulaciones y causas de dolor o debilidad.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=resonancia-magnetica-de-hombro",
+    "keywords": [
+      "resonancia magnética de hombro",
+      "rm de hombro",
+      "dolor de hombro",
+      "debilidad del brazo",
+      "limitacion de movimiento"
+    ],
+    "aliases": [
+      "rm de hombro"
+    ],
+    "rco": {
+      "urgencias": [
+        "Durante o después de Resonancia magnética de hombro, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor o debilidad persistentes, traumatismo, inestabilidad o resultados no concluyentes en otros estudios."
+      ]
+    }
+  },
+  {
+    "titulo": "Ecografía renal y de vías urinarias",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Usa ondas sonoras para observar riñones y vejiga, sin radiación ionizante. Sirve para evaluar tamaño renal, dilatación de vías urinarias, quistes, masas, cálculos y residuo de orina en vejiga.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-renal-y-de-vias-urinarias",
+    "keywords": [
+      "ecografía renal y de vías urinarias",
+      "ecografía renal",
+      "dolor en los riñones",
+      "sangre en la orina",
+      "dificultad para orinar"
+    ],
+    "aliases": [
+      "ecografía renal"
+    ],
+    "rco": {
+      "urgencias": [
+        "Ecografía renal y de vías urinarias no suele producir complicaciones. Busca atención urgente si el dolor, sangrado, dificultad respiratoria, desmayo u otro síntoma que motivó el examen se vuelve intenso o empeora rápidamente; no esperes el informe para pedir ayuda."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor lumbar, sangre en orina, infecciones repetidas, alteración renal o sospecha de obstrucción."
+      ]
+    }
+  },
+  {
+    "titulo": "Ecografía pélvica",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Emplea ultrasonido para visualizar útero, ovarios, vejiga y otras estructuras pélvicas; puede ser transabdominal o transvaginal. Sirve para evaluar dolor, sangrado anormal, masas, quistes, miomas, fertilidad y otros problemas pélvicos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-pelvica",
+    "keywords": [
+      "ecografía pélvica",
+      "ultrasonido pélvico",
+      "dolor pelvico",
+      "sangrado vaginal anormal",
+      "distension abdominal"
+    ],
+    "aliases": [
+      "ultrasonido pélvico"
+    ],
+    "rco": {
+      "urgencias": [
+        "Ecografía pélvica no suele producir complicaciones. Busca atención urgente si el dolor, sangrado, dificultad respiratoria, desmayo u otro síntoma que motivó el examen se vuelve intenso o empeora rápidamente; no esperes el informe para pedir ayuda."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor pélvico, sangrado uterino anormal, distensión, masa o seguimiento de hallazgos."
+      ]
+    }
+  },
+  {
+    "titulo": "Ecografía obstétrica",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Usa ondas sonoras para evaluar embarazo, embrión o feto, placenta, líquido amniótico y estructuras maternas, sin radiación ionizante. Sirve para confirmar ubicación y edad gestacional, evaluar crecimiento y anatomía fetal, placenta, líquido y bienestar según etapa.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-obstetrica",
+    "keywords": [
+      "ecografía obstétrica",
+      "ultrasonido obstétrico",
+      "sangrado durante el embarazo",
+      "dolor pelvico en embarazo",
+      "disminucion de movimientos fetales"
+    ],
+    "aliases": [
+      "ultrasonido obstétrico"
+    ],
+    "rco": {
+      "urgencias": [
+        "La ecografía no suele causar complicaciones. Durante el embarazo, busca atención urgente ante sangrado abundante, dolor intenso, pérdida de líquido, desmayo, convulsiones o disminución marcada de movimientos fetales según la etapa gestacional."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Control prenatal, sangrado, dolor, discrepancia de crecimiento o evaluación dirigida por riesgo materno-fetal."
+      ]
+    }
+  },
+  {
+    "titulo": "Mamografía",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Obtiene radiografías de baja dosis de cada mama para tamizaje o evaluación diagnóstica. Sirve para detectar cáncer de mama antes de síntomas y estudiar bultos, secreción, cambios cutáneos o hallazgos previos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=mamografia",
+    "keywords": [
+      "mamografía",
+      "mastografía",
+      "bulto en la mama",
+      "secrecion por el pezon",
+      "cambios en la piel de la mama"
+    ],
+    "aliases": [
+      "mastografía"
+    ],
+    "rco": {
+      "urgencias": [
+        "La mamografía no suele causar complicaciones graves. Consulta si aparece dolor mamario intenso y persistente, lesión de la piel o un hematoma importante; busca atención urgente si el síntoma que motivó el estudio empeora rápidamente."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Tamizaje según edad y riesgo individual, o evaluación de un síntoma mamario."
+      ]
+    }
+  },
+  {
+    "titulo": "Densitometría ósea",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Mide la densidad mineral ósea, usualmente en cadera y columna, mediante rayos X de dosis muy baja. Sirve para diagnosticar osteoporosis, estimar riesgo de fractura y seguir cambios de densidad ósea.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=densitometria-osea",
+    "keywords": [
+      "densitometría ósea",
+      "dxa o dexa",
+      "fractura con golpe leve",
+      "perdida de estatura",
+      "dolor de espalda"
+    ],
+    "aliases": [
+      "dxa o dexa"
+    ],
+    "rco": {
+      "urgencias": [
+        "Densitometría ósea suele ser seguro. Busca atención urgente si el síntoma que motivó el estudio se acompaña de dificultad respiratoria, dolor intenso, desmayo, debilidad súbita, confusión, sangrado importante o empeoramiento rápido; no esperes el informe."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Factores de riesgo, fractura por fragilidad, pérdida de estatura o seguimiento de enfermedad o tratamiento que afecta hueso."
+      ]
+    }
+  },
+  {
+    "titulo": "Gammagrafía ósea",
+    "tipo": "examen",
+    "categoria": "Medicina Nuclear",
+    "prioridad": 3,
+    "description": "Usa una pequeña cantidad de radiotrazador y una cámara gamma para mostrar actividad metabólica en el esqueleto. Sirve para buscar metástasis, fracturas ocultas, infección, alteraciones protésicas o causas de dolor óseo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=gammagrafia-osea",
+    "keywords": [
+      "gammagrafía ósea",
+      "exploración ósea nuclear",
+      "dolor oseo",
+      "fractura sospechada",
+      "dolor localizado persistente"
+    ],
+    "aliases": [
+      "exploración ósea nuclear"
+    ],
+    "rco": {
+      "urgencias": [
+        "Tras Gammagrafía ósea, las reacciones al radiotrazador son muy raras. Busca atención urgente si presentas dificultad para respirar, hinchazón del rostro, ronchas generalizadas o desmayo; consulta si aumenta el dolor, enrojecimiento o hinchazón en la zona de inyección."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor óseo inexplicado, sospecha de metástasis o infección, fractura oculta o evaluación de prótesis."
+      ]
+    }
+  },
+  {
+    "titulo": "Gammagrafía tiroidea",
+    "tipo": "examen",
+    "categoria": "Medicina Nuclear",
+    "prioridad": 3,
+    "description": "Administra un radioisótopo para mostrar distribución de actividad en la glándula tiroides y, según protocolo, medir captación. Sirve para evaluar función y anatomía tiroidea, nódulos hiperfuncionantes o hipofuncionantes y causas de hipertiroidismo.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=gammagrafia-tiroidea",
+    "keywords": [
+      "gammagrafía tiroidea",
+      "exploración y captación tiroidea",
+      "palpitaciones",
+      "perdida de peso involuntaria",
+      "bulto en el cuello"
+    ],
+    "aliases": [
+      "exploración y captación tiroidea"
+    ],
+    "rco": {
+      "urgencias": [
+        "Tras Gammagrafía tiroidea, las reacciones al radiotrazador son muy raras. Busca atención urgente si presentas dificultad para respirar, hinchazón del rostro, ronchas generalizadas o desmayo; consulta si aumenta el dolor, enrojecimiento o hinchazón en la zona de inyección."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: TSH alterada, hipertiroidismo, nódulo tiroideo seleccionado o seguimiento indicado por especialista."
+      ]
+    }
+  },
+  {
+    "titulo": "Holter de 24 horas",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Registra continuamente la actividad eléctrica del corazón mediante electrodos portátiles durante 24 horas o más. Sirve para detectar arritmias intermitentes, relacionar síntomas con ritmo y evaluar respuesta a tratamiento o dispositivos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=holter-de-24-horas",
+    "keywords": [
+      "holter de 24 horas",
+      "monitor holter",
+      "palpitaciones",
+      "desmayo",
+      "mareos"
+    ],
+    "aliases": [
+      "monitor holter"
+    ],
+    "rco": {
+      "urgencias": [
+        "Holter de 24 horas no suele causar complicaciones. Busca atención urgente si presentas dolor de pecho, falta de aire intensa, desmayo, debilidad súbita o palpitaciones persistentes, aunque el registro haya finalizado o parezca normal."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Palpitaciones, desmayos, mareos, episodios de ritmo irregular o evaluación de una arritmia conocida."
+      ]
+    }
+  },
+  {
+    "titulo": "Monitoreo ambulatorio de presión arterial (MAPA)",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Mide automáticamente la presión arterial a intervalos durante 24 horas mientras realizas actividades habituales y duermes. Sirve para confirmar hipertensión, identificar efecto de bata blanca o hipertensión enmascarada y valorar patrones diurnos y nocturnos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=monitoreo-ambulatorio-de-presion-arterial-mapa",
+    "keywords": [
+      "monitoreo ambulatorio de presión arterial (mapa)",
+      "mapa",
+      "dolor de cabeza",
+      "mareos",
+      "presion arterial elevada"
+    ],
+    "aliases": [
+      "mapa"
+    ],
+    "rco": {
+      "urgencias": [
+        "Monitoreo ambulatorio de presión arterial (MAPA) no suele causar complicaciones. Busca atención urgente si presentas dolor de pecho, falta de aire intensa, desmayo, debilidad súbita o palpitaciones persistentes, aunque el registro haya finalizado o parezca normal."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Lecturas variables, sospecha de hipertensión, síntomas con medicación o necesidad de evaluar control durante todo el día."
+      ]
+    }
+  },
+  {
+    "titulo": "Prueba de esfuerzo",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Registra electrocardiograma, frecuencia, presión y síntomas mientras aumenta gradualmente el ejercicio en caminadora o bicicleta. Sirve para evaluar respuesta cardiovascular al esfuerzo, síntomas compatibles con isquemia, capacidad funcional y algunas arritmias.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=prueba-de-esfuerzo",
+    "keywords": [
+      "prueba de esfuerzo",
+      "ergometría",
+      "dolor en el pecho al esfuerzo",
+      "falta de aire al esfuerzo",
+      "palpitaciones"
+    ],
+    "aliases": [
+      "ergometría"
+    ],
+    "rco": {
+      "urgencias": [
+        "Durante o después de la prueba de esfuerzo, avisa de inmediato si aparece dolor de pecho, falta de aire intensa, desmayo, mareo marcado o palpitaciones persistentes. Si estos síntomas aparecen tras salir del centro, busca atención urgente."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor torácico o falta de aire con esfuerzo, valoración de enfermedad coronaria o capacidad funcional, según indicación médica."
+      ]
+    }
+  },
+  {
+    "titulo": "Ecografía hepatobiliar",
+    "tipo": "examen",
+    "categoria": "Gastroenterología",
+    "prioridad": 3,
+    "description": "Usa ondas sonoras para observar hígado, vesícula y vías biliares sin radiación ionizante. Sirve para buscar cálculos, inflamación, dilatación biliar, lesiones hepáticas y causas de dolor o pruebas hepáticas alteradas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-hepatobiliar",
+    "keywords": [
+      "ecografía hepatobiliar",
+      "ultrasonido hepatobiliar",
+      "dolor en la parte superior derecha del abdomen",
+      "ictericia",
+      "nauseas"
+    ],
+    "aliases": [
+      "ultrasonido hepatobiliar"
+    ],
+    "rco": {
+      "urgencias": [
+        "Ecografía hepatobiliar no suele producir complicaciones. Busca atención urgente si el dolor, sangrado, dificultad respiratoria, desmayo u otro síntoma que motivó el examen se vuelve intenso o empeora rápidamente; no esperes el informe para pedir ayuda."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Dolor en cuadrante superior derecho, ictericia, náuseas después de comidas, fiebre o pruebas hepáticas alteradas."
+      ]
+    }
+  },
+  {
+    "titulo": "Colangiopancreatografía por resonancia magnética",
+    "tipo": "examen",
+    "categoria": "Gastroenterología",
+    "prioridad": 3,
+    "description": "Es una resonancia especializada que muestra vías biliares, vesícula y conducto pancreático, generalmente sin instrumentos dentro del cuerpo. Sirve para detectar cálculos, estrecheces, obstrucción, anomalías, inflamación o masas pancreatobiliares.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=colangiopancreatografia-por-resonancia-magnetica",
+    "keywords": [
+      "colangiopancreatografía por resonancia magnética",
+      "cprm o mrcp",
+      "ictericia",
+      "dolor abdominal superior",
+      "orina oscura"
+    ],
+    "aliases": [
+      "cprm o mrcp"
+    ],
+    "rco": {
+      "urgencias": [
+        "Durante o después de Colangiopancreatografía por resonancia magnética, avisa de inmediato si presentas dificultad para respirar, hinchazón de rostro o garganta, ronchas generalizadas, desmayo o dolor e hinchazón progresivos en el sitio de inyección. Si se utilizó contraste y disminuye mucho la orina, consulta pronto."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Ictericia, dolor, pancreatitis, pruebas hepáticas alteradas o dilatación biliar observada en ecografía."
+      ]
+    }
+  },
+  {
+    "titulo": "Electromiografía",
+    "tipo": "examen",
+    "categoria": "Neurología",
+    "prioridad": 3,
+    "description": "Evalúa la actividad eléctrica muscular y, con frecuencia, la velocidad con que los nervios conducen señales. Sirve para distinguir trastornos de nervios, raíces, unión neuromuscular y músculos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=electromiografia",
+    "keywords": [
+      "electromiografía",
+      "emg y estudios de conducción nerviosa",
+      "hormigueo",
+      "debilidad muscular",
+      "adormecimiento"
+    ],
+    "aliases": [
+      "emg y estudios de conducción nerviosa"
+    ],
+    "rco": {
+      "urgencias": [
+        "Después de la electromiografía, consulta con urgencia si el sangrado en una zona de punción no cede, aumenta rápidamente un hematoma, aparece dolor intenso, debilidad nueva, enrojecimiento progresivo, secreción o fiebre."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Debilidad, hormigueo, adormecimiento, calambres o dolor con sospecha neuromuscular."
+      ]
+    }
+  },
+  {
+    "titulo": "Ecografía Doppler venosa de miembros inferiores",
+    "tipo": "examen",
+    "categoria": "Imagenología",
+    "prioridad": 3,
+    "description": "Usa ultrasonido y Doppler para observar venas de las piernas y evaluar el flujo sanguíneo sin radiación. Sirve para detectar trombosis venosa profunda, valorar insuficiencia venosa y estudiar hinchazón o dolor.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ecografia-doppler-venosa-de-miembros-inferiores",
+    "keywords": [
+      "ecografía doppler venosa de miembros inferiores",
+      "doppler venoso de piernas",
+      "hinchazon de una pierna",
+      "dolor en la pantorrilla",
+      "enrojecimiento de la pierna"
+    ],
+    "aliases": [
+      "doppler venoso de piernas"
+    ],
+    "rco": {
+      "urgencias": [
+        "Ecografía Doppler venosa de miembros inferiores no suele producir complicaciones. Busca atención urgente si el dolor, sangrado, dificultad respiratoria, desmayo u otro síntoma que motivó el examen se vuelve intenso o empeora rápidamente; no esperes el informe para pedir ayuda."
+      ],
+      "evitar": [
+        "No interpretes el resultado de forma aislada ni suspendas medicamentos o tratamientos sin indicación profesional."
+      ],
+      "autocuidado": [
+        "Conserva el informe, anota tus síntomas y lleva la lista de medicamentos y estudios previos a la consulta de interpretación."
+      ],
+      "consultar": [
+        "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Hinchazón unilateral, dolor, enrojecimiento, factores de riesgo de trombosis o seguimiento vascular."
+      ]
+    }
   }
 ]

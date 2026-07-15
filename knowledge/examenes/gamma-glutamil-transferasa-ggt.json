@@ -1,0 +1,97 @@
+{
+  "id": "examen-gamma-glutamil-transferasa-ggt",
+  "slug": "gamma-glutamil-transferasa-ggt",
+  "titulo": "Gamma-glutamil transferasa (GGT)",
+  "tipo": "examen",
+  "categoria": "Laboratorio",
+  "descripcion": "¿Qué es? Mide GGT, enzima concentrada principalmente en hígado y vías biliares. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Mide GGT, enzima concentrada principalmente en hígado y vías biliares. Apoya la evaluación de lesión hepatobiliar y ayuda a interpretar una fosfatasa alcalina elevada.",
+  "para_que_sirve": "¿Para qué sirve? Apoya la evaluación de lesión hepatobiliar y ayuda a interpretar una fosfatasa alcalina elevada. ¿Cuándo se solicita? Se solicita ante alteraciones hepáticas, ictericia o sospecha de efecto de alcohol o medicamentos.",
+  "causas": "Interpretación orientativa: Una GGT alta es inespecífica y puede relacionarse con colestasis, alcohol, hígado graso o fármacos; debe leerse como parte de un patrón. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Depende de sexo, método y laboratorio. Enfermedades relacionadas: Higado graso, Cirrosis, Hepatitis A, Piel amarilla. Especialidad relacionada: Laboratorio y metabolismo. Exámenes relacionados: Fosfatasa alcalina, ALT, AST, bilirrubina y ecografía abdominal.",
+  "sintomas": [
+    "piel amarilla",
+    "orina oscura",
+    "dolor abdominal"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante alteraciones hepáticas, ictericia o sospecha de efecto de alcohol o medicamentos.",
+  "senales_alarma": "Después de la toma de muestra para Gamma-glutamil transferasa (GGT), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Gamma-glutamil transferasa (GGT)?",
+      "respuesta": "Mide GGT, enzima concentrada principalmente en hígado y vías biliares."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Apoya la evaluación de lesión hepatobiliar y ayuda a interpretar una fosfatasa alcalina elevada."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Una GGT alta es inespecífica y puede relacionarse con colestasis, alcohol, hígado graso o fármacos; debe leerse como parte de un patrón. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-higado-graso",
+      "slug": "higado-graso",
+      "categoria": "Relacionados",
+      "titulo": "Higado graso"
+    },
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-hepatitis-a",
+      "slug": "hepatitis-a",
+      "categoria": "Relacionados",
+      "titulo": "Hepatitis A"
+    },
+    {
+      "id": "rel-piel-amarilla",
+      "slug": "piel-amarilla",
+      "categoria": "Relacionados",
+      "titulo": "Piel amarilla"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-gamma-glutamyl-transferase-ggt-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Gamma-glutamyl Transferase Test",
+      "url": "https://medlineplus.gov/lab-tests/gamma-glutamyl-transferase-ggt-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medline-liver-function-tests",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Liver Function Tests",
+      "url": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "examen-fibrinogeno",
+  "slug": "fibrinogeno",
+  "titulo": "Fibrinógeno",
+  "tipo": "examen",
+  "categoria": "Hematología",
+  "descripcion": "¿Qué es? Mide fibrinógeno o factor I, proteína hepática necesaria para formar coágulos. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Mide fibrinógeno o factor I, proteína hepática necesaria para formar coágulos. Ayuda a investigar sangrado, trombosis, inflamación y coagulación intravascular diseminada.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a investigar sangrado, trombosis, inflamación y coagulación intravascular diseminada. ¿Cuándo se solicita? Se solicita ante sangrado inexplicado, alteraciones de coagulación o sospecha de consumo de factores.",
+  "causas": "Interpretación orientativa: Puede bajar por consumo, enfermedad hepática o déficit; puede subir como reactante inflamatorio. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Depende del método, embarazo, inflamación y laboratorio. Enfermedades relacionadas: Sepsis, Cirrosis, Lupus. Especialidad relacionada: Hematología e inmunología. Exámenes relacionados: TP/INR, TTPa, dímero D, plaquetas y factores de coagulación.",
+  "sintomas": [
+    "sangrado abundante",
+    "moretones faciles",
+    "fiebre"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante sangrado inexplicado, alteraciones de coagulación o sospecha de consumo de factores.",
+  "senales_alarma": "Después de la toma de muestra para Fibrinógeno, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Fibrinógeno?",
+      "respuesta": "Mide fibrinógeno o factor I, proteína hepática necesaria para formar coágulos."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Ayuda a investigar sangrado, trombosis, inflamación y coagulación intravascular diseminada."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Puede bajar por consumo, enfermedad hepática o déficit; puede subir como reactante inflamatorio. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-sepsis",
+      "slug": "sepsis",
+      "categoria": "Relacionados",
+      "titulo": "Sepsis"
+    },
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-lupus",
+      "slug": "lupus",
+      "categoria": "Relacionados",
+      "titulo": "Lupus"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-coagulation-factor-tests",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Coagulation Factor Tests",
+      "url": "https://medlineplus.gov/lab-tests/coagulation-factor-tests/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "nhlbi-clot",
+      "organizacion": "NHLBI / NIH",
+      "titulo": "Clotting Disorders",
+      "url": "https://www.nhlbi.nih.gov/health/clotting-disorders",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

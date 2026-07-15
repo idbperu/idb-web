@@ -1,0 +1,98 @@
+{
+  "id": "examen-prueba-de-funcion-hepatica",
+  "slug": "prueba-de-funcion-hepatica",
+  "titulo": "Prueba de función hepática",
+  "tipo": "examen",
+  "categoria": "Gastroenterología",
+  "descripcion": "¿Qué es? Puede incluir ALT, AST, fosfatasa alcalina, GGT, bilirrubina, albúmina y proteínas totales. ¿Cómo se realiza? Un profesional obtiene una pequeña muestra de una vena del brazo y la envía al laboratorio. Duración: La toma suele durar menos de cinco minutos. ¿Produce dolor o molestias? Puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Panel de sangre que mide enzimas, proteínas y bilirrubina para buscar lesión hepática y valorar algunas funciones del hígado.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a detectar, diferenciar o vigilar enfermedades del hígado y efectos de medicamentos. ¿Cuándo se solicita? Se solicita ante ictericia, orina oscura, dolor abdominal, náuseas, exposición a hepatitis, consumo de alcohol o tratamientos que pueden afectar el hígado.",
+  "causas": "Interpretación general (orientativa): El patrón de alteraciones importa más que una cifra aislada. Algunas elevaciones pueden ser transitorias o tener origen no hepático. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Los intervalos cambian por analito, método, edad, sexo y laboratorio; usa los rangos del informe. Enfermedades relacionadas: Hígado graso, hepatitis, cirrosis y obstrucción biliar. Especialidad relacionada: Medicina interna, gastroenterología o hepatología. Exámenes relacionados: Ecografía abdominal, pruebas de hepatitis, coagulación y hemograma.",
+  "sintomas": [
+    "piel amarilla",
+    "ojos amarillos",
+    "orina oscura",
+    "dolor en el lado derecho del abdomen"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Pregunta si debes ayunar, porque depende del panel solicitado.",
+    "Informa alcohol, medicamentos, hierbas y suplementos; no los suspendas sin indicación."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante ictericia, orina oscura, dolor abdominal, náuseas, exposición a hepatitis, consumo de alcohol o tratamientos que pueden afectar el hígado.",
+  "senales_alarma": "Después de la toma de muestra para Prueba de función hepática, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Prueba de función hepática?",
+      "respuesta": "Puede incluir ALT, AST, fosfatasa alcalina, GGT, bilirrubina, albúmina y proteínas totales."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Pregunta si debes ayunar, porque depende del panel solicitado. Informa alcohol, medicamentos, hierbas y suplementos; no los suspendas sin indicación."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "Puede sentirse un pinchazo breve. La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El patrón de alteraciones importa más que una cifra aislada. Algunas elevaciones pueden ser transitorias o tener origen no hepático. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-higado-graso",
+      "slug": "higado-graso",
+      "categoria": "Relacionados",
+      "titulo": "Higado graso"
+    },
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-hepatitis-a",
+      "slug": "hepatitis-a",
+      "categoria": "Relacionados",
+      "titulo": "Hepatitis A"
+    },
+    {
+      "id": "rel-piel-amarilla",
+      "slug": "piel-amarilla",
+      "categoria": "Relacionados",
+      "titulo": "Piel amarilla"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-liver-function-tests",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Liver Function Tests",
+      "url": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "niddk-liver",
+      "organizacion": "NIDDK / NIH",
+      "titulo": "Liver Disease",
+      "url": "https://www.niddk.nih.gov/health-information/liver-disease",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

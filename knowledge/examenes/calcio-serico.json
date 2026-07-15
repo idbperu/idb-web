@@ -1,0 +1,98 @@
+{
+  "id": "examen-calcio-serico",
+  "slug": "calcio-serico",
+  "titulo": "Calcio sérico",
+  "tipo": "examen",
+  "categoria": "Laboratorio",
+  "descripcion": "¿Qué es? Mide calcio total o ionizado en la sangre, mineral esencial para huesos, músculos, nervios y corazón. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide calcio total o ionizado en la sangre, mineral esencial para huesos, músculos, nervios y corazón. Ayuda a evaluar paratiroides, huesos, riñones y alteraciones metabólicas.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar paratiroides, huesos, riñones y alteraciones metabólicas. Indicaciones: Puede pedirse en paneles rutinarios o ante calambres, debilidad, hormigueo, arritmias, cálculos o enfermedad renal.",
+  "causas": "Interpretación general: El calcio total depende de la albúmina; si es anormal puede requerirse calcio ionizado. Valores altos o bajos tienen múltiples causas. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Los rangos varían por edad, método y si se mide calcio total o ionizado. Enfermedades relacionadas: Trastornos paratiroideos, enfermedad renal, osteoporosis y algunos cánceres. Especialidad relacionada: Laboratorio. Exámenes relacionados: Albúmina, fósforo, magnesio, vitamina D y hormona paratiroidea.",
+  "sintomas": [
+    "calambres",
+    "hormigueo",
+    "debilidad",
+    "palpitaciones"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Generalmente no requiere preparación; confirma si el panel exige ayuno.",
+    "Informa suplementos de calcio, vitamina D y medicamentos."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Puede pedirse en paneles rutinarios o ante calambres, debilidad, hormigueo, arritmias, cálculos o enfermedad renal.",
+  "senales_alarma": "Después de la toma de muestra para Calcio sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Calcio sérico?",
+      "respuesta": "Mide calcio total o ionizado en la sangre, mineral esencial para huesos, músculos, nervios y corazón."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Ayuda a evaluar paratiroides, huesos, riñones y alteraciones metabólicas."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Generalmente no requiere preparación; confirma si el panel exige ayuno. Informa suplementos de calcio, vitamina D y medicamentos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El calcio total depende de la albúmina; si es anormal puede requerirse calcio ionizado. Valores altos o bajos tienen múltiples causas. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-osteoporosis",
+      "slug": "osteoporosis",
+      "categoria": "Relacionados",
+      "titulo": "Osteoporosis"
+    },
+    {
+      "id": "rel-calambres",
+      "slug": "calambres",
+      "categoria": "Relacionados",
+      "titulo": "Calambres"
+    },
+    {
+      "id": "rel-hormigueo",
+      "slug": "hormigueo",
+      "categoria": "Relacionados",
+      "titulo": "Hormigueo"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-calcium-blood-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Calcium Blood Test",
+      "url": "https://medlineplus.gov/lab-tests/calcium-blood-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-electrolyte-panel",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Electrolyte Panel",
+      "url": "https://medlineplus.gov/lab-tests/electrolyte-panel/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

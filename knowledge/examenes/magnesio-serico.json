@@ -1,0 +1,98 @@
+{
+  "id": "examen-magnesio-serico",
+  "slug": "magnesio-serico",
+  "titulo": "Magnesio sérico",
+  "tipo": "examen",
+  "categoria": "Laboratorio",
+  "descripcion": "¿Qué es? Mide magnesio en sangre, mineral importante para músculos, nervios, huesos y ritmo cardíaco. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide magnesio en sangre, mineral importante para músculos, nervios, huesos y ritmo cardíaco. Detecta deficiencia o exceso y apoya la evaluación de arritmias y otros desequilibrios.",
+  "para_que_sirve": "¿Para qué sirve? Detecta deficiencia o exceso y apoya la evaluación de arritmias y otros desequilibrios. Indicaciones: Puede solicitarse ante calambres, debilidad, convulsiones, arritmias, diarrea prolongada, alcoholismo o enfermedad renal.",
+  "causas": "Interpretación general: El nivel sérico representa solo una parte del magnesio corporal; se interpreta con función renal y otros electrolitos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Los intervalos varían por método, unidad y laboratorio. Enfermedades relacionadas: Enfermedad renal, malabsorción y trastornos del ritmo cardíaco. Especialidad relacionada: Laboratorio. Exámenes relacionados: Calcio, potasio, fósforo, creatinina y electrocardiograma.",
+  "sintomas": [
+    "calambres",
+    "debilidad",
+    "palpitaciones",
+    "temblores"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Por lo general no requiere preparación especial.",
+    "Informa suplementos, antiácidos, laxantes, diuréticos y otros medicamentos."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Puede solicitarse ante calambres, debilidad, convulsiones, arritmias, diarrea prolongada, alcoholismo o enfermedad renal.",
+  "senales_alarma": "Después de la toma de muestra para Magnesio sérico, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Magnesio sérico?",
+      "respuesta": "Mide magnesio en sangre, mineral importante para músculos, nervios, huesos y ritmo cardíaco."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Detecta deficiencia o exceso y apoya la evaluación de arritmias y otros desequilibrios."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Por lo general no requiere preparación especial. Informa suplementos, antiácidos, laxantes, diuréticos y otros medicamentos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El nivel sérico representa solo una parte del magnesio corporal; se interpreta con función renal y otros electrolitos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-calambres",
+      "slug": "calambres",
+      "categoria": "Relacionados",
+      "titulo": "Calambres"
+    },
+    {
+      "id": "rel-palpitaciones",
+      "slug": "palpitaciones",
+      "categoria": "Relacionados",
+      "titulo": "Palpitaciones"
+    },
+    {
+      "id": "rel-temblores",
+      "slug": "temblores",
+      "categoria": "Relacionados",
+      "titulo": "Temblores"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-magnesium-blood-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Magnesium Blood Test",
+      "url": "https://medlineplus.gov/lab-tests/magnesium-blood-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-electrolyte-panel",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Electrolyte Panel",
+      "url": "https://medlineplus.gov/lab-tests/electrolyte-panel/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "examen-frotis-de-sangre-periferica",
+  "slug": "frotis-de-sangre-periferica",
+  "titulo": "Frotis de sangre periférica",
+  "tipo": "examen",
+  "categoria": "Hematología",
+  "descripcion": "¿Qué es? Examina al microscopio tamaño, forma y aspecto de células sanguíneas extendidas en una lámina. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Examina al microscopio tamaño, forma y aspecto de células sanguíneas extendidas en una lámina. Complementa el hemograma para investigar anemias, infecciones y trastornos hematológicos.",
+  "para_que_sirve": "¿Para qué sirve? Complementa el hemograma para investigar anemias, infecciones y trastornos hematológicos. ¿Cuándo se solicita? Se solicita cuando el hemograma es anormal o hay sospecha clínica específica.",
+  "causas": "Interpretación orientativa: Los hallazgos morfológicos orientan pero rara vez son diagnósticos aislados; dependen de calidad de muestra y experiencia. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: No usa un rango único; el informe describe morfología y recuentos diferenciales cuando corresponde. Enfermedades relacionadas: Anemia, Leucemia, Malaria. Especialidad relacionada: Hematología e inmunología. Exámenes relacionados: Hemograma, reticulocitos, estudios de hierro y médula ósea seleccionada.",
+  "sintomas": [
+    "fatiga",
+    "fiebre",
+    "moretones faciles"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita cuando el hemograma es anormal o hay sospecha clínica específica.",
+  "senales_alarma": "Después de la toma de muestra para Frotis de sangre periférica, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Frotis de sangre periférica?",
+      "respuesta": "Examina al microscopio tamaño, forma y aspecto de células sanguíneas extendidas en una lámina."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Complementa el hemograma para investigar anemias, infecciones y trastornos hematológicos."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Los hallazgos morfológicos orientan pero rara vez son diagnósticos aislados; dependen de calidad de muestra y experiencia. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-anemia",
+      "slug": "anemia",
+      "categoria": "Relacionados",
+      "titulo": "Anemia"
+    },
+    {
+      "id": "rel-leucemia",
+      "slug": "leucemia",
+      "categoria": "Relacionados",
+      "titulo": "Leucemia"
+    },
+    {
+      "id": "rel-malaria",
+      "slug": "malaria",
+      "categoria": "Relacionados",
+      "titulo": "Malaria"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-blood-smear",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Blood Smear",
+      "url": "https://medlineplus.gov/lab-tests/blood-smear/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medline-complete-blood-count-cbc",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Complete Blood Count",
+      "url": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

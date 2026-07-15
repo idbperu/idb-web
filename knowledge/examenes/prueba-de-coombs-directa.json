@@ -1,0 +1,91 @@
+{
+  "id": "examen-prueba-de-coombs-directa",
+  "slug": "prueba-de-coombs-directa",
+  "titulo": "Prueba de Coombs directa",
+  "tipo": "examen",
+  "categoria": "Banco de Sangre",
+  "descripcion": "Qué es: Detecta anticuerpos o complemento adheridos a los glóbulos rojos del paciente. Procedimiento: No requiere ayuno; informa transfusiones, embarazo y medicamentos. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Detecta anticuerpos o complemento adheridos a los glóbulos rojos del paciente. Apoya la evaluación de hemólisis inmune, reacciones transfusionales y enfermedad hemolítica neonatal.",
+  "para_que_sirve": "Para qué sirve: Apoya la evaluación de hemólisis inmune, reacciones transfusionales y enfermedad hemolítica neonatal. Indicaciones: Anemia hemolítica sospechada, ictericia, caída de hemoglobina o reacción después de transfusión.",
+  "causas": "Interpretación orientativa: Positiva indica inmunoglobulina/complemento en eritrocitos, pero requiere contexto para definir causa; negativa no excluye toda hemólisis inmune. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Cualitativa o graduada según laboratorio; no hay rango numérico universal. Enfermedades relacionadas: Anemia, Anemia en embarazo, Lupus. Especialidad relacionada: Banco de sangre. Exámenes relacionados: Hemograma, reticulocitos, bilirrubina, LDH, haptoglobina y pesquisa de anticuerpos.",
+  "sintomas": [
+    "piel amarilla",
+    "fatiga",
+    "orina oscura"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Anemia hemolítica sospechada, ictericia, caída de hemoglobina o reacción después de transfusión.",
+  "senales_alarma": "Después de la toma de muestra para Prueba de Coombs directa, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Prueba de Coombs directa?",
+      "respuesta": "Detecta anticuerpos o complemento adheridos a los glóbulos rojos del paciente."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Apoya la evaluación de hemólisis inmune, reacciones transfusionales y enfermedad hemolítica neonatal."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "No requiere ayuno; informa transfusiones, embarazo y medicamentos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Positiva indica inmunoglobulina/complemento en eritrocitos, pero requiere contexto para definir causa; negativa no excluye toda hemólisis inmune. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-anemia",
+      "slug": "anemia",
+      "categoria": "Relacionados",
+      "titulo": "Anemia"
+    },
+    {
+      "id": "rel-anemia-en-embarazo",
+      "slug": "anemia-en-embarazo",
+      "categoria": "Relacionados",
+      "titulo": "Anemia en embarazo"
+    },
+    {
+      "id": "rel-lupus",
+      "slug": "lupus",
+      "categoria": "Relacionados",
+      "titulo": "Lupus"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-coombs",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Coombs test",
+      "url": "https://medlineplus.gov/ency/article/003344.htm",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "medline-red-blood-cell-antibody-screen",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Red Blood Cell Antibody Screen",
+      "url": "https://medlineplus.gov/lab-tests/red-blood-cell-antibody-screen/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

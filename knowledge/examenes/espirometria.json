@@ -1,0 +1,98 @@
+{
+  "id": "examen-espirometria",
+  "slug": "espirometria",
+  "titulo": "Espirometría",
+  "tipo": "examen",
+  "categoria": "Neumología",
+  "descripcion": "¿Qué es? Registra volúmenes y flujos respiratorios, especialmente capacidad vital forzada y volumen espiratorio forzado en el primer segundo. ¿Cómo se realiza? Con una pinza nasal, sellas los labios en una boquilla e inhalas y exhalas con máximo esfuerzo varias veces; puede repetirse tras un broncodilatador. Duración: Suele durar 15 a 30 minutos. ¿Produce dolor o molestias? Puede causar cansancio, tos, mareo o falta de aire breve.",
+  "respuesta_rapida": "Prueba de función pulmonar que mide cuánto aire puedes expulsar y con qué rapidez.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a detectar y vigilar patrones obstructivos o restrictivos y a valorar respuesta a broncodilatadores. ¿Cuándo se solicita? Se solicita ante tos persistente, silbidos, falta de aire, exposición laboral o seguimiento de asma y EPOC.",
+  "causas": "Interpretación general (orientativa): La calidad del esfuerzo es esencial. El patrón se compara con valores previstos y con la relación entre mediciones; no diagnostica por sí sola. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Los resultados se comparan con límites inferiores y valores previstos según edad, sexo, estatura y población de referencia. Enfermedades relacionadas: Asma, EPOC y otras enfermedades pulmonares. Especialidad relacionada: Neumología o medicina interna. Exámenes relacionados: Oximetría, radiografía de tórax, prueba broncodilatadora y volúmenes pulmonares.",
+  "sintomas": [
+    "falta de aire",
+    "tos",
+    "silbido en el pecho",
+    "cansancio al caminar"
+  ],
+  "factores_riesgo": [
+    "Es generalmente segura; el esfuerzo puede no ser apropiado inmediatamente después de ciertas cirugías, infarto u otras condiciones inestables."
+  ],
+  "prevencion": [
+    "Sigue indicaciones sobre inhaladores; no los suspendas por cuenta propia.",
+    "Evita comida abundante, ropa ajustada, ejercicio intenso y tabaco antes de la prueba según te indiquen."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita ante tos persistente, silbidos, falta de aire, exposición laboral o seguimiento de asma y EPOC.",
+  "senales_alarma": "Detén la espirometría y avisa al personal si presentas dolor de pecho, falta de aire intensa, mareo marcado o desmayo. Si los síntomas persisten después del examen, busca atención urgente.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Es generalmente segura; el esfuerzo puede no ser apropiado inmediatamente después de ciertas cirugías, infarto u otras condiciones inestables."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Espirometría?",
+      "respuesta": "Registra volúmenes y flujos respiratorios, especialmente capacidad vital forzada y volumen espiratorio forzado en el primer segundo."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Sigue indicaciones sobre inhaladores; no los suspendas por cuenta propia. Evita comida abundante, ropa ajustada, ejercicio intenso y tabaco antes de la prueba según te indiquen."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "Puede causar cansancio, tos, mareo o falta de aire breve. Es generalmente segura; el esfuerzo puede no ser apropiado inmediatamente después de ciertas cirugías, infarto u otras condiciones inestables."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "La calidad del esfuerzo es esencial. El patrón se compara con valores previstos y con la relación entre mediciones; no diagnostica por sí sola. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-asma",
+      "slug": "asma",
+      "categoria": "Relacionados",
+      "titulo": "Asma"
+    },
+    {
+      "id": "rel-epoc",
+      "slug": "epoc",
+      "categoria": "Relacionados",
+      "titulo": "EPOC"
+    },
+    {
+      "id": "rel-falta-de-aire",
+      "slug": "falta-de-aire",
+      "categoria": "Relacionados",
+      "titulo": "Falta de aire"
+    },
+    {
+      "id": "rel-silbido-en-el-pecho",
+      "slug": "silbido-en-el-pecho",
+      "categoria": "Relacionados",
+      "titulo": "Silbido en el pecho"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "nhlbi-lung-tests",
+      "organizacion": "NHLBI / NIH",
+      "titulo": "Lung Function Tests",
+      "url": "https://www.nhlbi.nih.gov/health/lung-tests",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "medlineplus-lung-function-tests",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Lung Function Tests",
+      "url": "https://medlineplus.gov/lab-tests/lung-function-tests/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

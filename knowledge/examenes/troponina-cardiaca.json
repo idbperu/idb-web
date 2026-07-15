@@ -1,0 +1,98 @@
+{
+  "id": "examen-troponina-cardiaca",
+  "slug": "troponina-cardiaca",
+  "titulo": "Troponina cardíaca",
+  "tipo": "examen",
+  "categoria": "Cardiología",
+  "descripcion": "¿Qué es? Mide troponina I o T liberada a la sangre cuando existe lesión del músculo cardíaco. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide troponina I o T liberada a la sangre cuando existe lesión del músculo cardíaco. Es el biomarcador principal para apoyar el diagnóstico de infarto junto con síntomas y electrocardiograma.",
+  "para_que_sirve": "¿Para qué sirve? Es el biomarcador principal para apoyar el diagnóstico de infarto junto con síntomas y electrocardiograma. Indicaciones: Se solicita de urgencia ante dolor torácico, falta de aire u otros síntomas compatibles con lesión cardíaca.",
+  "causas": "Interpretación general: Una elevación indica lesión miocárdica, no necesariamente infarto; se interpretan cambios seriados, límite del ensayo, ECG y contexto. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: El punto de corte es específico del ensayo y suele basarse en el percentil 99; no se deben comparar cifras de métodos distintos. Enfermedades relacionadas: Infarto, miocarditis, insuficiencia cardíaca, embolia pulmonar y sepsis. Especialidad relacionada: Cardiología. Exámenes relacionados: Electrocardiograma, troponinas seriadas, ecocardiograma y CK-MB en situaciones seleccionadas.",
+  "sintomas": [
+    "dolor de pecho",
+    "falta de aire",
+    "sudor frio",
+    "nauseas"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "No requiere ayuno; informa biotina porque puede interferir con algunos ensayos.",
+    "El examen no debe retrasar atención urgente."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita de urgencia ante dolor torácico, falta de aire u otros síntomas compatibles con lesión cardíaca.",
+  "senales_alarma": "Después de la toma de muestra para Troponina cardíaca, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Troponina cardíaca?",
+      "respuesta": "Mide troponina I o T liberada a la sangre cuando existe lesión del músculo cardíaco."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Es el biomarcador principal para apoyar el diagnóstico de infarto junto con síntomas y electrocardiograma."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "No requiere ayuno; informa biotina porque puede interferir con algunos ensayos. El examen no debe retrasar atención urgente."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Una elevación indica lesión miocárdica, no necesariamente infarto; se interpretan cambios seriados, límite del ensayo, ECG y contexto. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-enfermedad-coronaria",
+      "slug": "enfermedad-coronaria",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad coronaria"
+    },
+    {
+      "id": "rel-insuficiencia-cardiaca",
+      "slug": "insuficiencia-cardiaca",
+      "categoria": "Relacionados",
+      "titulo": "Insuficiencia cardiaca"
+    },
+    {
+      "id": "rel-dolor-de-pecho",
+      "slug": "dolor-de-pecho",
+      "categoria": "Relacionados",
+      "titulo": "Dolor de pecho"
+    },
+    {
+      "id": "rel-falta-de-aire",
+      "slug": "falta-de-aire",
+      "categoria": "Relacionados",
+      "titulo": "Falta de aire"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-troponin-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Troponin Test",
+      "url": "https://medlineplus.gov/lab-tests/troponin-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "nhlbi-heart-attack",
+      "organizacion": "NHLBI / NIH",
+      "titulo": "Heart Attack Diagnosis",
+      "url": "https://www.nhlbi.nih.gov/health/heart-attack/diagnosis",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

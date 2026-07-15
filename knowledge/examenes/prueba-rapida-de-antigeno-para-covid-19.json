@@ -1,0 +1,85 @@
+{
+  "id": "examen-prueba-rapida-de-antigeno-para-covid-19",
+  "slug": "prueba-rapida-de-antigeno-para-covid-19",
+  "titulo": "Prueba rápida de antígeno para COVID-19",
+  "tipo": "examen",
+  "categoria": "Virología",
+  "descripcion": "Qué es: Detecta proteínas de SARS-CoV-2 en una muestra respiratoria y ofrece resultado rápido. Procedimiento: Sigue exactamente técnica, tiempo y lectura del fabricante; verifica vencimiento. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Detecta proteínas de SARS-CoV-2 en una muestra respiratoria y ofrece resultado rápido. Ayuda a identificar infección actual, especialmente con alta carga viral.",
+  "para_que_sirve": "Para qué sirve: Ayuda a identificar infección actual, especialmente con alta carga viral. Indicaciones: Síntomas, exposición o tamizaje según recomendaciones vigentes.",
+  "causas": "Interpretación orientativa: Positiva suele indicar infección; negativa tiene menor sensibilidad y puede requerir repetición o PCR según síntomas y exposición. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Cualitativa: positivo, negativo o inválido. Enfermedades relacionadas: COVID-19, Asma. Especialidad relacionada: Virología. Exámenes relacionados: PCR SARS-CoV-2, influenza y oximetría.",
+  "sintomas": [
+    "fiebre",
+    "tos",
+    "falta de aire"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Síntomas, exposición o tamizaje según recomendaciones vigentes.",
+  "senales_alarma": "La obtención de la muestra para Prueba rápida de antígeno para COVID-19 suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Prueba rápida de antígeno para COVID-19?",
+      "respuesta": "Detecta proteínas de SARS-CoV-2 en una muestra respiratoria y ofrece resultado rápido."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Ayuda a identificar infección actual, especialmente con alta carga viral."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "Sigue exactamente técnica, tiempo y lectura del fabricante; verifica vencimiento."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Positiva suele indicar infección; negativa tiene menor sensibilidad y puede requerir repetición o PCR según síntomas y exposición. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-covid-19",
+      "slug": "covid-19",
+      "categoria": "Relacionados",
+      "titulo": "COVID-19"
+    },
+    {
+      "id": "rel-asma",
+      "slug": "asma",
+      "categoria": "Relacionados",
+      "titulo": "Asma"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "cdc-covid-testing",
+      "organizacion": "CDC",
+      "titulo": "Testing for COVID-19",
+      "url": "https://www.cdc.gov/covid/testing/index.html",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "fda-covid-tests",
+      "organizacion": "FDA",
+      "titulo": "At-Home OTC COVID-19 Diagnostic Tests",
+      "url": "https://www.fda.gov/medical-devices/coronavirus-covid-19-and-medical-devices/home-otc-covid-19-diagnostic-tests",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

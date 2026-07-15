@@ -1,0 +1,91 @@
+{
+  "id": "examen-serologia-para-hepatitis-b",
+  "slug": "serologia-para-hepatitis-b",
+  "titulo": "Serología para hepatitis B",
+  "tipo": "examen",
+  "categoria": "Infectología",
+  "descripcion": "¿Qué es? Conjunto de pruebas como HBsAg, anti-HBs y anti-HBc que detectan infección, inmunidad o exposición al virus B. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Conjunto de pruebas como HBsAg, anti-HBs y anti-HBc que detectan infección, inmunidad o exposición al virus B. Distingue patrones de infección actual, pasada, vacunación o susceptibilidad.",
+  "para_que_sirve": "¿Para qué sirve? Distingue patrones de infección actual, pasada, vacunación o susceptibilidad. ¿Cuándo se solicita? Se solicita en tamizaje de adultos y embarazo, exposición, riesgo, enfermedad hepática o antes de inmunosupresión.",
+  "causas": "Interpretación orientativa: Ningún marcador debe interpretarse aislado; algunas combinaciones requieren repetir, anti-HBc IgM o ADN viral. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Es cualitativa o cuantitativa según marcador y ensayo. Enfermedades relacionadas: Cirrosis, Hepatitis A, Higado graso. Especialidad relacionada: Infectología. Exámenes relacionados: HBsAg, anti-HBs, anti-HBc total/IgM, HBV DNA y pruebas hepáticas.",
+  "sintomas": [
+    "piel amarilla",
+    "fatiga",
+    "orina oscura"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita en tamizaje de adultos y embarazo, exposición, riesgo, enfermedad hepática o antes de inmunosupresión.",
+  "senales_alarma": "Después de la toma de muestra para Serología para hepatitis B, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Serología para hepatitis B?",
+      "respuesta": "Conjunto de pruebas como HBsAg, anti-HBs y anti-HBc que detectan infección, inmunidad o exposición al virus B."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Distingue patrones de infección actual, pasada, vacunación o susceptibilidad."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Ningún marcador debe interpretarse aislado; algunas combinaciones requieren repetir, anti-HBc IgM o ADN viral. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-hepatitis-a",
+      "slug": "hepatitis-a",
+      "categoria": "Relacionados",
+      "titulo": "Hepatitis A"
+    },
+    {
+      "id": "rel-higado-graso",
+      "slug": "higado-graso",
+      "categoria": "Relacionados",
+      "titulo": "Higado graso"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-hepatitis-testing",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Hepatitis Testing",
+      "url": "https://medlineplus.gov/lab-tests/hepatitis-testing/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "cdc-hbv-testing",
+      "organizacion": "CDC",
+      "titulo": "Clinical Testing and Diagnosis for Hepatitis B",
+      "url": "https://www.cdc.gov/hepatitis-b/hcp/diagnosis-testing/index.html",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

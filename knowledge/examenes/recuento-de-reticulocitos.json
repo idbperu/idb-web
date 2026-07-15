@@ -1,0 +1,91 @@
+{
+  "id": "examen-recuento-de-reticulocitos",
+  "slug": "recuento-de-reticulocitos",
+  "titulo": "Recuento de reticulocitos",
+  "tipo": "examen",
+  "categoria": "Hematología",
+  "descripcion": "¿Qué es? Cuenta glóbulos rojos jóvenes producidos por la médula ósea. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Cuenta glóbulos rojos jóvenes producidos por la médula ósea. Muestra cómo responde la médula ante anemia, sangrado o destrucción de glóbulos rojos.",
+  "para_que_sirve": "¿Para qué sirve? Muestra cómo responde la médula ante anemia, sangrado o destrucción de glóbulos rojos. ¿Cuándo se solicita? Se solicita para clasificar anemia y vigilar recuperación o tratamientos.",
+  "causas": "Interpretación orientativa: Un recuento alto puede reflejar respuesta a pérdida o hemólisis; uno bajo puede indicar producción insuficiente. Debe corregirse según anemia. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Puede informarse como porcentaje, número absoluto o índice; el rango depende de edad y laboratorio. Enfermedades relacionadas: Anemia, Leucemia, Enfermedad renal cronica. Especialidad relacionada: Hematología e inmunología. Exámenes relacionados: Hemograma, frotis, ferritina, bilirrubina y haptoglobina.",
+  "sintomas": [
+    "fatiga",
+    "debilidad",
+    "piel amarilla"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita para clasificar anemia y vigilar recuperación o tratamientos.",
+  "senales_alarma": "Después de la toma de muestra para Recuento de reticulocitos, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Recuento de reticulocitos?",
+      "respuesta": "Cuenta glóbulos rojos jóvenes producidos por la médula ósea."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Muestra cómo responde la médula ante anemia, sangrado o destrucción de glóbulos rojos."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un recuento alto puede reflejar respuesta a pérdida o hemólisis; uno bajo puede indicar producción insuficiente. Debe corregirse según anemia. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-anemia",
+      "slug": "anemia",
+      "categoria": "Relacionados",
+      "titulo": "Anemia"
+    },
+    {
+      "id": "rel-leucemia",
+      "slug": "leucemia",
+      "categoria": "Relacionados",
+      "titulo": "Leucemia"
+    },
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-reticulocyte-count",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Reticulocyte Count",
+      "url": "https://medlineplus.gov/lab-tests/reticulocyte-count/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medline-complete-blood-count-cbc",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Complete Blood Count",
+      "url": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

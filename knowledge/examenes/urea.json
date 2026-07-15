@@ -1,0 +1,105 @@
+{
+  "id": "examen-urea",
+  "slug": "urea",
+  "titulo": "Urea",
+  "tipo": "examen",
+  "categoria": "Nefrología",
+  "descripcion": "¿Qué es? Análisis de sangre que mide la concentración de la molécula completa de urea sérica. No es idéntico al BUN, que informa únicamente el nitrógeno contenido en la urea. ¿Cómo se realiza? Se obtiene una muestra de sangre venosa. Duración y molestias: La extracción suele durar menos de cinco minutos y puede producir una molestia breve.",
+  "respuesta_rapida": "Mide urea sérica, un producto del metabolismo de proteínas eliminado principalmente por los riñones. En Perú suele informarse como urea en mg/dL; el BUN es una magnitud relacionada, pero expresa solo el nitrógeno ureico.",
+  "para_que_sirve": "¿Para qué sirve? Complementa la evaluación de función renal, hidratación y metabolismo proteico, especialmente junto con creatinina y filtración glomerular estimada. ¿Cuándo se solicita? En controles generales, enfermedad renal, deshidratación, sospecha de sangrado digestivo o seguimiento de cuadros que modifican el catabolismo de proteínas.",
+  "causas": "Interpretación general (orientativa): La urea puede aumentar por reducción de la filtración renal, deshidratación, sangrado digestivo, dieta rica en proteínas o mayor catabolismo; puede disminuir en enfermedad hepática grave, baja ingesta proteica o sobrehidratación. Urea y BUN no deben compararse como si fueran el mismo valor: de forma aproximada, urea (mg/dL) = BUN (mg/dL) × 2,14 y BUN = urea × 0,467. Valores de referencia: En Perú es habitual informar urea sérica en mg/dL; un intervalo orientativo frecuente en adultos es aproximadamente 10–40 mg/dL, mientras BUN suele informarse alrededor de 6–20 mg/dL. El rango válido es siempre el del laboratorio, porque cambia con método, edad y población. Enfermedades relacionadas: Enfermedad renal, deshidratación, sangrado digestivo y enfermedad hepática. Especialidad relacionada: Nefrología, medicina interna o laboratorio clínico. Exámenes relacionados: Creatinina sérica, examen completo de orina y relación urea/creatinina.",
+  "sintomas": [
+    "fatiga",
+    "picazón",
+    "orinar frecuente",
+    "hinchazón"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Por lo general no requiere preparación especial; confirma si otros análisis exigen ayuno.",
+    "Informa medicamentos y suplementos."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para confirmar si el informe expresa urea completa o BUN, revisar sus unidades y compararlo con creatinina, filtración glomerular, hidratación y contexto clínico.",
+  "senales_alarma": "Después de la toma de muestra para Urea, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: Urea sérica y BUN son mediciones relacionadas, pero sus cifras no son intercambiables sin conversión. Usa el nombre, unidad y rango impresos en tu propio informe.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, pequeño hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Urea sérica y BUN son lo mismo?",
+      "respuesta": "No exactamente. La urea sérica informa la molécula completa; BUN informa solo el nitrógeno de esa urea. Se relacionan mediante una conversión aproximada y tienen rangos numéricos diferentes."
+    },
+    {
+      "pregunta": "¿Necesito ayuno?",
+      "respuesta": "Por lo general no para la urea aislada, pero puede ser necesario si se solicitan otros análisis. Sigue las instrucciones del laboratorio."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se extrae una pequeña muestra de sangre de una vena; suele tomar menos de cinco minutos y causa una molestia breve."
+    },
+    {
+      "pregunta": "¿Una urea alta significa insuficiencia renal?",
+      "respuesta": "No necesariamente. También puede aumentar por deshidratación, sangrado digestivo, consumo elevado de proteínas o mayor catabolismo. Debe interpretarse con creatinina y el contexto clínico."
+    },
+    {
+      "pregunta": "¿Qué rango debo usar?",
+      "respuesta": "Usa el rango del laboratorio y verifica si el resultado está expresado como urea o BUN. Los números no deben compararse directamente entre ambas magnitudes."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-deshidratacion",
+      "slug": "deshidratacion",
+      "categoria": "Relacionados",
+      "titulo": "Deshidratacion"
+    },
+    {
+      "id": "rel-insuficiencia-cardiaca",
+      "slug": "insuficiencia-cardiaca",
+      "categoria": "Relacionados",
+      "titulo": "Insuficiencia cardiaca"
+    },
+    {
+      "id": "rel-fatiga",
+      "slug": "fatiga",
+      "categoria": "Relacionados",
+      "titulo": "Fatiga"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-bun",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "BUN (Blood Urea Nitrogen)",
+      "url": "https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/",
+      "tipo": "Información médica oficial para pacientes"
+    },
+    {
+      "id": "ncbi-bun-creatinine",
+      "organizacion": "NCBI Bookshelf / NIH",
+      "titulo": "BUN and Creatinine",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK305/",
+      "tipo": "Referencia clínica oficial"
+    },
+    {
+      "id": "ins-rpmesp-urea",
+      "organizacion": "Instituto Nacional de Salud del Perú",
+      "titulo": "Valores de laboratorio reportados como urea en población peruana",
+      "url": "https://rpmesp.ins.gob.pe/index.php/rpmesp/article/download/5926/3788/35877",
+      "tipo": "Publicación científica institucional peruana"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

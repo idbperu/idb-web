@@ -1,0 +1,78 @@
+{
+  "id": "examen-densitometria-osea",
+  "slug": "densitometria-osea",
+  "titulo": "Densitometría ósea",
+  "tipo": "examen",
+  "categoria": "Imagenología",
+  "descripcion": "¿Qué es? Mide la densidad mineral ósea, usualmente en cadera y columna, mediante rayos X de dosis muy baja. ¿Cómo se realiza? Te acuestas mientras un brazo del equipo recorre cadera y columna; debes permanecer quieto. Duración y molestias: 10 a 30 minutos. Es indolora y no invasiva.",
+  "respuesta_rapida": "Mide la densidad mineral ósea, usualmente en cadera y columna, mediante rayos X de dosis muy baja. Sirve para diagnosticar osteoporosis, estimar riesgo de fractura y seguir cambios de densidad ósea.",
+  "para_que_sirve": "¿Para qué sirve? Diagnosticar osteoporosis, estimar riesgo de fractura y seguir cambios de densidad ósea. ¿Cuándo se solicita? Factores de riesgo, fractura por fragilidad, pérdida de estatura o seguimiento de enfermedad o tratamiento que afecta hueso.",
+  "causas": "Interpretación general (orientativa): El T-score compara con adultos jóvenes y el Z-score con personas de edad y sexo similares; se integra con riesgo clínico. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: En adultos posmenopáusicos y hombres mayores, T-score ≥ -1 suele considerarse normal, entre -1 y -2,5 baja masa ósea y ≤ -2,5 osteoporosis; debe interpretarlo un profesional. Enfermedades relacionadas: Osteoporosis, osteopenia y fracturas por fragilidad. Especialidad relacionada: Radiología, reumatología, endocrinología o geriatría. Exámenes relacionados: Calcio sérico, fósforo sérico y vitamina D.",
+  "sintomas": [
+    "fractura con golpe leve",
+    "perdida de estatura",
+    "dolor de espalda"
+  ],
+  "factores_riesgo": [
+    "La radiación es extremadamente baja; no debe realizarse durante embarazo salvo justificación excepcional."
+  ],
+  "prevencion": [
+    "Evita suplementos de calcio al menos 24 horas antes si el centro lo indica. Informa embarazo y estudios recientes con contraste o radioisótopos."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Factores de riesgo, fractura por fragilidad, pérdida de estatura o seguimiento de enfermedad o tratamiento que afecta hueso.",
+  "senales_alarma": "Densitometría ósea suele ser seguro. Busca atención urgente si el síntoma que motivó el estudio se acompaña de dificultad respiratoria, dolor intenso, desmayo, debilidad súbita, confusión, sangrado importante o empeoramiento rápido; no esperes el informe.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Evita suplementos de calcio al menos 24 horas antes si el centro lo indica. Informa embarazo y estudios recientes con contraste o radioisótopos.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: La radiación es extremadamente baja; no debe realizarse durante embarazo salvo justificación excepcional."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Densitometría ósea?",
+      "respuesta": "Mide la densidad mineral ósea, usualmente en cadera y columna, mediante rayos X de dosis muy baja."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Evita suplementos de calcio al menos 24 horas antes si el centro lo indica. Informa embarazo y estudios recientes con contraste o radioisótopos."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Te acuestas mientras un brazo del equipo recorre cadera y columna; debes permanecer quieto. 10 a 30 minutos. Es indolora y no invasiva."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "La radiación es extremadamente baja; no debe realizarse durante embarazo salvo justificación excepcional."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El T-score compara con adultos jóvenes y el Z-score con personas de edad y sexo similares; se integra con riesgo clínico. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-dolor-de-espalda",
+      "slug": "dolor-de-espalda",
+      "categoria": "Relacionados",
+      "titulo": "Dolor de espalda"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "acr-dexa",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Bone Density Scan (DEXA or DXA)",
+      "url": "https://www.radiologyinfo.org/en/info/dexa",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "nih-bone-density",
+      "organizacion": "MedlinePlus (NIH/NLM)",
+      "titulo": "Bone Density Scan",
+      "url": "https://medlineplus.gov/lab-tests/bone-density-scan/",
+      "tipo": "Información médica oficial para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

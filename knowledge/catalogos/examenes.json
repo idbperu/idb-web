@@ -1,0 +1,809 @@
+{
+  "id": "catalogo-examenes",
+  "titulo": "Catálogo de exámenes médicos",
+  "version": "1.5",
+  "ultima_revision": "2026-07",
+  "total_registros": 100,
+  "registros": [
+    {
+      "id": "examen-hemograma-completo",
+      "slug": "hemograma-completo",
+      "titulo": "Hemograma completo",
+      "tipo": "examen",
+      "categoria": "Hematología",
+      "ruta": "knowledge/examenes/hemograma-completo.json"
+    },
+    {
+      "id": "examen-glucosa-en-sangre",
+      "slug": "glucosa-en-sangre",
+      "titulo": "Glucosa en sangre",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/glucosa-en-sangre.json"
+    },
+    {
+      "id": "examen-hemoglobina-glicosilada-hba1c",
+      "slug": "hemoglobina-glicosilada-hba1c",
+      "titulo": "Hemoglobina glicosilada (HbA1c)",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/hemoglobina-glicosilada-hba1c.json"
+    },
+    {
+      "id": "examen-perfil-lipidico",
+      "slug": "perfil-lipidico",
+      "titulo": "Perfil lipídico",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/perfil-lipidico.json"
+    },
+    {
+      "id": "examen-creatinina-serica",
+      "slug": "creatinina-serica",
+      "titulo": "Creatinina sérica",
+      "tipo": "examen",
+      "categoria": "Nefrología",
+      "ruta": "knowledge/examenes/creatinina-serica.json"
+    },
+    {
+      "id": "examen-urea",
+      "slug": "urea",
+      "titulo": "Urea",
+      "tipo": "examen",
+      "categoria": "Nefrología",
+      "ruta": "knowledge/examenes/urea.json"
+    },
+    {
+      "id": "examen-examen-completo-de-orina",
+      "slug": "examen-completo-de-orina",
+      "titulo": "Examen completo de orina",
+      "tipo": "examen",
+      "categoria": "Nefrología",
+      "ruta": "knowledge/examenes/examen-completo-de-orina.json"
+    },
+    {
+      "id": "examen-prueba-de-funcion-hepatica",
+      "slug": "prueba-de-funcion-hepatica",
+      "titulo": "Prueba de función hepática",
+      "tipo": "examen",
+      "categoria": "Gastroenterología",
+      "ruta": "knowledge/examenes/prueba-de-funcion-hepatica.json"
+    },
+    {
+      "id": "examen-radiografia-de-torax",
+      "slug": "radiografia-de-torax",
+      "titulo": "Radiografía de tórax",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/radiografia-de-torax.json"
+    },
+    {
+      "id": "examen-radiografia-de-columna",
+      "slug": "radiografia-de-columna",
+      "titulo": "Radiografía de columna",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/radiografia-de-columna.json"
+    },
+    {
+      "id": "examen-ecografia-abdominal",
+      "slug": "ecografia-abdominal",
+      "titulo": "Ecografía abdominal",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/ecografia-abdominal.json"
+    },
+    {
+      "id": "examen-resonancia-magnetica-cerebral",
+      "slug": "resonancia-magnetica-cerebral",
+      "titulo": "Resonancia magnética cerebral",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/resonancia-magnetica-cerebral.json"
+    },
+    {
+      "id": "examen-electrocardiograma",
+      "slug": "electrocardiograma",
+      "titulo": "Electrocardiograma",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/electrocardiograma.json"
+    },
+    {
+      "id": "examen-ecocardiograma",
+      "slug": "ecocardiograma",
+      "titulo": "Ecocardiograma",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/ecocardiograma.json"
+    },
+    {
+      "id": "examen-espirometria",
+      "slug": "espirometria",
+      "titulo": "Espirometría",
+      "tipo": "examen",
+      "categoria": "Neumología",
+      "ruta": "knowledge/examenes/espirometria.json"
+    },
+    {
+      "id": "examen-oximetria-de-pulso",
+      "slug": "oximetria-de-pulso",
+      "titulo": "Oximetría de pulso",
+      "tipo": "examen",
+      "categoria": "Neumología",
+      "ruta": "knowledge/examenes/oximetria-de-pulso.json"
+    },
+    {
+      "id": "examen-endoscopia-digestiva-alta",
+      "slug": "endoscopia-digestiva-alta",
+      "titulo": "Endoscopia digestiva alta",
+      "tipo": "examen",
+      "categoria": "Gastroenterología",
+      "ruta": "knowledge/examenes/endoscopia-digestiva-alta.json"
+    },
+    {
+      "id": "examen-colonoscopia",
+      "slug": "colonoscopia",
+      "titulo": "Colonoscopia",
+      "tipo": "examen",
+      "categoria": "Gastroenterología",
+      "ruta": "knowledge/examenes/colonoscopia.json"
+    },
+    {
+      "id": "examen-electroencefalograma",
+      "slug": "electroencefalograma",
+      "titulo": "Electroencefalograma",
+      "tipo": "examen",
+      "categoria": "Neurología",
+      "ruta": "knowledge/examenes/electroencefalograma.json"
+    },
+    {
+      "id": "examen-fondo-de-ojo",
+      "slug": "fondo-de-ojo",
+      "titulo": "Fondo de ojo",
+      "tipo": "examen",
+      "categoria": "Oftalmología",
+      "ruta": "knowledge/examenes/fondo-de-ojo.json"
+    },
+    {
+      "id": "examen-acido-urico",
+      "slug": "acido-urico",
+      "titulo": "Ácido úrico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/acido-urico.json"
+    },
+    {
+      "id": "examen-albumina-serica",
+      "slug": "albumina-serica",
+      "titulo": "Albúmina sérica",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/albumina-serica.json"
+    },
+    {
+      "id": "examen-bilirrubina-total-y-fraccionada",
+      "slug": "bilirrubina-total-y-fraccionada",
+      "titulo": "Bilirrubina total y fraccionada",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/bilirrubina-total-y-fraccionada.json"
+    },
+    {
+      "id": "examen-calcio-serico",
+      "slug": "calcio-serico",
+      "titulo": "Calcio sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/calcio-serico.json"
+    },
+    {
+      "id": "examen-sodio-serico",
+      "slug": "sodio-serico",
+      "titulo": "Sodio sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/sodio-serico.json"
+    },
+    {
+      "id": "examen-potasio-serico",
+      "slug": "potasio-serico",
+      "titulo": "Potasio sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/potasio-serico.json"
+    },
+    {
+      "id": "examen-cloro-serico",
+      "slug": "cloro-serico",
+      "titulo": "Cloro sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/cloro-serico.json"
+    },
+    {
+      "id": "examen-magnesio-serico",
+      "slug": "magnesio-serico",
+      "titulo": "Magnesio sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/magnesio-serico.json"
+    },
+    {
+      "id": "examen-tsh",
+      "slug": "tsh",
+      "titulo": "TSH",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/tsh.json"
+    },
+    {
+      "id": "examen-t4-libre",
+      "slug": "t4-libre",
+      "titulo": "T4 libre",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/t4-libre.json"
+    },
+    {
+      "id": "examen-t3-libre",
+      "slug": "t3-libre",
+      "titulo": "T3 libre",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/t3-libre.json"
+    },
+    {
+      "id": "examen-cortisol-serico",
+      "slug": "cortisol-serico",
+      "titulo": "Cortisol sérico",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/cortisol-serico.json"
+    },
+    {
+      "id": "examen-proteina-c-reactiva-pcr",
+      "slug": "proteina-c-reactiva-pcr",
+      "titulo": "Proteína C reactiva (PCR)",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/proteina-c-reactiva-pcr.json"
+    },
+    {
+      "id": "examen-procalcitonina",
+      "slug": "procalcitonina",
+      "titulo": "Procalcitonina",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/procalcitonina.json"
+    },
+    {
+      "id": "examen-velocidad-de-sedimentacion-globular-vsg",
+      "slug": "velocidad-de-sedimentacion-globular-vsg",
+      "titulo": "Velocidad de sedimentación globular (VSG)",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/velocidad-de-sedimentacion-globular-vsg.json"
+    },
+    {
+      "id": "examen-tiempo-de-protrombina-tp-inr",
+      "slug": "tiempo-de-protrombina-tp-inr",
+      "titulo": "Tiempo de Protrombina (TP/INR)",
+      "tipo": "examen",
+      "categoria": "Hematología",
+      "ruta": "knowledge/examenes/tiempo-de-protrombina-tp-inr.json"
+    },
+    {
+      "id": "examen-tiempo-de-tromboplastina-parcial-activada-ttpa",
+      "slug": "tiempo-de-tromboplastina-parcial-activada-ttpa",
+      "titulo": "Tiempo de Tromboplastina Parcial Activada (TTPa)",
+      "tipo": "examen",
+      "categoria": "Hematología",
+      "ruta": "knowledge/examenes/tiempo-de-tromboplastina-parcial-activada-ttpa.json"
+    },
+    {
+      "id": "examen-troponina-cardiaca",
+      "slug": "troponina-cardiaca",
+      "titulo": "Troponina cardíaca",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/troponina-cardiaca.json"
+    },
+    {
+      "id": "examen-ck-mb",
+      "slug": "ck-mb",
+      "titulo": "CK-MB",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/ck-mb.json"
+    },
+    {
+      "id": "examen-microalbuminuria",
+      "slug": "microalbuminuria",
+      "titulo": "Microalbuminuria",
+      "tipo": "examen",
+      "categoria": "Nefrología",
+      "ruta": "knowledge/examenes/microalbuminuria.json"
+    },
+    {
+      "id": "examen-fosfatasa-alcalina",
+      "slug": "fosfatasa-alcalina",
+      "titulo": "Fosfatasa alcalina",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/fosfatasa-alcalina.json"
+    },
+    {
+      "id": "examen-gamma-glutamil-transferasa-ggt",
+      "slug": "gamma-glutamil-transferasa-ggt",
+      "titulo": "Gamma-glutamil transferasa (GGT)",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/gamma-glutamil-transferasa-ggt.json"
+    },
+    {
+      "id": "examen-alanina-aminotransferasa-alt-tgp",
+      "slug": "alanina-aminotransferasa-alt-tgp",
+      "titulo": "Alanina aminotransferasa (ALT/TGP)",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/alanina-aminotransferasa-alt-tgp.json"
+    },
+    {
+      "id": "examen-aspartato-aminotransferasa-ast-tgo",
+      "slug": "aspartato-aminotransferasa-ast-tgo",
+      "titulo": "Aspartato aminotransferasa (AST/TGO)",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/aspartato-aminotransferasa-ast-tgo.json"
+    },
+    {
+      "id": "examen-lactato-deshidrogenasa-ldh",
+      "slug": "lactato-deshidrogenasa-ldh",
+      "titulo": "Lactato deshidrogenasa (LDH)",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/lactato-deshidrogenasa-ldh.json"
+    },
+    {
+      "id": "examen-fosforo-serico",
+      "slug": "fosforo-serico",
+      "titulo": "Fósforo sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/fosforo-serico.json"
+    },
+    {
+      "id": "examen-hierro-serico",
+      "slug": "hierro-serico",
+      "titulo": "Hierro sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/hierro-serico.json"
+    },
+    {
+      "id": "examen-ferritina",
+      "slug": "ferritina",
+      "titulo": "Ferritina",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/ferritina.json"
+    },
+    {
+      "id": "examen-transferrina",
+      "slug": "transferrina",
+      "titulo": "Transferrina",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/transferrina.json"
+    },
+    {
+      "id": "examen-saturacion-de-transferrina",
+      "slug": "saturacion-de-transferrina",
+      "titulo": "Saturación de transferrina",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/saturacion-de-transferrina.json"
+    },
+    {
+      "id": "examen-recuento-de-reticulocitos",
+      "slug": "recuento-de-reticulocitos",
+      "titulo": "Recuento de reticulocitos",
+      "tipo": "examen",
+      "categoria": "Hematología",
+      "ruta": "knowledge/examenes/recuento-de-reticulocitos.json"
+    },
+    {
+      "id": "examen-frotis-de-sangre-periferica",
+      "slug": "frotis-de-sangre-periferica",
+      "titulo": "Frotis de sangre periférica",
+      "tipo": "examen",
+      "categoria": "Hematología",
+      "ruta": "knowledge/examenes/frotis-de-sangre-periferica.json"
+    },
+    {
+      "id": "examen-dimero-d",
+      "slug": "dimero-d",
+      "titulo": "Dímero D",
+      "tipo": "examen",
+      "categoria": "Hematología",
+      "ruta": "knowledge/examenes/dimero-d.json"
+    },
+    {
+      "id": "examen-fibrinogeno",
+      "slug": "fibrinogeno",
+      "titulo": "Fibrinógeno",
+      "tipo": "examen",
+      "categoria": "Hematología",
+      "ruta": "knowledge/examenes/fibrinogeno.json"
+    },
+    {
+      "id": "examen-anticuerpos-antinucleares-ana",
+      "slug": "anticuerpos-antinucleares-ana",
+      "titulo": "Anticuerpos antinucleares (ANA)",
+      "tipo": "examen",
+      "categoria": "Inmunología",
+      "ruta": "knowledge/examenes/anticuerpos-antinucleares-ana.json"
+    },
+    {
+      "id": "examen-prueba-rapida-de-vih",
+      "slug": "prueba-rapida-de-vih",
+      "titulo": "Prueba rápida de VIH",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/prueba-rapida-de-vih.json"
+    },
+    {
+      "id": "examen-serologia-para-hepatitis-b",
+      "slug": "serologia-para-hepatitis-b",
+      "titulo": "Serología para hepatitis B",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/serologia-para-hepatitis-b.json"
+    },
+    {
+      "id": "examen-serologia-para-hepatitis-c",
+      "slug": "serologia-para-hepatitis-c",
+      "titulo": "Serología para hepatitis C",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/serologia-para-hepatitis-c.json"
+    },
+    {
+      "id": "examen-hormona-foliculoestimulante-fsh",
+      "slug": "hormona-foliculoestimulante-fsh",
+      "titulo": "Hormona foliculoestimulante (FSH)",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/hormona-foliculoestimulante-fsh.json"
+    },
+    {
+      "id": "examen-hormona-luteinizante-lh",
+      "slug": "hormona-luteinizante-lh",
+      "titulo": "Hormona luteinizante (LH)",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/hormona-luteinizante-lh.json"
+    },
+    {
+      "id": "examen-hemocultivo",
+      "slug": "hemocultivo",
+      "titulo": "Hemocultivo",
+      "tipo": "examen",
+      "categoria": "Microbiología",
+      "ruta": "knowledge/examenes/hemocultivo.json"
+    },
+    {
+      "id": "examen-urocultivo",
+      "slug": "urocultivo",
+      "titulo": "Urocultivo",
+      "tipo": "examen",
+      "categoria": "Microbiología",
+      "ruta": "knowledge/examenes/urocultivo.json"
+    },
+    {
+      "id": "examen-coprocultivo",
+      "slug": "coprocultivo",
+      "titulo": "Coprocultivo",
+      "tipo": "examen",
+      "categoria": "Microbiología",
+      "ruta": "knowledge/examenes/coprocultivo.json"
+    },
+    {
+      "id": "examen-cultivo-de-secrecion-faringea",
+      "slug": "cultivo-de-secrecion-faringea",
+      "titulo": "Cultivo de secreción faríngea",
+      "tipo": "examen",
+      "categoria": "Microbiología",
+      "ruta": "knowledge/examenes/cultivo-de-secrecion-faringea.json"
+    },
+    {
+      "id": "examen-cultivo-de-heridas",
+      "slug": "cultivo-de-heridas",
+      "titulo": "Cultivo de heridas",
+      "tipo": "examen",
+      "categoria": "Microbiología",
+      "ruta": "knowledge/examenes/cultivo-de-heridas.json"
+    },
+    {
+      "id": "examen-pcr-para-covid-19",
+      "slug": "pcr-para-covid-19",
+      "titulo": "PCR para COVID-19",
+      "tipo": "examen",
+      "categoria": "Virología",
+      "ruta": "knowledge/examenes/pcr-para-covid-19.json"
+    },
+    {
+      "id": "examen-prueba-rapida-de-antigeno-para-covid-19",
+      "slug": "prueba-rapida-de-antigeno-para-covid-19",
+      "titulo": "Prueba rápida de antígeno para COVID-19",
+      "tipo": "examen",
+      "categoria": "Virología",
+      "ruta": "knowledge/examenes/prueba-rapida-de-antigeno-para-covid-19.json"
+    },
+    {
+      "id": "examen-pcr-para-influenza",
+      "slug": "pcr-para-influenza",
+      "titulo": "PCR para influenza",
+      "tipo": "examen",
+      "categoria": "Virología",
+      "ruta": "knowledge/examenes/pcr-para-influenza.json"
+    },
+    {
+      "id": "examen-carga-viral-vih",
+      "slug": "carga-viral-vih",
+      "titulo": "Carga viral VIH",
+      "tipo": "examen",
+      "categoria": "Virología",
+      "ruta": "knowledge/examenes/carga-viral-vih.json"
+    },
+    {
+      "id": "examen-carga-viral-hepatitis-b",
+      "slug": "carga-viral-hepatitis-b",
+      "titulo": "Carga viral hepatitis B",
+      "tipo": "examen",
+      "categoria": "Virología",
+      "ruta": "knowledge/examenes/carga-viral-hepatitis-b.json"
+    },
+    {
+      "id": "examen-examen-parasitologico-seriado",
+      "slug": "examen-parasitologico-seriado",
+      "titulo": "Examen parasitológico seriado",
+      "tipo": "examen",
+      "categoria": "Parasitología",
+      "ruta": "knowledge/examenes/examen-parasitologico-seriado.json"
+    },
+    {
+      "id": "examen-test-de-graham",
+      "slug": "test-de-graham",
+      "titulo": "Test de Graham",
+      "tipo": "examen",
+      "categoria": "Parasitología",
+      "ruta": "knowledge/examenes/test-de-graham.json"
+    },
+    {
+      "id": "examen-factor-reumatoide",
+      "slug": "factor-reumatoide",
+      "titulo": "Factor reumatoide",
+      "tipo": "examen",
+      "categoria": "Inmunología",
+      "ruta": "knowledge/examenes/factor-reumatoide.json"
+    },
+    {
+      "id": "examen-anti-ccp",
+      "slug": "anti-ccp",
+      "titulo": "Anti-CCP",
+      "tipo": "examen",
+      "categoria": "Inmunología",
+      "ruta": "knowledge/examenes/anti-ccp.json"
+    },
+    {
+      "id": "examen-complemento-c3",
+      "slug": "complemento-c3",
+      "titulo": "Complemento C3",
+      "tipo": "examen",
+      "categoria": "Inmunología",
+      "ruta": "knowledge/examenes/complemento-c3.json"
+    },
+    {
+      "id": "examen-complemento-c4",
+      "slug": "complemento-c4",
+      "titulo": "Complemento C4",
+      "tipo": "examen",
+      "categoria": "Inmunología",
+      "ruta": "knowledge/examenes/complemento-c4.json"
+    },
+    {
+      "id": "examen-tamizaje-toxicologico-en-orina",
+      "slug": "tamizaje-toxicologico-en-orina",
+      "titulo": "Tamizaje toxicológico en orina",
+      "tipo": "examen",
+      "categoria": "Toxicología",
+      "ruta": "knowledge/examenes/tamizaje-toxicologico-en-orina.json"
+    },
+    {
+      "id": "examen-alcoholemia",
+      "slug": "alcoholemia",
+      "titulo": "Alcoholemia",
+      "tipo": "examen",
+      "categoria": "Toxicología",
+      "ruta": "knowledge/examenes/alcoholemia.json"
+    },
+    {
+      "id": "examen-grupo-sanguineo-y-factor-rh",
+      "slug": "grupo-sanguineo-y-factor-rh",
+      "titulo": "Grupo sanguíneo y factor Rh",
+      "tipo": "examen",
+      "categoria": "Banco de Sangre",
+      "ruta": "knowledge/examenes/grupo-sanguineo-y-factor-rh.json"
+    },
+    {
+      "id": "examen-prueba-de-coombs-directa",
+      "slug": "prueba-de-coombs-directa",
+      "titulo": "Prueba de Coombs directa",
+      "tipo": "examen",
+      "categoria": "Banco de Sangre",
+      "ruta": "knowledge/examenes/prueba-de-coombs-directa.json"
+    },
+    {
+      "id": "examen-tomografia-computarizada-de-torax",
+      "slug": "tomografia-computarizada-de-torax",
+      "titulo": "Tomografía computarizada de tórax",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/tomografia-computarizada-de-torax.json"
+    },
+    {
+      "id": "examen-tomografia-computarizada-de-abdomen-y-pelvis",
+      "slug": "tomografia-computarizada-de-abdomen-y-pelvis",
+      "titulo": "Tomografía computarizada de abdomen y pelvis",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/tomografia-computarizada-de-abdomen-y-pelvis.json"
+    },
+    {
+      "id": "examen-tomografia-computarizada-cerebral",
+      "slug": "tomografia-computarizada-cerebral",
+      "titulo": "Tomografía computarizada cerebral",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/tomografia-computarizada-cerebral.json"
+    },
+    {
+      "id": "examen-resonancia-magnetica-de-columna-lumbar",
+      "slug": "resonancia-magnetica-de-columna-lumbar",
+      "titulo": "Resonancia magnética de columna lumbar",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/resonancia-magnetica-de-columna-lumbar.json"
+    },
+    {
+      "id": "examen-resonancia-magnetica-de-rodilla",
+      "slug": "resonancia-magnetica-de-rodilla",
+      "titulo": "Resonancia magnética de rodilla",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/resonancia-magnetica-de-rodilla.json"
+    },
+    {
+      "id": "examen-resonancia-magnetica-de-hombro",
+      "slug": "resonancia-magnetica-de-hombro",
+      "titulo": "Resonancia magnética de hombro",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/resonancia-magnetica-de-hombro.json"
+    },
+    {
+      "id": "examen-ecografia-renal-y-de-vias-urinarias",
+      "slug": "ecografia-renal-y-de-vias-urinarias",
+      "titulo": "Ecografía renal y de vías urinarias",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/ecografia-renal-y-de-vias-urinarias.json"
+    },
+    {
+      "id": "examen-ecografia-pelvica",
+      "slug": "ecografia-pelvica",
+      "titulo": "Ecografía pélvica",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/ecografia-pelvica.json"
+    },
+    {
+      "id": "examen-ecografia-obstetrica",
+      "slug": "ecografia-obstetrica",
+      "titulo": "Ecografía obstétrica",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/ecografia-obstetrica.json"
+    },
+    {
+      "id": "examen-mamografia",
+      "slug": "mamografia",
+      "titulo": "Mamografía",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/mamografia.json"
+    },
+    {
+      "id": "examen-densitometria-osea",
+      "slug": "densitometria-osea",
+      "titulo": "Densitometría ósea",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/densitometria-osea.json"
+    },
+    {
+      "id": "examen-gammagrafia-osea",
+      "slug": "gammagrafia-osea",
+      "titulo": "Gammagrafía ósea",
+      "tipo": "examen",
+      "categoria": "Medicina Nuclear",
+      "ruta": "knowledge/examenes/gammagrafia-osea.json"
+    },
+    {
+      "id": "examen-gammagrafia-tiroidea",
+      "slug": "gammagrafia-tiroidea",
+      "titulo": "Gammagrafía tiroidea",
+      "tipo": "examen",
+      "categoria": "Medicina Nuclear",
+      "ruta": "knowledge/examenes/gammagrafia-tiroidea.json"
+    },
+    {
+      "id": "examen-holter-de-24-horas",
+      "slug": "holter-de-24-horas",
+      "titulo": "Holter de 24 horas",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/holter-de-24-horas.json"
+    },
+    {
+      "id": "examen-monitoreo-ambulatorio-de-presion-arterial-mapa",
+      "slug": "monitoreo-ambulatorio-de-presion-arterial-mapa",
+      "titulo": "Monitoreo ambulatorio de presión arterial (MAPA)",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/monitoreo-ambulatorio-de-presion-arterial-mapa.json"
+    },
+    {
+      "id": "examen-prueba-de-esfuerzo",
+      "slug": "prueba-de-esfuerzo",
+      "titulo": "Prueba de esfuerzo",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/prueba-de-esfuerzo.json"
+    },
+    {
+      "id": "examen-ecografia-hepatobiliar",
+      "slug": "ecografia-hepatobiliar",
+      "titulo": "Ecografía hepatobiliar",
+      "tipo": "examen",
+      "categoria": "Gastroenterología",
+      "ruta": "knowledge/examenes/ecografia-hepatobiliar.json"
+    },
+    {
+      "id": "examen-colangiopancreatografia-por-resonancia-magnetica",
+      "slug": "colangiopancreatografia-por-resonancia-magnetica",
+      "titulo": "Colangiopancreatografía por resonancia magnética",
+      "tipo": "examen",
+      "categoria": "Gastroenterología",
+      "ruta": "knowledge/examenes/colangiopancreatografia-por-resonancia-magnetica.json"
+    },
+    {
+      "id": "examen-electromiografia",
+      "slug": "electromiografia",
+      "titulo": "Electromiografía",
+      "tipo": "examen",
+      "categoria": "Neurología",
+      "ruta": "knowledge/examenes/electromiografia.json"
+    },
+    {
+      "id": "examen-ecografia-doppler-venosa-de-miembros-inferiores",
+      "slug": "ecografia-doppler-venosa-de-miembros-inferiores",
+      "titulo": "Ecografía Doppler venosa de miembros inferiores",
+      "tipo": "examen",
+      "categoria": "Imagenología",
+      "ruta": "knowledge/examenes/ecografia-doppler-venosa-de-miembros-inferiores.json"
+    }
+  ]
+}

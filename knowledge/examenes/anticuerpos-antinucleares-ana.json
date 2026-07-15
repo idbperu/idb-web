@@ -1,0 +1,85 @@
+{
+  "id": "examen-anticuerpos-antinucleares-ana",
+  "slug": "anticuerpos-antinucleares-ana",
+  "titulo": "Anticuerpos antinucleares (ANA)",
+  "tipo": "examen",
+  "categoria": "Inmunología",
+  "descripcion": "¿Qué es? Detecta autoanticuerpos dirigidos contra componentes del núcleo celular. Procedimiento: un profesional obtiene una muestra de sangre venosa o capilar según la prueba. Duración y molestias: la toma suele durar menos de cinco minutos y puede sentirse un pinchazo breve.",
+  "respuesta_rapida": "Detecta autoanticuerpos dirigidos contra componentes del núcleo celular. Apoya la evaluación de enfermedades autoinmunes sistémicas, especialmente lupus.",
+  "para_que_sirve": "¿Para qué sirve? Apoya la evaluación de enfermedades autoinmunes sistémicas, especialmente lupus. ¿Cuándo se solicita? Se solicita ante síntomas compatibles como dolor articular, erupción, fotosensibilidad o inflamación persistente.",
+  "causas": "Interpretación orientativa: Un ANA positivo no confirma lupus y puede aparecer en personas sanas; título, patrón, síntomas y anticuerpos específicos determinan su relevancia. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Se informa negativo/positivo, título y a veces patrón; el umbral depende del método. Enfermedades relacionadas: Lupus, Trastorno de ansiedad. Especialidad relacionada: Hematología e inmunología. Exámenes relacionados: Anti-dsDNA, ENA, complemento, hemograma, orina y función renal.",
+  "sintomas": [
+    "dolor articular",
+    "erupción en la piel",
+    "fatiga"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Confirma si se requiere ayuno, horario o suspensión temporal indicada por el profesional.",
+    "Informa medicamentos, suplementos, embarazo, enfermedad reciente y tratamientos; no suspendas nada por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que solicitó el examen. Se solicita ante síntomas compatibles como dolor articular, erupción, fotosensibilidad o inflamación persistente.",
+  "senales_alarma": "Después de la toma de muestra para Anticuerpos antinucleares (ANA), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "La preparación, unidades y rangos pueden variar entre laboratorios.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La extracción tiene riesgo muy bajo: pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Anticuerpos antinucleares (ANA)?",
+      "respuesta": "Detecta autoanticuerpos dirigidos contra componentes del núcleo celular."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Apoya la evaluación de enfermedades autoinmunes sistémicas, especialmente lupus."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Confirma ayuno y horario con el centro; informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un ANA positivo no confirma lupus y puede aparecer en personas sanas; título, patrón, síntomas y anticuerpos específicos determinan su relevancia. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del laboratorio y de si requiere confirmación. Pregunta quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-lupus",
+      "slug": "lupus",
+      "categoria": "Relacionados",
+      "titulo": "Lupus"
+    },
+    {
+      "id": "rel-trastorno-de-ansiedad",
+      "slug": "trastorno-de-ansiedad",
+      "categoria": "Relacionados",
+      "titulo": "Trastorno de ansiedad"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-ana-antinuclear-antibody-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "ANA (Antinuclear Antibody) Test",
+      "url": "https://medlineplus.gov/lab-tests/ana-antinuclear-antibody-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "niams-lupus",
+      "organizacion": "NIAMS / NIH",
+      "titulo": "Lupus Diagnosis",
+      "url": "https://www.niams.nih.gov/health-topics/lupus/diagnosis-treatment-and-steps-to-take",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

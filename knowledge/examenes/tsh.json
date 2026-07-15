@@ -1,0 +1,98 @@
+{
+  "id": "examen-tsh",
+  "slug": "tsh",
+  "titulo": "TSH",
+  "tipo": "examen",
+  "categoria": "Endocrinología",
+  "descripcion": "¿Qué es? Mide la hormona estimulante de la tiroides producida por la hipófisis. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide la hormona estimulante de la tiroides producida por la hipófisis. Es la prueba inicial más utilizada para evaluar función tiroidea y vigilar tratamiento.",
+  "para_que_sirve": "¿Para qué sirve? Es la prueba inicial más utilizada para evaluar función tiroidea y vigilar tratamiento. Indicaciones: Se solicita ante cambios de peso, fatiga, intolerancia al frío o calor, palpitaciones, alteraciones menstruales o control tiroideo.",
+  "causas": "Interpretación general: TSH alta suele acompañar función tiroidea baja y TSH baja función alta, pero hay excepciones por hipófisis, enfermedad aguda, embarazo y medicamentos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: El rango depende del ensayo, edad, embarazo y laboratorio; debe interpretarse con T4 libre. Enfermedades relacionadas: Hipotiroidismo, hipertiroidismo y trastornos hipofisarios. Especialidad relacionada: Endocrinología. Exámenes relacionados: T4 libre, T3 libre y anticuerpos tiroideos.",
+  "sintomas": [
+    "fatiga",
+    "aumento de peso",
+    "bajada de peso",
+    "palpitaciones"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Usualmente no requiere ayuno.",
+    "Informa biotina, hormonas tiroideas, embarazo y medicamentos; confirma el horario de la dosis."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita ante cambios de peso, fatiga, intolerancia al frío o calor, palpitaciones, alteraciones menstruales o control tiroideo.",
+  "senales_alarma": "Después de la toma de muestra para TSH, solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es TSH?",
+      "respuesta": "Mide la hormona estimulante de la tiroides producida por la hipófisis."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Es la prueba inicial más utilizada para evaluar función tiroidea y vigilar tratamiento."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Usualmente no requiere ayuno. Informa biotina, hormonas tiroideas, embarazo y medicamentos; confirma el horario de la dosis."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "TSH alta suele acompañar función tiroidea baja y TSH baja función alta, pero hay excepciones por hipófisis, enfermedad aguda, embarazo y medicamentos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-hipotiroidismo",
+      "slug": "hipotiroidismo",
+      "categoria": "Relacionados",
+      "titulo": "Hipotiroidismo"
+    },
+    {
+      "id": "rel-hipertiroidismo",
+      "slug": "hipertiroidismo",
+      "categoria": "Relacionados",
+      "titulo": "Hipertiroidismo"
+    },
+    {
+      "id": "rel-fatiga",
+      "slug": "fatiga",
+      "categoria": "Relacionados",
+      "titulo": "Fatiga"
+    },
+    {
+      "id": "rel-palpitaciones",
+      "slug": "palpitaciones",
+      "categoria": "Relacionados",
+      "titulo": "Palpitaciones"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-tsh-thyroid-stimulating-hormone-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "TSH Test",
+      "url": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-thyroid-antibodies",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Thyroid Antibodies",
+      "url": "https://medlineplus.gov/lab-tests/thyroid-antibodies/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

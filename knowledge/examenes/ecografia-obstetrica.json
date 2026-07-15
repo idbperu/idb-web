@@ -1,0 +1,71 @@
+{
+  "id": "examen-ecografia-obstetrica",
+  "slug": "ecografia-obstetrica",
+  "titulo": "Ecografía obstétrica",
+  "tipo": "examen",
+  "categoria": "Imagenología",
+  "descripcion": "¿Qué es? Usa ondas sonoras para evaluar embarazo, embrión o feto, placenta, líquido amniótico y estructuras maternas, sin radiación ionizante. ¿Cómo se realiza? Se aplica gel sobre el abdomen; al inicio del embarazo puede proponerse vía transvaginal con consentimiento. Duración y molestias: 20 a 45 minutos según el objetivo. Generalmente es indolora, con presión leve.",
+  "respuesta_rapida": "Usa ondas sonoras para evaluar embarazo, embrión o feto, placenta, líquido amniótico y estructuras maternas, sin radiación ionizante. Sirve para confirmar ubicación y edad gestacional, evaluar crecimiento y anatomía fetal, placenta, líquido y bienestar según etapa.",
+  "para_que_sirve": "¿Para qué sirve? Confirmar ubicación y edad gestacional, evaluar crecimiento y anatomía fetal, placenta, líquido y bienestar según etapa. ¿Cuándo se solicita? Control prenatal, sangrado, dolor, discrepancia de crecimiento o evaluación dirigida por riesgo materno-fetal.",
+  "causas": "Interpretación general (orientativa): El profesional integra biometría, anatomía, frecuencia cardíaca, placenta y líquido según edad gestacional; un estudio normal no detecta todas las alteraciones. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios. Valores de referencia: Las medidas se comparan con curvas por edad gestacional, no con un valor único. Enfermedades relacionadas: Embarazo ectópico, restricción del crecimiento fetal, placenta previa y embarazo múltiple. Especialidad relacionada: Radiología, obstetricia o medicina materno-fetal. Exámenes relacionados: Ecografía pélvica y análisis prenatales.",
+  "sintomas": [
+    "sangrado durante el embarazo",
+    "dolor pelvico en embarazo",
+    "disminucion de movimientos fetales"
+  ],
+  "factores_riesgo": [
+    "No se conocen riesgos del ultrasonido diagnóstico usado de forma apropiada; debe realizarse por indicación médica, no solo con fines recreativos."
+  ],
+  "prevencion": [
+    "Según la etapa puede pedirse vejiga llena. Lleva antecedentes y estudios previos; sigue instrucciones del centro."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Control prenatal, sangrado, dolor, discrepancia de crecimiento o evaluación dirigida por riesgo materno-fetal.",
+  "senales_alarma": "La ecografía no suele causar complicaciones. Durante el embarazo, busca atención urgente ante sangrado abundante, dolor intenso, pérdida de líquido, desmayo, convulsiones o disminución marcada de movimientos fetales según la etapa gestacional.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios.",
+    "Según la etapa puede pedirse vejiga llena. Lleva antecedentes y estudios previos; sigue instrucciones del centro.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: No se conocen riesgos del ultrasonido diagnóstico usado de forma apropiada; debe realizarse por indicación médica, no solo con fines recreativos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Ecografía obstétrica?",
+      "respuesta": "Usa ondas sonoras para evaluar embarazo, embrión o feto, placenta, líquido amniótico y estructuras maternas, sin radiación ionizante."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Según la etapa puede pedirse vejiga llena. Lleva antecedentes y estudios previos; sigue instrucciones del centro."
+    },
+    {
+      "pregunta": "¿Cómo se realiza y cuánto dura?",
+      "respuesta": "Se aplica gel sobre el abdomen; al inicio del embarazo puede proponerse vía transvaginal con consentimiento. 20 a 45 minutos según el objetivo. Generalmente es indolora, con presión leve."
+    },
+    {
+      "pregunta": "¿Qué riesgos tiene?",
+      "respuesta": "No se conocen riesgos del ultrasonido diagnóstico usado de forma apropiada; debe realizarse por indicación médica, no solo con fines recreativos."
+    },
+    {
+      "pregunta": "¿Cómo se interpreta?",
+      "respuesta": "El profesional integra biometría, anatomía, frecuencia cardíaca, placenta y líquido según edad gestacional; un estudio normal no detecta todas las alteraciones. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse junto con síntomas, antecedentes, examen clínico y otros estudios."
+    }
+  ],
+  "temas_relacionados": [],
+  "fuentes": [
+    {
+      "id": "acr-obstetric-us",
+      "organizacion": "RadiologyInfo.org (ACR/RSNA)",
+      "titulo": "Obstetric Ultrasound",
+      "url": "https://www.radiologyinfo.org/en/info/obstetricus",
+      "tipo": "Información radiológica para pacientes"
+    },
+    {
+      "id": "nih-prenatal-us",
+      "organizacion": "MedlinePlus (NIH/NLM)",
+      "titulo": "Prenatal Ultrasound",
+      "url": "https://medlineplus.gov/prenataltesting.html",
+      "tipo": "Información médica oficial para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

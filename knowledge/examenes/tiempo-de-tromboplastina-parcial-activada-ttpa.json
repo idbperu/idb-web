@@ -1,0 +1,97 @@
+{
+  "id": "examen-tiempo-de-tromboplastina-parcial-activada-ttpa",
+  "slug": "tiempo-de-tromboplastina-parcial-activada-ttpa",
+  "titulo": "Tiempo de Tromboplastina Parcial Activada (TTPa)",
+  "tipo": "examen",
+  "categoria": "Hematología",
+  "descripcion": "¿Qué es? Mide el tiempo de coagulación relacionado con un grupo de factores de la vía intrínseca y común. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide el tiempo de coagulación relacionado con un grupo de factores de la vía intrínseca y común. Ayuda a investigar sangrado o trombosis y a monitorizar heparina no fraccionada.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a investigar sangrado o trombosis y a monitorizar heparina no fraccionada. Indicaciones: Se solicita ante sangrado inexplicado, sospecha de hemofilia o anticoagulante lúpico, y en determinados controles o procedimientos.",
+  "causas": "Interpretación general: Un TTPa prolongado puede deberse a déficit de factores, anticoagulantes, heparina o interferencias; requiere correlación y a veces pruebas de mezcla. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Se informa en segundos o razón; el rango y la meta terapéutica dependen del reactivo y laboratorio. Enfermedades relacionadas: Hemofilia, síndrome antifosfolípido, enfermedad hepática y otros trastornos de coagulación. Especialidad relacionada: Hematología. Exámenes relacionados: TP/INR, fibrinógeno, factores de coagulación y prueba de mezcla.",
+  "sintomas": [
+    "sangrado abundante",
+    "moretones faciles",
+    "sangrado menstrual abundante"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Informa heparina, anticoagulantes y otros medicamentos.",
+    "No suspendas ni ajustes anticoagulación sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita ante sangrado inexplicado, sospecha de hemofilia o anticoagulante lúpico, y en determinados controles o procedimientos.",
+  "senales_alarma": "Después de la toma de muestra para Tiempo de Tromboplastina Parcial Activada (TTPa), solicita atención si el sangrado no cede con presión, aparece un hematoma que aumenta, dolor intenso, enrojecimiento progresivo, secreción, fiebre o una reacción con dificultad para respirar, hinchazón o desmayo. No esperes el resultado si el cuadro clínico empeora.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Tiempo de Tromboplastina Parcial Activada (TTPa)?",
+      "respuesta": "Mide el tiempo de coagulación relacionado con un grupo de factores de la vía intrínseca y común."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Ayuda a investigar sangrado o trombosis y a monitorizar heparina no fraccionada."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Informa heparina, anticoagulantes y otros medicamentos. No suspendas ni ajustes anticoagulación sin indicación."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un TTPa prolongado puede deberse a déficit de factores, anticoagulantes, heparina o interferencias; requiere correlación y a veces pruebas de mezcla. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-lupus",
+      "slug": "lupus",
+      "categoria": "Relacionados",
+      "titulo": "Lupus"
+    },
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-sangrado-abundante",
+      "slug": "sangrado-abundante",
+      "categoria": "Relacionados",
+      "titulo": "Sangrado abundante"
+    },
+    {
+      "id": "rel-moretones-faciles",
+      "slug": "moretones-faciles",
+      "categoria": "Relacionados",
+      "titulo": "Moretones faciles"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-partial-thromboplastin-time-ptt-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Partial Thromboplastin Time Test",
+      "url": "https://medlineplus.gov/lab-tests/partial-thromboplastin-time-ptt-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-coagulation-factor-tests",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Coagulation Factor Tests",
+      "url": "https://medlineplus.gov/lab-tests/coagulation-factor-tests/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

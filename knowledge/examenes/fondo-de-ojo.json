@@ -1,0 +1,98 @@
+{
+  "id": "examen-fondo-de-ojo",
+  "slug": "fondo-de-ojo",
+  "titulo": "Fondo de ojo",
+  "tipo": "examen",
+  "categoria": "Oftalmología",
+  "descripcion": "¿Qué es? También se conoce como oftalmoscopia; puede hacerse con distintos instrumentos y con pupila dilatada. ¿Cómo se realiza? El profesional ilumina el interior del ojo y examina el fondo; puede aplicar gotas para dilatar la pupila. Duración: El examen toma pocos minutos; la dilatación puede tardar 15 a 30 minutos y durar varias horas. ¿Produce dolor o molestias? La luz puede ser intensa y las gotas pueden arder brevemente; después puede haber sensibilidad a la luz y visión cercana borrosa.",
+  "respuesta_rapida": "Examen que permite observar retina, mácula, vasos sanguíneos y nervio óptico en la parte posterior del ojo.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a detectar daño por diabetes o hipertensión, glaucoma, enfermedades de retina y cambios del nervio óptico. ¿Cuándo se solicita? Se solicita en controles visuales, diabetes, hipertensión, síntomas visuales, cefalea seleccionada o seguimiento de enfermedades oculares.",
+  "causas": "Interpretación general (orientativa): El informe describe retina, mácula, vasos y nervio óptico. Un hallazgo puede requerir fotografía, tomografía óptica u otros estudios. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: No aplica un rango numérico único; se evalúa el aspecto de las estructuras y, cuando corresponde, medidas complementarias. Enfermedades relacionadas: Retinopatía diabética, glaucoma, degeneración macular e hipertensión. Especialidad relacionada: Oftalmología u optometría clínica según el sistema de salud. Exámenes relacionados: Agudeza visual, presión intraocular, fotografía de retina, OCT y campo visual.",
+  "sintomas": [
+    "visión borrosa",
+    "pérdida de visión",
+    "dolor de ojos",
+    "manchas en la visión"
+  ],
+  "factores_riesgo": [
+    "Las gotas dilatadoras rara vez desencadenan aumento agudo de presión ocular o reacción sistémica; busca atención si aparece dolor intenso, ojo rojo, náuseas o pérdida visual."
+  ],
+  "prevencion": [
+    "Lleva gafas de sol si dilatarán tus pupilas y considera ir acompañado si tu visión queda borrosa.",
+    "Informa glaucoma, alergias y medicamentos."
+  ],
+  "cuando_consultar": "Consulta con el profesional que solicitó el examen para interpretar el resultado y definir si hace falta repetirlo o complementarlo. Se solicita en controles visuales, diabetes, hipertensión, síntomas visuales, cefalea seleccionada o seguimiento de enfermedades oculares.",
+  "senales_alarma": "Si se usaron gotas para dilatar la pupila, busca atención urgente ante dolor ocular intenso, ojo muy rojo, náuseas, vómitos o pérdida súbita de visión. La visión borrosa y sensibilidad a la luz leves suelen ser transitorias.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, implantes, enfermedades y medicamentos relevantes.",
+    "No suspendas tratamientos ni cambies dosis por cuenta propia antes o después del examen.",
+    "Riesgos: Las gotas dilatadoras rara vez desencadenan aumento agudo de presión ocular o reacción sistémica; busca atención si aparece dolor intenso, ojo rojo, náuseas o pérdida visual."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Fondo de ojo?",
+      "respuesta": "También se conoce como oftalmoscopia; puede hacerse con distintos instrumentos y con pupila dilatada."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Lleva gafas de sol si dilatarán tus pupilas y considera ir acompañado si tu visión queda borrosa. Informa glaucoma, alergias y medicamentos."
+    },
+    {
+      "pregunta": "¿Duele o tiene riesgos?",
+      "respuesta": "La luz puede ser intensa y las gotas pueden arder brevemente; después puede haber sensibilidad a la luz y visión cercana borrosa. Las gotas dilatadoras rara vez desencadenan aumento agudo de presión ocular o reacción sistémica; busca atención si aparece dolor intenso, ojo rojo, náuseas o pérdida visual."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El informe describe retina, mácula, vasos y nervio óptico. Un hallazgo puede requerir fotografía, tomografía óptica u otros estudios. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo recibiré el resultado?",
+      "respuesta": "Depende del centro, la urgencia y si se requieren análisis adicionales. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-glaucoma",
+      "slug": "glaucoma",
+      "categoria": "Relacionados",
+      "titulo": "Glaucoma"
+    },
+    {
+      "id": "rel-diabetes",
+      "slug": "diabetes",
+      "categoria": "Relacionados",
+      "titulo": "Diabetes"
+    },
+    {
+      "id": "rel-vision-borrosa",
+      "slug": "vision-borrosa",
+      "categoria": "Relacionados",
+      "titulo": "Vision borrosa"
+    },
+    {
+      "id": "rel-perdida-de-vision",
+      "slug": "perdida-de-vision",
+      "categoria": "Relacionados",
+      "titulo": "Perdida de vision"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-ophthalmoscopy",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Ophthalmoscopy",
+      "url": "https://medlineplus.gov/ency/article/003881.htm",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "nei-dilated-eye",
+      "organizacion": "National Eye Institute / NIH",
+      "titulo": "Dilated Eye Exam",
+      "url": "https://www.nei.nih.gov/eye-health-information/healthy-vision/finding-eye-doctor/get-dilated-eye-exam",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}

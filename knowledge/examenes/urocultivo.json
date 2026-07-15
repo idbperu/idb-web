@@ -1,0 +1,91 @@
+{
+  "id": "examen-urocultivo",
+  "slug": "urocultivo",
+  "titulo": "Urocultivo",
+  "tipo": "examen",
+  "categoria": "Microbiología",
+  "descripcion": "Qué es: Cultiva orina para identificar microorganismos y, cuando corresponde, su sensibilidad. Procedimiento: Muestra limpia de chorro medio en frasco estéril, antes de antibióticos cuando sea posible. Duración: la toma suele durar minutos; cultivos y pruebas confirmatorias pueden requerir varios días.",
+  "respuesta_rapida": "Cultiva orina para identificar microorganismos y, cuando corresponde, su sensibilidad. Confirma infección urinaria y orienta selección de antimicrobianos.",
+  "para_que_sirve": "Para qué sirve: Confirma infección urinaria y orienta selección de antimicrobianos. Indicaciones: Síntomas urinarios, fiebre con sospecha renal, embarazo seleccionado o infección complicada/recurrente.",
+  "causas": "Interpretación orientativa: El crecimiento significativo se interpreta según recuento, síntomas y método; flora mixta suele sugerir contaminación. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento. Valores de referencia: Sin crecimiento es negativo; los umbrales cuantitativos dependen del tipo de muestra y contexto. Enfermedades relacionadas: Cistitis, Enfermedad renal cronica, Fiebre. Especialidad relacionada: Microbiología. Exámenes relacionados: Examen completo de orina, antibiograma y ecografía seleccionada.",
+  "sintomas": [
+    "urgencia para orinar",
+    "orina con mal olor",
+    "dolor en los riñones"
+  ],
+  "factores_riesgo": [
+    "La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "prevencion": [
+    "Sigue exactamente las instrucciones del centro para tipo, horario, higiene, transporte y conservación de la muestra.",
+    "Informa medicamentos, antimicrobianos, tratamientos, exposiciones y fecha de inicio de síntomas; no suspendas nada sin indicación."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que indicó la prueba. Síntomas urinarios, fiebre con sospecha renal, embarazo seleccionado o infección complicada/recurrente.",
+  "senales_alarma": "La obtención de la muestra para Urocultivo suele ser segura. Busca atención urgente si el cuadro que motivó el examen se acompaña de dificultad para respirar, desmayo, confusión, sangrado importante, deshidratación marcada o empeoramiento rápido; no esperes el resultado.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento.",
+    "Una muestra mal tomada, contaminada o fuera de la ventana adecuada puede alterar el resultado.",
+    "No cambies tratamientos por un resultado aislado.",
+    "Riesgos: La toma de sangre puede causar pinchazo, hematoma o mareo; hisopados y muestras espontáneas tienen riesgo mínimo. Procedimientos profundos tienen riesgos específicos."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Urocultivo?",
+      "respuesta": "Cultiva orina para identificar microorganismos y, cuando corresponde, su sensibilidad."
+    },
+    {
+      "pregunta": "¿Para qué sirve?",
+      "respuesta": "Confirma infección urinaria y orienta selección de antimicrobianos."
+    },
+    {
+      "pregunta": "¿Cómo debo prepararme?",
+      "respuesta": "Muestra limpia de chorro medio en frasco estéril, antes de antibióticos cuando sea posible."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "El crecimiento significativo se interpreta según recuento, síntomas y método; flora mixta suele sugerir contaminación. El resultado orienta, pero no confirma ni descarta por sí solo una enfermedad ni define tratamiento."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende de la técnica: algunas pruebas tardan minutos y los cultivos o confirmaciones varios días. Confirma el plazo con el centro."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-cistitis",
+      "slug": "cistitis",
+      "categoria": "Relacionados",
+      "titulo": "Cistitis"
+    },
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-fiebre",
+      "slug": "fiebre",
+      "categoria": "Relacionados",
+      "titulo": "Fiebre"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medline-bacteria-culture-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Bacteria Culture Test",
+      "url": "https://medlineplus.gov/lab-tests/bacteria-culture-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "niddk-uti",
+      "organizacion": "NIDDK / NIH",
+      "titulo": "Bladder Infection Diagnosis",
+      "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults/diagnosis",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.1"
+}
