@@ -3,218 +3,353 @@
   "slug": "amigdalitis",
   "titulo": "Amigdalitis",
   "tipo": "enfermedad",
-  "categoria": "Garganta",
-  "descripcion": "La orientacion sobre Amigdalitis debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Amigdalitis se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Amigdalitis ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "aliases": [
+    "anginas",
+    "tonsilitis",
+    "amigdálas inflamadas"
+  ],
+  "keywords": [
+    "amigdalitis",
+    "anginas",
+    "tonsilitis",
+    "amigdálas inflamadas",
+    "dolor de garganta",
+    "dolor al tragar",
+    "fiebre",
+    "mal aliento",
+    "ganglios inflamados"
+  ],
+  "categoria": "Otorrinolaringológico",
+  "especialidad": "Otorrinolaringología, pediatría y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La amigdalitis es inflamación de las amígdalas, habitualmente por virus y a veces por bacterias como estreptococo. Causa dolor al tragar, fiebre y amígdalas rojas o con placas; los antibióticos solo corresponden cuando una causa bacteriana ha sido evaluada.",
+  "descripcion": "Las amígdalas son tejido de defensa a ambos lados de la garganta. Su inflamación puede acompañar faringitis, mononucleosis u otras infecciones y puede repetirse.",
+  "que_es": "Las amígdalas son tejido de defensa a ambos lados de la garganta. Su inflamación puede acompañar faringitis, mononucleosis u otras infecciones y puede repetirse.",
+  "para_que_sirve": "Esta ficha ayuda a comprender amigdalitis, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La amigdalitis es inflamación de las amígdalas, habitualmente por virus y a veces por bacterias como estreptococo. Causa dolor al tragar, fiebre y amígdalas rojas o con placas; los antibióticos solo corresponden cuando una causa bacteriana ha sido evaluada.",
   "sintomas": [
-    "fatiga",
-    "malestar general",
-    "dolor de cuerpo",
-    "fiebre"
+    "dolor de garganta y al tragar",
+    "amígdalas rojas e hinchadas",
+    "placas blancas",
+    "fiebre",
+    "ganglios dolorosos",
+    "mal aliento"
   ],
   "factores_riesgo": [
-    "antecedentes familiares",
-    "edad",
-    "otras enfermedades",
-    "habitos de vida"
+    "contacto cercano",
+    "higiene de manos insuficiente",
+    "exposición a humo",
+    "edad infantil o adolescente",
+    "episodios previos",
+    "inmunosupresión"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "contacto cercano",
+      "higiene de manos insuficiente",
+      "exposición a humo"
+    ],
+    "no_modificables": [
+      "edad infantil o adolescente",
+      "episodios previos",
+      "inmunosupresión"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Suele reconocerse mediante historia y examen de garganta. Puede requerir prueba rápida o cultivo para estreptococo y, si es persistente o atípica, pruebas para mononucleosis.",
+    "examenes_relacionados": [
+      "cultivo-de-secrecion-faringea",
+      "hemograma-completo"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Beber líquidos y elegir alimentos fáciles de tragar",
+    "Descansar",
+    "Evitar compartir utensilios",
+    "No retirar placas ni iniciar antibióticos por cuenta propia"
+  ],
+  "cuando_consultar": "Consulta si dura más de unos días, hay fiebre alta, episodios repetidos, placas o dificultad para comer y beber.",
+  "senales_alarma": "Dificultad para respirar; babeo o imposibilidad de tragar; voz muy apagada; dolor intenso de un solo lado; dificultad para abrir la boca; hinchazón del cuello.",
+  "senales_alarma_lista": [
+    "Dificultad para respirar",
+    "babeo o imposibilidad de tragar",
+    "voz muy apagada",
+    "dolor intenso de un solo lado",
+    "dificultad para abrir la boca",
+    "hinchazón del cuello"
   ],
   "prevencion": [
-    "controles preventivos",
-    "actividad fisica segura",
-    "alimentacion equilibrada",
-    "consulta temprana ante sintomas persistentes"
+    "Lavado de manos",
+    "no compartir vasos",
+    "cubrir tos",
+    "evitar humo"
   ],
-  "cuando_consultar": "Consulta si sospechas amigdalitis, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Amigdalitis?",
-      "respuesta": "Es una condicion relacionada con salud general. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Amigdalitis?",
+      "respuesta": "Las amígdalas son tejido de defensa a ambos lados de la garganta. Su inflamación puede acompañar faringitis, mononucleosis u otras infecciones y puede repetirse."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse fatiga, malestar general, dolor de cuerpo, fiebre, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Suele reconocerse mediante historia y examen de garganta. Puede requerir prueba rápida o cultivo para estreptococo y, si es persistente o atípica, pruebas para mononucleosis."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como controles preventivos, actividad fisica segura, alimentacion equilibrada, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Beber líquidos y elegir alimentos fáciles de tragar Descansar Evitar compartir utensilios No retirar placas ni iniciar antibióticos por cuenta propia."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si dura más de unos días, hay fiebre alta, episodios repetidos, placas o dificultad para comer y beber."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Dificultad para respirar; babeo o imposibilidad de tragar; voz muy apagada; dolor intenso de un solo lado; dificultad para abrir la boca; hinchazón del cuello."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "dolor-de-garganta",
+      "dolor-al-tragar",
+      "fiebre",
+      "mal-aliento",
+      "ganglios-inflamados"
+    ],
+    "examenes": [
+      "cultivo-de-secrecion-faringea",
+      "hemograma-completo"
+    ],
+    "medicamentos": [
+      "amoxicilina",
+      "penicilina"
+    ],
+    "enfermedades": [
+      "faringitis",
+      "resfrio-comun",
+      "influenza"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-fatiga",
-      "slug": "fatiga",
-      "categoria": "Relacionados",
-      "titulo": "fatiga"
+      "tipo": "sintoma",
+      "slug": "dolor-de-garganta",
+      "titulo": "Dolor de garganta"
     },
     {
-      "id": "rel-malestar-general",
-      "slug": "malestar-general",
-      "categoria": "Relacionados",
-      "titulo": "malestar general"
+      "tipo": "sintoma",
+      "slug": "dolor-al-tragar",
+      "titulo": "Dolor al tragar"
     },
     {
-      "id": "rel-dolor-de-cuerpo",
-      "slug": "dolor-de-cuerpo",
-      "categoria": "Relacionados",
-      "titulo": "dolor de cuerpo"
-    },
-    {
-      "id": "rel-fiebre",
+      "tipo": "sintoma",
       "slug": "fiebre",
-      "categoria": "Relacionados",
-      "titulo": "fiebre"
+      "titulo": "Fiebre"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "mal-aliento",
+      "titulo": "Mal aliento"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "ganglios-inflamados",
+      "titulo": "Ganglios inflamados"
+    },
+    {
+      "tipo": "examen",
+      "slug": "cultivo-de-secrecion-faringea",
+      "titulo": "Cultivo de secreción faríngea"
+    },
+    {
+      "tipo": "examen",
+      "slug": "hemograma-completo",
+      "titulo": "Hemograma completo"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "amoxicilina",
+      "titulo": "Amoxicilina"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "penicilina",
+      "titulo": "Penicilina"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "faringitis",
+      "titulo": "Faringitis"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "resfrio-comun",
+      "titulo": "Resfrio comun"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "influenza",
+      "titulo": "Influenza"
     }
   ],
+  "seo": {
+    "titulo": "Amigdalitis: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La amigdalitis es inflamación de las amígdalas, habitualmente por virus y a veces por bacterias como estreptococo. Causa dolor al tragar, fiebre y amígdalas rojas o con placas; los antibióticos solo corresponden cuando una causa bacteriana ha sido evaluada.",
+    "expresiones_coloquiales": [
+      "anginas"
+    ],
+    "errores_ortograficos": [
+      "amigdálas inflamadas"
+    ],
+    "singular_plural": [
+      "caso de amigdalitis",
+      "casos de amigdalitis"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
-      "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "id": "amigdalitis-fuente-1",
+      "organizacion": "NHS",
+      "titulo": "Tonsillitis",
+      "url": "https://www.nhs.uk/conditions/tonsillitis/",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Amigdalitis se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La amigdalitis es inflamación de las amígdalas, habitualmente por virus y a veces por bacterias como estreptococo. Causa dolor al tragar, fiebre y amígdalas rojas o con placas; los antibióticos solo corresponden cuando una causa bacteriana ha sido evaluada."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "La orientacion sobre Amigdalitis debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Las amígdalas son tejido de defensa a ambos lados de la garganta. Su inflamación puede acompañar faringitis, mononucleosis u otras infecciones y puede repetirse."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "fatiga",
-        "malestar general",
-        "dolor de cuerpo",
-        "fiebre"
+        "dolor de garganta y al tragar",
+        "amígdalas rojas e hinchadas",
+        "placas blancas",
+        "fiebre",
+        "ganglios dolorosos",
+        "mal aliento"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "contacto cercano",
+        "higiene de manos insuficiente",
+        "exposición a humo"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "antecedentes familiares",
-        "edad",
-        "otras enfermedades",
-        "habitos de vida"
+        "edad infantil o adolescente",
+        "episodios previos",
+        "inmunosupresión"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Amigdalitis debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Suele reconocerse mediante historia y examen de garganta. Puede requerir prueba rápida o cultivo para estreptococo y, si es persistente o atípica, pruebas para mononucleosis.",
+        "Cultivo de secreción faríngea",
+        "Hemograma completo"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Amigdalitis depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Beber líquidos y elegir alimentos fáciles de tragar",
+        "Descansar",
+        "Evitar compartir utensilios",
+        "No retirar placas ni iniciar antibióticos por cuenta propia"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si dura más de unos días, hay fiebre alta, episodios repetidos, placas o dificultad para comer y beber."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Dificultad para respirar",
+        "babeo o imposibilidad de tragar",
+        "voz muy apagada",
+        "dolor intenso de un solo lado",
+        "dificultad para abrir la boca",
+        "hinchazón del cuello"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "controles preventivos",
-        "actividad fisica segura",
-        "alimentacion equilibrada",
-        "consulta temprana ante sintomas persistentes"
+        "Lavado de manos",
+        "no compartir vasos",
+        "cubrir tos",
+        "evitar humo"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Amigdalitis? Las amígdalas son tejido de defensa a ambos lados de la garganta. Su inflamación puede acompañar faringitis, mononucleosis u otras infecciones y puede repetirse.",
+        "¿Cómo suele confirmarse? Suele reconocerse mediante historia y examen de garganta. Puede requerir prueba rápida o cultivo para estreptococo y, si es persistente o atípica, pruebas para mononucleosis.",
+        "¿Qué puedo hacer mientras busco orientación? Beber líquidos y elegir alimentos fáciles de tragar Descansar Evitar compartir utensilios No retirar placas ni iniciar antibióticos por cuenta propia.",
+        "¿Cuándo debo consultar? Consulta si dura más de unos días, hay fiebre alta, episodios repetidos, placas o dificultad para comer y beber.",
+        "¿Qué señales requieren atención inmediata? Dificultad para respirar; babeo o imposibilidad de tragar; voz muy apagada; dolor intenso de un solo lado; dificultad para abrir la boca; hinchazón del cuello."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Amigdalitis varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Garganta o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Dolor de garganta",
+        "sintoma: Dolor al tragar",
+        "sintoma: Fiebre",
+        "sintoma: Mal aliento",
+        "sintoma: Ganglios inflamados",
+        "examen: Cultivo de secreción faríngea",
+        "examen: Hemograma completo",
+        "medicamento: Amoxicilina",
+        "medicamento: Penicilina",
+        "enfermedad: Faringitis",
+        "enfermedad: Resfrio comun",
+        "enfermedad: Influenza"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "NHS — Tonsillitis"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

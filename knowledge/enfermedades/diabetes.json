@@ -1,220 +1,404 @@
 {
   "id": "enfermedad-diabetes",
   "slug": "diabetes",
-  "titulo": "Diabetes",
+  "titulo": "Diabetes mellitus tipo 2",
   "tipo": "enfermedad",
-  "categoria": "Endocrino",
-  "descripcion": "La orientacion sobre Diabetes debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Diabetes se relaciona con resistencia a la insulina, cambios hormonales, genetica, alimentacion, peso, actividad fisica y otros factores metabolicos. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Diabetes ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por resistencia a la insulina, cambios hormonales, genetica, alimentacion, peso, actividad fisica y otros factores metabolicos. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "aliases": [
+    "diabetes tipo 2",
+    "diabetes mellitus 2",
+    "diavetes tipo 2"
+  ],
+  "keywords": [
+    "diabetes mellitus tipo 2",
+    "diabetes tipo 2",
+    "diabetes mellitus 2",
+    "diavetes tipo 2",
+    "sed excesiva",
+    "hambre excesiva",
+    "vision borrosa",
+    "heridas que no cierran",
+    "fatiga"
+  ],
+  "categoria": "Endocrinológico",
+  "especialidad": "Endocrinología y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La diabetes mellitus tipo 2 ocurre cuando el organismo no utiliza bien la insulina y la glucosa permanece elevada. Puede avanzar durante años con síntomas leves; se confirma con pruebas de glucosa y requiere seguimiento para prevenir daño cardiovascular, renal, ocular y nervioso.",
+  "descripcion": "Es una enfermedad metabólica crónica caracterizada por resistencia a la insulina y, con el tiempo, producción insuficiente de esta hormona. No es lo mismo que diabetes tipo 1 ni que una elevación aislada de glucosa.",
+  "que_es": "Es una enfermedad metabólica crónica caracterizada por resistencia a la insulina y, con el tiempo, producción insuficiente de esta hormona. No es lo mismo que diabetes tipo 1 ni que una elevación aislada de glucosa.",
+  "para_que_sirve": "Esta ficha ayuda a comprender diabetes mellitus tipo 2, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La diabetes mellitus tipo 2 ocurre cuando el organismo no utiliza bien la insulina y la glucosa permanece elevada. Puede avanzar durante años con síntomas leves; se confirma con pruebas de glucosa y requiere seguimiento para prevenir daño cardiovascular, renal, ocular y nervioso.",
   "sintomas": [
     "sed excesiva",
-    "orinar frecuente",
-    "fatiga",
-    "cambios de peso"
+    "orinar con mayor frecuencia",
+    "cansancio",
+    "visión borrosa",
+    "pérdida de peso no intencional",
+    "heridas que tardan en cerrar"
   ],
   "factores_riesgo": [
+    "sobrepeso u obesidad",
+    "inactividad física",
+    "alimentación poco saludable",
+    "tabaco",
     "antecedentes familiares",
-    "sobrepeso",
-    "sedentarismo",
-    "embarazo o edad avanzada"
+    "edad",
+    "diabetes gestacional previa",
+    "algunos grupos étnicos"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "sobrepeso u obesidad",
+      "inactividad física",
+      "alimentación poco saludable",
+      "tabaco"
+    ],
+    "no_modificables": [
+      "antecedentes familiares",
+      "edad",
+      "diabetes gestacional previa",
+      "algunos grupos étnicos"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Se confirma con pruebas de laboratorio como glucosa en ayunas, hemoglobina glicosilada o prueba de tolerancia, interpretadas y repetidas por un profesional cuando corresponde.",
+    "examenes_relacionados": [
+      "glucosa-en-sangre",
+      "hemoglobina-glicosilada-hba1c",
+      "creatinina-serica",
+      "microalbuminuria",
+      "perfil-lipidico"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Asistir a controles y registrar resultados indicados",
+    "Mantener alimentación variada y actividad física adaptada",
+    "Revisar los pies y consultar por heridas",
+    "No cambiar fármacos ni dosis por cuenta propia"
+  ],
+  "cuando_consultar": "Consulta ante síntomas compatibles, factores de riesgo, glucosa elevada o heridas que no cicatrizan; si ya tienes diagnóstico, acude ante cambios persistentes del control.",
+  "senales_alarma": "Respiración rápida o dificultosa; confusión o somnolencia; vómitos persistentes; incapacidad para beber; deshidratación marcada; glucosa muy alterada acompañada de mal estado general.",
+  "senales_alarma_lista": [
+    "Respiración rápida o dificultosa",
+    "confusión o somnolencia",
+    "vómitos persistentes",
+    "incapacidad para beber",
+    "deshidratación marcada",
+    "glucosa muy alterada acompañada de mal estado general"
   ],
   "prevencion": [
-    "controles de glucosa cuando corresponda",
-    "alimentacion equilibrada",
-    "actividad fisica regular",
-    "seguimiento profesional si hay diagnostico previo"
+    "Mantener peso saludable",
+    "actividad física regular",
+    "alimentación con fibra y pocos azúcares libres",
+    "evitar tabaco",
+    "tamizaje cuando existe riesgo"
   ],
-  "cuando_consultar": "Consulta si sospechas diabetes, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Diabetes?",
-      "respuesta": "Es una condicion relacionada con metabolismo y hormonas. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Diabetes mellitus tipo 2?",
+      "respuesta": "Es una enfermedad metabólica crónica caracterizada por resistencia a la insulina y, con el tiempo, producción insuficiente de esta hormona. No es lo mismo que diabetes tipo 1 ni que una elevación aislada de glucosa."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse sed excesiva, orinar frecuente, fatiga, cambios de peso, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Se confirma con pruebas de laboratorio como glucosa en ayunas, hemoglobina glicosilada o prueba de tolerancia, interpretadas y repetidas por un profesional cuando corresponde."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como controles de glucosa cuando corresponda, alimentacion equilibrada, actividad fisica regular, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Asistir a controles y registrar resultados indicados Mantener alimentación variada y actividad física adaptada Revisar los pies y consultar por heridas No cambiar fármacos ni dosis por cuenta propia."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta ante síntomas compatibles, factores de riesgo, glucosa elevada o heridas que no cicatrizan; si ya tienes diagnóstico, acude ante cambios persistentes del control."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Respiración rápida o dificultosa; confusión o somnolencia; vómitos persistentes; incapacidad para beber; deshidratación marcada; glucosa muy alterada acompañada de mal estado general."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "sed-excesiva",
+      "hambre-excesiva",
+      "vision-borrosa",
+      "heridas-que-no-cierran",
+      "fatiga"
+    ],
+    "examenes": [
+      "glucosa-en-sangre",
+      "hemoglobina-glicosilada-hba1c",
+      "creatinina-serica",
+      "microalbuminuria",
+      "perfil-lipidico"
+    ],
+    "medicamentos": [
+      "metformina",
+      "insulina",
+      "dapagliflozina"
+    ],
+    "enfermedades": [
+      "prediabetes",
+      "obesidad",
+      "enfermedad-renal-cronica",
+      "neuropatia-diabetica"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-sed-excesiva",
+      "tipo": "sintoma",
       "slug": "sed-excesiva",
-      "categoria": "Relacionados",
-      "titulo": "sed excesiva"
+      "titulo": "Sed excesiva"
     },
     {
-      "id": "rel-orinar-frecuente",
-      "slug": "orinar-frecuente",
-      "categoria": "Relacionados",
-      "titulo": "orinar frecuente"
+      "tipo": "sintoma",
+      "slug": "hambre-excesiva",
+      "titulo": "Hambre excesiva"
     },
     {
-      "id": "rel-fatiga",
+      "tipo": "sintoma",
+      "slug": "vision-borrosa",
+      "titulo": "Vision borrosa"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "heridas-que-no-cierran",
+      "titulo": "Heridas que no cierran"
+    },
+    {
+      "tipo": "sintoma",
       "slug": "fatiga",
-      "categoria": "Relacionados",
-      "titulo": "fatiga"
+      "titulo": "Fatiga"
     },
     {
-      "id": "rel-cambios-de-peso",
-      "slug": "cambios-de-peso",
-      "categoria": "Relacionados",
-      "titulo": "cambios de peso"
+      "tipo": "examen",
+      "slug": "glucosa-en-sangre",
+      "titulo": "Glucosa en sangre"
+    },
+    {
+      "tipo": "examen",
+      "slug": "hemoglobina-glicosilada-hba1c",
+      "titulo": "Hemoglobina glicosilada (HbA1c)"
+    },
+    {
+      "tipo": "examen",
+      "slug": "creatinina-serica",
+      "titulo": "Creatinina sérica"
+    },
+    {
+      "tipo": "examen",
+      "slug": "microalbuminuria",
+      "titulo": "Microalbuminuria"
+    },
+    {
+      "tipo": "examen",
+      "slug": "perfil-lipidico",
+      "titulo": "Perfil lipídico"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "metformina",
+      "titulo": "Metformina"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "insulina",
+      "titulo": "Insulina"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "dapagliflozina",
+      "titulo": "Dapagliflozina"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "prediabetes",
+      "titulo": "Prediabetes"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "obesidad",
+      "titulo": "Obesidad"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "enfermedad-renal-cronica",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "neuropatia-diabetica",
+      "titulo": "Neuropatia diabetica"
     }
   ],
+  "seo": {
+    "titulo": "Diabetes mellitus tipo 2: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La diabetes mellitus tipo 2 ocurre cuando el organismo no utiliza bien la insulina y la glucosa permanece elevada. Puede avanzar durante años con síntomas leves; se confirma con pruebas de glucosa y requiere seguimiento para prevenir daño cardiovascular, renal, ocular y nervioso.",
+    "expresiones_coloquiales": [
+      "diabetes tipo 2"
+    ],
+    "errores_ortograficos": [
+      "diavetes tipo 2"
+    ],
+    "singular_plural": [
+      "caso de diabetes mellitus tipo 2",
+      "casos de diabetes mellitus tipo 2"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
+      "id": "diabetes-fuente-1",
       "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Diabetes",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/diabetes",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Diabetes se relaciona con resistencia a la insulina, cambios hormonales, genetica, alimentacion, peso, actividad fisica y otros factores metabolicos. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La diabetes mellitus tipo 2 ocurre cuando el organismo no utiliza bien la insulina y la glucosa permanece elevada. Puede avanzar durante años con síntomas leves; se confirma con pruebas de glucosa y requiere seguimiento para prevenir daño cardiovascular, renal, ocular y nervioso."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "La orientacion sobre Diabetes debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Es una enfermedad metabólica crónica caracterizada por resistencia a la insulina y, con el tiempo, producción insuficiente de esta hormona. No es lo mismo que diabetes tipo 1 ni que una elevación aislada de glucosa."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
         "sed excesiva",
-        "orinar frecuente",
-        "fatiga",
-        "cambios de peso"
+        "orinar con mayor frecuencia",
+        "cansancio",
+        "visión borrosa",
+        "pérdida de peso no intencional",
+        "heridas que tardan en cerrar"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por resistencia a la insulina, cambios hormonales, genetica, alimentacion, peso, actividad fisica y otros factores metabolicos. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "sobrepeso u obesidad",
+        "inactividad física",
+        "alimentación poco saludable",
+        "tabaco"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
         "antecedentes familiares",
-        "sobrepeso",
-        "sedentarismo",
-        "embarazo o edad avanzada"
+        "edad",
+        "diabetes gestacional previa",
+        "algunos grupos étnicos"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Diabetes debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Se confirma con pruebas de laboratorio como glucosa en ayunas, hemoglobina glicosilada o prueba de tolerancia, interpretadas y repetidas por un profesional cuando corresponde.",
+        "Glucosa en sangre",
+        "Hemoglobina glicosilada (HbA1c)",
+        "Creatinina sérica",
+        "Microalbuminuria",
+        "Perfil lipídico"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Diabetes depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Asistir a controles y registrar resultados indicados",
+        "Mantener alimentación variada y actividad física adaptada",
+        "Revisar los pies y consultar por heridas",
+        "No cambiar fármacos ni dosis por cuenta propia"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta ante síntomas compatibles, factores de riesgo, glucosa elevada o heridas que no cicatrizan; si ya tienes diagnóstico, acude ante cambios persistentes del control."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Respiración rápida o dificultosa",
+        "confusión o somnolencia",
+        "vómitos persistentes",
+        "incapacidad para beber",
+        "deshidratación marcada",
+        "glucosa muy alterada acompañada de mal estado general"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "controles de glucosa cuando corresponda",
-        "alimentacion equilibrada",
-        "actividad fisica regular",
-        "seguimiento profesional si hay diagnostico previo"
+        "Mantener peso saludable",
+        "actividad física regular",
+        "alimentación con fibra y pocos azúcares libres",
+        "evitar tabaco",
+        "tamizaje cuando existe riesgo"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Diabetes mellitus tipo 2? Es una enfermedad metabólica crónica caracterizada por resistencia a la insulina y, con el tiempo, producción insuficiente de esta hormona. No es lo mismo que diabetes tipo 1 ni que una elevación aislada de glucosa.",
+        "¿Cómo suele confirmarse? Se confirma con pruebas de laboratorio como glucosa en ayunas, hemoglobina glicosilada o prueba de tolerancia, interpretadas y repetidas por un profesional cuando corresponde.",
+        "¿Qué puedo hacer mientras busco orientación? Asistir a controles y registrar resultados indicados Mantener alimentación variada y actividad física adaptada Revisar los pies y consultar por heridas No cambiar fármacos ni dosis por cuenta propia.",
+        "¿Cuándo debo consultar? Consulta ante síntomas compatibles, factores de riesgo, glucosa elevada o heridas que no cicatrizan; si ya tienes diagnóstico, acude ante cambios persistentes del control.",
+        "¿Qué señales requieren atención inmediata? Respiración rápida o dificultosa; confusión o somnolencia; vómitos persistentes; incapacidad para beber; deshidratación marcada; glucosa muy alterada acompañada de mal estado general."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Diabetes varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Endocrino o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Sed excesiva",
+        "sintoma: Hambre excesiva",
+        "sintoma: Vision borrosa",
+        "sintoma: Heridas que no cierran",
+        "sintoma: Fatiga",
+        "examen: Glucosa en sangre",
+        "examen: Hemoglobina glicosilada (HbA1c)",
+        "examen: Creatinina sérica",
+        "examen: Microalbuminuria",
+        "examen: Perfil lipídico",
+        "medicamento: Metformina",
+        "medicamento: Insulina",
+        "medicamento: Dapagliflozina",
+        "enfermedad: Prediabetes",
+        "enfermedad: Obesidad",
+        "enfermedad: Enfermedad renal cronica",
+        "enfermedad: Neuropatia diabetica"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "OMS — Diabetes"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

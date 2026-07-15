@@ -3,220 +3,366 @@
   "slug": "asma",
   "titulo": "Asma",
   "tipo": "enfermedad",
-  "categoria": "Respiratorio",
-  "descripcion": "Comprender Asma exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Asma se relaciona con virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Asma ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
-  "sintomas": [
-    "tos",
-    "fiebre",
+  "aliases": [
+    "asma bronquial",
+    "azma",
+    "crisis asmática"
+  ],
+  "keywords": [
+    "asma",
+    "asma bronquial",
+    "azma",
+    "crisis asmática",
+    "silbido en el pecho",
     "falta de aire",
-    "dolor de garganta",
-    "flema"
+    "tos",
+    "dolor de pecho"
+  ],
+  "categoria": "Respiratorio",
+  "especialidad": "Neumología y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "El asma es una enfermedad inflamatoria crónica de las vías respiratorias cuyos síntomas varían y pueden aparecer por episodios. Tos, silbidos, falta de aire y opresión torácica suelen empeorar de noche, con ejercicio, infecciones o exposición a desencadenantes.",
+  "descripcion": "En el asma, los bronquios se inflaman y se estrechan de forma variable. Entre episodios la persona puede sentirse bien; por eso la historia de síntomas y la demostración de flujo de aire variable son importantes para confirmarla.",
+  "que_es": "En el asma, los bronquios se inflaman y se estrechan de forma variable. Entre episodios la persona puede sentirse bien; por eso la historia de síntomas y la demostración de flujo de aire variable son importantes para confirmarla.",
+  "para_que_sirve": "Esta ficha ayuda a comprender asma, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "El asma es una enfermedad inflamatoria crónica de las vías respiratorias cuyos síntomas varían y pueden aparecer por episodios. Tos, silbidos, falta de aire y opresión torácica suelen empeorar de noche, con ejercicio, infecciones o exposición a desencadenantes.",
+  "sintomas": [
+    "silbidos al respirar",
+    "falta de aire",
+    "opresión en el pecho",
+    "tos recurrente o nocturna",
+    "síntomas con ejercicio o resfríos"
   ],
   "factores_riesgo": [
-    "asma o EPOC",
-    "edad extrema",
-    "tabaquismo",
-    "defensas bajas"
+    "humo de tabaco",
+    "contaminación e irritantes",
+    "alérgenos ocupacionales",
+    "obesidad",
+    "mala técnica del inhalador",
+    "antecedentes familiares",
+    "alergias o dermatitis atópica",
+    "prematuridad",
+    "exposiciones tempranas"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "humo de tabaco",
+      "contaminación e irritantes",
+      "alérgenos ocupacionales",
+      "obesidad",
+      "mala técnica del inhalador"
+    ],
+    "no_modificables": [
+      "antecedentes familiares",
+      "alergias o dermatitis atópica",
+      "prematuridad",
+      "exposiciones tempranas"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Se evalúan patrón y variabilidad de síntomas, examen físico y espirometría antes y después de broncodilatador. En algunos casos se repiten mediciones o se usan otras pruebas respiratorias.",
+    "examenes_relacionados": [
+      "espirometria",
+      "oximetria-de-pulso",
+      "radiografia-de-torax"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Identificar y reducir desencadenantes",
+    "Revisar técnica del inhalador con un profesional",
+    "Seguir el plan de acción personal ya indicado",
+    "Consultar si aumenta el uso de medicación de alivio"
+  ],
+  "cuando_consultar": "Consulta si hay tos o silbidos recurrentes, síntomas nocturnos, limitación al ejercicio o crisis más frecuentes.",
+  "senales_alarma": "Dificultad para hablar por falta de aire; hundimiento de costillas o respiración muy rápida; labios morados; somnolencia o confusión; medicación de rescate indicada que no alivia.",
+  "senales_alarma_lista": [
+    "Dificultad para hablar por falta de aire",
+    "hundimiento de costillas o respiración muy rápida",
+    "labios morados",
+    "somnolencia o confusión",
+    "medicación de rescate indicada que no alivia"
   ],
   "prevencion": [
-    "vacunacion cuando corresponda",
-    "lavado de manos",
-    "evitar humo e irritantes",
-    "consultar si hay falta de aire"
+    "Evitar humo de tabaco",
+    "reducir desencadenantes conocidos",
+    "vacunación respiratoria según indicación",
+    "plan de acción y controles periódicos"
   ],
-  "cuando_consultar": "Consulta si sospechas asma, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Asma?",
-      "respuesta": "Es una condicion relacionada con respiracion. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Asma?",
+      "respuesta": "En el asma, los bronquios se inflaman y se estrechan de forma variable. Entre episodios la persona puede sentirse bien; por eso la historia de síntomas y la demostración de flujo de aire variable son importantes para confirmarla."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse tos, fiebre, falta de aire, dolor de garganta, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Se evalúan patrón y variabilidad de síntomas, examen físico y espirometría antes y después de broncodilatador. En algunos casos se repiten mediciones o se usan otras pruebas respiratorias."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como vacunacion cuando corresponda, lavado de manos, evitar humo e irritantes, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Identificar y reducir desencadenantes Revisar técnica del inhalador con un profesional Seguir el plan de acción personal ya indicado Consultar si aumenta el uso de medicación de alivio."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si hay tos o silbidos recurrentes, síntomas nocturnos, limitación al ejercicio o crisis más frecuentes."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Dificultad para hablar por falta de aire; hundimiento de costillas o respiración muy rápida; labios morados; somnolencia o confusión; medicación de rescate indicada que no alivia."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "silbido-en-el-pecho",
+      "falta-de-aire",
+      "tos",
+      "dolor-de-pecho"
+    ],
+    "examenes": [
+      "espirometria",
+      "oximetria-de-pulso",
+      "radiografia-de-torax"
+    ],
+    "medicamentos": [
+      "salbutamol",
+      "beclometasona",
+      "fluticasona"
+    ],
+    "enfermedades": [
+      "rinitis-alergica",
+      "epoc",
+      "neumonia"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-tos",
-      "slug": "tos",
-      "categoria": "Relacionados",
-      "titulo": "tos"
+      "tipo": "sintoma",
+      "slug": "silbido-en-el-pecho",
+      "titulo": "Silbido en el pecho"
     },
     {
-      "id": "rel-fiebre",
-      "slug": "fiebre",
-      "categoria": "Relacionados",
-      "titulo": "fiebre"
-    },
-    {
-      "id": "rel-falta-de-aire",
+      "tipo": "sintoma",
       "slug": "falta-de-aire",
-      "categoria": "Relacionados",
-      "titulo": "falta de aire"
+      "titulo": "Falta de aire"
     },
     {
-      "id": "rel-dolor-de-garganta",
-      "slug": "dolor-de-garganta",
-      "categoria": "Relacionados",
-      "titulo": "dolor de garganta"
+      "tipo": "sintoma",
+      "slug": "tos",
+      "titulo": "Tos"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "dolor-de-pecho",
+      "titulo": "Dolor de pecho"
+    },
+    {
+      "tipo": "examen",
+      "slug": "espirometria",
+      "titulo": "Espirometría"
+    },
+    {
+      "tipo": "examen",
+      "slug": "oximetria-de-pulso",
+      "titulo": "Oximetría de pulso"
+    },
+    {
+      "tipo": "examen",
+      "slug": "radiografia-de-torax",
+      "titulo": "Radiografía de tórax"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "salbutamol",
+      "titulo": "Salbutamol"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "beclometasona",
+      "titulo": "Beclometasona"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "fluticasona",
+      "titulo": "Fluticasona"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "rinitis-alergica",
+      "titulo": "Rinitis alergica"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "epoc",
+      "titulo": "EPOC"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "neumonia",
+      "titulo": "Neumonia"
     }
   ],
+  "seo": {
+    "titulo": "Asma: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "El asma es una enfermedad inflamatoria crónica de las vías respiratorias cuyos síntomas varían y pueden aparecer por episodios. Tos, silbidos, falta de aire y opresión torácica suelen empeorar de noche, con ejercicio, infecciones o exposición a desencadenantes.",
+    "expresiones_coloquiales": [
+      "asma bronquial"
+    ],
+    "errores_ortograficos": [
+      "crisis asmática"
+    ],
+    "singular_plural": [
+      "caso de asma",
+      "casos de asma"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
+      "id": "asma-fuente-1",
       "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Asthma",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/asthma",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Asma se relaciona con virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "El asma es una enfermedad inflamatoria crónica de las vías respiratorias cuyos síntomas varían y pueden aparecer por episodios. Tos, silbidos, falta de aire y opresión torácica suelen empeorar de noche, con ejercicio, infecciones o exposición a desencadenantes."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Comprender Asma exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "En el asma, los bronquios se inflaman y se estrechan de forma variable. Entre episodios la persona puede sentirse bien; por eso la historia de síntomas y la demostración de flujo de aire variable son importantes para confirmarla."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "tos",
-        "fiebre",
+        "silbidos al respirar",
         "falta de aire",
-        "dolor de garganta",
-        "flema"
+        "opresión en el pecho",
+        "tos recurrente o nocturna",
+        "síntomas con ejercicio o resfríos"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "humo de tabaco",
+        "contaminación e irritantes",
+        "alérgenos ocupacionales",
+        "obesidad",
+        "mala técnica del inhalador"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "asma o EPOC",
-        "edad extrema",
-        "tabaquismo",
-        "defensas bajas"
+        "antecedentes familiares",
+        "alergias o dermatitis atópica",
+        "prematuridad",
+        "exposiciones tempranas"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Asma debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Se evalúan patrón y variabilidad de síntomas, examen físico y espirometría antes y después de broncodilatador. En algunos casos se repiten mediciones o se usan otras pruebas respiratorias.",
+        "Espirometría",
+        "Oximetría de pulso",
+        "Radiografía de tórax"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Asma depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Identificar y reducir desencadenantes",
+        "Revisar técnica del inhalador con un profesional",
+        "Seguir el plan de acción personal ya indicado",
+        "Consultar si aumenta el uso de medicación de alivio"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si hay tos o silbidos recurrentes, síntomas nocturnos, limitación al ejercicio o crisis más frecuentes."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Dificultad para hablar por falta de aire",
+        "hundimiento de costillas o respiración muy rápida",
+        "labios morados",
+        "somnolencia o confusión",
+        "medicación de rescate indicada que no alivia"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "vacunacion cuando corresponda",
-        "lavado de manos",
-        "evitar humo e irritantes",
-        "consultar si hay falta de aire"
+        "Evitar humo de tabaco",
+        "reducir desencadenantes conocidos",
+        "vacunación respiratoria según indicación",
+        "plan de acción y controles periódicos"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Asma? En el asma, los bronquios se inflaman y se estrechan de forma variable. Entre episodios la persona puede sentirse bien; por eso la historia de síntomas y la demostración de flujo de aire variable son importantes para confirmarla.",
+        "¿Cómo suele confirmarse? Se evalúan patrón y variabilidad de síntomas, examen físico y espirometría antes y después de broncodilatador. En algunos casos se repiten mediciones o se usan otras pruebas respiratorias.",
+        "¿Qué puedo hacer mientras busco orientación? Identificar y reducir desencadenantes Revisar técnica del inhalador con un profesional Seguir el plan de acción personal ya indicado Consultar si aumenta el uso de medicación de alivio.",
+        "¿Cuándo debo consultar? Consulta si hay tos o silbidos recurrentes, síntomas nocturnos, limitación al ejercicio o crisis más frecuentes.",
+        "¿Qué señales requieren atención inmediata? Dificultad para hablar por falta de aire; hundimiento de costillas o respiración muy rápida; labios morados; somnolencia o confusión; medicación de rescate indicada que no alivia."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Asma varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Neumología o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Silbido en el pecho",
+        "sintoma: Falta de aire",
+        "sintoma: Tos",
+        "sintoma: Dolor de pecho",
+        "examen: Espirometría",
+        "examen: Oximetría de pulso",
+        "examen: Radiografía de tórax",
+        "medicamento: Salbutamol",
+        "medicamento: Beclometasona",
+        "medicamento: Fluticasona",
+        "enfermedad: Rinitis alergica",
+        "enfermedad: EPOC",
+        "enfermedad: Neumonia"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "OMS — Asthma"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

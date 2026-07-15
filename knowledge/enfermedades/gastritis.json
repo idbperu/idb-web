@@ -3,220 +3,351 @@
   "slug": "gastritis",
   "titulo": "Gastritis",
   "tipo": "enfermedad",
-  "categoria": "Sistema digestivo",
-  "descripcion": "Gastritis es una condicion vinculada con aparato digestivo. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Gastritis se relaciona con infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Gastritis ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
-  "sintomas": [
-    "dolor de estomago",
+  "aliases": [
+    "inflamación del estómago",
+    "gastritiz",
+    "gastritis estomacal"
+  ],
+  "keywords": [
+    "gastritis",
+    "inflamación del estómago",
+    "gastritiz",
+    "gastritis estomacal",
+    "dolor en la boca del estomago",
     "nauseas",
-    "vomitos",
-    "diarrea",
-    "acidez"
+    "sensacion de llenura",
+    "heces negras"
+  ],
+  "categoria": "Digestivo",
+  "especialidad": "Gastroenterología y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La gastritis es inflamación del revestimiento del estómago; la gastropatía es daño con poca inflamación. Muchas personas no tienen síntomas. Helicobacter pylori y los antiinflamatorios son causas frecuentes y el tratamiento depende de identificar la causa.",
+  "descripcion": "No todo ardor o dolor alto del abdomen es gastritis. Puede ser aguda o crónica, erosiva o no erosiva, y se diferencia de reflujo y úlcera mediante historia clínica y pruebas seleccionadas.",
+  "que_es": "No todo ardor o dolor alto del abdomen es gastritis. Puede ser aguda o crónica, erosiva o no erosiva, y se diferencia de reflujo y úlcera mediante historia clínica y pruebas seleccionadas.",
+  "para_que_sirve": "Esta ficha ayuda a comprender gastritis, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La gastritis es inflamación del revestimiento del estómago; la gastropatía es daño con poca inflamación. Muchas personas no tienen síntomas. Helicobacter pylori y los antiinflamatorios son causas frecuentes y el tratamiento depende de identificar la causa.",
+  "sintomas": [
+    "dolor o molestia en la parte alta del abdomen",
+    "náuseas o vómitos",
+    "llenura temprana",
+    "sensación de plenitud después de comer",
+    "pérdida de apetito"
   ],
   "factores_riesgo": [
-    "uso frecuente de antiinflamatorios",
-    "alcohol o tabaco",
-    "antecedentes digestivos",
-    "sangrado o perdida de peso"
+    "uso frecuente de AINE",
+    "alcohol",
+    "tabaco",
+    "infección por H. pylori",
+    "edad",
+    "enfermedad autoinmune",
+    "enfermedad crítica"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "uso frecuente de AINE",
+      "alcohol",
+      "tabaco",
+      "infección por H. pylori"
+    ],
+    "no_modificables": [
+      "edad",
+      "enfermedad autoinmune",
+      "enfermedad crítica"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Según los síntomas, el profesional puede buscar H. pylori con pruebas disponibles y realizar endoscopia con biopsia si hay señales de alarma, persistencia o duda diagnóstica. El hemograma ayuda a detectar anemia cuando se sospecha sangrado.",
+    "examenes_relacionados": [
+      "endoscopia-digestiva-alta",
+      "hemograma-completo"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Evitar automedicación con antiinflamatorios",
+    "Registrar alimentos o sustancias que empeoran síntomas",
+    "Evitar tabaco y alcohol",
+    "Consultar antes de usar supuestos protectores gástricos por tiempo prolongado"
+  ],
+  "cuando_consultar": "Consulta si el dolor o malestar persiste, se repite, aparece tras antiinflamatorios o se acompaña de pérdida de apetito o peso.",
+  "senales_alarma": "Vómito con sangre o aspecto de café molido; heces negras o con sangre; mareo o desmayo; dolor abdominal intenso; pérdida de peso inexplicada.",
+  "senales_alarma_lista": [
+    "Vómito con sangre o aspecto de café molido",
+    "heces negras o con sangre",
+    "mareo o desmayo",
+    "dolor abdominal intenso",
+    "pérdida de peso inexplicada"
   ],
   "prevencion": [
-    "evitar irritantes conocidos",
-    "mantener hidratacion",
-    "consultar por sintomas persistentes",
-    "no automedicarse ante dolor intenso"
+    "Uso prudente de AINE con orientación",
+    "no fumar",
+    "moderar alcohol",
+    "diagnóstico y manejo adecuado de H. pylori"
   ],
-  "cuando_consultar": "Consulta si sospechas gastritis, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Gastritis?",
-      "respuesta": "Es una condicion relacionada con aparato digestivo. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Gastritis?",
+      "respuesta": "No todo ardor o dolor alto del abdomen es gastritis. Puede ser aguda o crónica, erosiva o no erosiva, y se diferencia de reflujo y úlcera mediante historia clínica y pruebas seleccionadas."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse dolor de estomago, nauseas, vomitos, diarrea, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Según los síntomas, el profesional puede buscar H. pylori con pruebas disponibles y realizar endoscopia con biopsia si hay señales de alarma, persistencia o duda diagnóstica. El hemograma ayuda a detectar anemia cuando se sospecha sangrado."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como evitar irritantes conocidos, mantener hidratacion, consultar por sintomas persistentes, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Evitar automedicación con antiinflamatorios Registrar alimentos o sustancias que empeoran síntomas Evitar tabaco y alcohol Consultar antes de usar supuestos protectores gástricos por tiempo prolongado."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si el dolor o malestar persiste, se repite, aparece tras antiinflamatorios o se acompaña de pérdida de apetito o peso."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Vómito con sangre o aspecto de café molido; heces negras o con sangre; mareo o desmayo; dolor abdominal intenso; pérdida de peso inexplicada."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "dolor-en-la-boca-del-estomago",
+      "nauseas",
+      "sensacion-de-llenura",
+      "heces-negras"
+    ],
+    "examenes": [
+      "endoscopia-digestiva-alta",
+      "hemograma-completo"
+    ],
+    "medicamentos": [
+      "omeprazol",
+      "pantoprazol",
+      "sucralfato"
+    ],
+    "enfermedades": [
+      "helicobacter-pylori",
+      "ulcera-gastrica",
+      "reflujo-gastroesofagico"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-dolor-de-estomago",
-      "slug": "dolor-de-estomago",
-      "categoria": "Relacionados",
-      "titulo": "dolor de estomago"
+      "tipo": "sintoma",
+      "slug": "dolor-en-la-boca-del-estomago",
+      "titulo": "Dolor en la boca del estomago"
     },
     {
-      "id": "rel-nauseas",
+      "tipo": "sintoma",
       "slug": "nauseas",
-      "categoria": "Relacionados",
-      "titulo": "nauseas"
+      "titulo": "Nauseas"
     },
     {
-      "id": "rel-vomitos",
-      "slug": "vomitos",
-      "categoria": "Relacionados",
-      "titulo": "vomitos"
+      "tipo": "sintoma",
+      "slug": "sensacion-de-llenura",
+      "titulo": "Sensacion de llenura"
     },
     {
-      "id": "rel-diarrea",
-      "slug": "diarrea",
-      "categoria": "Relacionados",
-      "titulo": "diarrea"
+      "tipo": "sintoma",
+      "slug": "heces-negras",
+      "titulo": "Heces negras"
+    },
+    {
+      "tipo": "examen",
+      "slug": "endoscopia-digestiva-alta",
+      "titulo": "Endoscopia digestiva alta"
+    },
+    {
+      "tipo": "examen",
+      "slug": "hemograma-completo",
+      "titulo": "Hemograma completo"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "omeprazol",
+      "titulo": "Omeprazol"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "pantoprazol",
+      "titulo": "Pantoprazol"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "sucralfato",
+      "titulo": "Sucralfato"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "helicobacter-pylori",
+      "titulo": "Helicobacter pylori"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "ulcera-gastrica",
+      "titulo": "Ulcera gastrica"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "reflujo-gastroesofagico",
+      "titulo": "Reflujo gastroesofagico"
     }
   ],
+  "seo": {
+    "titulo": "Gastritis: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La gastritis es inflamación del revestimiento del estómago; la gastropatía es daño con poca inflamación. Muchas personas no tienen síntomas. Helicobacter pylori y los antiinflamatorios son causas frecuentes y el tratamiento depende de identificar la causa.",
+    "expresiones_coloquiales": [
+      "inflamación del estómago"
+    ],
+    "errores_ortograficos": [
+      "gastritis estomacal"
+    ],
+    "singular_plural": [
+      "caso de gastritis",
+      "casos de gastritis"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
-      "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "id": "gastritis-fuente-1",
+      "organizacion": "NIDDK",
+      "titulo": "Gastritis & Gastropathy",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/gastritis-gastropathy",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Gastritis se relaciona con infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La gastritis es inflamación del revestimiento del estómago; la gastropatía es daño con poca inflamación. Muchas personas no tienen síntomas. Helicobacter pylori y los antiinflamatorios son causas frecuentes y el tratamiento depende de identificar la causa."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Gastritis es una condicion vinculada con aparato digestivo. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "No todo ardor o dolor alto del abdomen es gastritis. Puede ser aguda o crónica, erosiva o no erosiva, y se diferencia de reflujo y úlcera mediante historia clínica y pruebas seleccionadas."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "dolor de estomago",
-        "nauseas",
-        "vomitos",
-        "diarrea",
-        "acidez"
+        "dolor o molestia en la parte alta del abdomen",
+        "náuseas o vómitos",
+        "llenura temprana",
+        "sensación de plenitud después de comer",
+        "pérdida de apetito"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "uso frecuente de AINE",
+        "alcohol",
+        "tabaco",
+        "infección por H. pylori"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "uso frecuente de antiinflamatorios",
-        "alcohol o tabaco",
-        "antecedentes digestivos",
-        "sangrado o perdida de peso"
+        "edad",
+        "enfermedad autoinmune",
+        "enfermedad crítica"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Gastritis debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Según los síntomas, el profesional puede buscar H. pylori con pruebas disponibles y realizar endoscopia con biopsia si hay señales de alarma, persistencia o duda diagnóstica. El hemograma ayuda a detectar anemia cuando se sospecha sangrado.",
+        "Endoscopia digestiva alta",
+        "Hemograma completo"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Gastritis depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Evitar automedicación con antiinflamatorios",
+        "Registrar alimentos o sustancias que empeoran síntomas",
+        "Evitar tabaco y alcohol",
+        "Consultar antes de usar supuestos protectores gástricos por tiempo prolongado"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si el dolor o malestar persiste, se repite, aparece tras antiinflamatorios o se acompaña de pérdida de apetito o peso."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Vómito con sangre o aspecto de café molido",
+        "heces negras o con sangre",
+        "mareo o desmayo",
+        "dolor abdominal intenso",
+        "pérdida de peso inexplicada"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "evitar irritantes conocidos",
-        "mantener hidratacion",
-        "consultar por sintomas persistentes",
-        "no automedicarse ante dolor intenso"
+        "Uso prudente de AINE con orientación",
+        "no fumar",
+        "moderar alcohol",
+        "diagnóstico y manejo adecuado de H. pylori"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Gastritis? No todo ardor o dolor alto del abdomen es gastritis. Puede ser aguda o crónica, erosiva o no erosiva, y se diferencia de reflujo y úlcera mediante historia clínica y pruebas seleccionadas.",
+        "¿Cómo suele confirmarse? Según los síntomas, el profesional puede buscar H. pylori con pruebas disponibles y realizar endoscopia con biopsia si hay señales de alarma, persistencia o duda diagnóstica. El hemograma ayuda a detectar anemia cuando se sospecha sangrado.",
+        "¿Qué puedo hacer mientras busco orientación? Evitar automedicación con antiinflamatorios Registrar alimentos o sustancias que empeoran síntomas Evitar tabaco y alcohol Consultar antes de usar supuestos protectores gástricos por tiempo prolongado.",
+        "¿Cuándo debo consultar? Consulta si el dolor o malestar persiste, se repite, aparece tras antiinflamatorios o se acompaña de pérdida de apetito o peso.",
+        "¿Qué señales requieren atención inmediata? Vómito con sangre o aspecto de café molido; heces negras o con sangre; mareo o desmayo; dolor abdominal intenso; pérdida de peso inexplicada."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Gastritis varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Gastroenterología o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Dolor en la boca del estomago",
+        "sintoma: Nauseas",
+        "sintoma: Sensacion de llenura",
+        "sintoma: Heces negras",
+        "examen: Endoscopia digestiva alta",
+        "examen: Hemograma completo",
+        "medicamento: Omeprazol",
+        "medicamento: Pantoprazol",
+        "medicamento: Sucralfato",
+        "enfermedad: Helicobacter pylori",
+        "enfermedad: Ulcera gastrica",
+        "enfermedad: Reflujo gastroesofagico"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "NIDDK — Gastritis & Gastropathy"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

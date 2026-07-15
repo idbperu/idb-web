@@ -1,220 +1,375 @@
 {
   "id": "enfermedad-depresion",
   "slug": "depresion",
-  "titulo": "Depresion",
+  "titulo": "Depresión",
   "tipo": "enfermedad",
+  "aliases": [
+    "trastorno depresivo",
+    "depresión mayor",
+    "deprecion"
+  ],
+  "keywords": [
+    "depresión",
+    "trastorno depresivo",
+    "depresión mayor",
+    "deprecion",
+    "cambios de humor",
+    "dificultad para concentrarse",
+    "perdida de apetito",
+    "irritabilidad",
+    "fatiga"
+  ],
   "categoria": "Salud mental",
-  "descripcion": "Comprender Depresion exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Depresion se relaciona con factores biologicos, experiencias de vida, estres sostenido, sueño insuficiente, consumo de sustancias o antecedentes familiares. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Depresion ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por factores biologicos, experiencias de vida, estres sostenido, sueño insuficiente, consumo de sustancias o antecedentes familiares. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "especialidad": "Psicología, psiquiatría y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La depresión es un trastorno de salud mental con ánimo bajo o pérdida de interés la mayor parte del día, casi todos los días, durante al menos dos semanas, acompañado de cambios cognitivos, físicos y funcionales. No es tristeza pasajera ni falta de voluntad.",
+  "descripcion": "Puede afectar pensamiento, sueño, apetito, energía, relaciones y capacidad para estudiar o trabajar. Existen distintos patrones y grados; antes de concluir el diagnóstico se valoran duelo, bipolaridad, sustancias y causas médicas.",
+  "que_es": "Puede afectar pensamiento, sueño, apetito, energía, relaciones y capacidad para estudiar o trabajar. Existen distintos patrones y grados; antes de concluir el diagnóstico se valoran duelo, bipolaridad, sustancias y causas médicas.",
+  "para_que_sirve": "Esta ficha ayuda a comprender depresión, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La depresión es un trastorno de salud mental con ánimo bajo o pérdida de interés la mayor parte del día, casi todos los días, durante al menos dos semanas, acompañado de cambios cognitivos, físicos y funcionales. No es tristeza pasajera ni falta de voluntad.",
   "sintomas": [
-    "ansiedad",
-    "insomnio",
-    "tristeza persistente",
-    "cambios de humor"
+    "tristeza, vacío o irritabilidad persistentes",
+    "pérdida de interés o placer",
+    "fatiga",
+    "cambios de sueño",
+    "cambios de apetito o peso",
+    "culpa o desesperanza",
+    "dificultad para concentrarse"
   ],
   "factores_riesgo": [
-    "estres prolongado",
     "aislamiento",
-    "consumo de alcohol u otras sustancias",
-    "antecedentes personales o familiares"
+    "alcohol u otras sustancias",
+    "sueño irregular",
+    "estrés sostenido",
+    "falta de apoyo",
+    "antecedentes personales o familiares",
+    "experiencias adversas y pérdidas",
+    "posparto",
+    "enfermedad crónica"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "aislamiento",
+      "alcohol u otras sustancias",
+      "sueño irregular",
+      "estrés sostenido",
+      "falta de apoyo"
+    ],
+    "no_modificables": [
+      "antecedentes personales o familiares",
+      "experiencias adversas y pérdidas",
+      "posparto",
+      "enfermedad crónica"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Se evalúan síntomas, duración, funcionamiento, seguridad y antecedentes mediante entrevista y cuestionarios. Se exploran episodios de manía y pueden solicitarse TSH o hemograma para descartar alteraciones tiroideas o anemia cuando el contexto lo justifica.",
+    "examenes_relacionados": [
+      "tsh",
+      "hemograma-completo"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Contárselo a una persona de confianza y buscar atención",
+    "Mantener contacto social y rutinas posibles",
+    "Evitar alcohol y drogas",
+    "Pedir ayuda inmediata ante ideas suicidas"
+  ],
+  "cuando_consultar": "Consulta si los síntomas duran dos semanas, interfieren con la vida, aparecen durante embarazo o posparto, o se repiten.",
+  "senales_alarma": "Pensamientos de muerte o suicidio; plan o acceso a medios para hacerse daño; incapacidad para cuidarse; síntomas psicóticos; agitación extrema o conducta de alto riesgo; periodos de energía anormalmente alta con poco sueño.",
+  "senales_alarma_lista": [
+    "Pensamientos de muerte o suicidio",
+    "plan o acceso a medios para hacerse daño",
+    "incapacidad para cuidarse",
+    "síntomas psicóticos",
+    "agitación extrema o conducta de alto riesgo",
+    "periodos de energía anormalmente alta con poco sueño"
   ],
   "prevencion": [
-    "pedir apoyo temprano",
-    "mantener rutinas de sueño",
-    "evitar consumo de sustancias",
-    "buscar atencion si interfiere con la vida diaria"
+    "Apoyo social",
+    "actividad y sueño regulares",
+    "atención temprana después de pérdidas o trauma",
+    "seguimiento durante embarazo y posparto",
+    "reducir alcohol"
   ],
-  "cuando_consultar": "Consulta si sospechas depresion, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Depresion?",
-      "respuesta": "Es una condicion relacionada con salud mental y neurodesarrollo. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Depresión?",
+      "respuesta": "Puede afectar pensamiento, sueño, apetito, energía, relaciones y capacidad para estudiar o trabajar. Existen distintos patrones y grados; antes de concluir el diagnóstico se valoran duelo, bipolaridad, sustancias y causas médicas."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse ansiedad, insomnio, tristeza persistente, cambios de humor, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Se evalúan síntomas, duración, funcionamiento, seguridad y antecedentes mediante entrevista y cuestionarios. Se exploran episodios de manía y pueden solicitarse TSH o hemograma para descartar alteraciones tiroideas o anemia cuando el contexto lo justifica."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como pedir apoyo temprano, mantener rutinas de sueño, evitar consumo de sustancias, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Contárselo a una persona de confianza y buscar atención Mantener contacto social y rutinas posibles Evitar alcohol y drogas Pedir ayuda inmediata ante ideas suicidas."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si los síntomas duran dos semanas, interfieren con la vida, aparecen durante embarazo o posparto, o se repiten."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Pensamientos de muerte o suicidio; plan o acceso a medios para hacerse daño; incapacidad para cuidarse; síntomas psicóticos; agitación extrema o conducta de alto riesgo; periodos de energía anormalmente alta con poco sueño."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "cambios-de-humor",
+      "dificultad-para-concentrarse",
+      "perdida-de-apetito",
+      "irritabilidad",
+      "fatiga"
+    ],
+    "examenes": [
+      "tsh",
+      "hemograma-completo"
+    ],
+    "medicamentos": [
+      "sertralina",
+      "fluoxetina",
+      "escitalopram"
+    ],
+    "enfermedades": [
+      "trastorno-de-ansiedad",
+      "trastorno-bipolar",
+      "insomnio-cronico"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-ansiedad",
-      "slug": "ansiedad",
-      "categoria": "Relacionados",
-      "titulo": "ansiedad"
-    },
-    {
-      "id": "rel-insomnio",
-      "slug": "insomnio",
-      "categoria": "Relacionados",
-      "titulo": "insomnio"
-    },
-    {
-      "id": "rel-tristeza-persistente",
-      "slug": "tristeza-persistente",
-      "categoria": "Relacionados",
-      "titulo": "tristeza persistente"
-    },
-    {
-      "id": "rel-cambios-de-humor",
+      "tipo": "sintoma",
       "slug": "cambios-de-humor",
-      "categoria": "Relacionados",
-      "titulo": "cambios de humor"
+      "titulo": "Cambios de humor"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "dificultad-para-concentrarse",
+      "titulo": "Dificultad para concentrarse"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "perdida-de-apetito",
+      "titulo": "Perdida de apetito"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "irritabilidad",
+      "titulo": "Irritabilidad"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "fatiga",
+      "titulo": "Fatiga"
+    },
+    {
+      "tipo": "examen",
+      "slug": "tsh",
+      "titulo": "TSH"
+    },
+    {
+      "tipo": "examen",
+      "slug": "hemograma-completo",
+      "titulo": "Hemograma completo"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "sertralina",
+      "titulo": "Sertralina"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "fluoxetina",
+      "titulo": "Fluoxetina"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "escitalopram",
+      "titulo": "Escitalopram"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "trastorno-de-ansiedad",
+      "titulo": "Trastorno de ansiedad"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "trastorno-bipolar",
+      "titulo": "Trastorno bipolar"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "insomnio-cronico",
+      "titulo": "Insomnio cronico"
     }
   ],
+  "seo": {
+    "titulo": "Depresión: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La depresión es un trastorno de salud mental con ánimo bajo o pérdida de interés la mayor parte del día, casi todos los días, durante al menos dos semanas, acompañado de cambios cognitivos, físicos y funcionales. No es tristeza pasajera ni falta de voluntad.",
+    "expresiones_coloquiales": [
+      "trastorno depresivo"
+    ],
+    "errores_ortograficos": [
+      "deprecion"
+    ],
+    "singular_plural": [
+      "caso de depresión",
+      "casos de depresión"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
+      "id": "depresion-fuente-1",
       "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Depressive disorder (depression)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/depression",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Depresion se relaciona con factores biologicos, experiencias de vida, estres sostenido, sueño insuficiente, consumo de sustancias o antecedentes familiares. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La depresión es un trastorno de salud mental con ánimo bajo o pérdida de interés la mayor parte del día, casi todos los días, durante al menos dos semanas, acompañado de cambios cognitivos, físicos y funcionales. No es tristeza pasajera ni falta de voluntad."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Comprender Depresion exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Puede afectar pensamiento, sueño, apetito, energía, relaciones y capacidad para estudiar o trabajar. Existen distintos patrones y grados; antes de concluir el diagnóstico se valoran duelo, bipolaridad, sustancias y causas médicas."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "ansiedad",
-        "insomnio",
-        "tristeza persistente",
-        "cambios de humor"
+        "tristeza, vacío o irritabilidad persistentes",
+        "pérdida de interés o placer",
+        "fatiga",
+        "cambios de sueño",
+        "cambios de apetito o peso",
+        "culpa o desesperanza",
+        "dificultad para concentrarse"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por factores biologicos, experiencias de vida, estres sostenido, sueño insuficiente, consumo de sustancias o antecedentes familiares. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
-      ]
-    },
-    {
-      "titulo": "Factores de riesgo",
-      "contenido": [
-        "estres prolongado",
         "aislamiento",
-        "consumo de alcohol u otras sustancias",
-        "antecedentes personales o familiares"
+        "alcohol u otras sustancias",
+        "sueño irregular",
+        "estrés sostenido",
+        "falta de apoyo"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Depresion debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Factores de riesgo no modificables",
+      "contenido": [
+        "antecedentes personales o familiares",
+        "experiencias adversas y pérdidas",
+        "posparto",
+        "enfermedad crónica"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Depresion depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Se evalúan síntomas, duración, funcionamiento, seguridad y antecedentes mediante entrevista y cuestionarios. Se exploran episodios de manía y pueden solicitarse TSH o hemograma para descartar alteraciones tiroideas o anemia cuando el contexto lo justifica.",
+        "TSH",
+        "Hemograma completo"
+      ]
+    },
+    {
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Contárselo a una persona de confianza y buscar atención",
+        "Mantener contacto social y rutinas posibles",
+        "Evitar alcohol y drogas",
+        "Pedir ayuda inmediata ante ideas suicidas"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si los síntomas duran dos semanas, interfieren con la vida, aparecen durante embarazo o posparto, o se repiten."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Pensamientos de muerte o suicidio",
+        "plan o acceso a medios para hacerse daño",
+        "incapacidad para cuidarse",
+        "síntomas psicóticos",
+        "agitación extrema o conducta de alto riesgo",
+        "periodos de energía anormalmente alta con poco sueño"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "pedir apoyo temprano",
-        "mantener rutinas de sueño",
-        "evitar consumo de sustancias",
-        "buscar atencion si interfiere con la vida diaria"
+        "Apoyo social",
+        "actividad y sueño regulares",
+        "atención temprana después de pérdidas o trauma",
+        "seguimiento durante embarazo y posparto",
+        "reducir alcohol"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Depresión? Puede afectar pensamiento, sueño, apetito, energía, relaciones y capacidad para estudiar o trabajar. Existen distintos patrones y grados; antes de concluir el diagnóstico se valoran duelo, bipolaridad, sustancias y causas médicas.",
+        "¿Cómo suele confirmarse? Se evalúan síntomas, duración, funcionamiento, seguridad y antecedentes mediante entrevista y cuestionarios. Se exploran episodios de manía y pueden solicitarse TSH o hemograma para descartar alteraciones tiroideas o anemia cuando el contexto lo justifica.",
+        "¿Qué puedo hacer mientras busco orientación? Contárselo a una persona de confianza y buscar atención Mantener contacto social y rutinas posibles Evitar alcohol y drogas Pedir ayuda inmediata ante ideas suicidas.",
+        "¿Cuándo debo consultar? Consulta si los síntomas duran dos semanas, interfieren con la vida, aparecen durante embarazo o posparto, o se repiten.",
+        "¿Qué señales requieren atención inmediata? Pensamientos de muerte o suicidio; plan o acceso a medios para hacerse daño; incapacidad para cuidarse; síntomas psicóticos; agitación extrema o conducta de alto riesgo; periodos de energía anormalmente alta con poco sueño."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Depresion varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Psicología, psiquiatría o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Cambios de humor",
+        "sintoma: Dificultad para concentrarse",
+        "sintoma: Perdida de apetito",
+        "sintoma: Irritabilidad",
+        "sintoma: Fatiga",
+        "examen: TSH",
+        "examen: Hemograma completo",
+        "medicamento: Sertralina",
+        "medicamento: Fluoxetina",
+        "medicamento: Escitalopram",
+        "enfermedad: Trastorno de ansiedad",
+        "enfermedad: Trastorno bipolar",
+        "enfermedad: Insomnio cronico"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "OMS — Depressive disorder (depression)"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

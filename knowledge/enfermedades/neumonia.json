@@ -1,222 +1,378 @@
 {
   "id": "enfermedad-neumonia",
   "slug": "neumonia",
-  "titulo": "Neumonia",
+  "titulo": "Neumonía",
   "tipo": "enfermedad",
-  "categoria": "Respiratorio",
-  "descripcion": "Neumonia puede presentarse de distintas formas segun edad, antecedentes y otros problemas de salud. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Neumonia se relaciona con virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Neumonia ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
-  "sintomas": [
+  "aliases": [
+    "infección pulmonar",
+    "pulmonía",
+    "neumonia"
+  ],
+  "keywords": [
+    "neumonía",
+    "infección pulmonar",
+    "pulmonía",
+    "neumonia",
     "tos",
-    "fiebre",
+    "flema",
     "falta de aire",
-    "dolor de garganta",
-    "flema"
+    "dolor al respirar",
+    "fiebre"
+  ],
+  "categoria": "Respiratorio",
+  "especialidad": "Neumología y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La neumonía es una infección de uno o ambos pulmones que llena los alvéolos de líquido o pus. Puede ser causada por bacterias, virus u hongos y su gravedad depende de la edad, el germen y las condiciones previas.",
+  "descripcion": "Es una infección del tejido pulmonar. No toda tos con fiebre es neumonía; se requiere evaluación clínica y, según la gravedad, medición de oxígeno, radiografía u otros estudios.",
+  "que_es": "Es una infección del tejido pulmonar. No toda tos con fiebre es neumonía; se requiere evaluación clínica y, según la gravedad, medición de oxígeno, radiografía u otros estudios.",
+  "para_que_sirve": "Esta ficha ayuda a comprender neumonía, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La neumonía es una infección de uno o ambos pulmones que llena los alvéolos de líquido o pus. Puede ser causada por bacterias, virus u hongos y su gravedad depende de la edad, el germen y las condiciones previas.",
+  "sintomas": [
+    "tos, a menudo con flema",
+    "fiebre o escalofríos",
+    "falta de aire",
+    "dolor de pecho al respirar o toser",
+    "decaimiento"
   ],
   "factores_riesgo": [
-    "asma o EPOC",
-    "edad extrema",
     "tabaquismo",
-    "defensas bajas"
+    "mala higiene de manos",
+    "aspiración asociada a alcohol o sedantes",
+    "vacunación incompleta",
+    "edad extrema",
+    "enfermedad pulmonar o cardiaca",
+    "defensas bajas",
+    "dificultad para tragar"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "tabaquismo",
+      "mala higiene de manos",
+      "aspiración asociada a alcohol o sedantes",
+      "vacunación incompleta"
+    ],
+    "no_modificables": [
+      "edad extrema",
+      "enfermedad pulmonar o cardiaca",
+      "defensas bajas",
+      "dificultad para tragar"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "El profesional integra síntomas, auscultación y oxigenación. Puede solicitar radiografía de tórax, hemograma y pruebas microbiológicas según gravedad y contexto.",
+    "examenes_relacionados": [
+      "radiografia-de-torax",
+      "oximetria-de-pulso",
+      "hemograma-completo",
+      "proteina-c-reactiva-pcr",
+      "hemocultivo"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Buscar evaluación si hay fiebre con tos y falta de aire",
+    "Mantener hidratación si se tolera",
+    "Evitar humo y esfuerzo",
+    "No iniciar antibióticos sobrantes ni compartirlos"
+  ],
+  "cuando_consultar": "Consulta pronto ante fiebre, tos con dificultad respiratoria, dolor al respirar o empeoramiento después de una gripe, especialmente en niños, mayores o personas con enfermedades crónicas.",
+  "senales_alarma": "Respiración muy rápida o con esfuerzo; labios morados; confusión o somnolencia; dolor de pecho intenso; oxigenación baja; incapacidad para beber.",
+  "senales_alarma_lista": [
+    "Respiración muy rápida o con esfuerzo",
+    "labios morados",
+    "confusión o somnolencia",
+    "dolor de pecho intenso",
+    "oxigenación baja",
+    "incapacidad para beber"
   ],
   "prevencion": [
-    "vacunacion cuando corresponda",
+    "Vacunas indicadas contra influenza, neumococo y otras infecciones",
     "lavado de manos",
-    "evitar humo e irritantes",
-    "consultar si hay falta de aire"
+    "no fumar",
+    "control de enfermedades crónicas"
   ],
-  "cuando_consultar": "Consulta si sospechas neumonia, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Neumonia?",
-      "respuesta": "Es una condicion relacionada con respiracion. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Neumonía?",
+      "respuesta": "Es una infección del tejido pulmonar. No toda tos con fiebre es neumonía; se requiere evaluación clínica y, según la gravedad, medición de oxígeno, radiografía u otros estudios."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse tos, fiebre, falta de aire, dolor de garganta, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "El profesional integra síntomas, auscultación y oxigenación. Puede solicitar radiografía de tórax, hemograma y pruebas microbiológicas según gravedad y contexto."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como vacunacion cuando corresponda, lavado de manos, evitar humo e irritantes, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Buscar evaluación si hay fiebre con tos y falta de aire Mantener hidratación si se tolera Evitar humo y esfuerzo No iniciar antibióticos sobrantes ni compartirlos."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta pronto ante fiebre, tos con dificultad respiratoria, dolor al respirar o empeoramiento después de una gripe, especialmente en niños, mayores o personas con enfermedades crónicas."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Respiración muy rápida o con esfuerzo; labios morados; confusión o somnolencia; dolor de pecho intenso; oxigenación baja; incapacidad para beber."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "tos",
+      "flema",
+      "falta-de-aire",
+      "dolor-al-respirar",
+      "fiebre"
+    ],
+    "examenes": [
+      "radiografia-de-torax",
+      "oximetria-de-pulso",
+      "hemograma-completo",
+      "proteina-c-reactiva-pcr",
+      "hemocultivo"
+    ],
+    "medicamentos": [],
+    "enfermedades": [
+      "influenza",
+      "covid-19",
+      "asma",
+      "sepsis"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-tos",
+      "tipo": "sintoma",
       "slug": "tos",
-      "categoria": "Relacionados",
-      "titulo": "tos"
+      "titulo": "Tos"
     },
     {
-      "id": "rel-fiebre",
-      "slug": "fiebre",
-      "categoria": "Relacionados",
-      "titulo": "fiebre"
+      "tipo": "sintoma",
+      "slug": "flema",
+      "titulo": "Flema"
     },
     {
-      "id": "rel-falta-de-aire",
+      "tipo": "sintoma",
       "slug": "falta-de-aire",
-      "categoria": "Relacionados",
-      "titulo": "falta de aire"
+      "titulo": "Falta de aire"
     },
     {
-      "id": "rel-dolor-de-garganta",
-      "slug": "dolor-de-garganta",
-      "categoria": "Relacionados",
-      "titulo": "dolor de garganta"
+      "tipo": "sintoma",
+      "slug": "dolor-al-respirar",
+      "titulo": "Dolor al respirar"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "fiebre",
+      "titulo": "Fiebre"
+    },
+    {
+      "tipo": "examen",
+      "slug": "radiografia-de-torax",
+      "titulo": "Radiografía de tórax"
+    },
+    {
+      "tipo": "examen",
+      "slug": "oximetria-de-pulso",
+      "titulo": "Oximetría de pulso"
+    },
+    {
+      "tipo": "examen",
+      "slug": "hemograma-completo",
+      "titulo": "Hemograma completo"
+    },
+    {
+      "tipo": "examen",
+      "slug": "proteina-c-reactiva-pcr",
+      "titulo": "Proteína C reactiva (PCR)"
+    },
+    {
+      "tipo": "examen",
+      "slug": "hemocultivo",
+      "titulo": "Hemocultivo"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "influenza",
+      "titulo": "Influenza"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "covid-19",
+      "titulo": "COVID-19"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "asma",
+      "titulo": "Asma"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "sepsis",
+      "titulo": "Sepsis"
     }
   ],
+  "seo": {
+    "titulo": "Neumonía: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La neumonía es una infección de uno o ambos pulmones que llena los alvéolos de líquido o pus. Puede ser causada por bacterias, virus u hongos y su gravedad depende de la edad, el germen y las condiciones previas.",
+    "expresiones_coloquiales": [
+      "infección pulmonar"
+    ],
+    "errores_ortograficos": [
+      "neumonia"
+    ],
+    "singular_plural": [
+      "caso de neumonía",
+      "casos de neumonía"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
-      "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
+      "id": "neumonia-fuente-1",
       "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Pneumonia",
+      "url": "https://medlineplus.gov/pneumonia.html",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Neumonia se relaciona con virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La neumonía es una infección de uno o ambos pulmones que llena los alvéolos de líquido o pus. Puede ser causada por bacterias, virus u hongos y su gravedad depende de la edad, el germen y las condiciones previas."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Neumonia puede presentarse de distintas formas segun edad, antecedentes y otros problemas de salud. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Es una infección del tejido pulmonar. No toda tos con fiebre es neumonía; se requiere evaluación clínica y, según la gravedad, medición de oxígeno, radiografía u otros estudios."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "tos",
-        "fiebre",
+        "tos, a menudo con flema",
+        "fiebre o escalofríos",
         "falta de aire",
-        "dolor de garganta",
-        "flema"
+        "dolor de pecho al respirar o toser",
+        "decaimiento"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
-      ]
-    },
-    {
-      "titulo": "Factores de riesgo",
-      "contenido": [
-        "asma o EPOC",
-        "edad extrema",
         "tabaquismo",
-        "defensas bajas"
+        "mala higiene de manos",
+        "aspiración asociada a alcohol o sedantes",
+        "vacunación incompleta"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Neumonia debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Factores de riesgo no modificables",
+      "contenido": [
+        "edad extrema",
+        "enfermedad pulmonar o cardiaca",
+        "defensas bajas",
+        "dificultad para tragar"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Neumonia depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "El profesional integra síntomas, auscultación y oxigenación. Puede solicitar radiografía de tórax, hemograma y pruebas microbiológicas según gravedad y contexto.",
+        "Radiografía de tórax",
+        "Oximetría de pulso",
+        "Hemograma completo",
+        "Proteína C reactiva (PCR)",
+        "Hemocultivo"
+      ]
+    },
+    {
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Buscar evaluación si hay fiebre con tos y falta de aire",
+        "Mantener hidratación si se tolera",
+        "Evitar humo y esfuerzo",
+        "No iniciar antibióticos sobrantes ni compartirlos"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta pronto ante fiebre, tos con dificultad respiratoria, dolor al respirar o empeoramiento después de una gripe, especialmente en niños, mayores o personas con enfermedades crónicas."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Respiración muy rápida o con esfuerzo",
+        "labios morados",
+        "confusión o somnolencia",
+        "dolor de pecho intenso",
+        "oxigenación baja",
+        "incapacidad para beber"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "vacunacion cuando corresponda",
+        "Vacunas indicadas contra influenza, neumococo y otras infecciones",
         "lavado de manos",
-        "evitar humo e irritantes",
-        "consultar si hay falta de aire"
+        "no fumar",
+        "control de enfermedades crónicas"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Neumonía? Es una infección del tejido pulmonar. No toda tos con fiebre es neumonía; se requiere evaluación clínica y, según la gravedad, medición de oxígeno, radiografía u otros estudios.",
+        "¿Cómo suele confirmarse? El profesional integra síntomas, auscultación y oxigenación. Puede solicitar radiografía de tórax, hemograma y pruebas microbiológicas según gravedad y contexto.",
+        "¿Qué puedo hacer mientras busco orientación? Buscar evaluación si hay fiebre con tos y falta de aire Mantener hidratación si se tolera Evitar humo y esfuerzo No iniciar antibióticos sobrantes ni compartirlos.",
+        "¿Cuándo debo consultar? Consulta pronto ante fiebre, tos con dificultad respiratoria, dolor al respirar o empeoramiento después de una gripe, especialmente en niños, mayores o personas con enfermedades crónicas.",
+        "¿Qué señales requieren atención inmediata? Respiración muy rápida o con esfuerzo; labios morados; confusión o somnolencia; dolor de pecho intenso; oxigenación baja; incapacidad para beber."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Neumonia varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Neumología o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Tos",
+        "sintoma: Flema",
+        "sintoma: Falta de aire",
+        "sintoma: Dolor al respirar",
+        "sintoma: Fiebre",
+        "examen: Radiografía de tórax",
+        "examen: Oximetría de pulso",
+        "examen: Hemograma completo",
+        "examen: Proteína C reactiva (PCR)",
+        "examen: Hemocultivo",
+        "enfermedad: Influenza",
+        "enfermedad: COVID-19",
+        "enfermedad: Asma",
+        "enfermedad: Sepsis"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "MedlinePlus — Pneumonia"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

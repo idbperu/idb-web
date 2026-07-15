@@ -3,218 +3,378 @@
   "slug": "trastorno-de-ansiedad",
   "titulo": "Trastorno de ansiedad",
   "tipo": "enfermedad",
+  "aliases": [
+    "ansiedad persistente",
+    "ansiedad generalizada",
+    "anciedad"
+  ],
+  "keywords": [
+    "trastorno de ansiedad",
+    "ansiedad persistente",
+    "ansiedad generalizada",
+    "anciedad",
+    "estres",
+    "palpitaciones",
+    "dificultad para concentrarse",
+    "pesadillas frecuentes",
+    "ataques de panico"
+  ],
   "categoria": "Salud mental",
-  "descripcion": "Trastorno de ansiedad es una condicion vinculada con salud mental y neurodesarrollo. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Trastorno de ansiedad se relaciona con factores biologicos, experiencias de vida, estres sostenido, sueño insuficiente, consumo de sustancias o antecedentes familiares. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Trastorno de ansiedad ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por factores biologicos, experiencias de vida, estres sostenido, sueño insuficiente, consumo de sustancias o antecedentes familiares. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "especialidad": "Psicología, psiquiatría y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "Los trastornos de ansiedad producen miedo o preocupación intensos, difíciles de controlar y persistentes, acompañados de tensión física y evitación. Se diferencian de la preocupación normal porque causan malestar o interfieren con la vida diaria.",
+  "descripcion": "Incluyen ansiedad generalizada, pánico, ansiedad social, fobias y otros cuadros. Síntomas físicos como palpitaciones o falta de aire también pueden tener causas médicas, que deben valorarse según el contexto.",
+  "que_es": "Incluyen ansiedad generalizada, pánico, ansiedad social, fobias y otros cuadros. Síntomas físicos como palpitaciones o falta de aire también pueden tener causas médicas, que deben valorarse según el contexto.",
+  "para_que_sirve": "Esta ficha ayuda a comprender trastorno de ansiedad, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "Los trastornos de ansiedad producen miedo o preocupación intensos, difíciles de controlar y persistentes, acompañados de tensión física y evitación. Se diferencian de la preocupación normal porque causan malestar o interfieren con la vida diaria.",
   "sintomas": [
-    "ansiedad",
-    "insomnio",
-    "tristeza persistente",
-    "cambios de humor"
+    "preocupación o miedo excesivo",
+    "inquietud y tensión",
+    "dificultad para concentrarse",
+    "palpitaciones, sudor o temblor",
+    "problemas de sueño",
+    "evitación de situaciones"
   ],
   "factores_riesgo": [
-    "estres prolongado",
+    "estrés sostenido",
+    "consumo elevado de cafeína",
+    "alcohol u otras sustancias",
+    "falta de sueño",
     "aislamiento",
-    "consumo de alcohol u otras sustancias",
-    "antecedentes personales o familiares"
+    "experiencias adversas",
+    "antecedentes familiares",
+    "otras enfermedades físicas o mentales",
+    "inicio frecuente en etapas tempranas"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "estrés sostenido",
+      "consumo elevado de cafeína",
+      "alcohol u otras sustancias",
+      "falta de sueño",
+      "aislamiento"
+    ],
+    "no_modificables": [
+      "experiencias adversas",
+      "antecedentes familiares",
+      "otras enfermedades físicas o mentales",
+      "inicio frecuente en etapas tempranas"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Un profesional explora duración, intensidad, desencadenantes e impacto funcional mediante entrevista y, a veces, cuestionarios. Puede solicitar pruebas para descartar causas físicas como alteraciones tiroideas.",
+    "examenes_relacionados": [
+      "tsh",
+      "hemograma-completo",
+      "electrocardiograma"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Hablar con un profesional de confianza",
+    "Mantener sueño, actividad y horarios regulares",
+    "Reducir cafeína y alcohol",
+    "Practicar respiración lenta como apoyo, sin usarla para retrasar atención urgente"
+  ],
+  "cuando_consultar": "Consulta si la ansiedad persiste, provoca evitación, altera sueño, estudio, trabajo o relaciones, o se acompaña de consumo problemático de sustancias.",
+  "senales_alarma": "Ideas de hacerse daño o morir; incapacidad para mantenerse a salvo; confusión intensa; dolor de pecho o falta de aire nuevos que no deben atribuirse automáticamente a ansiedad; agitación extrema.",
+  "senales_alarma_lista": [
+    "Ideas de hacerse daño o morir",
+    "incapacidad para mantenerse a salvo",
+    "confusión intensa",
+    "dolor de pecho o falta de aire nuevos que no deben atribuirse automáticamente a ansiedad",
+    "agitación extrema"
   ],
   "prevencion": [
-    "pedir apoyo temprano",
-    "mantener rutinas de sueño",
-    "evitar consumo de sustancias",
-    "buscar atencion si interfiere con la vida diaria"
+    "Apoyo social",
+    "sueño y actividad física",
+    "habilidades de afrontamiento",
+    "atención temprana tras eventos adversos",
+    "reducir alcohol y sustancias"
   ],
-  "cuando_consultar": "Consulta si sospechas trastorno de ansiedad, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Trastorno de ansiedad?",
-      "respuesta": "Es una condicion relacionada con salud mental y neurodesarrollo. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Trastorno de ansiedad?",
+      "respuesta": "Incluyen ansiedad generalizada, pánico, ansiedad social, fobias y otros cuadros. Síntomas físicos como palpitaciones o falta de aire también pueden tener causas médicas, que deben valorarse según el contexto."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse ansiedad, insomnio, tristeza persistente, cambios de humor, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Un profesional explora duración, intensidad, desencadenantes e impacto funcional mediante entrevista y, a veces, cuestionarios. Puede solicitar pruebas para descartar causas físicas como alteraciones tiroideas."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como pedir apoyo temprano, mantener rutinas de sueño, evitar consumo de sustancias, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Hablar con un profesional de confianza Mantener sueño, actividad y horarios regulares Reducir cafeína y alcohol Practicar respiración lenta como apoyo, sin usarla para retrasar atención urgente."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si la ansiedad persiste, provoca evitación, altera sueño, estudio, trabajo o relaciones, o se acompaña de consumo problemático de sustancias."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Ideas de hacerse daño o morir; incapacidad para mantenerse a salvo; confusión intensa; dolor de pecho o falta de aire nuevos que no deben atribuirse automáticamente a ansiedad; agitación extrema."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "estres",
+      "palpitaciones",
+      "dificultad-para-concentrarse",
+      "pesadillas-frecuentes",
+      "ataques-de-panico"
+    ],
+    "examenes": [
+      "tsh",
+      "hemograma-completo",
+      "electrocardiograma"
+    ],
+    "medicamentos": [
+      "sertralina",
+      "fluoxetina",
+      "escitalopram"
+    ],
+    "enfermedades": [
+      "trastorno-de-panico",
+      "depresion",
+      "insomnio-cronico"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-ansiedad",
-      "slug": "ansiedad",
-      "categoria": "Relacionados",
-      "titulo": "ansiedad"
+      "tipo": "sintoma",
+      "slug": "estres",
+      "titulo": "Estres"
     },
     {
-      "id": "rel-insomnio",
-      "slug": "insomnio",
-      "categoria": "Relacionados",
-      "titulo": "insomnio"
+      "tipo": "sintoma",
+      "slug": "palpitaciones",
+      "titulo": "Palpitaciones"
     },
     {
-      "id": "rel-tristeza-persistente",
-      "slug": "tristeza-persistente",
-      "categoria": "Relacionados",
-      "titulo": "tristeza persistente"
+      "tipo": "sintoma",
+      "slug": "dificultad-para-concentrarse",
+      "titulo": "Dificultad para concentrarse"
     },
     {
-      "id": "rel-cambios-de-humor",
-      "slug": "cambios-de-humor",
-      "categoria": "Relacionados",
-      "titulo": "cambios de humor"
+      "tipo": "sintoma",
+      "slug": "pesadillas-frecuentes",
+      "titulo": "Pesadillas frecuentes"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "ataques-de-panico",
+      "titulo": "Ataques de panico"
+    },
+    {
+      "tipo": "examen",
+      "slug": "tsh",
+      "titulo": "TSH"
+    },
+    {
+      "tipo": "examen",
+      "slug": "hemograma-completo",
+      "titulo": "Hemograma completo"
+    },
+    {
+      "tipo": "examen",
+      "slug": "electrocardiograma",
+      "titulo": "Electrocardiograma"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "sertralina",
+      "titulo": "Sertralina"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "fluoxetina",
+      "titulo": "Fluoxetina"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "escitalopram",
+      "titulo": "Escitalopram"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "trastorno-de-panico",
+      "titulo": "Trastorno de panico"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "depresion",
+      "titulo": "Depresion"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "insomnio-cronico",
+      "titulo": "Insomnio cronico"
     }
   ],
+  "seo": {
+    "titulo": "Trastorno de ansiedad: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "Los trastornos de ansiedad producen miedo o preocupación intensos, difíciles de controlar y persistentes, acompañados de tensión física y evitación. Se diferencian de la preocupación normal porque causan malestar o interfieren con la vida diaria.",
+    "expresiones_coloquiales": [
+      "ansiedad persistente"
+    ],
+    "errores_ortograficos": [
+      "anciedad"
+    ],
+    "singular_plural": [
+      "caso de trastorno de ansiedad",
+      "casos de trastorno de ansiedad"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
+      "id": "trastorno-de-ansiedad-fuente-1",
       "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Trastornos de ansiedad",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/anxiety-disorders",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Trastorno de ansiedad se relaciona con factores biologicos, experiencias de vida, estres sostenido, sueño insuficiente, consumo de sustancias o antecedentes familiares. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "Los trastornos de ansiedad producen miedo o preocupación intensos, difíciles de controlar y persistentes, acompañados de tensión física y evitación. Se diferencian de la preocupación normal porque causan malestar o interfieren con la vida diaria."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Trastorno de ansiedad es una condicion vinculada con salud mental y neurodesarrollo. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Incluyen ansiedad generalizada, pánico, ansiedad social, fobias y otros cuadros. Síntomas físicos como palpitaciones o falta de aire también pueden tener causas médicas, que deben valorarse según el contexto."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "ansiedad",
-        "insomnio",
-        "tristeza persistente",
-        "cambios de humor"
+        "preocupación o miedo excesivo",
+        "inquietud y tensión",
+        "dificultad para concentrarse",
+        "palpitaciones, sudor o temblor",
+        "problemas de sueño",
+        "evitación de situaciones"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por factores biologicos, experiencias de vida, estres sostenido, sueño insuficiente, consumo de sustancias o antecedentes familiares. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "estrés sostenido",
+        "consumo elevado de cafeína",
+        "alcohol u otras sustancias",
+        "falta de sueño",
+        "aislamiento"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "estres prolongado",
-        "aislamiento",
-        "consumo de alcohol u otras sustancias",
-        "antecedentes personales o familiares"
+        "experiencias adversas",
+        "antecedentes familiares",
+        "otras enfermedades físicas o mentales",
+        "inicio frecuente en etapas tempranas"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Trastorno de ansiedad debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Un profesional explora duración, intensidad, desencadenantes e impacto funcional mediante entrevista y, a veces, cuestionarios. Puede solicitar pruebas para descartar causas físicas como alteraciones tiroideas.",
+        "TSH",
+        "Hemograma completo",
+        "Electrocardiograma"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Trastorno de ansiedad depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Hablar con un profesional de confianza",
+        "Mantener sueño, actividad y horarios regulares",
+        "Reducir cafeína y alcohol",
+        "Practicar respiración lenta como apoyo, sin usarla para retrasar atención urgente"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si la ansiedad persiste, provoca evitación, altera sueño, estudio, trabajo o relaciones, o se acompaña de consumo problemático de sustancias."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Ideas de hacerse daño o morir",
+        "incapacidad para mantenerse a salvo",
+        "confusión intensa",
+        "dolor de pecho o falta de aire nuevos que no deben atribuirse automáticamente a ansiedad",
+        "agitación extrema"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "pedir apoyo temprano",
-        "mantener rutinas de sueño",
-        "evitar consumo de sustancias",
-        "buscar atencion si interfiere con la vida diaria"
+        "Apoyo social",
+        "sueño y actividad física",
+        "habilidades de afrontamiento",
+        "atención temprana tras eventos adversos",
+        "reducir alcohol y sustancias"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Trastorno de ansiedad? Incluyen ansiedad generalizada, pánico, ansiedad social, fobias y otros cuadros. Síntomas físicos como palpitaciones o falta de aire también pueden tener causas médicas, que deben valorarse según el contexto.",
+        "¿Cómo suele confirmarse? Un profesional explora duración, intensidad, desencadenantes e impacto funcional mediante entrevista y, a veces, cuestionarios. Puede solicitar pruebas para descartar causas físicas como alteraciones tiroideas.",
+        "¿Qué puedo hacer mientras busco orientación? Hablar con un profesional de confianza Mantener sueño, actividad y horarios regulares Reducir cafeína y alcohol Practicar respiración lenta como apoyo, sin usarla para retrasar atención urgente.",
+        "¿Cuándo debo consultar? Consulta si la ansiedad persiste, provoca evitación, altera sueño, estudio, trabajo o relaciones, o se acompaña de consumo problemático de sustancias.",
+        "¿Qué señales requieren atención inmediata? Ideas de hacerse daño o morir; incapacidad para mantenerse a salvo; confusión intensa; dolor de pecho o falta de aire nuevos que no deben atribuirse automáticamente a ansiedad; agitación extrema."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Trastorno de ansiedad varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Psicología, psiquiatría o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Estres",
+        "sintoma: Palpitaciones",
+        "sintoma: Dificultad para concentrarse",
+        "sintoma: Pesadillas frecuentes",
+        "sintoma: Ataques de panico",
+        "examen: TSH",
+        "examen: Hemograma completo",
+        "examen: Electrocardiograma",
+        "medicamento: Sertralina",
+        "medicamento: Fluoxetina",
+        "medicamento: Escitalopram",
+        "enfermedad: Trastorno de panico",
+        "enfermedad: Depresion",
+        "enfermedad: Insomnio cronico"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "OMS — Trastornos de ansiedad"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

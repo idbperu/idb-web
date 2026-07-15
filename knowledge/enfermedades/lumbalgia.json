@@ -3,218 +3,368 @@
   "slug": "lumbalgia",
   "titulo": "Lumbalgia",
   "tipo": "enfermedad",
-  "categoria": "Musculoesqueletico",
-  "descripcion": "La orientacion sobre Lumbalgia debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Lumbalgia se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Lumbalgia ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "aliases": [
+    "dolor lumbar",
+    "dolor de cintura",
+    "lumbaljia"
+  ],
+  "keywords": [
+    "lumbalgia",
+    "dolor lumbar",
+    "dolor de cintura",
+    "lumbaljia",
+    "dolor de espalda",
+    "adormecimiento",
+    "debilidad en un lado del cuerpo",
+    "dificultad para caminar"
+  ],
+  "categoria": "Musculoesquelético",
+  "especialidad": "Medicina familiar, rehabilitación y traumatología",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La lumbalgia es dolor entre el borde inferior de las costillas y los glúteos. Cerca del 90 % es inespecífica y no se atribuye a una lesión grave; mantenerse activo y recuperar función suele ser más útil que el reposo prolongado.",
+  "descripcion": "Puede ser aguda, subaguda o crónica. Algunas veces se debe a una causa específica o se acompaña de ciática; la evaluación busca primero señales de fractura, infección, cáncer o compresión nerviosa.",
+  "que_es": "Puede ser aguda, subaguda o crónica. Algunas veces se debe a una causa específica o se acompaña de ciática; la evaluación busca primero señales de fractura, infección, cáncer o compresión nerviosa.",
+  "para_que_sirve": "Esta ficha ayuda a comprender lumbalgia, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La lumbalgia es dolor entre el borde inferior de las costillas y los glúteos. Cerca del 90 % es inespecífica y no se atribuye a una lesión grave; mantenerse activo y recuperar función suele ser más útil que el reposo prolongado.",
   "sintomas": [
-    "fatiga",
-    "malestar general",
-    "dolor de cuerpo",
-    "fiebre"
+    "dolor en zona lumbar",
+    "rigidez",
+    "limitación para moverse",
+    "dolor hacia glúteo o pierna",
+    "espasmo muscular"
   ],
   "factores_riesgo": [
-    "antecedentes familiares",
+    "inactividad física",
+    "tabaco",
+    "obesidad",
+    "carga física elevada",
+    "estrés y mal sueño",
     "edad",
-    "otras enfermedades",
-    "habitos de vida"
+    "episodios previos",
+    "osteoporosis",
+    "cáncer o enfermedad sistémica"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "inactividad física",
+      "tabaco",
+      "obesidad",
+      "carga física elevada",
+      "estrés y mal sueño"
+    ],
+    "no_modificables": [
+      "edad",
+      "episodios previos",
+      "osteoporosis",
+      "cáncer o enfermedad sistémica"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "La mayoría se evalúa con historia y examen neurológico. Radiografía o resonancia no son rutinarias al inicio; se reservan para trauma, déficit neurológico, señales de alarma o síntomas persistentes seleccionados.",
+    "examenes_relacionados": [
+      "radiografia-de-columna",
+      "resonancia-magnetica-de-columna-lumbar"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Continuar actividades toleradas y evitar reposo prolongado",
+    "Aplicar movimiento y ejercicios progresivos",
+    "Cuidar sueño y ergonomía",
+    "Consultar antes de usar analgésicos repetidamente"
+  ],
+  "cuando_consultar": "Consulta si el dolor persiste, limita la actividad, baja por una pierna o aparece tras una caída, especialmente con osteoporosis.",
+  "senales_alarma": "Pérdida de control de orina o heces; adormecimiento en zona genital; debilidad progresiva en piernas; fiebre o pérdida de peso; dolor tras trauma importante; antecedente de cáncer con dolor nuevo.",
+  "senales_alarma_lista": [
+    "Pérdida de control de orina o heces",
+    "adormecimiento en zona genital",
+    "debilidad progresiva en piernas",
+    "fiebre o pérdida de peso",
+    "dolor tras trauma importante",
+    "antecedente de cáncer con dolor nuevo"
   ],
   "prevencion": [
-    "controles preventivos",
-    "actividad fisica segura",
-    "alimentacion equilibrada",
-    "consulta temprana ante sintomas persistentes"
+    "Actividad física regular",
+    "fortalecimiento gradual",
+    "peso saludable",
+    "manejo seguro de cargas",
+    "evitar tabaco"
   ],
-  "cuando_consultar": "Consulta si sospechas lumbalgia, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Lumbalgia?",
-      "respuesta": "Es una condicion relacionada con salud general. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Lumbalgia?",
+      "respuesta": "Puede ser aguda, subaguda o crónica. Algunas veces se debe a una causa específica o se acompaña de ciática; la evaluación busca primero señales de fractura, infección, cáncer o compresión nerviosa."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse fatiga, malestar general, dolor de cuerpo, fiebre, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "La mayoría se evalúa con historia y examen neurológico. Radiografía o resonancia no son rutinarias al inicio; se reservan para trauma, déficit neurológico, señales de alarma o síntomas persistentes seleccionados."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como controles preventivos, actividad fisica segura, alimentacion equilibrada, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Continuar actividades toleradas y evitar reposo prolongado Aplicar movimiento y ejercicios progresivos Cuidar sueño y ergonomía Consultar antes de usar analgésicos repetidamente."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si el dolor persiste, limita la actividad, baja por una pierna o aparece tras una caída, especialmente con osteoporosis."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Pérdida de control de orina o heces; adormecimiento en zona genital; debilidad progresiva en piernas; fiebre o pérdida de peso; dolor tras trauma importante; antecedente de cáncer con dolor nuevo."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "dolor-lumbar",
+      "dolor-de-espalda",
+      "adormecimiento",
+      "debilidad-en-un-lado-del-cuerpo",
+      "dificultad-para-caminar"
+    ],
+    "examenes": [
+      "radiografia-de-columna",
+      "resonancia-magnetica-de-columna-lumbar"
+    ],
+    "medicamentos": [
+      "paracetamol",
+      "ibuprofeno",
+      "naproxeno"
+    ],
+    "enfermedades": [
+      "ciatalgia",
+      "osteoporosis",
+      "artrosis"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-fatiga",
-      "slug": "fatiga",
-      "categoria": "Relacionados",
-      "titulo": "fatiga"
+      "tipo": "sintoma",
+      "slug": "dolor-lumbar",
+      "titulo": "Dolor lumbar"
     },
     {
-      "id": "rel-malestar-general",
-      "slug": "malestar-general",
-      "categoria": "Relacionados",
-      "titulo": "malestar general"
+      "tipo": "sintoma",
+      "slug": "dolor-de-espalda",
+      "titulo": "Dolor de espalda"
     },
     {
-      "id": "rel-dolor-de-cuerpo",
-      "slug": "dolor-de-cuerpo",
-      "categoria": "Relacionados",
-      "titulo": "dolor de cuerpo"
+      "tipo": "sintoma",
+      "slug": "adormecimiento",
+      "titulo": "Adormecimiento"
     },
     {
-      "id": "rel-fiebre",
-      "slug": "fiebre",
-      "categoria": "Relacionados",
-      "titulo": "fiebre"
+      "tipo": "sintoma",
+      "slug": "debilidad-en-un-lado-del-cuerpo",
+      "titulo": "Debilidad en un lado del cuerpo"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "dificultad-para-caminar",
+      "titulo": "Dificultad para caminar"
+    },
+    {
+      "tipo": "examen",
+      "slug": "radiografia-de-columna",
+      "titulo": "Radiografía de columna"
+    },
+    {
+      "tipo": "examen",
+      "slug": "resonancia-magnetica-de-columna-lumbar",
+      "titulo": "Resonancia magnética de columna lumbar"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "paracetamol",
+      "titulo": "Paracetamol"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "ibuprofeno",
+      "titulo": "Ibuprofeno"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "naproxeno",
+      "titulo": "Naproxeno"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "ciatalgia",
+      "titulo": "Ciatalgia"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "osteoporosis",
+      "titulo": "Osteoporosis"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "artrosis",
+      "titulo": "Artrosis"
     }
   ],
+  "seo": {
+    "titulo": "Lumbalgia: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La lumbalgia es dolor entre el borde inferior de las costillas y los glúteos. Cerca del 90 % es inespecífica y no se atribuye a una lesión grave; mantenerse activo y recuperar función suele ser más útil que el reposo prolongado.",
+    "expresiones_coloquiales": [
+      "dolor lumbar"
+    ],
+    "errores_ortograficos": [
+      "lumbaljia"
+    ],
+    "singular_plural": [
+      "caso de lumbalgia",
+      "casos de lumbalgia"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
+      "id": "lumbalgia-fuente-1",
       "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Low back pain",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/low-back-pain",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Lumbalgia se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La lumbalgia es dolor entre el borde inferior de las costillas y los glúteos. Cerca del 90 % es inespecífica y no se atribuye a una lesión grave; mantenerse activo y recuperar función suele ser más útil que el reposo prolongado."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "La orientacion sobre Lumbalgia debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Puede ser aguda, subaguda o crónica. Algunas veces se debe a una causa específica o se acompaña de ciática; la evaluación busca primero señales de fractura, infección, cáncer o compresión nerviosa."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "fatiga",
-        "malestar general",
-        "dolor de cuerpo",
-        "fiebre"
+        "dolor en zona lumbar",
+        "rigidez",
+        "limitación para moverse",
+        "dolor hacia glúteo o pierna",
+        "espasmo muscular"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "inactividad física",
+        "tabaco",
+        "obesidad",
+        "carga física elevada",
+        "estrés y mal sueño"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "antecedentes familiares",
         "edad",
-        "otras enfermedades",
-        "habitos de vida"
+        "episodios previos",
+        "osteoporosis",
+        "cáncer o enfermedad sistémica"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Lumbalgia debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "La mayoría se evalúa con historia y examen neurológico. Radiografía o resonancia no son rutinarias al inicio; se reservan para trauma, déficit neurológico, señales de alarma o síntomas persistentes seleccionados.",
+        "Radiografía de columna",
+        "Resonancia magnética de columna lumbar"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Lumbalgia depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Continuar actividades toleradas y evitar reposo prolongado",
+        "Aplicar movimiento y ejercicios progresivos",
+        "Cuidar sueño y ergonomía",
+        "Consultar antes de usar analgésicos repetidamente"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si el dolor persiste, limita la actividad, baja por una pierna o aparece tras una caída, especialmente con osteoporosis."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Pérdida de control de orina o heces",
+        "adormecimiento en zona genital",
+        "debilidad progresiva en piernas",
+        "fiebre o pérdida de peso",
+        "dolor tras trauma importante",
+        "antecedente de cáncer con dolor nuevo"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "controles preventivos",
-        "actividad fisica segura",
-        "alimentacion equilibrada",
-        "consulta temprana ante sintomas persistentes"
+        "Actividad física regular",
+        "fortalecimiento gradual",
+        "peso saludable",
+        "manejo seguro de cargas",
+        "evitar tabaco"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Lumbalgia? Puede ser aguda, subaguda o crónica. Algunas veces se debe a una causa específica o se acompaña de ciática; la evaluación busca primero señales de fractura, infección, cáncer o compresión nerviosa.",
+        "¿Cómo suele confirmarse? La mayoría se evalúa con historia y examen neurológico. Radiografía o resonancia no son rutinarias al inicio; se reservan para trauma, déficit neurológico, señales de alarma o síntomas persistentes seleccionados.",
+        "¿Qué puedo hacer mientras busco orientación? Continuar actividades toleradas y evitar reposo prolongado Aplicar movimiento y ejercicios progresivos Cuidar sueño y ergonomía Consultar antes de usar analgésicos repetidamente.",
+        "¿Cuándo debo consultar? Consulta si el dolor persiste, limita la actividad, baja por una pierna o aparece tras una caída, especialmente con osteoporosis.",
+        "¿Qué señales requieren atención inmediata? Pérdida de control de orina o heces; adormecimiento en zona genital; debilidad progresiva en piernas; fiebre o pérdida de peso; dolor tras trauma importante; antecedente de cáncer con dolor nuevo."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Lumbalgia varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Traumatología, reumatología o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Dolor lumbar",
+        "sintoma: Dolor de espalda",
+        "sintoma: Adormecimiento",
+        "sintoma: Debilidad en un lado del cuerpo",
+        "sintoma: Dificultad para caminar",
+        "examen: Radiografía de columna",
+        "examen: Resonancia magnética de columna lumbar",
+        "medicamento: Paracetamol",
+        "medicamento: Ibuprofeno",
+        "medicamento: Naproxeno",
+        "enfermedad: Ciatalgia",
+        "enfermedad: Osteoporosis",
+        "enfermedad: Artrosis"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "OMS — Low back pain"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

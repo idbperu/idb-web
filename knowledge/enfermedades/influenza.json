@@ -3,220 +3,377 @@
   "slug": "influenza",
   "titulo": "Influenza",
   "tipo": "enfermedad",
-  "categoria": "Respiratorio",
-  "descripcion": "La orientacion sobre Influenza debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Influenza se relaciona con virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Influenza ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
-  "sintomas": [
-    "tos",
+  "aliases": [
+    "gripe",
+    "influenza estacional",
+    "influensa"
+  ],
+  "keywords": [
+    "influenza",
+    "gripe",
+    "influenza estacional",
+    "influensa",
     "fiebre",
-    "falta de aire",
-    "dolor de garganta",
-    "flema"
+    "tos",
+    "dolor de cuerpo",
+    "escalofrios",
+    "dolor de garganta"
+  ],
+  "categoria": "Infeccioso",
+  "especialidad": "Medicina familiar e infectología",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La influenza es una infección respiratoria contagiosa causada por virus influenza. Suele comenzar de forma brusca con fiebre, dolores corporales, cansancio y tos; puede complicarse con neumonía o empeorar asma, diabetes y cardiopatías.",
+  "descripcion": "Es distinta del resfrío común y de COVID-19, aunque comparten síntomas. La intensidad y el inicio súbito orientan, pero solo una prueba puede identificar el virus con certeza cuando es necesario.",
+  "que_es": "Es distinta del resfrío común y de COVID-19, aunque comparten síntomas. La intensidad y el inicio súbito orientan, pero solo una prueba puede identificar el virus con certeza cuando es necesario.",
+  "para_que_sirve": "Esta ficha ayuda a comprender influenza, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La influenza es una infección respiratoria contagiosa causada por virus influenza. Suele comenzar de forma brusca con fiebre, dolores corporales, cansancio y tos; puede complicarse con neumonía o empeorar asma, diabetes y cardiopatías.",
+  "sintomas": [
+    "inicio repentino de fiebre o escalofríos",
+    "tos",
+    "dolor muscular o corporal",
+    "dolor de cabeza",
+    "cansancio",
+    "dolor de garganta"
   ],
   "factores_riesgo": [
-    "asma o EPOC",
-    "edad extrema",
-    "tabaquismo",
-    "defensas bajas"
+    "no vacunarse cuando corresponde",
+    "contacto cercano en espacios cerrados",
+    "higiene de manos insuficiente",
+    "menores de 5 años",
+    "65 años o más",
+    "embarazo",
+    "asma, diabetes o cardiopatía",
+    "inmunosupresión"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "no vacunarse cuando corresponde",
+      "contacto cercano en espacios cerrados",
+      "higiene de manos insuficiente"
+    ],
+    "no_modificables": [
+      "menores de 5 años",
+      "65 años o más",
+      "embarazo",
+      "asma, diabetes o cardiopatía",
+      "inmunosupresión"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "El diagnóstico puede ser clínico durante circulación conocida. Las pruebas de antígeno o PCR ayudan cuando el resultado cambia decisiones, existe riesgo elevado o el cuadro es grave.",
+    "examenes_relacionados": [
+      "pcr-para-influenza",
+      "oximetria-de-pulso",
+      "radiografia-de-torax"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Descansar y beber líquidos",
+    "Quedarse en casa mientras hay fiebre y malestar",
+    "Cubrir tos y lavarse las manos",
+    "Contactar temprano si pertenece a un grupo de alto riesgo"
+  ],
+  "cuando_consultar": "Consulta pronto si perteneces a un grupo de riesgo, si el cuadro es intenso o si la fiebre o tos mejoran y luego regresan peor.",
+  "senales_alarma": "Dificultad para respirar; dolor o presión persistente en pecho o abdomen; confusión o convulsiones; no orinar; debilidad intensa; labios morados en niños.",
+  "senales_alarma_lista": [
+    "Dificultad para respirar",
+    "dolor o presión persistente en pecho o abdomen",
+    "confusión o convulsiones",
+    "no orinar",
+    "debilidad intensa",
+    "labios morados en niños"
   ],
   "prevencion": [
-    "vacunacion cuando corresponda",
+    "Vacunación anual según recomendaciones nacionales",
     "lavado de manos",
-    "evitar humo e irritantes",
-    "consultar si hay falta de aire"
+    "ventilación",
+    "evitar contacto cercano durante la enfermedad"
   ],
-  "cuando_consultar": "Consulta si sospechas influenza, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Influenza?",
-      "respuesta": "Es una condicion relacionada con respiracion. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Influenza?",
+      "respuesta": "Es distinta del resfrío común y de COVID-19, aunque comparten síntomas. La intensidad y el inicio súbito orientan, pero solo una prueba puede identificar el virus con certeza cuando es necesario."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse tos, fiebre, falta de aire, dolor de garganta, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "El diagnóstico puede ser clínico durante circulación conocida. Las pruebas de antígeno o PCR ayudan cuando el resultado cambia decisiones, existe riesgo elevado o el cuadro es grave."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como vacunacion cuando corresponda, lavado de manos, evitar humo e irritantes, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Descansar y beber líquidos Quedarse en casa mientras hay fiebre y malestar Cubrir tos y lavarse las manos Contactar temprano si pertenece a un grupo de alto riesgo."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta pronto si perteneces a un grupo de riesgo, si el cuadro es intenso o si la fiebre o tos mejoran y luego regresan peor."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Dificultad para respirar; dolor o presión persistente en pecho o abdomen; confusión o convulsiones; no orinar; debilidad intensa; labios morados en niños."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "fiebre",
+      "tos",
+      "dolor-de-cuerpo",
+      "escalofrios",
+      "dolor-de-garganta"
+    ],
+    "examenes": [
+      "pcr-para-influenza",
+      "oximetria-de-pulso",
+      "radiografia-de-torax"
+    ],
+    "medicamentos": [
+      "oseltamivir"
+    ],
+    "enfermedades": [
+      "neumonia",
+      "asma",
+      "covid-19",
+      "otitis-media"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-tos",
-      "slug": "tos",
-      "categoria": "Relacionados",
-      "titulo": "tos"
-    },
-    {
-      "id": "rel-fiebre",
+      "tipo": "sintoma",
       "slug": "fiebre",
-      "categoria": "Relacionados",
-      "titulo": "fiebre"
+      "titulo": "Fiebre"
     },
     {
-      "id": "rel-falta-de-aire",
-      "slug": "falta-de-aire",
-      "categoria": "Relacionados",
-      "titulo": "falta de aire"
+      "tipo": "sintoma",
+      "slug": "tos",
+      "titulo": "Tos"
     },
     {
-      "id": "rel-dolor-de-garganta",
+      "tipo": "sintoma",
+      "slug": "dolor-de-cuerpo",
+      "titulo": "Dolor de cuerpo"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "escalofrios",
+      "titulo": "Escalofrios"
+    },
+    {
+      "tipo": "sintoma",
       "slug": "dolor-de-garganta",
-      "categoria": "Relacionados",
-      "titulo": "dolor de garganta"
+      "titulo": "Dolor de garganta"
+    },
+    {
+      "tipo": "examen",
+      "slug": "pcr-para-influenza",
+      "titulo": "PCR para influenza"
+    },
+    {
+      "tipo": "examen",
+      "slug": "oximetria-de-pulso",
+      "titulo": "Oximetría de pulso"
+    },
+    {
+      "tipo": "examen",
+      "slug": "radiografia-de-torax",
+      "titulo": "Radiografía de tórax"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "oseltamivir",
+      "titulo": "Oseltamivir"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "neumonia",
+      "titulo": "Neumonía"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "asma",
+      "titulo": "Asma"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "covid-19",
+      "titulo": "COVID-19"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "otitis-media",
+      "titulo": "Otitis media"
     }
   ],
+  "seo": {
+    "titulo": "Influenza: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La influenza es una infección respiratoria contagiosa causada por virus influenza. Suele comenzar de forma brusca con fiebre, dolores corporales, cansancio y tos; puede complicarse con neumonía o empeorar asma, diabetes y cardiopatías.",
+    "expresiones_coloquiales": [
+      "gripe"
+    ],
+    "errores_ortograficos": [
+      "influensa"
+    ],
+    "singular_plural": [
+      "caso de influenza",
+      "casos de influenza"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
-      "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
+      "id": "influenza-fuente-1",
       "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Signs and Symptoms of Flu",
+      "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
+    },
+    {
+      "id": "influenza-fuente-2",
+      "organizacion": "CDC",
+      "titulo": "Diagnosis for Flu",
+      "url": "https://www.cdc.gov/flu/testing/index.html",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Influenza se relaciona con virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La influenza es una infección respiratoria contagiosa causada por virus influenza. Suele comenzar de forma brusca con fiebre, dolores corporales, cansancio y tos; puede complicarse con neumonía o empeorar asma, diabetes y cardiopatías."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "La orientacion sobre Influenza debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Es distinta del resfrío común y de COVID-19, aunque comparten síntomas. La intensidad y el inicio súbito orientan, pero solo una prueba puede identificar el virus con certeza cuando es necesario."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
+        "inicio repentino de fiebre o escalofríos",
         "tos",
-        "fiebre",
-        "falta de aire",
-        "dolor de garganta",
-        "flema"
+        "dolor muscular o corporal",
+        "dolor de cabeza",
+        "cansancio",
+        "dolor de garganta"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "no vacunarse cuando corresponde",
+        "contacto cercano en espacios cerrados",
+        "higiene de manos insuficiente"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "asma o EPOC",
-        "edad extrema",
-        "tabaquismo",
-        "defensas bajas"
+        "menores de 5 años",
+        "65 años o más",
+        "embarazo",
+        "asma, diabetes o cardiopatía",
+        "inmunosupresión"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Influenza debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "El diagnóstico puede ser clínico durante circulación conocida. Las pruebas de antígeno o PCR ayudan cuando el resultado cambia decisiones, existe riesgo elevado o el cuadro es grave.",
+        "PCR para influenza",
+        "Oximetría de pulso",
+        "Radiografía de tórax"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Influenza depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Descansar y beber líquidos",
+        "Quedarse en casa mientras hay fiebre y malestar",
+        "Cubrir tos y lavarse las manos",
+        "Contactar temprano si pertenece a un grupo de alto riesgo"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta pronto si perteneces a un grupo de riesgo, si el cuadro es intenso o si la fiebre o tos mejoran y luego regresan peor."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Dificultad para respirar",
+        "dolor o presión persistente en pecho o abdomen",
+        "confusión o convulsiones",
+        "no orinar",
+        "debilidad intensa",
+        "labios morados en niños"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "vacunacion cuando corresponda",
+        "Vacunación anual según recomendaciones nacionales",
         "lavado de manos",
-        "evitar humo e irritantes",
-        "consultar si hay falta de aire"
+        "ventilación",
+        "evitar contacto cercano durante la enfermedad"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Influenza? Es distinta del resfrío común y de COVID-19, aunque comparten síntomas. La intensidad y el inicio súbito orientan, pero solo una prueba puede identificar el virus con certeza cuando es necesario.",
+        "¿Cómo suele confirmarse? El diagnóstico puede ser clínico durante circulación conocida. Las pruebas de antígeno o PCR ayudan cuando el resultado cambia decisiones, existe riesgo elevado o el cuadro es grave.",
+        "¿Qué puedo hacer mientras busco orientación? Descansar y beber líquidos Quedarse en casa mientras hay fiebre y malestar Cubrir tos y lavarse las manos Contactar temprano si pertenece a un grupo de alto riesgo.",
+        "¿Cuándo debo consultar? Consulta pronto si perteneces a un grupo de riesgo, si el cuadro es intenso o si la fiebre o tos mejoran y luego regresan peor.",
+        "¿Qué señales requieren atención inmediata? Dificultad para respirar; dolor o presión persistente en pecho o abdomen; confusión o convulsiones; no orinar; debilidad intensa; labios morados en niños."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Influenza varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Neumología o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Fiebre",
+        "sintoma: Tos",
+        "sintoma: Dolor de cuerpo",
+        "sintoma: Escalofrios",
+        "sintoma: Dolor de garganta",
+        "examen: PCR para influenza",
+        "examen: Oximetría de pulso",
+        "examen: Radiografía de tórax",
+        "medicamento: Oseltamivir",
+        "enfermedad: Neumonía",
+        "enfermedad: Asma",
+        "enfermedad: COVID-19",
+        "enfermedad: Otitis media"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "CDC — Signs and Symptoms of Flu",
+        "CDC — Diagnosis for Flu"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

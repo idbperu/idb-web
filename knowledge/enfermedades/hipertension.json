@@ -1,220 +1,386 @@
 {
   "id": "enfermedad-hipertension",
   "slug": "hipertension",
-  "titulo": "Hipertension",
+  "titulo": "Hipertensión arterial",
   "tipo": "enfermedad",
-  "categoria": "Cardiovascular",
-  "descripcion": "Hipertension es una condicion vinculada con corazon y circulacion. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Hipertension se relaciona con presion arterial, colesterol, diabetes, tabaco, sedentarismo, edad, genetica o alteraciones del ritmo y vasos sanguineos. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Hipertension ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por presion arterial, colesterol, diabetes, tabaco, sedentarismo, edad, genetica o alteraciones del ritmo y vasos sanguineos. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
-  "sintomas": [
+  "aliases": [
+    "presión alta",
+    "hipertensión",
+    "hipertencion arterial"
+  ],
+  "keywords": [
+    "hipertensión arterial",
+    "presión alta",
+    "hipertensión",
+    "hipertencion arterial",
+    "sintomas de presion alta",
     "dolor de pecho",
-    "palpitaciones",
     "falta de aire",
-    "hinchazon de piernas"
+    "vision borrosa"
+  ],
+  "categoria": "Cardiovascular",
+  "especialidad": "Cardiología y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La hipertensión arterial es la elevación persistente de la presión en los vasos sanguíneos. Con frecuencia no produce síntomas; se identifica con mediciones correctas y repetidas, y su control reduce el riesgo de infarto, accidente cerebrovascular y daño renal.",
+  "descripcion": "Es una enfermedad crónica en la que la sangre ejerce una presión mayor de la adecuada sobre las paredes arteriales. Una lectura aislada alta no basta para confirmarla: importan la técnica, el contexto y mediciones en días distintos.",
+  "que_es": "Es una enfermedad crónica en la que la sangre ejerce una presión mayor de la adecuada sobre las paredes arteriales. Una lectura aislada alta no basta para confirmarla: importan la técnica, el contexto y mediciones en días distintos.",
+  "para_que_sirve": "Esta ficha ayuda a comprender hipertensión arterial, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La hipertensión arterial es la elevación persistente de la presión en los vasos sanguíneos. Con frecuencia no produce síntomas; se identifica con mediciones correctas y repetidas, y su control reduce el riesgo de infarto, accidente cerebrovascular y daño renal.",
+  "sintomas": [
+    "Generalmente no causa síntomas",
+    "dolor de cabeza cuando la presión es muy alta",
+    "visión borrosa",
+    "dolor de pecho",
+    "falta de aire"
   ],
   "factores_riesgo": [
-    "hipertension",
-    "diabetes",
-    "colesterol alto",
-    "tabaquismo o antecedentes familiares"
+    "consumo elevado de sal",
+    "sobrepeso u obesidad",
+    "inactividad física",
+    "tabaco",
+    "consumo excesivo de alcohol",
+    "edad avanzada",
+    "antecedentes familiares",
+    "enfermedad renal",
+    "diabetes"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "consumo elevado de sal",
+      "sobrepeso u obesidad",
+      "inactividad física",
+      "tabaco",
+      "consumo excesivo de alcohol"
+    ],
+    "no_modificables": [
+      "edad avanzada",
+      "antecedentes familiares",
+      "enfermedad renal",
+      "diabetes"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Un profesional confirma el diagnóstico con mediciones estandarizadas en más de una ocasión; puede usar monitoreo ambulatorio o domiciliario y solicitar estudios para valorar riesgo cardiovascular y daño de órganos.",
+    "examenes_relacionados": [
+      "monitoreo-ambulatorio-de-presion-arterial-mapa",
+      "electrocardiograma",
+      "creatinina-serica",
+      "examen-completo-de-orina",
+      "perfil-lipidico"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Registrar mediciones si un profesional indicó control domiciliario",
+    "Reducir sal y alimentos ultraprocesados",
+    "Mantener actividad física y peso saludables de forma progresiva",
+    "No suspender ni ajustar medicación sin indicación"
+  ],
+  "cuando_consultar": "Consulta si obtienes lecturas altas repetidas, si tienes diabetes, enfermedad renal o cardiovascular, o si el control habitual cambia.",
+  "senales_alarma": "Presión muy elevada acompañada de dolor de pecho; dificultad para respirar; confusión; debilidad de un lado del cuerpo; dificultad para hablar o pérdida súbita de visión.",
+  "senales_alarma_lista": [
+    "Presión muy elevada acompañada de dolor de pecho",
+    "dificultad para respirar",
+    "confusión",
+    "debilidad de un lado del cuerpo",
+    "dificultad para hablar o pérdida súbita de visión"
   ],
   "prevencion": [
-    "controlar presion y factores metabolicos",
-    "evitar tabaco",
-    "mantener actividad fisica segura",
-    "cumplir controles medicos"
+    "Alimentación con poca sal y abundantes alimentos frescos",
+    "actividad física regular",
+    "no fumar",
+    "controles periódicos de presión"
   ],
-  "cuando_consultar": "Consulta si sospechas hipertension, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Hipertension?",
-      "respuesta": "Es una condicion relacionada con corazon y circulacion. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Hipertensión arterial?",
+      "respuesta": "Es una enfermedad crónica en la que la sangre ejerce una presión mayor de la adecuada sobre las paredes arteriales. Una lectura aislada alta no basta para confirmarla: importan la técnica, el contexto y mediciones en días distintos."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse dolor de pecho, palpitaciones, falta de aire, hinchazon de piernas, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Un profesional confirma el diagnóstico con mediciones estandarizadas en más de una ocasión; puede usar monitoreo ambulatorio o domiciliario y solicitar estudios para valorar riesgo cardiovascular y daño de órganos."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como controlar presion y factores metabolicos, evitar tabaco, mantener actividad fisica segura, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Registrar mediciones si un profesional indicó control domiciliario Reducir sal y alimentos ultraprocesados Mantener actividad física y peso saludables de forma progresiva No suspender ni ajustar medicación sin indicación."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si obtienes lecturas altas repetidas, si tienes diabetes, enfermedad renal o cardiovascular, o si el control habitual cambia."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Presión muy elevada acompañada de dolor de pecho; dificultad para respirar; confusión; debilidad de un lado del cuerpo; dificultad para hablar o pérdida súbita de visión."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "sintomas-de-presion-alta",
+      "dolor-de-pecho",
+      "falta-de-aire",
+      "vision-borrosa"
+    ],
+    "examenes": [
+      "monitoreo-ambulatorio-de-presion-arterial-mapa",
+      "electrocardiograma",
+      "creatinina-serica",
+      "examen-completo-de-orina",
+      "perfil-lipidico"
+    ],
+    "medicamentos": [
+      "losartan",
+      "amlodipino",
+      "hidroclorotiazida"
+    ],
+    "enfermedades": [
+      "enfermedad-coronaria",
+      "accidente-cerebrovascular",
+      "enfermedad-renal-cronica"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-dolor-de-pecho",
+      "tipo": "sintoma",
+      "slug": "sintomas-de-presion-alta",
+      "titulo": "Sintomas de presion alta"
+    },
+    {
+      "tipo": "sintoma",
       "slug": "dolor-de-pecho",
-      "categoria": "Relacionados",
-      "titulo": "dolor de pecho"
+      "titulo": "Dolor de pecho"
     },
     {
-      "id": "rel-palpitaciones",
-      "slug": "palpitaciones",
-      "categoria": "Relacionados",
-      "titulo": "palpitaciones"
-    },
-    {
-      "id": "rel-falta-de-aire",
+      "tipo": "sintoma",
       "slug": "falta-de-aire",
-      "categoria": "Relacionados",
-      "titulo": "falta de aire"
+      "titulo": "Falta de aire"
     },
     {
-      "id": "rel-hinchazon-de-piernas",
-      "slug": "hinchazon-de-piernas",
-      "categoria": "Relacionados",
-      "titulo": "hinchazon de piernas"
+      "tipo": "sintoma",
+      "slug": "vision-borrosa",
+      "titulo": "Vision borrosa"
+    },
+    {
+      "tipo": "examen",
+      "slug": "monitoreo-ambulatorio-de-presion-arterial-mapa",
+      "titulo": "Monitoreo ambulatorio de presión arterial (MAPA)"
+    },
+    {
+      "tipo": "examen",
+      "slug": "electrocardiograma",
+      "titulo": "Electrocardiograma"
+    },
+    {
+      "tipo": "examen",
+      "slug": "creatinina-serica",
+      "titulo": "Creatinina sérica"
+    },
+    {
+      "tipo": "examen",
+      "slug": "examen-completo-de-orina",
+      "titulo": "Examen completo de orina"
+    },
+    {
+      "tipo": "examen",
+      "slug": "perfil-lipidico",
+      "titulo": "Perfil lipídico"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "losartan",
+      "titulo": "Losartan"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "amlodipino",
+      "titulo": "Amlodipino"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "hidroclorotiazida",
+      "titulo": "Hidroclorotiazida"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "enfermedad-coronaria",
+      "titulo": "Enfermedad coronaria"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "accidente-cerebrovascular",
+      "titulo": "Accidente cerebrovascular"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "enfermedad-renal-cronica",
+      "titulo": "Enfermedad renal cronica"
     }
   ],
+  "seo": {
+    "titulo": "Hipertensión arterial: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La hipertensión arterial es la elevación persistente de la presión en los vasos sanguíneos. Con frecuencia no produce síntomas; se identifica con mediciones correctas y repetidas, y su control reduce el riesgo de infarto, accidente cerebrovascular y daño renal.",
+    "expresiones_coloquiales": [
+      "presión alta"
+    ],
+    "errores_ortograficos": [
+      "hipertencion arterial"
+    ],
+    "singular_plural": [
+      "caso de hipertensión arterial",
+      "casos de hipertensión arterial"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
+      "id": "hipertension-fuente-1",
       "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Hypertension",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/hypertension",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Hipertension se relaciona con presion arterial, colesterol, diabetes, tabaco, sedentarismo, edad, genetica o alteraciones del ritmo y vasos sanguineos. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La hipertensión arterial es la elevación persistente de la presión en los vasos sanguíneos. Con frecuencia no produce síntomas; se identifica con mediciones correctas y repetidas, y su control reduce el riesgo de infarto, accidente cerebrovascular y daño renal."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Hipertension es una condicion vinculada con corazon y circulacion. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Es una enfermedad crónica en la que la sangre ejerce una presión mayor de la adecuada sobre las paredes arteriales. Una lectura aislada alta no basta para confirmarla: importan la técnica, el contexto y mediciones en días distintos."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
+        "Generalmente no causa síntomas",
+        "dolor de cabeza cuando la presión es muy alta",
+        "visión borrosa",
         "dolor de pecho",
-        "palpitaciones",
-        "falta de aire",
-        "hinchazon de piernas"
+        "falta de aire"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por presion arterial, colesterol, diabetes, tabaco, sedentarismo, edad, genetica o alteraciones del ritmo y vasos sanguineos. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "consumo elevado de sal",
+        "sobrepeso u obesidad",
+        "inactividad física",
+        "tabaco",
+        "consumo excesivo de alcohol"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "hipertension",
-        "diabetes",
-        "colesterol alto",
-        "tabaquismo o antecedentes familiares"
+        "edad avanzada",
+        "antecedentes familiares",
+        "enfermedad renal",
+        "diabetes"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Hipertension debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Un profesional confirma el diagnóstico con mediciones estandarizadas en más de una ocasión; puede usar monitoreo ambulatorio o domiciliario y solicitar estudios para valorar riesgo cardiovascular y daño de órganos.",
+        "Monitoreo ambulatorio de presión arterial (MAPA)",
+        "Electrocardiograma",
+        "Creatinina sérica",
+        "Examen completo de orina",
+        "Perfil lipídico"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Hipertension depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Registrar mediciones si un profesional indicó control domiciliario",
+        "Reducir sal y alimentos ultraprocesados",
+        "Mantener actividad física y peso saludables de forma progresiva",
+        "No suspender ni ajustar medicación sin indicación"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si obtienes lecturas altas repetidas, si tienes diabetes, enfermedad renal o cardiovascular, o si el control habitual cambia."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Presión muy elevada acompañada de dolor de pecho",
+        "dificultad para respirar",
+        "confusión",
+        "debilidad de un lado del cuerpo",
+        "dificultad para hablar o pérdida súbita de visión"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "controlar presion y factores metabolicos",
-        "evitar tabaco",
-        "mantener actividad fisica segura",
-        "cumplir controles medicos"
+        "Alimentación con poca sal y abundantes alimentos frescos",
+        "actividad física regular",
+        "no fumar",
+        "controles periódicos de presión"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Hipertensión arterial? Es una enfermedad crónica en la que la sangre ejerce una presión mayor de la adecuada sobre las paredes arteriales. Una lectura aislada alta no basta para confirmarla: importan la técnica, el contexto y mediciones en días distintos.",
+        "¿Cómo suele confirmarse? Un profesional confirma el diagnóstico con mediciones estandarizadas en más de una ocasión; puede usar monitoreo ambulatorio o domiciliario y solicitar estudios para valorar riesgo cardiovascular y daño de órganos.",
+        "¿Qué puedo hacer mientras busco orientación? Registrar mediciones si un profesional indicó control domiciliario Reducir sal y alimentos ultraprocesados Mantener actividad física y peso saludables de forma progresiva No suspender ni ajustar medicación sin indicación.",
+        "¿Cuándo debo consultar? Consulta si obtienes lecturas altas repetidas, si tienes diabetes, enfermedad renal o cardiovascular, o si el control habitual cambia.",
+        "¿Qué señales requieren atención inmediata? Presión muy elevada acompañada de dolor de pecho; dificultad para respirar; confusión; debilidad de un lado del cuerpo; dificultad para hablar o pérdida súbita de visión."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Hipertension varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Cardiología o medicina interna"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Sintomas de presion alta",
+        "sintoma: Dolor de pecho",
+        "sintoma: Falta de aire",
+        "sintoma: Vision borrosa",
+        "examen: Monitoreo ambulatorio de presión arterial (MAPA)",
+        "examen: Electrocardiograma",
+        "examen: Creatinina sérica",
+        "examen: Examen completo de orina",
+        "examen: Perfil lipídico",
+        "medicamento: Losartan",
+        "medicamento: Amlodipino",
+        "medicamento: Hidroclorotiazida",
+        "enfermedad: Enfermedad coronaria",
+        "enfermedad: Accidente cerebrovascular",
+        "enfermedad: Enfermedad renal cronica"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "OMS — Hypertension"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

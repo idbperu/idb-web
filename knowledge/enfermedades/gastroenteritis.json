@@ -3,220 +3,380 @@
   "slug": "gastroenteritis",
   "titulo": "Gastroenteritis",
   "tipo": "enfermedad",
-  "categoria": "Sistema digestivo",
-  "descripcion": "Comprender Gastroenteritis exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Gastroenteritis se relaciona con infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Gastroenteritis ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
-  "sintomas": [
-    "dolor de estomago",
-    "nauseas",
-    "vomitos",
+  "aliases": [
+    "infección intestinal",
+    "gripe estomacal",
+    "gastro enteritis"
+  ],
+  "keywords": [
+    "gastroenteritis",
+    "infección intestinal",
+    "gripe estomacal",
+    "gastro enteritis",
     "diarrea",
-    "acidez"
+    "vomitos",
+    "nauseas",
+    "dolor abdominal",
+    "fiebre"
+  ],
+  "categoria": "Digestivo",
+  "especialidad": "Medicina familiar, pediatría y gastroenterología",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La gastroenteritis es inflamación del estómago y los intestinos, generalmente por virus y a veces por bacterias o parásitos. Diarrea y vómitos pueden causar deshidratación, que es el principal riesgo en niños, mayores y personas frágiles.",
+  "descripcion": "No es influenza aunque se le llame gripe estomacal. Se transmite con facilidad por manos, alimentos, agua o superficies contaminadas; la causa concreta depende del contexto y de la duración.",
+  "que_es": "No es influenza aunque se le llame gripe estomacal. Se transmite con facilidad por manos, alimentos, agua o superficies contaminadas; la causa concreta depende del contexto y de la duración.",
+  "para_que_sirve": "Esta ficha ayuda a comprender gastroenteritis, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La gastroenteritis es inflamación del estómago y los intestinos, generalmente por virus y a veces por bacterias o parásitos. Diarrea y vómitos pueden causar deshidratación, que es el principal riesgo en niños, mayores y personas frágiles.",
+  "sintomas": [
+    "diarrea acuosa",
+    "vómitos",
+    "náuseas",
+    "dolor o cólicos abdominales",
+    "fiebre",
+    "malestar general"
   ],
   "factores_riesgo": [
-    "uso frecuente de antiinflamatorios",
-    "alcohol o tabaco",
-    "antecedentes digestivos",
-    "sangrado o perdida de peso"
+    "mala higiene de manos",
+    "alimentos o agua contaminados",
+    "contacto con personas enfermas",
+    "edad extrema",
+    "inmunosupresión",
+    "enfermedad crónica"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "mala higiene de manos",
+      "alimentos o agua contaminados",
+      "contacto con personas enfermas"
+    ],
+    "no_modificables": [
+      "edad extrema",
+      "inmunosupresión",
+      "enfermedad crónica"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "La mayoría se evalúa por síntomas y exploración. Se solicitan análisis de heces o sangre si hay cuadro grave, sangre, duración prolongada, brote o inmunosupresión.",
+    "examenes_relacionados": [
+      "coprocultivo",
+      "examen-parasitologico-seriado",
+      "hemograma-completo",
+      "sodio-serico",
+      "potasio-serico"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Tomar líquidos en pequeñas cantidades frecuentes",
+    "Usar solución de rehidratación preparada según etiqueta cuando corresponda",
+    "Continuar alimentación tolerada",
+    "No automedicarse antibióticos ni antidiarreicos"
+  ],
+  "cuando_consultar": "Consulta si la diarrea o vómitos persisten, hay fiebre alta, embarazo, edad extrema, enfermedad crónica o dificultad para rehidratarse.",
+  "senales_alarma": "No orinar o signos marcados de deshidratación; sangre en heces o vómito; dolor abdominal intenso o localizado; somnolencia o confusión; vómitos que impiden beber.",
+  "senales_alarma_lista": [
+    "No orinar o signos marcados de deshidratación",
+    "sangre en heces o vómito",
+    "dolor abdominal intenso o localizado",
+    "somnolencia o confusión",
+    "vómitos que impiden beber"
   ],
   "prevencion": [
-    "evitar irritantes conocidos",
-    "mantener hidratacion",
-    "consultar por sintomas persistentes",
-    "no automedicarse ante dolor intenso"
+    "Lavado de manos con agua y jabón",
+    "manipulación segura de alimentos",
+    "agua segura",
+    "limpieza de superficies contaminadas"
   ],
-  "cuando_consultar": "Consulta si sospechas gastroenteritis, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Gastroenteritis?",
-      "respuesta": "Es una condicion relacionada con aparato digestivo. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Gastroenteritis?",
+      "respuesta": "No es influenza aunque se le llame gripe estomacal. Se transmite con facilidad por manos, alimentos, agua o superficies contaminadas; la causa concreta depende del contexto y de la duración."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse dolor de estomago, nauseas, vomitos, diarrea, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "La mayoría se evalúa por síntomas y exploración. Se solicitan análisis de heces o sangre si hay cuadro grave, sangre, duración prolongada, brote o inmunosupresión."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como evitar irritantes conocidos, mantener hidratacion, consultar por sintomas persistentes, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Tomar líquidos en pequeñas cantidades frecuentes Usar solución de rehidratación preparada según etiqueta cuando corresponda Continuar alimentación tolerada No automedicarse antibióticos ni antidiarreicos."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si la diarrea o vómitos persisten, hay fiebre alta, embarazo, edad extrema, enfermedad crónica o dificultad para rehidratarse."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "No orinar o signos marcados de deshidratación; sangre en heces o vómito; dolor abdominal intenso o localizado; somnolencia o confusión; vómitos que impiden beber."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "diarrea",
+      "vomitos",
+      "nauseas",
+      "dolor-abdominal",
+      "fiebre"
+    ],
+    "examenes": [
+      "coprocultivo",
+      "examen-parasitologico-seriado",
+      "hemograma-completo",
+      "sodio-serico",
+      "potasio-serico"
+    ],
+    "medicamentos": [
+      "sales-de-rehidratacion-oral"
+    ],
+    "enfermedades": [
+      "deshidratacion",
+      "diarrea-aguda",
+      "intoxicacion-alimentaria"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-dolor-de-estomago",
-      "slug": "dolor-de-estomago",
-      "categoria": "Relacionados",
-      "titulo": "dolor de estomago"
-    },
-    {
-      "id": "rel-nauseas",
-      "slug": "nauseas",
-      "categoria": "Relacionados",
-      "titulo": "nauseas"
-    },
-    {
-      "id": "rel-vomitos",
-      "slug": "vomitos",
-      "categoria": "Relacionados",
-      "titulo": "vomitos"
-    },
-    {
-      "id": "rel-diarrea",
+      "tipo": "sintoma",
       "slug": "diarrea",
-      "categoria": "Relacionados",
-      "titulo": "diarrea"
+      "titulo": "Diarrea"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "vomitos",
+      "titulo": "Vomitos"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "nauseas",
+      "titulo": "Nauseas"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "dolor-abdominal",
+      "titulo": "Dolor abdominal"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "fiebre",
+      "titulo": "Fiebre"
+    },
+    {
+      "tipo": "examen",
+      "slug": "coprocultivo",
+      "titulo": "Coprocultivo"
+    },
+    {
+      "tipo": "examen",
+      "slug": "examen-parasitologico-seriado",
+      "titulo": "Examen parasitológico seriado"
+    },
+    {
+      "tipo": "examen",
+      "slug": "hemograma-completo",
+      "titulo": "Hemograma completo"
+    },
+    {
+      "tipo": "examen",
+      "slug": "sodio-serico",
+      "titulo": "Sodio sérico"
+    },
+    {
+      "tipo": "examen",
+      "slug": "potasio-serico",
+      "titulo": "Potasio sérico"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "sales-de-rehidratacion-oral",
+      "titulo": "Sales de rehidratacion oral"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "deshidratacion",
+      "titulo": "Deshidratacion"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "diarrea-aguda",
+      "titulo": "Diarrea aguda"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "intoxicacion-alimentaria",
+      "titulo": "Intoxicacion alimentaria"
     }
   ],
+  "seo": {
+    "titulo": "Gastroenteritis: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La gastroenteritis es inflamación del estómago y los intestinos, generalmente por virus y a veces por bacterias o parásitos. Diarrea y vómitos pueden causar deshidratación, que es el principal riesgo en niños, mayores y personas frágiles.",
+    "expresiones_coloquiales": [
+      "infección intestinal"
+    ],
+    "errores_ortograficos": [
+      "gastro enteritis"
+    ],
+    "singular_plural": [
+      "caso de gastroenteritis",
+      "casos de gastroenteritis"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
-      "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
+      "id": "gastroenteritis-fuente-1",
       "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "About Norovirus",
+      "url": "https://www.cdc.gov/norovirus/about/index.html",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
+    },
+    {
+      "id": "gastroenteritis-fuente-2",
+      "organizacion": "NIDDK",
+      "titulo": "Viral Gastroenteritis",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/viral-gastroenteritis",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Gastroenteritis se relaciona con infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La gastroenteritis es inflamación del estómago y los intestinos, generalmente por virus y a veces por bacterias o parásitos. Diarrea y vómitos pueden causar deshidratación, que es el principal riesgo en niños, mayores y personas frágiles."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Comprender Gastroenteritis exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "No es influenza aunque se le llame gripe estomacal. Se transmite con facilidad por manos, alimentos, agua o superficies contaminadas; la causa concreta depende del contexto y de la duración."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "dolor de estomago",
-        "nauseas",
-        "vomitos",
-        "diarrea",
-        "acidez"
+        "diarrea acuosa",
+        "vómitos",
+        "náuseas",
+        "dolor o cólicos abdominales",
+        "fiebre",
+        "malestar general"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "mala higiene de manos",
+        "alimentos o agua contaminados",
+        "contacto con personas enfermas"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "uso frecuente de antiinflamatorios",
-        "alcohol o tabaco",
-        "antecedentes digestivos",
-        "sangrado o perdida de peso"
+        "edad extrema",
+        "inmunosupresión",
+        "enfermedad crónica"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Gastroenteritis debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "La mayoría se evalúa por síntomas y exploración. Se solicitan análisis de heces o sangre si hay cuadro grave, sangre, duración prolongada, brote o inmunosupresión.",
+        "Coprocultivo",
+        "Examen parasitológico seriado",
+        "Hemograma completo",
+        "Sodio sérico",
+        "Potasio sérico"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Gastroenteritis depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Tomar líquidos en pequeñas cantidades frecuentes",
+        "Usar solución de rehidratación preparada según etiqueta cuando corresponda",
+        "Continuar alimentación tolerada",
+        "No automedicarse antibióticos ni antidiarreicos"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si la diarrea o vómitos persisten, hay fiebre alta, embarazo, edad extrema, enfermedad crónica o dificultad para rehidratarse."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "No orinar o signos marcados de deshidratación",
+        "sangre en heces o vómito",
+        "dolor abdominal intenso o localizado",
+        "somnolencia o confusión",
+        "vómitos que impiden beber"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "evitar irritantes conocidos",
-        "mantener hidratacion",
-        "consultar por sintomas persistentes",
-        "no automedicarse ante dolor intenso"
+        "Lavado de manos con agua y jabón",
+        "manipulación segura de alimentos",
+        "agua segura",
+        "limpieza de superficies contaminadas"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Gastroenteritis? No es influenza aunque se le llame gripe estomacal. Se transmite con facilidad por manos, alimentos, agua o superficies contaminadas; la causa concreta depende del contexto y de la duración.",
+        "¿Cómo suele confirmarse? La mayoría se evalúa por síntomas y exploración. Se solicitan análisis de heces o sangre si hay cuadro grave, sangre, duración prolongada, brote o inmunosupresión.",
+        "¿Qué puedo hacer mientras busco orientación? Tomar líquidos en pequeñas cantidades frecuentes Usar solución de rehidratación preparada según etiqueta cuando corresponda Continuar alimentación tolerada No automedicarse antibióticos ni antidiarreicos.",
+        "¿Cuándo debo consultar? Consulta si la diarrea o vómitos persisten, hay fiebre alta, embarazo, edad extrema, enfermedad crónica o dificultad para rehidratarse.",
+        "¿Qué señales requieren atención inmediata? No orinar o signos marcados de deshidratación; sangre en heces o vómito; dolor abdominal intenso o localizado; somnolencia o confusión; vómitos que impiden beber."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Gastroenteritis varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Gastroenterología o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Diarrea",
+        "sintoma: Vomitos",
+        "sintoma: Nauseas",
+        "sintoma: Dolor abdominal",
+        "sintoma: Fiebre",
+        "examen: Coprocultivo",
+        "examen: Examen parasitológico seriado",
+        "examen: Hemograma completo",
+        "examen: Sodio sérico",
+        "examen: Potasio sérico",
+        "medicamento: Sales de rehidratacion oral",
+        "enfermedad: Deshidratacion",
+        "enfermedad: Diarrea aguda",
+        "enfermedad: Intoxicacion alimentaria"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "CDC — About Norovirus",
+        "NIDDK — Viral Gastroenteritis"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

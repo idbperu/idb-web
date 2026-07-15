@@ -3,220 +3,356 @@
   "slug": "covid-19",
   "titulo": "COVID-19",
   "tipo": "enfermedad",
-  "categoria": "Respiratorio",
-  "descripcion": "COVID-19 es una condicion vinculada con respiracion. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "COVID-19 se relaciona con virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer COVID-19 ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
-  "sintomas": [
-    "tos",
+  "aliases": [
+    "covid",
+    "coronavirus 2019",
+    "covid19"
+  ],
+  "keywords": [
+    "covid-19",
+    "covid",
+    "coronavirus 2019",
+    "covid19",
     "fiebre",
+    "tos",
     "falta de aire",
+    "dolor de garganta"
+  ],
+  "categoria": "Infeccioso",
+  "especialidad": "Medicina familiar, infectología y neumología",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "COVID-19 es una infección causada por SARS-CoV-2. Puede ir de ausencia de síntomas a enfermedad respiratoria grave; la vacunación y la atención temprana en personas con riesgo reducen complicaciones.",
+  "descripcion": "Es una enfermedad respiratoria contagiosa cuyos síntomas se superponen con influenza y otras infecciones. Los síntomas por sí solos no permiten distinguirlas con certeza.",
+  "que_es": "Es una enfermedad respiratoria contagiosa cuyos síntomas se superponen con influenza y otras infecciones. Los síntomas por sí solos no permiten distinguirlas con certeza.",
+  "para_que_sirve": "Esta ficha ayuda a comprender covid-19, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "COVID-19 es una infección causada por SARS-CoV-2. Puede ir de ausencia de síntomas a enfermedad respiratoria grave; la vacunación y la atención temprana en personas con riesgo reducen complicaciones.",
+  "sintomas": [
+    "fiebre o escalofríos",
+    "tos",
     "dolor de garganta",
-    "flema"
+    "congestión",
+    "fatiga y dolor corporal",
+    "pérdida reciente de olfato o gusto",
+    "falta de aire"
   ],
   "factores_riesgo": [
-    "asma o EPOC",
-    "edad extrema",
-    "tabaquismo",
-    "defensas bajas"
+    "vacunación incompleta",
+    "contacto cercano sin ventilación",
+    "tabaco",
+    "edad avanzada",
+    "enfermedad cardiopulmonar",
+    "diabetes u obesidad",
+    "inmunosupresión",
+    "embarazo"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "vacunación incompleta",
+      "contacto cercano sin ventilación",
+      "tabaco"
+    ],
+    "no_modificables": [
+      "edad avanzada",
+      "enfermedad cardiopulmonar",
+      "diabetes u obesidad",
+      "inmunosupresión",
+      "embarazo"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Las pruebas de antígeno o PCR detectan infección. El momento de la muestra y la probabilidad clínica influyen en la interpretación; una prueba negativa temprana no siempre descarta enfermedad.",
+    "examenes_relacionados": [
+      "prueba-rapida-de-antigeno-para-covid-19",
+      "pcr-para-covid-19",
+      "oximetria-de-pulso",
+      "radiografia-de-torax"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Quedarse en casa y reducir contacto mientras hay síntomas",
+    "Ventilar y usar mascarilla al estar con otras personas",
+    "Mantener hidratación",
+    "Buscar pronto orientación si existe riesgo de enfermedad grave"
+  ],
+  "cuando_consultar": "Consulta ante síntomas si tienes factores de riesgo, si empeoras o si necesitas orientación sobre pruebas y medidas de aislamiento vigentes.",
+  "senales_alarma": "Dificultad para respirar; dolor o presión persistente en el pecho; confusión nueva; incapacidad para despertar; labios, piel o uñas pálidos, grises o azulados.",
+  "senales_alarma_lista": [
+    "Dificultad para respirar",
+    "dolor o presión persistente en el pecho",
+    "confusión nueva",
+    "incapacidad para despertar",
+    "labios, piel o uñas pálidos, grises o azulados"
   ],
   "prevencion": [
-    "vacunacion cuando corresponda",
-    "lavado de manos",
-    "evitar humo e irritantes",
-    "consultar si hay falta de aire"
+    "Vacunación actualizada según recomendaciones",
+    "ventilación",
+    "higiene de manos",
+    "quedarse en casa al enfermar",
+    "mascarilla en situaciones de riesgo"
   ],
-  "cuando_consultar": "Consulta si sospechas covid-19, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es COVID-19?",
-      "respuesta": "Es una condicion relacionada con respiracion. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es COVID-19?",
+      "respuesta": "Es una enfermedad respiratoria contagiosa cuyos síntomas se superponen con influenza y otras infecciones. Los síntomas por sí solos no permiten distinguirlas con certeza."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse tos, fiebre, falta de aire, dolor de garganta, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Las pruebas de antígeno o PCR detectan infección. El momento de la muestra y la probabilidad clínica influyen en la interpretación; una prueba negativa temprana no siempre descarta enfermedad."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como vacunacion cuando corresponda, lavado de manos, evitar humo e irritantes, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Quedarse en casa y reducir contacto mientras hay síntomas Ventilar y usar mascarilla al estar con otras personas Mantener hidratación Buscar pronto orientación si existe riesgo de enfermedad grave."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta ante síntomas si tienes factores de riesgo, si empeoras o si necesitas orientación sobre pruebas y medidas de aislamiento vigentes."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Dificultad para respirar; dolor o presión persistente en el pecho; confusión nueva; incapacidad para despertar; labios, piel o uñas pálidos, grises o azulados."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "fiebre",
+      "tos",
+      "falta-de-aire",
+      "dolor-de-garganta"
+    ],
+    "examenes": [
+      "prueba-rapida-de-antigeno-para-covid-19",
+      "pcr-para-covid-19",
+      "oximetria-de-pulso",
+      "radiografia-de-torax"
+    ],
+    "medicamentos": [],
+    "enfermedades": [
+      "influenza",
+      "neumonia",
+      "asma"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-tos",
-      "slug": "tos",
-      "categoria": "Relacionados",
-      "titulo": "tos"
-    },
-    {
-      "id": "rel-fiebre",
+      "tipo": "sintoma",
       "slug": "fiebre",
-      "categoria": "Relacionados",
-      "titulo": "fiebre"
+      "titulo": "Fiebre"
     },
     {
-      "id": "rel-falta-de-aire",
+      "tipo": "sintoma",
+      "slug": "tos",
+      "titulo": "Tos"
+    },
+    {
+      "tipo": "sintoma",
       "slug": "falta-de-aire",
-      "categoria": "Relacionados",
-      "titulo": "falta de aire"
+      "titulo": "Falta de aire"
     },
     {
-      "id": "rel-dolor-de-garganta",
+      "tipo": "sintoma",
       "slug": "dolor-de-garganta",
-      "categoria": "Relacionados",
-      "titulo": "dolor de garganta"
+      "titulo": "Dolor de garganta"
+    },
+    {
+      "tipo": "examen",
+      "slug": "prueba-rapida-de-antigeno-para-covid-19",
+      "titulo": "Prueba rápida de antígeno para COVID-19"
+    },
+    {
+      "tipo": "examen",
+      "slug": "pcr-para-covid-19",
+      "titulo": "PCR para COVID-19"
+    },
+    {
+      "tipo": "examen",
+      "slug": "oximetria-de-pulso",
+      "titulo": "Oximetría de pulso"
+    },
+    {
+      "tipo": "examen",
+      "slug": "radiografia-de-torax",
+      "titulo": "Radiografía de tórax"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "influenza",
+      "titulo": "Influenza"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "neumonia",
+      "titulo": "Neumonía"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "asma",
+      "titulo": "Asma"
     }
   ],
+  "seo": {
+    "titulo": "COVID-19: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "COVID-19 es una infección causada por SARS-CoV-2. Puede ir de ausencia de síntomas a enfermedad respiratoria grave; la vacunación y la atención temprana en personas con riesgo reducen complicaciones.",
+    "expresiones_coloquiales": [
+      "covid"
+    ],
+    "errores_ortograficos": [
+      "covid19"
+    ],
+    "singular_plural": [
+      "caso de covid-19",
+      "casos de covid-19"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
-      "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
+      "id": "covid-19-fuente-1",
       "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Symptoms of COVID-19",
+      "url": "https://www.cdc.gov/covid/signs-symptoms/index.html",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "COVID-19 se relaciona con virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "COVID-19 es una infección causada por SARS-CoV-2. Puede ir de ausencia de síntomas a enfermedad respiratoria grave; la vacunación y la atención temprana en personas con riesgo reducen complicaciones."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "COVID-19 es una condicion vinculada con respiracion. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Es una enfermedad respiratoria contagiosa cuyos síntomas se superponen con influenza y otras infecciones. Los síntomas por sí solos no permiten distinguirlas con certeza."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
+        "fiebre o escalofríos",
         "tos",
-        "fiebre",
-        "falta de aire",
         "dolor de garganta",
-        "flema"
+        "congestión",
+        "fatiga y dolor corporal",
+        "pérdida reciente de olfato o gusto",
+        "falta de aire"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "vacunación incompleta",
+        "contacto cercano sin ventilación",
+        "tabaco"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "asma o EPOC",
-        "edad extrema",
-        "tabaquismo",
-        "defensas bajas"
+        "edad avanzada",
+        "enfermedad cardiopulmonar",
+        "diabetes u obesidad",
+        "inmunosupresión",
+        "embarazo"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de COVID-19 debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Las pruebas de antígeno o PCR detectan infección. El momento de la muestra y la probabilidad clínica influyen en la interpretación; una prueba negativa temprana no siempre descarta enfermedad.",
+        "Prueba rápida de antígeno para COVID-19",
+        "PCR para COVID-19",
+        "Oximetría de pulso",
+        "Radiografía de tórax"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de COVID-19 depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Quedarse en casa y reducir contacto mientras hay síntomas",
+        "Ventilar y usar mascarilla al estar con otras personas",
+        "Mantener hidratación",
+        "Buscar pronto orientación si existe riesgo de enfermedad grave"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta ante síntomas si tienes factores de riesgo, si empeoras o si necesitas orientación sobre pruebas y medidas de aislamiento vigentes."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Dificultad para respirar",
+        "dolor o presión persistente en el pecho",
+        "confusión nueva",
+        "incapacidad para despertar",
+        "labios, piel o uñas pálidos, grises o azulados"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "vacunacion cuando corresponda",
-        "lavado de manos",
-        "evitar humo e irritantes",
-        "consultar si hay falta de aire"
+        "Vacunación actualizada según recomendaciones",
+        "ventilación",
+        "higiene de manos",
+        "quedarse en casa al enfermar",
+        "mascarilla en situaciones de riesgo"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es COVID-19? Es una enfermedad respiratoria contagiosa cuyos síntomas se superponen con influenza y otras infecciones. Los síntomas por sí solos no permiten distinguirlas con certeza.",
+        "¿Cómo suele confirmarse? Las pruebas de antígeno o PCR detectan infección. El momento de la muestra y la probabilidad clínica influyen en la interpretación; una prueba negativa temprana no siempre descarta enfermedad.",
+        "¿Qué puedo hacer mientras busco orientación? Quedarse en casa y reducir contacto mientras hay síntomas Ventilar y usar mascarilla al estar con otras personas Mantener hidratación Buscar pronto orientación si existe riesgo de enfermedad grave.",
+        "¿Cuándo debo consultar? Consulta ante síntomas si tienes factores de riesgo, si empeoras o si necesitas orientación sobre pruebas y medidas de aislamiento vigentes.",
+        "¿Qué señales requieren atención inmediata? Dificultad para respirar; dolor o presión persistente en el pecho; confusión nueva; incapacidad para despertar; labios, piel o uñas pálidos, grises o azulados."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de COVID-19 varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Neumología o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Fiebre",
+        "sintoma: Tos",
+        "sintoma: Falta de aire",
+        "sintoma: Dolor de garganta",
+        "examen: Prueba rápida de antígeno para COVID-19",
+        "examen: PCR para COVID-19",
+        "examen: Oximetría de pulso",
+        "examen: Radiografía de tórax",
+        "enfermedad: Influenza",
+        "enfermedad: Neumonía",
+        "enfermedad: Asma"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "CDC — Symptoms of COVID-19"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

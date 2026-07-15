@@ -3,220 +3,315 @@
   "slug": "sinusitis",
   "titulo": "Sinusitis",
   "tipo": "enfermedad",
-  "categoria": "Respiratorio",
-  "descripcion": "La orientacion sobre Sinusitis debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Sinusitis se relaciona con virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Sinusitis ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "aliases": [
+    "rinosinusitis",
+    "infección de los senos paranasales",
+    "sinucitis"
+  ],
+  "keywords": [
+    "sinusitis",
+    "rinosinusitis",
+    "infección de los senos paranasales",
+    "sinucitis",
+    "congestion nasal",
+    "secrecion nasal",
+    "dolor de cabeza"
+  ],
+  "categoria": "Otorrinolaringológico",
+  "especialidad": "Otorrinolaringología y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La sinusitis es inflamación de uno o más senos paranasales, generalmente después de un resfrío o por alergias. La mayoría de cuadros agudos son virales y mejoran sin antibióticos.",
+  "descripcion": "Cuando se bloquea el drenaje de los senos, se acumulan secreciones y aparece congestión, presión facial y goteo nasal. Una duración prolongada, empeoramiento tras mejoría o síntomas intensos hacen considerar otras causas.",
+  "que_es": "Cuando se bloquea el drenaje de los senos, se acumulan secreciones y aparece congestión, presión facial y goteo nasal. Una duración prolongada, empeoramiento tras mejoría o síntomas intensos hacen considerar otras causas.",
+  "para_que_sirve": "Esta ficha ayuda a comprender sinusitis, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La sinusitis es inflamación de uno o más senos paranasales, generalmente después de un resfrío o por alergias. La mayoría de cuadros agudos son virales y mejoran sin antibióticos.",
   "sintomas": [
+    "congestión o secreción nasal",
+    "presión o dolor facial",
+    "dolor de cabeza",
+    "goteo hacia la garganta",
     "tos",
-    "fiebre",
-    "falta de aire",
-    "dolor de garganta",
-    "flema"
+    "disminución del olfato"
   ],
   "factores_riesgo": [
-    "asma o EPOC",
-    "edad extrema",
-    "tabaquismo",
-    "defensas bajas"
+    "tabaco y humo ajeno",
+    "alergias no controladas",
+    "infecciones respiratorias",
+    "irritantes",
+    "pólipos o alteraciones anatómicas",
+    "inmunosupresión",
+    "episodios previos"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "tabaco y humo ajeno",
+      "alergias no controladas",
+      "infecciones respiratorias",
+      "irritantes"
+    ],
+    "no_modificables": [
+      "pólipos o alteraciones anatómicas",
+      "inmunosupresión",
+      "episodios previos"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Suele diagnosticarse por síntomas y examen. Las imágenes no son rutinarias y solo se consideran ante complicaciones, recurrencias o sospecha de otra causa; el catálogo actual no contiene un examen específico de senos paranasales para enlazar.",
+    "examenes_relacionados": []
+  },
+  "que_puede_hacer_paciente": [
+    "Hidratarse",
+    "Usar lavado salino con agua segura",
+    "Evitar humo",
+    "No exigir antibióticos cuando el profesional considera causa viral"
+  ],
+  "cuando_consultar": "Consulta si dura más de 10 días sin mejorar, empeora después de una mejoría, la fiebre se prolonga o hay episodios repetidos.",
+  "senales_alarma": "Hinchazón alrededor del ojo; visión doble o pérdida visual; dolor de cabeza muy intenso; rigidez de cuello; confusión; dolor facial con deterioro rápido.",
+  "senales_alarma_lista": [
+    "Hinchazón alrededor del ojo",
+    "visión doble o pérdida visual",
+    "dolor de cabeza muy intenso",
+    "rigidez de cuello",
+    "confusión",
+    "dolor facial con deterioro rápido"
   ],
   "prevencion": [
-    "vacunacion cuando corresponda",
-    "lavado de manos",
-    "evitar humo e irritantes",
-    "consultar si hay falta de aire"
+    "Lavado de manos",
+    "control de alergias",
+    "no fumar",
+    "vacunas respiratorias indicadas",
+    "agua segura para lavados nasales"
   ],
-  "cuando_consultar": "Consulta si sospechas sinusitis, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Sinusitis?",
-      "respuesta": "Es una condicion relacionada con respiracion. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Sinusitis?",
+      "respuesta": "Cuando se bloquea el drenaje de los senos, se acumulan secreciones y aparece congestión, presión facial y goteo nasal. Una duración prolongada, empeoramiento tras mejoría o síntomas intensos hacen considerar otras causas."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse tos, fiebre, falta de aire, dolor de garganta, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Suele diagnosticarse por síntomas y examen. Las imágenes no son rutinarias y solo se consideran ante complicaciones, recurrencias o sospecha de otra causa; el catálogo actual no contiene un examen específico de senos paranasales para enlazar."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como vacunacion cuando corresponda, lavado de manos, evitar humo e irritantes, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Hidratarse Usar lavado salino con agua segura Evitar humo No exigir antibióticos cuando el profesional considera causa viral."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si dura más de 10 días sin mejorar, empeora después de una mejoría, la fiebre se prolonga o hay episodios repetidos."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Hinchazón alrededor del ojo; visión doble o pérdida visual; dolor de cabeza muy intenso; rigidez de cuello; confusión; dolor facial con deterioro rápido."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "congestion-nasal",
+      "secrecion-nasal",
+      "dolor-de-cabeza"
+    ],
+    "examenes": [],
+    "medicamentos": [
+      "fluticasona-nasal"
+    ],
+    "enfermedades": [
+      "rinitis-alergica",
+      "resfrio-comun",
+      "faringitis"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-tos",
-      "slug": "tos",
-      "categoria": "Relacionados",
-      "titulo": "tos"
+      "tipo": "sintoma",
+      "slug": "congestion-nasal",
+      "titulo": "Congestion nasal"
     },
     {
-      "id": "rel-fiebre",
-      "slug": "fiebre",
-      "categoria": "Relacionados",
-      "titulo": "fiebre"
+      "tipo": "sintoma",
+      "slug": "secrecion-nasal",
+      "titulo": "Secrecion nasal"
     },
     {
-      "id": "rel-falta-de-aire",
-      "slug": "falta-de-aire",
-      "categoria": "Relacionados",
-      "titulo": "falta de aire"
+      "tipo": "sintoma",
+      "slug": "dolor-de-cabeza",
+      "titulo": "Dolor de cabeza"
     },
     {
-      "id": "rel-dolor-de-garganta",
-      "slug": "dolor-de-garganta",
-      "categoria": "Relacionados",
-      "titulo": "dolor de garganta"
+      "tipo": "medicamento",
+      "slug": "fluticasona-nasal",
+      "titulo": "Fluticasona nasal"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "rinitis-alergica",
+      "titulo": "Rinitis alergica"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "resfrio-comun",
+      "titulo": "Resfrio comun"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "faringitis",
+      "titulo": "Faringitis"
     }
   ],
+  "seo": {
+    "titulo": "Sinusitis: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La sinusitis es inflamación de uno o más senos paranasales, generalmente después de un resfrío o por alergias. La mayoría de cuadros agudos son virales y mejoran sin antibióticos.",
+    "expresiones_coloquiales": [
+      "rinosinusitis"
+    ],
+    "errores_ortograficos": [
+      "sinucitis"
+    ],
+    "singular_plural": [
+      "caso de sinusitis",
+      "casos de sinusitis"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
-      "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
+      "id": "sinusitis-fuente-1",
       "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Sinus Infection Basics",
+      "url": "https://www.cdc.gov/sinus-infection/about/index.html",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Sinusitis se relaciona con virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La sinusitis es inflamación de uno o más senos paranasales, generalmente después de un resfrío o por alergias. La mayoría de cuadros agudos son virales y mejoran sin antibióticos."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "La orientacion sobre Sinusitis debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Cuando se bloquea el drenaje de los senos, se acumulan secreciones y aparece congestión, presión facial y goteo nasal. Una duración prolongada, empeoramiento tras mejoría o síntomas intensos hacen considerar otras causas."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
+        "congestión o secreción nasal",
+        "presión o dolor facial",
+        "dolor de cabeza",
+        "goteo hacia la garganta",
         "tos",
-        "fiebre",
-        "falta de aire",
-        "dolor de garganta",
-        "flema"
+        "disminución del olfato"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por virus, bacterias, alergias, humo, contaminacion, irritantes o enfermedades respiratorias previas. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "tabaco y humo ajeno",
+        "alergias no controladas",
+        "infecciones respiratorias",
+        "irritantes"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "asma o EPOC",
-        "edad extrema",
-        "tabaquismo",
-        "defensas bajas"
+        "pólipos o alteraciones anatómicas",
+        "inmunosupresión",
+        "episodios previos"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Sinusitis debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Suele diagnosticarse por síntomas y examen. Las imágenes no son rutinarias y solo se consideran ante complicaciones, recurrencias o sospecha de otra causa; el catálogo actual no contiene un examen específico de senos paranasales para enlazar."
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Sinusitis depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Hidratarse",
+        "Usar lavado salino con agua segura",
+        "Evitar humo",
+        "No exigir antibióticos cuando el profesional considera causa viral"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si dura más de 10 días sin mejorar, empeora después de una mejoría, la fiebre se prolonga o hay episodios repetidos."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Hinchazón alrededor del ojo",
+        "visión doble o pérdida visual",
+        "dolor de cabeza muy intenso",
+        "rigidez de cuello",
+        "confusión",
+        "dolor facial con deterioro rápido"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "vacunacion cuando corresponda",
-        "lavado de manos",
-        "evitar humo e irritantes",
-        "consultar si hay falta de aire"
+        "Lavado de manos",
+        "control de alergias",
+        "no fumar",
+        "vacunas respiratorias indicadas",
+        "agua segura para lavados nasales"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Sinusitis? Cuando se bloquea el drenaje de los senos, se acumulan secreciones y aparece congestión, presión facial y goteo nasal. Una duración prolongada, empeoramiento tras mejoría o síntomas intensos hacen considerar otras causas.",
+        "¿Cómo suele confirmarse? Suele diagnosticarse por síntomas y examen. Las imágenes no son rutinarias y solo se consideran ante complicaciones, recurrencias o sospecha de otra causa; el catálogo actual no contiene un examen específico de senos paranasales para enlazar.",
+        "¿Qué puedo hacer mientras busco orientación? Hidratarse Usar lavado salino con agua segura Evitar humo No exigir antibióticos cuando el profesional considera causa viral.",
+        "¿Cuándo debo consultar? Consulta si dura más de 10 días sin mejorar, empeora después de una mejoría, la fiebre se prolonga o hay episodios repetidos.",
+        "¿Qué señales requieren atención inmediata? Hinchazón alrededor del ojo; visión doble o pérdida visual; dolor de cabeza muy intenso; rigidez de cuello; confusión; dolor facial con deterioro rápido."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Sinusitis varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Neumología o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Congestion nasal",
+        "sintoma: Secrecion nasal",
+        "sintoma: Dolor de cabeza",
+        "medicamento: Fluticasona nasal",
+        "enfermedad: Rinitis alergica",
+        "enfermedad: Resfrio comun",
+        "enfermedad: Faringitis"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "CDC — Sinus Infection Basics"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

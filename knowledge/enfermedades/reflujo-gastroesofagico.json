@@ -1,222 +1,361 @@
 {
   "id": "enfermedad-reflujo-gastroesofagico",
   "slug": "reflujo-gastroesofagico",
-  "titulo": "Reflujo gastroesofagico",
+  "titulo": "Reflujo gastroesofágico",
   "tipo": "enfermedad",
-  "categoria": "Sistema digestivo",
-  "descripcion": "Comprender Reflujo gastroesofagico exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Reflujo gastroesofagico se relaciona con infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Reflujo gastroesofagico ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "aliases": [
+    "ERGE",
+    "reflujo ácido",
+    "reflujo gastroesofagico"
+  ],
+  "keywords": [
+    "reflujo gastroesofágico",
+    "ERGE",
+    "reflujo ácido",
+    "reflujo gastroesofagico",
+    "acidez",
+    "reflujo",
+    "dificultad para tragar",
+    "dolor de pecho",
+    "tos"
+  ],
+  "categoria": "Digestivo",
+  "especialidad": "Gastroenterología y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "El reflujo gastroesofágico ocurre cuando el contenido del estómago regresa al esófago. Si causa síntomas repetidos o complicaciones se denomina enfermedad por reflujo gastroesofágico; la acidez y la regurgitación son manifestaciones típicas.",
+  "descripcion": "El reflujo ocasional es común. Se considera enfermedad cuando los episodios son molestos, frecuentes o dañan el esófago. Puede presentarse también con tos, ronquera o dificultad para tragar.",
+  "que_es": "El reflujo ocasional es común. Se considera enfermedad cuando los episodios son molestos, frecuentes o dañan el esófago. Puede presentarse también con tos, ronquera o dificultad para tragar.",
+  "para_que_sirve": "Esta ficha ayuda a comprender reflujo gastroesofágico, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "El reflujo gastroesofágico ocurre cuando el contenido del estómago regresa al esófago. Si causa síntomas repetidos o complicaciones se denomina enfermedad por reflujo gastroesofágico; la acidez y la regurgitación son manifestaciones típicas.",
   "sintomas": [
-    "dolor de estomago",
-    "nauseas",
-    "vomitos",
-    "diarrea",
-    "acidez"
+    "ardor detrás del esternón",
+    "regurgitación ácida o de alimentos",
+    "dolor o dificultad al tragar",
+    "tos crónica o ronquera",
+    "náuseas"
   ],
   "factores_riesgo": [
-    "uso frecuente de antiinflamatorios",
-    "alcohol o tabaco",
-    "antecedentes digestivos",
-    "sangrado o perdida de peso"
+    "sobrepeso u obesidad",
+    "tabaco",
+    "comidas copiosas antes de acostarse",
+    "algunos medicamentos",
+    "embarazo",
+    "hernia hiatal",
+    "alteraciones del esfínter esofágico"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "sobrepeso u obesidad",
+      "tabaco",
+      "comidas copiosas antes de acostarse",
+      "algunos medicamentos"
+    ],
+    "no_modificables": [
+      "embarazo",
+      "hernia hiatal",
+      "alteraciones del esfínter esofágico"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "A menudo se reconoce por síntomas e historia clínica. La endoscopia se reserva para señales de alarma o complicaciones; la monitorización de pH puede confirmar exposición al ácido en casos seleccionados.",
+    "examenes_relacionados": [
+      "endoscopia-digestiva-alta"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Evitar acostarse inmediatamente después de comer",
+    "Identificar desencadenantes personales sin dietas excesivamente restrictivas",
+    "Mantener peso saludable",
+    "Evitar tabaco"
+  ],
+  "cuando_consultar": "Consulta si los síntomas son frecuentes, no mejoran con medidas generales o requieren productos de venta libre repetidamente.",
+  "senales_alarma": "Dolor de pecho nuevo o intenso; dificultad progresiva para tragar; vómitos persistentes; sangre en vómito o heces negras; pérdida de peso inexplicada.",
+  "senales_alarma_lista": [
+    "Dolor de pecho nuevo o intenso",
+    "dificultad progresiva para tragar",
+    "vómitos persistentes",
+    "sangre en vómito o heces negras",
+    "pérdida de peso inexplicada"
   ],
   "prevencion": [
-    "evitar irritantes conocidos",
-    "mantener hidratacion",
-    "consultar por sintomas persistentes",
-    "no automedicarse ante dolor intenso"
+    "Peso saludable",
+    "evitar tabaco",
+    "porciones moderadas",
+    "no acostarse después de comer"
   ],
-  "cuando_consultar": "Consulta si sospechas reflujo gastroesofagico, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Reflujo gastroesofagico?",
-      "respuesta": "Es una condicion relacionada con aparato digestivo. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Reflujo gastroesofágico?",
+      "respuesta": "El reflujo ocasional es común. Se considera enfermedad cuando los episodios son molestos, frecuentes o dañan el esófago. Puede presentarse también con tos, ronquera o dificultad para tragar."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse dolor de estomago, nauseas, vomitos, diarrea, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "A menudo se reconoce por síntomas e historia clínica. La endoscopia se reserva para señales de alarma o complicaciones; la monitorización de pH puede confirmar exposición al ácido en casos seleccionados."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como evitar irritantes conocidos, mantener hidratacion, consultar por sintomas persistentes, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Evitar acostarse inmediatamente después de comer Identificar desencadenantes personales sin dietas excesivamente restrictivas Mantener peso saludable Evitar tabaco."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si los síntomas son frecuentes, no mejoran con medidas generales o requieren productos de venta libre repetidamente."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Dolor de pecho nuevo o intenso; dificultad progresiva para tragar; vómitos persistentes; sangre en vómito o heces negras; pérdida de peso inexplicada."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "acidez",
+      "reflujo",
+      "dificultad-para-tragar",
+      "dolor-de-pecho",
+      "tos"
+    ],
+    "examenes": [
+      "endoscopia-digestiva-alta"
+    ],
+    "medicamentos": [
+      "omeprazol",
+      "pantoprazol",
+      "famotidina"
+    ],
+    "enfermedades": [
+      "gastritis",
+      "ulcera-gastrica",
+      "obesidad"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-dolor-de-estomago",
-      "slug": "dolor-de-estomago",
-      "categoria": "Relacionados",
-      "titulo": "dolor de estomago"
+      "tipo": "sintoma",
+      "slug": "acidez",
+      "titulo": "Acidez"
     },
     {
-      "id": "rel-nauseas",
-      "slug": "nauseas",
-      "categoria": "Relacionados",
-      "titulo": "nauseas"
+      "tipo": "sintoma",
+      "slug": "reflujo",
+      "titulo": "Reflujo"
     },
     {
-      "id": "rel-vomitos",
-      "slug": "vomitos",
-      "categoria": "Relacionados",
-      "titulo": "vomitos"
+      "tipo": "sintoma",
+      "slug": "dificultad-para-tragar",
+      "titulo": "Dificultad para tragar"
     },
     {
-      "id": "rel-diarrea",
-      "slug": "diarrea",
-      "categoria": "Relacionados",
-      "titulo": "diarrea"
+      "tipo": "sintoma",
+      "slug": "dolor-de-pecho",
+      "titulo": "Dolor de pecho"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "tos",
+      "titulo": "Tos"
+    },
+    {
+      "tipo": "examen",
+      "slug": "endoscopia-digestiva-alta",
+      "titulo": "Endoscopia digestiva alta"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "omeprazol",
+      "titulo": "Omeprazol"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "pantoprazol",
+      "titulo": "Pantoprazol"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "famotidina",
+      "titulo": "Famotidina"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "gastritis",
+      "titulo": "Gastritis"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "ulcera-gastrica",
+      "titulo": "Ulcera gastrica"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "obesidad",
+      "titulo": "Obesidad"
     }
   ],
+  "seo": {
+    "titulo": "Reflujo gastroesofágico: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "El reflujo gastroesofágico ocurre cuando el contenido del estómago regresa al esófago. Si causa síntomas repetidos o complicaciones se denomina enfermedad por reflujo gastroesofágico; la acidez y la regurgitación son manifestaciones típicas.",
+    "expresiones_coloquiales": [
+      "ERGE"
+    ],
+    "errores_ortograficos": [
+      "reflujo gastroesofagico"
+    ],
+    "singular_plural": [
+      "caso de reflujo gastroesofágico",
+      "casos de reflujo gastroesofágico"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
-      "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
+      "id": "reflujo-gastroesofagico-fuente-1",
+      "organizacion": "NIDDK",
+      "titulo": "Symptoms & Causes of GER & GERD",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults/symptoms-causes",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     },
     {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "id": "reflujo-gastroesofagico-fuente-2",
+      "organizacion": "NIDDK",
+      "titulo": "Diagnosis of GER & GERD",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults/diagnosis",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Reflujo gastroesofagico se relaciona con infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "El reflujo gastroesofágico ocurre cuando el contenido del estómago regresa al esófago. Si causa síntomas repetidos o complicaciones se denomina enfermedad por reflujo gastroesofágico; la acidez y la regurgitación son manifestaciones típicas."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Comprender Reflujo gastroesofagico exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "El reflujo ocasional es común. Se considera enfermedad cuando los episodios son molestos, frecuentes o dañan el esófago. Puede presentarse también con tos, ronquera o dificultad para tragar."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "dolor de estomago",
-        "nauseas",
-        "vomitos",
-        "diarrea",
-        "acidez"
+        "ardor detrás del esternón",
+        "regurgitación ácida o de alimentos",
+        "dolor o dificultad al tragar",
+        "tos crónica o ronquera",
+        "náuseas"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por infecciones, inflamacion, reflujo, alimentacion, medicamentos, alcohol, intolerancias o cambios en estomago, intestino, higado o vesicula. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "sobrepeso u obesidad",
+        "tabaco",
+        "comidas copiosas antes de acostarse",
+        "algunos medicamentos"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "uso frecuente de antiinflamatorios",
-        "alcohol o tabaco",
-        "antecedentes digestivos",
-        "sangrado o perdida de peso"
+        "embarazo",
+        "hernia hiatal",
+        "alteraciones del esfínter esofágico"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Reflujo gastroesofagico debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "A menudo se reconoce por síntomas e historia clínica. La endoscopia se reserva para señales de alarma o complicaciones; la monitorización de pH puede confirmar exposición al ácido en casos seleccionados.",
+        "Endoscopia digestiva alta"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Reflujo gastroesofagico depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Evitar acostarse inmediatamente después de comer",
+        "Identificar desencadenantes personales sin dietas excesivamente restrictivas",
+        "Mantener peso saludable",
+        "Evitar tabaco"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si los síntomas son frecuentes, no mejoran con medidas generales o requieren productos de venta libre repetidamente."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Dolor de pecho nuevo o intenso",
+        "dificultad progresiva para tragar",
+        "vómitos persistentes",
+        "sangre en vómito o heces negras",
+        "pérdida de peso inexplicada"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "evitar irritantes conocidos",
-        "mantener hidratacion",
-        "consultar por sintomas persistentes",
-        "no automedicarse ante dolor intenso"
+        "Peso saludable",
+        "evitar tabaco",
+        "porciones moderadas",
+        "no acostarse después de comer"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Reflujo gastroesofágico? El reflujo ocasional es común. Se considera enfermedad cuando los episodios son molestos, frecuentes o dañan el esófago. Puede presentarse también con tos, ronquera o dificultad para tragar.",
+        "¿Cómo suele confirmarse? A menudo se reconoce por síntomas e historia clínica. La endoscopia se reserva para señales de alarma o complicaciones; la monitorización de pH puede confirmar exposición al ácido en casos seleccionados.",
+        "¿Qué puedo hacer mientras busco orientación? Evitar acostarse inmediatamente después de comer Identificar desencadenantes personales sin dietas excesivamente restrictivas Mantener peso saludable Evitar tabaco.",
+        "¿Cuándo debo consultar? Consulta si los síntomas son frecuentes, no mejoran con medidas generales o requieren productos de venta libre repetidamente.",
+        "¿Qué señales requieren atención inmediata? Dolor de pecho nuevo o intenso; dificultad progresiva para tragar; vómitos persistentes; sangre en vómito o heces negras; pérdida de peso inexplicada."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Reflujo gastroesofagico varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Gastroenterología o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Acidez",
+        "sintoma: Reflujo",
+        "sintoma: Dificultad para tragar",
+        "sintoma: Dolor de pecho",
+        "sintoma: Tos",
+        "examen: Endoscopia digestiva alta",
+        "medicamento: Omeprazol",
+        "medicamento: Pantoprazol",
+        "medicamento: Famotidina",
+        "enfermedad: Gastritis",
+        "enfermedad: Ulcera gastrica",
+        "enfermedad: Obesidad"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "NIDDK — Symptoms & Causes of GER & GERD",
+        "NIDDK — Diagnosis of GER & GERD"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

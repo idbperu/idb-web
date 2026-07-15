@@ -1,220 +1,380 @@
 {
   "id": "enfermedad-infeccion-urinaria",
   "slug": "infeccion-urinaria",
-  "titulo": "Infeccion urinaria",
+  "titulo": "Infección urinaria",
   "tipo": "enfermedad",
-  "categoria": "Urinario",
-  "descripcion": "Comprender Infeccion urinaria exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Infeccion urinaria se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Infeccion urinaria ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "aliases": [
+    "infección de orina",
+    "ITU",
+    "infeccion urinaria"
+  ],
+  "keywords": [
+    "infección urinaria",
+    "infección de orina",
+    "ITU",
+    "infeccion urinaria",
+    "ardor al orinar",
+    "urgencia para orinar",
+    "orina con mal olor",
+    "sangre en la orina",
+    "dolor en los rinones"
+  ],
+  "categoria": "Urológico",
+  "especialidad": "Urología y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La infección urinaria aparece cuando microorganismos, casi siempre bacterias, infectan alguna parte de las vías urinarias. La cistitis afecta la vejiga; fiebre, escalofríos o dolor de espalda pueden indicar compromiso renal.",
+  "descripcion": "Incluye infecciones de uretra, vejiga, uréteres o riñones. Ardor y urgencia son frecuentes, pero síntomas parecidos pueden tener otras causas, por lo que no conviene usar antibióticos sin evaluación.",
+  "que_es": "Incluye infecciones de uretra, vejiga, uréteres o riñones. Ardor y urgencia son frecuentes, pero síntomas parecidos pueden tener otras causas, por lo que no conviene usar antibióticos sin evaluación.",
+  "para_que_sirve": "Esta ficha ayuda a comprender infección urinaria, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La infección urinaria aparece cuando microorganismos, casi siempre bacterias, infectan alguna parte de las vías urinarias. La cistitis afecta la vejiga; fiebre, escalofríos o dolor de espalda pueden indicar compromiso renal.",
   "sintomas": [
-    "fatiga",
-    "malestar general",
-    "dolor de cuerpo",
-    "fiebre"
+    "ardor al orinar",
+    "urgencia o aumento de frecuencia",
+    "dolor bajo abdominal",
+    "orina turbia, con sangre o mal olor",
+    "fiebre y dolor lumbar si afecta riñón"
   ],
   "factores_riesgo": [
-    "antecedentes familiares",
-    "edad",
-    "otras enfermedades",
-    "habitos de vida"
+    "poca ingesta de líquidos",
+    "retener orina",
+    "uso de espermicidas",
+    "catéter urinario",
+    "anatomía femenina",
+    "embarazo",
+    "diabetes",
+    "cálculos o próstata aumentada",
+    "alteraciones urinarias"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "poca ingesta de líquidos",
+      "retener orina",
+      "uso de espermicidas",
+      "catéter urinario"
+    ],
+    "no_modificables": [
+      "anatomía femenina",
+      "embarazo",
+      "diabetes",
+      "cálculos o próstata aumentada",
+      "alteraciones urinarias"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Se evalúan síntomas y examen de orina. El urocultivo identifica bacterias y sensibilidad, especialmente en embarazo, recurrencias, varones, niños o cuadros complicados.",
+    "examenes_relacionados": [
+      "examen-completo-de-orina",
+      "urocultivo",
+      "ecografia-renal-y-de-vias-urinarias",
+      "creatinina-serica"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Consultar antes de iniciar antibióticos",
+    "Mantener hidratación si no existe restricción médica",
+    "No guardar ni compartir antibióticos",
+    "Completar el tratamiento que haya indicado un profesional"
+  ],
+  "cuando_consultar": "Consulta ante ardor, urgencia o sangre en orina; la evaluación debe ser temprana en embarazo, hombres, niños, adultos mayores o infecciones repetidas.",
+  "senales_alarma": "Fiebre con escalofríos; dolor intenso en espalda o costado; vómitos; confusión en adulto mayor; embarazo con síntomas urinarios; incapacidad para orinar.",
+  "senales_alarma_lista": [
+    "Fiebre con escalofríos",
+    "dolor intenso en espalda o costado",
+    "vómitos",
+    "confusión en adulto mayor",
+    "embarazo con síntomas urinarios",
+    "incapacidad para orinar"
   ],
   "prevencion": [
-    "controles preventivos",
-    "actividad fisica segura",
-    "alimentacion equilibrada",
-    "consulta temprana ante sintomas persistentes"
+    "Hidratación adecuada",
+    "no retener orina",
+    "orinar después de relaciones si resulta útil",
+    "evitar antibióticos innecesarios"
   ],
-  "cuando_consultar": "Consulta si sospechas infeccion urinaria, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Infeccion urinaria?",
-      "respuesta": "Es una condicion relacionada con salud general. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Infección urinaria?",
+      "respuesta": "Incluye infecciones de uretra, vejiga, uréteres o riñones. Ardor y urgencia son frecuentes, pero síntomas parecidos pueden tener otras causas, por lo que no conviene usar antibióticos sin evaluación."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse fatiga, malestar general, dolor de cuerpo, fiebre, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Se evalúan síntomas y examen de orina. El urocultivo identifica bacterias y sensibilidad, especialmente en embarazo, recurrencias, varones, niños o cuadros complicados."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como controles preventivos, actividad fisica segura, alimentacion equilibrada, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Consultar antes de iniciar antibióticos Mantener hidratación si no existe restricción médica No guardar ni compartir antibióticos Completar el tratamiento que haya indicado un profesional."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta ante ardor, urgencia o sangre en orina; la evaluación debe ser temprana en embarazo, hombres, niños, adultos mayores o infecciones repetidas."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Fiebre con escalofríos; dolor intenso en espalda o costado; vómitos; confusión en adulto mayor; embarazo con síntomas urinarios; incapacidad para orinar."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "ardor-al-orinar",
+      "urgencia-para-orinar",
+      "orina-con-mal-olor",
+      "sangre-en-la-orina",
+      "dolor-en-los-rinones"
+    ],
+    "examenes": [
+      "examen-completo-de-orina",
+      "urocultivo",
+      "ecografia-renal-y-de-vias-urinarias",
+      "creatinina-serica"
+    ],
+    "medicamentos": [
+      "fosfomicina",
+      "nitrofurantoina"
+    ],
+    "enfermedades": [
+      "cistitis",
+      "pielonefritis",
+      "calculos-renales"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-fatiga",
-      "slug": "fatiga",
-      "categoria": "Relacionados",
-      "titulo": "fatiga"
+      "tipo": "sintoma",
+      "slug": "ardor-al-orinar",
+      "titulo": "Ardor al orinar"
     },
     {
-      "id": "rel-malestar-general",
-      "slug": "malestar-general",
-      "categoria": "Relacionados",
-      "titulo": "malestar general"
+      "tipo": "sintoma",
+      "slug": "urgencia-para-orinar",
+      "titulo": "Urgencia para orinar"
     },
     {
-      "id": "rel-dolor-de-cuerpo",
-      "slug": "dolor-de-cuerpo",
-      "categoria": "Relacionados",
-      "titulo": "dolor de cuerpo"
+      "tipo": "sintoma",
+      "slug": "orina-con-mal-olor",
+      "titulo": "Orina con mal olor"
     },
     {
-      "id": "rel-fiebre",
-      "slug": "fiebre",
-      "categoria": "Relacionados",
-      "titulo": "fiebre"
+      "tipo": "sintoma",
+      "slug": "sangre-en-la-orina",
+      "titulo": "Sangre en la orina"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "dolor-en-los-rinones",
+      "titulo": "Dolor en los riñones"
+    },
+    {
+      "tipo": "examen",
+      "slug": "examen-completo-de-orina",
+      "titulo": "Examen completo de orina"
+    },
+    {
+      "tipo": "examen",
+      "slug": "urocultivo",
+      "titulo": "Urocultivo"
+    },
+    {
+      "tipo": "examen",
+      "slug": "ecografia-renal-y-de-vias-urinarias",
+      "titulo": "Ecografía renal y de vías urinarias"
+    },
+    {
+      "tipo": "examen",
+      "slug": "creatinina-serica",
+      "titulo": "Creatinina sérica"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "fosfomicina",
+      "titulo": "Fosfomicina"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "nitrofurantoina",
+      "titulo": "Nitrofurantoina"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "cistitis",
+      "titulo": "Cistitis"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "pielonefritis",
+      "titulo": "Pielonefritis"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "calculos-renales",
+      "titulo": "Calculos renales"
     }
   ],
+  "seo": {
+    "titulo": "Infección urinaria: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La infección urinaria aparece cuando microorganismos, casi siempre bacterias, infectan alguna parte de las vías urinarias. La cistitis afecta la vejiga; fiebre, escalofríos o dolor de espalda pueden indicar compromiso renal.",
+    "expresiones_coloquiales": [
+      "infección de orina"
+    ],
+    "errores_ortograficos": [
+      "infeccion urinaria"
+    ],
+    "singular_plural": [
+      "caso de infección urinaria",
+      "casos de infección urinaria"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
-      "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "id": "infeccion-urinaria-fuente-1",
+      "organizacion": "NIDDK",
+      "titulo": "Bladder Infection (UTI) in Adults",
+      "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Infeccion urinaria se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La infección urinaria aparece cuando microorganismos, casi siempre bacterias, infectan alguna parte de las vías urinarias. La cistitis afecta la vejiga; fiebre, escalofríos o dolor de espalda pueden indicar compromiso renal."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Comprender Infeccion urinaria exige mirar sintomas, antecedentes y evolucion, no solo un resultado o una molestia aislada. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Incluye infecciones de uretra, vejiga, uréteres o riñones. Ardor y urgencia son frecuentes, pero síntomas parecidos pueden tener otras causas, por lo que no conviene usar antibióticos sin evaluación."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "fatiga",
-        "malestar general",
-        "dolor de cuerpo",
-        "fiebre"
+        "ardor al orinar",
+        "urgencia o aumento de frecuencia",
+        "dolor bajo abdominal",
+        "orina turbia, con sangre o mal olor",
+        "fiebre y dolor lumbar si afecta riñón"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "poca ingesta de líquidos",
+        "retener orina",
+        "uso de espermicidas",
+        "catéter urinario"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "antecedentes familiares",
-        "edad",
-        "otras enfermedades",
-        "habitos de vida"
+        "anatomía femenina",
+        "embarazo",
+        "diabetes",
+        "cálculos o próstata aumentada",
+        "alteraciones urinarias"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Infeccion urinaria debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Se evalúan síntomas y examen de orina. El urocultivo identifica bacterias y sensibilidad, especialmente en embarazo, recurrencias, varones, niños o cuadros complicados.",
+        "Examen completo de orina",
+        "Urocultivo",
+        "Ecografía renal y de vías urinarias",
+        "Creatinina sérica"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Infeccion urinaria depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Consultar antes de iniciar antibióticos",
+        "Mantener hidratación si no existe restricción médica",
+        "No guardar ni compartir antibióticos",
+        "Completar el tratamiento que haya indicado un profesional"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta ante ardor, urgencia o sangre en orina; la evaluación debe ser temprana en embarazo, hombres, niños, adultos mayores o infecciones repetidas."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Fiebre con escalofríos",
+        "dolor intenso en espalda o costado",
+        "vómitos",
+        "confusión en adulto mayor",
+        "embarazo con síntomas urinarios",
+        "incapacidad para orinar"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "controles preventivos",
-        "actividad fisica segura",
-        "alimentacion equilibrada",
-        "consulta temprana ante sintomas persistentes"
+        "Hidratación adecuada",
+        "no retener orina",
+        "orinar después de relaciones si resulta útil",
+        "evitar antibióticos innecesarios"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Infección urinaria? Incluye infecciones de uretra, vejiga, uréteres o riñones. Ardor y urgencia son frecuentes, pero síntomas parecidos pueden tener otras causas, por lo que no conviene usar antibióticos sin evaluación.",
+        "¿Cómo suele confirmarse? Se evalúan síntomas y examen de orina. El urocultivo identifica bacterias y sensibilidad, especialmente en embarazo, recurrencias, varones, niños o cuadros complicados.",
+        "¿Qué puedo hacer mientras busco orientación? Consultar antes de iniciar antibióticos Mantener hidratación si no existe restricción médica No guardar ni compartir antibióticos Completar el tratamiento que haya indicado un profesional.",
+        "¿Cuándo debo consultar? Consulta ante ardor, urgencia o sangre en orina; la evaluación debe ser temprana en embarazo, hombres, niños, adultos mayores o infecciones repetidas.",
+        "¿Qué señales requieren atención inmediata? Fiebre con escalofríos; dolor intenso en espalda o costado; vómitos; confusión en adulto mayor; embarazo con síntomas urinarios; incapacidad para orinar."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Infeccion urinaria varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Urinario o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Ardor al orinar",
+        "sintoma: Urgencia para orinar",
+        "sintoma: Orina con mal olor",
+        "sintoma: Sangre en la orina",
+        "sintoma: Dolor en los riñones",
+        "examen: Examen completo de orina",
+        "examen: Urocultivo",
+        "examen: Ecografía renal y de vías urinarias",
+        "examen: Creatinina sérica",
+        "medicamento: Fosfomicina",
+        "medicamento: Nitrofurantoina",
+        "enfermedad: Cistitis",
+        "enfermedad: Pielonefritis",
+        "enfermedad: Calculos renales"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "NIDDK — Bladder Infection (UTI) in Adults"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

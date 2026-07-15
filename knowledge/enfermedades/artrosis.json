@@ -3,218 +3,356 @@
   "slug": "artrosis",
   "titulo": "Artrosis",
   "tipo": "enfermedad",
-  "categoria": "Musculoesqueletico",
-  "descripcion": "Artrosis es una condicion vinculada con salud general. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Artrosis se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Artrosis ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "aliases": [
+    "osteoartritis",
+    "desgaste articular",
+    "artroxis"
+  ],
+  "keywords": [
+    "artrosis",
+    "osteoartritis",
+    "desgaste articular",
+    "artroxis",
+    "dolor articular",
+    "dolor de rodilla",
+    "dolor de cadera",
+    "dificultad para caminar"
+  ],
+  "categoria": "Reumatológico",
+  "especialidad": "Reumatología, traumatología y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La artrosis es una enfermedad de toda la articulación en la que cambian cartílago, hueso y tejidos vecinos. Produce dolor relacionado con el uso, rigidez breve y limitación; no es simplemente una consecuencia inevitable de la edad.",
+  "descripcion": "Afecta con frecuencia rodillas, caderas, manos y columna. Los síntomas y la función importan más que una radiografía aislada, porque los cambios de imagen no siempre coinciden con el dolor.",
+  "que_es": "Afecta con frecuencia rodillas, caderas, manos y columna. Los síntomas y la función importan más que una radiografía aislada, porque los cambios de imagen no siempre coinciden con el dolor.",
+  "para_que_sirve": "Esta ficha ayuda a comprender artrosis, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La artrosis es una enfermedad de toda la articulación en la que cambian cartílago, hueso y tejidos vecinos. Produce dolor relacionado con el uso, rigidez breve y limitación; no es simplemente una consecuencia inevitable de la edad.",
   "sintomas": [
-    "fatiga",
-    "malestar general",
-    "dolor de cuerpo",
-    "fiebre"
+    "dolor que aumenta con actividad",
+    "rigidez después del reposo",
+    "limitación de movimiento",
+    "crujidos",
+    "hinchazón o cambios de forma"
   ],
   "factores_riesgo": [
-    "antecedentes familiares",
+    "exceso de peso",
+    "lesiones articulares",
+    "sobrecarga repetitiva",
+    "debilidad muscular",
     "edad",
-    "otras enfermedades",
-    "habitos de vida"
+    "sexo femenino",
+    "genética",
+    "forma de la articulación"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "exceso de peso",
+      "lesiones articulares",
+      "sobrecarga repetitiva",
+      "debilidad muscular"
+    ],
+    "no_modificables": [
+      "edad",
+      "sexo femenino",
+      "genética",
+      "forma de la articulación"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Se basa en historia y examen de la articulación. La imagen se usa si hay duda, trauma, evolución atípica o para planificar procedimientos; la resonancia de rodilla puede ser útil en casos seleccionados y la proteína C reactiva ayuda a valorar diagnósticos inflamatorios alternativos.",
+    "examenes_relacionados": [
+      "resonancia-magnetica-de-rodilla",
+      "proteina-c-reactiva-pcr"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Mantener movimiento y ejercicios de fuerza progresivos",
+    "Dosificar actividades sin inmovilizarse por completo",
+    "Usar apoyo o fisioterapia si se indica",
+    "Buscar orientación antes de tomar AINE repetidamente"
+  ],
+  "cuando_consultar": "Consulta si el dolor limita actividades, la articulación se hincha, falla o el diagnóstico no está claro.",
+  "senales_alarma": "Articulación roja, caliente y muy dolorosa; fiebre con articulación hinchada; incapacidad súbita para apoyar; deformidad tras trauma; dolor nocturno progresivo con pérdida de peso.",
+  "senales_alarma_lista": [
+    "Articulación roja, caliente y muy dolorosa",
+    "fiebre con articulación hinchada",
+    "incapacidad súbita para apoyar",
+    "deformidad tras trauma",
+    "dolor nocturno progresivo con pérdida de peso"
   ],
   "prevencion": [
-    "controles preventivos",
-    "actividad fisica segura",
-    "alimentacion equilibrada",
-    "consulta temprana ante sintomas persistentes"
+    "Peso saludable",
+    "actividad física",
+    "fortalecimiento muscular",
+    "prevención de lesiones",
+    "adaptación de cargas"
   ],
-  "cuando_consultar": "Consulta si sospechas artrosis, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Artrosis?",
-      "respuesta": "Es una condicion relacionada con salud general. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Artrosis?",
+      "respuesta": "Afecta con frecuencia rodillas, caderas, manos y columna. Los síntomas y la función importan más que una radiografía aislada, porque los cambios de imagen no siempre coinciden con el dolor."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse fatiga, malestar general, dolor de cuerpo, fiebre, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Se basa en historia y examen de la articulación. La imagen se usa si hay duda, trauma, evolución atípica o para planificar procedimientos; la resonancia de rodilla puede ser útil en casos seleccionados y la proteína C reactiva ayuda a valorar diagnósticos inflamatorios alternativos."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como controles preventivos, actividad fisica segura, alimentacion equilibrada, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Mantener movimiento y ejercicios de fuerza progresivos Dosificar actividades sin inmovilizarse por completo Usar apoyo o fisioterapia si se indica Buscar orientación antes de tomar AINE repetidamente."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si el dolor limita actividades, la articulación se hincha, falla o el diagnóstico no está claro."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Articulación roja, caliente y muy dolorosa; fiebre con articulación hinchada; incapacidad súbita para apoyar; deformidad tras trauma; dolor nocturno progresivo con pérdida de peso."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "dolor-articular",
+      "dolor-de-rodilla",
+      "dolor-de-cadera",
+      "dificultad-para-caminar"
+    ],
+    "examenes": [
+      "resonancia-magnetica-de-rodilla",
+      "proteina-c-reactiva-pcr"
+    ],
+    "medicamentos": [
+      "paracetamol",
+      "ibuprofeno",
+      "diclofenaco"
+    ],
+    "enfermedades": [
+      "obesidad",
+      "osteoporosis",
+      "artritis-reumatoide"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-fatiga",
-      "slug": "fatiga",
-      "categoria": "Relacionados",
-      "titulo": "fatiga"
+      "tipo": "sintoma",
+      "slug": "dolor-articular",
+      "titulo": "Dolor articular"
     },
     {
-      "id": "rel-malestar-general",
-      "slug": "malestar-general",
-      "categoria": "Relacionados",
-      "titulo": "malestar general"
+      "tipo": "sintoma",
+      "slug": "dolor-de-rodilla",
+      "titulo": "Dolor de rodilla"
     },
     {
-      "id": "rel-dolor-de-cuerpo",
-      "slug": "dolor-de-cuerpo",
-      "categoria": "Relacionados",
-      "titulo": "dolor de cuerpo"
+      "tipo": "sintoma",
+      "slug": "dolor-de-cadera",
+      "titulo": "Dolor de cadera"
     },
     {
-      "id": "rel-fiebre",
-      "slug": "fiebre",
-      "categoria": "Relacionados",
-      "titulo": "fiebre"
+      "tipo": "sintoma",
+      "slug": "dificultad-para-caminar",
+      "titulo": "Dificultad para caminar"
+    },
+    {
+      "tipo": "examen",
+      "slug": "resonancia-magnetica-de-rodilla",
+      "titulo": "Resonancia magnética de rodilla"
+    },
+    {
+      "tipo": "examen",
+      "slug": "proteina-c-reactiva-pcr",
+      "titulo": "Proteína C reactiva (PCR)"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "paracetamol",
+      "titulo": "Paracetamol"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "ibuprofeno",
+      "titulo": "Ibuprofeno"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "diclofenaco",
+      "titulo": "Diclofenaco"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "obesidad",
+      "titulo": "Obesidad"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "osteoporosis",
+      "titulo": "Osteoporosis"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "artritis-reumatoide",
+      "titulo": "Artritis reumatoide"
     }
   ],
+  "seo": {
+    "titulo": "Artrosis: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La artrosis es una enfermedad de toda la articulación en la que cambian cartílago, hueso y tejidos vecinos. Produce dolor relacionado con el uso, rigidez breve y limitación; no es simplemente una consecuencia inevitable de la edad.",
+    "expresiones_coloquiales": [
+      "osteoartritis"
+    ],
+    "errores_ortograficos": [
+      "artroxis"
+    ],
+    "singular_plural": [
+      "caso de artrosis",
+      "casos de artrosis"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
+      "id": "artrosis-fuente-1",
       "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Osteoarthritis",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/osteoarthritis",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Artrosis se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La artrosis es una enfermedad de toda la articulación en la que cambian cartílago, hueso y tejidos vecinos. Produce dolor relacionado con el uso, rigidez breve y limitación; no es simplemente una consecuencia inevitable de la edad."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Artrosis es una condicion vinculada con salud general. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Afecta con frecuencia rodillas, caderas, manos y columna. Los síntomas y la función importan más que una radiografía aislada, porque los cambios de imagen no siempre coinciden con el dolor."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "fatiga",
-        "malestar general",
-        "dolor de cuerpo",
-        "fiebre"
+        "dolor que aumenta con actividad",
+        "rigidez después del reposo",
+        "limitación de movimiento",
+        "crujidos",
+        "hinchazón o cambios de forma"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "exceso de peso",
+        "lesiones articulares",
+        "sobrecarga repetitiva",
+        "debilidad muscular"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "antecedentes familiares",
         "edad",
-        "otras enfermedades",
-        "habitos de vida"
+        "sexo femenino",
+        "genética",
+        "forma de la articulación"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Artrosis debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Se basa en historia y examen de la articulación. La imagen se usa si hay duda, trauma, evolución atípica o para planificar procedimientos; la resonancia de rodilla puede ser útil en casos seleccionados y la proteína C reactiva ayuda a valorar diagnósticos inflamatorios alternativos.",
+        "Resonancia magnética de rodilla",
+        "Proteína C reactiva (PCR)"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Artrosis depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Mantener movimiento y ejercicios de fuerza progresivos",
+        "Dosificar actividades sin inmovilizarse por completo",
+        "Usar apoyo o fisioterapia si se indica",
+        "Buscar orientación antes de tomar AINE repetidamente"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si el dolor limita actividades, la articulación se hincha, falla o el diagnóstico no está claro."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Articulación roja, caliente y muy dolorosa",
+        "fiebre con articulación hinchada",
+        "incapacidad súbita para apoyar",
+        "deformidad tras trauma",
+        "dolor nocturno progresivo con pérdida de peso"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "controles preventivos",
-        "actividad fisica segura",
-        "alimentacion equilibrada",
-        "consulta temprana ante sintomas persistentes"
+        "Peso saludable",
+        "actividad física",
+        "fortalecimiento muscular",
+        "prevención de lesiones",
+        "adaptación de cargas"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Artrosis? Afecta con frecuencia rodillas, caderas, manos y columna. Los síntomas y la función importan más que una radiografía aislada, porque los cambios de imagen no siempre coinciden con el dolor.",
+        "¿Cómo suele confirmarse? Se basa en historia y examen de la articulación. La imagen se usa si hay duda, trauma, evolución atípica o para planificar procedimientos; la resonancia de rodilla puede ser útil en casos seleccionados y la proteína C reactiva ayuda a valorar diagnósticos inflamatorios alternativos.",
+        "¿Qué puedo hacer mientras busco orientación? Mantener movimiento y ejercicios de fuerza progresivos Dosificar actividades sin inmovilizarse por completo Usar apoyo o fisioterapia si se indica Buscar orientación antes de tomar AINE repetidamente.",
+        "¿Cuándo debo consultar? Consulta si el dolor limita actividades, la articulación se hincha, falla o el diagnóstico no está claro.",
+        "¿Qué señales requieren atención inmediata? Articulación roja, caliente y muy dolorosa; fiebre con articulación hinchada; incapacidad súbita para apoyar; deformidad tras trauma; dolor nocturno progresivo con pérdida de peso."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Artrosis varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Traumatología, reumatología o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Dolor articular",
+        "sintoma: Dolor de rodilla",
+        "sintoma: Dolor de cadera",
+        "sintoma: Dificultad para caminar",
+        "examen: Resonancia magnética de rodilla",
+        "examen: Proteína C reactiva (PCR)",
+        "medicamento: Paracetamol",
+        "medicamento: Ibuprofeno",
+        "medicamento: Diclofenaco",
+        "enfermedad: Obesidad",
+        "enfermedad: Osteoporosis",
+        "enfermedad: Artritis reumatoide"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "OMS — Osteoarthritis"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

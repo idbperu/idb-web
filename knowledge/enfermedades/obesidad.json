@@ -3,218 +3,384 @@
   "slug": "obesidad",
   "titulo": "Obesidad",
   "tipo": "enfermedad",
-  "categoria": "Metabolico",
-  "descripcion": "Obesidad es una condicion vinculada con metabolismo y hormonas. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Obesidad se relaciona con resistencia a la insulina, cambios hormonales, genetica, alimentacion, peso, actividad fisica y otros factores metabolicos. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Obesidad ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por resistencia a la insulina, cambios hormonales, genetica, alimentacion, peso, actividad fisica y otros factores metabolicos. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "aliases": [
+    "exceso de grasa corporal",
+    "obecidad",
+    "obesidad clínica"
+  ],
+  "keywords": [
+    "obesidad",
+    "exceso de grasa corporal",
+    "obecidad",
+    "obesidad clínica",
+    "aumento de peso",
+    "cansancio al caminar",
+    "dolor articular",
+    "ronquidos",
+    "pausas al respirar durante el sueno"
+  ],
+  "categoria": "Preventivo",
+  "especialidad": "Medicina familiar, nutrición y endocrinología",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La obesidad es una enfermedad crónica y recurrente producida por interacciones biológicas, ambientales y sociales, no por falta de voluntad. Se evalúa con peso, talla, índice de masa corporal y contexto clínico, además de buscar enfermedades asociadas.",
+  "descripcion": "Es una acumulación excesiva de grasa corporal que puede afectar la salud. El índice de masa corporal sirve como herramienta de tamizaje, pero debe interpretarse junto con distribución de grasa, etapa de vida, antecedentes y posibles complicaciones.",
+  "que_es": "Es una acumulación excesiva de grasa corporal que puede afectar la salud. El índice de masa corporal sirve como herramienta de tamizaje, pero debe interpretarse junto con distribución de grasa, etapa de vida, antecedentes y posibles complicaciones.",
+  "para_que_sirve": "Esta ficha ayuda a comprender obesidad, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La obesidad es una enfermedad crónica y recurrente producida por interacciones biológicas, ambientales y sociales, no por falta de voluntad. Se evalúa con peso, talla, índice de masa corporal y contexto clínico, además de buscar enfermedades asociadas.",
   "sintomas": [
-    "sed excesiva",
-    "orinar frecuente",
-    "fatiga",
-    "cambios de peso"
+    "A menudo no produce un síntoma único",
+    "dificultad para realizar algunas actividades",
+    "dolor articular",
+    "ronquidos o pausas al dormir",
+    "cansancio con el esfuerzo"
   ],
   "factores_riesgo": [
-    "antecedentes familiares",
-    "sobrepeso",
-    "sedentarismo",
-    "embarazo o edad avanzada"
+    "entorno alimentario",
+    "baja actividad física",
+    "sueño insuficiente",
+    "algunos medicamentos",
+    "estrés crónico",
+    "genética",
+    "edad",
+    "condiciones hormonales",
+    "historia temprana de crecimiento"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "entorno alimentario",
+      "baja actividad física",
+      "sueño insuficiente",
+      "algunos medicamentos",
+      "estrés crónico"
+    ],
+    "no_modificables": [
+      "genética",
+      "edad",
+      "condiciones hormonales",
+      "historia temprana de crecimiento"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Un profesional mide peso y talla, calcula el índice de masa corporal según edad y evalúa cintura, antecedentes, medicamentos y comorbilidades. Puede solicitar glucosa, lípidos y función hepática.",
+    "examenes_relacionados": [
+      "glucosa-en-sangre",
+      "hemoglobina-glicosilada-hba1c",
+      "perfil-lipidico",
+      "prueba-de-funcion-hepatica",
+      "tsh"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Buscar un plan integral sin estigma y con objetivos realistas",
+    "Priorizar alimentos frescos y actividad sostenible",
+    "Cuidar sueño y salud mental",
+    "Evitar dietas extremas o productos sin respaldo"
+  ],
+  "cuando_consultar": "Consulta si el peso afecta movilidad, sueño, menstruación, respiración o bienestar emocional, o si existe diabetes, presión alta o hígado graso.",
+  "senales_alarma": "Falta de aire intensa o súbita; dolor de pecho; desmayo; hinchazón rápida de piernas; somnolencia extrema con dificultad respiratoria.",
+  "senales_alarma_lista": [
+    "Falta de aire intensa o súbita",
+    "dolor de pecho",
+    "desmayo",
+    "hinchazón rápida de piernas",
+    "somnolencia extrema con dificultad respiratoria"
   ],
   "prevencion": [
-    "controles de glucosa cuando corresponda",
-    "alimentacion equilibrada",
-    "actividad fisica regular",
-    "seguimiento profesional si hay diagnostico previo"
+    "Entornos que faciliten alimentación saludable",
+    "actividad física desde la infancia",
+    "sueño suficiente",
+    "seguimiento del crecimiento sin estigma"
   ],
-  "cuando_consultar": "Consulta si sospechas obesidad, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Obesidad?",
-      "respuesta": "Es una condicion relacionada con metabolismo y hormonas. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Obesidad?",
+      "respuesta": "Es una acumulación excesiva de grasa corporal que puede afectar la salud. El índice de masa corporal sirve como herramienta de tamizaje, pero debe interpretarse junto con distribución de grasa, etapa de vida, antecedentes y posibles complicaciones."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse sed excesiva, orinar frecuente, fatiga, cambios de peso, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Un profesional mide peso y talla, calcula el índice de masa corporal según edad y evalúa cintura, antecedentes, medicamentos y comorbilidades. Puede solicitar glucosa, lípidos y función hepática."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como controles de glucosa cuando corresponda, alimentacion equilibrada, actividad fisica regular, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Buscar un plan integral sin estigma y con objetivos realistas Priorizar alimentos frescos y actividad sostenible Cuidar sueño y salud mental Evitar dietas extremas o productos sin respaldo."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si el peso afecta movilidad, sueño, menstruación, respiración o bienestar emocional, o si existe diabetes, presión alta o hígado graso."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Falta de aire intensa o súbita; dolor de pecho; desmayo; hinchazón rápida de piernas; somnolencia extrema con dificultad respiratoria."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "aumento-de-peso",
+      "cansancio-al-caminar",
+      "dolor-articular",
+      "ronquidos",
+      "pausas-al-respirar-durante-el-sueno"
+    ],
+    "examenes": [
+      "glucosa-en-sangre",
+      "hemoglobina-glicosilada-hba1c",
+      "perfil-lipidico",
+      "prueba-de-funcion-hepatica",
+      "tsh"
+    ],
+    "medicamentos": [],
+    "enfermedades": [
+      "prediabetes",
+      "diabetes",
+      "higado-graso",
+      "apnea-del-sueno",
+      "artrosis"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-sed-excesiva",
-      "slug": "sed-excesiva",
-      "categoria": "Relacionados",
-      "titulo": "sed excesiva"
+      "tipo": "sintoma",
+      "slug": "aumento-de-peso",
+      "titulo": "Aumento de peso"
     },
     {
-      "id": "rel-orinar-frecuente",
-      "slug": "orinar-frecuente",
-      "categoria": "Relacionados",
-      "titulo": "orinar frecuente"
+      "tipo": "sintoma",
+      "slug": "cansancio-al-caminar",
+      "titulo": "Cansancio al caminar"
     },
     {
-      "id": "rel-fatiga",
-      "slug": "fatiga",
-      "categoria": "Relacionados",
-      "titulo": "fatiga"
+      "tipo": "sintoma",
+      "slug": "dolor-articular",
+      "titulo": "Dolor articular"
     },
     {
-      "id": "rel-cambios-de-peso",
-      "slug": "cambios-de-peso",
-      "categoria": "Relacionados",
-      "titulo": "cambios de peso"
+      "tipo": "sintoma",
+      "slug": "ronquidos",
+      "titulo": "Ronquidos"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "pausas-al-respirar-durante-el-sueno",
+      "titulo": "Pausas al respirar durante el sueño"
+    },
+    {
+      "tipo": "examen",
+      "slug": "glucosa-en-sangre",
+      "titulo": "Glucosa en sangre"
+    },
+    {
+      "tipo": "examen",
+      "slug": "hemoglobina-glicosilada-hba1c",
+      "titulo": "Hemoglobina glicosilada (HbA1c)"
+    },
+    {
+      "tipo": "examen",
+      "slug": "perfil-lipidico",
+      "titulo": "Perfil lipídico"
+    },
+    {
+      "tipo": "examen",
+      "slug": "prueba-de-funcion-hepatica",
+      "titulo": "Prueba de función hepática"
+    },
+    {
+      "tipo": "examen",
+      "slug": "tsh",
+      "titulo": "TSH"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "prediabetes",
+      "titulo": "Prediabetes"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "diabetes",
+      "titulo": "Diabetes mellitus tipo 2"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "higado-graso",
+      "titulo": "Higado graso"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "apnea-del-sueno",
+      "titulo": "Apnea del sueno"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "artrosis",
+      "titulo": "Artrosis"
     }
   ],
+  "seo": {
+    "titulo": "Obesidad: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La obesidad es una enfermedad crónica y recurrente producida por interacciones biológicas, ambientales y sociales, no por falta de voluntad. Se evalúa con peso, talla, índice de masa corporal y contexto clínico, además de buscar enfermedades asociadas.",
+    "expresiones_coloquiales": [
+      "exceso de grasa corporal"
+    ],
+    "errores_ortograficos": [
+      "obesidad clínica"
+    ],
+    "singular_plural": [
+      "caso de obesidad",
+      "casos de obesidad"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
+      "id": "obesidad-fuente-1",
       "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
-      "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Obesity and overweight",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Obesidad se relaciona con resistencia a la insulina, cambios hormonales, genetica, alimentacion, peso, actividad fisica y otros factores metabolicos. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La obesidad es una enfermedad crónica y recurrente producida por interacciones biológicas, ambientales y sociales, no por falta de voluntad. Se evalúa con peso, talla, índice de masa corporal y contexto clínico, además de buscar enfermedades asociadas."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "Obesidad es una condicion vinculada con metabolismo y hormonas. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Es una acumulación excesiva de grasa corporal que puede afectar la salud. El índice de masa corporal sirve como herramienta de tamizaje, pero debe interpretarse junto con distribución de grasa, etapa de vida, antecedentes y posibles complicaciones."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "sed excesiva",
-        "orinar frecuente",
-        "fatiga",
-        "cambios de peso"
+        "A menudo no produce un síntoma único",
+        "dificultad para realizar algunas actividades",
+        "dolor articular",
+        "ronquidos o pausas al dormir",
+        "cansancio con el esfuerzo"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por resistencia a la insulina, cambios hormonales, genetica, alimentacion, peso, actividad fisica y otros factores metabolicos. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "entorno alimentario",
+        "baja actividad física",
+        "sueño insuficiente",
+        "algunos medicamentos",
+        "estrés crónico"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
-        "antecedentes familiares",
-        "sobrepeso",
-        "sedentarismo",
-        "embarazo o edad avanzada"
+        "genética",
+        "edad",
+        "condiciones hormonales",
+        "historia temprana de crecimiento"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Obesidad debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Un profesional mide peso y talla, calcula el índice de masa corporal según edad y evalúa cintura, antecedentes, medicamentos y comorbilidades. Puede solicitar glucosa, lípidos y función hepática.",
+        "Glucosa en sangre",
+        "Hemoglobina glicosilada (HbA1c)",
+        "Perfil lipídico",
+        "Prueba de función hepática",
+        "TSH"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Obesidad depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Buscar un plan integral sin estigma y con objetivos realistas",
+        "Priorizar alimentos frescos y actividad sostenible",
+        "Cuidar sueño y salud mental",
+        "Evitar dietas extremas o productos sin respaldo"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si el peso afecta movilidad, sueño, menstruación, respiración o bienestar emocional, o si existe diabetes, presión alta o hígado graso."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Falta de aire intensa o súbita",
+        "dolor de pecho",
+        "desmayo",
+        "hinchazón rápida de piernas",
+        "somnolencia extrema con dificultad respiratoria"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "controles de glucosa cuando corresponda",
-        "alimentacion equilibrada",
-        "actividad fisica regular",
-        "seguimiento profesional si hay diagnostico previo"
+        "Entornos que faciliten alimentación saludable",
+        "actividad física desde la infancia",
+        "sueño suficiente",
+        "seguimiento del crecimiento sin estigma"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Obesidad? Es una acumulación excesiva de grasa corporal que puede afectar la salud. El índice de masa corporal sirve como herramienta de tamizaje, pero debe interpretarse junto con distribución de grasa, etapa de vida, antecedentes y posibles complicaciones.",
+        "¿Cómo suele confirmarse? Un profesional mide peso y talla, calcula el índice de masa corporal según edad y evalúa cintura, antecedentes, medicamentos y comorbilidades. Puede solicitar glucosa, lípidos y función hepática.",
+        "¿Qué puedo hacer mientras busco orientación? Buscar un plan integral sin estigma y con objetivos realistas Priorizar alimentos frescos y actividad sostenible Cuidar sueño y salud mental Evitar dietas extremas o productos sin respaldo.",
+        "¿Cuándo debo consultar? Consulta si el peso afecta movilidad, sueño, menstruación, respiración o bienestar emocional, o si existe diabetes, presión alta o hígado graso.",
+        "¿Qué señales requieren atención inmediata? Falta de aire intensa o súbita; dolor de pecho; desmayo; hinchazón rápida de piernas; somnolencia extrema con dificultad respiratoria."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Obesidad varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Endocrinología o medicina interna"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Aumento de peso",
+        "sintoma: Cansancio al caminar",
+        "sintoma: Dolor articular",
+        "sintoma: Ronquidos",
+        "sintoma: Pausas al respirar durante el sueño",
+        "examen: Glucosa en sangre",
+        "examen: Hemoglobina glicosilada (HbA1c)",
+        "examen: Perfil lipídico",
+        "examen: Prueba de función hepática",
+        "examen: TSH",
+        "enfermedad: Prediabetes",
+        "enfermedad: Diabetes mellitus tipo 2",
+        "enfermedad: Higado graso",
+        "enfermedad: Apnea del sueno",
+        "enfermedad: Artrosis"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "OMS — Obesity and overweight"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

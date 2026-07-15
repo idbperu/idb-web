@@ -1,220 +1,364 @@
 {
   "id": "enfermedad-migrana",
   "slug": "migrana",
-  "titulo": "Migrana",
+  "titulo": "Migraña",
   "tipo": "enfermedad",
-  "categoria": "Neurologia",
-  "descripcion": "La orientacion sobre Migrana debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos.",
-  "respuesta_rapida": "Migrana se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos.",
-  "para_que_sirve": "Conocer Migrana ayuda a preparar una consulta, reconocer factores de riesgo, entender por que pueden solicitarse examenes y saber que senales ameritan atencion. Tambien permite ordenar preguntas sobre prevencion, seguimiento y cambios de estilo de vida.",
-  "causas": "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias.",
+  "aliases": [
+    "jaqueca",
+    "migraña con aura",
+    "migrana"
+  ],
+  "keywords": [
+    "migraña",
+    "jaqueca",
+    "migraña con aura",
+    "migrana",
+    "dolor de cabeza fuerte",
+    "dolor de cabeza con vomitos",
+    "sensibilidad a la luz",
+    "nauseas",
+    "vision borrosa"
+  ],
+  "categoria": "Neurológico",
+  "especialidad": "Neurología y medicina familiar",
+  "version": "2.0",
+  "ultima_revision": "2026-07-15",
+  "respuesta_rapida": "La migraña es un trastorno neurológico recurrente que suele causar dolor pulsátil moderado o intenso, con náuseas y sensibilidad a luz o sonido. Algunas personas presentan aura; un cambio súbito del patrón obliga a descartar otras causas.",
+  "descripcion": "Es más que un dolor de cabeza. Puede tener fases previas y posteriores, y no siempre produce dolor. El diagnóstico es clínico tras evaluar patrón, examen neurológico y causas alternativas.",
+  "que_es": "Es más que un dolor de cabeza. Puede tener fases previas y posteriores, y no siempre produce dolor. El diagnóstico es clínico tras evaluar patrón, examen neurológico y causas alternativas.",
+  "para_que_sirve": "Esta ficha ayuda a comprender migraña, reconocer manifestaciones relevantes, conocer cómo se evalúa y distinguir cuándo buscar atención. No confirma un diagnóstico ni reemplaza una consulta.",
+  "causas": "La migraña es un trastorno neurológico recurrente que suele causar dolor pulsátil moderado o intenso, con náuseas y sensibilidad a luz o sonido. Algunas personas presentan aura; un cambio súbito del patrón obliga a descartar otras causas.",
   "sintomas": [
-    "fatiga",
-    "malestar general",
-    "dolor de cuerpo",
-    "fiebre"
+    "dolor pulsátil, a menudo de un lado",
+    "náuseas o vómitos",
+    "sensibilidad a la luz y al ruido",
+    "empeoramiento con actividad",
+    "aura visual o sensitiva en algunas personas"
   ],
   "factores_riesgo": [
+    "sueño irregular",
+    "ayuno o deshidratación",
+    "estrés",
+    "abuso de analgésicos",
+    "desencadenantes individuales",
     "antecedentes familiares",
-    "edad",
-    "otras enfermedades",
-    "habitos de vida"
+    "sexo femenino",
+    "cambios hormonales",
+    "edad"
+  ],
+  "factores_riesgo_clasificados": {
+    "modificables": [
+      "sueño irregular",
+      "ayuno o deshidratación",
+      "estrés",
+      "abuso de analgésicos",
+      "desencadenantes individuales"
+    ],
+    "no_modificables": [
+      "antecedentes familiares",
+      "sexo femenino",
+      "cambios hormonales",
+      "edad"
+    ]
+  },
+  "como_suele_confirmarse": {
+    "resumen": "Se basa en historia detallada, diario de episodios y examen neurológico. Resonancia o tomografía se reservan para síntomas atípicos, examen anormal o señales de alarma.",
+    "examenes_relacionados": [
+      "resonancia-magnetica-cerebral",
+      "tomografia-computarizada-cerebral"
+    ]
+  },
+  "que_puede_hacer_paciente": [
+    "Registrar frecuencia, duración y posibles desencadenantes",
+    "Mantener horarios regulares de sueño y comidas",
+    "Descansar en ambiente oscuro durante el episodio",
+    "Evitar uso excesivo de analgésicos"
+  ],
+  "cuando_consultar": "Consulta si los episodios son frecuentes, incapacitantes, cambian de patrón, aparecen por primera vez después de los 50 años o durante embarazo.",
+  "senales_alarma": "Dolor súbito descrito como el peor de la vida; debilidad o dificultad para hablar; confusión o convulsiones; fiebre con rigidez de cuello; dolor tras golpe; pérdida visual persistente.",
+  "senales_alarma_lista": [
+    "Dolor súbito descrito como el peor de la vida",
+    "debilidad o dificultad para hablar",
+    "confusión o convulsiones",
+    "fiebre con rigidez de cuello",
+    "dolor tras golpe",
+    "pérdida visual persistente"
   ],
   "prevencion": [
-    "controles preventivos",
-    "actividad fisica segura",
-    "alimentacion equilibrada",
-    "consulta temprana ante sintomas persistentes"
+    "Sueño y comidas regulares",
+    "hidratación",
+    "actividad física",
+    "identificar desencadenantes",
+    "evitar sobreuso de medicación"
   ],
-  "cuando_consultar": "Consulta si sospechas migrana, si los sintomas son persistentes, si existen factores de riesgo o si ya tienes diagnostico y notas cambios. El seguimiento ayuda a prevenir complicaciones, ajustar cuidados e interpretar examenes.",
-  "senales_alarma": "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido.",
   "precauciones": [
-    "No uses esta informacion para confirmar o descartar la enfermedad por tu cuenta.",
-    "No suspendas controles ni tratamientos indicados sin consultar.",
-    "Evita automedicacion o remedios que retrasen una evaluacion necesaria.",
-    "Busca orientacion si los sintomas cambian, progresan o aparecen señales de alarma."
+    "No uses esta ficha para autodiagnosticarte.",
+    "No inicies, suspendas ni cambies medicamentos sin indicación profesional.",
+    "Busca atención inmediata si aparece una señal de alarma."
   ],
   "preguntas_frecuentes": [
     {
-      "pregunta": "¿Que es Migrana?",
-      "respuesta": "Es una condicion relacionada con salud general. Su evaluacion depende de sintomas, antecedentes, exploracion clinica y, a veces, examenes."
+      "pregunta": "¿Qué es Migraña?",
+      "respuesta": "Es más que un dolor de cabeza. Puede tener fases previas y posteriores, y no siempre produce dolor. El diagnóstico es clínico tras evaluar patrón, examen neurológico y causas alternativas."
     },
     {
-      "pregunta": "¿Que sintomas pueden aparecer?",
-      "respuesta": "Pueden observarse fatiga, malestar general, dolor de cuerpo, fiebre, aunque no todas las personas presentan los mismos signos."
+      "pregunta": "¿Cómo suele confirmarse?",
+      "respuesta": "Se basa en historia detallada, diario de episodios y examen neurológico. Resonancia o tomografía se reservan para síntomas atípicos, examen anormal o señales de alarma."
     },
     {
-      "pregunta": "¿Se puede prevenir o controlar?",
-      "respuesta": "En muchos casos ayudan medidas como controles preventivos, actividad fisica segura, alimentacion equilibrada, junto con seguimiento profesional cuando corresponde."
+      "pregunta": "¿Qué puedo hacer mientras busco orientación?",
+      "respuesta": "Registrar frecuencia, duración y posibles desencadenantes Mantener horarios regulares de sueño y comidas Descansar en ambiente oscuro durante el episodio Evitar uso excesivo de analgésicos."
     },
     {
-      "pregunta": "¿Cuando debo consultar?",
-      "respuesta": "Consulta si hay sintomas persistentes, factores de riesgo, dudas sobre examenes, cambios en la evolucion o cualquier señal de alarma."
+      "pregunta": "¿Cuándo debo consultar?",
+      "respuesta": "Consulta si los episodios son frecuentes, incapacitantes, cambian de patrón, aparecen por primera vez después de los 50 años o durante embarazo."
+    },
+    {
+      "pregunta": "¿Qué señales requieren atención inmediata?",
+      "respuesta": "Dolor súbito descrito como el peor de la vida; debilidad o dificultad para hablar; confusión o convulsiones; fiebre con rigidez de cuello; dolor tras golpe; pérdida visual persistente."
     }
   ],
+  "relaciones": {
+    "sintomas": [
+      "dolor-de-cabeza-fuerte",
+      "dolor-de-cabeza-con-vomitos",
+      "sensibilidad-a-la-luz",
+      "nauseas",
+      "vision-borrosa"
+    ],
+    "examenes": [
+      "resonancia-magnetica-cerebral",
+      "tomografia-computarizada-cerebral"
+    ],
+    "medicamentos": [
+      "sumatriptan",
+      "paracetamol",
+      "ibuprofeno"
+    ],
+    "enfermedades": [
+      "trastorno-de-ansiedad",
+      "depresion"
+    ]
+  },
   "temas_relacionados": [
     {
-      "id": "rel-fatiga",
-      "slug": "fatiga",
-      "categoria": "Relacionados",
-      "titulo": "fatiga"
+      "tipo": "sintoma",
+      "slug": "dolor-de-cabeza-fuerte",
+      "titulo": "Dolor de cabeza fuerte"
     },
     {
-      "id": "rel-malestar-general",
-      "slug": "malestar-general",
-      "categoria": "Relacionados",
-      "titulo": "malestar general"
+      "tipo": "sintoma",
+      "slug": "dolor-de-cabeza-con-vomitos",
+      "titulo": "Dolor de cabeza con vomitos"
     },
     {
-      "id": "rel-dolor-de-cuerpo",
-      "slug": "dolor-de-cuerpo",
-      "categoria": "Relacionados",
-      "titulo": "dolor de cuerpo"
+      "tipo": "sintoma",
+      "slug": "sensibilidad-a-la-luz",
+      "titulo": "Sensibilidad a la luz"
     },
     {
-      "id": "rel-fiebre",
-      "slug": "fiebre",
-      "categoria": "Relacionados",
-      "titulo": "fiebre"
+      "tipo": "sintoma",
+      "slug": "nauseas",
+      "titulo": "Nauseas"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "vision-borrosa",
+      "titulo": "Vision borrosa"
+    },
+    {
+      "tipo": "examen",
+      "slug": "resonancia-magnetica-cerebral",
+      "titulo": "Resonancia magnética cerebral"
+    },
+    {
+      "tipo": "examen",
+      "slug": "tomografia-computarizada-cerebral",
+      "titulo": "Tomografía computarizada cerebral"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "sumatriptan",
+      "titulo": "Sumatriptan"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "paracetamol",
+      "titulo": "Paracetamol"
+    },
+    {
+      "tipo": "medicamento",
+      "slug": "ibuprofeno",
+      "titulo": "Ibuprofeno"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "trastorno-de-ansiedad",
+      "titulo": "Trastorno de ansiedad"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "depresion",
+      "titulo": "Depresion"
     }
   ],
+  "seo": {
+    "titulo": "Migraña: síntomas, diagnóstico y señales de alarma",
+    "descripcion": "La migraña es un trastorno neurológico recurrente que suele causar dolor pulsátil moderado o intenso, con náuseas y sensibilidad a luz o sonido. Algunas personas presentan aura; un cambio súbito del patrón obliga a descartar otras causas.",
+    "expresiones_coloquiales": [
+      "jaqueca"
+    ],
+    "errores_ortograficos": [
+      "migrana"
+    ],
+    "singular_plural": [
+      "caso de migraña",
+      "casos de migraña"
+    ]
+  },
   "fuentes": [
     {
-      "id": "oms",
-      "organizacion": "OMS",
-      "titulo": "Temas de salud",
-      "url": "https://www.who.int/health-topics",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "ops",
-      "organizacion": "OPS",
-      "titulo": "Informacion sanitaria regional",
-      "url": "https://www.paho.org/es",
-      "tipo": "Organismo sanitario"
-    },
-    {
-      "id": "medlineplus",
+      "id": "migrana-fuente-1",
       "organizacion": "MedlinePlus",
-      "titulo": "Informacion para pacientes",
-      "url": "https://medlineplus.gov/spanish/",
-      "tipo": "Referencia educativa"
-    },
-    {
-      "id": "cdc",
-      "organizacion": "CDC",
-      "titulo": "Informacion de salud publica",
-      "url": "https://www.cdc.gov/spanish/",
-      "tipo": "Salud publica"
+      "titulo": "Migraine",
+      "url": "https://medlineplus.gov/migraine.html",
+      "tipo": "Fuente oficial",
+      "fecha_consulta": "2026-07-15"
     }
   ],
   "plantilla_oficial": {
-    "tipo": "FICHA DE ENFERMEDADES",
+    "tipo": "FICHA DE ENFERMEDADES IDB MEDIC 2.0",
     "orden": [
       "Respuesta rápida",
-      "¿Qué es?",
+      "Qué es",
       "Síntomas frecuentes",
-      "Causas",
       "Factores de riesgo",
-      "Diagnóstico",
-      "Tratamiento",
+      "Cómo suele confirmarse",
+      "Qué puede hacer el paciente",
+      "Cuándo consultar",
+      "Señales de alarma",
       "Prevención",
-      "Posibles complicaciones",
-      "Pronóstico",
-      "Especialidades relacionadas",
-      "Fuentes médicas",
-      "Información importante"
+      "Preguntas frecuentes",
+      "Relaciones",
+      "Fuentes"
     ]
   },
   "secciones": [
     {
       "titulo": "Respuesta rápida",
-      "contenido": "Migrana se relaciona con factores personales, ambientales, metabolicos, infecciosos o hereditarios. Lo importante para el paciente es reconocer manifestaciones frecuentes, prevenir complicaciones y consultar a tiempo. Esta ficha orienta, pero no confirma ni descarta diagnosticos."
+      "contenido": "La migraña es un trastorno neurológico recurrente que suele causar dolor pulsátil moderado o intenso, con náuseas y sensibilidad a luz o sonido. Algunas personas presentan aura; un cambio súbito del patrón obliga a descartar otras causas."
     },
     {
-      "titulo": "¿Qué es?",
-      "contenido": "La orientacion sobre Migrana debe combinar informacion clara, prevencion y seguimiento profesional cuando corresponde. Puede variar desde situaciones controlables hasta cuadros que requieren seguimiento cercano. Para entenderla se consideran sintomas, tiempo de evolucion, factores de riesgo, examenes y respuesta a cuidados previos."
+      "titulo": "Qué es",
+      "contenido": "Es más que un dolor de cabeza. Puede tener fases previas y posteriores, y no siempre produce dolor. El diagnóstico es clínico tras evaluar patrón, examen neurológico y causas alternativas."
     },
     {
       "titulo": "Síntomas frecuentes",
       "contenido": [
-        "fatiga",
-        "malestar general",
-        "dolor de cuerpo",
-        "fiebre"
+        "dolor pulsátil, a menudo de un lado",
+        "náuseas o vómitos",
+        "sensibilidad a la luz y al ruido",
+        "empeoramiento con actividad",
+        "aura visual o sensitiva en algunas personas"
       ]
     },
     {
-      "titulo": "Causas",
+      "titulo": "Factores de riesgo modificables",
       "contenido": [
-        "Puede originarse o empeorar por factores personales, ambientales, metabolicos, infecciosos o hereditarios. En muchos casos intervienen varios factores al mismo tiempo, por eso la evaluacion profesional integra antecedentes, examen clinico y, si corresponde, pruebas complementarias."
+        "sueño irregular",
+        "ayuno o deshidratación",
+        "estrés",
+        "abuso de analgésicos",
+        "desencadenantes individuales"
       ]
     },
     {
-      "titulo": "Factores de riesgo",
+      "titulo": "Factores de riesgo no modificables",
       "contenido": [
         "antecedentes familiares",
-        "edad",
-        "otras enfermedades",
-        "habitos de vida"
+        "sexo femenino",
+        "cambios hormonales",
+        "edad"
       ]
     },
     {
-      "titulo": "Diagnóstico",
-      "contenido": "El diagnóstico de Migrana debe hacerlo un profesional. Puede requerir historia clínica, examen físico, mediciones, análisis u otras pruebas según los síntomas y antecedentes."
+      "titulo": "Cómo suele confirmarse",
+      "contenido": [
+        "Se basa en historia detallada, diario de episodios y examen neurológico. Resonancia o tomografía se reservan para síntomas atípicos, examen anormal o señales de alarma.",
+        "Resonancia magnética cerebral",
+        "Tomografía computarizada cerebral"
+      ]
     },
     {
-      "titulo": "Tratamiento",
-      "contenido": "El tratamiento de Migrana depende de la causa, gravedad, edad, antecedentes y riesgos personales. Puede incluir cambios de hábitos, seguimiento, medicamentos o procedimientos indicados por un profesional."
+      "titulo": "Qué puede hacer el paciente",
+      "contenido": [
+        "Registrar frecuencia, duración y posibles desencadenantes",
+        "Mantener horarios regulares de sueño y comidas",
+        "Descansar en ambiente oscuro durante el episodio",
+        "Evitar uso excesivo de analgésicos"
+      ]
+    },
+    {
+      "titulo": "Cuándo consultar",
+      "contenido": "Consulta si los episodios son frecuentes, incapacitantes, cambian de patrón, aparecen por primera vez después de los 50 años o durante embarazo."
+    },
+    {
+      "titulo": "Señales de alarma",
+      "contenido": [
+        "Dolor súbito descrito como el peor de la vida",
+        "debilidad o dificultad para hablar",
+        "confusión o convulsiones",
+        "fiebre con rigidez de cuello",
+        "dolor tras golpe",
+        "pérdida visual persistente"
+      ]
     },
     {
       "titulo": "Prevención",
       "contenido": [
-        "controles preventivos",
-        "actividad fisica segura",
-        "alimentacion equilibrada",
-        "consulta temprana ante sintomas persistentes"
+        "Sueño y comidas regulares",
+        "hidratación",
+        "actividad física",
+        "identificar desencadenantes",
+        "evitar sobreuso de medicación"
       ]
     },
     {
-      "titulo": "Posibles complicaciones",
+      "titulo": "Preguntas frecuentes",
       "contenido": [
-        "Busca atencion inmediata si presentas dificultad para respirar, dolor de pecho, perdida de conciencia, sangrado importante, debilidad subita, confusion, fiebre alta persistente o empeoramiento rapido."
+        "¿Qué es Migraña? Es más que un dolor de cabeza. Puede tener fases previas y posteriores, y no siempre produce dolor. El diagnóstico es clínico tras evaluar patrón, examen neurológico y causas alternativas.",
+        "¿Cómo suele confirmarse? Se basa en historia detallada, diario de episodios y examen neurológico. Resonancia o tomografía se reservan para síntomas atípicos, examen anormal o señales de alarma.",
+        "¿Qué puedo hacer mientras busco orientación? Registrar frecuencia, duración y posibles desencadenantes Mantener horarios regulares de sueño y comidas Descansar en ambiente oscuro durante el episodio Evitar uso excesivo de analgésicos.",
+        "¿Cuándo debo consultar? Consulta si los episodios son frecuentes, incapacitantes, cambian de patrón, aparecen por primera vez después de los 50 años o durante embarazo.",
+        "¿Qué señales requieren atención inmediata? Dolor súbito descrito como el peor de la vida; debilidad o dificultad para hablar; confusión o convulsiones; fiebre con rigidez de cuello; dolor tras golpe; pérdida visual persistente."
       ]
     },
     {
-      "titulo": "Pronóstico",
-      "contenido": "El pronóstico de Migrana varía según la causa, el momento de consulta, la respuesta al tratamiento y la presencia de otras enfermedades. El seguimiento oportuno mejora la seguridad."
-    },
-    {
-      "titulo": "Especialidades relacionadas",
-      "contenido": "Neurologia o medicina general"
-    },
-    {
-      "titulo": "Fuentes médicas",
+      "titulo": "Relaciones clínicas",
       "contenido": [
-        "OMS - Temas de salud",
-        "OPS - Informacion sanitaria regional",
-        "MedlinePlus - Informacion para pacientes",
-        "CDC - Informacion de salud publica"
+        "sintoma: Dolor de cabeza fuerte",
+        "sintoma: Dolor de cabeza con vomitos",
+        "sintoma: Sensibilidad a la luz",
+        "sintoma: Nauseas",
+        "sintoma: Vision borrosa",
+        "examen: Resonancia magnética cerebral",
+        "examen: Tomografía computarizada cerebral",
+        "medicamento: Sumatriptan",
+        "medicamento: Paracetamol",
+        "medicamento: Ibuprofeno",
+        "enfermedad: Trastorno de ansiedad",
+        "enfermedad: Depresion"
       ]
     },
     {
-      "titulo": "Información importante",
-      "contenido": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato."
+      "titulo": "Fuentes",
+      "contenido": [
+        "MedlinePlus — Migraine"
+      ]
     }
   ],
   "informacion_importante": {
     "titulo": "Información importante",
-    "texto": "Esta información tiene fines educativos y orientativos. No sustituye la evaluación, el diagnóstico ni el tratamiento realizado por un profesional de la salud. Si los síntomas persisten, empeoran o aparecen señales de alarma, busca atención médica de inmediato.",
-    "presentacion_sugerida": {
-      "tamano": "ligeramente menor",
-      "color": "gris medio",
-      "fondo": "gris muy claro",
-      "aspecto": "discreto y elegante",
-      "legibilidad": "debe leerse claramente sin competir con el contenido principal"
-    }
-  },
-  "ultima_revision": "2026-06",
-  "version": "1.1"
+    "texto": "Contenido educativo para pacientes. No sustituye evaluación, diagnóstico ni tratamiento profesional. Ante señales de alarma, busca atención inmediata."
+  }
 }

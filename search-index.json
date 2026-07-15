@@ -5889,5 +5889,53 @@
         "Consulta con el profesional que solicitó el examen para interpretar el informe y decidir seguimiento. Indicaciones habituales: Hinchazón unilateral, dolor, enrojecimiento, factores de riesgo de trombosis o seguimiento vascular."
       ]
     }
+  },
+  {
+    "titulo": "Neumonía", "tipo": "enfermedad", "categoria": "Respiratorio", "prioridad": 1,
+    "description": "La neumonía es una infección de uno o ambos pulmones que llena los alvéolos de líquido o pus. Puede ser causada por bacterias, virus u hongos y su gravedad depende de la edad, el germen y las condiciones previas.",
+    "fuente": "MedlinePlus", "nivel": "Oficial", "ultima_revision": "2026-07", "url": "consulta.html?q=neumonia",
+    "keywords": ["neumonía", "infección pulmonar", "pulmonía", "neumonia", "tos", "flema", "falta de aire", "dolor al respirar", "fiebre"]
+  },
+  {
+    "titulo": "Influenza", "tipo": "enfermedad", "categoria": "Infeccioso", "prioridad": 1,
+    "description": "La influenza es una infección respiratoria contagiosa causada por virus influenza. Suele comenzar de forma brusca con fiebre, dolores corporales, cansancio y tos; puede complicarse con neumonía o empeorar asma, diabetes y cardiopatías.",
+    "fuente": "CDC", "nivel": "Oficial", "ultima_revision": "2026-07", "url": "consulta.html?q=influenza",
+    "keywords": ["influenza", "gripe", "influenza estacional", "influensa", "fiebre", "tos", "dolor de cuerpo", "escalofrios", "dolor de garganta"]
+  },
+  {
+    "titulo": "COVID-19", "tipo": "enfermedad", "categoria": "Infeccioso", "prioridad": 1,
+    "description": "COVID-19 es una infección causada por SARS-CoV-2. Puede ir de ausencia de síntomas a enfermedad respiratoria grave; la vacunación y la atención temprana en personas con riesgo reducen complicaciones.",
+    "fuente": "CDC", "nivel": "Oficial", "ultima_revision": "2026-07", "url": "consulta.html?q=covid-19",
+    "keywords": ["covid-19", "covid", "coronavirus 2019", "covid19", "fiebre", "tos", "falta de aire", "dolor de garganta"]
+  },
+  {
+    "titulo": "Dengue", "tipo": "enfermedad", "categoria": "Infeccioso", "prioridad": 1,
+    "description": "El dengue es una infección viral transmitida principalmente por mosquitos Aedes. Suele causar fiebre alta, dolor de cabeza y cuerpo, náuseas y sarpullido; los signos de dengue grave pueden aparecer cuando la fiebre empieza a bajar.",
+    "fuente": "OMS", "nivel": "Oficial", "ultima_revision": "2026-07", "url": "consulta.html?q=dengue",
+    "keywords": ["dengue", "fiebre dengue", "dengue clásico", "dengue hemorragico", "fiebre", "dolor de cabeza", "dolor de cuerpo", "dolor de ojos", "erupcion en la piel"]
+  },
+  {
+    "titulo": "Faringitis", "tipo": "enfermedad", "categoria": "Otorrinolaringológico", "prioridad": 1,
+    "description": "La faringitis es inflamación de la garganta. La mayoría es viral; una proporción es causada por estreptococo del grupo A. Tos, mocos y ronquera orientan más a virus, mientras que fiebre y dolor súbito sin tos pueden justificar una prueba para estreptococo.",
+    "fuente": "CDC", "nivel": "Oficial", "ultima_revision": "2026-07", "url": "consulta.html?q=faringitis",
+    "keywords": ["faringitis", "garganta inflamada", "faringitis aguda", "faringitiz", "dolor de garganta", "dolor al tragar", "fiebre", "ganglios inflamados"]
+  },
+  {
+    "titulo": "Amigdalitis", "tipo": "enfermedad", "categoria": "Otorrinolaringológico", "prioridad": 1,
+    "description": "La amigdalitis es inflamación de las amígdalas, habitualmente por virus y a veces por bacterias como estreptococo. Causa dolor al tragar, fiebre y amígdalas rojas o con placas; los antibióticos solo corresponden cuando una causa bacteriana ha sido evaluada.",
+    "fuente": "NHS", "nivel": "Oficial", "ultima_revision": "2026-07", "url": "consulta.html?q=amigdalitis",
+    "keywords": ["amigdalitis", "anginas", "tonsilitis", "amigdálas inflamadas", "dolor de garganta", "dolor al tragar", "fiebre", "mal aliento", "ganglios inflamados"]
+  },
+  {
+    "titulo": "Sinusitis", "tipo": "enfermedad", "categoria": "Otorrinolaringológico", "prioridad": 1,
+    "description": "La sinusitis es inflamación de uno o más senos paranasales, generalmente después de un resfrío o por alergias. La mayoría de cuadros agudos son virales y mejoran sin antibióticos.",
+    "fuente": "CDC", "nivel": "Oficial", "ultima_revision": "2026-07", "url": "consulta.html?q=sinusitis",
+    "keywords": ["sinusitis", "rinosinusitis", "infección de los senos paranasales", "sinucitis", "congestion nasal", "secrecion nasal", "dolor de cabeza"]
+  },
+  {
+    "titulo": "Lumbalgia", "tipo": "enfermedad", "categoria": "Musculoesquelético", "prioridad": 1,
+    "description": "La lumbalgia es dolor entre el borde inferior de las costillas y los glúteos. Cerca del 90 % es inespecífica y no se atribuye a una lesión grave; mantenerse activo y recuperar función suele ser más útil que el reposo prolongado.",
+    "fuente": "OMS", "nivel": "Oficial", "ultima_revision": "2026-07", "url": "consulta.html?q=lumbalgia",
+    "keywords": ["lumbalgia", "dolor lumbar", "dolor de cintura", "lumbaljia", "dolor de espalda", "adormecimiento", "debilidad", "dificultad para caminar"]
   }
 ]
