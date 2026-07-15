@@ -84,10 +84,10 @@
       "url": "https://medlineplus.gov/spanish/druginfo/meds/a607046-es.html",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "dimenhidrinato",
@@ -100,5 +100,47 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antiemetico mareo viaje",
+  "efectos_adversos": [
+    "Somnolencia, boca seca, vision borrosa, mareo o dificultad para orinar.",
+    "En adultos mayores puede favorecer confusion, caidas o retencion urinaria."
+  ],
+  "cuando_consultar": "Consulta si el mareo no se relaciona claramente con movimiento, es nuevo o intenso, o se acompana de deficit neurologico, dolor de pecho, desmayo o vomitos persistentes.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Dimenhidrinato?",
+      "respuesta": "Antihistaminico con efecto antiemetico usado de forma general para prevenir o aliviar mareo por movimiento, nauseas o vomitos leves. Puede causar somnolencia y no debe retrasar evaluacion si los vomitos son persistentes o hay deshidratacion."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "En adultos mayores puede favorecer confusion, caidas o retencion urinaria."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si el mareo no se relaciona claramente con movimiento, es nuevo o intenso, o se acompana de deficit neurologico, dolor de pecho, desmayo o vomitos persistentes."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "nauseas",
+      "titulo": "Nauseas"
+    }
+  ],
+  "seo": {
+    "titulo": "Dimenhidrinato: usos, precauciones y seguridad",
+    "descripcion": "Antihistaminico con efecto antiemetico usado de forma general para prevenir o aliviar mareo por movimiento, nauseas o vomitos leves. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "dimenhydrinate",
+      "mareo por viaje"
+    ],
+    "keywords": [
+      "dimenhidrinato",
+      "mareo",
+      "nauseas",
+      "vomitos",
+      "mareo por viaje"
+    ]
+  }
 }

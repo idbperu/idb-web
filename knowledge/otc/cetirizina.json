@@ -90,19 +90,19 @@
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
       "fecha_publicacion": "2025-09-15",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     },
     {
       "organizacion": "FDA",
       "titulo": "FDA requires warning about rare but severe itching after stopping long-term use of cetirizine or levocetirizine",
-      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requires-warning-about-rare-severe-itching-after-stopping-long-term-use-cetirizine-or-levocetirizine",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requires-warning-about-rare-severe-itching-after-stopping-long-term-use-oral-allergy-medicines",
       "tipo": "referencia-regulatoria",
       "pais_o_region": "Estados Unidos",
       "fecha_publicacion": "2025-05-16",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "cetirizina",
@@ -116,5 +116,41 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antihistaminico segunda generacion",
+  "efectos_adversos": [
+    "Somnolencia, cansancio, boca seca o mareo.",
+    "Tras uso diario prolongado, la suspension puede causar picazon intensa poco frecuente."
+  ],
+  "cuando_consultar": "Consulta si la alergia dificulta respirar, hay hinchazon facial, somnolencia limitante, enfermedad renal o picazon intensa al suspender uso prolongado.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Cetirizina?",
+      "respuesta": "Antihistaminico usado de forma general para sintomas de alergia como estornudos, picazon, lagrimeo o ronchas leves. Puede causar somnolencia en algunas personas y no sirve para una reaccion alergica grave."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Tras uso diario prolongado, la suspension puede causar picazon intensa poco frecuente."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si la alergia dificulta respirar, hay hinchazon facial, somnolencia limitante, enfermedad renal o picazon intensa al suspender uso prolongado."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Cetirizina: usos, precauciones y seguridad",
+    "descripcion": "Antihistaminico usado de forma general para sintomas de alergia como estornudos, picazon, lagrimeo o ronchas leves. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "cetirizine"
+    ],
+    "keywords": [
+      "cetirizina",
+      "antihistaminico",
+      "alergia",
+      "ronchas",
+      "picazon",
+      "rinitis alergica"
+    ]
+  }
 }

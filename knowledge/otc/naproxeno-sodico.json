@@ -85,10 +85,10 @@
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
       "fecha_publicacion": "2022-03-15",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "naproxeno",
@@ -102,5 +102,48 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "aine dolor prolongado",
+  "efectos_adversos": [
+    "Acidez, dolor de estomago, nauseas, mareo o retencion de liquidos.",
+    "Puede causar sangrado digestivo, dano renal y eventos cardiovasculares; su efecto suele durar mas que el de ibuprofeno."
+  ],
+  "cuando_consultar": "Consulta antes de usar si hay riesgo digestivo, renal, cardiovascular o embarazo; busca atencion ante sangrado, edema, dolor toracico, falta de aire o poca orina.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Naproxeno sodico?",
+      "respuesta": "AINE usado de forma general para alivio temporal de fiebre y dolores leves como dolor muscular, dental, menstrual, de espalda o molestias asociadas a resfrio. Comparte riesgos importantes con otros AINE y requiere revisar antecedentes antes de usar."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Puede causar sangrado digestivo, dano renal y eventos cardiovasculares; su efecto suele durar mas que el de ibuprofeno."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta antes de usar si hay riesgo digestivo, renal, cardiovascular o embarazo; busca atencion ante sangrado, edema, dolor toracico, falta de aire o poca orina."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "dolor-articular",
+      "titulo": "Dolor articular"
+    }
+  ],
+  "seo": {
+    "titulo": "Naproxeno sodico: usos, precauciones y seguridad",
+    "descripcion": "AINE usado de forma general para alivio temporal de fiebre y dolores leves como dolor muscular, dental, menstrual, de espalda o molestias asociadas a resfrio. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "naproxen sodium",
+      "naproxeno"
+    ],
+    "keywords": [
+      "naproxeno",
+      "naproxeno sodico",
+      "antiinflamatorio",
+      "aine",
+      "dolor",
+      "fiebre"
+    ]
+  }
 }

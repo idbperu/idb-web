@@ -81,7 +81,7 @@
       "url": "https://www.fda.gov/consumers/consumer-updates/outsmarting-poison-ivy-and-other-poisonous-plants",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     },
     {
       "organizacion": "DailyMed",
@@ -89,13 +89,12 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=calamine%20lotion",
       "tipo": "rotulado-oficial",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "calamina",
     "search_keywords": [
       "calamina",
       "locion de calamina",
@@ -105,5 +104,41 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antipruriginoso protector cutaneo",
+  "efectos_adversos": [
+    "Resequedad, tirantez o irritacion local.",
+    "Raramente puede producir dermatitis de contacto."
+  ],
+  "cuando_consultar": "Consulta si la lesion se extiende, supura, forma ampollas, afecta ojos o genitales, se acompana de fiebre o la picazon no mejora.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Calamina?",
+      "respuesta": "Protector y calmante cutaneo usado de forma general para picazon o irritacion leve por picaduras, plantas irritantes o erupciones superficiales leves. No debe usarse en heridas profundas, ojos ni cuadros con infeccion."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Raramente puede producir dermatitis de contacto."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si la lesion se extiende, supura, forma ampollas, afecta ojos o genitales, se acompana de fiebre o la picazon no mejora."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Calamina: usos, precauciones y seguridad",
+    "descripcion": "Protector y calmante cutaneo usado de forma general para picazon o irritacion leve por picaduras, plantas irritantes o erupciones superficiales leves. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "calamine",
+      "calamine lotion"
+    ],
+    "keywords": [
+      "calamina",
+      "locion de calamina",
+      "picazon",
+      "irritacion de piel",
+      "picaduras"
+    ]
+  }
 }

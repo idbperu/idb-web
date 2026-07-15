@@ -86,10 +86,10 @@
       "url": "https://medlineplus.gov/spanish/druginfo/meds/a682793-es.html",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "hidrocortisona",
@@ -102,5 +102,41 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "corticoide topico suave",
+  "efectos_adversos": [
+    "Ardor, resequedad, irritacion o cambio de color local.",
+    "El uso extenso o prolongado puede adelgazar la piel, causar estrias o aumentar absorcion sistemica."
+  ],
+  "cuando_consultar": "Consulta si la lesion parece infectada, afecta cara, genitales o pliegues, no mejora pronto, reaparece o requiere aplicacion extensa o prolongada.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Hidrocortisona 1% topica?",
+      "respuesta": "Corticoide topico suave usado de forma general para aliviar inflamacion, enrojecimiento o picazon leve de la piel. No debe usarse para infecciones, heridas profundas, lesiones extensas ni en zonas sensibles sin orientacion profesional."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El uso extenso o prolongado puede adelgazar la piel, causar estrias o aumentar absorcion sistemica."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si la lesion parece infectada, afecta cara, genitales o pliegues, no mejora pronto, reaparece o requiere aplicacion extensa o prolongada."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Hidrocortisona 1% topica: usos, precauciones y seguridad",
+    "descripcion": "Corticoide topico suave usado de forma general para aliviar inflamacion, enrojecimiento o picazon leve de la piel. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "hydrocortisone",
+      "hidrocortisona 1%"
+    ],
+    "keywords": [
+      "hidrocortisona",
+      "hidrocortisona topica",
+      "crema para picazon",
+      "corticoide topico",
+      "dermatitis"
+    ]
+  }
 }

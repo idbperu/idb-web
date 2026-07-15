@@ -87,7 +87,7 @@
       "tipo": "referencia-regulatoria",
       "pais_o_region": "Estados Unidos",
       "fecha_publicacion": "2023-10-27",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     },
     {
       "organizacion": "National Eye Institute",
@@ -95,13 +95,12 @@
       "url": "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/dry-eye",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "lagrimas-artificiales",
     "search_keywords": [
       "lagrimas artificiales",
       "lubricante ocular",
@@ -111,5 +110,41 @@
     ],
     "rco_triage_maximo": "orange"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "lubricante oftalmico",
+  "efectos_adversos": [
+    "Vision borrosa transitoria, escozor o sensacion pegajosa.",
+    "Dolor, secrecion o irritacion persistente pueden indicar contaminacion, lesion o una causa distinta de ojo seco."
+  ],
+  "cuando_consultar": "Consulta si hay dolor ocular, fotofobia, secrecion, lesion, perdida visual, uso de lentes de contacto con ojo rojo o sintomas persistentes.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Lagrimas artificiales?",
+      "respuesta": "Lubricantes oftalmicos usados de forma general para alivio temporal de sequedad o irritacion ocular leve. No deben usarse para dolor ocular, perdida visual, infeccion, trauma o sintomas persistentes sin evaluacion."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Dolor, secrecion o irritacion persistente pueden indicar contaminacion, lesion o una causa distinta de ojo seco."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si hay dolor ocular, fotofobia, secrecion, lesion, perdida visual, uso de lentes de contacto con ojo rojo o sintomas persistentes."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Lagrimas artificiales: usos, precauciones y seguridad",
+    "descripcion": "Lubricantes oftalmicos usados de forma general para alivio temporal de sequedad o irritacion ocular leve. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "artificial tears",
+      "lubricant eye drops"
+    ],
+    "keywords": [
+      "lagrimas artificiales",
+      "lubricante ocular",
+      "ojo seco",
+      "gotas oftalmicas",
+      "irritacion ocular"
+    ]
+  }
 }

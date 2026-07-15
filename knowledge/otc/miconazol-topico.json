@@ -86,21 +86,12 @@
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
       "fecha_publicacion": "2024-07-20",
-      "fecha_consulta": "2026-07-08"
-    },
-    {
-      "organizacion": "NHS",
-      "titulo": "Miconazole for fungal skin infections",
-      "url": "https://www.nhs.uk/medicines/miconazole-for-fungal-skin-infections/",
-      "tipo": "referencia-educativa",
-      "pais_o_region": "Reino Unido",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "miconazol-topico",
     "search_keywords": [
       "miconazol",
       "miconazol topico",
@@ -110,5 +101,40 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antimicotico topico",
+  "efectos_adversos": [
+    "Ardor, picazon, enrojecimiento o maceracion local.",
+    "El empeoramiento marcado puede reflejar irritacion, alergia o que la lesion no sea micotica."
+  ],
+  "cuando_consultar": "Consulta si la lesion no mejora, recurre, afecta unas o cuero cabelludo, o aparece irritacion intensa, pus, dolor, fiebre o diabetes.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Miconazol topico?",
+      "respuesta": "Antimicotico topico usado de forma general para infecciones superficiales por hongos en piel, como pie de atleta, tina corporal o tina inguinal leve. No debe usarse para lesiones profundas, extensas, cerca de ojos o con signos de infeccion bacteriana."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El empeoramiento marcado puede reflejar irritacion, alergia o que la lesion no sea micotica."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si la lesion no mejora, recurre, afecta unas o cuero cabelludo, o aparece irritacion intensa, pus, dolor, fiebre o diabetes."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Miconazol topico: usos, precauciones y seguridad",
+    "descripcion": "Antimicotico topico usado de forma general para infecciones superficiales por hongos en piel, como pie de atleta, tina corporal o tina inguinal leve. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "miconazole"
+    ],
+    "keywords": [
+      "miconazol",
+      "miconazol topico",
+      "hongos en la piel",
+      "pie de atleta",
+      "antimicotico"
+    ]
+  }
 }

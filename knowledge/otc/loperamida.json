@@ -84,10 +84,10 @@
       "url": "https://medlineplus.gov/spanish/druginfo/meds/a682280-es.html",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "loperamida",
@@ -99,5 +99,50 @@
     ],
     "rco_triage_maximo": "orange"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antidiarreico",
+  "efectos_adversos": [
+    "Estrenimiento, colicos, nauseas, mareo o somnolencia.",
+    "El exceso puede causar alteraciones graves del ritmo cardiaco, desmayo o muerte."
+  ],
+  "cuando_consultar": "Consulta si hay fiebre, sangre o moco en heces, dolor o distension intensa, diarrea tras antibioticos, deshidratacion o falta de mejoria rapida.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Loperamida?",
+      "respuesta": "Antidiarreico que reduce el movimiento intestinal en diarrea no complicada. No reemplaza hidratacion ni debe usarse cuando la diarrea puede ser infecciosa grave, con sangre, fiebre alta o dolor abdominal importante."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El exceso puede causar alteraciones graves del ritmo cardiaco, desmayo o muerte."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si hay fiebre, sangre o moco en heces, dolor o distension intensa, diarrea tras antibioticos, deshidratacion o falta de mejoria rapida."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "diarrea",
+      "titulo": "Diarrea"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "deshidratacion",
+      "titulo": "Deshidratacion"
+    }
+  ],
+  "seo": {
+    "titulo": "Loperamida: usos, precauciones y seguridad",
+    "descripcion": "Antidiarreico que reduce el movimiento intestinal en diarrea no complicada. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "loperamide"
+    ],
+    "keywords": [
+      "loperamida",
+      "diarrea",
+      "antidiarreico",
+      "evacuaciones liquidas"
+    ]
+  }
 }

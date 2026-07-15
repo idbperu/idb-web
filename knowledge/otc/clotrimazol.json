@@ -84,7 +84,7 @@
       "url": "https://www.nhs.uk/medicines/clotrimazole/",
       "tipo": "referencia-educativa",
       "pais_o_region": "Reino Unido",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     },
     {
       "organizacion": "MedlinePlus",
@@ -92,10 +92,10 @@
       "url": "https://medlineplus.gov/spanish/druginfo/meds/a682753-es.html",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "clotrimazol",
@@ -109,5 +109,42 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antimicotico topico",
+  "efectos_adversos": [
+    "Ardor, escozor, enrojecimiento o descamacion local.",
+    "La irritacion intensa o progresiva puede indicar intolerancia o un diagnostico diferente."
+  ],
+  "cuando_consultar": "Consulta si no hay mejoria en el plazo indicado por la etiqueta, si recurre, afecta unas o cuero cabelludo, o existe dolor, pus, fiebre o diabetes.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Clotrimazol topico?",
+      "respuesta": "Antifungico topico usado de forma general para infecciones superficiales por hongos en piel, como pie de atleta o tina corporal, cuando el cuadro es leve y compatible. No debe usarse para infecciones profundas, heridas extensas, ojos, boca ni unas sin evaluacion."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "La irritacion intensa o progresiva puede indicar intolerancia o un diagnostico diferente."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si no hay mejoria en el plazo indicado por la etiqueta, si recurre, afecta unas o cuero cabelludo, o existe dolor, pus, fiebre o diabetes."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Clotrimazol topico: usos, precauciones y seguridad",
+    "descripcion": "Antifungico topico usado de forma general para infecciones superficiales por hongos en piel, como pie de atleta o tina corporal, cuando el cuadro es leve y compatible. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "clotrimazole",
+      "antifungico topico"
+    ],
+    "keywords": [
+      "clotrimazol",
+      "clotrimazol topico",
+      "hongos en la piel",
+      "pie de atleta",
+      "tina",
+      "antimicotico"
+    ]
+  }
 }

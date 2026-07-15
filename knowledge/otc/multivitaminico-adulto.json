@@ -86,21 +86,20 @@
       "url": "https://ods.od.nih.gov/factsheets/MVMS-Consumer/",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     },
     {
       "organizacion": "FDA",
       "titulo": "FDA 101: Dietary Supplements",
-      "url": "https://www.fda.gov/food/information-consumers-using-dietary-supplements/fda-101-dietary-supplements",
+      "url": "https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements",
       "tipo": "referencia-regulatoria",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "multivitaminico-adulto",
     "search_keywords": [
       "multivitaminico",
       "multivitaminico adulto",
@@ -110,5 +109,41 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "suplemento multivitaminico",
+  "efectos_adversos": [
+    "Nauseas, malestar digestivo, estrenimiento o cambio de color de la orina.",
+    "La sobredosis, especialmente de hierro o vitaminas liposolubles, puede ser toxica."
+  ],
+  "cuando_consultar": "Consulta antes de combinar suplementos o si existen embarazo, enfermedad renal o hepatica, anticoagulantes, sintomas de deficiencia o sospecha de sobredosis.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Multivitaminico adulto?",
+      "respuesta": "Suplemento dietario que combina vitaminas y minerales para complementar la ingesta en adultos cuando la alimentacion o contexto lo justifica. No previene ni trata enfermedades por si mismo y no sustituye una dieta adecuada."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "La sobredosis, especialmente de hierro o vitaminas liposolubles, puede ser toxica."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta antes de combinar suplementos o si existen embarazo, enfermedad renal o hepatica, anticoagulantes, sintomas de deficiencia o sospecha de sobredosis."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Multivitaminico adulto: usos, precauciones y seguridad",
+    "descripcion": "Suplemento dietario que combina vitaminas y minerales para complementar la ingesta en adultos cuando la alimentacion o contexto lo justifica. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "multivitamin",
+      "multivitamin mineral"
+    ],
+    "keywords": [
+      "multivitaminico",
+      "multivitaminico adulto",
+      "vitaminas",
+      "minerales",
+      "suplemento"
+    ]
+  }
 }

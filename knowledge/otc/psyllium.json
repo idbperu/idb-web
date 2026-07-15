@@ -84,13 +84,12 @@
       "url": "https://medlineplus.gov/spanish/druginfo/meds/a601104-es.html",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "psyllium",
     "search_keywords": [
       "psyllium",
       "psilio",
@@ -100,5 +99,47 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "fibra laxante formador volumen",
+  "efectos_adversos": [
+    "Gases, distension o colicos al iniciar.",
+    "Sin suficiente liquido puede obstruir garganta, esofago o intestino."
+  ],
+  "cuando_consultar": "Consulta si el estrenimiento es nuevo o persistente, existe dolor, vomitos, sangrado o dificultad para tragar, o si no puedes tomar suficiente liquido.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Psyllium?",
+      "respuesta": "Fibra formadora de volumen usada de forma general para estrenimiento ocasional o para aumentar fibra dietaria. Requiere suficiente liquido y no debe usarse si hay sospecha de obstruccion o dificultad para tragar."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Sin suficiente liquido puede obstruir garganta, esofago o intestino."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si el estrenimiento es nuevo o persistente, existe dolor, vomitos, sangrado o dificultad para tragar, o si no puedes tomar suficiente liquido."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "estrenimiento",
+      "titulo": "Estrenimiento"
+    }
+  ],
+  "seo": {
+    "titulo": "Psyllium: usos, precauciones y seguridad",
+    "descripcion": "Fibra formadora de volumen usada de forma general para estrenimiento ocasional o para aumentar fibra dietaria. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "psilio",
+      "ispaghula"
+    ],
+    "keywords": [
+      "psyllium",
+      "psilio",
+      "fibra",
+      "estrenimiento",
+      "laxante formador de volumen"
+    ]
+  }
 }

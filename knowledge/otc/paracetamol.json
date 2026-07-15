@@ -90,10 +90,10 @@
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
       "fecha_publicacion": "2025-11-15",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "paracetamol",
@@ -107,5 +107,49 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "dolor y fiebre",
+  "efectos_adversos": [
+    "Nauseas o erupcion cutanea, aunque a dosis habituales suele tolerarse bien.",
+    "La sobredosis puede causar dano hepatico grave y al inicio no producir sintomas evidentes."
+  ],
+  "cuando_consultar": "Consulta si fiebre o dolor persisten o empeoran; ante posible sobredosis busca ayuda inmediata aunque la persona se sienta bien.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Paracetamol?",
+      "respuesta": "Medicamento usado de forma general como analgesico y antipiretico para molestias leves o fiebre. Esta ficha no decide si corresponde usarlo en una persona concreta; la eleccion depende del sintoma, edad, antecedentes, otros medicamentos y de la etiqueta del producto."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "La sobredosis puede causar dano hepatico grave y al inicio no producir sintomas evidentes."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si fiebre o dolor persisten o empeoran; ante posible sobredosis busca ayuda inmediata aunque la persona se sienta bien."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "fiebre",
+      "titulo": "Fiebre"
+    }
+  ],
+  "seo": {
+    "titulo": "Paracetamol: usos, precauciones y seguridad",
+    "descripcion": "Medicamento usado de forma general como analgesico y antipiretico para molestias leves o fiebre. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "acetaminofeno",
+      "acetaminophen",
+      "apap"
+    ],
+    "keywords": [
+      "paracetamol",
+      "acetaminofeno",
+      "acetaminophen",
+      "apap",
+      "dolor",
+      "fiebre"
+    ]
+  }
 }

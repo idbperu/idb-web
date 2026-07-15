@@ -86,13 +86,12 @@
       "url": "https://ods.od.nih.gov/factsheets/VitaminC-Consumer/",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "vitamina-c",
     "search_keywords": [
       "vitamina c",
       "acido ascorbico",
@@ -102,5 +101,41 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "suplemento vitaminico",
+  "efectos_adversos": [
+    "Diarrea, nauseas o colicos, sobre todo con cantidades altas.",
+    "El exceso puede aumentar el riesgo de calculos renales en personas susceptibles e interferir con algunas pruebas."
+  ],
+  "cuando_consultar": "Consulta antes de dosis altas si hay enfermedad renal, calculos, sobrecarga de hierro o tratamientos oncologicos, y si se sospecha una deficiencia.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Vitamina C?",
+      "respuesta": "Suplemento vitaminico usado de forma general para complementar ingesta de vitamina C cuando la dieta o contexto lo justifica. No debe presentarse como tratamiento de infecciones ni sustituir alimentacion equilibrada o evaluacion de deficiencias."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El exceso puede aumentar el riesgo de calculos renales en personas susceptibles e interferir con algunas pruebas."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta antes de dosis altas si hay enfermedad renal, calculos, sobrecarga de hierro o tratamientos oncologicos, y si se sospecha una deficiencia."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Vitamina C: usos, precauciones y seguridad",
+    "descripcion": "Suplemento vitaminico usado de forma general para complementar ingesta de vitamina C cuando la dieta o contexto lo justifica. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "ascorbic acid",
+      "acido ascorbico"
+    ],
+    "keywords": [
+      "vitamina c",
+      "acido ascorbico",
+      "suplemento",
+      "vitaminas",
+      "deficiencia"
+    ]
+  }
 }

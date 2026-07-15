@@ -77,7 +77,7 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydrogen%20peroxide%203%25",
       "tipo": "rotulado-oficial",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     },
     {
       "organizacion": "ATSDR",
@@ -85,13 +85,12 @@
       "url": "https://wwwn.cdc.gov/TSP/MMG/MMGDetails.aspx?mmgid=304&toxid=55",
       "tipo": "guia-institucional",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "peroxido-de-hidrogeno",
     "search_keywords": [
       "peroxido de hidrogeno",
       "agua oxigenada",
@@ -101,5 +100,41 @@
     ],
     "rco_triage_maximo": "orange"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antiseptico topico",
+  "efectos_adversos": [
+    "Ardor, irritacion, blanqueamiento temporal o dano del tejido expuesto.",
+    "El uso repetido en heridas puede retrasar la cicatrizacion."
+  ],
+  "cuando_consultar": "Consulta por heridas profundas, punzantes, mordeduras, quemaduras, infeccion, contacto ocular, ingestion o irritacion importante.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Peroxido de hidrogeno 3%?",
+      "respuesta": "Antiseptico topico de uso externo disponible en solucion al 3% en algunos mercados. Debe usarse solo segun etiqueta y con prudencia, porque puede irritar tejidos y no reemplaza limpieza adecuada ni evaluacion de heridas relevantes."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El uso repetido en heridas puede retrasar la cicatrizacion."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta por heridas profundas, punzantes, mordeduras, quemaduras, infeccion, contacto ocular, ingestion o irritacion importante."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Peroxido de hidrogeno 3%: usos, precauciones y seguridad",
+    "descripcion": "Antiseptico topico de uso externo disponible en solucion al 3% en algunos mercados. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "hydrogen peroxide",
+      "agua oxigenada 3%"
+    ],
+    "keywords": [
+      "peroxido de hidrogeno",
+      "agua oxigenada",
+      "antiseptico",
+      "primeros auxilios",
+      "heridas leves"
+    ]
+  }
 }

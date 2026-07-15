@@ -87,7 +87,7 @@
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
       "fecha_publicacion": "2017-10-15",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     },
     {
       "organizacion": "FDA",
@@ -95,13 +95,12 @@
       "url": "https://www.fda.gov/consumers/consumer-updates/want-quit-smoking-fda-approved-products-can-help",
       "tipo": "referencia-regulatoria",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "nicotina-reemplazo",
     "search_keywords": [
       "nicotina",
       "terapia de reemplazo",
@@ -111,5 +110,41 @@
     ],
     "rco_triage_maximo": "orange"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "cesacion tabaquica",
+  "efectos_adversos": [
+    "Irritacion de piel o boca, hipo, nauseas, suenos vividos o insomnio segun la presentacion.",
+    "El exceso de nicotina puede causar palpitaciones, mareo, vomitos, debilidad o confusion."
+  ],
+  "cuando_consultar": "Consulta para elegir presentacion si hay embarazo, lactancia, adolescencia, cardiopatia reciente o tratamientos cronicos, y ante sintomas de exceso de nicotina.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Nicotina terapia de reemplazo?",
+      "respuesta": "Ayuda farmacologica para dejar de fumar o reducir sintomas de abstinencia por nicotina dentro de un plan de cesacion. No debe combinarse con cigarrillos u otros productos de nicotina sin orientacion por riesgo de sobredosis."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El exceso de nicotina puede causar palpitaciones, mareo, vomitos, debilidad o confusion."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta para elegir presentacion si hay embarazo, lactancia, adolescencia, cardiopatia reciente o tratamientos cronicos, y ante sintomas de exceso de nicotina."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Nicotina terapia de reemplazo: usos, precauciones y seguridad",
+    "descripcion": "Ayuda farmacologica para dejar de fumar o reducir sintomas de abstinencia por nicotina dentro de un plan de cesacion. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "nicotine replacement therapy",
+      "nrt"
+    ],
+    "keywords": [
+      "nicotina",
+      "terapia de reemplazo",
+      "dejar de fumar",
+      "parche de nicotina",
+      "goma de nicotina"
+    ]
+  }
 }

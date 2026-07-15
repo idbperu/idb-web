@@ -80,13 +80,12 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=zinc%20oxide%20ointment",
       "tipo": "rotulado-oficial",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "oxido-de-zinc",
     "search_keywords": [
       "oxido de zinc",
       "crema barrera",
@@ -96,5 +95,41 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "protector cutaneo barrera",
+  "efectos_adversos": [
+    "Irritacion, picazon o enrojecimiento local poco frecuentes.",
+    "Aplicarlo sobre una infeccion o lesion profunda puede retrasar la evaluacion adecuada."
+  ],
+  "cuando_consultar": "Consulta si la irritacion es extensa, profunda, dolorosa, supura, se acompana de fiebre o no mejora con cuidado de barrera.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Oxido de zinc?",
+      "respuesta": "Protector cutaneo usado de forma general como barrera para irritacion leve por humedad o roce, incluida dermatitis del panal leve. No trata infecciones profundas ni reemplaza evaluacion si hay signos de infeccion."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Aplicarlo sobre una infeccion o lesion profunda puede retrasar la evaluacion adecuada."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si la irritacion es extensa, profunda, dolorosa, supura, se acompana de fiebre o no mejora con cuidado de barrera."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Oxido de zinc: usos, precauciones y seguridad",
+    "descripcion": "Protector cutaneo usado de forma general como barrera para irritacion leve por humedad o roce, incluida dermatitis del panal leve. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "zinc oxide",
+      "pasta de zinc"
+    ],
+    "keywords": [
+      "oxido de zinc",
+      "crema barrera",
+      "dermatitis del panal",
+      "irritacion",
+      "protector cutaneo"
+    ]
+  }
 }

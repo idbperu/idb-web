@@ -76,27 +76,17 @@
   },
   "fuente_oficial": [
     {
-      "organizacion": "FDA",
-      "titulo": "FDA Drug Safety Communication: rare but serious allergic reactions with chlorhexidine gluconate",
-      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-warns-about-rare-serious-allergic-reactions-skin-antiseptic-chlorhexidine-gluconate",
-      "tipo": "referencia-regulatoria",
-      "pais_o_region": "Estados Unidos",
-      "fecha_publicacion": "2017-02-02",
-      "fecha_consulta": "2026-07-08"
-    },
-    {
       "organizacion": "DailyMed",
       "titulo": "Chlorhexidine gluconate topical drug label",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorhexidine%20gluconate%20topical",
       "tipo": "rotulado-oficial",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "clorhexidina-topica",
     "search_keywords": [
       "clorhexidina",
       "clorhexidina topica",
@@ -106,5 +96,41 @@
     ],
     "rco_triage_maximo": "orange"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antiseptico topico",
+  "efectos_adversos": [
+    "Irritacion, enrojecimiento o ardor local.",
+    "Aunque es infrecuente, puede causar una reaccion alergica inmediata grave."
+  ],
+  "cuando_consultar": "Consulta por heridas profundas, mordeduras, quemaduras extensas, infeccion, contacto ocular o cualquier reaccion alergica.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Clorhexidina topica?",
+      "respuesta": "Antiseptico topico usado de forma general para limpieza antiseptica de piel intacta o pequenas lesiones superficiales segun etiqueta. No debe usarse en ojos, oido medio, meninges, heridas profundas o quemaduras extensas sin supervision."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Aunque es infrecuente, puede causar una reaccion alergica inmediata grave."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta por heridas profundas, mordeduras, quemaduras extensas, infeccion, contacto ocular o cualquier reaccion alergica."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Clorhexidina topica: usos, precauciones y seguridad",
+    "descripcion": "Antiseptico topico usado de forma general para limpieza antiseptica de piel intacta o pequenas lesiones superficiales segun etiqueta. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "chlorhexidine",
+      "chlorhexidine gluconate"
+    ],
+    "keywords": [
+      "clorhexidina",
+      "clorhexidina topica",
+      "antiseptico",
+      "desinfeccion de piel",
+      "primeros auxilios"
+    ]
+  }
 }

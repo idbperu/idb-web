@@ -88,10 +88,10 @@
       "tipo": "guia-institucional",
       "pais_o_region": "Global",
       "fecha_publicacion": "2006-01-01",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "sales-de-rehidratacion-oral",
@@ -105,5 +105,55 @@
     ],
     "rco_triage_maximo": "orange"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "rehidratacion diarrea vomitos",
+  "efectos_adversos": [
+    "Nauseas o vomitos si se ingiere demasiado rapido.",
+    "Una mezcla demasiado concentrada o diluida puede alterar sodio, glucosa y otros electrolitos."
+  ],
+  "cuando_consultar": "Consulta de urgencia ante letargo, sed extrema, ojos hundidos, muy poca orina, incapacidad para beber, vomitos persistentes o diarrea con sangre.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Sales de rehidratacion oral?",
+      "respuesta": "Solucion de glucosa y electrolitos usada para prevenir o tratar deshidratacion leve a moderada por diarrea o vomitos, cuando la persona puede beber. No reemplaza atencion urgente ante deshidratacion severa, shock, somnolencia marcada o imposibilidad de tomar liquidos."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Una mezcla demasiado concentrada o diluida puede alterar sodio, glucosa y otros electrolitos."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta de urgencia ante letargo, sed extrema, ojos hundidos, muy poca orina, incapacidad para beber, vomitos persistentes o diarrea con sangre."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "diarrea",
+      "titulo": "Diarrea"
+    },
+    {
+      "tipo": "enfermedad",
+      "slug": "deshidratacion",
+      "titulo": "Deshidratacion"
+    }
+  ],
+  "seo": {
+    "titulo": "Sales de rehidratacion oral: usos, precauciones y seguridad",
+    "descripcion": "Solucion de glucosa y electrolitos usada para prevenir o tratar deshidratacion leve a moderada por diarrea o vomitos, cuando la persona puede beber. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "sro",
+      "ors",
+      "oral rehydration salts",
+      "suero oral"
+    ],
+    "keywords": [
+      "sales de rehidratacion oral",
+      "sro",
+      "suero oral",
+      "diarrea",
+      "vomitos",
+      "deshidratacion"
+    ]
+  }
 }

@@ -76,27 +76,18 @@
   },
   "fuente_oficial": [
     {
-      "organizacion": "FDA",
-      "titulo": "FDA Drug Safety Communication: Serious adverse events from accidental ingestion by children of over-the-counter eye drops and nasal sprays",
-      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-serious-adverse-events-accidental-ingestion-children-over-counter-eye",
-      "tipo": "referencia-regulatoria",
-      "pais_o_region": "Estados Unidos",
-      "fecha_publicacion": "2016-02-11",
-      "fecha_consulta": "2026-07-08"
-    },
-    {
-      "organizacion": "MedlinePlus",
-      "titulo": "Aerosol nasal de oximetazolina",
-      "url": "https://medlineplus.gov/spanish/druginfo/meds/a608026-es.html",
-      "tipo": "referencia-educativa",
-      "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "organizacion": "AEMPS",
+      "titulo": "Prospecto Frenasal 1 mg/ml solucion para pulverizacion nasal",
+      "url": "https://cima.aemps.es/cima/dochtml/p/74671/Prospecto_74671.html",
+      "tipo": "rotulado-oficial",
+      "pais_o_region": "Espana",
+      "fecha_publicacion": "2021-04",
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "xilometazolina-nasal",
     "search_keywords": [
       "xilometazolina",
       "descongestivo nasal",
@@ -106,5 +97,47 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "descongestivo nasal topico",
+  "efectos_adversos": [
+    "Sequedad, ardor, estornudos, dolor de cabeza o palpitaciones.",
+    "El uso excesivo o prolongado puede producir congestion de rebote y dependencia del descongestivo."
+  ],
+  "cuando_consultar": "Consulta si la congestion empeora o no mejora tras el periodo de la etiqueta, aparece congestion de rebote, palpitaciones, dolor toracico o ingestion accidental.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Xilometazolina nasal?",
+      "respuesta": "Descongestivo nasal topico usado de forma general para alivio temporal de congestion nasal. Debe utilizarse por periodos cortos segun etiqueta para evitar congestion de rebote y efectos no deseados."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El uso excesivo o prolongado puede producir congestion de rebote y dependencia del descongestivo."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si la congestion empeora o no mejora tras el periodo de la etiqueta, aparece congestion de rebote, palpitaciones, dolor toracico o ingestion accidental."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "congestion-nasal",
+      "titulo": "Congestion nasal"
+    }
+  ],
+  "seo": {
+    "titulo": "Xilometazolina nasal: usos, precauciones y seguridad",
+    "descripcion": "Descongestivo nasal topico usado de forma general para alivio temporal de congestion nasal. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "xylometazoline",
+      "xilometazolina spray"
+    ],
+    "keywords": [
+      "xilometazolina",
+      "descongestivo nasal",
+      "spray nasal",
+      "congestion nasal",
+      "gotas nasales"
+    ]
+  }
 }

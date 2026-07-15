@@ -84,10 +84,10 @@
       "url": "https://medlineplus.gov/spanish/druginfo/meds/a682159-es.html",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "ibuprofeno",
@@ -101,5 +101,52 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "aine dolor fiebre inflamacion",
+  "efectos_adversos": [
+    "Acidez, dolor de estomago, nauseas, mareo o retencion de liquidos.",
+    "Puede causar ulcera o sangrado digestivo, dano renal y eventos cardiovasculares, incluso sin sintomas previos."
+  ],
+  "cuando_consultar": "Consulta antes de usar si hay riesgo digestivo, renal, cardiovascular o embarazo; busca atencion ante sangrado, falta de aire, edema, dolor toracico o poca orina.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Ibuprofeno?",
+      "respuesta": "AINE usado de forma general para alivio temporal de dolor leve a moderado, fiebre o inflamacion leve. No es adecuado para todas las personas y requiere revisar riesgos gastrointestinales, cardiovasculares, renales, embarazo y otros medicamentos."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Puede causar ulcera o sangrado digestivo, dano renal y eventos cardiovasculares, incluso sin sintomas previos."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta antes de usar si hay riesgo digestivo, renal, cardiovascular o embarazo; busca atencion ante sangrado, falta de aire, edema, dolor toracico o poca orina."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "fiebre",
+      "titulo": "Fiebre"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "dolor-articular",
+      "titulo": "Dolor articular"
+    }
+  ],
+  "seo": {
+    "titulo": "Ibuprofeno: usos, precauciones y seguridad",
+    "descripcion": "AINE usado de forma general para alivio temporal de dolor leve a moderado, fiebre o inflamacion leve. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "ibuprofen"
+    ],
+    "keywords": [
+      "ibuprofeno",
+      "antiinflamatorio",
+      "aine",
+      "dolor",
+      "fiebre",
+      "inflamacion"
+    ]
+  }
 }

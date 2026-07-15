@@ -85,10 +85,10 @@
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
       "fecha_publicacion": "2024-06-20",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "calcio",
@@ -101,5 +101,46 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antiacido suplemento calcio",
+  "efectos_adversos": [
+    "Estrenimiento, gases o distension abdominal.",
+    "El exceso puede causar calcio alto, calculos renales, nauseas o confusion."
+  ],
+  "cuando_consultar": "Consulta antes de uso frecuente o como suplemento, y si la acidez persiste, hay dificultad al tragar, perdida de peso, vomitos o dolor de pecho.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Carbonato de calcio?",
+      "respuesta": "Producto usado como antiacido para alivio temporal de acidez o como suplemento de calcio cuando la dieta no aporta suficiente, segun necesidad y etiqueta. No debe usarse de forma prolongada ni junto con otros suplementos sin revisar la cantidad total de calcio."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El exceso puede causar calcio alto, calculos renales, nauseas o confusion."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta antes de uso frecuente o como suplemento, y si la acidez persiste, hay dificultad al tragar, perdida de peso, vomitos o dolor de pecho."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "acidez",
+      "titulo": "Acidez"
+    }
+  ],
+  "seo": {
+    "titulo": "Carbonato de calcio: usos, precauciones y seguridad",
+    "descripcion": "Producto usado como antiacido para alivio temporal de acidez o como suplemento de calcio cuando la dieta no aporta suficiente, segun necesidad y etiqueta. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "calcium carbonate"
+    ],
+    "keywords": [
+      "carbonato de calcio",
+      "calcio",
+      "antiacido",
+      "acidez",
+      "suplemento de calcio"
+    ]
+  }
 }

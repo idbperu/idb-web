@@ -89,7 +89,7 @@
       "url": "https://medlineplus.gov/spanish/druginfo/meds/a697038-es.html",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     },
     {
       "organizacion": "NHS",
@@ -97,10 +97,10 @@
       "url": "https://www.nhs.uk/medicines/loratadine/",
       "tipo": "referencia-educativa",
       "pais_o_region": "Reino Unido",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "loratadina",
@@ -114,5 +114,41 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antihistaminico no sedante",
+  "efectos_adversos": [
+    "Dolor de cabeza, boca seca o somnolencia, generalmente leve.",
+    "Raramente puede causar palpitaciones o reaccion alergica grave."
+  ],
+  "cuando_consultar": "Consulta si los sintomas persisten, hay somnolencia relevante, enfermedad hepatica o renal, o aparecen dificultad respiratoria o hinchazon facial.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Loratadina?",
+      "respuesta": "Antihistaminico usado de forma general para sintomas de alergia como estornudos, secrecion nasal, picazon ocular o ronchas leves. No trata reacciones alergicas graves ni reemplaza atencion si hay dificultad respiratoria o hinchazon importante."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Raramente puede causar palpitaciones o reaccion alergica grave."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si los sintomas persisten, hay somnolencia relevante, enfermedad hepatica o renal, o aparecen dificultad respiratoria o hinchazon facial."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Loratadina: usos, precauciones y seguridad",
+    "descripcion": "Antihistaminico usado de forma general para sintomas de alergia como estornudos, secrecion nasal, picazon ocular o ronchas leves. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "loratadine"
+    ],
+    "keywords": [
+      "loratadina",
+      "antihistaminico",
+      "alergia",
+      "rinitis alergica",
+      "ronchas",
+      "picazon"
+    ]
+  }
 }

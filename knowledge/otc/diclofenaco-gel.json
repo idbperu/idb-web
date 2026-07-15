@@ -75,10 +75,10 @@
       "url": "https://medlineplus.gov/spanish/druginfo/meds/a611002-es.html",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "diclofenaco",
@@ -91,5 +91,52 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "aine topico dolor localizado",
+  "efectos_adversos": [
+    "Irritacion, picazon, resequedad o erupcion en la zona aplicada.",
+    "Puede aumentar sensibilidad al sol; aunque la absorcion es menor que por via oral, conserva riesgos de los AINE."
+  ],
+  "cuando_consultar": "Consulta si el dolor sigue, la zona esta muy inflamada o deformada, hubo traumatismo importante o aparecen signos digestivos, renales, cardiacos o alergicos.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Diclofenaco gel?",
+      "respuesta": "AINE topico usado de forma general para alivio temporal de dolor localizado en articulaciones o tejidos superficiales. Aunque se aplique en piel, mantiene precauciones de los antiinflamatorios y no debe usarse para dolor intenso, lesiones abiertas o sintomas que requieren evaluacion."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Puede aumentar sensibilidad al sol; aunque la absorcion es menor que por via oral, conserva riesgos de los AINE."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si el dolor sigue, la zona esta muy inflamada o deformada, hubo traumatismo importante o aparecen signos digestivos, renales, cardiacos o alergicos."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "dolor-articular",
+      "titulo": "Dolor articular"
+    },
+    {
+      "tipo": "sintoma",
+      "slug": "dolor-muscular",
+      "titulo": "Dolor muscular"
+    }
+  ],
+  "seo": {
+    "titulo": "Diclofenaco gel: usos, precauciones y seguridad",
+    "descripcion": "AINE topico usado de forma general para alivio temporal de dolor localizado en articulaciones o tejidos superficiales. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "diclofenac gel",
+      "diclofenaco topico"
+    ],
+    "keywords": [
+      "diclofenaco gel",
+      "diclofenaco topico",
+      "antiinflamatorio topico",
+      "dolor articular",
+      "dolor muscular"
+    ]
+  }
 }

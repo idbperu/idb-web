@@ -87,13 +87,12 @@
       "tipo": "guia-institucional",
       "pais_o_region": "Estados Unidos",
       "fecha_publicacion": "2025-07-16",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "solucion-salina-nasal",
     "search_keywords": [
       "solucion salina nasal",
       "suero nasal",
@@ -103,5 +102,47 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "humectacion lavado nasal",
+  "efectos_adversos": [
+    "Escozor, irritacion o sensacion de oido tapado durante el lavado.",
+    "El agua no segura o un dispositivo contaminado puede causar infecciones graves."
+  ],
+  "cuando_consultar": "Consulta si hay fiebre alta, dolor facial intenso, sangrado repetido, falta de aire o sintomas persistentes; detente ante dolor fuerte durante el lavado.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Solucion salina nasal?",
+      "respuesta": "Solucion salina usada de forma general para humectar fosas nasales, fluidificar secreciones o realizar lavados nasales segun instrucciones del producto. No reemplaza evaluacion si hay sintomas respiratorios severos o persistentes."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El agua no segura o un dispositivo contaminado puede causar infecciones graves."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si hay fiebre alta, dolor facial intenso, sangrado repetido, falta de aire o sintomas persistentes; detente ante dolor fuerte durante el lavado."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "congestion-nasal",
+      "titulo": "Congestion nasal"
+    }
+  ],
+  "seo": {
+    "titulo": "Solucion salina nasal: usos, precauciones y seguridad",
+    "descripcion": "Solucion salina usada de forma general para humectar fosas nasales, fluidificar secreciones o realizar lavados nasales segun instrucciones del producto. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "saline nasal spray",
+      "suero fisiologico nasal"
+    ],
+    "keywords": [
+      "solucion salina nasal",
+      "suero nasal",
+      "lavado nasal",
+      "spray salino",
+      "congestion nasal"
+    ]
+  }
 }

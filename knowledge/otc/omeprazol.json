@@ -84,7 +84,7 @@
       "url": "https://medlineplus.gov/spanish/druginfo/meds/a693050-es.html",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     },
     {
       "organizacion": "NHS",
@@ -93,10 +93,10 @@
       "tipo": "referencia-educativa",
       "pais_o_region": "Reino Unido",
       "fecha_publicacion": "2025-09-17",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "omeprazol",
@@ -110,5 +110,49 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "reductor acidez ibp",
+  "efectos_adversos": [
+    "Dolor de cabeza, dolor abdominal, nauseas, diarrea o estrenimiento.",
+    "El uso prolongado sin control puede asociarse con deficit de magnesio o vitamina B12, fracturas e infecciones intestinales."
+  ],
+  "cuando_consultar": "Consulta si la acidez es nueva o frecuente, no mejora, requiere uso prolongado o se acompana de dificultad al tragar, anemia, perdida de peso, vomitos o heces negras.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Omeprazol?",
+      "respuesta": "Inhibidor de bomba de protones que reduce la acidez gastrica. Puede usarse en algunos contextos de acidez frecuente o reflujo, pero no debe ocultar sintomas de alarma ni mantenerse sin evaluacion si el problema persiste."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El uso prolongado sin control puede asociarse con deficit de magnesio o vitamina B12, fracturas e infecciones intestinales."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si la acidez es nueva o frecuente, no mejora, requiere uso prolongado o se acompana de dificultad al tragar, anemia, perdida de peso, vomitos o heces negras."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "acidez",
+      "titulo": "Acidez"
+    }
+  ],
+  "seo": {
+    "titulo": "Omeprazol: usos, precauciones y seguridad",
+    "descripcion": "Inhibidor de bomba de protones que reduce la acidez gastrica. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "omeprazole",
+      "ibp",
+      "inhibidor de bomba de protones"
+    ],
+    "keywords": [
+      "omeprazol",
+      "acidez",
+      "reflujo",
+      "agruras",
+      "protector gastrico",
+      "inhibidor de bomba de protones"
+    ]
+  }
 }

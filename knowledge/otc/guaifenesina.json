@@ -91,13 +91,12 @@
       "url": "https://medlineplus.gov/spanish/druginfo/meds/a682494-es.html",
       "tipo": "referencia-educativa",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
-    "knowledge_slug_relacionado": "guaifenesina",
     "search_keywords": [
       "guaifenesina",
       "expectorante",
@@ -107,5 +106,46 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "expectorante",
+  "efectos_adversos": [
+    "Nauseas, vomitos, dolor de cabeza o mareo.",
+    "Las reacciones alergicas son poco frecuentes."
+  ],
+  "cuando_consultar": "Consulta si la tos persiste, se repite, contiene sangre o se acompana de fiebre alta, dolor toracico, falta de aire o enfermedad pulmonar cronica.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Guaifenesina?",
+      "respuesta": "Expectorante usado de forma general para ayudar a aflojar moco en tos asociada a resfrio u otras irritaciones respiratorias leves. No reemplaza evaluacion si hay dificultad respiratoria, fiebre alta o sintomas persistentes."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Las reacciones alergicas son poco frecuentes."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si la tos persiste, se repite, contiene sangre o se acompana de fiebre alta, dolor toracico, falta de aire o enfermedad pulmonar cronica."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "tos",
+      "titulo": "Tos"
+    }
+  ],
+  "seo": {
+    "titulo": "Guaifenesina: usos, precauciones y seguridad",
+    "descripcion": "Expectorante usado de forma general para ayudar a aflojar moco en tos asociada a resfrio u otras irritaciones respiratorias leves. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "guaifenesin"
+    ],
+    "keywords": [
+      "guaifenesina",
+      "expectorante",
+      "flema",
+      "tos con moco",
+      "resfrio"
+    ]
+  }
 }

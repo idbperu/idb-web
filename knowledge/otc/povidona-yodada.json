@@ -81,10 +81,10 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=povidone%20iodine%20topical",
       "tipo": "rotulado-oficial",
       "pais_o_region": "Estados Unidos",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "povidona-yodada",
@@ -97,5 +97,41 @@
     ],
     "rco_triage_maximo": "orange"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antiseptico topico yodado",
+  "efectos_adversos": [
+    "Irritacion, resequedad, ardor o dermatitis de contacto.",
+    "El uso extenso o prolongado puede aumentar absorcion de yodo y alterar la funcion tiroidea."
+  ],
+  "cuando_consultar": "Consulta por heridas profundas o extensas, quemaduras, mordeduras, infeccion, enfermedad tiroidea, embarazo o necesidad de uso repetido.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Povidona yodada?",
+      "respuesta": "Antiseptico topico usado de forma general para antisepsia de piel o pequenas lesiones superficiales segun etiqueta. No reemplaza atencion para heridas profundas, quemaduras extensas o infecciones establecidas."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "El uso extenso o prolongado puede aumentar absorcion de yodo y alterar la funcion tiroidea."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta por heridas profundas o extensas, quemaduras, mordeduras, infeccion, enfermedad tiroidea, embarazo o necesidad de uso repetido."
+    }
+  ],
+  "relaciones_clinicas": [],
+  "seo": {
+    "titulo": "Povidona yodada: usos, precauciones y seguridad",
+    "descripcion": "Antiseptico topico usado de forma general para antisepsia de piel o pequenas lesiones superficiales segun etiqueta. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "povidone iodine",
+      "iodopovidona"
+    ],
+    "keywords": [
+      "povidona yodada",
+      "yodo povidona",
+      "antiseptico",
+      "primeros auxilios",
+      "desinfeccion de piel"
+    ]
+  }
 }

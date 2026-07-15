@@ -89,10 +89,10 @@
       "url": "https://www.nhs.uk/medicines/simeticone/",
       "tipo": "referencia-educativa",
       "pais_o_region": "Reino Unido",
-      "fecha_consulta": "2026-07-08"
+      "fecha_consulta": "2026-07-15"
     }
   ],
-  "fecha_revision": "2026-07-08",
+  "fecha_revision": "2026-07-15",
   "estado_validacion": "validado",
   "compatibilidad": {
     "knowledge_slug_relacionado": "simeticona",
@@ -105,5 +105,46 @@
     ],
     "rco_triage_maximo": "yellow"
   },
-  "version": "1.0"
+  "version": "1.1",
+  "clasificacion_clinica": "antiflatulento",
+  "efectos_adversos": [
+    "En general se tolera bien; ocasionalmente causa nauseas, estrenimiento o diarrea.",
+    "Una reaccion alergica es rara, pero requiere atencion inmediata."
+  ],
+  "cuando_consultar": "Consulta si la distension es persistente o intensa, aparece con vomitos, fiebre, abdomen duro, sangre, perdida de peso o imposibilidad de evacuar gases.",
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Para que se usa Simeticona?",
+      "respuesta": "Antiflatulento usado de forma general para aliviar sensacion de gases, distension o aire atrapado. No trata causas graves de dolor abdominal ni debe usarse para retrasar consulta si hay sintomas de alarma."
+    },
+    {
+      "pregunta": "¿Que riesgo distingue a este medicamento?",
+      "respuesta": "Una reaccion alergica es rara, pero requiere atencion inmediata."
+    },
+    {
+      "pregunta": "¿Cuando debo pedir orientacion profesional?",
+      "respuesta": "Consulta si la distension es persistente o intensa, aparece con vomitos, fiebre, abdomen duro, sangre, perdida de peso o imposibilidad de evacuar gases."
+    }
+  ],
+  "relaciones_clinicas": [
+    {
+      "tipo": "sintoma",
+      "slug": "gases",
+      "titulo": "Gases"
+    }
+  ],
+  "seo": {
+    "titulo": "Simeticona: usos, precauciones y seguridad",
+    "descripcion": "Antiflatulento usado de forma general para aliviar sensacion de gases, distension o aire atrapado. Revisa contraindicaciones, efectos adversos, interacciones y senales de alarma.",
+    "aliases": [
+      "simethicone"
+    ],
+    "keywords": [
+      "simeticona",
+      "gases",
+      "flatulencia",
+      "distension abdominal",
+      "colicos"
+    ]
+  }
 }
