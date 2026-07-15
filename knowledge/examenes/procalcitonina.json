@@ -1,0 +1,98 @@
+{
+  "id": "examen-procalcitonina",
+  "slug": "procalcitonina",
+  "titulo": "Procalcitonina",
+  "tipo": "examen",
+  "categoria": "Infectología",
+  "descripcion": "¿Qué es? Mide procalcitonina en sangre, biomarcador que puede aumentar en infecciones bacterianas sistémicas. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide procalcitonina en sangre, biomarcador que puede aumentar en infecciones bacterianas sistémicas. Apoya la evaluación de sepsis y, en contextos definidos, decisiones de seguimiento antibiótico junto con la clínica.",
+  "para_que_sirve": "¿Para qué sirve? Apoya la evaluación de sepsis y, en contextos definidos, decisiones de seguimiento antibiótico junto con la clínica. Indicaciones: Se solicita principalmente en pacientes con sospecha de infección bacteriana grave o sepsis.",
+  "causas": "Interpretación general: Un resultado alto aumenta la sospecha de infección bacteriana sistémica, pero también puede elevarse por otras causas; uno bajo no excluye infección localizada o temprana. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Los puntos de decisión dependen del ensayo, protocolo, momento clínico y tipo de infección. Enfermedades relacionadas: Sepsis e infecciones bacterianas graves. Especialidad relacionada: Infectología. Exámenes relacionados: Hemocultivos, lactato, PCR, hemograma y función orgánica.",
+  "sintomas": [
+    "fiebre",
+    "escalofrios",
+    "respiración rápida",
+    "confusión"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "No suele requerir preparación especial.",
+    "La toma no debe retrasar la atención urgente ni cultivos indicados."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita principalmente en pacientes con sospecha de infección bacteriana grave o sepsis.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Procalcitonina?",
+      "respuesta": "Mide procalcitonina en sangre, biomarcador que puede aumentar en infecciones bacterianas sistémicas."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Apoya la evaluación de sepsis y, en contextos definidos, decisiones de seguimiento antibiótico junto con la clínica."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "No suele requerir preparación especial. La toma no debe retrasar la atención urgente ni cultivos indicados."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un resultado alto aumenta la sospecha de infección bacteriana sistémica, pero también puede elevarse por otras causas; uno bajo no excluye infección localizada o temprana. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-sepsis",
+      "slug": "sepsis",
+      "categoria": "Relacionados",
+      "titulo": "Sepsis"
+    },
+    {
+      "id": "rel-fiebre",
+      "slug": "fiebre",
+      "categoria": "Relacionados",
+      "titulo": "Fiebre"
+    },
+    {
+      "id": "rel-escalofrios",
+      "slug": "escalofrios",
+      "categoria": "Relacionados",
+      "titulo": "Escalofrios"
+    },
+    {
+      "id": "rel-confusion",
+      "slug": "confusion",
+      "categoria": "Relacionados",
+      "titulo": "Confusion"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-procalcitonin-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Procalcitonin Test",
+      "url": "https://medlineplus.gov/lab-tests/procalcitonin-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "cdc-sepsis",
+      "organizacion": "CDC",
+      "titulo": "About Sepsis",
+      "url": "https://www.cdc.gov/sepsis/about/index.html",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

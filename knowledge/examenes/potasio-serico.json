@@ -1,0 +1,98 @@
+{
+  "id": "examen-potasio-serico",
+  "slug": "potasio-serico",
+  "titulo": "Potasio sérico",
+  "tipo": "examen",
+  "categoria": "Laboratorio",
+  "descripcion": "¿Qué es? Mide potasio en sangre, electrolito esencial para células, músculos y ritmo cardíaco. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide potasio en sangre, electrolito esencial para células, músculos y ritmo cardíaco. Detecta alteraciones que pueden afectar músculos y corazón.",
+  "para_que_sirve": "¿Para qué sirve? Detecta alteraciones que pueden afectar músculos y corazón. Indicaciones: Se solicita en controles, enfermedad renal, diabetes, trastornos suprarrenales, arritmias o uso de medicamentos que alteran potasio.",
+  "causas": "Interpretación general: Tanto el potasio alto como el bajo pueden ser clínicamente importantes; el resultado se confirma si no concuerda con el contexto. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Un intervalo orientativo frecuente es 3.5–5.0 mmol/L, con variación por método y laboratorio. Enfermedades relacionadas: Enfermedad renal, trastornos suprarrenales y arritmias. Especialidad relacionada: Laboratorio. Exámenes relacionados: Electrocardiograma, sodio, magnesio, creatinina y bicarbonato.",
+  "sintomas": [
+    "palpitaciones",
+    "debilidad",
+    "calambres",
+    "hormigueo"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "No suele requerir preparación especial.",
+    "Informa medicamentos y suplementos; una muestra hemolizada puede elevar falsamente el resultado."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita en controles, enfermedad renal, diabetes, trastornos suprarrenales, arritmias o uso de medicamentos que alteran potasio.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Potasio sérico?",
+      "respuesta": "Mide potasio en sangre, electrolito esencial para células, músculos y ritmo cardíaco."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Detecta alteraciones que pueden afectar músculos y corazón."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "No suele requerir preparación especial. Informa medicamentos y suplementos; una muestra hemolizada puede elevar falsamente el resultado."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Tanto el potasio alto como el bajo pueden ser clínicamente importantes; el resultado se confirma si no concuerda con el contexto. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-palpitaciones",
+      "slug": "palpitaciones",
+      "categoria": "Relacionados",
+      "titulo": "Palpitaciones"
+    },
+    {
+      "id": "rel-debilidad",
+      "slug": "debilidad",
+      "categoria": "Relacionados",
+      "titulo": "Debilidad"
+    },
+    {
+      "id": "rel-calambres",
+      "slug": "calambres",
+      "categoria": "Relacionados",
+      "titulo": "Calambres"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-potassium-blood-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Potassium Blood Test",
+      "url": "https://medlineplus.gov/lab-tests/potassium-blood-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-electrolyte-panel",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Electrolyte Panel",
+      "url": "https://medlineplus.gov/lab-tests/electrolyte-panel/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

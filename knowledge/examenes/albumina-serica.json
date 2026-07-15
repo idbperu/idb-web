@@ -1,0 +1,91 @@
+{
+  "id": "examen-albumina-serica",
+  "slug": "albumina-serica",
+  "titulo": "Albúmina sérica",
+  "tipo": "examen",
+  "categoria": "Laboratorio",
+  "descripcion": "¿Qué es? Mide albúmina, la principal proteína de la sangre producida por el hígado. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide albúmina, la principal proteína de la sangre producida por el hígado. Apoya la evaluación del estado general, hígado, riñones y nutrición clínica.",
+  "para_que_sirve": "¿Para qué sirve? Apoya la evaluación del estado general, hígado, riñones y nutrición clínica. Indicaciones: Puede pedirse en controles o ante edema, enfermedad hepática o renal, pérdida de peso o enfermedad prolongada.",
+  "causas": "Interpretación general: La albúmina baja puede relacionarse con menor producción, pérdidas renales, inflamación o malnutrición; la alta suele asociarse a deshidratación. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: El rango varía por laboratorio y método; debe interpretarse junto con proteínas totales, función hepática y renal. Enfermedades relacionadas: Cirrosis, enfermedad renal crónica, inflamación y desnutrición. Especialidad relacionada: Laboratorio. Exámenes relacionados: Pruebas hepáticas, proteínas totales, creatinina y albúmina en orina.",
+  "sintomas": [
+    "hinchazón de piernas",
+    "fatiga",
+    "bajada de peso"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Por lo general no requiere preparación especial; confirma si forma parte de un panel con ayuno.",
+    "Informa medicamentos y suplementos."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Puede pedirse en controles o ante edema, enfermedad hepática o renal, pérdida de peso o enfermedad prolongada.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Albúmina sérica?",
+      "respuesta": "Mide albúmina, la principal proteína de la sangre producida por el hígado."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Apoya la evaluación del estado general, hígado, riñones y nutrición clínica."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Por lo general no requiere preparación especial; confirma si forma parte de un panel con ayuno. Informa medicamentos y suplementos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "La albúmina baja puede relacionarse con menor producción, pérdidas renales, inflamación o malnutrición; la alta suele asociarse a deshidratación. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-hinchazon-de-piernas",
+      "slug": "hinchazon-de-piernas",
+      "categoria": "Relacionados",
+      "titulo": "Hinchazon de piernas"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-albumin-blood-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Albumin Blood Test",
+      "url": "https://medlineplus.gov/lab-tests/albumin-blood-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-total-protein-and-albumin-globulin-a-g-ratio",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Total Protein and Albumin/Globulin Ratio",
+      "url": "https://medlineplus.gov/lab-tests/total-protein-and-albumin-globulin-a-g-ratio/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

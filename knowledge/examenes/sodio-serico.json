@@ -1,0 +1,98 @@
+{
+  "id": "examen-sodio-serico",
+  "slug": "sodio-serico",
+  "titulo": "Sodio sérico",
+  "tipo": "examen",
+  "categoria": "Laboratorio",
+  "descripcion": "¿Qué es? Mide sodio en sangre, electrolito clave para el equilibrio de líquidos y la función nerviosa y muscular. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide sodio en sangre, electrolito clave para el equilibrio de líquidos y la función nerviosa y muscular. Detecta y vigila alteraciones de agua y sodio.",
+  "para_que_sirve": "¿Para qué sirve? Detecta y vigila alteraciones de agua y sodio. Indicaciones: Se solicita en paneles metabólicos o ante vómitos, diarrea, confusión, convulsiones, edema o uso de diuréticos.",
+  "causas": "Interpretación general: Un sodio alto o bajo suele reflejar un problema del equilibrio de agua más que del consumo de sal aislado; cambios graves pueden ser urgentes. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Un intervalo orientativo frecuente es 135–145 mmol/L, pero debe usarse el rango del laboratorio. Enfermedades relacionadas: Deshidratación, insuficiencia cardíaca, enfermedad renal y trastornos hormonales. Especialidad relacionada: Laboratorio. Exámenes relacionados: Potasio, cloro, osmolalidad, glucosa y función renal.",
+  "sintomas": [
+    "confusión",
+    "debilidad",
+    "calambres",
+    "nauseas"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "No suele requerir preparación especial.",
+    "Informa medicamentos, ingesta reciente de líquidos y pérdidas por vómitos o diarrea."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita en paneles metabólicos o ante vómitos, diarrea, confusión, convulsiones, edema o uso de diuréticos.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Sodio sérico?",
+      "respuesta": "Mide sodio en sangre, electrolito clave para el equilibrio de líquidos y la función nerviosa y muscular."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Detecta y vigila alteraciones de agua y sodio."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "No suele requerir preparación especial. Informa medicamentos, ingesta reciente de líquidos y pérdidas por vómitos o diarrea."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un sodio alto o bajo suele reflejar un problema del equilibrio de agua más que del consumo de sal aislado; cambios graves pueden ser urgentes. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-deshidratacion",
+      "slug": "deshidratacion",
+      "categoria": "Relacionados",
+      "titulo": "Deshidratacion"
+    },
+    {
+      "id": "rel-insuficiencia-cardiaca",
+      "slug": "insuficiencia-cardiaca",
+      "categoria": "Relacionados",
+      "titulo": "Insuficiencia cardiaca"
+    },
+    {
+      "id": "rel-confusion",
+      "slug": "confusion",
+      "categoria": "Relacionados",
+      "titulo": "Confusion"
+    },
+    {
+      "id": "rel-debilidad",
+      "slug": "debilidad",
+      "categoria": "Relacionados",
+      "titulo": "Debilidad"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-sodium-blood-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Sodium Blood Test",
+      "url": "https://medlineplus.gov/lab-tests/sodium-blood-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-electrolyte-panel",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Electrolyte Panel",
+      "url": "https://medlineplus.gov/lab-tests/electrolyte-panel/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

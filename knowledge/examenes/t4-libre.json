@@ -1,0 +1,98 @@
+{
+  "id": "examen-t4-libre",
+  "slug": "t4-libre",
+  "titulo": "T4 libre",
+  "tipo": "examen",
+  "categoria": "Endocrinología",
+  "descripcion": "¿Qué es? Mide la fracción libre y activa de tiroxina, principal hormona producida por la tiroides. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide la fracción libre y activa de tiroxina, principal hormona producida por la tiroides. Complementa la TSH para identificar y clasificar alteraciones tiroideas.",
+  "para_que_sirve": "¿Para qué sirve? Complementa la TSH para identificar y clasificar alteraciones tiroideas. Indicaciones: Se solicita ante TSH anormal, síntomas tiroideos, embarazo seleccionado o seguimiento de tratamiento.",
+  "causas": "Interpretación general: Se interpreta junto con TSH; combinaciones discordantes pueden requerir repetir la prueba o evaluar hipófisis, fármacos e interferencias. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Depende del método, unidades, edad, embarazo y laboratorio. Enfermedades relacionadas: Hipotiroidismo, hipertiroidismo y enfermedad hipofisaria. Especialidad relacionada: Endocrinología. Exámenes relacionados: TSH, T3 libre y anticuerpos tiroideos.",
+  "sintomas": [
+    "fatiga",
+    "intolerancia al calor",
+    "piel seca",
+    "palpitaciones"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Generalmente no requiere ayuno.",
+    "Informa biotina, hormonas tiroideas, embarazo y medicamentos."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita ante TSH anormal, síntomas tiroideos, embarazo seleccionado o seguimiento de tratamiento.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es T4 libre?",
+      "respuesta": "Mide la fracción libre y activa de tiroxina, principal hormona producida por la tiroides."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Complementa la TSH para identificar y clasificar alteraciones tiroideas."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Generalmente no requiere ayuno. Informa biotina, hormonas tiroideas, embarazo y medicamentos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Se interpreta junto con TSH; combinaciones discordantes pueden requerir repetir la prueba o evaluar hipófisis, fármacos e interferencias. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-hipotiroidismo",
+      "slug": "hipotiroidismo",
+      "categoria": "Relacionados",
+      "titulo": "Hipotiroidismo"
+    },
+    {
+      "id": "rel-hipertiroidismo",
+      "slug": "hipertiroidismo",
+      "categoria": "Relacionados",
+      "titulo": "Hipertiroidismo"
+    },
+    {
+      "id": "rel-piel-seca",
+      "slug": "piel-seca",
+      "categoria": "Relacionados",
+      "titulo": "Piel seca"
+    },
+    {
+      "id": "rel-palpitaciones",
+      "slug": "palpitaciones",
+      "categoria": "Relacionados",
+      "titulo": "Palpitaciones"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-thyroxine-t4-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Thyroxine (T4) Test",
+      "url": "https://medlineplus.gov/lab-tests/thyroxine-t4-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-tsh-thyroid-stimulating-hormone-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "TSH Test",
+      "url": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

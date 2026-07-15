@@ -2793,5 +2793,473 @@
       "nitrogeno ureico",
       "urea en sangre"
     ]
+  },
+  {
+    "titulo": "Ácido úrico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide ácido úrico, un desecho producido al degradar purinas, en una muestra de sangre. Ayuda a evaluar gota, cálculos urinarios y control durante ciertos tratamientos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=acido-urico",
+    "keywords": [
+      "ácido úrico",
+      "uricemia",
+      "urato",
+      "dolor articular",
+      "hinchazón",
+      "dolor en los riñones"
+    ],
+    "aliases": [
+      "uricemia",
+      "urato"
+    ]
+  },
+  {
+    "titulo": "Albúmina sérica",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide albúmina, la principal proteína de la sangre producida por el hígado. Apoya la evaluación del estado general, hígado, riñones y nutrición clínica.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=albumina-serica",
+    "keywords": [
+      "albúmina sérica",
+      "albumina en sangre",
+      "hinchazón de piernas",
+      "fatiga",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "albumina en sangre"
+    ]
+  },
+  {
+    "titulo": "Bilirrubina total y fraccionada",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide bilirrubina total y sus fracciones directa e indirecta, pigmento generado al degradar glóbulos rojos. Ayuda a evaluar hígado, vías biliares y causas de ictericia o destrucción de glóbulos rojos.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=bilirrubina-total-y-fraccionada",
+    "keywords": [
+      "bilirrubina total y fraccionada",
+      "bilirrubina directa",
+      "bilirrubina indirecta",
+      "piel amarilla",
+      "ojos amarillos",
+      "orina oscura"
+    ],
+    "aliases": [
+      "bilirrubina directa",
+      "bilirrubina indirecta"
+    ]
+  },
+  {
+    "titulo": "Calcio sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide calcio total o ionizado en la sangre, mineral esencial para huesos, músculos, nervios y corazón. Ayuda a evaluar paratiroides, huesos, riñones y alteraciones metabólicas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=calcio-serico",
+    "keywords": [
+      "calcio sérico",
+      "calcio en sangre",
+      "calambres",
+      "hormigueo",
+      "debilidad",
+      "palpitaciones"
+    ],
+    "aliases": [
+      "calcio en sangre"
+    ]
+  },
+  {
+    "titulo": "Sodio sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide sodio en sangre, electrolito clave para el equilibrio de líquidos y la función nerviosa y muscular. Detecta y vigila alteraciones de agua y sodio.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=sodio-serico",
+    "keywords": [
+      "sodio sérico",
+      "sodio en sangre",
+      "na",
+      "confusión",
+      "debilidad",
+      "calambres",
+      "nauseas"
+    ],
+    "aliases": [
+      "sodio en sangre",
+      "na"
+    ]
+  },
+  {
+    "titulo": "Potasio sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide potasio en sangre, electrolito esencial para células, músculos y ritmo cardíaco. Detecta alteraciones que pueden afectar músculos y corazón.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=potasio-serico",
+    "keywords": [
+      "potasio sérico",
+      "potasio en sangre",
+      "k",
+      "palpitaciones",
+      "debilidad",
+      "calambres",
+      "hormigueo"
+    ],
+    "aliases": [
+      "potasio en sangre",
+      "k"
+    ]
+  },
+  {
+    "titulo": "Cloro sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide cloro en sangre, electrolito que contribuye al equilibrio de líquidos y ácido-base. Ayuda a evaluar hidratación y trastornos metabólicos, renales o respiratorios.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=cloro-serico",
+    "keywords": [
+      "cloro sérico",
+      "cloruro en sangre",
+      "debilidad",
+      "fatiga",
+      "respiración rápida",
+      "vomitos"
+    ],
+    "aliases": [
+      "cloruro en sangre"
+    ]
+  },
+  {
+    "titulo": "Magnesio sérico",
+    "tipo": "examen",
+    "categoria": "Laboratorio",
+    "prioridad": 3,
+    "description": "Mide magnesio en sangre, mineral importante para músculos, nervios, huesos y ritmo cardíaco. Detecta deficiencia o exceso y apoya la evaluación de arritmias y otros desequilibrios.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=magnesio-serico",
+    "keywords": [
+      "magnesio sérico",
+      "magnesio en sangre",
+      "calambres",
+      "debilidad",
+      "palpitaciones",
+      "temblores"
+    ],
+    "aliases": [
+      "magnesio en sangre"
+    ]
+  },
+  {
+    "titulo": "TSH",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide la hormona estimulante de la tiroides producida por la hipófisis. Es la prueba inicial más utilizada para evaluar función tiroidea y vigilar tratamiento.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tsh",
+    "keywords": [
+      "tsh",
+      "tirotropina",
+      "hormona estimulante de tiroides",
+      "fatiga",
+      "aumento de peso",
+      "bajada de peso",
+      "palpitaciones"
+    ],
+    "aliases": [
+      "tirotropina",
+      "hormona estimulante de tiroides"
+    ]
+  },
+  {
+    "titulo": "T4 libre",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide la fracción libre y activa de tiroxina, principal hormona producida por la tiroides. Complementa la TSH para identificar y clasificar alteraciones tiroideas.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=t4-libre",
+    "keywords": [
+      "t4 libre",
+      "tiroxina libre",
+      "ft4",
+      "fatiga",
+      "intolerancia al calor",
+      "piel seca",
+      "palpitaciones"
+    ],
+    "aliases": [
+      "tiroxina libre",
+      "ft4"
+    ]
+  },
+  {
+    "titulo": "T3 libre",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide la fracción libre de triyodotironina, hormona tiroidea activa. Ayuda especialmente a evaluar sospecha de hipertiroidismo cuando TSH está baja y T4 no explica el cuadro.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=t3-libre",
+    "keywords": [
+      "t3 libre",
+      "triyodotironina libre",
+      "ft3",
+      "palpitaciones",
+      "bajada de peso",
+      "intolerancia al calor",
+      "temblores"
+    ],
+    "aliases": [
+      "triyodotironina libre",
+      "ft3"
+    ]
+  },
+  {
+    "titulo": "Cortisol sérico",
+    "tipo": "examen",
+    "categoria": "Endocrinología",
+    "prioridad": 3,
+    "description": "Mide cortisol en sangre, hormona suprarrenal que varía durante el día y responde al estrés. Apoya la evaluación de exceso o insuficiencia de cortisol y el seguimiento endocrino.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=cortisol-serico",
+    "keywords": [
+      "cortisol sérico",
+      "cortisol en sangre",
+      "debilidad",
+      "fatiga",
+      "aumento de peso",
+      "sintomas de presion baja"
+    ],
+    "aliases": [
+      "cortisol en sangre"
+    ]
+  },
+  {
+    "titulo": "Proteína C reactiva (PCR)",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Mide proteína C reactiva producida por el hígado en respuesta a inflamación. Detecta y vigila inflamación, pero no identifica por sí sola su causa o ubicación.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=proteina-c-reactiva-pcr",
+    "keywords": [
+      "proteína c reactiva (pcr)",
+      "pcr inflamacion",
+      "crp",
+      "fiebre",
+      "dolor articular",
+      "fatiga",
+      "malestar general"
+    ],
+    "aliases": [
+      "pcr inflamacion",
+      "crp"
+    ]
+  },
+  {
+    "titulo": "Procalcitonina",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Mide procalcitonina en sangre, biomarcador que puede aumentar en infecciones bacterianas sistémicas. Apoya la evaluación de sepsis y, en contextos definidos, decisiones de seguimiento antibiótico junto con la clínica.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=procalcitonina",
+    "keywords": [
+      "procalcitonina",
+      "pct",
+      "fiebre",
+      "escalofrios",
+      "respiración rápida",
+      "confusión"
+    ],
+    "aliases": [
+      "pct"
+    ]
+  },
+  {
+    "titulo": "Velocidad de sedimentación globular (VSG)",
+    "tipo": "examen",
+    "categoria": "Infectología",
+    "prioridad": 3,
+    "description": "Mide cuán rápido sedimentan los glóbulos rojos en una hora; es un marcador indirecto de inflamación. Apoya la evaluación y seguimiento de procesos inflamatorios, infecciosos o autoinmunes.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=velocidad-de-sedimentacion-globular-vsg",
+    "keywords": [
+      "velocidad de sedimentación globular (vsg)",
+      "vsg",
+      "eritrosedimentacion",
+      "esr",
+      "fiebre",
+      "dolor articular",
+      "fatiga",
+      "bajada de peso"
+    ],
+    "aliases": [
+      "vsg",
+      "eritrosedimentacion",
+      "esr"
+    ]
+  },
+  {
+    "titulo": "Tiempo de Protrombina (TP/INR)",
+    "tipo": "examen",
+    "categoria": "Hematología",
+    "prioridad": 3,
+    "description": "Mide cuánto tarda en coagular una muestra y estandariza el resultado mediante INR. Evalúa ciertas vías de coagulación y vigila tratamiento con warfarina.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tiempo-de-protrombina-tp-inr",
+    "keywords": [
+      "tiempo de protrombina (tp/inr)",
+      "tp",
+      "inr",
+      "tiempo de protrombina",
+      "sangrado abundante",
+      "moretones faciles",
+      "sangrado menstrual abundante"
+    ],
+    "aliases": [
+      "tp",
+      "inr",
+      "tiempo de protrombina"
+    ]
+  },
+  {
+    "titulo": "Tiempo de Tromboplastina Parcial Activada (TTPa)",
+    "tipo": "examen",
+    "categoria": "Hematología",
+    "prioridad": 3,
+    "description": "Mide el tiempo de coagulación relacionado con un grupo de factores de la vía intrínseca y común. Ayuda a investigar sangrado o trombosis y a monitorizar heparina no fraccionada.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=tiempo-de-tromboplastina-parcial-activada-ttpa",
+    "keywords": [
+      "tiempo de tromboplastina parcial activada (ttpa)",
+      "ttpa",
+      "aptt",
+      "ptt",
+      "sangrado abundante",
+      "moretones faciles",
+      "sangrado menstrual abundante"
+    ],
+    "aliases": [
+      "ttpa",
+      "aptt",
+      "ptt"
+    ]
+  },
+  {
+    "titulo": "Troponina cardíaca",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Mide troponina I o T liberada a la sangre cuando existe lesión del músculo cardíaco. Es el biomarcador principal para apoyar el diagnóstico de infarto junto con síntomas y electrocardiograma.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=troponina-cardiaca",
+    "keywords": [
+      "troponina cardíaca",
+      "troponina i",
+      "troponina t",
+      "dolor de pecho",
+      "falta de aire",
+      "sudor frio",
+      "nauseas"
+    ],
+    "aliases": [
+      "troponina i",
+      "troponina t"
+    ]
+  },
+  {
+    "titulo": "CK-MB",
+    "tipo": "examen",
+    "categoria": "Cardiología",
+    "prioridad": 3,
+    "description": "Mide la isoenzima MB de creatina quinasa, presente principalmente en músculo cardíaco. Puede apoyar la evaluación de lesión cardíaca, aunque la troponina es más específica y preferida para infarto.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=ck-mb",
+    "keywords": [
+      "ck-mb",
+      "creatina quinasa mb",
+      "cpk mb",
+      "dolor de pecho",
+      "falta de aire",
+      "debilidad",
+      "sudor frio"
+    ],
+    "aliases": [
+      "creatina quinasa mb",
+      "cpk mb"
+    ]
+  },
+  {
+    "titulo": "Microalbuminuria",
+    "tipo": "examen",
+    "categoria": "Nefrología",
+    "prioridad": 3,
+    "description": "Detecta pequeñas cantidades de albúmina en orina, preferentemente mediante relación albúmina/creatinina (UACR). Identifica daño renal temprano y estima riesgo renal y cardiovascular.",
+    "fuente": "Biblioteca Clínica IDB MEDIC",
+    "nivel": "Evidencia científica",
+    "ultima_revision": "2026-07",
+    "url": "consulta.html?q=microalbuminuria",
+    "keywords": [
+      "microalbuminuria",
+      "uacr",
+      "albumina creatinina en orina",
+      "orinar frecuente",
+      "hinchazón de piernas",
+      "fatiga"
+    ],
+    "aliases": [
+      "uacr",
+      "albumina creatinina en orina"
+    ]
   }
 ]

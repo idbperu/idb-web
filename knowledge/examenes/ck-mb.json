@@ -1,0 +1,98 @@
+{
+  "id": "examen-ck-mb",
+  "slug": "ck-mb",
+  "titulo": "CK-MB",
+  "tipo": "examen",
+  "categoria": "Cardiología",
+  "descripcion": "¿Qué es? Mide la isoenzima MB de creatina quinasa, presente principalmente en músculo cardíaco. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide la isoenzima MB de creatina quinasa, presente principalmente en músculo cardíaco. Puede apoyar la evaluación de lesión cardíaca, aunque la troponina es más específica y preferida para infarto.",
+  "para_que_sirve": "¿Para qué sirve? Puede apoyar la evaluación de lesión cardíaca, aunque la troponina es más específica y preferida para infarto. Indicaciones: Se utiliza en situaciones seleccionadas, como sospecha de reinfarto o cuando la troponina no está disponible, según protocolo.",
+  "causas": "Interpretación general: Puede elevarse por lesión cardíaca y también por daño de músculo esquelético; la tendencia seriada y troponina aportan contexto. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Dependen del método, unidad y laboratorio; algunos informes usan masa o índice relativo. Enfermedades relacionadas: Infarto y otras lesiones cardíacas o musculares. Especialidad relacionada: Cardiología. Exámenes relacionados: Troponina cardíaca, electrocardiograma, CK total y ecocardiograma.",
+  "sintomas": [
+    "dolor de pecho",
+    "falta de aire",
+    "debilidad",
+    "sudor frio"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "No suele requerir ayuno.",
+    "Informa ejercicio intenso, traumatismos, inyecciones intramusculares y medicamentos."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se utiliza en situaciones seleccionadas, como sospecha de reinfarto o cuando la troponina no está disponible, según protocolo.",
+  "senales_alarma": "Dolor de pecho, falta de aire, sudor frío, desmayo o deterioro súbito requieren atención de emergencia; no esperes el resultado para buscar ayuda.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es CK-MB?",
+      "respuesta": "Mide la isoenzima MB de creatina quinasa, presente principalmente en músculo cardíaco."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Puede apoyar la evaluación de lesión cardíaca, aunque la troponina es más específica y preferida para infarto."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "No suele requerir ayuno. Informa ejercicio intenso, traumatismos, inyecciones intramusculares y medicamentos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Puede elevarse por lesión cardíaca y también por daño de músculo esquelético; la tendencia seriada y troponina aportan contexto. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-enfermedad-coronaria",
+      "slug": "enfermedad-coronaria",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad coronaria"
+    },
+    {
+      "id": "rel-dolor-de-pecho",
+      "slug": "dolor-de-pecho",
+      "categoria": "Relacionados",
+      "titulo": "Dolor de pecho"
+    },
+    {
+      "id": "rel-falta-de-aire",
+      "slug": "falta-de-aire",
+      "categoria": "Relacionados",
+      "titulo": "Falta de aire"
+    },
+    {
+      "id": "rel-debilidad",
+      "slug": "debilidad",
+      "categoria": "Relacionados",
+      "titulo": "Debilidad"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "cleveland-ck",
+      "organizacion": "Cleveland Clinic",
+      "titulo": "Creatine Kinase (CK): Purpose & Procedure",
+      "url": "https://my.clevelandclinic.org/health/diagnostics/22692-creatine-kinase-ck",
+      "tipo": "Evidencia y orientación clínica"
+    },
+    {
+      "id": "medlineplus-troponin-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Troponin Test",
+      "url": "https://medlineplus.gov/lab-tests/troponin-test/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

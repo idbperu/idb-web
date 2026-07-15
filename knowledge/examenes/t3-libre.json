@@ -1,0 +1,98 @@
+{
+  "id": "examen-t3-libre",
+  "slug": "t3-libre",
+  "titulo": "T3 libre",
+  "tipo": "examen",
+  "categoria": "Endocrinología",
+  "descripcion": "¿Qué es? Mide la fracción libre de triyodotironina, hormona tiroidea activa. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide la fracción libre de triyodotironina, hormona tiroidea activa. Ayuda especialmente a evaluar sospecha de hipertiroidismo cuando TSH está baja y T4 no explica el cuadro.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda especialmente a evaluar sospecha de hipertiroidismo cuando TSH está baja y T4 no explica el cuadro. Indicaciones: Se solicita ante síntomas de exceso tiroideo, TSH anormal o seguimiento seleccionado.",
+  "causas": "Interpretación general: T3 puede elevarse en hipertiroidismo y disminuir durante enfermedades no tiroideas; no suele ser la mejor prueba aislada para hipotiroidismo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Varía notablemente por método, unidades, edad y laboratorio. Enfermedades relacionadas: Hipertiroidismo y trastornos tiroideos. Especialidad relacionada: Endocrinología. Exámenes relacionados: TSH, T4 libre y anticuerpos tiroideos.",
+  "sintomas": [
+    "palpitaciones",
+    "bajada de peso",
+    "intolerancia al calor",
+    "temblores"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Generalmente no requiere ayuno.",
+    "Informa biotina, embarazo, enfermedad aguda y medicamentos."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita ante síntomas de exceso tiroideo, TSH anormal o seguimiento seleccionado.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es T3 libre?",
+      "respuesta": "Mide la fracción libre de triyodotironina, hormona tiroidea activa."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Ayuda especialmente a evaluar sospecha de hipertiroidismo cuando TSH está baja y T4 no explica el cuadro."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Generalmente no requiere ayuno. Informa biotina, embarazo, enfermedad aguda y medicamentos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "T3 puede elevarse en hipertiroidismo y disminuir durante enfermedades no tiroideas; no suele ser la mejor prueba aislada para hipotiroidismo. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-hipertiroidismo",
+      "slug": "hipertiroidismo",
+      "categoria": "Relacionados",
+      "titulo": "Hipertiroidismo"
+    },
+    {
+      "id": "rel-palpitaciones",
+      "slug": "palpitaciones",
+      "categoria": "Relacionados",
+      "titulo": "Palpitaciones"
+    },
+    {
+      "id": "rel-bajada-de-peso",
+      "slug": "bajada-de-peso",
+      "categoria": "Relacionados",
+      "titulo": "Bajada de peso"
+    },
+    {
+      "id": "rel-temblores",
+      "slug": "temblores",
+      "categoria": "Relacionados",
+      "titulo": "Temblores"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-triiodothyronine-t3-tests",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Triiodothyronine (T3) Tests",
+      "url": "https://medlineplus.gov/lab-tests/triiodothyronine-t3-tests/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-tsh-thyroid-stimulating-hormone-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "TSH Test",
+      "url": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

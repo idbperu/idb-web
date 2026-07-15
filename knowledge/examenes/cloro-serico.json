@@ -1,0 +1,98 @@
+{
+  "id": "examen-cloro-serico",
+  "slug": "cloro-serico",
+  "titulo": "Cloro sérico",
+  "tipo": "examen",
+  "categoria": "Laboratorio",
+  "descripcion": "¿Qué es? Mide cloro en sangre, electrolito que contribuye al equilibrio de líquidos y ácido-base. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide cloro en sangre, electrolito que contribuye al equilibrio de líquidos y ácido-base. Ayuda a evaluar hidratación y trastornos metabólicos, renales o respiratorios.",
+  "para_que_sirve": "¿Para qué sirve? Ayuda a evaluar hidratación y trastornos metabólicos, renales o respiratorios. Indicaciones: Se solicita habitualmente dentro de un panel de electrolitos o ante vómitos, diarrea, debilidad o cambios respiratorios.",
+  "causas": "Interpretación general: Se interpreta junto con sodio, bicarbonato y brecha aniónica; un cambio aislado rara vez identifica la causa. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Un intervalo orientativo frecuente es 98–107 mmol/L, pero varía por laboratorio. Enfermedades relacionadas: Deshidratación, enfermedad renal y trastornos ácido-base. Especialidad relacionada: Laboratorio. Exámenes relacionados: Sodio, potasio, bicarbonato, gasometría y función renal.",
+  "sintomas": [
+    "debilidad",
+    "fatiga",
+    "respiración rápida",
+    "vomitos"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "No suele requerir preparación especial.",
+    "Informa medicamentos y pérdidas recientes de líquidos."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita habitualmente dentro de un panel de electrolitos o ante vómitos, diarrea, debilidad o cambios respiratorios.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Cloro sérico?",
+      "respuesta": "Mide cloro en sangre, electrolito que contribuye al equilibrio de líquidos y ácido-base."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Ayuda a evaluar hidratación y trastornos metabólicos, renales o respiratorios."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "No suele requerir preparación especial. Informa medicamentos y pérdidas recientes de líquidos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Se interpreta junto con sodio, bicarbonato y brecha aniónica; un cambio aislado rara vez identifica la causa. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-deshidratacion",
+      "slug": "deshidratacion",
+      "categoria": "Relacionados",
+      "titulo": "Deshidratacion"
+    },
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-debilidad",
+      "slug": "debilidad",
+      "categoria": "Relacionados",
+      "titulo": "Debilidad"
+    },
+    {
+      "id": "rel-respiracion-rapida",
+      "slug": "respiracion-rapida",
+      "categoria": "Relacionados",
+      "titulo": "Respiracion rapida"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-chloride-blood-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Chloride Blood Test",
+      "url": "https://medlineplus.gov/lab-tests/chloride-blood-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-electrolyte-panel",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Electrolyte Panel",
+      "url": "https://medlineplus.gov/lab-tests/electrolyte-panel/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

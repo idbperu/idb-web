@@ -1,0 +1,98 @@
+{
+  "id": "examen-proteina-c-reactiva-pcr",
+  "slug": "proteina-c-reactiva-pcr",
+  "titulo": "Proteína C reactiva (PCR)",
+  "tipo": "examen",
+  "categoria": "Infectología",
+  "descripcion": "¿Qué es? Mide proteína C reactiva producida por el hígado en respuesta a inflamación. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide proteína C reactiva producida por el hígado en respuesta a inflamación. Detecta y vigila inflamación, pero no identifica por sí sola su causa o ubicación.",
+  "para_que_sirve": "¿Para qué sirve? Detecta y vigila inflamación, pero no identifica por sí sola su causa o ubicación. Indicaciones: Se solicita ante sospecha de infección o enfermedad inflamatoria y para seguimiento de evolución.",
+  "causas": "Interpretación general: Una PCR elevada indica inflamación de intensidad variable; una normal no excluye todos los procesos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Los límites dependen del método y del objetivo clínico; la PCR ultrasensible cardiovascular usa una interpretación distinta. Enfermedades relacionadas: Infecciones, lupus, enfermedades inflamatorias y algunos trastornos cardiovasculares. Especialidad relacionada: Infectología. Exámenes relacionados: VSG, hemograma, procalcitonina y cultivos según el caso.",
+  "sintomas": [
+    "fiebre",
+    "dolor articular",
+    "fatiga",
+    "malestar general"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "No suele requerir preparación especial.",
+    "Informa medicamentos y si la solicitud corresponde a PCR convencional o ultrasensible."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita ante sospecha de infección o enfermedad inflamatoria y para seguimiento de evolución.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Proteína C reactiva (PCR)?",
+      "respuesta": "Mide proteína C reactiva producida por el hígado en respuesta a inflamación."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Detecta y vigila inflamación, pero no identifica por sí sola su causa o ubicación."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "No suele requerir preparación especial. Informa medicamentos y si la solicitud corresponde a PCR convencional o ultrasensible."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Una PCR elevada indica inflamación de intensidad variable; una normal no excluye todos los procesos. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-sepsis",
+      "slug": "sepsis",
+      "categoria": "Relacionados",
+      "titulo": "Sepsis"
+    },
+    {
+      "id": "rel-lupus",
+      "slug": "lupus",
+      "categoria": "Relacionados",
+      "titulo": "Lupus"
+    },
+    {
+      "id": "rel-fiebre",
+      "slug": "fiebre",
+      "categoria": "Relacionados",
+      "titulo": "Fiebre"
+    },
+    {
+      "id": "rel-dolor-articular",
+      "slug": "dolor-articular",
+      "categoria": "Relacionados",
+      "titulo": "Dolor articular"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-c-reactive-protein-crp-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "C-Reactive Protein Test",
+      "url": "https://medlineplus.gov/lab-tests/c-reactive-protein-crp-test/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-erythrocyte-sedimentation-rate-esr",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Erythrocyte Sedimentation Rate",
+      "url": "https://medlineplus.gov/lab-tests/erythrocyte-sedimentation-rate-esr/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

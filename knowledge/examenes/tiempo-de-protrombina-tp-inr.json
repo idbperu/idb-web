@@ -1,0 +1,97 @@
+{
+  "id": "examen-tiempo-de-protrombina-tp-inr",
+  "slug": "tiempo-de-protrombina-tp-inr",
+  "titulo": "Tiempo de Protrombina (TP/INR)",
+  "tipo": "examen",
+  "categoria": "Hematología",
+  "descripcion": "¿Qué es? Mide cuánto tarda en coagular una muestra y estandariza el resultado mediante INR. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide cuánto tarda en coagular una muestra y estandariza el resultado mediante INR. Evalúa ciertas vías de coagulación y vigila tratamiento con warfarina.",
+  "para_que_sirve": "¿Para qué sirve? Evalúa ciertas vías de coagulación y vigila tratamiento con warfarina. Indicaciones: Se solicita ante sangrado o trombosis, enfermedad hepática, antes de procedimientos seleccionados o para control de warfarina.",
+  "causas": "Interpretación general: INR alto implica coagulación más lenta y mayor riesgo de sangrado; bajo durante warfarina puede indicar protección insuficiente. La meta depende de la indicación. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Sin anticoagulación el INR suele aproximarse a 1; en warfarina las metas son individualizadas, con frecuencia 2.0–3.0 para varias indicaciones. Enfermedades relacionadas: Trastornos de coagulación, enfermedad hepática y deficiencia de vitamina K. Especialidad relacionada: Hematología. Exámenes relacionados: TTPa, fibrinógeno, plaquetas y pruebas hepáticas.",
+  "sintomas": [
+    "sangrado abundante",
+    "moretones faciles",
+    "sangrado menstrual abundante"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Informa anticoagulantes, alcohol, suplementos y dieta; sigue instrucciones sobre la dosis de warfarina.",
+    "No cambies anticoagulantes por cuenta propia."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita ante sangrado o trombosis, enfermedad hepática, antes de procedimientos seleccionados o para control de warfarina.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Tiempo de Protrombina (TP/INR)?",
+      "respuesta": "Mide cuánto tarda en coagular una muestra y estandariza el resultado mediante INR."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Evalúa ciertas vías de coagulación y vigila tratamiento con warfarina."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Informa anticoagulantes, alcohol, suplementos y dieta; sigue instrucciones sobre la dosis de warfarina. No cambies anticoagulantes por cuenta propia."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "INR alto implica coagulación más lenta y mayor riesgo de sangrado; bajo durante warfarina puede indicar protección insuficiente. La meta depende de la indicación. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-cirrosis",
+      "slug": "cirrosis",
+      "categoria": "Relacionados",
+      "titulo": "Cirrosis"
+    },
+    {
+      "id": "rel-sangrado-abundante",
+      "slug": "sangrado-abundante",
+      "categoria": "Relacionados",
+      "titulo": "Sangrado abundante"
+    },
+    {
+      "id": "rel-moretones-faciles",
+      "slug": "moretones-faciles",
+      "categoria": "Relacionados",
+      "titulo": "Moretones faciles"
+    },
+    {
+      "id": "rel-sangrado-menstrual-abundante",
+      "slug": "sangrado-menstrual-abundante",
+      "categoria": "Relacionados",
+      "titulo": "Sangrado menstrual abundante"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-prothrombin-time-test-and-inr-ptinr",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Prothrombin Time Test and INR",
+      "url": "https://medlineplus.gov/lab-tests/prothrombin-time-test-and-inr-ptinr/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "nhlbi-clotting",
+      "organizacion": "NHLBI / NIH",
+      "titulo": "Clotting Disorders",
+      "url": "https://www.nhlbi.nih.gov/health/clotting-disorders",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

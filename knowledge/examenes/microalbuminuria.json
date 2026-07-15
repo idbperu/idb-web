@@ -1,0 +1,97 @@
+{
+  "id": "examen-microalbuminuria",
+  "slug": "microalbuminuria",
+  "titulo": "Microalbuminuria",
+  "tipo": "examen",
+  "categoria": "Nefrología",
+  "descripcion": "¿Qué es? Detecta pequeñas cantidades de albúmina en orina, preferentemente mediante relación albúmina/creatinina (UACR). Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Detecta pequeñas cantidades de albúmina en orina, preferentemente mediante relación albúmina/creatinina (UACR). Identifica daño renal temprano y estima riesgo renal y cardiovascular.",
+  "para_que_sirve": "¿Para qué sirve? Identifica daño renal temprano y estima riesgo renal y cardiovascular. Indicaciones: Se solicita especialmente en diabetes, hipertensión, enfermedad renal o riesgo cardiovascular.",
+  "causas": "Interpretación general: Un resultado elevado debe confirmarse porque ejercicio, fiebre, infección o hiperglucemia pueden elevarlo transitoriamente. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: UACR menor de 30 mg/g suele considerarse normal o levemente aumentada; 30–300 mg/g moderadamente aumentada y más de 300 mg/g severamente aumentada. Enfermedades relacionadas: Enfermedad renal diabética, hipertensión y enfermedad renal crónica. Especialidad relacionada: Nefrología. Exámenes relacionados: Creatinina, filtración glomerular estimada, examen de orina y presión arterial.",
+  "sintomas": [
+    "orinar frecuente",
+    "hinchazón de piernas",
+    "fatiga"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "Evita ejercicio intenso previo si así se indica y usa una muestra limpia, con frecuencia la primera orina.",
+    "Informa fiebre, infección urinaria, menstruación y medicamentos porque pueden alterar temporalmente el resultado."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Se solicita especialmente en diabetes, hipertensión, enfermedad renal o riesgo cardiovascular.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Microalbuminuria?",
+      "respuesta": "Detecta pequeñas cantidades de albúmina en orina, preferentemente mediante relación albúmina/creatinina (UACR)."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Identifica daño renal temprano y estima riesgo renal y cardiovascular."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "Evita ejercicio intenso previo si así se indica y usa una muestra limpia, con frecuencia la primera orina. Informa fiebre, infección urinaria, menstruación y medicamentos porque pueden alterar temporalmente el resultado."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Un resultado elevado debe confirmarse porque ejercicio, fiebre, infección o hiperglucemia pueden elevarlo transitoriamente. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-diabetes",
+      "slug": "diabetes",
+      "categoria": "Relacionados",
+      "titulo": "Diabetes"
+    },
+    {
+      "id": "rel-enfermedad-renal-cronica",
+      "slug": "enfermedad-renal-cronica",
+      "categoria": "Relacionados",
+      "titulo": "Enfermedad renal cronica"
+    },
+    {
+      "id": "rel-orinar-frecuente",
+      "slug": "orinar-frecuente",
+      "categoria": "Relacionados",
+      "titulo": "Orinar frecuente"
+    },
+    {
+      "id": "rel-hinchazon-de-piernas",
+      "slug": "hinchazon-de-piernas",
+      "categoria": "Relacionados",
+      "titulo": "Hinchazon de piernas"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-microalbumin-creatinine-ratio",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Microalbumin Creatinine Ratio",
+      "url": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "niddk-albuminuria",
+      "organizacion": "NIDDK / NIH",
+      "titulo": "Albuminuria: Albumin in the Urine",
+      "url": "https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis/albuminuria-albumin-urine",
+      "tipo": "Evidencia y orientación clínica"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}

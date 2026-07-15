@@ -1,9 +1,9 @@
 {
   "id": "catalogo-examenes",
   "titulo": "Catálogo de exámenes médicos",
-  "version": "1.0",
+  "version": "1.1",
   "ultima_revision": "2026-07",
-  "total_registros": 20,
+  "total_registros": 40,
   "registros": [
     {
       "id": "examen-hemograma-completo",
@@ -164,6 +164,166 @@
       "tipo": "examen",
       "categoria": "Oftalmología",
       "ruta": "knowledge/examenes/fondo-de-ojo.json"
+    },
+    {
+      "id": "examen-acido-urico",
+      "slug": "acido-urico",
+      "titulo": "Ácido úrico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/acido-urico.json"
+    },
+    {
+      "id": "examen-albumina-serica",
+      "slug": "albumina-serica",
+      "titulo": "Albúmina sérica",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/albumina-serica.json"
+    },
+    {
+      "id": "examen-bilirrubina-total-y-fraccionada",
+      "slug": "bilirrubina-total-y-fraccionada",
+      "titulo": "Bilirrubina total y fraccionada",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/bilirrubina-total-y-fraccionada.json"
+    },
+    {
+      "id": "examen-calcio-serico",
+      "slug": "calcio-serico",
+      "titulo": "Calcio sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/calcio-serico.json"
+    },
+    {
+      "id": "examen-sodio-serico",
+      "slug": "sodio-serico",
+      "titulo": "Sodio sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/sodio-serico.json"
+    },
+    {
+      "id": "examen-potasio-serico",
+      "slug": "potasio-serico",
+      "titulo": "Potasio sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/potasio-serico.json"
+    },
+    {
+      "id": "examen-cloro-serico",
+      "slug": "cloro-serico",
+      "titulo": "Cloro sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/cloro-serico.json"
+    },
+    {
+      "id": "examen-magnesio-serico",
+      "slug": "magnesio-serico",
+      "titulo": "Magnesio sérico",
+      "tipo": "examen",
+      "categoria": "Laboratorio",
+      "ruta": "knowledge/examenes/magnesio-serico.json"
+    },
+    {
+      "id": "examen-tsh",
+      "slug": "tsh",
+      "titulo": "TSH",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/tsh.json"
+    },
+    {
+      "id": "examen-t4-libre",
+      "slug": "t4-libre",
+      "titulo": "T4 libre",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/t4-libre.json"
+    },
+    {
+      "id": "examen-t3-libre",
+      "slug": "t3-libre",
+      "titulo": "T3 libre",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/t3-libre.json"
+    },
+    {
+      "id": "examen-cortisol-serico",
+      "slug": "cortisol-serico",
+      "titulo": "Cortisol sérico",
+      "tipo": "examen",
+      "categoria": "Endocrinología",
+      "ruta": "knowledge/examenes/cortisol-serico.json"
+    },
+    {
+      "id": "examen-proteina-c-reactiva-pcr",
+      "slug": "proteina-c-reactiva-pcr",
+      "titulo": "Proteína C reactiva (PCR)",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/proteina-c-reactiva-pcr.json"
+    },
+    {
+      "id": "examen-procalcitonina",
+      "slug": "procalcitonina",
+      "titulo": "Procalcitonina",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/procalcitonina.json"
+    },
+    {
+      "id": "examen-velocidad-de-sedimentacion-globular-vsg",
+      "slug": "velocidad-de-sedimentacion-globular-vsg",
+      "titulo": "Velocidad de sedimentación globular (VSG)",
+      "tipo": "examen",
+      "categoria": "Infectología",
+      "ruta": "knowledge/examenes/velocidad-de-sedimentacion-globular-vsg.json"
+    },
+    {
+      "id": "examen-tiempo-de-protrombina-tp-inr",
+      "slug": "tiempo-de-protrombina-tp-inr",
+      "titulo": "Tiempo de Protrombina (TP/INR)",
+      "tipo": "examen",
+      "categoria": "Hematología",
+      "ruta": "knowledge/examenes/tiempo-de-protrombina-tp-inr.json"
+    },
+    {
+      "id": "examen-tiempo-de-tromboplastina-parcial-activada-ttpa",
+      "slug": "tiempo-de-tromboplastina-parcial-activada-ttpa",
+      "titulo": "Tiempo de Tromboplastina Parcial Activada (TTPa)",
+      "tipo": "examen",
+      "categoria": "Hematología",
+      "ruta": "knowledge/examenes/tiempo-de-tromboplastina-parcial-activada-ttpa.json"
+    },
+    {
+      "id": "examen-troponina-cardiaca",
+      "slug": "troponina-cardiaca",
+      "titulo": "Troponina cardíaca",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/troponina-cardiaca.json"
+    },
+    {
+      "id": "examen-ck-mb",
+      "slug": "ck-mb",
+      "titulo": "CK-MB",
+      "tipo": "examen",
+      "categoria": "Cardiología",
+      "ruta": "knowledge/examenes/ck-mb.json"
+    },
+    {
+      "id": "examen-microalbuminuria",
+      "slug": "microalbuminuria",
+      "titulo": "Microalbuminuria",
+      "tipo": "examen",
+      "categoria": "Nefrología",
+      "ruta": "knowledge/examenes/microalbuminuria.json"
     }
   ]
 }

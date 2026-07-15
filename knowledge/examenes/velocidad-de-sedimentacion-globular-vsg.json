@@ -1,0 +1,98 @@
+{
+  "id": "examen-velocidad-de-sedimentacion-globular-vsg",
+  "slug": "velocidad-de-sedimentacion-globular-vsg",
+  "titulo": "Velocidad de sedimentación globular (VSG)",
+  "tipo": "examen",
+  "categoria": "Infectología",
+  "descripcion": "¿Qué es? Mide cuán rápido sedimentan los glóbulos rojos en una hora; es un marcador indirecto de inflamación. Procedimiento: Un profesional obtiene una muestra de una vena del brazo y la envía al laboratorio. Duración: la toma suele durar menos de cinco minutos; el procesamiento depende del laboratorio.",
+  "respuesta_rapida": "Mide cuán rápido sedimentan los glóbulos rojos en una hora; es un marcador indirecto de inflamación. Apoya la evaluación y seguimiento de procesos inflamatorios, infecciosos o autoinmunes.",
+  "para_que_sirve": "¿Para qué sirve? Apoya la evaluación y seguimiento de procesos inflamatorios, infecciosos o autoinmunes. Indicaciones: Puede solicitarse ante fiebre, pérdida de peso, dolor o rigidez articular, cefalea seleccionada o enfermedad inflamatoria conocida.",
+  "causas": "Interpretación general: Una VSG alta es inespecífica y puede verse afectada por edad, anemia, embarazo y otras condiciones; una normal no excluye inflamación. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios. Valores de referencia: Se expresa en mm/h y el rango depende de edad, sexo, método y laboratorio. Enfermedades relacionadas: Artritis inflamatoria, vasculitis, infecciones y anemia. Especialidad relacionada: Infectología. Exámenes relacionados: PCR, hemograma y pruebas dirigidas según síntomas.",
+  "sintomas": [
+    "fiebre",
+    "dolor articular",
+    "fatiga",
+    "bajada de peso"
+  ],
+  "factores_riesgo": [
+    "La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "prevencion": [
+    "No requiere preparación especial salvo que se combine con otras pruebas.",
+    "Informa embarazo, menstruación, anemia y medicamentos."
+  ],
+  "cuando_consultar": "Revisa el resultado con el profesional que lo solicitó. Puede solicitarse ante fiebre, pérdida de peso, dolor o rigidez articular, cefalea seleccionada o enfermedad inflamatoria conocida.",
+  "senales_alarma": "Busca atención urgente ante pérdida de conciencia, dificultad respiratoria, dolor de pecho, sangrado importante, convulsiones, confusión intensa o empeoramiento rápido.",
+  "precauciones": [
+    "Qué debe saber el paciente: El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios.",
+    "Sigue las instrucciones del centro y comunica embarazo, alergias, enfermedades, medicamentos y suplementos.",
+    "No suspendas ni ajustes tratamientos por cuenta propia.",
+    "Riesgos: La extracción tiene riesgo muy bajo; puede causar pinchazo breve, hematoma, mareo o, raramente, infección local."
+  ],
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Qué es Velocidad de sedimentación globular (VSG)?",
+      "respuesta": "Mide cuán rápido sedimentan los glóbulos rojos en una hora; es un marcador indirecto de inflamación."
+    },
+    {
+      "pregunta": "¿Para qué se solicita?",
+      "respuesta": "Apoya la evaluación y seguimiento de procesos inflamatorios, infecciosos o autoinmunes."
+    },
+    {
+      "pregunta": "¿Necesito preparación?",
+      "respuesta": "No requiere preparación especial salvo que se combine con otras pruebas. Informa embarazo, menstruación, anemia y medicamentos."
+    },
+    {
+      "pregunta": "¿Qué significa un resultado alterado?",
+      "respuesta": "Una VSG alta es inespecífica y puede verse afectada por edad, anemia, embarazo y otras condiciones; una normal no excluye inflamación. El resultado no confirma ni descarta por sí solo una enfermedad; debe interpretarse con síntomas, antecedentes, medicamentos y otros estudios."
+    },
+    {
+      "pregunta": "¿Cuándo tendré el resultado?",
+      "respuesta": "Depende del laboratorio y de la urgencia. Confirma el plazo y quién explicará el informe."
+    }
+  ],
+  "temas_relacionados": [
+    {
+      "id": "rel-lupus",
+      "slug": "lupus",
+      "categoria": "Relacionados",
+      "titulo": "Lupus"
+    },
+    {
+      "id": "rel-anemia",
+      "slug": "anemia",
+      "categoria": "Relacionados",
+      "titulo": "Anemia"
+    },
+    {
+      "id": "rel-fiebre",
+      "slug": "fiebre",
+      "categoria": "Relacionados",
+      "titulo": "Fiebre"
+    },
+    {
+      "id": "rel-dolor-articular",
+      "slug": "dolor-articular",
+      "categoria": "Relacionados",
+      "titulo": "Dolor articular"
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "medlineplus-erythrocyte-sedimentation-rate-esr",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "Erythrocyte Sedimentation Rate",
+      "url": "https://medlineplus.gov/lab-tests/erythrocyte-sedimentation-rate-esr/",
+      "tipo": "Información para pacientes"
+    },
+    {
+      "id": "medlineplus-c-reactive-protein-crp-test",
+      "organizacion": "MedlinePlus / NIH",
+      "titulo": "C-Reactive Protein Test",
+      "url": "https://medlineplus.gov/lab-tests/c-reactive-protein-crp-test/",
+      "tipo": "Información para pacientes"
+    }
+  ],
+  "ultima_revision": "2026-07",
+  "version": "1.0"
+}
