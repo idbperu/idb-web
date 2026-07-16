@@ -81,6 +81,14 @@
       height: auto;
       display: block;
     }
+    .brand-tagline {
+      color: #687773;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+      font-size: .92rem;
+      font-weight: 500;
+      line-height: 1;
+      white-space: nowrap;
+    }
     .nav {
       justify-self: center;
       display: flex;
@@ -1820,6 +1828,7 @@ height:16px;
         width: min(100% - 28px, var(--max));
       }
       .brand-logo { width:105px; }
+      .brand-tagline { font-size:.78rem; }
       .nav { justify-content: center; }
       .hero,
       .hero-inner { min-height: auto; }
@@ -2181,6 +2190,7 @@ height:16px;
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Instituto Digital de Bienestar, inicio">
         <img src="./imagenes/logo-idb.webp?v=20260715" alt="Instituto Digital de Bienestar" class="brand-logo" onerror="this.hidden=true" loading="lazy" decoding="async">
+        <span class="brand-tagline">Cuidado de la salud</span>
       </a>
       <button class="menu-toggle" aria-label="Abrir menú" type="button">
       <span></span>
