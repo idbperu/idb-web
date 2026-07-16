@@ -6,4 +6,4 @@ Planificar la validación responsive, de accesibilidad y rendimiento.
 
 ## Estado
 
-Pendiente.
+Dirección de Arte Premium aplicada

@@ -1,8 +1,635 @@
-/* vita-live-scene: estilos locales mínimos de la estructura inicial. */
+/* vita-live-scene: composición editorial circular, aislada y reutilizable. */
+
+#vita-live-scene {
+  --vita-live-scene-surface: #fefdfb;
+  --vita-live-scene-shadow-large: 0 34px 92px rgba(28, 55, 65, 0.13);
+  --vita-live-scene-shadow-medium: 0 26px 72px rgba(28, 55, 65, 0.105);
+  --vita-live-scene-shadow-small: 0 20px 54px rgba(28, 55, 65, 0.085);
+  width: 100%;
+  min-height: 100svh;
+  overflow: hidden;
+  color: #173b53;
+  background: var(--vita-live-scene-surface);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
 
 #vita-live-scene,
 #vita-live-scene *,
 #vita-live-scene *::before,
 #vita-live-scene *::after {
   box-sizing: border-box;
+}
+
+#vita-live-scene figure {
+  margin: 0;
+}
+
+#vita-live-scene img {
+  display: block;
+  max-width: 100%;
+}
+
+#vita-live-scene .vita-live-scene-stage {
+  position: relative;
+  width: min(100%, 1440px);
+  min-height: clamp(780px, 62.5vw, 900px);
+  margin-inline: auto;
+  isolation: isolate;
+}
+
+#vita-live-scene .vita-live-scene-vita {
+  position: absolute;
+  z-index: 4;
+  top: 19%;
+  left: 14%;
+  width: clamp(286px, 24vw, 346px);
+  aspect-ratio: 1;
+}
+
+#vita-live-scene .vita-live-scene-vita-halo {
+  position: absolute;
+  z-index: -1;
+  inset: -15%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(102, 180, 168, 0.09) 0%, rgba(124, 184, 87, 0.025) 46%, rgba(255, 255, 255, 0) 72%);
+}
+
+#vita-live-scene .vita-live-scene-vita img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 57% 43%;
+  box-shadow: 0 42px 110px rgba(35, 73, 83, 0.16);
+}
+
+#vita-live-scene .vita-live-scene-patients {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+}
+
+#vita-live-scene .vita-live-scene-patient {
+  position: absolute;
+  overflow: hidden;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #eef1ed;
+}
+
+#vita-live-scene .vita-live-scene-patient img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#vita-live-scene .vita-live-scene-patient-01 {
+  top: 8%;
+  left: 57%;
+  width: clamp(178px, 14.5vw, 208px);
+  box-shadow: var(--vita-live-scene-shadow-large);
+  transform: rotate(-2.5deg);
+}
+
+#vita-live-scene .vita-live-scene-patient-01 img {
+  object-position: 50% 27%;
+}
+
+#vita-live-scene .vita-live-scene-patient-02 {
+  top: 29%;
+  left: 79%;
+  width: clamp(94px, 7.7vw, 112px);
+  box-shadow: var(--vita-live-scene-shadow-small);
+  transform: rotate(1.8deg);
+}
+
+#vita-live-scene .vita-live-scene-patient-02 img {
+  object-position: 49% 27%;
+}
+
+#vita-live-scene .vita-live-scene-patient-03 {
+  top: 42%;
+  left: 64%;
+  width: clamp(132px, 10.7vw, 154px);
+  box-shadow: var(--vita-live-scene-shadow-medium);
+  transform: rotate(2.2deg);
+}
+
+#vita-live-scene .vita-live-scene-patient-03 img {
+  object-position: 50% 26%;
+}
+
+#vita-live-scene .vita-live-scene-patient-04 {
+  top: 67%;
+  left: 36%;
+  width: clamp(172px, 14vw, 202px);
+  box-shadow: var(--vita-live-scene-shadow-large);
+  transform: rotate(-1.6deg);
+}
+
+#vita-live-scene .vita-live-scene-patient-04 img {
+  object-position: 50% 25%;
+}
+
+#vita-live-scene .vita-live-scene-patient-05 {
+  top: 77%;
+  left: 60%;
+  width: clamp(88px, 7.2vw, 104px);
+  box-shadow: var(--vita-live-scene-shadow-small);
+  transform: rotate(2.8deg);
+}
+
+#vita-live-scene .vita-live-scene-patient-05 img {
+  object-position: 50% 26%;
+}
+
+#vita-live-scene .vita-live-scene-patient-06 {
+  top: 67%;
+  left: 84%;
+  width: clamp(118px, 9.5vw, 138px);
+  box-shadow: var(--vita-live-scene-shadow-medium);
+  transform: rotate(-2deg);
+}
+
+#vita-live-scene .vita-live-scene-patient-06 img {
+  object-position: 50% 25%;
+}
+
+#vita-live-scene .vita-live-scene-ambient {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  pointer-events: none;
+}
+
+#vita-live-scene .vita-live-scene-note {
+  position: absolute;
+  padding: 5px 8px;
+  border: 1px solid rgba(19, 122, 154, 0.045);
+  border-radius: 999px;
+  color: rgba(23, 59, 83, 0.25);
+  background: rgba(255, 255, 255, 0.52);
+  box-shadow: 0 10px 30px rgba(27, 67, 77, 0.02);
+  font-size: 0.57rem;
+  letter-spacing: 0.01em;
+  opacity: 0;
+}
+
+#vita-live-scene .vita-live-scene-note b {
+  color: rgba(19, 122, 154, 0.32);
+  font-weight: 700;
+}
+
+#vita-live-scene .vita-live-scene-note-01 {
+  top: 21%;
+  left: 48%;
+}
+
+#vita-live-scene .vita-live-scene-note-02 {
+  top: 38%;
+  left: 72%;
+}
+
+#vita-live-scene .vita-live-scene-note-03 {
+  top: 64%;
+  left: 72%;
+}
+
+#vita-live-scene .vita-live-scene-note-04 {
+  top: 76%;
+  left: 27%;
+}
+
+#vita-live-scene .vita-live-scene-dots {
+  margin-left: 4px;
+  letter-spacing: 0.12em;
+}
+
+#vita-live-scene .vita-live-scene-medical {
+  position: absolute;
+  color: rgba(19, 122, 154, 0.04);
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+}
+
+#vita-live-scene .vita-live-scene-medical-plus {
+  top: 14%;
+  left: 48%;
+}
+
+#vita-live-scene .vita-live-scene-medical-pulse {
+  right: 20%;
+  bottom: 10%;
+}
+
+#vita-live-scene .vita-live-scene-curve {
+  position: absolute;
+  width: 82px;
+  height: 38px;
+  border-top: 1px solid rgba(19, 122, 154, 0.035);
+  border-radius: 50%;
+}
+
+#vita-live-scene .vita-live-scene-curve-01 {
+  top: 55%;
+  left: 56%;
+  transform: rotate(-16deg);
+}
+
+#vita-live-scene .vita-live-scene-curve-02 {
+  top: 36%;
+  right: 9%;
+  transform: rotate(24deg);
+}
+
+#vita-live-scene .vita-live-scene-glow {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(132, 185, 60, 0.022);
+  filter: blur(26px);
+}
+
+#vita-live-scene .vita-live-scene-glow-01 {
+  top: 8%;
+  left: 49%;
+  width: 90px;
+  height: 90px;
+}
+
+#vita-live-scene .vita-live-scene-glow-02 {
+  right: 9%;
+  bottom: 6%;
+  width: 112px;
+  height: 112px;
+}
+
+@media (max-width: 1100px) {
+  #vita-live-scene .vita-live-scene-stage {
+    min-height: 768px;
+  }
+
+  #vita-live-scene .vita-live-scene-vita {
+    top: 20%;
+    left: 10%;
+    width: 290px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-01 {
+    top: 7%;
+    left: 56%;
+    width: 174px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-02 {
+    top: 30%;
+    left: 82%;
+    width: 96px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-03 {
+    top: 43%;
+    left: 63%;
+    width: 138px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-04 {
+    top: 69%;
+    left: 32%;
+    width: 176px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-05 {
+    top: 79%;
+    left: 59%;
+    width: 92px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-06 {
+    top: 68%;
+    left: 83%;
+    width: 122px;
+  }
+}
+
+@media (max-width: 820px) {
+  #vita-live-scene .vita-live-scene-stage {
+    min-height: 1024px;
+  }
+
+  #vita-live-scene .vita-live-scene-vita {
+    top: 12%;
+    left: 8%;
+    width: 282px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-01 {
+    top: 7%;
+    left: auto;
+    right: 2%;
+    width: 158px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-02 {
+    top: 31%;
+    left: auto;
+    right: 18%;
+    width: 94px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-03 {
+    top: 42%;
+    left: 45%;
+    width: 136px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-04 {
+    top: 57%;
+    left: 5%;
+    width: 164px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-05 {
+    top: 72%;
+    left: 49%;
+    width: 92px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-06 {
+    top: 79%;
+    left: auto;
+    right: 3%;
+    width: 120px;
+  }
+
+  #vita-live-scene .vita-live-scene-note-01 {
+    top: 29%;
+    left: 38%;
+  }
+
+  #vita-live-scene .vita-live-scene-note-02 {
+    top: 39%;
+    left: auto;
+    right: 5%;
+  }
+
+  #vita-live-scene .vita-live-scene-note-03 {
+    top: 69%;
+    left: auto;
+    right: 17%;
+  }
+
+  #vita-live-scene .vita-live-scene-note-04,
+  #vita-live-scene .vita-live-scene-glow-02 {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  #vita-live-scene .vita-live-scene-stage {
+    min-height: 844px;
+  }
+
+  #vita-live-scene .vita-live-scene-vita {
+    top: 8%;
+    left: 5%;
+    width: 212px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-01 {
+    top: 7%;
+    right: -4%;
+    width: 112px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-02 {
+    top: 30%;
+    right: 9%;
+    width: 68px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-03 {
+    top: 40%;
+    left: 4%;
+    width: 94px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-04 {
+    top: 49%;
+    left: auto;
+    right: -3%;
+    width: 118px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-05 {
+    top: 69%;
+    left: 28%;
+    width: 70px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-06 {
+    top: 76%;
+    right: 8%;
+    width: 98px;
+  }
+
+  #vita-live-scene .vita-live-scene-note {
+    font-size: 0.47rem;
+  }
+
+  #vita-live-scene .vita-live-scene-note-01 {
+    top: 33%;
+    left: 39%;
+  }
+
+  #vita-live-scene .vita-live-scene-note-02 {
+    display: none;
+  }
+
+  #vita-live-scene .vita-live-scene-note-03 {
+    top: 64%;
+    right: 4%;
+  }
+
+  #vita-live-scene .vita-live-scene-curve,
+  #vita-live-scene .vita-live-scene-glow,
+  #vita-live-scene .vita-live-scene-medical-pulse {
+    display: none;
+  }
+
+  #vita-live-scene .vita-live-scene-medical-plus {
+    top: 36%;
+    left: 70%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 370px) {
+  #vita-live-scene .vita-live-scene-stage {
+    min-height: 800px;
+  }
+
+  #vita-live-scene .vita-live-scene-vita {
+    width: 198px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-01 {
+    width: 104px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-04 {
+    width: 108px;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-06 {
+    top: 75%;
+    width: 92px;
+  }
+}
+
+/* Motion System: movimiento ambiental de bajo impacto. */
+
+#vita-live-scene.is-motion-ready .vita-live-scene-patient {
+  will-change: transform;
+  animation-name: var(--vita-live-scene-motion-name, vita-live-scene-drift-a);
+  animation-duration: var(--vita-live-scene-motion-duration, 10s);
+  animation-delay: var(--vita-live-scene-motion-delay, 0s);
+  animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#vita-live-scene .vita-live-scene-patient-01 {
+  --vita-live-scene-base-rotation: -2.5deg;
+  --vita-live-scene-motion-duration: 9.6s;
+  --vita-live-scene-motion-delay: -3.1s;
+}
+
+#vita-live-scene .vita-live-scene-patient-02 {
+  --vita-live-scene-motion-name: vita-live-scene-drift-b;
+  --vita-live-scene-base-rotation: 1.8deg;
+  --vita-live-scene-motion-duration: 12.7s;
+  --vita-live-scene-motion-delay: -8.4s;
+}
+
+#vita-live-scene .vita-live-scene-patient-03 {
+  --vita-live-scene-motion-name: vita-live-scene-drift-c;
+  --vita-live-scene-base-rotation: 2.2deg;
+  --vita-live-scene-motion-duration: 8.8s;
+  --vita-live-scene-motion-delay: -1.7s;
+}
+
+#vita-live-scene .vita-live-scene-patient-04 {
+  --vita-live-scene-motion-name: vita-live-scene-drift-d;
+  --vita-live-scene-base-rotation: -1.6deg;
+  --vita-live-scene-motion-duration: 13.6s;
+  --vita-live-scene-motion-delay: -6.3s;
+}
+
+#vita-live-scene .vita-live-scene-patient-05 {
+  --vita-live-scene-motion-name: vita-live-scene-drift-c;
+  --vita-live-scene-base-rotation: 2.8deg;
+  --vita-live-scene-motion-duration: 11.4s;
+  --vita-live-scene-motion-delay: -4.8s;
+}
+
+#vita-live-scene .vita-live-scene-patient-06 {
+  --vita-live-scene-motion-name: vita-live-scene-drift-b;
+  --vita-live-scene-base-rotation: -2deg;
+  --vita-live-scene-motion-duration: 10.3s;
+  --vita-live-scene-motion-delay: -7.5s;
+}
+
+#vita-live-scene .vita-live-scene-note,
+#vita-live-scene .vita-live-scene-curve {
+  transition: opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#vita-live-scene .vita-live-scene-note.is-conversation-active {
+  z-index: 6;
+  opacity: 1;
+  transform: translate3d(0, -2px, 0) scale(1.025);
+  border-color: rgba(19, 122, 154, 0.14);
+  animation: vita-live-scene-conversation-pulse 2.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: opacity, transform;
+}
+
+#vita-live-scene .vita-live-scene-note.is-conversation-active .vita-live-scene-dots {
+  animation: vita-live-scene-writing-dots 1.15s ease-in-out 2;
+}
+
+#vita-live-scene .vita-live-scene-note.is-conversation-active b {
+  animation: vita-live-scene-check-pulse 1.2s ease-out 1;
+}
+
+#vita-live-scene .vita-live-scene-curve.is-conversation-active {
+  opacity: 0.8;
+  border-color: rgba(19, 122, 154, 0.16);
+}
+
+#vita-live-scene.is-desktop-present .vita-live-scene-patient {
+  transition: filter 1000ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#vita-live-scene.is-desktop-present .vita-live-scene-patient.is-desktop-nearest {
+  filter: brightness(1.025) saturate(1.035);
+  box-shadow: 0 26px 68px rgba(25, 55, 68, 0.17);
+}
+
+#vita-live-scene.is-desktop-present .vita-live-scene-curve {
+  opacity: 0.7;
+}
+
+@keyframes vita-live-scene-drift-a {
+  from { transform: translate3d(0, -2px, 0) rotate(var(--vita-live-scene-base-rotation)); }
+  to { transform: translate3d(1px, 2px, 0) rotate(calc(var(--vita-live-scene-base-rotation) + 0.18deg)); }
+}
+
+@keyframes vita-live-scene-drift-b {
+  from { transform: translate3d(-2px, 1px, 0) rotate(var(--vita-live-scene-base-rotation)); }
+  to { transform: translate3d(2px, -1px, 0) rotate(calc(var(--vita-live-scene-base-rotation) - 0.16deg)); }
+}
+
+@keyframes vita-live-scene-drift-c {
+  from { transform: translate3d(1px, -2px, 0) rotate(calc(var(--vita-live-scene-base-rotation) - 0.12deg)); }
+  to { transform: translate3d(-1px, 1px, 0) rotate(calc(var(--vita-live-scene-base-rotation) + 0.12deg)); }
+}
+
+@keyframes vita-live-scene-drift-d {
+  from { transform: translate3d(-1px, 2px, 0) rotate(var(--vita-live-scene-base-rotation)); }
+  to { transform: translate3d(2px, -2px, 0) rotate(calc(var(--vita-live-scene-base-rotation) + 0.14deg)); }
+}
+
+@keyframes vita-live-scene-conversation-pulse {
+  0%, 100% { opacity: 0.42; }
+  24%, 72% { opacity: 1; }
+}
+
+@keyframes vita-live-scene-writing-dots {
+  0%, 100% { opacity: 0.42; transform: translate3d(0, 0, 0); }
+  50% { opacity: 0.9; transform: translate3d(0, -1px, 0); }
+}
+
+@keyframes vita-live-scene-check-pulse {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  45% { opacity: 0.9; transform: scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #vita-live-scene *,
+  #vita-live-scene *::before,
+  #vita-live-scene *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  #vita-live-scene .vita-live-scene-patient-01 { transform: rotate(-2.5deg); }
+  #vita-live-scene .vita-live-scene-patient-02 { transform: rotate(1.8deg); }
+  #vita-live-scene .vita-live-scene-patient-03 { transform: rotate(2.2deg); }
+  #vita-live-scene .vita-live-scene-patient-04 { transform: rotate(-1.6deg); }
+  #vita-live-scene .vita-live-scene-patient-05 { transform: rotate(2.8deg); }
+  #vita-live-scene .vita-live-scene-patient-06 { transform: rotate(-2deg); }
 }
