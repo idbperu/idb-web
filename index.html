@@ -722,6 +722,16 @@
     #bienestar .wellness-carousel .area-card {
       flex-basis:100%;
       min-height:516px;
+      transform:none;
+      filter:none;
+      transition:
+        opacity 760ms cubic-bezier(.22, 1, .36, 1),
+        visibility 0s linear 760ms;
+    }
+    #bienestar .wellness-carousel .area-card.is-active {
+      transform:none;
+      filter:none;
+      transition-delay:0s;
     }
     .wellness-carousel-controls {
       width: min(var(--max), calc(100% - 40px));
