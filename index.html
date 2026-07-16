@@ -108,6 +108,21 @@
     }
     .nav a:hover::after,
     .nav a[aria-current="page"]::after { transform: scaleX(1); }
+    .nav .nav-cta {
+      padding: 10px 18px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--green);
+      box-shadow: 0 8px 20px rgba(31, 143, 115, .2);
+      font-weight: 760;
+      transition: background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+    }
+    .nav .nav-cta::after { display: none; }
+    .nav .nav-cta:hover {
+      background: var(--green-dark);
+      box-shadow: 0 10px 24px rgba(31, 143, 115, .25);
+      transform: translateY(-1px);
+    }
     .hero {
       position: relative;
       isolation: isolate;
@@ -2174,9 +2189,9 @@ height:16px;
     </button>
       <nav class="nav" aria-label="Navegación principal">
         <a href="index.html" aria-current="page">Inicio</a>
-        <a href="temas.html">Temas</a>
-        <a href="recursos.html">Recursos</a>
+        <a href="#">Conócenos</a>
         <a href="contacto.html">Contacto</a>
+        <a class="nav-cta" href="#">Únete a IDB</a>
       </nav>
     </div>
   </header>
