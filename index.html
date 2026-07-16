@@ -765,8 +765,28 @@
     .wellness-carousel-play .icon-play,
     .wellness-carousel-play.is-paused .icon-pause { display: none; }
     .wellness-carousel-play.is-paused .icon-play { display: block; }
+    .wellness-carousel--resources .area-grid {
+      display: flex;
+      gap: 8px;
+      transition: transform 620ms cubic-bezier(.4, 0, .2, 1);
+      will-change: transform;
+    }
     .wellness-carousel--resources .area-card {
+      grid-area: auto;
+      flex: 0 0 84%;
+      width: auto;
+      visibility: visible;
+      pointer-events: auto;
+      transform: scale(.965);
+      filter: brightness(.82);
+      opacity: .88;
       align-items: center;
+      transition: transform 620ms cubic-bezier(.4, 0, .2, 1), filter 620ms ease, opacity 620ms ease, box-shadow 620ms ease;
+    }
+    .wellness-carousel--resources .area-card.is-active {
+      transform: scale(1);
+      filter: brightness(1);
+      opacity: 1;
     }
     .wellness-carousel--resources .area-card::after {
       background:
@@ -1958,6 +1978,16 @@ height:16px;
       .wellness-carousel .area-card {
         min-height: 326px;
       }
+      .wellness-carousel--resources .area-grid {
+        gap:8px;
+      }
+      .wellness-carousel--resources .area-card {
+        flex-basis:82%;
+        transform:scale(.97);
+      }
+      .wellness-carousel--resources .area-card.is-active {
+        transform:scale(1);
+      }
       #bienestar .wellness-carousel .area-card {
         min-height:392px;
       }
@@ -2609,6 +2639,7 @@ function initIDBMediaRailV2(rail) {
   const viewport = rail.querySelector('.wellness-carousel-viewport');
   const originalCards = Array.from(track?.querySelectorAll('.area-card') || []);
   if (!track || !viewport || originalCards.length < 2) return;
+  const usesHorizontalSlide = rail.classList.contains('wellness-carousel--resources');
 
   originalCards.slice(0, 3).forEach((card) => {
     const clone = card.cloneNode(true);
@@ -2641,6 +2672,9 @@ function initIDBMediaRailV2(rail) {
   function update(nextIndex, announce = true) {
     index = Math.max(0, Math.min(nextIndex, cards.length - 1));
     const active = cards[index];
+    if (usesHorizontalSlide) {
+      track.style.transform = `translate3d(${viewport.clientWidth / 2 - (active.offsetLeft + active.offsetWidth / 2)}px, 0, 0)`;
+    }
     cards.forEach((card, cardIndex) => {
       const activeCard = cardIndex === index;
       card.classList.toggle('is-active', activeCard);
