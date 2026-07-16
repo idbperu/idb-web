@@ -1,0 +1,8 @@
+{
+  "component": "vita-live-scene",
+  "version": "0.1.0",
+  "status": "structure-only",
+  "integrated": false,
+  "patients": 6,
+  "motionEnabled": false
+}

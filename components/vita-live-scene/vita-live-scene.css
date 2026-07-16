@@ -1,0 +1,8 @@
+/* vita-live-scene: estilos locales mínimos de la estructura inicial. */
+
+#vita-live-scene,
+#vita-live-scene *,
+#vita-live-scene *::before,
+#vita-live-scene *::after {
+  box-sizing: border-box;
+}
